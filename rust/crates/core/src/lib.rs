@@ -1,4 +1,4 @@
-//! Core wasm crate: cryptographic hashes, HMAC, and binary encodings.
+//! Core wasm crate: cryptographic hashes, HMAC, binary encodings, and bcrypt.
 //!
 //! The TS boundary passes/returns `Uint8Array` (mapped to `&[u8]` / `Vec<u8>`),
 //! primitives, and `String`. Expected errors are returned as `Result<_, JsValue>`
@@ -8,6 +8,7 @@ use wasm_bindgen::prelude::*;
 
 mod encoding;
 mod hashing;
+mod password;
 
 /// Installs a panic hook that logs Rust panics to the browser console.
 #[wasm_bindgen(start)]
@@ -29,3 +30,4 @@ pub fn checksum(data: &[u8]) -> u32 {
 
 pub use encoding::*;
 pub use hashing::*;
+pub use password::*;
