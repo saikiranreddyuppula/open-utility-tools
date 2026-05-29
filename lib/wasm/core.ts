@@ -101,3 +101,11 @@ export function hexEncode(data: string | Uint8Array, upper = false): Promise<str
 export function hexDecode(text: string): Promise<Uint8Array> {
   return runWasm<Uint8Array>(CRATE, 'hex_decode', [text]);
 }
+
+export function bcryptHash(password: string, cost = 10): Promise<string> {
+  return runWasm<string>(CRATE, 'bcrypt_hash', [password, cost]);
+}
+
+export function bcryptVerify(password: string, hash: string): Promise<boolean> {
+  return runWasm<boolean>(CRATE, 'bcrypt_verify', [password, hash]);
+}

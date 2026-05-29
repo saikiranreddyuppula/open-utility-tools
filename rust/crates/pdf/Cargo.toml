@@ -26,7 +26,13 @@ wasm-bindgen.workspace = true
 js-sys.workspace = true
 console_error_panic_hook.workspace = true
 
-# Pure-Rust PDF library — compiles to wasm32-unknown-unknown. Default features
-# (chrono + nom parser + embed_image) resolve cleanly; lopdf has no threads/rayon
-# dependency to strip.
+# Pure-Rust PDF library (default features: chrono + nom_parser + embed_image +
+# rayon). rayon-core compiles on wasm32 with a sequential fallback, so this is
+# fine. lopdf 0.36's features can't be selected individually (index quirk), so we
+# keep defaults rather than fight the resolver.
 lopdf = "0.36"
+
+# lopdf transitively needs getrandom; on wasm32-unknown-unknown its 0.3 line
+# requires the `wasm_js` backend feature + the matching cfg (set in
+# rust/.cargo/config.toml). This pulls entropy from crypto.getRandomValues.
+getrandom = { version = "0.3", features = ["wasm_js"] }

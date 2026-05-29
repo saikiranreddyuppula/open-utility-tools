@@ -1,9 +1,6 @@
-# Compile every wasm crate to the MVP feature set.
-#
-# Rust 1.95's wasm32-unknown-unknown enables bulk-memory / sign-ext / etc. by
-# default, but the wasm-opt bundled with wasm-pack 0.13 is too old to validate
-# those features. Targeting `mvp` makes rustc emit baseline wasm that any
-# wasm-opt can optimize, at a negligible runtime cost (memcpy lowers to a loop).
-# Browsers from ~2017+ all run MVP wasm, so this also maximizes compatibility.
+# getrandom 0.3 requires this cfg to select the JS backend on
+# wasm32-unknown-unknown (entropy via crypto.getRandomValues). Harmless for
+# crates that don't depend on getrandom. Applies to every crate built under
+# rust/ (cargo searches up the directory tree for this file).
 [target.wasm32-unknown-unknown]
-rustflags = ["-C", "target-cpu=mvp"]
+rustflags = ['--cfg', 'getrandom_backend="wasm_js"']

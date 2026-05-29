@@ -14,6 +14,7 @@ import { yamlToJson, jsonToYaml } from '../lib/data/yaml';
 import { markdownToHtml } from '../lib/text/markdown';
 import { jsonToTypeScript } from '../lib/data/json-to-ts';
 import { explainCron, parseCron, nextRuns } from '../lib/time/cron';
+import { evaluateExpression } from '../lib/math/expr';
 
 const failures: string[] = [];
 let pass = 0;
@@ -84,6 +85,10 @@ eq('cron fields', parseCron('*/15 9-17 * * 1-5').length, 5);
 eq('cron @daily', explainCron('@daily'), 'at 00:00');
 eq('cron weekday', explainCron('30 14 * * *'), 'at 14:30');
 ok('cron next runs', nextRuns('0 9 * * 1-5', 3, new Date('2024-01-01T00:00:00Z')).length === 3);
+eq('expr precedence', evaluateExpression('2 + 3 * 4'), 14);
+eq('expr variadic max', evaluateExpression('max(3, 7, 2)'), 7);
+eq('expr power', evaluateExpression('2 ^ 10'), 1024);
+ok('expr trig', Math.abs(evaluateExpression('sin(pi/6)') - 0.5) < 1e-9);
 
 await Bun.write(
   new URL('./_selftest-result.json', import.meta.url),
