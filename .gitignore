@@ -42,7 +42,7 @@ yarn-error.log*
 # (commit bun.lock for reproducible installs)
 
 # harness local state
-.claude/scheduled_tasks.lock
+.claude/
 
 # selftest artifacts
 scripts/_*
