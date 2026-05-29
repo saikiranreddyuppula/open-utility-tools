@@ -1,0 +1,222 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — "power-tool" dashboard.
+ * Cool blue-charcoal neutrals (hue ~256–264), one disciplined indigo primary,
+ * per-category accent hues, 13px dense UI, hairline borders, mono for data.
+ * Tokens authored in OKLCH for perceptual uniformity.
+ */
+
+:root {
+  --radius: 0.5rem;
+
+  --background: oklch(0.992 0.002 250);
+  --foreground: oklch(0.205 0.012 256);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.205 0.012 256);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.205 0.012 256);
+  --muted: oklch(0.967 0.004 256);
+  --muted-foreground: oklch(0.486 0.014 257);
+  --border: oklch(0.918 0.006 256);
+  --input: oklch(0.918 0.006 256);
+  --ring: oklch(0.62 0.17 256);
+  --primary: oklch(0.55 0.2 264);
+  --primary-foreground: oklch(0.985 0.002 250);
+  --secondary: oklch(0.967 0.004 256);
+  --secondary-foreground: oklch(0.255 0.012 256);
+  --accent: oklch(0.955 0.012 264);
+  --accent-foreground: oklch(0.3 0.1 264);
+  --destructive: oklch(0.58 0.225 25);
+  --destructive-foreground: oklch(0.985 0.002 250);
+  --success: oklch(0.62 0.16 150);
+  --warning: oklch(0.72 0.15 75);
+
+  /* Category accent hues (light values) */
+  --cat-image: oklch(0.64 0.17 50);
+  --cat-pdf: oklch(0.6 0.2 18);
+  --cat-data: oklch(0.6 0.2 18);
+  --cat-text: oklch(0.6 0.15 162);
+  --cat-convert: oklch(0.58 0.17 240);
+  --cat-crypto: oklch(0.58 0.2 296);
+  --cat-encoding: oklch(0.6 0.16 195);
+  --cat-generators: oklch(0.66 0.15 92);
+  --cat-web: oklch(0.58 0.18 330);
+  --cat-time: oklch(0.62 0.16 142);
+  --cat-math: oklch(0.66 0.15 92);
+  --cat-color: oklch(0.6 0.18 330);
+  --cat-media: oklch(0.62 0.16 142);
+
+  --shadow-xs: 0 1px 2px 0 oklch(0.2 0.02 264 / 0.04);
+  --shadow-sm: 0 1px 3px 0 oklch(0.2 0.02 264 / 0.06), 0 1px 2px -1px oklch(0.2 0.02 264 / 0.06);
+  --shadow-md: 0 4px 12px -2px oklch(0.2 0.02 264 / 0.12), 0 2px 6px -2px oklch(0.2 0.02 264 / 0.08);
+}
+
+.dark {
+  --background: oklch(0.178 0.012 264);
+  --foreground: oklch(0.948 0.004 256);
+  --card: oklch(0.213 0.013 264);
+  --card-foreground: oklch(0.948 0.004 256);
+  --popover: oklch(0.213 0.013 264);
+  --popover-foreground: oklch(0.948 0.004 256);
+  --muted: oklch(0.255 0.014 264);
+  --muted-foreground: oklch(0.668 0.016 257);
+  --border: oklch(0.282 0.016 264);
+  --input: oklch(0.282 0.016 264);
+  --ring: oklch(0.66 0.16 256);
+  --primary: oklch(0.68 0.16 264);
+  --primary-foreground: oklch(0.18 0.02 264);
+  --secondary: oklch(0.255 0.014 264);
+  --secondary-foreground: oklch(0.92 0.004 256);
+  --accent: oklch(0.288 0.03 264);
+  --accent-foreground: oklch(0.92 0.02 264);
+  --destructive: oklch(0.62 0.2 25);
+  --destructive-foreground: oklch(0.985 0.002 250);
+  --success: oklch(0.7 0.15 152);
+  --warning: oklch(0.78 0.14 78);
+
+  --cat-image: oklch(0.76 0.15 50);
+  --cat-pdf: oklch(0.72 0.17 18);
+  --cat-data: oklch(0.72 0.17 18);
+  --cat-text: oklch(0.74 0.13 162);
+  --cat-convert: oklch(0.72 0.15 240);
+  --cat-crypto: oklch(0.72 0.16 296);
+  --cat-encoding: oklch(0.74 0.13 195);
+  --cat-generators: oklch(0.78 0.14 92);
+  --cat-web: oklch(0.72 0.15 330);
+  --cat-time: oklch(0.74 0.14 142);
+  --cat-math: oklch(0.78 0.14 92);
+  --cat-color: oklch(0.72 0.15 330);
+  --cat-media: oklch(0.74 0.14 142);
+
+  --shadow-xs: 0 1px 2px 0 oklch(0 0 0 / 0.2);
+  --shadow-sm: 0 1px 3px 0 oklch(0 0 0 / 0.28), 0 1px 2px -1px oklch(0 0 0 / 0.28);
+  --shadow-md: 0 4px 12px -2px oklch(0 0 0 / 0.4), 0 2px 6px -2px oklch(0 0 0 / 0.3);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
+  --color-cat-image: var(--cat-image);
+  --color-cat-pdf: var(--cat-pdf);
+  --color-cat-data: var(--cat-data);
+  --color-cat-text: var(--cat-text);
+  --color-cat-convert: var(--cat-convert);
+  --color-cat-crypto: var(--cat-crypto);
+  --color-cat-encoding: var(--cat-encoding);
+  --color-cat-generators: var(--cat-generators);
+  --color-cat-web: var(--cat-web);
+  --color-cat-time: var(--cat-time);
+  --color-cat-math: var(--cat-math);
+  --color-cat-color: var(--cat-color);
+  --color-cat-media: var(--cat-media);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: color-mix(in oklch, var(--ring) 50%, transparent);
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    /* Dense default UI text size = 13px. */
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-feature-settings: 'cv01', 'cv03', 'cv04';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Tabular numbers wherever live counters update, to stop layout jitter. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Thin, technical scrollbars. */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: color-mix(in oklch, var(--muted-foreground) 28%, transparent);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: color-mix(in oklch, var(--muted-foreground) 45%, transparent);
+  }
+
+  /* Keycap styling. */
+  kbd {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1;
+    padding: 0.125rem 0.3rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    border-bottom-width: 2px;
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  /* Subtle dotted grid texture for empty panes / hero negative space. */
+  .bg-grid {
+    background-image: radial-gradient(
+      color-mix(in oklch, var(--muted-foreground) 18%, transparent) 1px,
+      transparent 1px
+    );
+    background-size: 16px 16px;
+  }
+}

@@ -1,0 +1,42 @@
+# dependencies
+/node_modules
+.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# production
+/build
+
+# rust / wasm
+/rust/target
+**/target
+/rust/**/pkg
+/lib/wasm/generated
+/public/wasm
+
+# misc
+.DS_Store
+*.pem
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# debug / logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# env
+.env*.local
+.env
+
+# typescript
+*.tsbuildinfo
+
+# bun
+# (commit bun.lock for reproducible installs)

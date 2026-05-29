@@ -1,0 +1,47 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Hashing, HMAC, and binary encoding primitives (wasm)."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# wasm-pack 0.13 bundles an old wasm-opt (v117) whose validator rejects the
+# bulk-memory / sign-ext / etc. ops that Rust 1.95's prebuilt std emits. Passing
+# the matching --enable flags lets that bundled wasm-opt validate + optimize the
+# module (keeping those ops — every browser since ~2020 supports them). No
+# external binaryen install needed, so the build stays portable.
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = [
+  "-Os",
+  "--enable-bulk-memory",
+  "--enable-sign-ext",
+  "--enable-mutable-globals",
+  "--enable-nontrapping-float-to-int",
+  "--enable-reference-types",
+  "--enable-multivalue",
+]
+
+[dependencies]
+wasm-bindgen.workspace = true
+js-sys.workspace = true
+console_error_panic_hook.workspace = true
+
+# Hashing
+sha2 = "0.10"
+sha1 = "0.10"
+md-5 = "0.10"
+sha3 = "0.10"
+blake3 = { version = "1", default-features = false, features = ["std"] }
+crc32fast = "1"
+digest = "0.10"
+hmac = "0.12"
+
+# Encoding
+base64 = "0.22"
+base32 = "0.5"
+data-encoding = "2"
+hex = "0.4"

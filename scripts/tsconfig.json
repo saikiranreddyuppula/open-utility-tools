@@ -1,0 +1,17 @@
+{
+  "comment": "Bun runtime scripts (registry codegen). Typechecked separately from the Next app since they use Bun-only globals (Bun, the 'bun' module, import.meta.dir).",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["bun"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": { "@/*": ["../*"] }
+  },
+  "include": ["**/*.ts"]
+}

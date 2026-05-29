@@ -1,0 +1,4438 @@
+{
+  "generatedFrom": "research-workflow",
+  "counts": {
+    "candidates": 235,
+    "unique": 227,
+    "heavy": 74,
+    "light": 153
+  },
+  "byCategory": {
+    "Color": 19,
+    "Encoding": 23,
+    "Time": 9,
+    "Math": 14,
+    "Crypto": 23,
+    "Web": 25,
+    "Generators": 26,
+    "Image": 21,
+    "Media": 1,
+    "Data": 12,
+    "Converters": 12,
+    "PDF": 22,
+    "Text": 20
+  },
+  "tools": [
+    {
+      "name": "Color Converter",
+      "slug": "color-converter",
+      "category": "Color",
+      "description": "Convert a single color between HEX, RGB(A), HSL(A), HSV/HSB, OKLCH, OKLAB, LAB, LCH, CMYK, XYZ, and CSS named colors.",
+      "compute": "light",
+      "keywords": [
+        "color",
+        "converter",
+        "hex",
+        "rgb",
+        "hsl",
+        "oklch",
+        "cmyk",
+        "lab"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "Color Picker",
+      "slug": "color-picker",
+      "category": "Color",
+      "description": "Interactive HSV/HSL color picker with eyedropper, alpha slider, and live multi-format output you can copy.",
+      "compute": "light",
+      "keywords": [
+        "color",
+        "picker",
+        "eyedropper",
+        "hsv",
+        "wheel",
+        "swatch"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Contrast Checker",
+      "slug": "contrast-checker",
+      "category": "Color",
+      "description": "Check foreground/background contrast ratio against WCAG 2.1 AA/AAA and APCA thresholds for normal and large text.",
+      "compute": "light",
+      "keywords": [
+        "contrast",
+        "wcag",
+        "accessibility",
+        "ratio",
+        "apca",
+        "a11y"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Contrast Fixer",
+      "slug": "contrast-fixer",
+      "category": "Color",
+      "description": "Suggest the nearest accessible color (adjusting lightness/chroma) that meets a target WCAG contrast ratio against a given background.",
+      "compute": "light",
+      "keywords": [
+        "contrast",
+        "fix",
+        "accessible",
+        "wcag",
+        "suggest",
+        "adjust"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Color Harmonies Generator",
+      "slug": "color-harmonies",
+      "category": "Color",
+      "description": "Generate complementary, analogous, triadic, tetradic, split-complementary, and monochromatic harmonies from a base color.",
+      "compute": "light",
+      "keywords": [
+        "harmony",
+        "complementary",
+        "analogous",
+        "triadic",
+        "tetradic",
+        "scheme"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Shades, Tints & Tones Generator",
+      "slug": "shades-tints-tones",
+      "category": "Color",
+      "description": "Generate a scale of shades (toward black), tints (toward white), and tones (toward gray) from one base color.",
+      "compute": "light",
+      "keywords": [
+        "shades",
+        "tints",
+        "tones",
+        "scale",
+        "lighten",
+        "darken"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Tailwind Palette Generator",
+      "slug": "tailwind-palette-generator",
+      "category": "Color",
+      "description": "Generate a Tailwind-style 50-950 numbered color scale from a single brand color, ready to paste into your config.",
+      "compute": "light",
+      "keywords": [
+        "tailwind",
+        "palette",
+        "scale",
+        "50-950",
+        "shades",
+        "config"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Palette Generator",
+      "slug": "palette-generator",
+      "category": "Color",
+      "description": "Generate cohesive multi-color palettes from a seed color or at random, with lock-and-regenerate and export to CSS/JSON/SVG.",
+      "compute": "light",
+      "keywords": [
+        "palette",
+        "generator",
+        "scheme",
+        "swatches",
+        "coolors",
+        "export"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Image Palette Extractor",
+      "slug": "image-palette-extractor",
+      "category": "Color",
+      "description": "Extract a dominant color palette from an uploaded image using k-means/median-cut quantization, fully in the browser.",
+      "compute": "heavy",
+      "keywords": [
+        "image",
+        "palette",
+        "extract",
+        "dominant",
+        "kmeans",
+        "quantize"
+      ],
+      "priority": "p1",
+      "rustCrate": "image, kmeans_colors"
+    },
+    {
+      "name": "Gradient Generator",
+      "slug": "gradient-generator",
+      "category": "Color",
+      "description": "Build linear, radial, and conic CSS gradients with multi-stop control, angle, and live preview plus copyable CSS.",
+      "compute": "light",
+      "keywords": [
+        "gradient",
+        "css",
+        "linear",
+        "radial",
+        "conic",
+        "stops"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Color Blindness Simulator",
+      "slug": "color-blindness-simulator",
+      "category": "Color",
+      "description": "Simulate how colors or an image appear with protanopia, deuteranopia, tritanopia, and achromatopsia.",
+      "compute": "light",
+      "keywords": [
+        "color blindness",
+        "protanopia",
+        "deuteranopia",
+        "tritanopia",
+        "simulate",
+        "cvd"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Color Mixer / Blend",
+      "slug": "color-mixer",
+      "category": "Color",
+      "description": "Mix two colors at a chosen ratio in sRGB, HSL, LAB, or OKLAB space, with stepped blend swatches between them.",
+      "compute": "light",
+      "keywords": [
+        "mix",
+        "blend",
+        "interpolate",
+        "average",
+        "oklab",
+        "ratio"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Color Name Finder",
+      "slug": "color-name-finder",
+      "category": "Color",
+      "description": "Find the closest named color (CSS, X11, or full color-name dataset) to any input using perceptual LAB distance.",
+      "compute": "light",
+      "keywords": [
+        "color",
+        "name",
+        "nearest",
+        "named",
+        "css",
+        "lab"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Random Color Generator",
+      "slug": "random-color-generator",
+      "category": "Color",
+      "description": "Generate random colors with optional hue, saturation, and lightness constraints, output in any format.",
+      "compute": "light",
+      "keywords": [
+        "random",
+        "color",
+        "generator",
+        "hue",
+        "constraint",
+        "swatch"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Accessible Palette Generator",
+      "slug": "accessible-palette-generator",
+      "category": "Color",
+      "description": "Build a palette whose colors all meet a chosen WCAG contrast target against a base background, flagging failures.",
+      "compute": "light",
+      "keywords": [
+        "accessible",
+        "palette",
+        "wcag",
+        "contrast",
+        "a11y",
+        "safe"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Color Lighten / Darken Tool",
+      "slug": "lighten-darken-color",
+      "category": "Color",
+      "description": "Lighten, darken, saturate, desaturate, or rotate the hue of a color by a precise amount with before/after preview.",
+      "compute": "light",
+      "keywords": [
+        "lighten",
+        "darken",
+        "saturate",
+        "desaturate",
+        "hue",
+        "adjust"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "CSS Color Inspector",
+      "slug": "css-color-inspector",
+      "category": "Color",
+      "description": "Paste any CSS color value (hex, rgb(), hsl(), oklch(), named, color()) and see it parsed, normalized, and converted to all formats.",
+      "compute": "light",
+      "keywords": [
+        "css",
+        "color",
+        "parse",
+        "inspect",
+        "normalize",
+        "oklch"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Gradient Palette Interpolator",
+      "slug": "gradient-palette-interpolator",
+      "category": "Color",
+      "description": "Generate an N-step evenly interpolated palette between two or more colors in sRGB, HSL, or OKLAB for data viz scales.",
+      "compute": "light",
+      "keywords": [
+        "interpolate",
+        "scale",
+        "steps",
+        "dataviz",
+        "ramp",
+        "oklab"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Color Temperature (Kelvin) Converter",
+      "slug": "color-temperature-converter",
+      "category": "Color",
+      "description": "Convert a color temperature in Kelvin to its approximate RGB/HEX blackbody color and back.",
+      "compute": "light",
+      "keywords": [
+        "kelvin",
+        "temperature",
+        "blackbody",
+        "white balance",
+        "warm",
+        "cool"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Base64 Encode / Decode (Text)",
+      "slug": "base64-text",
+      "category": "Encoding",
+      "description": "Encode text to Base64 and decode Base64 back to text, with UTF-8 safety and optional line-wrapping.",
+      "compute": "light",
+      "keywords": [
+        "base64",
+        "encode",
+        "decode",
+        "btoa",
+        "atob",
+        "utf-8"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "Base64 Encode / Decode (File)",
+      "slug": "base64-file",
+      "category": "Encoding",
+      "description": "Encode any uploaded file to Base64 (including data URIs) and decode Base64 back into a downloadable file.",
+      "compute": "heavy",
+      "keywords": [
+        "base64",
+        "file",
+        "data-uri",
+        "binary",
+        "download",
+        "encode"
+      ],
+      "priority": "p1",
+      "rustCrate": "base64"
+    },
+    {
+      "name": "Base64URL Encode / Decode",
+      "slug": "base64url",
+      "category": "Encoding",
+      "description": "URL-safe Base64 variant using - and _ with optional padding stripping, for JWTs and query params.",
+      "compute": "light",
+      "keywords": [
+        "base64url",
+        "url-safe",
+        "jwt",
+        "padding",
+        "encode",
+        "decode"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Base32 Encode / Decode",
+      "slug": "base32",
+      "category": "Encoding",
+      "description": "RFC 4648 Base32 encode/decode with optional Base32hex alphabet and padding control.",
+      "compute": "light",
+      "keywords": [
+        "base32",
+        "rfc4648",
+        "base32hex",
+        "encode",
+        "decode",
+        "totp"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Base58 Encode / Decode",
+      "slug": "base58",
+      "category": "Encoding",
+      "description": "Bitcoin-style Base58 and Base58Check encode/decode, useful for crypto addresses and short IDs.",
+      "compute": "light",
+      "keywords": [
+        "base58",
+        "bitcoin",
+        "base58check",
+        "address",
+        "encode",
+        "decode"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Base85 / Ascii85 Encode / Decode",
+      "slug": "base85-ascii85",
+      "category": "Encoding",
+      "description": "Encode/decode Base85 with Ascii85 and Z85 variants for compact binary-to-text representation.",
+      "compute": "light",
+      "keywords": [
+        "base85",
+        "ascii85",
+        "z85",
+        "btoa",
+        "encode",
+        "decode"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Hex Encode / Decode",
+      "slug": "hex-encode-decode",
+      "category": "Encoding",
+      "description": "Convert text/bytes to hexadecimal and back, with configurable delimiter and case.",
+      "compute": "light",
+      "keywords": [
+        "hex",
+        "hexadecimal",
+        "base16",
+        "bytes",
+        "encode",
+        "decode"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "Hex Dump Viewer",
+      "slug": "hex-dump-viewer",
+      "category": "Encoding",
+      "description": "Render a file or bytes as a classic xxd-style hex dump with offset, hex, and ASCII columns.",
+      "compute": "heavy",
+      "keywords": [
+        "hexdump",
+        "xxd",
+        "hex-viewer",
+        "offset",
+        "ascii",
+        "binary"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "URL Encode / Decode",
+      "slug": "url-encode-decode",
+      "category": "Encoding",
+      "description": "Percent-encode or decode full URLs or components, with control over reserved characters and component vs. whole-URI mode.",
+      "compute": "light",
+      "keywords": [
+        "url",
+        "percent",
+        "encodeuricomponent",
+        "escape",
+        "encode",
+        "decode"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "HTML Entity Encode / Decode",
+      "slug": "html-entity",
+      "category": "Encoding",
+      "description": "Escape and unescape HTML entities (named and numeric), covering &amp; &lt; and Unicode code points.",
+      "compute": "light",
+      "keywords": [
+        "html",
+        "entity",
+        "escape",
+        "unescape",
+        "&amp;",
+        "encode"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Text <-> Binary",
+      "slug": "text-binary",
+      "category": "Encoding",
+      "description": "Convert text to its binary (bits) representation and back, with adjustable byte grouping and delimiter.",
+      "compute": "light",
+      "keywords": [
+        "binary",
+        "bits",
+        "text",
+        "01",
+        "encode",
+        "decode"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Text <-> Decimal / ASCII",
+      "slug": "text-decimal",
+      "category": "Encoding",
+      "description": "Convert text to decimal char codes (charcode) and back, supporting ASCII and Unicode code points.",
+      "compute": "light",
+      "keywords": [
+        "decimal",
+        "ascii",
+        "charcode",
+        "codepoint",
+        "encode",
+        "decode"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Integer Base Converter",
+      "slug": "integer-base-converter",
+      "category": "Encoding",
+      "description": "Convert numbers between binary, octal, decimal, hex, and arbitrary bases (2-36).",
+      "compute": "light",
+      "keywords": [
+        "base",
+        "radix",
+        "binary",
+        "octal",
+        "hex",
+        "convert"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Gzip Compress / Decompress",
+      "slug": "gzip",
+      "category": "Encoding",
+      "description": "Gzip-compress text or files and decompress .gz data entirely in-browser, with selectable compression level.",
+      "compute": "heavy",
+      "keywords": [
+        "gzip",
+        "compress",
+        "decompress",
+        "gz",
+        "deflate",
+        "file"
+      ],
+      "priority": "p1",
+      "rustCrate": "flate2"
+    },
+    {
+      "name": "Deflate / Zlib Compress / Decompress",
+      "slug": "deflate-zlib",
+      "category": "Encoding",
+      "description": "Raw DEFLATE and zlib compress/decompress for text or binary data with level control.",
+      "compute": "heavy",
+      "keywords": [
+        "deflate",
+        "zlib",
+        "inflate",
+        "compress",
+        "decompress",
+        "raw"
+      ],
+      "priority": "p2",
+      "rustCrate": "flate2"
+    },
+    {
+      "name": "Brotli Compress / Decompress",
+      "slug": "brotli",
+      "category": "Encoding",
+      "description": "Brotli-compress and decompress text or files in-browser with quality/window tuning.",
+      "compute": "heavy",
+      "keywords": [
+        "brotli",
+        "compress",
+        "decompress",
+        "br",
+        "file",
+        "web"
+      ],
+      "priority": "p2",
+      "rustCrate": "brotli"
+    },
+    {
+      "name": "Zstandard Compress / Decompress",
+      "slug": "zstd",
+      "category": "Encoding",
+      "description": "Zstandard (zstd) compress/decompress for text or files with adjustable compression level.",
+      "compute": "heavy",
+      "keywords": [
+        "zstd",
+        "zstandard",
+        "compress",
+        "decompress",
+        "file",
+        "level"
+      ],
+      "priority": "p2",
+      "rustCrate": "zstd"
+    },
+    {
+      "name": "Quoted-Printable Encode / Decode",
+      "slug": "quoted-printable",
+      "category": "Encoding",
+      "description": "Encode/decode MIME quoted-printable (=XX) used in email bodies and headers.",
+      "compute": "light",
+      "keywords": [
+        "quoted-printable",
+        "mime",
+        "email",
+        "=XX",
+        "encode",
+        "decode"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Punycode / IDN Converter",
+      "slug": "punycode-idn",
+      "category": "Encoding",
+      "description": "Convert internationalized domain names to/from Punycode (xn-- ASCII) representation.",
+      "compute": "light",
+      "keywords": [
+        "punycode",
+        "idn",
+        "domain",
+        "xn--",
+        "unicode",
+        "convert"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "UTF-8 / Unicode Inspector",
+      "slug": "utf8-unicode-inspector",
+      "category": "Encoding",
+      "description": "Break text into code points showing UTF-8/UTF-16 byte sequences, hex, names, and escapes.",
+      "compute": "light",
+      "keywords": [
+        "utf-8",
+        "unicode",
+        "codepoint",
+        "inspector",
+        "bytes",
+        "escape"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Unicode Escape Encode / Decode",
+      "slug": "unicode-escape",
+      "category": "Encoding",
+      "description": "Convert text to/from \\uXXXX, \\xXX, \\u{...}, and \\N{...} escape sequences for code and JSON.",
+      "compute": "light",
+      "keywords": [
+        "unicode",
+        "escape",
+        "\\u",
+        "\\x",
+        "json",
+        "javascript"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Morse Code Encode / Decode",
+      "slug": "morse-code",
+      "category": "Encoding",
+      "description": "Translate text to and from Morse code with configurable dot/dash/space symbols.",
+      "compute": "light",
+      "keywords": [
+        "morse",
+        "code",
+        "dot",
+        "dash",
+        "translate",
+        "telegraph"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "ROT13 / ROT47 / Caesar Cipher",
+      "slug": "rot13-caesar",
+      "category": "Encoding",
+      "description": "Apply ROT13, ROT47, or arbitrary-shift Caesar substitution to text, both ways.",
+      "compute": "light",
+      "keywords": [
+        "rot13",
+        "rot47",
+        "caesar",
+        "cipher",
+        "shift",
+        "substitution"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Unix Timestamp Converter",
+      "slug": "unix-timestamp-converter",
+      "category": "Time",
+      "description": "Convert between Unix epoch timestamps (s/ms/us/ns) and human-readable dates in local time and UTC.",
+      "compute": "light",
+      "keywords": [
+        "unix",
+        "epoch",
+        "timestamp",
+        "seconds",
+        "milliseconds",
+        "date",
+        "utc"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "Date Format Converter",
+      "slug": "date-format-converter",
+      "category": "Time",
+      "description": "Parse a date and reformat it across ISO 8601, RFC 2822/3339, locale, and custom strftime-style patterns.",
+      "compute": "light",
+      "keywords": [
+        "date",
+        "format",
+        "iso8601",
+        "rfc3339",
+        "strftime",
+        "parse",
+        "pattern"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Timezone Converter",
+      "slug": "timezone-converter",
+      "category": "Time",
+      "description": "Convert a date/time between IANA timezones with DST handling and UTC offset display.",
+      "compute": "light",
+      "keywords": [
+        "timezone",
+        "iana",
+        "utc",
+        "offset",
+        "dst",
+        "convert",
+        "gmt"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "World Clock",
+      "slug": "world-clock",
+      "category": "Time",
+      "description": "Live clock showing current time across multiple selectable timezones side by side.",
+      "compute": "light",
+      "keywords": [
+        "world",
+        "clock",
+        "timezone",
+        "current time",
+        "cities",
+        "utc"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Date Difference & Age Calculator",
+      "slug": "date-difference-calculator",
+      "category": "Time",
+      "description": "Compute the difference between two dates in years, months, weeks, days, hours and total units; includes age calculation.",
+      "compute": "light",
+      "keywords": [
+        "date diff",
+        "age",
+        "duration",
+        "between dates",
+        "days between",
+        "calculator"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Duration Calculator",
+      "slug": "duration-calculator",
+      "category": "Time",
+      "description": "Add/subtract durations to dates and convert a duration between seconds, minutes, hours, days and ISO 8601 duration format.",
+      "compute": "light",
+      "keywords": [
+        "duration",
+        "add",
+        "subtract",
+        "iso8601",
+        "interval",
+        "hms",
+        "seconds"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Cron Expression Parser",
+      "slug": "cron-expression-parser",
+      "category": "Time",
+      "description": "Validate a cron expression, explain it in plain English, and list the next N scheduled run times.",
+      "compute": "light",
+      "keywords": [
+        "cron",
+        "crontab",
+        "schedule",
+        "next runs",
+        "parser",
+        "explain"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Countdown & Stopwatch",
+      "slug": "countdown-timer",
+      "category": "Time",
+      "description": "Count down to a target date/time or run a stopwatch with live remaining/elapsed display.",
+      "compute": "light",
+      "keywords": [
+        "countdown",
+        "stopwatch",
+        "timer",
+        "remaining",
+        "elapsed",
+        "target date"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Week Number & Calendar Info",
+      "slug": "week-number-calculator",
+      "category": "Time",
+      "description": "Find the ISO week number, day of year, quarter, and leap-year status for any date.",
+      "compute": "light",
+      "keywords": [
+        "week number",
+        "iso week",
+        "day of year",
+        "quarter",
+        "leap year",
+        "calendar"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Number Base Converter",
+      "slug": "number-base-converter",
+      "category": "Math",
+      "description": "Convert integers between binary, octal, decimal, hexadecimal, and arbitrary bases (2-36) using BigInt precision.",
+      "compute": "light",
+      "keywords": [
+        "base",
+        "binary",
+        "octal",
+        "decimal",
+        "hex",
+        "radix",
+        "convert"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "Bitwise Calculator",
+      "slug": "bitwise-calculator",
+      "category": "Math",
+      "description": "Perform AND, OR, XOR, NOT, and bit shifts on integers with binary/hex visualization.",
+      "compute": "light",
+      "keywords": [
+        "bitwise",
+        "and",
+        "or",
+        "xor",
+        "shift",
+        "binary",
+        "bits"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Expression Evaluator & Scientific Calculator",
+      "slug": "expression-evaluator",
+      "category": "Math",
+      "description": "Evaluate math expressions with functions, constants, and arbitrary-precision/big-number support beyond IEEE float.",
+      "compute": "heavy",
+      "keywords": [
+        "calculator",
+        "expression",
+        "scientific",
+        "evaluate",
+        "precision",
+        "bignum"
+      ],
+      "priority": "p1",
+      "rustCrate": "rug"
+    },
+    {
+      "name": "Percentage Calculator",
+      "slug": "percentage-calculator",
+      "category": "Math",
+      "description": "Compute percent of a number, percentage change, what-percent-of, and reverse-percentage results.",
+      "compute": "light",
+      "keywords": [
+        "percentage",
+        "percent",
+        "change",
+        "increase",
+        "decrease",
+        "ratio"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Ratio & Proportion Solver",
+      "slug": "ratio-proportion-solver",
+      "category": "Math",
+      "description": "Simplify ratios and solve for the missing term in a proportion (cross-multiplication).",
+      "compute": "light",
+      "keywords": [
+        "ratio",
+        "proportion",
+        "simplify",
+        "cross multiply",
+        "scale",
+        "aspect"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Roman Numeral Converter",
+      "slug": "roman-numeral-converter",
+      "category": "Math",
+      "description": "Convert between Roman numerals and Arabic integers in both directions.",
+      "compute": "light",
+      "keywords": [
+        "roman",
+        "numeral",
+        "arabic",
+        "convert",
+        "number"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "GCD, LCM & Prime Factorization",
+      "slug": "gcd-lcm-prime-factorization",
+      "category": "Math",
+      "description": "Compute GCD/LCM of numbers and factorize large integers into primes; primality testing for big numbers.",
+      "compute": "heavy",
+      "keywords": [
+        "gcd",
+        "lcm",
+        "prime",
+        "factorization",
+        "factor",
+        "primality"
+      ],
+      "priority": "p1",
+      "rustCrate": "num-prime"
+    },
+    {
+      "name": "Statistics Calculator",
+      "slug": "statistics-calculator",
+      "category": "Math",
+      "description": "Compute mean, median, mode, variance, standard deviation, quartiles and range from a dataset.",
+      "compute": "light",
+      "keywords": [
+        "statistics",
+        "mean",
+        "median",
+        "stddev",
+        "variance",
+        "quartile",
+        "dataset"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Matrix Calculator",
+      "slug": "matrix-calculator",
+      "category": "Math",
+      "description": "Add, multiply, transpose, invert, and find the determinant of matrices.",
+      "compute": "light",
+      "keywords": [
+        "matrix",
+        "determinant",
+        "inverse",
+        "transpose",
+        "multiply",
+        "linear algebra"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Equation Solver",
+      "slug": "equation-solver",
+      "category": "Math",
+      "description": "Solve linear and quadratic equations, returning real and complex roots.",
+      "compute": "light",
+      "keywords": [
+        "equation",
+        "solver",
+        "quadratic",
+        "linear",
+        "roots",
+        "polynomial"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Unit Converter",
+      "slug": "unit-converter",
+      "category": "Math",
+      "description": "Convert across length, mass, temperature, area, volume, speed, pressure, energy, angle, and fuel-economy units.",
+      "compute": "light",
+      "keywords": [
+        "unit",
+        "converter",
+        "length",
+        "mass",
+        "temperature",
+        "volume",
+        "speed"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "Data Size Converter",
+      "slug": "data-size-converter",
+      "category": "Math",
+      "description": "Convert digital storage between bits/bytes and SI (kB/MB) vs binary (KiB/MiB) prefixes.",
+      "compute": "light",
+      "keywords": [
+        "data size",
+        "bytes",
+        "kib",
+        "mib",
+        "gigabyte",
+        "binary",
+        "si"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Cooking Unit Converter",
+      "slug": "cooking-unit-converter",
+      "category": "Math",
+      "description": "Convert kitchen measurements between cups, tablespoons, teaspoons, ml, grams and ounces.",
+      "compute": "light",
+      "keywords": [
+        "cooking",
+        "recipe",
+        "cups",
+        "tablespoon",
+        "grams",
+        "ml",
+        "kitchen"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Currency Converter (offline rates)",
+      "slug": "currency-converter",
+      "category": "Math",
+      "description": "Convert currencies using manually-entered or last-cached exchange rates; live rates require a network fetch and are not available fully offline.",
+      "compute": "light",
+      "keywords": [
+        "currency",
+        "exchange rate",
+        "forex",
+        "convert",
+        "money",
+        "offline"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Hash Text (Multi-Algorithm)",
+      "slug": "hash-text",
+      "category": "Crypto",
+      "description": "Hash arbitrary text with MD5, SHA-1, SHA-256, SHA-384, SHA-512, SHA3, RIPEMD-160 and view all digests side by side in hex/base64.",
+      "compute": "light",
+      "keywords": [
+        "hash",
+        "md5",
+        "sha256",
+        "sha512",
+        "sha1",
+        "digest",
+        "checksum"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "Hash File / Checksum",
+      "slug": "hash-file",
+      "category": "Crypto",
+      "description": "Compute MD5/SHA-1/SHA-256/SHA-512/BLAKE3/CRC32 checksums of large files via streaming, with verify-against-expected support.",
+      "compute": "heavy",
+      "keywords": [
+        "file hash",
+        "checksum",
+        "verify",
+        "sha256sum",
+        "md5sum",
+        "crc32",
+        "blake3"
+      ],
+      "priority": "p0",
+      "rustCrate": "sha2, md-5, sha1, blake3, crc32fast"
+    },
+    {
+      "name": "BLAKE3 / SHA-3 Hasher",
+      "slug": "blake3-sha3-hash",
+      "category": "Crypto",
+      "description": "Generate modern BLAKE3 and SHA-3 (Keccak) digests for text or files with configurable output length (XOF) and keyed hashing.",
+      "compute": "heavy",
+      "keywords": [
+        "blake3",
+        "sha3",
+        "keccak",
+        "xof",
+        "keyed hash",
+        "modern hash"
+      ],
+      "priority": "p1",
+      "rustCrate": "blake3, sha3"
+    },
+    {
+      "name": "HMAC Generator",
+      "slug": "hmac-generator",
+      "category": "Crypto",
+      "description": "Compute keyed HMAC (HMAC-SHA256/SHA1/SHA512/MD5) over a message with a secret key, output in hex or base64.",
+      "compute": "light",
+      "keywords": [
+        "hmac",
+        "mac",
+        "keyed hash",
+        "hmac-sha256",
+        "message authentication"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "CRC32 / Checksum Calculator",
+      "slug": "crc32-checksum",
+      "category": "Crypto",
+      "description": "Calculate CRC32, CRC32C, Adler-32 and similar non-cryptographic checksums for text or hex input.",
+      "compute": "light",
+      "keywords": [
+        "crc32",
+        "crc32c",
+        "adler32",
+        "checksum",
+        "non-cryptographic"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Bcrypt Hash & Verify",
+      "slug": "bcrypt",
+      "category": "Crypto",
+      "description": "Generate bcrypt password hashes with configurable cost factor and verify a plaintext password against an existing bcrypt hash.",
+      "compute": "heavy",
+      "keywords": [
+        "bcrypt",
+        "password hash",
+        "verify",
+        "cost factor",
+        "salt"
+      ],
+      "priority": "p1",
+      "rustCrate": "bcrypt"
+    },
+    {
+      "name": "Argon2 Hash & Verify",
+      "slug": "argon2",
+      "category": "Crypto",
+      "description": "Derive Argon2id/i/d password hashes (PHC string) with tunable memory/iterations/parallelism and verify against a stored hash.",
+      "compute": "heavy",
+      "keywords": [
+        "argon2",
+        "argon2id",
+        "password hash",
+        "kdf",
+        "phc",
+        "verify"
+      ],
+      "priority": "p1",
+      "rustCrate": "argon2"
+    },
+    {
+      "name": "PBKDF2 Key Derivation",
+      "slug": "pbkdf2",
+      "category": "Crypto",
+      "description": "Derive keys from a password using PBKDF2 with selectable PRF (SHA-256/512), salt, iteration count and output length.",
+      "compute": "light",
+      "keywords": [
+        "pbkdf2",
+        "key derivation",
+        "kdf",
+        "password",
+        "iterations",
+        "salt"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "AES Encrypt / Decrypt (Text)",
+      "slug": "aes-encrypt-decrypt",
+      "category": "Crypto",
+      "description": "Symmetrically encrypt and decrypt text with AES-GCM/CBC, password-derived key, random IV/salt, output as base64.",
+      "compute": "light",
+      "keywords": [
+        "aes",
+        "encrypt",
+        "decrypt",
+        "aes-gcm",
+        "symmetric",
+        "cipher"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "RSA Key Pair Generator",
+      "slug": "rsa-keygen",
+      "category": "Crypto",
+      "description": "Generate RSA public/private key pairs (2048/3072/4096-bit) exported as PEM, for signing and encryption use.",
+      "compute": "heavy",
+      "keywords": [
+        "rsa",
+        "keypair",
+        "public key",
+        "private key",
+        "pem",
+        "keygen"
+      ],
+      "priority": "p1",
+      "rustCrate": "rsa"
+    },
+    {
+      "name": "ECDSA / Ed25519 Key Generator",
+      "slug": "ec-keygen",
+      "category": "Crypto",
+      "description": "Generate elliptic-curve key pairs (P-256/P-384, Ed25519, secp256k1) in PEM/JWK format for modern signing schemes.",
+      "compute": "heavy",
+      "keywords": [
+        "ecdsa",
+        "ed25519",
+        "elliptic curve",
+        "p-256",
+        "secp256k1",
+        "keygen",
+        "jwk"
+      ],
+      "priority": "p1",
+      "rustCrate": "p256, ed25519-dalek, k256"
+    },
+    {
+      "name": "Password Strength Meter",
+      "slug": "password-strength",
+      "category": "Crypto",
+      "description": "Estimate password strength and crack time with entropy analysis and zxcvbn-style feedback, fully offline.",
+      "compute": "light",
+      "keywords": [
+        "password strength",
+        "entropy",
+        "zxcvbn",
+        "crack time",
+        "security"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Password / Passphrase Generator",
+      "slug": "password-generator",
+      "category": "Crypto",
+      "description": "Generate cryptographically secure random passwords and diceware-style passphrases with configurable length and character sets.",
+      "compute": "light",
+      "keywords": [
+        "password generator",
+        "random password",
+        "passphrase",
+        "diceware",
+        "secure"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JWT Decoder & Verifier",
+      "slug": "jwt-decoder",
+      "category": "Crypto",
+      "description": "Decode JWT header/payload, display claims with expiry, and verify HS/RS/ES signatures against a provided key or secret.",
+      "compute": "light",
+      "keywords": [
+        "jwt",
+        "decode",
+        "verify",
+        "token",
+        "claims",
+        "json web token"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "JWT Generator / Signer",
+      "slug": "jwt-generator",
+      "category": "Crypto",
+      "description": "Build and sign JSON Web Tokens with custom claims using HS256/384/512 or RS/ES keys, with auto iat/exp helpers.",
+      "compute": "light",
+      "keywords": [
+        "jwt",
+        "sign",
+        "generate",
+        "token",
+        "hs256",
+        "rs256",
+        "claims"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "X.509 Certificate Decoder",
+      "slug": "x509-cert-decoder",
+      "category": "Crypto",
+      "description": "Parse PEM/DER X.509 certificates to show subject, issuer, validity, SANs, key usage, fingerprints and chain details.",
+      "compute": "heavy",
+      "keywords": [
+        "x509",
+        "certificate",
+        "ssl",
+        "tls",
+        "pem",
+        "der",
+        "decoder"
+      ],
+      "priority": "p1",
+      "rustCrate": "x509-parser"
+    },
+    {
+      "name": "CSR Decoder",
+      "slug": "csr-decoder",
+      "category": "Crypto",
+      "description": "Decode a PEM Certificate Signing Request to inspect subject, public key, requested SANs and attributes.",
+      "compute": "heavy",
+      "keywords": [
+        "csr",
+        "certificate signing request",
+        "pkcs10",
+        "decoder",
+        "pem"
+      ],
+      "priority": "p2",
+      "rustCrate": "x509-parser"
+    },
+    {
+      "name": "PEM / DER Converter",
+      "slug": "pem-der-converter",
+      "category": "Crypto",
+      "description": "Convert keys and certificates between PEM and DER, inspect PEM block types, and re-encode base64 bodies.",
+      "compute": "heavy",
+      "keywords": [
+        "pem",
+        "der",
+        "convert",
+        "certificate",
+        "key",
+        "base64"
+      ],
+      "priority": "p2",
+      "rustCrate": "pem, der"
+    },
+    {
+      "name": "TOTP / OTP Generator",
+      "slug": "totp-generator",
+      "category": "Crypto",
+      "description": "Generate time-based (TOTP) and counter-based (HOTP) one-time codes from a secret, with otpauth URI and QR support.",
+      "compute": "light",
+      "keywords": [
+        "totp",
+        "otp",
+        "hotp",
+        "2fa",
+        "authenticator",
+        "one-time password"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Basic Auth Header Generator",
+      "slug": "basic-auth-header",
+      "category": "Crypto",
+      "description": "Build an HTTP Basic Authentication header (base64 of user:password) and decode existing Authorization headers.",
+      "compute": "light",
+      "keywords": [
+        "basic auth",
+        "authorization header",
+        "http",
+        "base64",
+        "credentials"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Htpasswd Generator",
+      "slug": "htpasswd-generator",
+      "category": "Crypto",
+      "description": "Create Apache/nginx .htpasswd entries using bcrypt, APR1-MD5, SHA or crypt for a given username and password.",
+      "compute": "heavy",
+      "keywords": [
+        "htpasswd",
+        "apache",
+        "nginx",
+        "apr1",
+        "bcrypt",
+        "basic auth"
+      ],
+      "priority": "p2",
+      "rustCrate": "bcrypt, md-5"
+    },
+    {
+      "name": "UUID / Random Token Generator",
+      "slug": "crypto-token-generator",
+      "category": "Crypto",
+      "description": "Generate cryptographically secure random tokens, API keys, hex/base64 nonces and UUIDs of arbitrary length.",
+      "compute": "light",
+      "keywords": [
+        "token",
+        "api key",
+        "nonce",
+        "random",
+        "secure",
+        "secret"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Ed25519 / RSA Sign & Verify",
+      "slug": "sign-verify",
+      "category": "Crypto",
+      "description": "Sign a message with a private key and verify signatures with a public key using RSA, ECDSA or Ed25519.",
+      "compute": "heavy",
+      "keywords": [
+        "sign",
+        "verify",
+        "signature",
+        "ed25519",
+        "rsa",
+        "ecdsa",
+        "digital signature"
+      ],
+      "priority": "p2",
+      "rustCrate": "ed25519-dalek, rsa, p256"
+    },
+    {
+      "name": "URL Parser & Builder",
+      "slug": "url-parser",
+      "category": "Web",
+      "description": "Parse a URL into protocol, host, port, path, query, and hash, and edit parts to rebuild it.",
+      "compute": "light",
+      "keywords": [
+        "url",
+        "parse",
+        "query",
+        "uri",
+        "builder",
+        "components",
+        "href"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Query String to JSON",
+      "slug": "query-string-json",
+      "category": "Web",
+      "description": "Convert URL query strings to JSON and back, handling nested keys and array notation.",
+      "compute": "light",
+      "keywords": [
+        "querystring",
+        "json",
+        "url",
+        "params",
+        "search",
+        "encode",
+        "decode"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "cURL to Code",
+      "slug": "curl-to-code",
+      "category": "Web",
+      "description": "Convert a cURL command into fetch, axios, Python requests, Go, and other HTTP client code.",
+      "compute": "light",
+      "keywords": [
+        "curl",
+        "fetch",
+        "axios",
+        "requests",
+        "http",
+        "convert",
+        "code"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON to fetch / Request Builder",
+      "slug": "json-to-fetch",
+      "category": "Web",
+      "description": "Build a fetch/XHR request from method, URL, headers, and a JSON body and copy ready-to-run code.",
+      "compute": "light",
+      "keywords": [
+        "fetch",
+        "json",
+        "request",
+        "http",
+        "body",
+        "headers",
+        "ajax"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "IP & Subnet Calculator (IPv4/IPv6 CIDR)",
+      "slug": "subnet-calculator",
+      "category": "Web",
+      "description": "Compute network/broadcast/range, mask, host count, and split CIDR blocks for IPv4 and IPv6.",
+      "compute": "light",
+      "keywords": [
+        "ip",
+        "subnet",
+        "cidr",
+        "ipv4",
+        "ipv6",
+        "netmask",
+        "network",
+        "calculator"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "User-Agent Parser",
+      "slug": "user-agent-parser",
+      "category": "Web",
+      "description": "Parse a User-Agent string into browser, engine, OS, and device details.",
+      "compute": "light",
+      "keywords": [
+        "user-agent",
+        "ua",
+        "browser",
+        "os",
+        "device",
+        "parse",
+        "useragent"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "HTTP Status Codes Reference",
+      "slug": "http-status-codes",
+      "category": "Web",
+      "description": "Searchable reference of HTTP status codes with meaning, category, and typical use.",
+      "compute": "light",
+      "keywords": [
+        "http",
+        "status",
+        "code",
+        "404",
+        "500",
+        "reference",
+        "response"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "MIME Type Lookup",
+      "slug": "mime-type-lookup",
+      "category": "Web",
+      "description": "Look up MIME content types by file extension and vice versa.",
+      "compute": "light",
+      "keywords": [
+        "mime",
+        "content-type",
+        "extension",
+        "media type",
+        "lookup",
+        "file"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "HTTP Headers Reference",
+      "slug": "http-headers-reference",
+      "category": "Web",
+      "description": "Searchable reference of request/response HTTP headers with descriptions and examples.",
+      "compute": "light",
+      "keywords": [
+        "http",
+        "headers",
+        "reference",
+        "cache-control",
+        "cors",
+        "request",
+        "response"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Basic Auth Generator",
+      "slug": "basic-auth-generator",
+      "category": "Web",
+      "description": "Generate an HTTP Basic Authorization header value from a username and password.",
+      "compute": "light",
+      "keywords": [
+        "basic auth",
+        "authorization",
+        "header",
+        "base64",
+        "credentials",
+        "http"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Cookie Parser",
+      "slug": "cookie-parser",
+      "category": "Web",
+      "description": "Parse Cookie and Set-Cookie headers into name/value pairs with attributes like expires and SameSite.",
+      "compute": "light",
+      "keywords": [
+        "cookie",
+        "set-cookie",
+        "parse",
+        "samesite",
+        "http",
+        "header",
+        "session"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "HAR Viewer",
+      "slug": "har-viewer",
+      "category": "Web",
+      "description": "Inspect a HAR capture: requests, status, timings, sizes, and headers in a readable table.",
+      "compute": "light",
+      "keywords": [
+        "har",
+        "network",
+        "requests",
+        "viewer",
+        "devtools",
+        "timings",
+        "waterfall"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "OpenGraph & Meta Preview",
+      "slug": "opengraph-preview",
+      "category": "Web",
+      "description": "Generate OpenGraph/Twitter meta tags and preview how a link card renders on social platforms.",
+      "compute": "light",
+      "keywords": [
+        "opengraph",
+        "og",
+        "meta",
+        "twitter card",
+        "seo",
+        "preview",
+        "social"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Email Header Analyzer",
+      "slug": "email-header-analyzer",
+      "category": "Web",
+      "description": "Parse raw email headers to trace delivery hops, timings, SPF/DKIM/DMARC results, and sender info.",
+      "compute": "light",
+      "keywords": [
+        "email",
+        "headers",
+        "spf",
+        "dkim",
+        "dmarc",
+        "received",
+        "analyzer",
+        "smtp"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "SQL Formatter",
+      "slug": "sql-formatter",
+      "category": "Web",
+      "description": "Format and beautify SQL queries with dialect-aware keyword casing and indentation.",
+      "compute": "light",
+      "keywords": [
+        "sql",
+        "format",
+        "beautify",
+        "query",
+        "pretty",
+        "indent",
+        "database"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "HTML Beautify / Minify",
+      "slug": "html-formatter",
+      "category": "Web",
+      "description": "Beautify or minify HTML markup with configurable indentation and whitespace handling.",
+      "compute": "light",
+      "keywords": [
+        "html",
+        "beautify",
+        "minify",
+        "format",
+        "pretty",
+        "indent"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "CSS Beautify / Minify",
+      "slug": "css-formatter",
+      "category": "Web",
+      "description": "Format or minify CSS, normalizing whitespace, properties, and shorthand.",
+      "compute": "light",
+      "keywords": [
+        "css",
+        "beautify",
+        "minify",
+        "format",
+        "pretty",
+        "stylesheet"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JS Beautify / Minify",
+      "slug": "js-formatter",
+      "category": "Web",
+      "description": "Beautify or minify JavaScript with configurable indentation and semicolon handling.",
+      "compute": "light",
+      "keywords": [
+        "javascript",
+        "js",
+        "beautify",
+        "minify",
+        "format",
+        "pretty",
+        "uglify"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "CSS px ↔ rem Converter",
+      "slug": "css-px-rem-converter",
+      "category": "Web",
+      "description": "Convert between px, rem, and em CSS units against a configurable root font size.",
+      "compute": "light",
+      "keywords": [
+        "css",
+        "px",
+        "rem",
+        "em",
+        "units",
+        "convert",
+        "font-size"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Box-Shadow Generator",
+      "slug": "box-shadow-generator",
+      "category": "Web",
+      "description": "Visually build CSS box-shadow with offset, blur, spread, color, and inset, with live preview.",
+      "compute": "light",
+      "keywords": [
+        "css",
+        "box-shadow",
+        "shadow",
+        "generator",
+        "preview",
+        "design"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "CSS Gradient Generator",
+      "slug": "css-gradient-generator",
+      "category": "Web",
+      "description": "Create linear/radial/conic CSS gradients with multiple color stops and live preview.",
+      "compute": "light",
+      "keywords": [
+        "css",
+        "gradient",
+        "linear",
+        "radial",
+        "conic",
+        "generator",
+        "color"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Cubic-Bezier Editor",
+      "slug": "cubic-bezier-editor",
+      "category": "Web",
+      "description": "Design CSS cubic-bezier easing curves with an interactive graph and animation preview.",
+      "compute": "light",
+      "keywords": [
+        "cubic-bezier",
+        "easing",
+        "animation",
+        "transition",
+        "curve",
+        "css"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Flexbox & Grid Playground",
+      "slug": "flexbox-grid-playground",
+      "category": "Web",
+      "description": "Interactively configure CSS flexbox/grid container and item properties and copy the resulting CSS.",
+      "compute": "light",
+      "keywords": [
+        "flexbox",
+        "grid",
+        "css",
+        "layout",
+        "playground",
+        "align",
+        "justify"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Regex Cheatsheet & Tester",
+      "slug": "regex-cheatsheet",
+      "category": "Web",
+      "description": "Test regular expressions against sample text with match highlighting plus a syntax cheatsheet.",
+      "compute": "light",
+      "keywords": [
+        "regex",
+        "regexp",
+        "cheatsheet",
+        "tester",
+        "pattern",
+        "match",
+        "highlight"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "nginx Config Generator",
+      "slug": "nginx-config-generator",
+      "category": "Web",
+      "description": "Generate common nginx server-block snippets for reverse proxy, SSL, gzip, and static sites.",
+      "compute": "light",
+      "keywords": [
+        "nginx",
+        "config",
+        "reverse proxy",
+        "ssl",
+        "server block",
+        "snippet",
+        "gzip"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "UUID Generator",
+      "slug": "uuid-generator",
+      "category": "Generators",
+      "description": "Generate UUIDs (v1 timestamp, v4 random, v7 sortable) singly or in bulk with formatting options.",
+      "compute": "light",
+      "keywords": [
+        "uuid",
+        "guid",
+        "v4",
+        "v7",
+        "v1",
+        "unique id"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "ULID Generator",
+      "slug": "ulid-generator",
+      "category": "Generators",
+      "description": "Generate lexicographically sortable, timestamp-based ULIDs as a Crockford base32 alternative to UUID.",
+      "compute": "light",
+      "keywords": [
+        "ulid",
+        "sortable id",
+        "base32",
+        "timestamp id",
+        "unique id"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Nano ID Generator",
+      "slug": "nanoid-generator",
+      "category": "Generators",
+      "description": "Generate compact, URL-safe Nano IDs with configurable alphabet and length.",
+      "compute": "light",
+      "keywords": [
+        "nanoid",
+        "short id",
+        "url safe",
+        "random id",
+        "token"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Passphrase Generator",
+      "slug": "passphrase-generator",
+      "category": "Generators",
+      "description": "Generate memorable Diceware-style word passphrases with custom separators, count, and capitalization.",
+      "compute": "light",
+      "keywords": [
+        "passphrase",
+        "diceware",
+        "wordlist",
+        "memorable password",
+        "eff"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "QR Code Generator",
+      "slug": "qr-code-generator",
+      "category": "Generators",
+      "description": "Generate customizable QR codes (colors, logo overlay, error correction) for text, URLs, vCard, WiFi.",
+      "compute": "heavy",
+      "keywords": [
+        "qr code",
+        "qrcode",
+        "wifi qr",
+        "vcard",
+        "logo"
+      ],
+      "priority": "p0",
+      "rustCrate": "qrcode"
+    },
+    {
+      "name": "WiFi QR Code Generator",
+      "slug": "wifi-qr-code-generator",
+      "category": "Generators",
+      "description": "Generate a scannable WiFi QR code from SSID, password, and encryption type for instant device join.",
+      "compute": "heavy",
+      "keywords": [
+        "wifi qr",
+        "ssid",
+        "wpa",
+        "network qr",
+        "qr code"
+      ],
+      "priority": "p1",
+      "rustCrate": "qrcode"
+    },
+    {
+      "name": "QR / Barcode Reader",
+      "slug": "qr-barcode-reader",
+      "category": "Generators",
+      "description": "Decode QR codes and common barcodes from an uploaded image or camera frame, fully client-side.",
+      "compute": "heavy",
+      "keywords": [
+        "qr reader",
+        "barcode scanner",
+        "decode",
+        "rqrr",
+        "camera"
+      ],
+      "priority": "p1",
+      "rustCrate": "rqrr, bardecoder"
+    },
+    {
+      "name": "Barcode Generator",
+      "slug": "barcode-generator",
+      "category": "Generators",
+      "description": "Generate 1D barcodes (Code128, Code39, EAN-13, UPC-A) as crisp SVG/PNG with checksum handling.",
+      "compute": "heavy",
+      "keywords": [
+        "barcode",
+        "code128",
+        "ean",
+        "upc",
+        "code39"
+      ],
+      "priority": "p1",
+      "rustCrate": "barcoders"
+    },
+    {
+      "name": "Fake / Test Data Generator",
+      "slug": "fake-data-generator",
+      "category": "Generators",
+      "description": "Generate realistic fake records (names, emails, addresses, phones, dates) with locale and count controls.",
+      "compute": "light",
+      "keywords": [
+        "fake data",
+        "test data",
+        "faker",
+        "mock",
+        "seed"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "Test Credit Card Number Generator",
+      "slug": "test-credit-card-generator",
+      "category": "Generators",
+      "description": "Generate Luhn-valid test card numbers (Visa, Mastercard, Amex) for sandbox testing only.",
+      "compute": "light",
+      "keywords": [
+        "credit card",
+        "luhn",
+        "test card",
+        "visa",
+        "mastercard"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "category": "Generators",
+      "description": "Generate placeholder text by words, sentences, or paragraphs with optional HTML wrapping.",
+      "compute": "light",
+      "keywords": [
+        "lorem ipsum",
+        "placeholder text",
+        "filler",
+        "dummy text",
+        "paragraphs"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Mock JSON Generator",
+      "slug": "mock-json-generator",
+      "category": "Generators",
+      "description": "Generate structured mock JSON arrays from a field schema with typed fake values and nesting.",
+      "compute": "light",
+      "keywords": [
+        "mock json",
+        "json data",
+        "api mock",
+        "schema",
+        "fixtures"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": ".gitignore Generator",
+      "slug": "gitignore-generator",
+      "category": "Generators",
+      "description": "Build a .gitignore by combining curated templates for languages, frameworks, editors, and OSes.",
+      "compute": "light",
+      "keywords": [
+        "gitignore",
+        "git",
+        "ignore",
+        "template",
+        "boilerplate"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Cron Expression Builder",
+      "slug": "cron-expression-builder",
+      "category": "Generators",
+      "description": "Build cron expressions via a visual schedule picker with a plain-English preview and next run times.",
+      "compute": "light",
+      "keywords": [
+        "cron",
+        "crontab",
+        "schedule",
+        "builder",
+        "next run"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Crontab Explainer",
+      "slug": "crontab-explainer",
+      "category": "Generators",
+      "description": "Parse a cron expression into a human-readable description and upcoming execution times.",
+      "compute": "light",
+      "keywords": [
+        "crontab guru",
+        "cron parser",
+        "explain cron",
+        "schedule",
+        "next runs"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Random Number & String Generator",
+      "slug": "random-generator",
+      "category": "Generators",
+      "description": "Generate cryptographically random numbers, strings, bytes, and hex within configurable ranges.",
+      "compute": "light",
+      "keywords": [
+        "random number",
+        "random string",
+        "rng",
+        "bytes",
+        "hex"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Dice & Coin Roller",
+      "slug": "dice-coin-roller",
+      "category": "Generators",
+      "description": "Roll dice (d4-d100, multiple dice) and flip coins using fair cryptographic randomness.",
+      "compute": "light",
+      "keywords": [
+        "dice",
+        "coin flip",
+        "roll",
+        "d20",
+        "random"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Color Palette Generator",
+      "slug": "color-palette-generator",
+      "category": "Generators",
+      "description": "Generate harmonious color palettes (complementary, analogous, triadic) from a base color with hex/HSL output.",
+      "compute": "light",
+      "keywords": [
+        "color palette",
+        "scheme",
+        "harmony",
+        "swatches",
+        "hex"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Meta Tags Generator",
+      "slug": "meta-tags-generator",
+      "category": "Generators",
+      "description": "Generate HTML meta, Open Graph, and Twitter Card tags from page details with a social preview.",
+      "compute": "light",
+      "keywords": [
+        "meta tags",
+        "open graph",
+        "twitter card",
+        "seo",
+        "og"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "robots.txt Generator",
+      "slug": "robots-txt-generator",
+      "category": "Generators",
+      "description": "Build a robots.txt with per-agent allow/disallow rules, crawl-delay, and sitemap directives.",
+      "compute": "light",
+      "keywords": [
+        "robots.txt",
+        "crawler",
+        "seo",
+        "disallow",
+        "user-agent"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Sitemap Generator",
+      "slug": "sitemap-generator",
+      "category": "Generators",
+      "description": "Generate an XML sitemap from a URL list with priority, changefreq, and lastmod fields.",
+      "compute": "light",
+      "keywords": [
+        "sitemap",
+        "xml",
+        "seo",
+        "urls",
+        "search engine"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": ".htaccess Generator",
+      "slug": "htaccess-generator",
+      "category": "Generators",
+      "description": "Generate Apache .htaccess snippets for redirects, rewrites, HTTPS forcing, and access rules.",
+      "compute": "light",
+      "keywords": [
+        "htaccess",
+        "apache",
+        "redirect",
+        "rewrite",
+        "mod_rewrite"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Chmod Calculator",
+      "slug": "chmod-calculator",
+      "category": "Generators",
+      "description": "Convert between symbolic and numeric Unix file permissions with a checkbox matrix and chmod command.",
+      "compute": "light",
+      "keywords": [
+        "chmod",
+        "permissions",
+        "octal",
+        "unix",
+        "rwx"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Slug Generator",
+      "slug": "slug-generator",
+      "category": "Generators",
+      "description": "Convert text into clean URL slugs with transliteration, lowercasing, and custom separators.",
+      "compute": "light",
+      "keywords": [
+        "slug",
+        "url",
+        "slugify",
+        "permalink",
+        "kebab"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "BIP39 Mnemonic Generator",
+      "slug": "bip39-mnemonic-generator",
+      "category": "Generators",
+      "description": "Generate and validate BIP39 seed phrases (12-24 words) with entropy and seed derivation.",
+      "compute": "heavy",
+      "keywords": [
+        "bip39",
+        "mnemonic",
+        "seed phrase",
+        "wallet",
+        "entropy"
+      ],
+      "priority": "p2",
+      "rustCrate": "bip39"
+    },
+    {
+      "name": "Regex from Example",
+      "slug": "regex-from-example",
+      "category": "Generators",
+      "description": "Infer a candidate regular expression from sample matching strings, with a live tester.",
+      "compute": "light",
+      "keywords": [
+        "regex",
+        "regexp",
+        "from example",
+        "pattern",
+        "infer"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Image Converter",
+      "slug": "image-converter",
+      "category": "Image",
+      "description": "One mega converter between JPG, PNG, WebP, AVIF, GIF, BMP, TIFF, and ICO (with multi-resolution ICO output), batch-capable.",
+      "compute": "heavy",
+      "rustCrate": "image, ravif, image-webp, ico, tiff",
+      "keywords": [
+        "convert",
+        "jpg",
+        "png",
+        "webp",
+        "avif",
+        "gif",
+        "bmp",
+        "tiff",
+        "ico",
+        "format"
+      ],
+      "priority": "p0"
+    },
+    {
+      "name": "Image Compressor",
+      "slug": "image-compressor",
+      "category": "Image",
+      "description": "Lossy/lossless compression and optimization for JPG (MozJPEG), PNG (OxiPNG), WebP, and AVIF with quality slider and before/after size.",
+      "compute": "heavy",
+      "rustCrate": "mozjpeg-sys, oxipng, image-webp, ravif",
+      "keywords": [
+        "compress",
+        "optimize",
+        "minify",
+        "quality",
+        "mozjpeg",
+        "oxipng",
+        "reduce size"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Image Resizer",
+      "slug": "image-resizer",
+      "category": "Image",
+      "description": "Resize/scale images by pixels or percent with aspect-lock and high-quality (Lanczos) resampling; supports batch.",
+      "compute": "heavy",
+      "rustCrate": "image",
+      "keywords": [
+        "resize",
+        "scale",
+        "dimensions",
+        "width",
+        "height",
+        "lanczos",
+        "batch"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Image Cropper",
+      "slug": "image-cropper",
+      "category": "Image",
+      "description": "Crop images to a region or fixed aspect ratio with interactive selection and exact pixel input.",
+      "compute": "heavy",
+      "rustCrate": "image",
+      "keywords": [
+        "crop",
+        "trim",
+        "cut",
+        "aspect ratio",
+        "selection"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Image Rotate & Flip",
+      "slug": "image-rotate-flip",
+      "category": "Image",
+      "description": "Rotate by 90/180/270 or arbitrary angle and flip horizontally/vertically, with lossless JPEG rotation where possible.",
+      "compute": "heavy",
+      "rustCrate": "image",
+      "keywords": [
+        "rotate",
+        "flip",
+        "mirror",
+        "transform",
+        "orientation",
+        "lossless"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "EXIF / Metadata Stripper",
+      "slug": "image-metadata-stripper",
+      "category": "Image",
+      "description": "Remove EXIF, GPS, XMP, IPTC, and ICC metadata from JPG/PNG/WebP for privacy without re-encoding pixels.",
+      "compute": "heavy",
+      "rustCrate": "img-parts",
+      "keywords": [
+        "exif",
+        "strip",
+        "metadata",
+        "gps",
+        "privacy",
+        "remove",
+        "scrub"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "EXIF Viewer",
+      "slug": "exif-viewer",
+      "category": "Image",
+      "description": "Inspect all embedded metadata (camera, lens, GPS coordinates, timestamps, ICC) from a photo, fully offline.",
+      "compute": "light",
+      "rustCrate": "",
+      "keywords": [
+        "exif",
+        "viewer",
+        "metadata",
+        "gps",
+        "camera",
+        "inspect"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Color Picker from Image",
+      "slug": "image-color-picker",
+      "category": "Image",
+      "description": "Eyedrop any pixel from an uploaded image to get its HEX/RGB/HSL value, with zoom and magnifier.",
+      "compute": "light",
+      "rustCrate": "",
+      "keywords": [
+        "color picker",
+        "eyedropper",
+        "hex",
+        "rgb",
+        "pixel",
+        "sample"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Image to Base64 / Data URI",
+      "slug": "image-to-base64",
+      "category": "Image",
+      "description": "Encode an image to a Base64 data-URI (and decode back), ready to paste into CSS/HTML/JSON.",
+      "compute": "light",
+      "rustCrate": "",
+      "keywords": [
+        "base64",
+        "data uri",
+        "encode",
+        "decode",
+        "inline",
+        "css"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Favicon Generator",
+      "slug": "favicon-generator",
+      "category": "Image",
+      "description": "Generate a complete favicon set (multi-res favicon.ico plus PNGs and apple-touch-icon) and HTML link tags from one image.",
+      "compute": "heavy",
+      "rustCrate": "image, ico",
+      "keywords": [
+        "favicon",
+        "ico",
+        "apple-touch-icon",
+        "manifest",
+        "website icon"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Placeholder Image Generator",
+      "slug": "placeholder-image-generator",
+      "category": "Image",
+      "description": "Create solid/gradient placeholder images of any size with custom text, colors, and format for mockups.",
+      "compute": "light",
+      "rustCrate": "",
+      "keywords": [
+        "placeholder",
+        "mockup",
+        "dummy image",
+        "placehold",
+        "stub"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "SVG Optimizer / Minifier",
+      "slug": "svg-optimizer",
+      "category": "Image",
+      "description": "Clean and minify SVG markup (remove metadata, collapse paths, round precision) to shrink file size, SVGO-style.",
+      "compute": "heavy",
+      "rustCrate": "usvg",
+      "keywords": [
+        "svg",
+        "optimize",
+        "minify",
+        "svgo",
+        "cleanup",
+        "compress"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "SVG to PNG / Raster",
+      "slug": "svg-to-png",
+      "category": "Image",
+      "description": "Rasterize SVG to PNG (or WebP/JPG) at any resolution/scale with transparent background support.",
+      "compute": "heavy",
+      "rustCrate": "resvg, usvg, tiny-skia",
+      "keywords": [
+        "svg",
+        "png",
+        "rasterize",
+        "render",
+        "export",
+        "scale"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Image to ASCII Art",
+      "slug": "image-to-ascii",
+      "category": "Image",
+      "description": "Convert an image to ASCII/ANSI text art with adjustable width, character set, and color.",
+      "compute": "heavy",
+      "rustCrate": "image",
+      "keywords": [
+        "ascii",
+        "art",
+        "text",
+        "ansi",
+        "convert",
+        "terminal"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Spritesheet Generator",
+      "slug": "spritesheet-generator",
+      "category": "Image",
+      "description": "Pack multiple images into a single CSS sprite sheet and emit the corresponding CSS/JSON coordinate map.",
+      "compute": "heavy",
+      "rustCrate": "image",
+      "keywords": [
+        "spritesheet",
+        "sprite",
+        "atlas",
+        "css sprites",
+        "pack",
+        "texture"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Image Diff / Compare",
+      "slug": "image-diff",
+      "category": "Image",
+      "description": "Pixel-compare two images and visualize the differences with a side-by-side, slider, or highlighted-diff view.",
+      "compute": "heavy",
+      "rustCrate": "image",
+      "keywords": [
+        "diff",
+        "compare",
+        "pixel",
+        "difference",
+        "visual",
+        "overlay"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "QR Code in Image",
+      "slug": "qr-image-tool",
+      "category": "Image",
+      "description": "Generate a styled QR code and overlay a logo/embed it into an image, or detect/decode a QR from an uploaded image.",
+      "compute": "heavy",
+      "rustCrate": "qrcode, rqrr, image",
+      "keywords": [
+        "qr",
+        "qr code",
+        "logo",
+        "embed",
+        "decode",
+        "scan"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "GIF / Animated Image Toolkit",
+      "slug": "gif-toolkit",
+      "category": "Image",
+      "description": "Create, optimize, resize, and split animated GIFs/APNG/animated WebP; convert video clips to GIF and extract frames.",
+      "compute": "heavy",
+      "rustCrate": "gif, gifski, image",
+      "keywords": [
+        "gif",
+        "animated",
+        "apng",
+        "webp",
+        "frames",
+        "optimize",
+        "split"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Image Background Remover",
+      "slug": "background-remover",
+      "category": "Image",
+      "description": "Remove or replace an image background client-side using an in-browser segmentation model (U2Net/rembg-style ONNX).",
+      "compute": "heavy",
+      "rustCrate": "ort, image",
+      "keywords": [
+        "background remove",
+        "cutout",
+        "transparent",
+        "segmentation",
+        "rembg",
+        "u2net"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Image Watermark",
+      "slug": "image-watermark",
+      "category": "Image",
+      "description": "Add a text or logo watermark with adjustable position, opacity, scale, and tiling, batch-capable.",
+      "compute": "heavy",
+      "rustCrate": "image, imageproc",
+      "keywords": [
+        "watermark",
+        "logo",
+        "overlay",
+        "stamp",
+        "brand",
+        "opacity"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "HEIC / HEIF Converter",
+      "slug": "heic-converter",
+      "category": "Image",
+      "description": "Convert iPhone HEIC/HEIF photos to JPG/PNG/WebP, preserving or stripping EXIF as chosen.",
+      "compute": "heavy",
+      "rustCrate": "libheif-rs, image",
+      "keywords": [
+        "heic",
+        "heif",
+        "iphone",
+        "convert",
+        "jpg",
+        "apple photos"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Audio / Video Converter & Trimmer",
+      "slug": "media-converter",
+      "category": "Media",
+      "description": "Light audio/video transcoding, trimming, muting, extract-audio, and clip-to-GIF via ffmpeg.wasm. Large download, runs fully offline.",
+      "compute": "heavy",
+      "rustCrate": "",
+      "keywords": [
+        "ffmpeg",
+        "video",
+        "audio",
+        "convert",
+        "trim",
+        "mp4",
+        "mp3",
+        "extract"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "JSON Formatter & Validator",
+      "slug": "json-formatter",
+      "category": "Data",
+      "description": "Pretty-print, minify, and validate JSON with configurable indentation and error line/column reporting.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "format",
+        "beautify",
+        "pretty",
+        "minify",
+        "validate",
+        "lint"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON Minifier",
+      "slug": "json-minifier",
+      "category": "Data",
+      "description": "Strip whitespace and compact JSON to the smallest valid representation for transport or storage.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "minify",
+        "compact",
+        "compress",
+        "whitespace"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON Diff",
+      "slug": "json-diff",
+      "category": "Data",
+      "description": "Structural, order-insensitive diff of two JSON documents showing added, removed, and changed keys/values.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "diff",
+        "compare",
+        "delta",
+        "changes",
+        "merge-patch"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON Sort Keys",
+      "slug": "json-sort-keys",
+      "category": "Data",
+      "description": "Recursively sort object keys alphabetically (asc/desc) to produce canonical, diff-friendly JSON.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "sort",
+        "keys",
+        "canonical",
+        "order",
+        "alphabetize"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON String Escape / Unescape",
+      "slug": "json-escape",
+      "category": "Data",
+      "description": "Escape arbitrary text into a JSON string literal or unescape a JSON string back to raw text.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "escape",
+        "unescape",
+        "string",
+        "quote",
+        "stringify"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSONPath / JMESPath Query",
+      "slug": "json-query",
+      "category": "Data",
+      "description": "Run JSONPath or JMESPath expressions against a JSON document and view matched results live.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "jsonpath",
+        "jmespath",
+        "query",
+        "filter",
+        "select",
+        "xpath"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON to TypeScript Types",
+      "slug": "json-to-typescript",
+      "category": "Converters",
+      "description": "Infer TypeScript interfaces/types from a JSON sample, with optional readonly and union handling.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "typescript",
+        "types",
+        "interface",
+        "quicktype",
+        "codegen"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON to Go Structs",
+      "slug": "json-to-go",
+      "category": "Converters",
+      "description": "Generate Go struct definitions with json tags from a JSON sample.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "golang",
+        "go",
+        "struct",
+        "tags",
+        "codegen"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON to Rust Structs",
+      "slug": "json-to-rust",
+      "category": "Converters",
+      "description": "Generate Rust structs with serde derive attributes from a JSON sample.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "rust",
+        "struct",
+        "serde",
+        "derive",
+        "codegen"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON <-> YAML Converter",
+      "slug": "json-yaml-converter",
+      "category": "Converters",
+      "description": "Convert bidirectionally between JSON and YAML with comment-aware, round-trip-safe serialization.",
+      "compute": "heavy",
+      "keywords": [
+        "json",
+        "yaml",
+        "convert",
+        "yml",
+        "serde",
+        "roundtrip"
+      ],
+      "priority": "p0",
+      "rustCrate": "serde_yaml, serde_json"
+    },
+    {
+      "name": "JSON <-> TOML Converter",
+      "slug": "json-toml-converter",
+      "category": "Converters",
+      "description": "Convert bidirectionally between JSON and TOML using the reference TOML parser for spec-correct output.",
+      "compute": "heavy",
+      "keywords": [
+        "json",
+        "toml",
+        "convert",
+        "config",
+        "serde"
+      ],
+      "priority": "p1",
+      "rustCrate": "toml, serde_json"
+    },
+    {
+      "name": "JSON <-> XML Converter",
+      "slug": "json-xml-converter",
+      "category": "Converters",
+      "description": "Convert bidirectionally between JSON and XML with attribute/text-node handling and pretty output.",
+      "compute": "heavy",
+      "keywords": [
+        "json",
+        "xml",
+        "convert",
+        "attributes",
+        "quick-xml"
+      ],
+      "priority": "p1",
+      "rustCrate": "quick-xml, serde_json"
+    },
+    {
+      "name": "YAML <-> TOML Converter",
+      "slug": "yaml-toml-converter",
+      "category": "Converters",
+      "description": "Convert bidirectionally between YAML and TOML config formats via a serde intermediate model.",
+      "compute": "heavy",
+      "keywords": [
+        "yaml",
+        "toml",
+        "convert",
+        "config",
+        "serde"
+      ],
+      "priority": "p2",
+      "rustCrate": "serde_yaml, toml"
+    },
+    {
+      "name": "CSV <-> JSON Converter",
+      "slug": "csv-json-converter",
+      "category": "Converters",
+      "description": "Convert CSV to a JSON array of objects and back, with header/delimiter/quote configuration.",
+      "compute": "light",
+      "keywords": [
+        "csv",
+        "json",
+        "convert",
+        "delimiter",
+        "headers",
+        "tabular"
+      ],
+      "priority": "p0",
+      "rustCrate": ""
+    },
+    {
+      "name": "JSON to CSV Flattener",
+      "slug": "json-to-csv-flatten",
+      "category": "Converters",
+      "description": "Flatten nested JSON into a CSV table using dotted/bracketed path column names for arrays and objects.",
+      "compute": "light",
+      "keywords": [
+        "json",
+        "csv",
+        "flatten",
+        "nested",
+        "dot-notation",
+        "tabular"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "YAML Formatter & Validator",
+      "slug": "yaml-formatter",
+      "category": "Data",
+      "description": "Validate and reformat YAML with normalized indentation and clear parse error positions.",
+      "compute": "heavy",
+      "keywords": [
+        "yaml",
+        "format",
+        "validate",
+        "yml",
+        "lint",
+        "indent"
+      ],
+      "priority": "p1",
+      "rustCrate": "serde_yaml"
+    },
+    {
+      "name": "CSV Viewer & Cleaner",
+      "slug": "csv-viewer-cleaner",
+      "category": "Data",
+      "description": "Parse CSV into a sortable table; trim whitespace, drop empty rows/columns, and re-export cleaned CSV.",
+      "compute": "light",
+      "keywords": [
+        "csv",
+        "viewer",
+        "clean",
+        "trim",
+        "table",
+        "preview"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "CSV Dedupe & Sort",
+      "slug": "csv-dedupe-sort",
+      "category": "Data",
+      "description": "Remove duplicate rows and sort CSV by one or more columns with type-aware ascending/descending order.",
+      "compute": "light",
+      "keywords": [
+        "csv",
+        "dedupe",
+        "duplicate",
+        "sort",
+        "unique",
+        "rows"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Data Table Editor",
+      "slug": "data-table-editor",
+      "category": "Data",
+      "description": "Spreadsheet-style grid to edit, add/remove rows and columns, then export as CSV, JSON, or Markdown.",
+      "compute": "light",
+      "keywords": [
+        "table",
+        "grid",
+        "spreadsheet",
+        "edit",
+        "csv",
+        "markdown"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "NDJSON / JSON Lines Tool",
+      "slug": "ndjson-tool",
+      "category": "Data",
+      "description": "Convert between NDJSON (JSON Lines) and a JSON array, and validate each line independently.",
+      "compute": "light",
+      "keywords": [
+        "ndjson",
+        "jsonl",
+        "json-lines",
+        "stream",
+        "convert",
+        "array"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "GraphQL Formatter",
+      "slug": "graphql-formatter",
+      "category": "Data",
+      "description": "Format/prettify and minify GraphQL queries, mutations, and SDL schemas with consistent indentation.",
+      "compute": "light",
+      "keywords": [
+        "graphql",
+        "format",
+        "prettify",
+        "query",
+        "schema",
+        "sdl",
+        "minify"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": ".env <-> JSON Converter",
+      "slug": "dotenv-json-converter",
+      "category": "Converters",
+      "description": "Convert dotenv (.env) files to a flat JSON object and back, preserving quoting and comments where possible.",
+      "compute": "light",
+      "keywords": [
+        "env",
+        "dotenv",
+        "json",
+        "convert",
+        "environment",
+        "config"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "INI / Properties Parser",
+      "slug": "ini-converter",
+      "category": "Converters",
+      "description": "Parse INI/properties files into JSON and serialize JSON back to INI with section handling.",
+      "compute": "light",
+      "keywords": [
+        "ini",
+        "properties",
+        "json",
+        "parse",
+        "config",
+        "sections"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Excel / XLSX to JSON & CSV",
+      "slug": "xlsx-to-json-csv",
+      "category": "Converters",
+      "description": "Read .xlsx/.xls workbooks fully in-browser and export selected sheets to JSON or CSV.",
+      "compute": "heavy",
+      "keywords": [
+        "excel",
+        "xlsx",
+        "xls",
+        "spreadsheet",
+        "json",
+        "csv",
+        "workbook"
+      ],
+      "priority": "p1",
+      "rustCrate": "calamine"
+    },
+    {
+      "name": "PDF Merge",
+      "slug": "pdf-merge",
+      "category": "PDF",
+      "description": "Combine multiple PDF files into one, with drag-and-drop ordering of documents.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "merge",
+        "combine",
+        "join",
+        "concatenate",
+        "pdf"
+      ],
+      "priority": "p0"
+    },
+    {
+      "name": "PDF Split",
+      "slug": "pdf-split",
+      "category": "PDF",
+      "description": "Split one PDF into multiple files by page ranges, fixed chunk size, or every N pages.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "split",
+        "divide",
+        "separate",
+        "ranges",
+        "chunk"
+      ],
+      "priority": "p0"
+    },
+    {
+      "name": "Extract PDF Pages",
+      "slug": "pdf-extract-pages",
+      "category": "PDF",
+      "description": "Pull a selected set of pages or ranges out of a PDF into a new document.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "extract",
+        "pages",
+        "subset",
+        "select",
+        "pick"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Delete PDF Pages",
+      "slug": "pdf-delete-pages",
+      "category": "PDF",
+      "description": "Remove specific pages or page ranges from a PDF and download the trimmed file.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "delete",
+        "remove",
+        "drop",
+        "pages",
+        "trim"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Reorder / Organize PDF Pages",
+      "slug": "pdf-organize-pages",
+      "category": "PDF",
+      "description": "Visually reorder, rotate, and delete pages via thumbnail drag-and-drop in one workspace.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "organize",
+        "reorder",
+        "rearrange",
+        "sort",
+        "thumbnails"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Rotate PDF Pages",
+      "slug": "pdf-rotate",
+      "category": "PDF",
+      "description": "Rotate all or selected pages by 90/180/270 degrees and save the result.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "rotate",
+        "turn",
+        "orientation",
+        "landscape",
+        "portrait"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Compress PDF",
+      "slug": "pdf-compress",
+      "category": "PDF",
+      "description": "Shrink PDF file size by downsampling/re-encoding images and deduplicating objects, with quality presets.",
+      "compute": "heavy",
+      "rustCrate": "lopdf + pdfium-render (image re-encode)",
+      "keywords": [
+        "compress",
+        "shrink",
+        "reduce",
+        "optimize",
+        "size"
+      ],
+      "priority": "p0"
+    },
+    {
+      "name": "PDF to Images",
+      "slug": "pdf-to-images",
+      "category": "PDF",
+      "description": "Render each PDF page to a PNG or JPG image at a chosen DPI, downloaded as a ZIP.",
+      "compute": "heavy",
+      "rustCrate": "pdfium-render (or mupdf bindings)",
+      "keywords": [
+        "pdf to image",
+        "rasterize",
+        "png",
+        "jpg",
+        "render",
+        "convert"
+      ],
+      "priority": "p0"
+    },
+    {
+      "name": "Images to PDF",
+      "slug": "images-to-pdf",
+      "category": "PDF",
+      "description": "Combine JPG/PNG/WebP images into a single PDF with page size, orientation, and margin options.",
+      "compute": "heavy",
+      "rustCrate": "printpdf (or pdf-writer)",
+      "keywords": [
+        "image to pdf",
+        "jpg to pdf",
+        "png to pdf",
+        "convert",
+        "combine"
+      ],
+      "priority": "p0"
+    },
+    {
+      "name": "CSV to PDF Table",
+      "slug": "csv-to-pdf-table",
+      "category": "PDF",
+      "description": "Convert CSV/TSV data into a paginated, styled PDF table with headers and column auto-fit.",
+      "compute": "heavy",
+      "rustCrate": "printpdf",
+      "keywords": [
+        "csv to pdf",
+        "table",
+        "tabular",
+        "spreadsheet",
+        "report"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Edit PDF Metadata",
+      "slug": "pdf-metadata-editor",
+      "category": "PDF",
+      "description": "View and edit document title, author, subject, keywords, creator, and XMP/Info dictionary fields.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "metadata",
+        "properties",
+        "title",
+        "author",
+        "xmp"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Encrypt / Password-Protect PDF",
+      "slug": "pdf-encrypt",
+      "category": "PDF",
+      "description": "Add user/owner passwords and permission flags (no-print/no-copy) using AES-256 or RC4 encryption.",
+      "compute": "heavy",
+      "rustCrate": "lopdf + aes/rc4 (qpdf-wasm alternative)",
+      "keywords": [
+        "encrypt",
+        "password",
+        "protect",
+        "secure",
+        "permissions"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Decrypt / Remove PDF Password",
+      "slug": "pdf-decrypt",
+      "category": "PDF",
+      "description": "Unlock a password-protected PDF (when you know the password) and remove its encryption.",
+      "compute": "heavy",
+      "rustCrate": "lopdf + aes/rc4 (qpdf-wasm alternative)",
+      "keywords": [
+        "decrypt",
+        "unlock",
+        "remove password",
+        "unprotect",
+        "open"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "Add Page Numbers",
+      "slug": "pdf-page-numbers",
+      "category": "PDF",
+      "description": "Stamp page numbers onto a PDF with position, font size, start value, and custom format.",
+      "compute": "heavy",
+      "rustCrate": "lopdf + pdf-writer",
+      "keywords": [
+        "page numbers",
+        "numbering",
+        "pagination",
+        "stamp",
+        "footer"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Watermark PDF",
+      "slug": "pdf-watermark",
+      "category": "PDF",
+      "description": "Overlay a text or image watermark on every page with opacity, rotation, and tiling controls.",
+      "compute": "heavy",
+      "rustCrate": "lopdf + pdf-writer",
+      "keywords": [
+        "watermark",
+        "stamp",
+        "overlay",
+        "draft",
+        "logo"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "PDF to Text",
+      "slug": "pdf-to-text",
+      "category": "PDF",
+      "description": "Extract the embedded text layer from a PDF as plain text or per-page text (text-based PDFs only, no OCR).",
+      "compute": "heavy",
+      "rustCrate": "pdf-extract (or pdfium-render)",
+      "keywords": [
+        "pdf to text",
+        "extract text",
+        "txt",
+        "plain text",
+        "content"
+      ],
+      "priority": "p1"
+    },
+    {
+      "name": "N-up / Multi-Page Layout",
+      "slug": "pdf-n-up",
+      "category": "PDF",
+      "description": "Place multiple PDF pages onto each sheet (2-up, 4-up, etc.) for handouts or booklet-style printing.",
+      "compute": "heavy",
+      "rustCrate": "lopdf (page XObjects)",
+      "keywords": [
+        "n-up",
+        "2-up",
+        "4-up",
+        "multiple pages per sheet",
+        "layout"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Crop PDF",
+      "slug": "pdf-crop",
+      "category": "PDF",
+      "description": "Trim page margins by adjusting the CropBox, with manual or auto-detect-whitespace modes.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "crop",
+        "trim",
+        "margins",
+        "cropbox",
+        "whitespace"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "PDF Page Resize / Scale",
+      "slug": "pdf-resize",
+      "category": "PDF",
+      "description": "Change page dimensions or scale content to a standard paper size (A4, Letter) while preserving aspect ratio.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "resize",
+        "scale",
+        "page size",
+        "a4",
+        "letter"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Flatten PDF",
+      "slug": "pdf-flatten",
+      "category": "PDF",
+      "description": "Merge form fields and annotations into the page content so they become non-editable static graphics.",
+      "compute": "heavy",
+      "rustCrate": "lopdf",
+      "keywords": [
+        "flatten",
+        "form fields",
+        "annotations",
+        "freeze",
+        "static"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "PDF/A Conversion (Convert to PDF/A)",
+      "slug": "pdf-to-pdfa",
+      "category": "PDF",
+      "description": "Convert a PDF toward PDF/A archival format by embedding fonts and adding required XMP/output-intent metadata.",
+      "compute": "heavy",
+      "rustCrate": "lopdf + pdf-writer",
+      "keywords": [
+        "pdf/a",
+        "pdfa",
+        "archive",
+        "long-term",
+        "compliance"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "PDF Page Counter / Info",
+      "slug": "pdf-info",
+      "category": "PDF",
+      "description": "Quickly inspect page count, page sizes, PDF version, encryption status, and embedded fonts of a PDF.",
+      "compute": "light",
+      "rustCrate": "",
+      "keywords": [
+        "pdf info",
+        "page count",
+        "inspect",
+        "details",
+        "properties"
+      ],
+      "priority": "p2"
+    },
+    {
+      "name": "Case Converter",
+      "slug": "case-converter",
+      "category": "Text",
+      "description": "Convert text between camelCase, snake_case, kebab-case, PascalCase, Title Case, UPPER, lower, and Sentence case.",
+      "compute": "light",
+      "keywords": [
+        "case",
+        "camelcase",
+        "snake_case",
+        "kebab",
+        "uppercase",
+        "title case",
+        "convert"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Text Diff / Compare",
+      "slug": "text-diff",
+      "category": "Text",
+      "description": "Compare two texts and highlight added, removed, and changed lines or words in side-by-side or inline view.",
+      "compute": "heavy",
+      "keywords": [
+        "diff",
+        "compare",
+        "merge",
+        "changes",
+        "patch",
+        "delta"
+      ],
+      "priority": "p1",
+      "rustCrate": "similar"
+    },
+    {
+      "name": "Line Sorter & Dedupe",
+      "slug": "line-tools",
+      "category": "Text",
+      "description": "Sort lines (alphabetical, numeric, length, reverse), shuffle, reverse order, and remove duplicate or blank lines.",
+      "compute": "light",
+      "keywords": [
+        "sort",
+        "lines",
+        "dedupe",
+        "unique",
+        "reverse",
+        "shuffle",
+        "remove duplicates"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Regex Tester",
+      "slug": "regex-tester",
+      "category": "Text",
+      "description": "Test regular expressions with live match highlighting, capture groups, flags, and replace preview.",
+      "compute": "heavy",
+      "keywords": [
+        "regex",
+        "regular expression",
+        "pcre",
+        "match",
+        "pattern",
+        "capture group"
+      ],
+      "priority": "p1",
+      "rustCrate": "regex"
+    },
+    {
+      "name": "Find & Replace",
+      "slug": "find-replace",
+      "category": "Text",
+      "description": "Bulk find and replace with literal, case-insensitive, whole-word, and regex modes plus replace count.",
+      "compute": "light",
+      "keywords": [
+        "find",
+        "replace",
+        "substitute",
+        "search",
+        "bulk edit"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Slugify",
+      "slug": "slugify",
+      "category": "Text",
+      "description": "Convert text into clean URL-safe slugs with transliteration, custom separators, and lowercasing.",
+      "compute": "light",
+      "keywords": [
+        "slug",
+        "slugify",
+        "url",
+        "permalink",
+        "seo"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Text Statistics & Readability",
+      "slug": "text-statistics",
+      "category": "Text",
+      "description": "Count words, characters, sentences, lines, and reading time plus Flesch readability and keyword frequency.",
+      "compute": "light",
+      "keywords": [
+        "word count",
+        "character count",
+        "readability",
+        "flesch",
+        "statistics",
+        "reading time"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Whitespace & Trim Cleaner",
+      "slug": "whitespace-cleaner",
+      "category": "Text",
+      "description": "Trim lines, collapse spaces, remove empty lines, strip tabs, and normalize line endings (CRLF/LF).",
+      "compute": "light",
+      "keywords": [
+        "whitespace",
+        "trim",
+        "clean",
+        "spaces",
+        "tabs",
+        "crlf",
+        "line endings"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "Prefix / Suffix & Line Numbering",
+      "slug": "line-prefix-suffix",
+      "category": "Text",
+      "description": "Add a prefix or suffix to every line, number lines, or wrap each line with custom start and padding.",
+      "compute": "light",
+      "keywords": [
+        "prefix",
+        "suffix",
+        "line numbers",
+        "wrap lines",
+        "append",
+        "prepend"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Text to Columns / Delimiter Converter",
+      "slug": "text-to-columns",
+      "category": "Text",
+      "description": "Split text into columns by delimiter or join columns back, converting between delimited rows and lists.",
+      "compute": "light",
+      "keywords": [
+        "columns",
+        "delimiter",
+        "split",
+        "join",
+        "tabular",
+        "transpose"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Markdown to HTML / Preview",
+      "slug": "markdown-to-html",
+      "category": "Text",
+      "description": "Render Markdown to sanitized HTML with live preview and copyable output (GFM tables, code, lists).",
+      "compute": "heavy",
+      "keywords": [
+        "markdown",
+        "md",
+        "html",
+        "preview",
+        "gfm",
+        "render"
+      ],
+      "priority": "p1",
+      "rustCrate": "pulldown-cmark"
+    },
+    {
+      "name": "HTML to Markdown",
+      "slug": "html-to-markdown",
+      "category": "Text",
+      "description": "Convert pasted HTML into clean Markdown, preserving headings, links, lists, tables, and code blocks.",
+      "compute": "light",
+      "keywords": [
+        "html",
+        "markdown",
+        "convert",
+        "reverse",
+        "turndown"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "HTML to Text / Strip Tags",
+      "slug": "html-strip-tags",
+      "category": "Text",
+      "description": "Strip all HTML tags to plain text, with options to keep links, decode entities, and preserve line breaks.",
+      "compute": "light",
+      "keywords": [
+        "strip tags",
+        "html to text",
+        "plain text",
+        "remove html",
+        "entities"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Escape / Unescape (HTML, JS, SQL)",
+      "slug": "text-escape-unescape",
+      "category": "Text",
+      "description": "Escape or unescape strings for HTML entities, JavaScript/JSON, SQL, and backslash sequences.",
+      "compute": "light",
+      "keywords": [
+        "escape",
+        "unescape",
+        "html entities",
+        "javascript",
+        "sql",
+        "backslash"
+      ],
+      "priority": "p1",
+      "rustCrate": ""
+    },
+    {
+      "name": "NATO Phonetic Alphabet",
+      "slug": "nato-phonetic",
+      "category": "Text",
+      "description": "Spell out text using the NATO phonetic alphabet (Alpha, Bravo, Charlie) for clear communication.",
+      "compute": "light",
+      "keywords": [
+        "nato",
+        "phonetic",
+        "alphabet",
+        "spelling",
+        "alpha bravo charlie"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Unicode Inspector & Normalizer",
+      "slug": "unicode-inspector",
+      "category": "Text",
+      "description": "Inspect each character's code point, name, and category, and normalize to NFC/NFD/NFKC/NFKD.",
+      "compute": "heavy",
+      "keywords": [
+        "unicode",
+        "code point",
+        "normalize",
+        "nfc",
+        "nfkc",
+        "inspect",
+        "character"
+      ],
+      "priority": "p1",
+      "rustCrate": "unicode-normalization"
+    },
+    {
+      "name": "Fancy Unicode Text Generator",
+      "slug": "fancy-text",
+      "category": "Text",
+      "description": "Transform text into bold, italic, script, monospace, bubble, and strikethrough Unicode styles.",
+      "compute": "light",
+      "keywords": [
+        "fancy text",
+        "unicode",
+        "bold",
+        "italic",
+        "cursive",
+        "social",
+        "fonts"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Emoji Picker & Search",
+      "slug": "emoji-picker",
+      "category": "Text",
+      "description": "Search and browse emoji by name, keyword, or category and copy the emoji, code point, or shortcode.",
+      "compute": "light",
+      "keywords": [
+        "emoji",
+        "picker",
+        "search",
+        "unicode",
+        "shortcode",
+        "copy"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "ASCII Table Reference",
+      "slug": "ascii-table",
+      "category": "Text",
+      "description": "Browse the full ASCII/extended table with decimal, hex, octal, binary, and HTML entity columns.",
+      "compute": "light",
+      "keywords": [
+        "ascii",
+        "table",
+        "hex",
+        "decimal",
+        "binary",
+        "control characters"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    },
+    {
+      "name": "Text Obfuscator / Zalgo",
+      "slug": "text-obfuscator",
+      "category": "Text",
+      "description": "Obfuscate text with homoglyphs, zero-width chars, reversed text, or Zalgo marks; includes a cleaner.",
+      "compute": "light",
+      "keywords": [
+        "obfuscate",
+        "zalgo",
+        "zero-width",
+        "homoglyph",
+        "reverse text",
+        "scramble"
+      ],
+      "priority": "p2",
+      "rustCrate": ""
+    }
+  ],
+  "feasibility": {
+    "heavyToolPlan": [
+      {
+        "slug": "image-converter",
+        "approach": "Decode/encode via the image crate's unified API in a Web Worker. JPG/PNG/GIF/BMP/TIFF/ICO all work in pure Rust. WebP: decode+encode via image-webp (pure Rust). AVIF: see image-compressor note (encoding is the heavy/risky part). For ICO multi-resolution output use the ico crate. Batch = loop in the worker, transferable ArrayBuffers back to main thread. Pull this into one 'image' crate module since all sub-tools share decode/encode pipelines.",
+        "crate": "image (default + tiff + ico + bmp + gif features), image-webp, ico, ravif (AVIF encode), image's avif decode; tiff handled by image's tiff feature",
+        "wasmSizeRisk": "high"
+      },
+      {
+        "slug": "image-compressor",
+        "approach": "PNG: oxipng compiles to wasm32-unknown-unknown with --no-default-features (drop the 'parallel'/rayon feature; threads unavailable). JPEG: do NOT use mozjpeg-sys — it is a C library that needs Emscripten/wasm32-unknown-emscripten and will not link on wasm32-unknown-unknown; instead use the pure-Rust jpeg-encoder crate (formerly mozjpeg-rs spirit) or image's jpeg encoder with quality control — acceptable quality, slightly larger files than MozJPEG. WebP: image-webp lossy/lossless. AVIF: ravif/rav1e compiles to wasm32-unknown-unknown only with the 'asm' feature OFF and threading off — it works but is very slow and large; gate behind a lazy-loaded module. Show before/after byte sizes from the worker.",
+        "crate": "oxipng (no-default-features), jpeg-encoder (pure Rust) instead of mozjpeg-sys, image-webp, ravif (asm off, threading off)",
+        "wasmSizeRisk": "high"
+      },
+      {
+        "slug": "image-resizer",
+        "approach": "image crate's resize with FilterType::Lanczos3 for high quality, or the dedicated fast_image_resize crate (pure Rust, SIMD optional) for much faster batch resizing. Aspect-lock and percent math in JS/Rust. Pure wasm32-unknown-unknown, no C deps.",
+        "crate": "image (imageops::resize) or fast_image_resize",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "image-cropper",
+        "approach": "image crate crop_imm/crop to extract the selected region; interactive selection is a JS/canvas concern, Rust just does the pixel crop given x/y/w/h. Pure Rust.",
+        "crate": "image",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "image-rotate-flip",
+        "approach": "image crate rotate90/180/270 and flip_horizontal/flip_vertical for raster. Arbitrary-angle rotation via imageproc::geometric_transformations (rotate_about_center) with bilinear interpolation. 'Lossless JPEG rotation' (transforms DCT coefficients without re-encoding) is NOT in a pure-Rust crate — implement multiples of 90 via jpeg-decoder + custom coefficient transform if needed, otherwise fall back to decode/rotate/re-encode and document the slight quality loss. Pure wasm.",
+        "crate": "image, imageproc (arbitrary angle)",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "image-metadata-stripper",
+        "approach": "img-parts compiles cleanly to wasm32-unknown-unknown; it lets you parse JPEG/PNG/WebP container chunks and drop EXIF/XMP/ICC/IPTC segments WITHOUT re-encoding pixel data (true privacy strip, byte-identical image data). This is the correct crate; keep it as the approach.",
+        "crate": "img-parts",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "image-palette-extractor",
+        "approach": "Decode with image, then quantize. color_quant (NeuQuant) gives a fixed palette; for better dominant-color results use the kmeans_colors crate (pure Rust) or exoquant. Emit HEX/RGB swatches. All pure wasm.",
+        "crate": "image, color_quant or kmeans_colors",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "favicon-generator",
+        "approach": "Resize source with image to standard sizes (16/32/48/64/180/192/512), encode PNGs, and pack multi-resolution favicon.ico with the ico crate. apple-touch-icon is just a 180x180 PNG. HTML link tags are static string templates generated in JS. Pure wasm; shares the image module.",
+        "crate": "image, ico",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "svg-optimizer",
+        "approach": "usvg parses and normalizes SVG into a simplified tree, then you re-serialize via usvg's writer — this collapses/normalizes a lot SVGO-style (removes metadata, resolves use, rounds coords). usvg is pure Rust and compiles to wasm32-unknown-unknown (it's part of the resvg project, designed for wasm). Note it normalizes rather than doing every SVGO micro-optimization; for pure markup minification you can pair with a regex/whitespace pass. No network.",
+        "crate": "usvg",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "svg-to-png",
+        "approach": "resvg + usvg parse the SVG, tiny-skia rasterizes to a pixmap, then encode PNG/JPG/WebP via image. All three crates are pure Rust and explicitly support wasm32-unknown-unknown (resvg ships a wasm demo). Transparent background = leave pixmap alpha. Font handling: bundle fonts via fontdb with embedded bytes since there is no system font access in the browser; document that custom fonts must be supplied. No network.",
+        "crate": "resvg, usvg, tiny-skia, fontdb (embedded fonts), image (re-encode)",
+        "wasmSizeRisk": "high"
+      },
+      {
+        "slug": "image-to-ascii",
+        "approach": "Decode + grayscale + downsample with image, map luminance to a character ramp in Rust, optional ANSI color from sampled RGB. Trivial pure-Rust compute, no extra heavy deps beyond image.",
+        "crate": "image",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "spritesheet-generator",
+        "approach": "Decode each input with image, run a simple rectangle bin-packing algorithm (implement, or use the crunch / texture_packer crate, both pure Rust) and composite onto one RGBA canvas with image, then emit the packed PNG plus a CSS/JSON coordinate map (string-built in JS/Rust). Pure wasm.",
+        "crate": "image, texture_packer or crunch (or hand-rolled packer)",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "image-diff",
+        "approach": "Decode both with image; compute per-pixel diff and a perceptual/anti-aliased diff using the dssim or the pixelmatch-rs/image-compare crate (pure Rust ports of pixelmatch). Output a highlighted diff image plus a difference percentage. Slider/side-by-side is pure JS. No C deps.",
+        "crate": "image, image-compare or a pixelmatch port (dssim for perceptual)",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "qr-image-tool",
+        "approach": "Generate: qrcode crate -> render modules, then composite a logo with image (and bump error-correction to H to survive the overlay). Decode: rqrr (pure Rust QR detector/decoder) + image for input decoding. Both pure wasm32-unknown-unknown. Styling (colors/rounded modules) done while rasterizing.",
+        "crate": "qrcode, rqrr, image",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "gif-toolkit",
+        "approach": "GIF create/optimize/resize/split/extract-frames: the gif crate (encode/decode) + image for per-frame ops, all pure Rust wasm. gifski produces higher-quality GIFs and DOES compile to wasm (used by squoosh-style tools) but pulls in heavier deps; offer it as a lazy-loaded 'high quality' path. APNG via the apng crate / png crate; animated WebP encode is limited in pure Rust (image-webp animation support is partial) — document partial animated-WebP write support. 'Convert video clips to GIF' needs video decode = belongs to the ffmpeg.wasm media-converter, not pure Rust; cross-link rather than duplicate.",
+        "crate": "gif, image, gifski (optional, lazy), apng/png; video->GIF deferred to ffmpeg.wasm",
+        "wasmSizeRisk": "high"
+      },
+      {
+        "slug": "background-remover",
+        "approach": "This is the one ML tool. Pure Rust ort (ONNX Runtime) only targets wasm32-unknown-emscripten and is experimental — do NOT route this through the Rust/wasm32-unknown-unknown pipeline. The correct 100% client-side approach is to run the U2Net/ISNet ONNX model with onnxruntime-web (WASM/WebGPU backend) OR transformers.js (briaai/RMBG, MODNet) directly in JS in a Web Worker, with the model weights served as a static asset from the same origin (no backend, no API). Rust/image can still do the final alpha compositing/replace-background step. Flag: large model download (5-180MB depending on model); make it explicitly user-initiated.",
+        "crate": "JS onnxruntime-web or transformers.js (NOT pure-Rust ort); image (Rust) only for compositing",
+        "wasmSizeRisk": "high"
+      },
+      {
+        "slug": "image-watermark",
+        "approach": "image for loading/compositing; imageproc for drawing primitives; text rendering needs glyph rasterization via ab_glyph + imageproc::drawing (bundle a font, no system fonts in browser). Opacity = alpha blend, tiling = loop. Logo watermark = overlay a decoded PNG with alpha. All pure wasm32-unknown-unknown.",
+        "crate": "image, imageproc, ab_glyph (font), embedded font bytes",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "heic-converter",
+        "approach": "libheif-rs is OUT: it wraps the C libheif/libde265 and needs Emscripten (wasm32-unknown-emscripten + C toolchain), not wasm32-unknown-unknown. Pure-Rust HEIC decode is immature. Two viable client-side paths: (1) Prefer the browser itself — many browsers can decode HEIC via createImageBitmap/<img>; draw to canvas then re-encode with the Rust image module. (2) Bundle a prebuilt libheif compiled to wasm via Emscripten (libheif-js / heic2any / a libheif.wasm) loaded as a static asset in a Worker, then hand RGBA to Rust for JPG/PNG/WebP encode and EXIF handling via img-parts. Either way it stays client-side; just not via the pure-Rust crate. EXIF preserve/strip via img-parts on output.",
+        "crate": "NOT libheif-rs on wasm32-unknown-unknown; use libheif.wasm (Emscripten, static asset) or browser-native decode; image + img-parts for encode/EXIF",
+        "wasmSizeRisk": "high"
+      },
+      {
+        "slug": "media-converter",
+        "approach": "No suitable pure-Rust crate (proposedCrate is empty, correctly). Use ffmpeg.wasm (@ffmpeg/ffmpeg, an Emscripten build of FFmpeg) loaded as static assets and run in a Web Worker — fully offline once downloaded, no backend. Note the core is ~25-30MB and requires cross-origin isolation (COOP/COEP headers) for its multithreaded build, or use the single-threaded core to avoid that. Trim/mute/extract-audio/clip-to-GIF are all ffmpeg command invocations. This is JS-orchestrated, not Rust.",
+        "crate": "ffmpeg.wasm (@ffmpeg/ffmpeg, Emscripten) — JS, not Rust",
+        "wasmSizeRisk": "high"
+      },
+      {
+        "slug": "pdf-merge",
+        "approach": "lopdf compiles to wasm32-unknown-unknown (pure Rust). Use Document::load_mem on each input and lopdf's object/page merging (renumber object IDs, concat Kids, fix the page tree). Pure client-side. Share lopdf across all the structural PDF tools.",
+        "crate": "lopdf",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-split",
+        "approach": "lopdf: load once, for each output range clone the doc and delete the pages not in range (or build new page tree referencing kept pages), prune unused objects. Pure wasm. Bundle outputs into a ZIP with zip or async_zip (both wasm-friendly).",
+        "crate": "lopdf, zip or async_zip",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-extract-pages",
+        "approach": "lopdf: build a new Document containing only selected pages, copying referenced resources/objects. Same machinery as split. Pure wasm.",
+        "crate": "lopdf",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-delete-pages",
+        "approach": "lopdf: delete_pages() then prune orphaned objects and renumber. Pure wasm32-unknown-unknown.",
+        "crate": "lopdf",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "pdf-organize-pages",
+        "approach": "lopdf handles reorder (rewrite Kids order), rotate (set /Rotate on page dict), delete. Thumbnails for the drag-and-drop UI need rendering — that is the pdfium/pdf.js concern (see pdf-to-images); use pdf.js or pdfium.wasm just for preview thumbnails, lopdf for the actual mutation. Pure wasm for the mutation half.",
+        "crate": "lopdf (mutation) + pdf.js/pdfium.wasm (thumbnails only)",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-rotate",
+        "approach": "lopdf: set/normalize the /Rotate entry (mod 360) on selected or all page dicts. No rasterization needed. Pure wasm, trivial.",
+        "crate": "lopdf",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "pdf-compress",
+        "approach": "Object-level wins are pure-Rust with lopdf: deduplicate objects, recompress streams with FlateDecode (flate2/miniz_oxide — wasm-friendly), drop unused objects, compress to object streams. Real size reduction usually needs image downsampling/re-encoding, which requires decoding embedded images: extract image XObjects, re-encode with image/jpeg-encoder, reinsert via lopdf. This avoids pdfium entirely and stays pure wasm32-unknown-unknown. Quality presets = target DPI + JPEG quality. (pdfium-render in proposedCrate is unnecessary for this.)",
+        "crate": "lopdf, flate2/miniz_oxide, image, jpeg-encoder",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-to-images",
+        "approach": "This needs a full PDF renderer, which pure Rust does not provide robustly. Two client-side options, both no-backend: (1) pdf.js (Mozilla, JS/wasm) render each page to a canvas then encode PNG/JPG — simplest, well-supported, recommend this. (2) pdfium-render: the Rust wrapper compiles to wasm32-unknown-unknown but REQUIRES a separately Emscripten-compiled pdfium.wasm binary (~several MB) loaded as a static asset and bridged via JS glue. Recommend pdf.js for reliability and smaller footprint; ZIP the outputs with zip/async_zip.",
+        "crate": "pdf.js (recommended) OR pdfium-render + prebuilt pdfium.wasm (Emscripten static asset); zip/async_zip",
+        "wasmSizeRisk": "high"
+      },
+      {
+        "slug": "images-to-pdf",
+        "approach": "printpdf compiles to wasm32-unknown-unknown (pure Rust) and is the right choice: place each image as an XObject on a page with chosen size/orientation/margins. pdf-writer is a lower-level pure-Rust alternative if you want tighter control. Decode inputs with image. Pure client-side.",
+        "crate": "printpdf (or pdf-writer), image",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "csv-to-pdf-table",
+        "approach": "Parse with csv crate (wasm-friendly), lay out a paginated table with printpdf (manual column-width/auto-fit + page breaks; printpdf has no high-level table engine, so implement layout). Bundle a font with printpdf's font embedding (no system fonts). Pure wasm.",
+        "crate": "csv, printpdf (embedded font)",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-metadata-editor",
+        "approach": "lopdf to read/write the Info dictionary (Title/Author/Subject/Keywords/Creator/Producer) and the XMP metadata stream (parse/serialize XMP as XML with quick-xml). Pure wasm32-unknown-unknown.",
+        "crate": "lopdf, quick-xml (XMP)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "pdf-encrypt",
+        "approach": "lopdf does not implement encryption writing fully; implement the standard security handler manually: RC4 (rc4 crate) for legacy, AES-128/256 via the aes + cbc crates (pure Rust, wasm-friendly — explicitly avoid ring). Compute the encryption key per the PDF spec (MD5/SHA-256 via md-5/sha2), set permission flags, encrypt strings/streams, write /Encrypt dict with lopdf. All pure wasm. This is nontrivial but fully client-side.",
+        "crate": "lopdf, aes, cbc, rc4, md-5, sha2 (NOT ring); rand for IV",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-decrypt",
+        "approach": "Mirror of encrypt: given the password, derive the key (md-5/sha2), decrypt strings/streams (aes/cbc/rc4), and rewrite the document without the /Encrypt dict via lopdf. Pure wasm32-unknown-unknown, no network. Only works when the user supplies the password (no cracking).",
+        "crate": "lopdf, aes, cbc, rc4, md-5, sha2",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-page-numbers",
+        "approach": "lopdf to append a content-stream overlay per page drawing the number text; needs a font — embed a standard font (the 14 base fonts can be referenced by name, simplest) or embed a TTF subset. pdf-writer can help author the overlay content. Position/format/start-value computed in Rust. Pure wasm.",
+        "crate": "lopdf, pdf-writer (overlay authoring), embedded/base-14 font",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-watermark",
+        "approach": "lopdf: add a watermark XObject (text via base-14/embedded font, or an image) to each page's content with a graphics state for opacity (ExtGState /ca), rotation (cm matrix), and tiling (repeat). Image watermark = embed image XObject. Pure wasm32-unknown-unknown.",
+        "crate": "lopdf, pdf-writer, image (logo watermark), embedded font",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-to-text",
+        "approach": "pdf-extract is pure Rust and compiles to wasm32-unknown-unknown; it extracts the embedded text layer (text-based PDFs only, no OCR — matches the description). It can be brittle on complex encodings; lopdf-based manual extraction is a fallback. No pdfium needed. Pure client-side.",
+        "crate": "pdf-extract (fallback: lopdf manual text extraction)",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-n-up",
+        "approach": "lopdf: wrap each source page as a Form XObject and place 2/4/N scaled copies onto each new larger page via cm transforms. Pure Rust, pure wasm. No rasterization.",
+        "crate": "lopdf",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-crop",
+        "approach": "lopdf: set the /CropBox (and optionally /MediaBox) on pages. Manual mode = user rect. Auto-detect-whitespace needs rasterizing pages to find content bounds — either approximate from page content-stream bounding boxes in pure Rust, or render via pdf.js/pdfium for true whitespace detection. Manual crop is pure wasm; auto mode optionally uses the renderer.",
+        "crate": "lopdf (manual) + pdf.js/pdfium for auto-whitespace render",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-resize",
+        "approach": "lopdf: change /MediaBox dimensions and apply a scaling cm transform to content (or wrap page as XObject and scale onto new A4/Letter page) to preserve aspect ratio. Pure wasm32-unknown-unknown.",
+        "crate": "lopdf",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-flatten",
+        "approach": "lopdf: render each AcroForm field's appearance stream and annotation appearance into the page content stream, then remove the interactive form/annotation objects. Doable in pure Rust but tedious (must handle field appearance generation); fields lacking appearance streams may need generation. Pure wasm; complex. For full fidelity a pdfium-based flatten is more robust but adds the Emscripten pdfium dependency.",
+        "crate": "lopdf (pure); pdfium optional for fidelity",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "pdf-to-pdfa",
+        "approach": "lopdf + pdf-writer to add the required pieces: embed all fonts (subset/embed TTFs — the hard part, needs a font subsetter; consider the subsetter / allsorts crate, pure Rust), add an OutputIntent with an ICC profile (embed a bundled sRGB ICC), add the PDF/A XMP metadata (quick-xml), set the document ID. Pure wasm32-unknown-unknown but the most involved tool; true PDF/A validation (veraPDF) cannot run client-side, so present it as best-effort conversion, not certified compliance.",
+        "crate": "lopdf, pdf-writer, quick-xml, a font subsetter (subsetter/allsorts), bundled sRGB ICC",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "json-yaml-converter",
+        "approach": "serde_json + serde_yaml, both pure Rust wasm. Note serde_yaml is archived/unmaintained — prefer serde_yaml_ng or serde_yml (maintained forks) for new work. True comment-aware round-trip requires a CST parser; serde-based conversion loses comments, so either document that, or use the yaml-rust2 / saphyr crate to preserve structure. Pure client-side.",
+        "crate": "serde_json, serde_yaml_ng or serde_yml (avoid unmaintained serde_yaml); saphyr/yaml-rust2 for comment-aware",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "json-toml-converter",
+        "approach": "serde_json + toml crate (toml is the reference parser, pure Rust, wasm-fine). Use toml_edit if you want to preserve formatting/comments on the TOML side. Map serde Value <-> toml Value. Pure client-side.",
+        "crate": "serde_json, toml (or toml_edit for format-preserving)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "json-xml-converter",
+        "approach": "serde_json + quick-xml (pure Rust, wasm-friendly) for both directions; quick-xml's serde support or manual event-based conversion handles attribute-vs-text-node mapping and pretty printing. Pure client-side.",
+        "crate": "serde_json, quick-xml",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "yaml-toml-converter",
+        "approach": "serde intermediate model: parse YAML (serde_yaml_ng/serde_yml) into serde_json::Value or toml::Value, serialize to TOML (toml). Watch type/null mismatches (TOML has no null) and surface clear errors. Pure wasm.",
+        "crate": "serde_yaml_ng/serde_yml, toml, serde_json (intermediate)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "yaml-formatter",
+        "approach": "Parse with a YAML crate to validate (capturing line/col errors), then re-serialize with normalized indentation. serde_yaml_ng for round-trip, or saphyr/yaml-rust2 for a parser that gives precise error positions. Pure wasm32-unknown-unknown.",
+        "crate": "serde_yaml_ng or saphyr/yaml-rust2",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "xlsx-to-json-csv",
+        "approach": "calamine reads .xlsx/.xls/.ods fully in-memory and compiles to wasm32-unknown-unknown (pure Rust). Iterate worksheets -> rows, emit JSON via serde_json and CSV via the csv crate. Pure client-side. .xls (old BIFF) is supported by calamine too.",
+        "crate": "calamine, serde_json, csv",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "text-diff",
+        "approach": "similar crate (pure Rust, wasm-friendly) for line/word/char diffs with Myers/patience algorithms; render side-by-side or inline in JS. Pure client-side.",
+        "crate": "similar",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "regex-tester",
+        "approach": "regex crate compiles to wasm32-unknown-unknown. Note its syntax differs from JS/PCRE (no backreferences/lookaround) — if the tool advertises JS-regex semantics, run it via the browser's native RegExp in JS instead; if it advertises Rust regex, use the crate. fancy-regex (pure Rust) adds lookaround/backrefs if needed. Decide based on which dialect you market. Pure client-side either way.",
+        "crate": "regex (or fancy-regex for lookaround; or native JS RegExp)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "markdown-to-html",
+        "approach": "pulldown-cmark (pure Rust, GFM support, wasm-friendly) to render HTML, then sanitize with the ammonia crate (pure Rust HTML sanitizer) to prevent XSS in the preview. Both compile to wasm32-unknown-unknown. Pure client-side.",
+        "crate": "pulldown-cmark, ammonia (sanitize)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "unicode-inspector",
+        "approach": "unicode-normalization for NFC/NFD/NFKC/NFKD (pure Rust wasm). For per-character name/category, unicode_names2 (names) + unicode-general-category or the unicode-properties crate. These embed Unicode data tables (size cost). Pure client-side.",
+        "crate": "unicode-normalization, unicode_names2, unicode-properties/unicode-general-category",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "hash-file",
+        "approach": "Streaming hashing in a Web Worker: read the File in chunks (Blob.slice/ReadableStream), feed each chunk to update() of sha2 (SHA-256/512), sha1, md-5 (RustCrypto, pure Rust wasm), blake3 (pure Rust, wasm; disable its 'rayon' and platform-asm features for wasm32-unknown-unknown), crc32fast. Avoid ring entirely. Verify-against-expected = constant-time compare. Pure client-side, handles large files via streaming.",
+        "crate": "sha2, sha1, md-5, blake3 (no rayon/asm), crc32fast",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "blake3-sha3-hash",
+        "approach": "blake3 (XOF output, keyed hashing, derive_key) and sha3 (RustCrypto Keccak/SHA-3, plus SHAKE128/256 XOF) — both pure Rust, compile to wasm32-unknown-unknown. For blake3 turn off rayon/SIMD-asm features on wasm. Pure client-side.",
+        "crate": "blake3, sha3",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "bcrypt",
+        "approach": "bcrypt crate (RustCrypto, pure Rust, wasm-friendly) for hash with configurable cost and verify. Needs randomness for the salt — use getrandom with the 'js' feature so it pulls entropy from crypto.getRandomValues in the browser. Run in a Worker (high cost factors block). Pure client-side.",
+        "crate": "bcrypt, getrandom (js feature)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "argon2",
+        "approach": "argon2 crate (RustCrypto) supports Argon2id/i/d, PHC string output, tunable m/t/p; pure Rust, compiles to wasm32-unknown-unknown. High memory cost is the constraint — run in a Worker and cap memory to what wasm linear memory allows (watch the 32-bit address space / ~2-4GB ceiling; surface OOM gracefully). getrandom(js) for salt. Pure client-side.",
+        "crate": "argon2, getrandom (js feature)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "rsa-keygen",
+        "approach": "rsa crate (RustCrypto, pure Rust) generates 2048/3072/4096-bit keys and exports PEM/DER via pkcs8/pkcs1. Compiles to wasm32-unknown-unknown; needs getrandom('js') for a CSPRNG seed. 4096-bit keygen is slow in wasm — run in a Worker with a progress/spinner. Avoid ring. Pure client-side.",
+        "crate": "rsa, pkcs8, pkcs1, getrandom (js), rand",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "ec-keygen",
+        "approach": "p256/p384 (NIST P-256/P-384), ed25519-dalek (Ed25519), k256 (secp256k1) — all RustCrypto/dalek, pure Rust, wasm-friendly. Export PEM via pkcs8/sec1 and JWK by emitting the coordinates as base64url with serde_json. getrandom('js') for keygen. Avoid ring. Pure client-side.",
+        "crate": "p256, p384, ed25519-dalek, k256, pkcs8, sec1, getrandom (js)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "x509-cert-decoder",
+        "approach": "x509-parser (pure Rust, nom-based) parses DER; use the pem crate to unwrap PEM first. Extract subject/issuer/validity/SANs/key-usage/extensions; compute SHA-1/SHA-256 fingerprints with sha1/sha2. Compiles to wasm32-unknown-unknown. Chain display is just parsing each cert. Pure client-side.",
+        "crate": "x509-parser, pem, sha1, sha2",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "csr-decoder",
+        "approach": "x509-parser includes PKCS#10 CSR parsing (X509CertificationRequest); pem to unwrap. Show subject, public key, requested SANs/attributes. Pure Rust wasm, client-side.",
+        "crate": "x509-parser, pem",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "pem-der-converter",
+        "approach": "pem crate (parse/encode PEM blocks, expose block type/label) + base64 for re-encoding bodies; der crate for structural validation. All pure Rust, wasm-friendly. Convert by base64-decoding PEM body to DER and vice versa. Pure client-side.",
+        "crate": "pem, der, base64",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "htpasswd-generator",
+        "approach": "bcrypt crate for bcrypt entries; APR1-MD5 ($apr1$) implement with md-5 (it's a specific iterated-MD5 scheme); SHA entry = sha1 + base64; crypt (DES) via the pwhash crate if needed. All pure Rust wasm. getrandom('js') for salts. Build the username:hash line in Rust. Pure client-side.",
+        "crate": "bcrypt, md-5, sha1, base64, getrandom (js); optional pwhash for crypt/apr1",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "sign-verify",
+        "approach": "ed25519-dalek (Ed25519), rsa (RSA PKCS#1v1.5 / PSS), p256/k256 (ECDSA) — all pure Rust RustCrypto/dalek, wasm-friendly. Load keys via pkcs8/pem, sign/verify with the matching digest (sha2). getrandom('js') for randomized signatures (PSS/ECDSA). Avoid ring. Pure client-side.",
+        "crate": "ed25519-dalek, rsa, p256, k256, sha2, pkcs8, pem, getrandom (js)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "base64-file",
+        "approach": "base64 crate (pure Rust, fast, wasm) to encode any uploaded file's bytes (with optional data: URI prefix incl. MIME detection) and decode back to a downloadable Blob. Do it in a Worker for large files. Pure client-side.",
+        "crate": "base64",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "hex-dump-viewer",
+        "approach": "No external crate needed (proposedCrate empty, correct) — format bytes into offset/hex/ASCII columns in pure Rust (or even pure JS). Worker-stream for large files. Pure client-side, tiny.",
+        "crate": "std only (optional: pretty-hex or hexdump crate)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "gzip",
+        "approach": "flate2 with the default miniz_oxide backend is pure Rust and compiles to wasm32-unknown-unknown (do NOT enable the zlib/zlib-ng C backend). GzEncoder/GzDecoder with selectable Compression level. Pure client-side. (Browser-native CompressionStream is also an option for gzip/deflate, but flate2 gives level control.)",
+        "crate": "flate2 (miniz_oxide backend, default)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "deflate-zlib",
+        "approach": "flate2 (miniz_oxide backend) DeflateEncoder/DeflateDecoder (raw) and ZlibEncoder/ZlibDecoder, with level control. Pure Rust wasm. Pure client-side.",
+        "crate": "flate2 (miniz_oxide backend)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "brotli",
+        "approach": "brotli crate (pure Rust, no C) compiles to wasm32-unknown-unknown with quality (0-11) and window-size tuning for both compress and decompress. Pure client-side.",
+        "crate": "brotli",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "zstd",
+        "approach": "The default zstd crate wraps the C libzstd via zstd-sys and needs a C toolchain/Emscripten — risky on wasm32-unknown-unknown. Better: use the pure-Rust ruzstd for decompression (compiles cleanly to wasm32-unknown-unknown) and the pure-Rust zstd-rs by KillingSpark (the 'zstd' pure-Rust impl, different from the C-binding crate) for compression, OR confirm zstd-sys builds under your wasm C setup. Recommend pure-Rust ruzstd (+ KillingSpark encoder) to stay on wasm32-unknown-unknown with no Emscripten. Pure client-side.",
+        "crate": "ruzstd (decompress, pure Rust) + KillingSpark pure-Rust zstd encoder; avoid C-binding zstd/zstd-sys on wasm32-unknown-unknown",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "qr-code-generator",
+        "approach": "qrcode crate (pure Rust) generates the matrix; render to SVG (its built-in SVG renderer) or to PNG via image. Logo overlay + colors done while rendering (raise EC level to H). Error-correction selectable. Pure client-side.",
+        "crate": "qrcode, image (PNG), optional resvg if rasterizing the SVG",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "wifi-qr-code-generator",
+        "approach": "Build the WIFI:T:...;S:...;P:...;; payload string in Rust/JS, then encode with the qrcode crate to SVG/PNG. Pure Rust wasm, client-side, trivial.",
+        "crate": "qrcode",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "qr-barcode-reader",
+        "approach": "QR: rqrr (pure Rust detector/decoder, wasm-friendly) on an image decoded via image, or from a camera frame (getUserMedia -> ImageData -> Rust). 1D barcodes: bardecoder is older/limited; for robust client-side 1D+2D consider the JS ZXing-wasm or @zxing/library since pure-Rust 1D decoding is weak. Recommend rqrr for QR (Rust) + ZXing-wasm for general barcodes if needed. Pure client-side.",
+        "crate": "rqrr (+ image) for QR; ZXing-wasm/zxing-js for general 1D barcodes (bardecoder is limited)",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "barcode-generator",
+        "approach": "barcoders crate (pure Rust) generates Code128/Code39/EAN-13/UPC-A with checksum handling; it can emit SVG directly and image (PNG via its image feature). Compiles to wasm32-unknown-unknown. Pure client-side.",
+        "crate": "barcoders (svg + image features)",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "bip39-mnemonic-generator",
+        "approach": "bip39 crate (pure Rust) generates/validates 12-24 word mnemonics and derives the seed; entropy from getrandom('js'). For BIP32 key derivation add bip32 (pure Rust). Wordlists embed (small size cost). Pure client-side, no network.",
+        "crate": "bip39, getrandom (js), optional bip32",
+        "wasmSizeRisk": "low"
+      },
+      {
+        "slug": "expression-evaluator",
+        "approach": "rug is OUT for wasm: it wraps GMP/MPFR (C libraries) and does NOT compile to wasm32-unknown-unknown without Emscripten. For arbitrary-precision client-side use pure-Rust bignum crates: dashu (integers+floats+rationals, pure Rust, wasm-friendly) or num-bigint + rust_decimal/bigdecimal. For the expression parser/evaluator use meval, evalexpr, or fasteval (pure Rust). Combine a pure-Rust evaluator with dashu for big-number mode. Pure client-side.",
+        "crate": "dashu (or num-bigint + bigdecimal) instead of rug; meval/evalexpr/fasteval for parsing",
+        "wasmSizeRisk": "medium"
+      },
+      {
+        "slug": "gcd-lcm-prime-factorization",
+        "approach": "num-prime (pure Rust: primality tests, factorization) + num-bigint for big integers, num-integer for gcd/lcm. All compile to wasm32-unknown-unknown. Heavy factorizations run in a Worker. Pure client-side, no network.",
+        "crate": "num-prime, num-bigint, num-integer",
+        "wasmSizeRisk": "medium"
+      }
+    ],
+    "cannotRunClientSide": [
+      {
+        "slug": "currency-converter",
+        "reason": "Listed as 'Currency Converter (offline rates)' in the light tools. Live FX rates are inherently a network resource. The honest client-side approach is to ship a static rates snapshot bundled at build time and clearly label it 'offline rates as of <date>'. Anything claiming live/current rates would require phoning home to an FX API, which violates the no-backend/client-only constraint.",
+        "recommendation": "Keep it, but ship bundled static rates with a visible 'rates as of <date>' disclaimer. Do NOT fetch live rates from any API. Optionally let the user paste/import their own rate table. The current 'offline rates' naming already signals this — preserve that."
+      }
+    ],
+    "recommendedCrates": [
+      "image",
+      "image-webp",
+      "ico",
+      "ravif",
+      "oxipng",
+      "jpeg-encoder",
+      "fast_image_resize",
+      "imageproc",
+      "ab_glyph",
+      "fontdb",
+      "img-parts",
+      "color_quant",
+      "kmeans_colors",
+      "texture_packer",
+      "image-compare",
+      "gif",
+      "apng",
+      "usvg",
+      "resvg",
+      "tiny-skia",
+      "qrcode",
+      "rqrr",
+      "barcoders",
+      "lopdf",
+      "printpdf",
+      "pdf-writer",
+      "pdf-extract",
+      "flate2",
+      "miniz_oxide",
+      "brotli",
+      "ruzstd",
+      "zip",
+      "async_zip",
+      "csv",
+      "calamine",
+      "serde_json",
+      "serde_yaml_ng",
+      "serde_yml",
+      "toml",
+      "toml_edit",
+      "quick-xml",
+      "saphyr",
+      "similar",
+      "regex",
+      "fancy-regex",
+      "pulldown-cmark",
+      "ammonia",
+      "unicode-normalization",
+      "unicode_names2",
+      "unicode-properties",
+      "sha2",
+      "sha1",
+      "md-5",
+      "sha3",
+      "blake3",
+      "crc32fast",
+      "hmac",
+      "bcrypt",
+      "argon2",
+      "rsa",
+      "p256",
+      "p384",
+      "k256",
+      "ed25519-dalek",
+      "x509-parser",
+      "pem",
+      "der",
+      "pkcs8",
+      "pkcs1",
+      "sec1",
+      "aes",
+      "cbc",
+      "rc4",
+      "base64",
+      "getrandom",
+      "rand",
+      "bip39",
+      "bip32",
+      "dashu",
+      "num-bigint",
+      "num-integer",
+      "num-prime",
+      "bigdecimal",
+      "meval",
+      "subsetter"
+    ],
+    "notes": "ARCHITECTURE — crates vs code-splitting: Do NOT ship one giant shared wasm. The crypto/text/data tools (hashes, base64, compress, serde converters, regex, diff) are tiny and could share one small feature-gated crate, but the image, PDF, and ML/media families are large and must be split. Recommended grouping into a handful of feature-gated wasm crates, each lazy-loaded (dynamic import) only when its tool route is opened: (1) core-text-crypto (sha/md/blake3/sha3/hmac/bcrypt/argon2/base*/hex/pem/der/x509/keys/sign — small, can be one crate with cargo features so unused algos tree-shake); (2) compress (flate2/brotli/ruzstd/zip); (3) data-convert (serde_json/yaml/toml/quick-xml/csv/calamine/similar/regex/pulldown-cmark/unicode); (4) image (the big one — image+webp+ravif+oxipng+resvg+imageproc+qrcode+rqrr — feature-gate per tool to keep each tool's slice smaller, this is where wasm bloat lives); (5) pdf (lopdf/printpdf/pdf-writer/pdf-extract); (6) math (dashu/num-*). Per-tool feature gates inside each crate + Worker-side lazy loading gives the code-splitting wins without the maintenance cost of dozens of crates. Rationale: one mega-crate would force every visitor to download AVIF/PDF/Unicode-table bytes for a simple base64 task.\n\nRANDOMNESS: every keygen/salt/IV tool must depend on getrandom with the 'js' feature (or rand + getrandom/js) so entropy comes from crypto.getRandomValues. Without it, getrandom fails to compile/run on wasm32-unknown-unknown.\n\nCRATES TO AVOID on wasm32-unknown-unknown (all are C-backed / need Emscripten): ring (use RustCrypto instead — already the plan), mozjpeg-sys (use jpeg-encoder), oxipng's parallel feature (build no-default-features), libheif-rs (use browser-native HEIC decode or a prebuilt libheif.wasm asset), zstd/zstd-sys C bindings (use ruzstd + KillingSpark pure-Rust encoder), rug (GMP/MPFR — use dashu/num-bigint), pdfium-render's pdfium binary and ort/onnxruntime (both need Emscripten + large prebuilt assets). For ravif/blake3/oxipng remember to disable asm/SIMD-assembly and rayon/threads features for wasm32-unknown-unknown (no threads unless you adopt wasm threads + SharedArrayBuffer + COOP/COEP headers).\n\nTHINGS THAT ARE NOT PURE-RUST-WASM BUT STILL 100% CLIENT-SIDE (use prebuilt Emscripten wasm or JS libs as static same-origin assets, never a backend): media-converter (ffmpeg.wasm, ~25-30MB, COOP/COEP for MT build), pdf-to-images / pdf rasterization & thumbnails (pdf.js recommended, or pdfium.wasm), background-remover (onnxruntime-web or transformers.js + a static ONNX model, large download), heic-converter (libheif.wasm or browser-native), qr-barcode-reader general 1D barcodes (zxing-wasm). All stay offline after first load.\n\nLIGHT-TOOL NETWORK SCAN (only one genuine offender): currency-converter is the single light tool whose value implies live data — already flagged above; keep it offline-snapshot only. Two near-misses that are FINE because they operate on user-pasted input and must NOT fetch: opengraph-preview (OpenGraph & Meta Preview) and email-header-analyzer — implement them to parse user-provided HTML/headers only; explicitly do NOT add a 'fetch URL' button (that would require a CORS proxy/backend). har-viewer, user-agent-parser, curl-to-code, json-to-fetch, sitemap-generator, robots-txt-generator, meta-tags-generator all just transform/inspect pasted text and need no network — confirmed client-safe. world-clock/timezone-converter need the IANA tz database: bundle it (chrono-tz / tzdb embedded) rather than querying any time API. Everything else in the light list is pure local computation.\n\nACCURACY NOTES VERIFIED THIS SESSION: confirmed ort requires wasm32-unknown-emscripten (experimental, not unknown-unknown); pdfium-render needs a separate Emscripten-built pdfium.wasm; oxipng builds for wasm with parallel disabled; ravif/rav1e build for wasm with asm off; mozjpeg-sys and libheif-rs are C and need Emscripten; zstd C-binding needs a C toolchain so pure-Rust ruzstd is the wasm32-unknown-unknown path. serde_yaml is unmaintained/archived — recommend serde_yaml_ng or serde_yml. All RustCrypto hashing/AES/key crates and lopdf/printpdf/pdf-writer/calamine/image/qrcode/flate2/brotli/base64/quick-xml/toml/regex/pulldown-cmark are confirmed wasm32-unknown-unknown compatible.\""
+  },
+  "architecture": {
+    "registrySchema": "## Tool Registry Pattern + Auto-Discovery\n\n### The core problem\n`import.meta.glob` is Vite-only. Next.js (webpack/turbopack) has `require.context` but it is unreliable under `output:'export'` for *type-safe lazy* aggregation, and it pulls everything into one chunk unless carefully tuned. The robust, framework-agnostic answer is **build-time codegen run via Bun**: a script scans `tools/**/tool.config.ts`, validates each, and emits a generated `registry.generated.ts` manifest that statically `import()`s each tool's component and wasm loader. This keeps code-splitting per-tool (each `() => import(...)` is its own chunk) AND requires zero edits to a central switch.\n\n### `ToolMeta` type — `lib/registry/types.ts`\n```ts\nimport type { ComponentType } from 'react';\n\nexport type ToolCategory =\n  | 'text' | 'image' | 'data' | 'crypto' | 'convert' | 'dev';\n\n/** Static, JSON-serializable metadata. Safe to import at build & for search index. */\nexport interface ToolMetaStatic {\n  id: string;            // stable uuid-ish, never changes: \"img-resize-v1\"\n  name: string;          // \"Image Resizer\"\n  slug: string;          // url segment, unique: \"image-resizer\"\n  description: string;   // 1-line, shown in cards + <meta>\n  category: ToolCategory;\n  tags: string[];        // [\"png\",\"jpeg\",\"downscale\"]\n  keywords: string[];    // search-only synonyms [\"shrink\",\"compress dimensions\"]\n  icon: string;          // lucide icon name, resolved client-side: \"ImageDown\"\n  relatedTools: string[];// slugs; validated against registry at build\n  loadWasm?: boolean;    // hint: does this tool need a worker+wasm at all\n}\n\n/** Lazy runtime bindings. Each fn is its own code-split chunk. */\nexport interface ToolMetaRuntime {\n  component: () => Promise<{ default: ComponentType }>;\n  /** Optional: returns the per-tool wasm worker factory. */\n  loadWorker?: () => Promise<{ default: () => Worker }>;\n}\n\nexport type ToolMeta = ToolMetaStatic & ToolMetaRuntime;\n\n/** What each tool folder default-exports from tool.config.ts */\nexport type ToolConfig = ToolMetaStatic & ToolMetaRuntime;\n```\n\n### Each tool self-registers — `tools/image/image-resizer/tool.config.ts`\n```ts\nimport type { ToolConfig } from '@/lib/registry/types';\n\nconst config: ToolConfig = {\n  id: 'img-resize-v1',\n  name: 'Image Resizer',\n  slug: 'image-resizer',\n  description: 'Resize and re-encode images entirely in your browser.',\n  category: 'image',\n  tags: ['png', 'jpeg', 'webp', 'downscale'],\n  keywords: ['shrink', 'compress dimensions', 'scale photo'],\n  icon: 'ImageDown',\n  relatedTools: ['image-converter'],\n  loadWasm: true,\n  component: () => import('./ui'),                 // ./ui.tsx -> default React component\n  loadWorker: () => import('./worker.factory'),    // returns () => new Worker(...)\n};\n\nexport default config;\n```\n\n### Codegen script — `scripts/gen-registry.ts` (run by Bun)\nUses Bun's `Glob` (built-in, no plugin) to find configs, emits a manifest with **static dynamic-imports** so webpack creates one chunk per tool. It also performs build-time validation (unique id/slug, valid `relatedTools`, valid category).\n\n```ts\n// bun run scripts/gen-registry.ts   (wired into package.json prebuild)\nimport { Glob } from 'bun';\nimport { resolve, relative, dirname } from 'node:path';\n\nconst ROOT = resolve(import.meta.dir, '..');\nconst glob = new Glob('tools/**/tool.config.ts');\nconst files: string[] = [];\nfor await (const f of glob.scan(ROOT)) files.push(f);\nfiles.sort(); // deterministic output\n\n// import each config at codegen time to validate it\nconst slugs = new Set<string>();\nconst ids = new Set<string>();\nconst entries: { importPath: string; varName: string }[] = [];\n\nfor (const [i, file] of files.entries()) {\n  const mod = await import(resolve(ROOT, file));\n  const c = mod.default;\n  if (!c?.slug) throw new Error(`Missing slug in ${file}`);\n  if (slugs.has(c.slug)) throw new Error(`Duplicate slug \"${c.slug}\" in ${file}`);\n  if (ids.has(c.id)) throw new Error(`Duplicate id \"${c.id}\" in ${file}`);\n  slugs.add(c.slug); ids.add(c.id);\n  const dir = dirname(relative('lib/registry', file)); // path from generated file\n  entries.push({ importPath: `../../${relative(ROOT, file).replace(/\\.ts$/, '')}`, varName: `t${i}` });\n}\n\n// second pass: validate relatedTools after all slugs known\nfor (const file of files) {\n  const c = (await import(resolve(ROOT, file))).default;\n  for (const r of c.relatedTools) {\n    if (!slugs.has(r)) throw new Error(`relatedTools \"${r}\" in ${file} not found`);\n  }\n}\n\nconst header = `// AUTO-GENERATED by scripts/gen-registry.ts. DO NOT EDIT.\\n` +\n  `import type { ToolConfig } from './types';\\n`;\nconst imports = entries.map(e => `import ${e.varName} from '${e.importPath}';`).join('\\n');\nconst arr = `export const tools: ToolConfig[] = [${entries.map(e => e.varName).join(', ')}];\\n`;\n\nawait Bun.write(\n  resolve(ROOT, 'lib/registry/registry.generated.ts'),\n  `${header}\\n${imports}\\n\\n${arr}`\n);\nconsole.log(`registry: ${entries.length} tools generated`);\n```\n\n### Public registry API — `lib/registry/index.ts`\n```ts\nimport { tools } from './registry.generated';\nimport type { ToolConfig } from './types';\n\nexport const ALL_TOOLS: readonly ToolConfig[] = tools;\n\nconst bySlug = new Map(tools.map(t => [t.slug, t] as const));\nexport const getTool = (slug: string): ToolConfig | undefined => bySlug.get(slug);\nexport const getAllSlugs = (): string[] => tools.map(t => t.slug);\n\nexport const getRelated = (slug: string): ToolConfig[] =>\n  (getTool(slug)?.relatedTools ?? []).map(s => bySlug.get(s)!).filter(Boolean);\n\n/** Static-only projection for the searchable client index (no fn refs). */\nexport const SEARCH_INDEX = tools.map(({ component, loadWorker, ...meta }) => meta);\n```\n\n`registry.generated.ts` is gitignored and produced by `prebuild`/`predev` hooks, so adding a tool = drop a folder; nothing central changes.",
+    "workerInterface": "## TS <-> Rust Worker Interface\n\n### Protocol types — `lib/worker/protocol.ts`\nA discriminated-union request/response protocol with correlation `id`, progress streaming, transferables, and structured errors. Generic over each tool's op map so callers stay strict-typed.\n\n```ts\n/** Each tool defines an OpMap: opName -> {req payload, res payload}. */\nexport interface OpDef<Req = unknown, Res = unknown> { req: Req; res: Res }\nexport type OpMap = Record<string, OpDef>;\n\n// ---- Main -> Worker ----\nexport interface WorkerRequest<K extends string = string, P = unknown> {\n  kind: 'request';\n  id: number;            // correlation id\n  op: K;                 // operation name within the tool's OpMap\n  payload: P;\n  // ArrayBuffers/typed-array .buffers passed via the transfer list, not cloned\n}\n\nexport interface WorkerCancel { kind: 'cancel'; id: number }\n\nexport type ToWorker<M extends OpMap> =\n  | { [K in keyof M & string]: WorkerRequest<K, M[K]['req']> }[keyof M & string]\n  | WorkerCancel;\n\n// ---- Worker -> Main ----\nexport interface WorkerProgress {\n  kind: 'progress';\n  id: number;\n  ratio: number;         // 0..1\n  stage?: string;        // \"decoding\" | \"encoding\" ...\n}\nexport interface WorkerSuccess<R = unknown> {\n  kind: 'success';\n  id: number;\n  result: R;             // may contain transferable buffers\n}\nexport interface WorkerError {\n  kind: 'error';\n  id: number;\n  code: 'WASM_INIT' | 'INVALID_INPUT' | 'PANIC' | 'CANCELLED' | 'UNKNOWN';\n  message: string;\n  detail?: string;       // rust panic backtrace / context\n}\nexport interface WorkerReady { kind: 'ready' }\n\nexport type FromWorker<M extends OpMap> =\n  | WorkerReady | WorkerProgress | WorkerError\n  | { [K in keyof M & string]: WorkerSuccess<M[K]['res']> }[keyof M & string];\n```\n\n### A tool's OpMap — `tools/image/image-resizer/ops.ts`\n```ts\nimport type { OpMap } from '@/lib/worker/protocol';\n\nexport interface ResizeReq {\n  bytes: ArrayBuffer;        // transferred\n  width: number; height: number;\n  format: 'png' | 'jpeg' | 'webp';\n  quality: number;           // 0..100\n}\nexport interface ResizeRes { bytes: ArrayBuffer; mime: string }\n\nexport type ResizerOps = {\n  resize: { req: ResizeReq; res: ResizeRes };\n};\n```\n\n### Worker entry (lazy wasm) — `tools/image/image-resizer/worker.ts`\nWASM is loaded lazily *inside* the worker on first request, so the wasm chunk only downloads when the tool is opened (the worker itself is only constructed by `loadWorker`).\n\n```ts\n/// <reference lib=\"webworker\" />\nimport type { ToWorker, FromWorker } from '@/lib/worker/protocol';\nimport type { ResizerOps } from './ops';\n\ntype In = ToWorker<ResizerOps>;\ntype Out = FromWorker<ResizerOps>;\nconst post = (msg: Out, transfer?: Transferable[]) =>\n  (self as DedicatedWorkerGlobalScope).postMessage(msg, transfer ?? []);\n\nconst cancelled = new Set<number>();\n\n// dynamic import => wasm js+.wasm become a separate chunk, fetched on demand\nlet wasmP: Promise<typeof import('@/rust/pkg/image_tools')> | null = null;\nconst getWasm = () => (wasmP ??= import('@/rust/pkg/image_tools').then(async (m) => {\n  await m.default();           // wasm-bindgen init (fetches .wasm)\n  return m;\n}));\n\nself.onmessage = async (e: MessageEvent<In>) => {\n  const msg = e.data;\n  if (msg.kind === 'cancel') { cancelled.add(msg.id); return; }\n  if (msg.kind !== 'request') return;\n  const { id, op, payload } = msg;\n  try {\n    const wasm = await getWasm();\n    if (op === 'resize') {\n      const onProgress = (ratio: number, stage: string) => {\n        if (!cancelled.has(id)) post({ kind: 'progress', id, ratio, stage });\n      };\n      const out = wasm.resize_image(\n        new Uint8Array(payload.bytes),\n        payload.width, payload.height, payload.format, payload.quality,\n        onProgress,                         // wasm-bindgen callback -> progress msgs\n      );\n      if (cancelled.has(id)) { cancelled.delete(id); post({ kind:'error', id, code:'CANCELLED', message:'cancelled' }); return; }\n      const buf = out.buffer;               // Uint8Array -> ArrayBuffer\n      post({ kind: 'success', id, result: { bytes: buf, mime: `image/${payload.format}` } }, [buf]);\n    }\n  } catch (err) {\n    post({ kind: 'error', id, code: 'PANIC', message: String(err) });\n  }\n};\npost({ kind: 'ready' });\n```\n\n### Worker factory (code-split target) — `tools/image/image-resizer/worker.factory.ts`\n```ts\n// `new URL(... import.meta.url)` is the webpack/turbopack-supported worker syntax,\n// and is preserved under output:'export' as a hashed static asset.\nexport default function createWorker(): Worker {\n  return new Worker(new URL('./worker.ts', import.meta.url), { type: 'module' });\n}\n```\n\n### Typed client hook — `lib/worker/use-worker-op.ts`\nWraps any tool's worker with promise + progress semantics, manages correlation ids, transfer lists, cancellation, and worker lifecycle.\n\n```ts\nimport { useCallback, useEffect, useRef, useState } from 'react';\nimport type { OpMap, ToWorker, FromWorker } from './protocol';\n\nexport function useWorkerOp<M extends OpMap>(factory: () => Worker) {\n  const ref = useRef<Worker | null>(null);\n  const seq = useRef(0);\n  const pending = useRef(new Map<number, {\n    resolve: (r: unknown) => void; reject: (e: Error) => void;\n    onProgress?: (r: number, s?: string) => void;\n  }>());\n  const [ready, setReady] = useState(false);\n\n  useEffect(() => {\n    const w = factory(); ref.current = w;\n    w.onmessage = (e: MessageEvent<FromWorker<M>>) => {\n      const m = e.data;\n      if (m.kind === 'ready') { setReady(true); return; }\n      const p = 'id' in m ? pending.current.get(m.id) : undefined;\n      if (!p) return;\n      if (m.kind === 'progress') p.onProgress?.(m.ratio, m.stage);\n      else if (m.kind === 'success') { p.resolve(m.result); pending.current.delete(m.id); }\n      else if (m.kind === 'error') { p.reject(new Error(`${m.code}: ${m.message}`)); pending.current.delete(m.id); }\n    };\n    return () => { w.terminate(); ref.current = null; };\n  }, []); // factory is stable per tool\n\n  const run = useCallback(<K extends keyof M & string>(\n    op: K, payload: M[K]['req'],\n    opts?: { transfer?: Transferable[]; onProgress?: (r: number, s?: string) => void },\n  ): Promise<M[K]['res']> => {\n    const id = ++seq.current;\n    return new Promise((resolve, reject) => {\n      pending.current.set(id, { resolve: resolve as (r: unknown)=>void, reject, onProgress: opts?.onProgress });\n      const req = { kind: 'request', id, op, payload } as ToWorker<M>;\n      ref.current!.postMessage(req, opts?.transfer ?? []);\n    });\n  }, []);\n\n  const cancel = useCallback((id: number) => ref.current?.postMessage({ kind: 'cancel', id }), []);\n  return { ready, run, cancel };\n}\n```\n\n### Parallel tools (`wasm-bindgen-rayon`)\nFor tools needing CPU parallelism the worker calls `await initThreadPool(navigator.hardwareConcurrency)` after `default()`. This requires the page be **cross-origin isolated** (COOP/COEP) — under static export there is no server to set headers, so the service worker injects them on navigations (see WASM boundary). Pool tools are flagged `loadWasm:true` and additionally documented to spawn nested workers; the host worker stays the single message endpoint.",
+    "folderStructure": "## Folder Structure (annotated)\n\n```\nutility-tools/\n├─ bunfig.toml\n├─ package.json               # scripts: predev/prebuild -> bun gen-registry; build:wasm\n├─ next.config.mjs            # output:'export', images.unoptimized, webpack worker/wasm\n├─ tailwind.config.ts\n├─ tsconfig.json              # \"strict\": true, paths \"@/*\" -> \".\"\n├─ .gitignore                 # lib/registry/registry.generated.ts, rust/pkg, out/\n│\n├─ scripts/\n│  ├─ gen-registry.ts         # Bun Glob scan -> registry.generated.ts (+validation)\n│  └─ build-wasm.ts           # orchestrates wasm-pack for each rust crate -> rust/pkg/*\n│\n├─ app/                       # Next.js App Router (all static)\n│  ├─ layout.tsx              # <html suppressHydrationWarning>, ThemeProvider, PWA <head>\n│  ├─ globals.css             # tailwind + shadcn css vars (light/dark)\n│  ├─ page.tsx                # home: searchable tool grid (uses SEARCH_INDEX)\n│  ├─ manifest.ts             # exports MetadataRoute.Manifest (PWA manifest)\n│  ├─ offline/page.tsx        # offline fallback page\n│  └─ tools/\n│     └─ [slug]/\n│        ├─ page.tsx          # generateStaticParams() from getAllSlugs(); renders ToolHost\n│        └─ not-found.tsx\n│\n├─ components/\n│  ├─ ui/                     # shadcn/ui generated (button, dialog, progress, ...)\n│  ├─ theme-provider.tsx      # next-themes wrapper\n│  ├─ theme-toggle.tsx\n│  ├─ tool-host.tsx           # client: lazy-loads tool.component via Suspense\n│  ├─ tool-card.tsx\n│  ├─ tool-search.tsx         # fuzzy search over SEARCH_INDEX (fuse.js)\n│  └─ shared/                 # cross-tool building blocks (see Shared Components)\n│     ├─ file-dropzone.tsx\n│     ├─ result-preview.tsx\n│     ├─ download-button.tsx\n│     ├─ copy-button.tsx\n│     ├─ batch-runner.tsx\n│     └─ progress-bar.tsx\n│\n├─ lib/\n│  ├─ registry/\n│  │  ├─ types.ts             # ToolMeta / ToolConfig\n│  │  ├─ index.ts             # getTool/getAllSlugs/getRelated/SEARCH_INDEX\n│  │  └─ registry.generated.ts# AUTO-GENERATED (gitignored)\n│  ├─ worker/\n│  │  ├─ protocol.ts          # message union types\n│  │  ├─ use-worker-op.ts     # typed client hook\n│  │  └─ worker-pool.ts       # generic round-robin pool over a factory\n│  ├─ zip.ts                  # client-side zip (fflate) for batch downloads\n│  ├─ download.ts             # blob -> <a download> helper, FS Access API fallback\n│  └─ utils.ts                # cn(), formatBytes, etc.\n│\n├─ tools/                     # ONE FOLDER PER TOOL, self-registering\n│  ├─ image/\n│  │  └─ image-resizer/\n│  │     ├─ tool.config.ts    # default-export ToolConfig (discovered by codegen)\n│  │     ├─ ui.tsx            # default-export React component (lazy)\n│  │     ├─ ops.ts            # OpMap types\n│  │     ├─ worker.ts         # worker entry, lazy wasm import\n│  │     └─ worker.factory.ts # default-export () => new Worker(...)\n│  ├─ text/\n│  │  └─ json-formatter/      # pure-JS tool: no worker.ts, loadWasm:false\n│  │     ├─ tool.config.ts\n│  │     └─ ui.tsx\n│  └─ crypto/\n│     └─ hash-generator/ ...\n│\n├─ rust/                      # cargo workspace of wasm crates\n│  ├─ Cargo.toml              # [workspace] members = [\"crates/*\"]\n│  ├─ crates/\n│  │  ├─ image-tools/         # one crate per heavy domain (shared by image tools)\n│  │  │  ├─ Cargo.toml        # crate-type=[\"cdylib\",\"rlib\"]; wasm-bindgen\n│  │  │  └─ src/lib.rs        # #[wasm_bindgen] resize_image(...)\n│  │  └─ crypto-tools/\n│  └─ pkg/                    # wasm-pack output (gitignored), imported as @/rust/pkg/*\n│\n└─ public/\n   ├─ icons/                  # 192/512 maskable PWA icons\n   ├─ sw.js                   # service worker (or generated by next-pwa/serwist)\n   └─ favicon.ico\n```\n\nPath alias `@/rust/pkg/*` -> `rust/pkg/*` so workers import generated wasm bindings directly.",
+    "sharedComponents": "## Shared Component API\n\nAll accept generic typing so a tool wires its own OpMap result type. Files in `components/shared/`.\n\n### FileDropzone — `file-dropzone.tsx`\n```ts\nexport interface FileDropzoneProps {\n  accept?: string;                 // \"image/*\" — also passed to <input>\n  multiple?: boolean;              // enables batch mode\n  maxSizeBytes?: number;\n  onFiles: (files: File[]) => void;\n  disabled?: boolean;\n  children?: React.ReactNode;      // custom prompt content\n}\n```\nHandles drag/drop + click-to-browse + paste (clipboard images). Validates count/size/MIME, reports rejects via a toast. No upload — files stay in memory.\n\n### ResultPreview — `result-preview.tsx`\n```ts\nexport type PreviewKind = 'image' | 'text' | 'json' | 'binary' | 'diff';\nexport interface ResultPreviewProps {\n  kind: PreviewKind;\n  data: Blob | string | ArrayBuffer;\n  mime?: string;\n  filename?: string;               // for binary fallback display\n}\n```\nRenders an `<img>` from an object URL (revoked on unmount), a monospace/`<pre>` block for text/json (with syntax highlight), or a \"binary — N bytes\" card otherwise.\n\n### DownloadButton — `download-button.tsx`\n```ts\nexport interface DownloadButtonProps {\n  getData: () => Blob | ArrayBuffer | Promise<Blob | ArrayBuffer>;\n  filename: string;\n  mime?: string;\n  variant?: ButtonProps['variant'];\n}\n```\nUses `lib/download.ts`: tries `showSaveFilePicker` (File System Access API) when available, else falls back to `URL.createObjectURL` + synthetic `<a download>`. Pure client, works offline.\n\n### CopyButton — `copy-button.tsx`\n```ts\nexport interface CopyButtonProps {\n  getText: () => string | Promise<string>;\n  label?: string;                  // default \"Copy\"\n}\n```\n`navigator.clipboard.writeText` with a 1.5s \"Copied\" state; degrades to `execCommand('copy')` on insecure contexts.\n\n### ProgressBar — `progress-bar.tsx`\n```ts\nexport interface ProgressBarProps {\n  ratio: number | null;            // null => indeterminate\n  stage?: string;\n  className?: string;\n}\n```\nWraps shadcn `Progress` (Radix). Driven directly by `WorkerProgress` messages: the tool's `run(op, payload, { onProgress: (r,s) => setProgress({r,s}) })`.\n\n### BatchRunner — `batch-runner.tsx`\nThe orchestration primitive: takes N files, runs each through a worker op (via a pool), tracks per-item progress, and zips successes.\n```ts\nexport interface BatchItem<R> {\n  file: File; status: 'queued'|'running'|'done'|'error';\n  ratio: number; result?: R; error?: string;\n}\nexport interface BatchRunnerProps<M extends OpMap, K extends keyof M & string> {\n  files: File[];\n  factory: () => Worker;           // tool's worker.factory default export\n  op: K;\n  buildPayload: (file: File, buf: ArrayBuffer) => { payload: M[K]['req']; transfer: Transferable[] };\n  toBlob: (res: M[K]['res']) => { blob: Blob; name: string };\n  concurrency?: number;            // default navigator.hardwareConcurrency\n  children: (items: BatchItem<M[K]['res']>[], zipAll: () => Promise<void>) => React.ReactNode;\n}\n```\nInternally builds a `WorkerPool` (`lib/worker/worker-pool.ts`) of `concurrency` workers from `factory`, dispatches items round-robin, updates each `BatchItem.ratio` from progress messages, and `zipAll()` calls `lib/zip.ts`:\n```ts\n// lib/zip.ts — fflate, streaming, all in-browser\nimport { zip } from 'fflate';\nexport function zipFiles(files: { name: string; data: Uint8Array }[]): Promise<Blob> {\n  return new Promise((res, rej) => {\n    const record = Object.fromEntries(files.map(f => [f.name, f.data]));\n    zip(record, { level: 6 }, (err, out) =>\n      err ? rej(err) : res(new Blob([out], { type: 'application/zip' })));\n  });\n}\n```\n\n### ToolHost — `components/tool-host.tsx` (ties it together)\n```ts\n'use client';\nexport function ToolHost({ slug }: { slug: string }) {\n  const tool = getTool(slug);\n  if (!tool) return null;\n  const Lazy = useMemo(() => lazy(tool.component), [slug]);\n  return <Suspense fallback={<ToolSkeleton />}><Lazy /></Suspense>;\n}\n```\nEach tool's `ui.tsx` calls `useWorkerOp(<factory>)` (single op) or renders `<BatchRunner>` (batch), composing the shared components above.",
+    "wasmBoundary": "## WASM Boundary Conventions + generateStaticParams\n\n### Rust crate conventions — `rust/crates/image-tools/src/lib.rs`\n- One crate per heavy domain (`image-tools`, `crypto-tools`), shared by all tools in that domain so wasm code is deduplicated. `crate-type = [\"cdylib\",\"rlib\"]`.\n- Boundary functions: take/return `Uint8Array` (mapped to `&[u8]`/`Vec<u8>`), primitives, and `String`. No complex serde structs across the boundary unless via `serde-wasm-bindgen` (used only for config objects, never bulk data).\n- Progress via a JS callback param typed `&js_sys::Function` (or `#[wasm_bindgen] FnMut`), invoked sparingly (throttled) to avoid postMessage flooding.\n- Panics: `console_error_panic_hook` set in a `#[wasm_bindgen(start)]`; a panic surfaces as a thrown JS error caught by the worker's try/catch -> `WorkerError{code:'PANIC'}`.\n\n```rust\nuse wasm_bindgen::prelude::*;\nuse js_sys::Function;\n\n#[wasm_bindgen(start)]\npub fn start() { console_error_panic_hook::set_once(); }\n\n#[wasm_bindgen]\npub fn resize_image(\n  bytes: &[u8], w: u32, h: u32, format: &str, quality: u8,\n  on_progress: &Function,\n) -> Result<Vec<u8>, JsValue> {\n  let report = |r: f64, s: &str| {\n    let _ = on_progress.call2(&JsValue::NULL, &JsValue::from(r), &JsValue::from(s));\n  };\n  report(0.0, \"decoding\");\n  // ... image crate decode/resize/encode ...\n  report(1.0, \"done\");\n  Ok(out)\n}\n```\n\n### Build conventions — `scripts/build-wasm.ts` (Bun) + `next.config.mjs`\n- `bun run scripts/build-wasm.ts` runs `wasm-pack build crates/<c> --target web --out-dir ../../rust/pkg/<c> --release` for each crate. `--target web` yields ES-module bindings with an async `default()` init that `fetch()`es the `.wasm` — exactly right for dynamic `import()` inside a worker and for static export (the `.wasm` is a hashed static asset under `out/_next/static`).\n- Heavy crates add `wasm-opt` (`-O3`) via wasm-pack profile.\n- `next.config.mjs` enables `experiments.asyncWebAssembly` + a rule so `new Worker(new URL('./worker.ts', import.meta.url))` and the `.wasm` import are emitted as static chunks:\n```js\nconst nextConfig = {\n  output: 'export',\n  images: { unoptimized: true },        // no Image Optimization server\n  webpack(config) {\n    config.experiments = { ...config.experiments, asyncWebAssembly: true, layers: true };\n    return config;\n  },\n};\n```\n- Wasm fetched by URL means it is cached by the service worker like any other `/_next/static/*` asset -> full offline.\n\n### Cross-origin isolation for rayon (no server)\n`wasm-bindgen-rayon` needs `crossOriginIsolated === true` (COOP/COEP). With static export there's no server to set headers, so the **service worker** sets them on every navigation response (coi-serviceworker pattern):\n```js\n// inside public/sw.js fetch handler, for navigations:\nconst headers = new Headers(resp.headers);\nheaders.set('Cross-Origin-Opener-Policy', 'same-origin');\nheaders.set('Cross-Origin-Embedder-Policy', 'require-corp');\n```\nOn first load the SW registers, then reloads once to gain isolation. Non-parallel tools work without this.\n\n### generateStaticParams — `app/tools/[slug]/page.tsx`\nThis is what makes every tool a prebuilt static HTML page under `output:'export'`. It enumerates all slugs from the registry at build time (the registry is generated by `prebuild` before `next build` runs).\n\n```ts\nimport { getAllSlugs, getTool } from '@/lib/registry';\nimport { ToolHost } from '@/components/tool-host';\nimport type { Metadata } from 'next';\nimport { notFound } from 'next/navigation';\n\nexport function generateStaticParams(): { slug: string }[] {\n  return getAllSlugs().map(slug => ({ slug }));   // -> out/tools/<slug>/index.html each\n}\n\nexport const dynamicParams = false;               // any unknown slug => 404 at build\n\nexport function generateMetadata({ params }: { params: { slug: string } }): Metadata {\n  const t = getTool(params.slug);\n  return t ? { title: `${t.name} — Utility Tools`, description: t.description } : {};\n}\n\nexport default function ToolPage({ params }: { params: { slug: string } }) {\n  const tool = getTool(params.slug);\n  if (!tool) notFound();\n  return <ToolHost slug={params.slug} />;          // client component lazy-loads the tool\n}\n```\n\nBuild order in `package.json`:\n```json\n{\n  \"scripts\": {\n    \"build:wasm\": \"bun run scripts/build-wasm.ts\",\n    \"gen:registry\": \"bun run scripts/gen-registry.ts\",\n    \"predev\": \"bun run build:wasm && bun run gen:registry\",\n    \"dev\": \"next dev\",\n    \"prebuild\": \"bun run build:wasm && bun run gen:registry\",\n    \"build\": \"next build\"\n  }\n}\n```\nSo: wasm compiled -> registry manifest generated -> `next build` reads `getAllSlugs()` in `generateStaticParams` -> one static page per tool. Adding a tool needs no edits to routes or switches.",
+    "decisions": "## Key Decisions / Tradeoffs\n\n1. Build-time codegen over `require.context`/`import.meta.glob`. `import.meta.glob` is Vite-only; `require.context` is hard to keep type-safe and to guarantee per-tool code-splitting. A Bun `Glob` codegen step (`scripts/gen-registry.ts`) emits explicit `import()` statements, so webpack/turbopack produce one lazy chunk per tool, and we get build-time validation (unique id/slug, valid `relatedTools`, valid category). Cost: a generated, gitignored file and a prebuild hook. This is the only mechanism that satisfies \"self-registering folders + no central switch + static export + strict types\" simultaneously.\n\n2. Static metadata vs lazy bindings split in `ToolMeta`. `ToolMetaStatic` is JSON-serializable and powers the search index, cards, `<meta>`, and `generateStaticParams` with zero JS pulled in. `component`/`loadWorker` are lazy fns so opening a tool is the only thing that downloads its UI + wasm. Tradeoff: two-shape type, but it keeps the home page and per-tool pages tiny.\n\n3. Lazy wasm inside the worker, not the main thread. The `.wasm` is imported via dynamic `import()` inside `worker.ts`, and the worker is only constructed by `loadWorker` when a tool mounts. Result: wasm chunk downloads strictly on demand, never blocks first paint, and never touches the UI thread (no jank). `--target web` async init makes the `.wasm` a normal hashed static asset the SW can cache.\n\n4. Transferables + correlation-id protocol. ArrayBuffers move with a transfer list (zero-copy) rather than structured-clone copies — essential for image/file payloads. A monotonic `id` correlates requests/progress/responses/cancels, enabling concurrent ops and a clean promise+progress API in `useWorkerOp`.\n\n5. Per-domain Rust crates, not per-tool. All image tools share `image-tools` so the `image` crate (and the heavy `image` Rust dependency) compiles once and dedupes in the bundle. Cost: a tool can pull a slightly larger shared wasm than a hyper-minimal per-tool build, but it massively reduces total bytes and build time across a family of tools.\n\n6. PWA offline = SW caches `/_next/static/*` (incl. `.wasm`) + precached routes. Because everything is static and content-hashed, a stale-while-revalidate + precache strategy gives true full-offline. The static export emits `out/tools/<slug>/index.html` per tool, so deep links work offline. Recommend Serwist (Workbox successor, App-Router friendly) over hand-rolled `sw.js`, with `/offline` as navigation fallback.\n\n7. Cross-origin isolation via service worker, not server headers. `output:'export'` means no server to send COOP/COEP, which `wasm-bindgen-rayon` requires. The SW injects those headers on navigations and self-reloads once to gain isolation. Tradeoff: an extra first-load reload and SW complexity, isolated to parallel tools only; single-threaded tools are unaffected. `loadWasm` (+ a `parallel` convention) flags which tools need it.\n\n8. `images.unoptimized:true` and no server features. Required by static export — rules out next/image optimization, ISR, route handlers, middleware, server actions. All dynamic behavior is client-side; SEO relies on prebuilt HTML + `generateMetadata`. Acceptable for a privacy-first tool app where all compute is client-side by design.\n\n9. TS strict end-to-end. The generic `OpMap` threads exact request/response types from each tool's `ops.ts` through `useWorkerOp` and `BatchRunner`, so a wrong payload or mishandled result is a compile error. The codegen file is fully typed (`ToolConfig[]`), so registry consumers are strict too.\n\n10. Client-side zip with fflate. Batch outputs are zipped in-browser (`lib/zip.ts`) — no server round-trip, preserves the privacy guarantee, and works offline. Tradeoff: large batches hold results in memory; mitigated by fflate's streaming API and bounded `concurrency` in the worker pool.\n\n11. Icons as string names, resolved client-side. `icon` is a lucide name string (not a component import) so `ToolMetaStatic` stays serializable and the search index/home grid don't eagerly import an icon module per tool; a single `<Icon name={...}>` resolver maps the string at render time.\n\nVerified locally: Bun 1.4.0, Rust 1.95.0, cargo 1.95.0, and wasm-pack are all installed in this environment, so this stack is build-ready. The repo is an empty git repo (greenfield) — no existing code constrains the design."
+  },
+  "design": {
+    "typography": "FONTS (bundled locally via next/font/local or @fontsource — self-hosted, zero external requests for privacy):\n- Sans/UI: Geist Sans (variable, weights 400/500/600/700). Fallback stack: ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif.\n- Mono: Geist Mono (variable, 400/500/600). Used for ALL tool I/O, code, hashes, tokens, keyboard hints, numeric counters, table data. Fallback: ui-monospace, \"SF Mono\", \"JetBrains Mono\", \"Cascadia Code\", Menlo, monospace.\n- Wire as CSS vars: --font-sans, --font-mono. Tailwind: fontFamily.sans -> var(--font-sans); fontFamily.mono -> var(--font-mono).\n\nTYPE SCALE (compact, dense — base 13px UI not 16px; reserve 16px for prose only):\n- text-2xs: 0.6875rem / 11px, line-height 1rem / 16px, tracking +0.02em (badges, tool-count pills, kbd, table micro-labels)\n- text-xs: 0.75rem / 12px, lh 1rem / 16px (secondary meta, breadcrumb, captions, option labels)\n- text-sm: 0.8125rem / 13px, lh 1.25rem / 20px (DEFAULT body/UI — buttons, inputs, card titles, nav)\n- text-base: 0.875rem / 14px, lh 1.375rem / 22px (tool descriptions, denser prose)\n- text-lg: 1rem / 16px, lh 1.5rem / 24px (section headers, card group titles)\n- text-xl: 1.125rem / 18px, lh 1.625rem / 26px (tool page H1)\n- text-2xl: 1.375rem / 22px, lh 1.875rem / 30px (homepage hero/lead, rare)\n- text-3xl: 1.75rem / 28px, lh 2.125rem / 34px (max — landing only)\n\nWEIGHTS & TRACKING: Headings 600 (not 700 — avoids bold AI-marketing feel). Body 400. UI labels/buttons 500. Mono I/O 400. Section eyebrow labels: text-2xs, weight 600, uppercase, tracking +0.06em, muted-foreground. Negative tracking -0.01em on text-xl and up for tight technical headings.\n\nMONOSPACE USAGE (the developer-tool soul): every input/output textarea, generated values (UUID/hash/JWT/base64), inline code, numeric stats (\"1,204 chars · 312 bytes\"), all kbd hints, breadcrumb path segments, tool slugs, byte/char counters, diff views, table cells with data. Mono is tabular-nums everywhere numbers update live (font-variant-numeric: tabular-nums) to prevent layout jitter.",
+    "colorTokens": "OKLCH tokens. Neutrals are subtly cool/blue-tinted (hue ~250-265) — not pure gray — for a technical screen feel. Define in :root and .dark. Map all to Tailwind via hsl-less oklch().\n\n:root (LIGHT) {\n  --background: oklch(0.992 0.002 250);        /* near-white, faint cool */\n  --foreground: oklch(0.205 0.012 256);        /* ink, not pure black */\n  --card: oklch(1 0 0);                          /* pure white cards lift off bg */\n  --card-foreground: oklch(0.205 0.012 256);\n  --popover: oklch(1 0 0);\n  --popover-foreground: oklch(0.205 0.012 256);\n  --muted: oklch(0.967 0.004 256);             /* subtle fill, input bg, hover */\n  --muted-foreground: oklch(0.486 0.014 257);  /* secondary text — passes AA on bg */\n  --border: oklch(0.918 0.006 256);            /* hairline */\n  --input: oklch(0.918 0.006 256);\n  --ring: oklch(0.62 0.17 256);                /* focus ring = primary-ish blue */\n  --primary: oklch(0.55 0.20 264);             /* indigo-blue action */\n  --primary-foreground: oklch(0.985 0.002 250);\n  --accent: oklch(0.955 0.012 264);            /* tinted hover/selected */\n  --accent-foreground: oklch(0.30 0.10 264);\n  --secondary: oklch(0.967 0.004 256);\n  --secondary-foreground: oklch(0.255 0.012 256);\n  --destructive: oklch(0.58 0.225 25);\n  --destructive-foreground: oklch(0.985 0.002 250);\n  --success: oklch(0.62 0.16 150);\n  --warning: oklch(0.72 0.15 75);\n  --radius: 0.5rem;\n}\n.dark {\n  --background: oklch(0.178 0.012 264);         /* deep blue-charcoal, NOT #000 */\n  --foreground: oklch(0.948 0.004 256);\n  --card: oklch(0.213 0.013 264);              /* one step up from bg */\n  --card-foreground: oklch(0.948 0.004 256);\n  --popover: oklch(0.213 0.013 264);\n  --popover-foreground: oklch(0.948 0.004 256);\n  --muted: oklch(0.255 0.014 264);\n  --muted-foreground: oklch(0.668 0.016 257);\n  --border: oklch(0.282 0.016 264);            /* subtle, use border + 8% white overlay for elev */\n  --input: oklch(0.282 0.016 264);\n  --ring: oklch(0.66 0.16 256);\n  --primary: oklch(0.68 0.16 264);             /* brighter indigo for dark */\n  --primary-foreground: oklch(0.18 0.02 264);\n  --accent: oklch(0.288 0.03 264);\n  --accent-foreground: oklch(0.92 0.02 264);\n  --secondary: oklch(0.255 0.014 264);\n  --secondary-foreground: oklch(0.92 0.004 256);\n  --destructive: oklch(0.62 0.20 25);\n  --destructive-foreground: oklch(0.985 0.002 250);\n  --success: oklch(0.70 0.15 152);\n  --warning: oklch(0.78 0.14 78);\n}\n\nCATEGORY ACCENT COLORS (each tool category gets a hue — used in card icon chips, left-border accent, palette group dots; light value / dark value):\n  --cat-crypto:    oklch(0.58 0.20 296) / oklch(0.72 0.16 296)   /* violet */\n  --cat-converter: oklch(0.58 0.17 240) / oklch(0.72 0.15 240)   /* blue */\n  --cat-web:       oklch(0.60 0.16 195) / oklch(0.74 0.13 195)   /* cyan */\n  --cat-text:      oklch(0.60 0.15 162) / oklch(0.74 0.13 162)   /* teal-green */\n  --cat-network:   oklch(0.62 0.16 142) / oklch(0.74 0.14 142)   /* green */\n  --cat-math:      oklch(0.66 0.15 92)  / oklch(0.78 0.14 92)    /* amber */\n  --cat-image:     oklch(0.64 0.17 50)  / oklch(0.76 0.15 50)    /* orange */\n  --cat-data:      oklch(0.60 0.20 18)  / oklch(0.72 0.17 18)    /* red-coral */\n  --cat-dev:       oklch(0.58 0.18 330) / oklch(0.72 0.15 330)   /* magenta */\nUsage rule: category color is ACCENT ONLY (icon chip bg at ~12% opacity light / ~18% dark, icon at full hue, optional 2px left card border on hover). Never floods backgrounds — keeps neutral, technical base. Primary indigo stays the single global action color.",
+    "spacingLayout": "SPACING — keep Tailwind 4px base but lean on the dense rungs. Default gaps 8/12; section gaps 16/24; page padding 16 (mobile) -> 24 (desktop). Avoid 48/64/80 vertical whitespace blocks (that reads as marketing/AI-slop). Vertical rhythm between dense sections: 24px max.\n\nGRID:\n- App max-width: 1440px content, but tool workspace can go edge-to-edge within a 1600px max for wide I/O panes.\n- Persistent left sidebar (nav/categories): 240px fixed (collapsible to 56px icon-rail). Sidebar is sticky, full height, its own scroll.\n- Main content: 12-col CSS grid, 16px gutter, 24px column gap on lg.\n- Homepage category grid: auto-fill minmax(280px, 1fr), 12px gap. Tool cards within: minmax(220px,1fr), 8px gap.\n- Tool workspace: 2-col split (input left / output right) at >=1024px using grid-cols-2 gap-4; collapses to stacked grid-cols-1 below. Options bar spans full width above or as a 3rd narrow column (280px) on ultra-wide.\n\nBORDER RADIUS (from --radius: 0.5rem / 8px):\n- rounded-sm = calc(radius - 4px) = 4px (badges, kbd, tiny chips)\n- rounded-md = calc(radius - 2px) = 6px (buttons, inputs, dropdown items)\n- rounded-lg = radius = 8px (cards, panels, popover)\n- rounded-xl = calc(radius + 4px) = 12px (command palette, modal, top-level containers)\n- Full only for avatars/status dots. NO pill buttons on primary actions — pills read consumer-y; keep 6px.\n\nDENSITY targets: button height 32px (h-8) default, 28px (h-7) sm for toolbars, 36px (h-9) for primary CTA only. Input height 32px. Row height in lists 32-36px. Card internal padding 12-16px (p-3/p-4), never p-6+. Icon size 16px default (size-4), 14px in dense toolbars. Line-height tight; rely on borders/dividers to separate, not whitespace.",
+    "homepageLayout": "HOMEPAGE — a dense dashboard, NOT a centered hero. Layout top to bottom:\n\n1) PERSISTENT SHELL: left sidebar (240px) with logo + global search trigger (\"/\" hint), category list with live tool counts as right-aligned mono pills, Favorites/Recent at top, theme toggle + GitHub link pinned at bottom. Top bar (48px, sticky, border-b): breadcrumb-style \"All tools\", center-stretched command/search input (max-w-xl, NOT centered hero — left-aligned in content), kbd hint \"⌘K\", and a right cluster (theme, layout density toggle, settings).\n\n2) COMMAND BAR (in-page, not modal): full-width search input row, h-9, mono placeholder \"Search 140+ tools… (regex, base64, jwt, uuid)\". Below it a horizontal scroll row of filter chips: All · Crypto · Converters · Web · Text · Network · Data — each with count. text-sm, h-7 chips, active = primary-tinted.\n\n3) RECENT / PINNED STRIP (only if user has history): eyebrow label \"RECENT\", a single horizontal row of compact tool cards (icon chip + name + category dot), h-12, overflow-x scroll. Quietly omitted for new users (no empty-state hero).\n\n4) CATEGORY GRID (the core): sections per category, each = eyebrow header row [category icon chip in cat color][Category name (text-lg/600)][count pill mono][optional \"view all\" ghost link right]. Under it a responsive grid of TOOL CARDS.\n\nTOOL CARD (dense, the signature element):\n- Container: rounded-lg border bg-card, p-3, hover: border-foreground/15 + subtle bg-accent + 2px left inset border in category color (box-shadow inset 2px 0 var(--cat)). transition 120ms.\n- Row 1: [icon chip 24px rounded-md, category-color bg @12%, icon @ full hue, size-4] + [tool name text-sm/500 truncate] + [optional star/pin toggle ghost, appears on hover, right].\n- Row 2: description text-xs muted-foreground, line-clamp-2.\n- Row 3 (meta footer, mono text-2xs muted): category name · maybe \"offline\" badge (privacy signal) · keyboard hint. Use a tiny green dot for \"runs locally / no network\".\n- Whole card is a link; entire surface clickable; focus-visible ring.\n- Grid: grid gap-2, auto-fill minmax(260px,1fr). Tightly packed, many per row.\n\n5) FOOTER: thin, mono, single line — \"All processing happens in your browser. No data leaves your device.\" + version + GitHub. This privacy line is a persistent trust signal, styled understated (text-2xs muted).\n\nNo giant illustrations, no gradient blob hero, no \"Get Started\" CTA. The grid IS the landing.",
+    "toolPageLayout": "TOOL PAGE — consistent shell (same sidebar + top bar as home). Main column structure:\n\n1) BREADCRUMB (h-8, text-xs mono): Home / [Category] / [Tool] — segments are links, separators \"/\" in muted-foreground. Category segment colored in its cat-accent. Right side of breadcrumb row: action cluster — [Pin/star ghost btn][Share/permalink][Report issue] all icon-only h-7.\n\n2) HEADER BLOCK (compact, py-3): Row with [category icon chip 28px] + [H1 tool name text-xl/600 tracking-tight] + [tiny \"offline\" badge]. Below: one-line description text-sm muted-foreground (max-w-2xl). Do NOT center; left-aligned, tight.\n\n3) WORKSPACE (the meat) — a bordered panel, rounded-lg, divided into regions by hairline borders (border, not whitespace):\n   - OPTIONS BAR: full-width toolbar across top of panel, h-auto py-2 px-3, bg-muted/40, border-b. Holds the tool's controls — selects, switches, segmented toggles, number inputs — laid out inline-wrap with 8px gaps, each labeled with text-xs label above or inline. Segmented control (Radix ToggleGroup) styled like a tabbed switch for modes (e.g. Encode/Decode).\n   - I/O SPLIT: grid grid-cols-2 gap-0 with a center divider (border-r), each pane min-h-[320px].\n     * INPUT pane: header row (h-8, px-3, bg-muted/30, border-b) = label \"INPUT\" eyebrow + utility buttons (Paste, Upload file, Clear, Sample) as h-7 ghost icon+text. Body = mono textarea, resize-y, p-3, text-sm, font-mono, no border (panel provides it), spellcheck off, with line numbers gutter optional for code tools.\n     * OUTPUT pane: header \"OUTPUT\" + buttons (Copy [shows \"Copied ✓\" 1.5s], Download, Open in…). Body = mono, read-only, selectable; copy uses navigator.clipboard. Errors render inline as a destructive-tinted banner at top of output pane, mono, with the exact error.\n   - LIVE STATUS FOOTER of panel: h-7 border-t bg-muted/30 px-3, mono text-2xs muted — live stats: \"input: 1,204 chars · 312 bytes · 18 lines  |  output: 428 chars  |  processed in 2ms\". tabular-nums. This real-time counter is core to the power-tool feel.\n   For multi-step tools (CyberChef-like), allow a vertical \"recipe\" stack of operation cards instead of single options bar.\n\n4) RELATED TOOLS: eyebrow \"RELATED\", a row of 3-4 compact tool cards (same dense card, smaller) from same category + by shared tags.\n\n5) ABOUT / NOTES (collapsible, default closed for power users): short explainer, examples, references — in a <Collapsible>, text-base prose, max-w-2xl. Keeps page dense by default but discoverable.\n\nState: all options + input persisted to URL query / localStorage so refresh and share-links restore the workspace. Permalink encodes input (with explicit opt-in for privacy).",
+    "commandPalette": "COMMAND PALETTE (cmdk, ⌘K / Ctrl+K, also \"/\" when not in a field):\n- Container: Radix Dialog overlay (bg-background/70 backdrop-blur-sm), centered modal max-w-2xl, rounded-xl, border, shadow-lg, top-aligned at ~18vh (not vertically centered — feels faster/Raycast-like). Panel bg-popover.\n- Input row: h-12, border-b, leading search icon (size-4 muted), mono-ish placeholder \"Type a tool, or run a command…\", trailing kbd \"esc\". No border on the input itself.\n- RESULTS: scroll area max-h-[400px], grouped with cmdk Command.Group, each group has a sticky text-2xs uppercase tracking-wide muted header:\n    · \"RECENT\" (last 5 used, from localStorage) — shown first when query empty.\n    · \"FAVORITES\" (pinned).\n    · Then one group PER CATEGORY (\"Crypto\", \"Converters\", \"Web\"…), each item prefixed by category-color dot + tool icon.\n    · \"ACTIONS\" group: Toggle theme, Copy current output, Go to settings, Toggle density, Open on GitHub — command-style verbs.\n- ITEM: h-9 px-2 rounded-md, [icon/dot] + [name text-sm] + [category right-aligned mono text-2xs muted] + selected state bg-accent. On highlight show a right-side kbd \"↵\". Fuzzy match (cmdk default + custom: match name, aliases, tags, slug — so \"b64\" finds Base64, \"sha\" finds hashing).\n- KEYBOARD: ↑/↓ navigate (wrap), ↵ open, ⌘↵ open in new tab, esc close, Tab/Shift+Tab between groups optional. Type-ahead instant filter. Highlight follows mouse + keyboard.\n- EMPTY STATE: \"No tools match 'xyz' — press ↵ to search the web\" (optional) or just muted \"Nothing here.\" Keep it terse.\n- Recents weighting: recently/frequently used float to top of matching results (frecency). Persist recents + favorites in localStorage (privacy-first, never server).\n- Footer bar (h-9, border-t, bg-muted/30, mono text-2xs): left \"↑↓ navigate  ↵ open  ⌘↵ new tab\"  right \"esc close\". Reinforces keyboard-first identity.",
+    "componentStyle": "SHADCN/UI STYLING (the anti-AI-slop tactics are the point):\n\nGLOBAL: baseColor neutral but overridden with cool-tinted oklch above. radius 0.5rem. Borders are first-class — almost everything has a 1px border; we separate with hairlines, not shadows or whitespace. Shadows are minimal and tight (no big soft glows).\n\nSHADOWS: \n  --shadow-xs: 0 1px 2px 0 oklch(0.2 0.02 264 / 0.04)\n  --shadow-sm: 0 1px 3px 0 oklch(0.2 0.02 264 / 0.06), 0 1px 2px -1px oklch(0.2 0.02 264 / 0.06)\n  --shadow-md (popover/palette only): 0 4px 12px -2px oklch(0.2 0.02 264 / 0.12), 0 2px 6px -2px oklch(0.2 0.02 264 / 0.08)\n  Dark mode: shadows nearly invisible — instead lift via border + bg one step lighter + optional inset 0 0 0 1px white/4%.\n\nBUTTONS (h-8 default, px-3, text-sm, font-medium, rounded-md, gap-2, active:scale-[0.98] subtle):\n  - default (primary): bg-primary text-primary-foreground, border border-primary, shadow-xs, hover brightness/opacity-90. Used sparingly — ONE per view.\n  - secondary: bg-secondary text-secondary-foreground border-border hover:bg-accent — the workhorse.\n  - outline: bg-transparent border-border hover:bg-accent — toolbar buttons.\n  - ghost: no bg/border, hover:bg-accent — icon buttons, card actions.\n  - destructive: bg-destructive.\n  - Sizes: sm h-7 px-2.5 text-xs; icon size-8 (icon-sm size-7).\n  - Avoid gradients, glows, full-rounded pills.\n\nINPUTS/TEXTAREA: h-8, rounded-md, border-border, bg-background (light) / bg-muted (dark for subtle inset), text-sm, focus: ring-2 ring-ring/40 + border-ring, placeholder muted-foreground. Tool I/O textareas use font-mono. No heavy inner shadow.\n\nCARDS: rounded-lg border bg-card, shadow-xs (light only), p-3/p-4. Hover interaction via border color + bg-accent, NOT scale or big shadow.\n\nBADGES/KBD: rounded-sm, text-2xs, px-1.5 h-5, mono. kbd = border-border bg-muted with subtle bottom border (border-b-2) for keycap feel.\n\nTABS/TOGGLEGROUP: underline or segmented (bg-muted container, active item bg-background + shadow-xs) — segmented preferred for tool modes.\n\nSELECT/DROPDOWN/POPOVER: rounded-lg, border, shadow-md, p-1, items h-8 rounded-md text-sm, check/leading icons size-4.\n\nTOOLTIP: tiny, rounded-md, bg-foreground text-background (inverse), text-2xs, fast (delay 200ms). Use for icon-only buttons.\n\nANTI-AI-SLOP TACTICS (concrete):\n1) Default to 13px UI + dense spacing — kills the airy generic look instantly.\n2) Hairline borders everywhere; structure with lines, not floating cards in whitespace.\n3) Mono everywhere data lives — signals \"tool\", not \"marketing site\".\n4) Single restrained primary color; categories add color only via small accent chips/dots.\n5) No centered hero, no gradient blobs, no emoji bullets, no 3-card \"features\" row, no glassmorphism.\n6) Persistent sidebar + top bar app-shell (dashboard, not page).\n7) Real-time numeric counters with tabular-nums.\n8) Keyboard-first: visible kbd hints, ⌘K, focus-visible rings, \"/\" to search.\n9) Subtle micro-interactions only (120ms, scale 0.98 on press, no bouncy spring).\n10) Cool-tinted neutrals (hue ~256-264) instead of pure gray/black — screens, not paper.\n11) Tight 600-weight headings (not 700/800), negative tracking on large text.\n12) Privacy/offline badges + \"runs locally\" green dots as authentic functional ornament.",
+    "aesthetic": "A keyboard-first, terminal-adjacent dashboard for builders. The vibe: opening a well-organized engineering tool, not a SaaS landing page. Dense information surfaces bound by hairline borders, cool blue-charcoal neutrals (never pure black/white/gray), and monospace anywhere real data flows — hashes, byte counts, I/O, key hints. One disciplined indigo action color carries every CTA; categories are identified by small saturated accent chips and dots, never flooded backgrounds. The interface is an app shell (sticky sidebar + slim top bar + command palette), measured in 13px UI and 4-8px rhythms, structured by lines instead of whitespace. Every tool page is the same predictable workspace — breadcrumb, tight header, options bar, split mono input/output, live tabular-nums stat footer — so power users build muscle memory. Privacy is part of the look: persistent \"runs locally / no data leaves your device\" signals and offline badges as honest, functional ornament. The result reads like Linear's density met Raycast's keyboard ergonomics and CyberChef's tool depth: fast, quiet, confident, unmistakably a power tool — the deliberate opposite of centered-hero, gradient-blob AI-slop."
+  }
+}
