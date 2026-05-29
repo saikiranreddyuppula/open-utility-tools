@@ -12,5 +12,6 @@
     "resolveJsonModule": true,
     "paths": { "@/*": ["../*"] }
   },
-  "include": ["**/*.ts"]
+  "include": ["gen-registry.ts", "selftest.ts"],
+  "comment2": "gen-tools-doc.ts imports the app registry (which imports .tsx); it is validated by Bun at runtime and type-checked via the app's tsc, not here."
 }

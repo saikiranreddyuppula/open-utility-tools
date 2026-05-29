@@ -1,0 +1,16 @@
+import type { ToolMetaStatic } from '@/lib/registry/types';
+
+const meta: ToolMetaStatic = {
+  id: 'convert-length-converter-v1',
+  name: 'Length and Distance Converter',
+  slug: 'length-converter',
+  description:
+    'Convert between metric and imperial lengths such as mm, cm, m, km, inch, foot, yard, mile, and nautical mile with live multi-unit output.',
+  category: 'convert',
+  tags: ['length', 'distance', 'metric', 'imperial', 'convert'],
+  keywords: ['length', 'distance', 'metric', 'imperial', 'convert', 'units'],
+  icon: 'Ruler',
+  relatedTools: [],
+};
+
+export default meta;

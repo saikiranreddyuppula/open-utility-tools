@@ -1,0 +1,16 @@
+import type { ToolMetaStatic } from '@/lib/registry/types';
+
+const meta: ToolMetaStatic = {
+  id: 'text-text-wrap-v1',
+  name: 'Text Wrapper',
+  slug: 'text-wrap',
+  description:
+    'Hard-wrap text to a fixed column width, breaking on word boundaries, with optional hanging indent and break-long-word handling.',
+  category: 'text',
+  tags: ['word wrap', 'column width', 'format'],
+  keywords: ['word wrap', 'column width', 'hard wrap', '80 columns', 'format'],
+  icon: 'AlignJustify',
+  relatedTools: [],
+};
+
+export default meta;
