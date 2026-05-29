@@ -11,9 +11,8 @@ const nextConfig = {
   // when self-hosted from a plain static file server (index.html resolution).
   trailingSlash: true,
 
-  // Surface real type/lint errors during the build (TS strict everywhere).
+  // Surface real type errors during the build (TS strict everywhere).
   typescript: { ignoreBuildErrors: false },
-  eslint: { ignoreDuringBuilds: false },
 
   reactStrictMode: true,
 };

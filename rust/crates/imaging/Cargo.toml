@@ -1,0 +1,34 @@
+[package]
+name = "imaging"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Image decode/encode/resize/transform (wasm) via the `image` crate."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# See rust/crates/core/Cargo.toml for why these wasm-opt flags are needed.
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = [
+  "-Os",
+  "--enable-bulk-memory",
+  "--enable-sign-ext",
+  "--enable-mutable-globals",
+  "--enable-nontrapping-float-to-int",
+  "--enable-reference-types",
+  "--enable-multivalue",
+]
+
+[dependencies]
+wasm-bindgen.workspace = true
+js-sys.workspace = true
+console_error_panic_hook.workspace = true
+
+# Decode + encode common raster formats. Default features cover png/jpeg/gif/bmp/
+# ico/tiff/webp; we keep them and disable rayon (no threads on wasm).
+[dependencies.image]
+version = "0.25"
+default-features = false
+features = ["png", "jpeg", "gif", "bmp", "ico", "tiff", "webp", "pnm", "tga"]

@@ -9,6 +9,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "types": ["node"],
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
