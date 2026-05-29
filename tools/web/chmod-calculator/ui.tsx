@@ -8,11 +8,11 @@ import { Panel, PanelHeader } from '@/components/tools/panel';
 import { CopyButton } from '@/components/tools/copy-button';
 
 const GROUPS = ['Owner', 'Group', 'Others'] as const;
-const PERMS = [
+const PERMS: [string, number][] = [
   ['Read', 4],
   ['Write', 2],
   ['Execute', 1],
-] as const;
+];
 
 export default function ChmodCalculatorTool() {
   // bits[group] = octal digit 0-7
@@ -36,8 +36,8 @@ export default function ChmodCalculatorTool() {
 
   const setOctal = (v: string) => {
     if (/^[0-7]{0,3}$/.test(v)) {
-      const padded = v.padStart(3, '0');
-      setBits([Number(padded[0] ?? 0), Number(padded[1] ?? 0), Number(padded[2] ?? 0)]);
+      const p = v.padStart(3, '0');
+      setBits([Number(p[0] ?? 0), Number(p[1] ?? 0), Number(p[2] ?? 0)]);
     }
   };
 
@@ -50,7 +50,9 @@ export default function ChmodCalculatorTool() {
             <tr>
               <th className="px-3 py-2 text-left font-medium">Permission</th>
               {GROUPS.map((g) => (
-                <th key={g} className="px-3 py-2 text-center font-medium">{g}</th>
+                <th key={g} className="px-3 py-2 text-center font-medium">
+                  {g}
+                </th>
               ))}
             </tr>
           </thead>
@@ -61,7 +63,7 @@ export default function ChmodCalculatorTool() {
                 {GROUPS.map((g, gi) => (
                   <td key={g} className="px-3 py-2 text-center">
                     <Checkbox
-                      checked={(bits[gi] & val) !== 0}
+                      checked={((bits[gi] ?? 0) & val) !== 0}
                       onCheckedChange={() => toggle(gi, val)}
                     />
                   </td>
