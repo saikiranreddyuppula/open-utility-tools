@@ -12,6 +12,8 @@ import { textToMorse, morseToText } from '../lib/text/morse';
 import { gcd, lcm, isPrime, primeFactors } from '../lib/math/numbers';
 import { yamlToJson, jsonToYaml } from '../lib/data/yaml';
 import { markdownToHtml } from '../lib/text/markdown';
+import { jsonToTypeScript } from '../lib/data/json-to-ts';
+import { explainCron, parseCron, nextRuns } from '../lib/time/cron';
 
 const failures: string[] = [];
 let pass = 0;
@@ -74,6 +76,14 @@ const C = temp.units.find((u) => u.id === 'C')!;
 const F = temp.units.find((u) => u.id === 'F')!;
 ok('100C to F = 212', Math.abs(convertUnit(100, C, F) - 212) < 0.01);
 ok('0C to F = 32', Math.abs(convertUnit(0, C, F) - 32) < 0.01);
+
+// codegen + cron
+ok('json-to-ts interface', jsonToTypeScript({ id: 1, name: 'x' }, 'Root').includes('export interface Root'));
+ok('json-to-ts number', jsonToTypeScript({ n: 5 }, 'Root').includes('n: number'));
+eq('cron fields', parseCron('*/15 9-17 * * 1-5').length, 5);
+eq('cron @daily', explainCron('@daily'), 'at 00:00');
+eq('cron weekday', explainCron('30 14 * * *'), 'at 14:30');
+ok('cron next runs', nextRuns('0 9 * * 1-5', 3, new Date('2024-01-01T00:00:00Z')).length === 3);
 
 await Bun.write(
   new URL('./_selftest-result.json', import.meta.url),
