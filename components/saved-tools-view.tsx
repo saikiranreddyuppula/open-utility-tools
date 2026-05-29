@@ -20,7 +20,7 @@ export function SavedToolsView({ kind }: { kind: 'favorites' | 'recent' }) {
   const Empty = kind === 'favorites' ? Star : History;
 
   return (
-    <div className="mx-auto w-full max-w-[1600px] px-4 py-5 lg:px-6">
+    <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
       <h1 className="mb-4 text-xl font-semibold tracking-tight">{title}</h1>
       {tools.length > 0 ? (
         <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-2">

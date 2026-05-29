@@ -30,7 +30,7 @@ export function ToolShell({
   const related = getRelatedTools(tool.slug);
 
   return (
-    <div className="mx-auto w-full max-w-[1600px] px-4 py-4 lg:px-6">
+    <div className="mx-auto w-full max-w-6xl px-4 py-6 sm:px-6">
       {/* Breadcrumb */}
       <div className="flex items-center justify-between">
         <nav className="flex items-center gap-1 font-mono text-xs text-muted-foreground">

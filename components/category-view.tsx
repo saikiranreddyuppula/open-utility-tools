@@ -23,7 +23,7 @@ export function CategoryView({ category }: { category: ToolCategory }) {
   );
 
   return (
-    <div className="mx-auto w-full max-w-[1600px] px-4 py-5 lg:px-6">
+    <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
       <div className="mb-4 flex items-start gap-3">
         <span
           className="flex size-9 items-center justify-center rounded-lg"
