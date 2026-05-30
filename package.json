@@ -6,9 +6,9 @@
   "scripts": {
     "predev": "bun run registry:gen",
     "dev": "next dev",
-    "prebuild": "bun run wasm:build && bun run registry:gen",
+    "prebuild": "bun run registry:gen",
     "build": "next build",
-    "wasm:build": "bash scripts/build-wasm.sh",
+    "wasm:build": "bash scripts/build-wasm.sh && bun run registry:gen",
     "registry:gen": "bun run scripts/gen-registry.ts",
     "tools:doc": "bun run scripts/gen-tools-doc.ts",
     "serve": "bunx serve out",

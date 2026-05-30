@@ -16,7 +16,8 @@ next-env.d.ts
 **/target
 /rust/**/pkg
 /lib/wasm/generated
-/public/wasm
+# NOTE: public/wasm (prebuilt wasm-pack output, ~1.8MB) IS committed so CI/Cloudflare
+# builds don't need a Rust toolchain. Regenerate with `bun run wasm:build` when crates change.
 
 # misc
 .DS_Store
