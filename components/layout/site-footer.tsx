@@ -6,7 +6,7 @@ import { Shield, Code2 } from 'lucide-react';
 import { Icon } from '@/components/icon';
 import { CATEGORIES, CATEGORY_META, getToolsByCategory, TOTAL_TOOL_COUNT } from '@/lib/registry';
 
-const GITHUB_URL = 'https://github.com';
+const GITHUB_URL = 'https://github.com/saikiranreddyuppula/open-utility-tools';
 
 export function SiteFooter() {
   const cats = CATEGORIES.filter((c) => getToolsByCategory(c).length > 0);
@@ -22,7 +22,7 @@ export function SiteFooter() {
               <span className="flex size-7 items-center justify-center rounded-md bg-primary text-primary-foreground">
                 <Shield className="size-4" />
               </span>
-              <span className="text-sm font-semibold tracking-tight">Utility Tools</span>
+              <span className="text-sm font-semibold tracking-tight">Open Utility Tools</span>
             </Link>
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">
               {TOTAL_TOOL_COUNT}+ developer &amp; file utilities that run entirely in your
@@ -53,7 +53,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t pt-6 text-2xs text-muted-foreground sm:flex-row">
-          <span>© {year} Utility Tools · MIT licensed</span>
+          <span>© {year} Open Utility Tools · MIT licensed</span>
           <a
             href={GITHUB_URL}
             target="_blank"

@@ -1,0 +1,20 @@
+{
+  // Open Utility Tools — static export deployed on Cloudflare Workers static assets.
+  // The worker (worker.js) runs first only to 301-redirect the apex host to www;
+  // everything else is served straight from the prebuilt ./out directory.
+  "name": "open-utility-tools",
+  "main": "worker.js",
+  "compatibility_date": "2026-05-01",
+  "assets": {
+    "directory": "./out",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "www.openutilitytools.com", "custom_domain": true },
+    { "pattern": "openutilitytools.com", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}

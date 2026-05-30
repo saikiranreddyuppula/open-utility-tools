@@ -1,6 +1,6 @@
 # Utility Tools
 
-A privacy-first, **100% client-side** collection of **280+** developer & file utilities — a fast,
+A privacy-first, **100% client-side** collection of **990+** developer & file utilities — a fast,
 self-hostable alternative to it-tools.tech / CyberChef / iLoveIMG / SmallPDF.
 
 > **No user data ever leaves your browser.** There is no backend that processes your files

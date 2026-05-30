@@ -25,7 +25,7 @@ export async function generateMetadata({
     title: tool.name,
     description: tool.description,
     keywords: [...tool.tags, ...tool.keywords, cat.name],
-    openGraph: { title: `${tool.name} — Utility Tools`, description: tool.description },
+    openGraph: { title: `${tool.name} — Open Utility Tools`, description: tool.description },
   };
 }
 

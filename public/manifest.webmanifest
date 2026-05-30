@@ -1,6 +1,6 @@
 {
-  "name": "Utility Tools",
-  "short_name": "Utility Tools",
+  "name": "Open Utility Tools",
+  "short_name": "Open Utility Tools",
   "description": "A privacy-first collection of developer & file utilities that run entirely in your browser.",
   "start_url": "/",
   "scope": "/",

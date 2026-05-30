@@ -1,0 +1,24 @@
+import type { ToolMetaStatic } from '@/lib/registry/types';
+
+const meta: ToolMetaStatic = {
+  id: 'color-color-css-gradient-extract-stops-v1',
+  name: 'CSS Gradient Parser',
+  slug: 'color-css-gradient-extract-stops',
+  description:
+    'Parses a CSS linear/radial gradient string into structured angle, type, and color stops.',
+  category: 'color',
+  tags: ['gradient', 'css', 'parse', 'color', 'stops'],
+  keywords: [
+    'gradient',
+    'linear-gradient',
+    'radial-gradient',
+    'conic-gradient',
+    'color stops',
+    'parse css',
+    'extract',
+  ],
+  icon: 'Blend',
+  relatedTools: [],
+};
+
+export default meta;

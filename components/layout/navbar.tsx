@@ -33,7 +33,7 @@ export function Navbar() {
           <span className="flex size-7 items-center justify-center rounded-md bg-primary text-primary-foreground">
             <Shield className="size-4" />
           </span>
-          <span className="text-sm font-semibold tracking-tight">Utility Tools</span>
+          <span className="text-sm font-semibold tracking-tight">Open Utility Tools</span>
         </Link>
 
         {/* Desktop nav */}

@@ -1,0 +1,24 @@
+import type { ToolMetaStatic } from '@/lib/registry/types';
+
+const meta: ToolMetaStatic = {
+  id: 'text-text-case-statistics-report-v1',
+  name: 'Text Case Statistics Report',
+  slug: 'text-case-statistics-report',
+  description:
+    'Counts uppercase, lowercase, digit, punctuation and whitespace characters and reports their percentages.',
+  category: 'text',
+  tags: ['statistics', 'count', 'characters', 'analyze', 'report'],
+  keywords: [
+    'character count',
+    'uppercase lowercase count',
+    'digit count',
+    'punctuation count',
+    'whitespace count',
+    'text statistics',
+    'letter frequency classes',
+  ],
+  icon: 'ChartBar',
+  relatedTools: [],
+};
+
+export default meta;

@@ -1,0 +1,16 @@
+import type { ToolMetaStatic } from '@/lib/registry/types';
+
+const meta: ToolMetaStatic = {
+  id: 'convert-env-to-shell-exports-v1',
+  name: '.env to Shell Exports',
+  slug: 'env-to-shell-exports',
+  description:
+    'Turn a .env file into copy-paste shell export statements for bash/zsh, fish, or PowerShell.',
+  category: 'convert',
+  tags: ['env', 'shell', 'bash', 'export', 'convert'],
+  keywords: ['dotenv', 'zsh', 'fish', 'powershell', 'environment', 'variables'],
+  icon: 'Terminal',
+  relatedTools: [],
+};
+
+export default meta;

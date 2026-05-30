@@ -8,15 +8,24 @@ import { ServiceWorkerRegister } from '@/components/service-worker-register';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.openutilitytools.com'),
   title: {
-    default: 'Utility Tools — 100% in your browser',
-    template: '%s — Utility Tools',
+    default: 'Open Utility Tools — 100% in your browser',
+    template: '%s — Open Utility Tools',
   },
   description:
     'A fast, privacy-first collection of developer & file utilities. Everything runs client-side — no data ever leaves your browser. Works fully offline.',
-  applicationName: 'Utility Tools',
+  applicationName: 'Open Utility Tools',
   manifest: '/manifest.webmanifest',
-  appleWebApp: { capable: true, statusBarStyle: 'default', title: 'Utility Tools' },
+  appleWebApp: { capable: true, statusBarStyle: 'default', title: 'Open Utility Tools' },
+  openGraph: {
+    type: 'website',
+    siteName: 'Open Utility Tools',
+    url: 'https://www.openutilitytools.com',
+    title: 'Open Utility Tools — 100% in your browser',
+    description:
+      'A fast, privacy-first collection of 990+ developer & file utilities that run entirely in your browser.',
+  },
   icons: {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
     apple: [{ url: '/icon.svg', type: 'image/svg+xml' }],

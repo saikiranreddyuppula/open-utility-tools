@@ -1,30 +1,69 @@
 # Built Tools
 
-Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **281 tools** across 12 categories — 11 use Rust/WASM. All run 100% client-side.
+Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **995 tools** across 12 categories — 11 use Rust/WASM. All run 100% client-side.
 
 | Category | Count |
 |---|---|
-| Image | 4 |
+| Image | 43 |
 | PDF | 4 |
-| Data | 30 |
-| Converters | 19 |
-| Text | 45 |
-| Crypto & Hash | 18 |
-| Encoding | 24 |
-| Generators | 29 |
-| Web & Dev | 41 |
-| Time & Date | 18 |
-| Math & Units | 27 |
-| Color | 22 |
-| **Total** | **281** |
+| Data | 98 |
+| Converters | 107 |
+| Text | 128 |
+| Crypto & Hash | 59 |
+| Encoding | 72 |
+| Generators | 95 |
+| Web & Dev | 140 |
+| Time & Date | 63 |
+| Math & Units | 114 |
+| Color | 72 |
+| **Total** | **995** |
 
 
-## Image (4)
+## Image (43)
 
+- **Add Border & Padding** — `/tools/image-add-border` — Add a solid-color border or padding frame around an image.
+- **Batch Thumbnail Maker** — `/tools/image-thumbnail-batch` — Generate fixed-size cover/contain thumbnails from multiple images at once.
+- **Black & White Threshold** — `/tools/image-threshold-bw` — Convert an image to pure 1-bit black and white using a luminance threshold or dithering.
+- **Brightness / Contrast / Saturation Adjuster** — `/tools/image-filter-adjust` — Tweak brightness, contrast, saturation, and hue of an image with live sliders.
+- **Checkerboard & Pattern Generator** — `/tools/image-checkerboard-svg` — Generate checkerboard, stripes, dots, or grid SVG/PNG patterns with custom colors.
+- **Color Overlay / Tint** — `/tools/image-color-overlay` — Apply a color tint or duotone over an image using canvas blend modes.
+- **Crop to Aspect Ratio** — `/tools/image-crop-aspect` — Crop an image to a chosen aspect ratio (1:1, 4:3, 16:9, custom) with center/anchor control.
+- **Dominant & Average Color** — `/tools/image-dominant-color` — Extract the single dominant color and the average color of an image as hex/RGB.
+- **Duotone Effect** — `/tools/image-duotone` — Map an image's shadows and highlights to two custom colors (duotone).
+- **EXIF Metadata Viewer** — `/tools/image-exif-viewer` — View EXIF/JFIF metadata embedded in a JPEG (camera, exposure, GPS) without uploading.
+- **Favicon Set Generator** — `/tools/image-favicon-generator` — Generate favicon PNGs at standard sizes (16-512px) from one image plus the HTML link tags.
+- **Gradient SVG / PNG Generator** — `/tools/image-gradient-svg-generator` — Create linear/radial multi-stop gradients and export as SVG, PNG, or CSS.
+- **Image Blur** — `/tools/image-gaussian-blur` — Apply an adjustable blur to an image using the canvas blur filter.
+- **Image Contact Sheet Builder** — `/tools/image-contact-sheet-builder` — Arranges multiple uploaded images into a single grid contact sheet PNG.
 - **Image Converter** 🦀 — `/tools/image-converter` — Convert images between PNG, JPEG, WebP, GIF, BMP, TIFF and ICO — resize, set quality, batch & zip. All in your browser.
+- **Image Fit/Cover Box Calculator** — `/tools/image-aspect-fit-cover-calculator` — Computes the rendered size and offsets for an image placed in a box with contain or cover fit.
+- **Image Grid & Guide Overlay** — `/tools/image-canvas-grid-overlay` — Overlays a rule-of-thirds, pixel grid, or custom guides onto an uploaded image.
+- **Image Histogram** — `/tools/image-histogram` — Plot RGB and luminance histograms of an image on a canvas.
+- **Image Palette Extractor** — `/tools/image-palette-extractor` — Extract a balanced N-color palette from an image via median-cut quantization.
+- **Image Resizer (Pixels & Percent)** — `/tools/image-resize-pixels` — Resize an image to exact pixel dimensions or by percentage, with optional aspect-lock.
+- **Image Sprite Sheet Merger** — `/tools/image-sprite-merger` — Combine several images into one sprite sheet with a CSS/JSON coordinate map.
+- **Image to ASCII Art** — `/tools/image-to-ascii-art` — Convert an image into monospace ASCII (or block) art with adjustable width.
 - **Image to Base64** — `/tools/image-to-base64` — Encode an image to a Base64 data-URI for inline use in CSS/HTML/JSON.
+- **Image to Data URI (CSS/HTML/JSX)** — `/tools/image-to-data-uri-variants` — Encode an image as a base64 data URI and wrap it for CSS, HTML img, Markdown, or JSX.
+- **Invert Colors (Negative)** — `/tools/image-invert-colors` — Create a photographic negative by inverting every pixel's RGB values.
+- **JPEG/WebP Compressor** — `/tools/image-compress-quality` — Reduce image file size with a quality slider and live before/after byte comparison.
+- **Meme Caption Maker** — `/tools/image-meme-text` — Add classic top/bottom Impact-style caption text to an image.
+- **Mirror & Reflection Collage** — `/tools/image-mirror-collage` — Create symmetric mirror collages (2-up, 4-up kaleidoscope) from one image.
+- **Noise & Grain SVG Generator** — `/tools/image-noise-texture-svg` — Generate a tileable fractal-noise/grain texture as an inline SVG or PNG.
+- **Pixel Ruler & Color Probe** — `/tools/image-pixel-ruler` — Measure pixel distances and read pixel colors by clicking on a loaded image.
+- **Pixelate / Mosaic** — `/tools/image-pixelate` — Pixelate an image (or simulate censoring) with an adjustable block size.
 - **Placeholder Image Generator** — `/tools/placeholder-image` — Generate a sized SVG/data-URI placeholder with custom colors and label.
+- **Resize to Target File Size** — `/tools/image-resize-to-filesize` — Iteratively re-encode an image to land under a target KB limit (e.g. for upload limits).
+- **RGB Channel Splitter** — `/tools/image-rgb-channel-split` — Split an image into separate red, green, blue, and alpha channel images.
+- **Rotate & Flip Image** — `/tools/image-rotate-flip` — Rotate an image 90/180/270 degrees or by a free angle and flip horizontally/vertically.
+- **Round Corners & Circle Crop** — `/tools/image-round-corners` — Round an image's corners by radius or crop it to a perfect circle/ellipse.
+- **Sepia & Vintage Filter** — `/tools/image-sepia-vintage` — Apply sepia, vintage, warm, and cool color tints to a photo.
+- **Sprite Sheet Splitter** — `/tools/image-sprite-splitter` — Slice a sprite sheet into a grid of individual images by rows/cols or cell size.
+- **SVG Cleaner / Optimizer** — `/tools/image-svg-optimizer-cleaner` — Strips comments, metadata, and editor cruft from SVG markup and minifies whitespace.
 - **SVG to Data URI** — `/tools/svg-to-data-uri` — Convert raw SVG markup into an optimized data-URI for CSS/HTML.
+- **SVG to PNG / JPEG** — `/tools/image-svg-to-png` — Rasterize an SVG (pasted or uploaded) to PNG/JPEG at a chosen scale via canvas.
+- **Text Watermark** — `/tools/image-watermark-text` — Overlay a repeating or single text watermark with opacity, angle, and tiling.
+- **Vignette Effect** — `/tools/image-vignette` — Add an adjustable dark or light vignette around the edges of a photo.
 
 ## PDF (4)
 
@@ -33,308 +72,983 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **28
 - **Rotate PDF** 🦀 — `/tools/rotate-pdf` — Rotate all or selected pages of a PDF by 90, 180 or 270 degrees.
 - **Split / Extract PDF Pages** 🦀 — `/tools/split-pdf` — Extract or delete a selection of pages from a PDF (e.g. 1,3,5-8).
 
-## Data (30)
+## Data (98)
 
+- **ASCII Box Table from CSV** — `/tools/ascii-table-from-csv` — Render CSV as a bordered ASCII or Unicode box-drawing table for READMEs, code comments, and terminals.
+- **CSV Add Row Numbers** — `/tools/csv-add-row-numbers` — Prepend or append a sequential ID / row-number column to a CSV with a configurable start, step, padding, and prefix/suffix.
+- **CSV Column Math** — `/tools/csv-column-math` — Add a computed column to a CSV using an arithmetic expression over existing numeric columns, evaluated safely without eval.
 - **CSV Column Selector** — `/tools/csv-column-selector` — Keep, drop, or reorder CSV columns by header name or index.
+- **CSV Column Statistics** — `/tools/csv-column-stats` — Compute per-column statistics (type, count, nulls, distinct, min/max, mean, median, std-dev) for every column in a CSV.
+- **CSV Column Type Detector** — `/tools/data-csv-detect-types` — Infers each CSV column's data type (integer, float, boolean, date, string) from its values.
 - **CSV Deduplicate Rows** — `/tools/csv-dedupe` — Remove duplicate rows from CSV, either fully identical or matching on selected key columns.
 - **CSV Delimiter Converter** — `/tools/csv-delimiter-converter` — Re-delimit tabular data between comma, tab, semicolon, or pipe while preserving quoting.
+- **CSV Fill Blank Cells** — `/tools/csv-fill-blanks` — Fill empty cells in a CSV by forward-fill, back-fill, a constant value, or per-column mean/median.
+- **CSV Group-By Aggregator** — `/tools/data-csv-group-by-aggregate` — Group CSV rows by a column and compute count, sum, avg, min, and max on another.
+- **CSV Header Renamer** — `/tools/csv-rename-headers` — Rename, reorder, and apply naming-convention transforms to CSV column headers.
+- **CSV Merge Columns** — `/tools/csv-merge-columns` — Concatenate two or more CSV columns into a single column using a chosen separator and template.
+- **CSV Pivot Table Builder** — `/tools/csv-pivot-table` — Build a spreadsheet-style pivot table from CSV by choosing row, column, and value fields with an aggregation.
+- **CSV Row Filter** — `/tools/csv-filter-rows` — Keep or drop CSV rows that match conditions on chosen columns (equals, contains, regex, numeric ranges).
+- **CSV Row Sampler** — `/tools/csv-sample-rows` — Extract the first N, last N, every Nth, or a random sample of rows from a CSV.
 - **CSV Sorter** — `/tools/csv-sort` — Sort CSV rows by a chosen column with numeric/text mode and ascending or descending order.
+- **CSV Split Column** — `/tools/csv-split-column` — Split one CSV column into multiple columns on a delimiter, regex, or fixed character position.
+- **CSV to Fixed-Width** — `/tools/csv-to-fixed-width` — Convert CSV into fixed-width / column-aligned text with per-column widths and alignment.
 - **CSV to HTML Table** — `/tools/csv-to-html` — Convert CSV into a clean HTML table element with a header row, ready to paste into a page.
 - **CSV to JSON** — `/tools/csv-to-json` — Convert CSV (with header row) into a JSON array of objects.
+- **CSV to NDJSON** — `/tools/csv-to-ndjson` — Convert CSV with a header row into newline-delimited JSON (one JSON object per line).
 - **CSV to SQL INSERT** — `/tools/csv-to-sql` — Generate SQL INSERT statements from CSV with a configurable table name and quoting.
+- **CSV Transpose** — `/tools/csv-transpose` — Swap rows and columns of a CSV so the first column becomes the header row and vice versa.
 - **CSV Viewer** — `/tools/csv-viewer` — Paste CSV and view it as a sortable, searchable table.
+- **Delimited Column Reorder** — `/tools/data-tsv-column-reorder` — Reorders, drops, or duplicates columns in CSV/TSV data by index or header name.
+- **Fixed-Width to CSV** — `/tools/fixed-width-to-csv` — Parse fixed-width / column-aligned text into CSV by defining field widths or cut positions.
+- **HTML Table to CSV** — `/tools/html-table-to-csv` — Extract one or all <table> elements from pasted HTML into CSV.
+- **HTML Table to JSON** — `/tools/html-table-to-json` — Convert an HTML <table> into a JSON array of objects keyed by the header row.
+- **JSON Array Chunker** — `/tools/data-json-array-chunk` — Split a large JSON array into fixed-size chunks of smaller arrays.
+- **JSON Array Column Pluck** — `/tools/json-column-extractor` — Pluck one or more fields from each object in a JSON array.
+- **JSON Array Deduplicate** — `/tools/json-array-dedupe` — Remove duplicate elements from a JSON array, optionally by key.
+- **JSON Array of Objects to CSV (Explode)** — `/tools/data-json-to-csv-explode-array` — Converts a JSON array of objects to CSV, exploding nested objects into dotted columns.
+- **JSON Array to Lookup Map** — `/tools/json-array-to-key-value` — Convert a JSON array of objects into a keyed lookup object using one field as the key.
+- **JSON Array to Object** — `/tools/json-array-to-object` — Index a JSON array of objects into a keyed object/map.
+- **JSON Deep Clean** — `/tools/json-deep-clean` — Recursively strip null, empty, or falsy values from JSON.
 - **JSON Diff** — `/tools/json-diff` — Compare two JSON documents (normalized & sorted) and see the changes.
+- **JSON Dot-Path Get / Set** — `/tools/json-dot-path-get-set` — Get, set, or delete a value at a dot/bracket path in JSON.
 - **JSON Flatten / Unflatten** — `/tools/json-flatten` — Flatten nested JSON into dot-notation keys or rebuild nested objects from flattened keys.
 - **JSON Formatter** — `/tools/json-formatter` — Pretty-print, minify, and validate JSON with configurable indentation.
+- **JSON Key Case Converter** — `/tools/json-key-case-converter` — Recursively convert all JSON object keys to a chosen case.
 - **JSON Key Extractor** — `/tools/json-extract-keys` — List every unique key path in a JSON document, optionally with the inferred type of each.
+- **JSON Keys to CSV Header** — `/tools/json-to-csv-headers` — Derive a unified CSV/flat header row from JSON array of objects.
+- **JSON Lines Validator** — `/tools/data-jsonl-validate-lint` — Validates each line of an NDJSON/JSONL file as standalone JSON and reports line-level errors.
 - **JSON Merge** — `/tools/json-merge` — Deep-merge two JSON objects, with options for how arrays and conflicting keys are combined.
+- **JSON Merge Patch** — `/tools/json-merge-patch` — Apply an RFC 7386 JSON Merge Patch to a document.
 - **JSON Minify** — `/tools/json-minify` — Strip whitespace from JSON to produce the smallest valid output.
+- **JSON Nested Array Flattener** — `/tools/data-json-array-flatten-nested` — Flattens deeply nested JSON arrays into a single flat array to a chosen depth.
+- **JSON Patch Apply** — `/tools/json-patch-apply` — Apply an RFC 6902 JSON Patch to a JSON document.
+- **JSON Patch Generator** — `/tools/json-patch-diff` — Generate an RFC 6902 JSON Patch between two JSON documents.
 - **JSON Path Extractor** — `/tools/json-path-extractor` — Pull values out of JSON with a dot/bracket path like data.items[0].name.
+- **JSON Pointer Resolver** — `/tools/json-pointer-resolver` — Resolve an RFC 6901 JSON Pointer against a JSON document.
+- **JSON Query (JMESPath-lite)** — `/tools/jmespath-lite-query` — Query JSON with a JMESPath-style path and filter expression.
 - **JSON Repair** — `/tools/json-repair` — Fix broken JSON with single quotes, trailing commas, unquoted keys, and comments, then output valid JSON.
 - **JSON Schema Generator** — `/tools/json-to-json-schema` — Infer a JSON Schema (draft-07) from a sample JSON document with types and required fields.
+- **JSON Schema Sample Generator** — `/tools/json-schema-sample-generator` — Generate a sample JSON instance that satisfies a JSON Schema.
 - **JSON Sort Keys** — `/tools/json-sort-keys` — Recursively sort all object keys in a JSON document alphabetically.
 - **JSON String Escape / Unescape** — `/tools/json-escape` — Escape text into a JSON string literal, or unescape one back to raw text.
 - **JSON Stringify / Parse** — `/tools/json-stringify` — Turn raw text into an escaped JSON string literal, or parse a JSON string back to its raw value.
+- **JSON Structure Stats** — `/tools/json-stats-summary` — Summarize a JSON document's structure, depth, and type counts.
+- **JSON to .env** — `/tools/json-to-env` — Flatten a JSON object into dotenv KEY=VALUE lines.
+- **JSON to C# Class** — `/tools/json-to-csharp` — Generate C# classes with System.Text.Json attributes from JSON.
 - **JSON to CSV** — `/tools/json-to-csv` — Convert a JSON array of objects into CSV, with a chosen delimiter.
+- **JSON to Dart Class** — `/tools/json-to-dart` — Generate Dart classes with fromJson/toJson from a JSON sample.
+- **JSON to GraphQL Type** — `/tools/json-to-graphql-sdl` — Generate GraphQL SDL type definitions from a JSON sample.
+- **JSON to HCL / Terraform** — `/tools/json-to-hcl` — Convert a JSON object to HCL2 (Terraform-style) syntax.
+- **JSON to JSDoc Typedef** — `/tools/json-to-jsdoc-typedef` — Generate JSDoc @typedef comments from a JSON sample.
+- **JSON to Kotlin Data Class** — `/tools/json-to-kotlin` — Generate Kotlin data classes with kotlinx.serialization from JSON.
 - **JSON to Markdown Table** — `/tools/json-to-markdown-table` — Render an array of JSON objects as a GitHub-flavored Markdown table.
+- **JSON to Mongoose Schema** — `/tools/json-to-mongoose-schema` — Generate a Mongoose schema definition from a JSON sample.
 - **JSON to NDJSON / JSON Lines** — `/tools/json-to-ndjson` — Convert between a JSON array and newline-delimited JSON (NDJSON / JSON Lines).
+- **JSON to Protobuf** — `/tools/json-to-protobuf` — Generate a proto3 .proto message definition from a JSON sample.
+- **JSON to Pydantic Model** — `/tools/json-to-pydantic` — Generate Pydantic v2 BaseModel classes from a JSON sample.
+- **JSON to Python Dataclass** — `/tools/json-to-python-dataclass` — Generate Python @dataclass definitions from a JSON sample.
 - **JSON to Query String** — `/tools/json-to-query-string` — Convert a flat JSON object into a URL query string, with array and encoding options.
+- **JSON to Rust Structs** — `/tools/json-to-rust-serde` — Generate Rust structs with serde derives from a JSON sample.
+- **JSON to Swift Codable** — `/tools/json-to-swift-codable` — Generate Swift structs conforming to Codable from a JSON sample.
 - **JSON to TOML** — `/tools/json-to-toml` — Convert JSON into TOML config format with tables, arrays, and typed scalars.
 - **JSON to TypeScript** — `/tools/json-to-typescript` — Infer TypeScript interfaces from a JSON sample.
+- **JSON to Zod Schema** — `/tools/json-to-zod` — Generate a Zod validation schema from a JSON sample.
 - **JSON Tree Viewer** — `/tools/json-tree-viewer` — Explore JSON as a collapsible tree with type badges and value counts for large documents.
 - **JSON Validator** — `/tools/json-validator` — Validate JSON and pinpoint the exact line, column, and reason for any syntax error.
 - **JSONC / JSON5 to JSON** — `/tools/jsonc-to-json` — Strip comments and trailing commas from JSONC or JSON5 to produce strict, valid JSON.
+- **JSONL Record Deduplicator** — `/tools/data-jsonl-deduplicate` — Remove duplicate JSON objects from JSON Lines input, optionally keyed by selected fields.
+- **Markdown Front Matter Extractor** — `/tools/data-yaml-frontmatter-extractor` — Splits Markdown into its YAML/TOML front matter and body, and parses the front matter to JSON.
+- **Markdown Table Formatter** — `/tools/markdown-table-formatter` — Reformat a messy Markdown table into clean column-aligned pipes with chosen alignment.
+- **Markdown Table to JSON** — `/tools/markdown-table-to-json` — Convert a Markdown table into a JSON array of objects keyed by the header row.
+- **NDJSON Field Filter** — `/tools/ndjson-field-filter` — Select, drop, or rename fields across NDJSON records.
+- **NDJSON to CSV** — `/tools/ndjson-to-csv` — Convert newline-delimited JSON objects into a CSV table with a unified header.
+- **NDJSON to JSON Array** — `/tools/ndjson-to-json-array` — Convert NDJSON / JSON Lines to a single JSON array and back.
+- **Nested JSON to Flat CSV** — `/tools/data-json-to-csv-flat-nested` — Flatten an array of nested JSON objects into CSV using dot-path column headers.
+- **SQL CREATE TABLE from CSV** — `/tools/sql-create-table-from-csv` — Generate a CREATE TABLE statement (with inferred column types) from a CSV header and sample rows.
+- **SQL CREATE TABLE from JSON** — `/tools/sql-create-table-from-json` — Generate a CREATE TABLE statement by inferring columns and types from a JSON array of objects.
 - **SQL Formatter** — `/tools/sql-formatter` — Format and indent SQL queries with keyword casing.
+- **SQL INSERT from JSON** — `/tools/sql-insert-from-json` — Generate INSERT statements from a JSON array of objects with type-aware value quoting.
+- **SQL SELECT Builder** — `/tools/sql-select-builder` — Visually build a SELECT query with columns, WHERE conditions, ORDER BY, and LIMIT, then copy the SQL.
+- **SQL UPDATE Builder** — `/tools/sql-update-builder` — Build a safe parameterized UPDATE statement from column=value pairs and WHERE conditions.
+- **TSV to Markdown Table** — `/tools/data-tsv-to-markdown-table` — Convert tab-separated values into a GitHub-flavored Markdown table.
+- **YAML Anchor & Alias Expander** — `/tools/data-yaml-anchor-expander` — Resolve YAML anchors and aliases by inlining their referenced values.
 
-## Converters (19)
+## Converters (107)
 
+- **.env to Shell Exports** — `/tools/env-to-shell-exports` — Turn a .env file into copy-paste shell export statements for bash/zsh, fish, or PowerShell.
+- **Acceleration Converter** — `/tools/acceleration-converter` — Convert acceleration between m/s2, g-force, ft/s2, and gal.
+- **Apple plist to JSON** — `/tools/plist-to-json` — Convert an Apple XML property list into JSON.
+- **Area Converter** — `/tools/area-converter` — Convert areas between square meters, acres, hectares, square feet, and more.
+- **ASCII / Box Table to JSON** — `/tools/ascii-table-to-json` — Parse a fixed-width or box-drawn ASCII table (like psql, MySQL, or markdown-less console output) into JSON rows.
+- **Astronomical Distance Converter** — `/tools/astronomical-distance-converter` — Convert cosmic distances between AU, light-years, parsecs, and kilometers.
+- **Baking Pan Size Converter** — `/tools/cooking-pan-size-converter` — Convert baking pan dimensions and scale recipe volumes between pan shapes.
+- **Base64 / Data URI to File** — `/tools/base64-to-file` — Decode base64 or a data URI and save it as a named file.
+- **Bytes to Human-Readable Converter** — `/tools/bytes-to-human-converter` — Format raw byte counts into human-readable sizes, both decimal and binary.
+- **Clothing Size Converter** — `/tools/clothing-size-converter` — Convert clothing sizes (XS-XXL, US, UK, EU) for men's and women's apparel.
+- **Color List to Tailwind Config** — `/tools/convert-color-list-to-tailwind-config` — Turns a list of name=hex color pairs into a Tailwind theme.extend.colors config object.
+- **Cron Dialect Translator** — `/tools/convert-cron-to-human-and-quartz` — Converts between standard 5-field cron and 6/7-field Quartz/Spring cron expressions.
+- **Crontab File Explainer** — `/tools/convert-cron-to-human-multi` — Explain every line of a crontab file in plain English including special strings.
+- **CSS Shorthand Expander** — `/tools/css-shorthand-expander` — Expand CSS shorthand properties (margin, padding, border, font, background, etc.) into their longhand declarations, or collapse longhands back.
+- **CSV to Batched SQL INSERT** — `/tools/convert-csv-to-sql-insert-batch` — Generate multi-row batched SQL INSERT statements from CSV with a configurable batch size.
+- **CSV to JSON Objects** — `/tools/convert-csv-to-json-objects` — Converts CSV with a header row into a JSON array of objects with typed values.
 - **CSV to Markdown Table** — `/tools/csv-to-markdown` — Convert CSV into a GitHub-flavored Markdown table.
 - **CSV to TSV** — `/tools/csv-to-tsv` — Convert between comma-separated and tab-separated values with proper quote handling, in either direction, ready to paste into a spreadsheet.
+- **CSV to XML** — `/tools/csv-to-xml` — Convert CSV rows into an XML document.
+- **CSV to YAML** — `/tools/csv-to-yaml` — Convert CSV rows into a YAML list of objects.
+- **cURL to HTTPie** — `/tools/curl-to-httpie` — Convert a curl command into an equivalent HTTPie command.
+- **Currency Subunit & Naming Reference** — `/tools/currency-unit-naming` — Look up world currencies, their subunits, symbols, and ISO 4217 codes.
 - **Data Size Converter** — `/tools/data-size-converter` — Convert digital storage between bits, bytes, KB/MB/GB/TB and KiB/MiB/GiB, clearly separating decimal SI and binary IEC units.
+- **Data Storage Units Converter** — `/tools/data-storage-units-converter` — Convert digital storage between bits, bytes, and decimal/binary multiples like MB vs MiB.
+- **Degrees-Minutes-Seconds Converter** — `/tools/angle-subunits-converter` — Convert angles between decimal degrees and degrees-minutes-seconds (DMS) notation.
+- **Density Converter** — `/tools/density-converter` — Convert density between kg/m3, g/cm3, lb/ft3, and lb/gallon.
+- **Download / Transfer Time Calculator** — `/tools/data-transfer-time-calculator` — Estimate how long a file takes to transfer at a given connection speed.
+- **DPI / PPI Pixel-Size Converter** — `/tools/dpi-ppi-size-converter` — Convert between physical print size, pixel dimensions, and DPI — or compute a screen’s PPI from its resolution and diagonal.
+- **Energy Converter** — `/tools/energy-converter` — Convert energy between joules, calories, kWh, BTU, and electronvolts.
+- **Flow Rate Converter** — `/tools/flow-rate-converter` — Convert volumetric flow between L/s, m3/h, GPM, and CFM.
+- **Force Converter** — `/tools/force-converter` — Convert force between newtons, kilogram-force, pound-force, and dyne.
+- **Frequency Converter** — `/tools/frequency-converter` — Convert frequency between Hz, kHz, MHz, GHz, RPM, and angular rad/s.
+- **Fuel & Petroleum Volume Converter** — `/tools/fuel-volume-converter` — Convert fuel volumes between liters, US/imperial gallons, and oil barrels.
+- **GraphQL Query to cURL** — `/tools/convert-graphql-query-to-curl` — Wrap a GraphQL query and variables into a POST cURL command.
+- **HAR Entry to cURL** — `/tools/convert-har-to-curl` — Extracts requests from a HAR file or single HAR entry and emits equivalent cURL commands.
+- **Hex to RGB Code Snippet** — `/tools/hex-to-rgb-code` — Turn a hex color into ready-to-paste code in many languages.
+- **HTML Table to Markdown** — `/tools/html-table-to-markdown` — Extract <table> elements from HTML and render them as GitHub-flavored Markdown pipe tables.
 - **HTML to Markdown** — `/tools/html-to-markdown` — Convert HTML into clean Markdown, mapping headings, links, images, lists, blockquotes, code, and emphasis back to plain Markdown syntax.
+- **HTML to Pug** — `/tools/html-to-pug` — Convert HTML markup into Pug (Jade) template syntax.
+- **HTTPie to cURL** — `/tools/httpie-to-curl` — Convert an HTTPie command into an equivalent curl command.
+- **Illuminance Converter** — `/tools/illuminance-converter` — Convert illuminance between lux, foot-candles, and phot.
+- **Ingredient Weight to Volume Converter** — `/tools/ingredient-weight-volume-converter` — Convert cooking ingredients between grams, ounces, cups, tablespoons, teaspoons, and milliliters using per-ingredient density.
+- **INI to JSON** — `/tools/ini-to-json` — Parse INI / config files into structured JSON.
+- **Java .properties to JSON** — `/tools/properties-to-json` — Convert Java/Spring .properties files into nested JSON.
+- **Java Properties to YAML** — `/tools/properties-to-yaml` — Convert a Java .properties file into nested YAML by expanding dotted keys into a tree.
 - **JS Object to JSON** — `/tools/js-object-to-json` — Convert a relaxed JavaScript object literal (unquoted keys, single quotes, trailing commas, comments) into strict, valid JSON.
+- **JSON Array to List** — `/tools/json-array-to-list` — Convert a JSON array into a delimited or line-separated list.
+- **JSON Lines to SQL INSERT** — `/tools/convert-jsonl-to-sql-insert` — Generates SQL INSERT statements from NDJSON records using each object's keys as columns.
+- **JSON to Apple plist** — `/tools/json-to-plist` — Convert JSON into an Apple XML property list.
 - **JSON to Go Struct** — `/tools/json-to-go` — Infer Go structs (with json tags) from a JSON sample.
+- **JSON to INI** — `/tools/json-to-ini` — Convert a JSON object into INI / config file syntax.
+- **JSON to Java .properties** — `/tools/json-to-properties` — Convert nested JSON into Java/Spring .properties lines.
+- **JSON to Key-Value Pairs** — `/tools/json-to-kv-pairs` — Convert a JSON object into flat key:value text lines.
+- **JSON to PHP Array** — `/tools/json-to-php-array` — Convert JSON into a PHP array literal.
+- **JSON to Ruby Hash** — `/tools/json-to-ruby-hash` — Convert JSON into a Ruby hash literal.
 - **JSON to XML** — `/tools/json-to-xml` — Convert JSON into XML markup with proper escaping.
+- **JSON to XML (Attribute Mode)** — `/tools/json-to-xml-attributes` — Convert JSON to XML choosing attributes vs child elements.
 - **JSON to YAML** — `/tools/json-to-yaml` — Convert JSON into readable YAML.
+- **JSX to HTML** — `/tools/jsx-to-html` — Convert JSX/React element markup back into plain HTML.
+- **Key-Value Pairs to JSON** — `/tools/kv-pairs-to-json` — Convert key:value or key=value lines into a JSON object.
+- **key=value Lines to JSON** — `/tools/key-value-to-json` — Convert plain key=value or key: value config lines into a JSON object, with type coercion and nesting on dotted keys.
 - **Length and Distance Converter** — `/tools/length-converter` — Convert between metric and imperial lengths such as mm, cm, m, km, inch, foot, yard, mile, and nautical mile with live multi-unit output.
+- **List to JSON Array** — `/tools/list-to-json-array` — Convert a line/comma list into a JSON array.
+- **Luminance Converter** — `/tools/luminance-converter` — Convert luminance between candela/m2 (nit), foot-lambert, and stilb.
+- **Magnetic Field Converter** — `/tools/magnetic-field-converter` — Convert magnetic flux density between tesla, gauss, and milligauss.
+- **Markdown List ↔ JSON Tree** — `/tools/markdown-list-to-json` — Convert an indented Markdown bullet/numbered list into a nested JSON array (and back).
 - **Markdown Table to CSV** — `/tools/markdown-table-to-csv` — Extract a GitHub-style Markdown table and convert its rows into CSV, handling pipe escaping, alignment separators, and trimmed cells.
+- **Markdown Table to HTML** — `/tools/markdown-table-to-html` — Convert a GitHub-flavored Markdown pipe table into a clean semantic HTML table with alignment.
+- **Markdown to JSX** — `/tools/markdown-to-jsx` — Convert Markdown into a JSX/React component snippet.
+- **Mass & Weight Converter** — `/tools/mass-weight-converter` — Convert between metric and imperial mass units like kilograms, pounds, ounces, and stones.
+- **Number Spelling Variants** — `/tools/number-to-roman-words-variants` — Spell a number as English words, ordinals, currency words, and a tally count.
+- **Number to Spoken Base Words** — `/tools/number-base-words` — Spell out a number in any base (2-36) as place-value words, e.g. binary 1011 as one-zero-one-one or grouped nibbles.
 - **Number to Words** — `/tools/number-to-words` — Spell out numbers as English words including negatives, decimals, and large magnitudes, with an optional currency cents mode.
+- **OpenAPI Paths to cURL** — `/tools/convert-openapi-to-curl` — Turn OpenAPI path operations into example cURL commands with placeholder values.
+- **Oven Temperature Converter** — `/tools/cooking-temperature-converter` — Convert oven temperatures between Celsius, Fahrenheit, and UK gas marks.
+- **Paper Size Reference & Converter** — `/tools/paper-size-converter` — Look up ISO A/B/C, US Letter, and other paper sizes in mm, inches, and pixels.
+- **PHP Array to JSON** — `/tools/php-array-to-json` — Convert a PHP array literal into JSON.
+- **Power Converter** — `/tools/power-converter` — Convert power between watts, kilowatts, horsepower, and BTU/hour.
+- **Precise Time Unit Converter** — `/tools/time-precise-converter` — Convert tiny and astronomical time spans from nanoseconds to centuries.
+- **Pressure Converter** — `/tools/pressure-converter` — Convert pressure between pascals, bar, psi, atm, mmHg, and torr.
+- **Pug to HTML** — `/tools/pug-to-html` — Convert basic Pug (Jade) templates into HTML.
+- **Query String to cURL** — `/tools/querystring-to-curl` — Build a curl command from a base URL and query string.
 - **Query String to JSON** — `/tools/query-string-to-json` — Parse a URL query string into structured JSON, decoding values, grouping repeated keys into arrays, and rebuilding bracketed nesting.
+- **Radiation Dose Converter** — `/tools/radiation-dose-converter` — Convert radiation dose between sieverts, rems, grays, and rads.
+- **Radioactivity Converter** — `/tools/radioactivity-converter` — Convert radioactivity between becquerels and curies.
+- **Ring Size Converter** — `/tools/ring-size-converter` — Convert ring sizes across US, UK, EU, and inner-diameter/circumference.
+- **Ruby Hash to JSON** — `/tools/ruby-hash-to-json` — Convert a Ruby hash/array literal into JSON.
+- **Shoe Size Converter** — `/tools/shoe-size-converter` — Convert shoe sizes across US, UK, EU, and centimeter foot-length systems.
+- **Speed Converter** — `/tools/speed-converter` — Convert speeds between km/h, mph, m/s, knots, and Mach.
+- **SVG Path Coordinate Rounder** — `/tools/svg-path-rounder` — Round and tidy the numeric coordinates in an SVG path 'd' string to reduce precision and file size.
+- **SVG to JSX/React Component** — `/tools/convert-svg-to-jsx` — Converts a raw SVG markup into a React JSX component with camelCased attributes.
 - **Temperature Converter** — `/tools/temperature-converter` — Convert temperatures across Celsius, Fahrenheit, Kelvin, and Rankine with live results and adjustable rounding precision.
 - **TOML to JSON** — `/tools/toml-to-json` — Turn TOML config files into JSON. Supports tables, arrays of tables, inline tables, datetimes, and typed values, parsed locally without uploads.
+- **TOML to YAML** — `/tools/toml-to-yaml` — Convert TOML configuration into equivalent YAML.
+- **Torque Converter** — `/tools/torque-converter` — Convert torque between newton-meters, pound-feet, and kilogram-force meters.
 - **TSV to JSON** — `/tools/tsv-to-json` — Paste tab-separated data copied from a spreadsheet and convert it to JSON, with header-row detection and numeric or boolean coercion options.
+- **Typographic Units Converter** — `/tools/typography-units-converter` — Convert typography units between points, picas, pixels, em, and millimeters.
 - **Unicode Code Point Converter** — `/tools/unicode-code-point-converter` — Convert text to and from Unicode code points, showing U+ notation, decimal, and hex escapes with surrogate-pair-safe handling.
+- **Viscosity Converter** — `/tools/viscosity-converter` — Convert dynamic and kinematic viscosity between poise, pascal-seconds, and stokes.
+- **Volume Converter** — `/tools/volume-converter` — Convert liquid and dry volumes between liters, gallons, cups, pints, and more.
+- **XML Attributes ↔ Child Elements** — `/tools/xml-attributes-to-elements` — Rewrite an XML document by promoting attributes into child elements, or demoting simple child elements into attributes.
+- **XML to CSV** — `/tools/xml-to-csv` — Flatten repeating XML elements into CSV rows.
 - **XML to JSON** — `/tools/xml-to-json` — Parse XML into a clean JSON tree with options for attribute prefixes, text-node naming, and array coercion for repeated elements.
+- **XML to JSON (Attribute Mode)** — `/tools/xml-attributes-to-json` — Convert XML to JSON preserving attributes via a convention.
+- **YAML to CSV** — `/tools/yaml-to-csv` — Flatten a YAML list of objects into CSV.
 - **YAML to JSON** — `/tools/yaml-to-json` — Convert common YAML configuration into JSON.
 - **YAML to TOML** — `/tools/yaml-to-toml` — Convert YAML configuration directly into TOML, mapping nested maps and lists into tables and arrays of tables in one step.
 
-## Text (45)
+## Text (128)
 
+- **A1Z26 Number Cipher** — `/tools/a1z26-cipher` — Encode letters to their alphabet position numbers (A=1..Z=26) and decode numbers back to letters.
+- **Acronym Extractor** — `/tools/acronym-expander-finder` — Find acronyms in text and pair them with the expansions defined nearby.
+- **Acronym Maker** — `/tools/acronym-maker` — Build an acronym or initialism from a phrase using configurable rules.
+- **Add / Strip Diacritics** — `/tools/diacritics-toggle` — Strip accents to plain ASCII, or fold text to ASCII-safe forms, with a map for common transliterations.
+- **Alternating & Inverse Case** — `/tools/alternating-case-converter` — Apply mocking sPoNgEbOb alternating case, inverse case, or random case to text.
+- **Anagram & Letter Rearranger** — `/tools/anagram-solver` — Generate rearrangements of letters and find sub-words from a set of letters offline.
+- **Anagram Checker** — `/tools/anagram-checker` — Determine whether two words or phrases are anagrams of each other.
+- **ASCII Banner Text (Figlet-style)** — `/tools/figlet-banner` — Render short text as large ASCII-art letters using built-in block fonts, fully offline.
+- **ASCII Box & Banner Drawer** — `/tools/text-box-drawing` — Wrap text in ASCII or Unicode box-drawing borders to create framed banners and callout boxes.
 - **ASCII Table** — `/tools/ascii-table` — A searchable reference of ASCII codes in decimal, hex, octal and binary.
+- **Automated Readability Index (ARI)** — `/tools/automated-readability-index` — Compute the ARI grade level from character, word, and sentence counts.
+- **Bacon / Binary Cipher Encoder** — `/tools/binary-ascii-art` — Encode text with Bacon's biliteral cipher or a custom two-symbol substitution alphabet.
 - **Bold & Italic Unicode Text** — `/tools/unicode-bold-italic` — Convert plain text into Unicode bold, italic, bold-italic, script, monospace, or double-struck styles that work in posts and bios.
+- **Bracket & Quote Balance Checker** — `/tools/text-text-bracket-matcher` — Verify that brackets, parentheses, braces, and quotes are balanced in text.
+- **Braille (Grade 1) Translator** — `/tools/braille-text` — Convert text to and from Unicode Braille dot patterns using the Grade 1 (uncontracted) mapping.
 - **Caesar Cipher** — `/tools/caesar-cipher` — Encode or decode text with a Caesar cipher of any shift amount, the classic reversible letter rotation, with optional brute-force of all 25 shifts.
 - **Case Converter** — `/tools/case-converter` — Convert text between camelCase, snake_case, kebab-case, Title Case and more.
+- **Character N-Gram Counter** — `/tools/character-ngram-counter` — Count character-level n-grams for linguistics, cryptanalysis, and fingerprinting.
+- **Code Identifier Case Converter** — `/tools/camel-snake-kebab-converter` — Convert programming identifiers between camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, dot.case, and Train-Case.
+- **Coleman-Liau Index** — `/tools/coleman-liau-index` — Compute the character-based Coleman-Liau readability grade with no syllable counting.
+- **Collapse Consecutive Duplicate Lines** — `/tools/consecutive-duplicate-collapse` — Collapse runs of identical adjacent lines into one, like the uniq command.
+- **Column / Field Extractor (cut)** — `/tools/column-extractor` — Extract or reorder fields from delimited lines like the Unix cut command, by index or character range.
+- **Column Aligner (Elastic Tabstops)** — `/tools/column-aligner` — Align delimited columns into a neat fixed-width table by padding each column to its widest cell.
+- **Combined Readability Report** — `/tools/text-readability-summary` — Run all major readability formulas at once and show a consensus grade level.
 - **Count Occurrences** — `/tools/count-occurrences` — Count how many times a substring or regex pattern appears in text.
+- **Cyrillic Transliteration** — `/tools/transliterate-cyrillic` — Transliterate between Cyrillic and Latin using selectable schemes (GOST, BGN/PCGN, scientific, ISO 9).
+- **Deduplicate Words** — `/tools/deduplicate-words` — Remove repeated words from text while preserving order, optionally case-insensitively or only consecutive duplicates.
 - **Delimited Text Converter** — `/tools/delimiter-converter` — Convert delimited text between comma, tab, pipe, semicolon, newline, and custom delimiters, ideal for reshaping CSV-style lists.
+- **Emoji Extractor** — `/tools/emoji-extractor` — Extract every emoji from text and list them with counts and code points.
+- **Emoji Remover** — `/tools/emoji-stripper` — Strip all emoji and pictographic symbols from text while keeping the words intact.
 - **Extract Emails, URLs & Numbers** — `/tools/extract-data` — Pull all email addresses, URLs, phone numbers, IPs, or numbers out of a blob of text into a clean deduplicated list.
 - **Fancy Text Generator** — `/tools/fancy-text` — Turn text into 𝐛𝐨𝐥𝐝, 𝑖𝑡𝑎𝑙𝑖𝑐, 𝚖𝚘𝚗𝚘 and other Unicode styles.
+- **Filter Lines by Rule** — `/tools/text-frequency-filter` — Keep or delete lines that match a substring, regex, length, or numeric/blank condition (grep-like).
 - **Find & Replace** — `/tools/find-replace` — Find and replace text with plain or regular-expression matching.
+- **Flesch Reading Ease Score** — `/tools/flesch-reading-ease` — Compute the Flesch Reading Ease score and grade level for any text.
+- **Fuzzy Duplicate Line Remover** — `/tools/fuzzy-dedupe-lines` — Remove near-duplicate lines that differ only by case, whitespace, or punctuation.
+- **Greek Transliteration** — `/tools/transliterate-greek` — Convert Greek script to Latin (and back) using ISO 843, ELOT 743, or classical romanization schemes.
+- **Gunning Fog Index** — `/tools/gunning-fog-index` — Estimate the years of formal education needed to understand text on first reading.
+- **Haiku Syllable Checker** — `/tools/haiku-checker` — Verify whether three lines follow the 5-7-5 haiku syllable pattern.
+- **Hashtag Generator** — `/tools/hashtag-generator` — Turn phrases into clean hashtags with chosen casing, removing punctuation and merging or splitting words.
+- **Identifier Humanizer** — `/tools/text-snake-to-title-humanizer` — Turns snake_case, kebab-case, or camelCase identifiers into human-readable Title Case labels.
 - **Indent & Dedent Text** — `/tools/indent-text` — Add or remove leading indentation on every line, converting tabs to spaces or spaces to tabs with a configurable width.
+- **Indented Outline ↔ Nested List** — `/tools/outline-to-list` — Convert tab/space-indented outlines to Markdown/HTML nested lists, or flatten nested lists to an outline.
+- **Interleave / Zip Lines** — `/tools/interleave-lines` — Merge two or more line-lists by alternating their lines, like a zipper, with a configurable separator.
+- **Join Lines** — `/tools/join-lines` — Concatenate multiple lines into one (or grouped) line using a chosen separator, with optional quoting.
+- **Keyboard Shift Cipher** — `/tools/keyboard-shift-cipher` — Shift each key one position left/right/up/down on a QWERTY keyboard, a popular obfuscation puzzle.
+- **Keyword Density Analyzer** — `/tools/keyword-density-analyzer` — Measure single-word and phrase keyword density with stop-word filtering for SEO.
 - **Leetspeak Converter** — `/tools/leetspeak` — Convert text to and from leetspeak (1337), swapping letters for numbers and symbols at adjustable intensity.
+- **Letter & Word Spacing Expander** — `/tools/wide-spaced-text` — Insert spaces or custom separators between letters and words to create s p a c e d  o u t text.
+- **Lexical Diversity Calculator** — `/tools/lexical-diversity-calculator` — Measure vocabulary richness with type-token ratio and related metrics.
+- **Line Length Checker** — `/tools/line-length-checker` — Flag lines that exceed a maximum character width for code or prose style guides.
+- **Line Numbering (Advanced)** — `/tools/add-line-numbers-advanced` — Prefix lines with numbers using custom start, step, zero-padding, format template, and blank-line handling.
 - **Line Operations** — `/tools/line-operations` — Number, prefix, suffix, or wrap each line of text.
 - **List Formatter** — `/tools/list-formatter` — Convert a plain list into bulleted, numbered, lettered, or roman-numeral lists with custom markers and indentation.
+- **List Number Style Converter** — `/tools/text-roman-to-fancy-numbering` — Renumbers a list using decimal, roman numerals, or letter sequences (a, b, c / A, B, C).
+- **Longest and Shortest Line Finder** — `/tools/text-find-longest-shortest-line` — Finds the longest and shortest lines in a block of text with their lengths and line numbers.
 - **Lorem Ipsum Generator** — `/tools/lorem-ipsum` — Generate placeholder lorem ipsum text by paragraphs, sentences, or words.
+- **Markdown List Renumberer** — `/tools/markdown-list-renumber` — Fix and renumber ordered Markdown lists, convert between bullet and numbered, and normalize markers.
+- **Mention, Hashtag & URL Extractor** — `/tools/at-mention-extractor` — Extract @mentions, #hashtags, $cashtags, and URLs from social text into clean deduplicated lists.
 - **Morse Code Translator** — `/tools/morse-code` — Translate text to International Morse code and back.
+- **Morse Code Visual Decoder** — `/tools/morse-to-text-visual` — Decode Morse with timing/visual rendering and encode text with adjustable dot, dash, and gap symbols.
+- **Multi-Key Column Sort** — `/tools/text-text-column-sort` — Sort delimited rows by one or more columns with per-key type and direction.
+- **N-Gram Frequency Counter** — `/tools/ngram-counter` — Extract and count the most frequent word n-grams (bigrams, trigrams, etc.) in text.
 - **NATO Phonetic Alphabet** — `/tools/nato-phonetic` — Spell text using the NATO phonetic alphabet (Alpha, Bravo, Charlie…).
+- **Natural / Numeric Sort Lines** — `/tools/natural-sort-lines` — Sort lines using human-friendly natural ordering so file2 comes before file10, with locale and key options.
 - **Number Each Line** — `/tools/number-lines` — Generate a sequence and prefix lines with auto-incrementing numbers using a start value, step, and zero-padding.
+- **Pad & Align Lines** — `/tools/pad-lines` — Left/right/center-pad every line to a target width with a fill character, or zero-pad numbers.
+- **Palindrome Checker** — `/tools/palindrome-checker` — Check if text is a palindrome and find palindromic words and substrings.
+- **Paragraph Reflow & Justify** — `/tools/word-wrap-justify` — Re-wrap paragraphs to a target width with left, right, center, or full-justify alignment and hyphenation control.
+- **Paragraph Splitter & Joiner** — `/tools/paragraph-splitter` — Split text into separated paragraphs or rejoin wrapped lines into paragraphs.
 - **Pig Latin Translator** — `/tools/pig-latin` — Translate English text to or from Pig Latin, moving leading consonants and appending the classic -ay ending.
+- **PII Placeholder Anonymizer** — `/tools/text-anonymizer` — Replace emails, phone numbers, and other PII patterns with placeholder tokens.
 - **Prefix & Suffix Lines** — `/tools/prefix-suffix-lines` — Add a prefix and/or suffix to every line at once, ideal for wrapping list items in quotes, commas, brackets, or markup.
+- **Profanity Censor (Offline)** — `/tools/profanity-placeholder` — Mask flagged words in text with symbols using a user-editable word list.
 - **Random Line Picker** — `/tools/random-line-picker` — Pick one or more random lines from a list, great for raffles, choosing a winner, or sampling, with optional no-repeat draws.
+- **Random Name & Username Generator** — `/tools/random-name-generator` — Generate random human names, fantasy names, or username handles from embedded syllable and word lists.
+- **Reading & Speaking Time Estimator** — `/tools/reading-time-estimator` — Estimate how long text takes to read silently and to speak aloud.
 - **Regex Tester** — `/tools/regex-tester` — Test JavaScript regular expressions live with match highlighting and groups.
+- **Regional Indicator & Emoji Letters** — `/tools/text-to-emoji-letters` — Convert letters to emoji-style glyphs: regional-indicator squares, keycaps, blood-type boxes, or fonts.
 - **Remove Accents** — `/tools/remove-accents` — Strip diacritics and accents from text, converting characters like e-acute, n-tilde, and u-umlaut to plain ASCII equivalents.
 - **Remove Duplicate Lines** — `/tools/remove-duplicates` — Strip duplicate lines, keeping first occurrence, with optional case-insensitivity.
 - **Remove Line Breaks** — `/tools/remove-line-breaks` — Strip or normalize line breaks, joining wrapped lines into one with spaces, collapsing multiple blank lines, or converting paragraphs to single lines.
+- **Repeated Phrase Finder** — `/tools/text-redundancy-finder` — Find phrases repeated multiple times in text to catch wordiness and filler.
+- **Reverse & Flip Lines** — `/tools/reverse-lines` — Reverse the order of lines, reverse characters within each line, or rotate lines by an offset.
 - **Reverse Text** — `/tools/reverse-text` — Reverse characters, words, or line order in text.
 - **ROT13 / Caesar Cipher** — `/tools/rot13` — Apply ROT13 or a Caesar shift cipher to text (reversible).
 - **ROT47 Cipher** — `/tools/rot47` — Encode or decode text with ROT47, rotating all visible ASCII characters by 47 positions for a reversible obfuscation.
+- **Runic Transliterator** — `/tools/runic-transliterator` — Convert Latin text to Elder Futhark or Younger Futhark runes (and back) using a fixed letter mapping.
+- **Sentence Case Converter** — `/tools/sentence-case-converter` — Lowercase text then capitalize the first letter of each sentence, preserving common acronyms and the pronoun I.
+- **Sentence Splitter** — `/tools/sentence-splitter` — Split a paragraph into one sentence per line using punctuation and abbreviation rules.
 - **Shuffle Lines** — `/tools/shuffle-lines` — Randomly shuffle the order of lines, with an option to pick a random subset or a single random line.
+- **Side-by-Side Word Diff** — `/tools/text-word-ladder-diff` — Compare two texts and highlight word-level insertions and deletions inline.
+- **Slug Collision Disambiguator** — `/tools/text-text-to-slug-history` — Generate sequential unique slugs from a list, appending numeric suffixes on collision.
 - **Slugify** — `/tools/slugify` — Turn any text into a clean, URL-safe slug.
 - **Smart Quotes Converter** — `/tools/smart-quotes` — Convert straight quotes and apostrophes into typographic curly quotes, or convert curly quotes back to plain ASCII straight quotes.
+- **SMOG Readability Grade** — `/tools/smog-readability-grade` — Calculate the SMOG grade, the standard readability measure for healthcare and consumer text.
 - **Sort & Dedupe Lines** — `/tools/sort-lines` — Sort lines alphabetically, numerically, by length, reverse or shuffle — and dedupe.
+- **Sort Lines by Length** — `/tools/text-text-sort-by-length` — Reorder lines by character length, ascending or descending, with tie-breaking.
+- **Split Text Into Chunks** — `/tools/split-text-chunks` — Break text into fixed-size pieces by character count, word count, or line count, with optional numbered labels.
+- **Start Case Converter** — `/tools/start-case-converter` — Capitalize the first letter of every word while leaving the rest untouched, with optional separator normalization.
 - **Strikethrough & Underline Text** — `/tools/unicode-text-decorate` — Add Unicode combining strikethrough, underline, or slashed-zero style effects to plain text so it stays styled when pasted anywhere.
+- **Strikethrough, Underline & Overline Combiner** — `/tools/strikethrough-text-variants` — Add combining strikethrough, underline, overline, or slash overlays to text for plain-text styling.
+- **Superscript & Subscript Text** — `/tools/superscript-subscript` — Convert text to Unicode superscript or subscript characters for inline chemistry/math notation.
+- **Syllable Counter** — `/tools/syllable-counter` — Count syllables in words and whole text using an English heuristic algorithm.
+- **Tap Code Cipher** — `/tools/tap-code-cipher` — Encode text into Polybius-square tap code (rows.columns) and decode tap sequences back to letters.
+- **Template Placeholder Filler** — `/tools/text-template-placeholder-filler` — Fills {{name}}-style placeholders in a template using key=value pairs or a JSON object.
 - **Text Alignment & Padding** — `/tools/text-align-pad` — Pad or align each line to a fixed width, left, right, or centered, with a chosen fill character for tidy fixed-width columns.
+- **Text Case Statistics Report** — `/tools/text-case-statistics-report` — Counts uppercase, lowercase, digit, punctuation and whitespace characters and reports their percentages.
 - **Text Diff** — `/tools/text-diff` — Compare two texts line-by-line and highlight additions and removals.
 - **Text Repeater** — `/tools/text-repeater` — Repeat a piece of text a chosen number of times, separated by newlines, spaces, or a custom delimiter.
 - **Text Statistics & Frequency** — `/tools/text-statistics` — Analyze word frequency, character distribution and readability of text.
 - **Text Truncator** — `/tools/text-truncator` — Truncate text or each line to a maximum length by characters or words, appending an ellipsis or custom suffix.
 - **Text Wrapper** — `/tools/text-wrap` — Hard-wrap text to a fixed column width, breaking on word boundaries, with optional hanging indent and break-long-word handling.
+- **Themed Placeholder Text Generator** — `/tools/lorem-ipsum-variants` — Generate themed filler text (hipster, corporate, pirate, tech, bacon, cat) instead of classic Lorem Ipsum.
 - **Title Case Converter** — `/tools/title-case` — Apply proper headline title case following style rules that keep small words like a, an, and, the lowercase except as the first or last word.
+- **Trim & Strip Lines** — `/tools/trim-lines` — Remove leading/trailing whitespace, trailing whitespace only, or strip custom characters from each line.
 - **Unicode Inspector** — `/tools/unicode-inspector` — Break text into code points with hex, decimal, UTF-8 bytes and names.
+- **Upside-Down & Mirror Text** — `/tools/upside-down-text` — Flip text upside-down (180°) or mirror it left-right using Unicode look-alike characters.
+- **Username Handle Generator** — `/tools/text-text-to-handle-generator` — Turn a name or phrase into clean lowercase username/handle suggestions.
 - **Vaporwave Aesthetic Text** — `/tools/fullwidth-text` — Convert text to full-width vaporwave letters where each character is spaced out, perfect for aesthetic social media posts.
+- **Whitespace & Special Character Visualizer** — `/tools/whitespace-visualizer` — Reveal hidden spaces, tabs, and line endings by replacing them with visible glyphs.
 - **Whitespace Cleaner** — `/tools/whitespace-cleaner` — Trim lines, collapse spaces, strip blank lines, and normalize whitespace.
 - **Word & Character Count** — `/tools/word-count` — Live counts of words, characters, sentences, lines, and reading time.
+- **Word & Sentence Length Distribution** — `/tools/word-length-distribution` — Show how word lengths and sentence lengths are distributed across text.
 - **Word Frequency Counter** — `/tools/word-frequency` — Count how often each word appears and rank them by frequency, with options to ignore case and skip common stop words.
+- **Wrap Text Into Columns** — `/tools/text-to-columns` — Reflow a single stream of lines into multiple side-by-side newspaper-style columns.
 - **Zalgo Glitch Text** — `/tools/zalgo-text` — Add creepy combining diacritics to text to create the glitchy Zalgo effect with adjustable intensity, or clean the marks back out.
+- **Zero-Width & Invisible Character Stripper** — `/tools/zero-width-char-stripper` — Detect and remove invisible zero-width and formatting characters from pasted text.
 
-## Crypto & Hash (18)
+## Crypto & Hash (59)
 
+- **/etc/passwd & shadow Parser** — `/tools/crypto-passwd-shadow-parser` — Parse and explain Unix passwd and shadow file lines field by field.
+- **ABA Routing Number Validator** — `/tools/aba-routing-validator` — Validate a US bank ABA/routing transit number using its mod-10 checksum.
+- **Adler-32 Checksum** — `/tools/adler32-checksum` — Compute the Adler-32 checksum of text or a file, as used by zlib.
 - **AES Encrypt / Decrypt** — `/tools/aes-encrypt-decrypt` — Encrypt and decrypt text with AES-GCM using a passphrase, producing self-contained Base64 output with embedded salt and IV.
+- **AES-CBC Text Encrypt/Decrypt** — `/tools/aes-cbc-text` — Encrypt or decrypt text with AES-CBC using a passphrase-derived key and explicit IV.
+- **AES-GCM File Encrypt/Decrypt** — `/tools/aes-gcm-file` — Encrypt or decrypt a chosen file in-browser with AES-GCM using a passphrase.
+- **API Key + Secret Generator** — `/tools/api-key-pair-generator` — Generate matched public key ID and secret pairs with prefixes and a derived checksum.
+- **Argon2 Parameter Advisor** — `/tools/crypto-argon2-params-advisor` — Recommend Argon2id memory, iteration, and parallelism parameters for a target environment.
+- **Australian BSB Lookup** — `/tools/bsb-validator` — Validate and parse an Australian Bank State Branch (BSB) number into bank, state, and branch.
+- **Base64url JWK Field Encoder** — `/tools/base64url-jwk-encoder` — Convert between Base64url and big-integer/byte values for hand-editing JWK fields.
+- **Bcrypt Cost Estimator** — `/tools/crypto-bcrypt-cost-benchmark` — Estimate bcrypt hashing time for each cost factor and recommend a target work factor.
 - **Bcrypt Hash & Verify** 🦀 — `/tools/bcrypt` — Hash a password with bcrypt and verify a password against a hash, locally.
 - **BIP39 Mnemonic Generator** — `/tools/bip39-mnemonic-generator` — Generate BIP39 seed phrases of 12, 15, 18, 21, or 24 words with a valid checksum for crypto wallet backups.
 - **CRC32 Checksum** — `/tools/crc32-checksum` — Compute the CRC-32 checksum of any text, output as hex or unsigned decimal for quick integrity checks.
+- **Diceware Passphrase Generator** — `/tools/diceware-passphrase` — Generate memorable passphrases from a bundled Diceware-style 7776-word list using cryptographic randomness.
+- **EAN / UPC Check Digit** — `/tools/ean-upc-check-digit` — Validate or compute check digits for EAN-13, EAN-8, and UPC-A barcodes.
 - **ECDSA Key Pair Generator** — `/tools/ecdsa-keypair-generator` — Generate an elliptic-curve (P-256/P-384/P-521) key pair as PEM for ECDSA signing.
+- **ECDSA Sign & Verify** — `/tools/ecdsa-sign-verify` — Sign and verify messages with ECDSA over P-256/P-384/P-521 curves.
 - **File Hash** — `/tools/file-hash` — Hash any local file with MD5, SHA-1, SHA-256, or SHA-512 by dropping it in, with a field to compare against an expected checksum.
+- **Fletcher-16/32/64 Checksum** — `/tools/fletcher-checksum` — Compute Fletcher checksums (16, 32, and 64-bit) of input bytes.
+- **Hash Compare & Verify** — `/tools/hash-compare-verify` — Paste an expected checksum and your text or file hash to confirm they match with constant-time-style comparison.
 - **Hash Text** 🦀 — `/tools/hash-text` — Compute MD5, SHA-1, SHA-256/384/512, SHA-3, BLAKE3 and CRC32 digests of text — live, in your browser.
+- **HKDF Key Derivation** — `/tools/hkdf-key-derivation` — Expand input key material into one or more output keys using HKDF (RFC 5869).
 - **HMAC Generator** 🦀 — `/tools/hmac-generator` — Compute HMAC (SHA-1/256/384/512) of a message with a secret key.
+- **HMAC Verify** — `/tools/hmac-verify` — Recompute an HMAC over a message and key, then compare it against an expected MAC to verify authenticity.
+- **IBAN Validator** — `/tools/iban-validator` — Validate an IBAN using the ISO 13616 mod-97 checksum and show its structure.
+- **ISBN-10 / ISBN-13 Validator** — `/tools/isbn-validator` — Validate ISBN-10 and ISBN-13 check digits and convert between the two formats.
+- **JWK / PEM Key Viewer** — `/tools/jwk-pem-viewer` — Inspect and convert between JWK and PEM key representations and display their parameters.
+- **JWK Thumbprint (RFC 7638)** — `/tools/jwk-thumbprint` — Compute the canonical SHA-256 thumbprint of a JSON Web Key per RFC 7638.
+- **JWT Builder (RS/ES)** — `/tools/jwt-builder-rsa-es` — Build and sign JSON Web Tokens with RSA or ECDSA keys (RS256/384/512, ES256/384/512, PS256).
+- **JWT Claims Validator** — `/tools/jwt-claims-validator` — Decode a JWT and check its registered claims (exp, nbf, iat, aud, iss) without verifying the signature.
 - **JWT Generator** — `/tools/jwt-generator` — Create a signed HS256/384/512 JSON Web Token from a payload and secret.
 - **JWT Signature Verifier (HS256)** — `/tools/jwt-verify-hmac` — Verify an HMAC-signed JWT (HS256/384/512) against a secret and report whether the signature and expiry are valid.
+- **JWT Verifier (RS/ES)** — `/tools/jwt-verify-rsa-es` — Verify a JWT signature against an RSA or ECDSA public key and check standard claims.
+- **KDF Parameter Planner** — `/tools/scrypt-style-kdf-params` — Compute memory, time, and output sizes for PBKDF2/scrypt/Argon2 parameter sets without running them.
+- **Key Fingerprint Generator** — `/tools/crypto-key-fingerprint` — Compute SSH-style and certificate-style fingerprints of a public key (MD5 colon-hex and SHA-256 base64).
+- **Luhn Checksum Validator** — `/tools/luhn-validator` — Validate any Luhn-based number (credit cards, IMEI, etc.) and compute its check digit.
 - **MD5 Hash Generator** — `/tools/md5-hash` — Generate the MD5 hash of any text, with lowercase or uppercase hex output (the algorithm Web Crypto omits).
+- **Mod-10 / Mod-11 Check Digit Calculator** — `/tools/crypto-mod10-mod11-check-digit` — Computes and verifies Mod-10 (Luhn) and Mod-11 check digits for arbitrary numeric strings.
+- **Multi-Algorithm Text Checksum** — `/tools/crypto-text-checksum-multi` — Computes CRC-8, CRC-16, CRC-32, Adler-32 and a simple XOR/sum checksum of text in one view.
+- **OTPAuth URI & QR Builder** — `/tools/otp-uri-builder` — Build otpauth:// provisioning URIs for TOTP/HOTP authenticator apps from a Base32 secret and render a scannable QR code.
+- **Passphrase Entropy Meter** — `/tools/passphrase-entropy-meter` — Estimate the bits of entropy in a passphrase based on its character set and length.
 - **Password Generator** — `/tools/password-generator` — Generate strong random passwords or diceware passphrases, locally.
+- **Password Strength Checker** — `/tools/password-strength-checker` — Score a password using composition rules and common-pattern detection with actionable feedback.
+- **PBKDF2 Key Derivation** — `/tools/pbkdf2-key-derivation` — Derive a key from a passphrase and salt using PBKDF2 with configurable iterations and hash.
 - **Random Bytes Generator** — `/tools/random-bytes-generator` — Generate cryptographically secure random bytes as hex, Base64, Base64URL, or a C-style byte array of a chosen length.
+- **Random Token Generator (Formats)** — `/tools/random-token-formats` — Generate cryptographically random tokens in many developer formats (hex, base64url, Base32, API-key style) with prefixes and grouping.
 - **ROT47 Encoder** — `/tools/rot47-encoder` — Encode or decode text with ROT47, the printable-ASCII rotation cipher (its own inverse).
+- **RSA / ECC Key Strength Comparator** — `/tools/crypto-rsa-key-size-strength` — Compare RSA, ECC, and symmetric key sizes by equivalent bits of security.
 - **RSA Key Pair Generator** — `/tools/rsa-keypair-generator` — Generate an RSA public/private key pair in PEM format with selectable key size (2048/3072/4096) and hash.
+- **RSA Sign & Verify** — `/tools/rsa-sign-verify` — Sign messages with an RSA private key and verify signatures with a public key (RSASSA-PKCS1 / PSS).
+- **SHA Multi-Hash (Text)** — `/tools/sha-multi-hash-text` — Compute SHA-1, SHA-256, SHA-384, and SHA-512 digests of pasted text simultaneously.
+- **SHA-3 / Keccak Hash** — `/tools/crypto-sha3-keccak-hash` — Computes SHA3-224/256/384/512 and Keccak-256 hashes of text using a pure JS implementation.
+- **Shamir Secret Sharing** — `/tools/shamir-secret-sharing` — Split a secret into N shares requiring K to reconstruct, using finite-field polynomial interpolation.
 - **TOTP / 2FA Code Generator** — `/tools/totp-generator` — Generate time-based one-time passwords (TOTP) from a Base32 secret.
+- **UUID Inspector** — `/tools/uuid-inspector` — Parse any UUID to reveal its version, variant, and embedded timestamp or node data.
+- **Verhoeff & Damm Check Digit** — `/tools/verhoeff-damm-check` — Compute and validate Verhoeff and Damm check digits for error-detecting numeric strings.
 - **Vigenere Cipher** — `/tools/vigenere-cipher` — Encrypt or decrypt text with the classic Vigenere keyword cipher.
 - **XOR Cipher** — `/tools/xor-cipher` — Encrypt or decrypt text with a repeating-key XOR, output as hex or Base64 and back.
 
-## Encoding (24)
+## Encoding (72)
 
+- **A1Z26 Letter-Number Cipher** — `/tools/encoding-a1z26-cipher` — Convert letters to their alphabet position numbers (A=1…Z=26) and back.
+- **Affine Cipher** — `/tools/encoding-affine-cipher` — Encrypt/decrypt with the affine cipher E(x)=(a·x+b) mod 26, including key validity checks.
 - **ASCII / Code Point Converter** — `/tools/encoding-ascii-code-point` — Convert text to ASCII/Unicode code point numbers and convert numeric lists back to text.
+- **ASCII ↔ EBCDIC Converter** — `/tools/encoding-ebcdic-converter` — Convert text between ASCII/Latin-1 and IBM EBCDIC code pages, byte for byte.
 - **Ascii85 / Base85 Encode** — `/tools/ascii85` — Encode and decode text using Ascii85 (Adobe variant).
 - **Atbash Cipher** — `/tools/encoding-atbash-cipher` — Encode or decode text with the Atbash cipher, mirroring each letter to its opposite in the alphabet.
+- **Bacon's Cipher** — `/tools/encoding-bacon-cipher` — Encode text to Baconian 5-bit A/B groups and decode it back.
+- **Base16 Encode / Decode** — `/tools/encoding-base16-encode` — Encode text to uppercase Base16 (RFC 4648 hex) and decode it back, with strict validation.
 - **Base32 Encode / Decode** 🦀 — `/tools/base32-text` — Encode text to RFC 4648 Base32 and decode it back.
+- **Base32hex (Extended Hex) Encode / Decode** — `/tools/encoding-base32hex-encode` — Encode/decode using the RFC 4648 Base32hex extended-hex alphabet (0-9A-V).
+- **Base36 Encode / Decode** — `/tools/encoding-base36-encode` — Convert between arbitrary-length integers and Base36 (0-9, a-z) strings.
 - **Base45 Encode / Decode** — `/tools/encoding-base45` — Encode text to RFC 9285 Base45 or decode Base45 back to text, as used in QR-code data payloads.
 - **Base58 Encode / Decode** — `/tools/base58` — Encode bytes/text to Base58 (Bitcoin alphabet) and decode it back.
+- **Base62 Encode / Decode** — `/tools/encoding-base62-encode` — Encode bytes or big integers to Base62 (0-9A-Za-z) and decode back, like short-URL IDs use.
+- **Base64 / Data URI Image Inspector** — `/tools/encoding-base64-image-inspector` — Decode a Base64 or data: URI image string and report its real format, dimensions, and size.
+- **Base64 ↔ Base32 Cross Converter** — `/tools/encoding-base64-base32-cross` — Directly transcode between Base64 and Base32 representations of the same bytes without manual decode/encode.
 - **Base64 Encode / Decode** 🦀 — `/tools/base64-text` — Encode text to Base64 (standard or URL-safe) and decode it back — live.
 - **Base64 Image / Data URI Builder** — `/tools/encoding-data-uri-builder` — Wrap Base64 content into a data: URI with a chosen MIME type, or extract the MIME and decoded payload from an existing data URI.
 - **Base64 to Hex Converter** — `/tools/encoding-base64-to-hex` — Convert between Base64-encoded data and its hexadecimal byte representation in both directions.
 - **Base64 URL-Safe Encode / Decode** — `/tools/encoding-base64url` — Encode or decode text using the URL-safe Base64 alphabet with optional padding for tokens and URLs.
+- **Base85 (RFC 1924 / ZeroMQ) Variants** — `/tools/encoding-base85-rfc1924` — Encodes and decodes data across Base85 alphabets: ASCII85, RFC 1924, and Z85 side by side.
+- **basE91 Encode / Decode** — `/tools/encoding-base91-encode` — Encode binary text to basE91, a denser ASCII encoding than Base64.
+- **Beaufort Cipher** — `/tools/encoding-beaufort-cipher` — Encrypt and decrypt with the reciprocal Beaufort polyalphabetic cipher.
+- **Braille (Unicode) Translator** — `/tools/encoding-braille-converter` — Convert printable text to and from Unicode Braille patterns (Grade 1).
 - **Caesar Cipher Shift** — `/tools/encoding-caesar-cipher` — Encode or decode text with a configurable Caesar shift, rotating letters by any amount while preserving case and symbols.
+- **Char Multi-Radix Encoder (Dec/Bin/Oct/Hex)** — `/tools/encoding-decimal-binary-octal-hex` — Show every character's value simultaneously in decimal, binary, octal, and hex.
+- **Code Point ↔ UTF-8/UTF-16 Bytes** — `/tools/encoding-codepoint-utf-converter` — Convert Unicode code points to their UTF-8 and UTF-16 byte encodings and back.
+- **Columnar Transposition Cipher** — `/tools/encoding-columnar-transposition` — Encrypt/decrypt with a keyword-based columnar transposition cipher.
+- **CSV Field Escaper / Unescaper** — `/tools/encoding-csv-field-escape` — Escape a single value for safe CSV embedding (RFC 4180 quoting) and unescape a CSV field.
+- **Flag Semaphore Encoder** — `/tools/encoding-semaphore-text` — Encode text into flag-semaphore positions and visualize the two-flag clock angles.
+- **Four-Square Cipher** — `/tools/encoding-four-square-cipher` — Encrypt and decrypt digraphs using the classical four-square cipher.
+- **Gronsfeld Cipher** — `/tools/encoding-gronsfeld-cipher` — A Vigenere variant that uses a numeric key instead of a keyword.
 - **Gzip Base64 Compress / Decompress** — `/tools/encoding-gzip-base64` — Compress text with gzip and output Base64, or decode Base64 gzip back to the original text.
 - **Hex Encode / Decode** 🦀 — `/tools/hex-text` — Convert text to hexadecimal and back, with optional uppercase.
 - **HTML Entity Encode / Decode** — `/tools/html-entities` — Escape text to HTML entities and unescape entities back to text.
+- **HTML Named ↔ Numeric Entity Converter** — `/tools/encoding-html-named-numeric` — Convert between HTML named entities (&amp;) and their numeric forms (&#38;/&#x26;) both ways.
+- **JavaScript String Escaper / Unescaper** — `/tools/encoding-js-string-escape` — Escape arbitrary text into a safe JS string literal and unescape it back.
+- **JSON Pointer Escaper (RFC 6901)** — `/tools/encoding-json-pointer-escape` — Encode and decode JSON Pointer reference tokens with the ~0/~1 escape rules.
 - **JWT Decoder & Inspector** — `/tools/encoding-jwt-inspector` — Decode a JSON Web Token into its readable header and payload claims, with human-friendly timestamps for exp/iat/nbf.
+- **Morse Code Prosigns & Abbreviations** — `/tools/encoding-morse-prosigns-reference` — Reference of Morse prosigns, Q-codes, and common abbreviations beyond plain letters.
+- **Morse Code Timing & Symbol Variants** — `/tools/encoding-morse-timing-variants` — Translate to Morse with selectable dot/dash glyphs and standard PARIS timing breakdown.
+- **Nihilist Cipher** — `/tools/encoding-nihilist-cipher` — Encrypt and decrypt using the Polybius-square plus additive-key Nihilist cipher.
 - **Numeric HTML Character References** — `/tools/encoding-numeric-char-references` — Convert text into numeric HTML character references (decimal or hex) and decode them back to plain text.
 - **Octal Encode / Decode** — `/tools/encoding-octal-text` — Encode UTF-8 text to space-separated octal byte values or decode octal numbers back into readable text.
+- **Percent-Encoding Reference Table** — `/tools/encoding-percent-encoding-table` — Searchable table of percent-encoded (%XX) values for ASCII and common reserved characters.
+- **Playfair Cipher** — `/tools/encoding-playfair-cipher` — Encrypt and decrypt with the classic 5x5 Playfair digraph substitution cipher.
+- **Polybius Square Cipher** — `/tools/encoding-polybius-square` — Encode/decode text using a 5x5 Polybius square coordinate cipher.
 - **Punycode Encode / Decode** — `/tools/encoding-punycode` — Convert internationalized domain names to ASCII Punycode (xn--) and back to their Unicode form.
 - **Quoted-Printable Encode / Decode** — `/tools/encoding-quoted-printable` — Encode text to MIME quoted-printable or decode quoted-printable email content back to text.
+- **Rail Fence Cipher** — `/tools/encoding-rail-fence-cipher` — Encrypt and decrypt text with the zigzag rail fence transposition cipher.
+- **Regex Special-Character Escaper** — `/tools/encoding-regex-literal-escape` — Escape text so it matches literally inside a regular expression, for several flavors.
+- **ROT-N Cipher (Custom Rotation)** — `/tools/encoding-rot-n-cipher` — Apply a Caesar-style rotation with any shift 0-25, with brute-force preview of all shifts.
+- **Shell Argument Escaper / Quoter** — `/tools/encoding-shell-arg-escape` — Safely quote text as a single shell argument for POSIX sh/bash or PowerShell.
+- **Spelling Alphabets Reference** — `/tools/encoding-spell-alphabet-reference` — Cheatsheet of phonetic/spelling alphabets across NATO, LAPD, and aviation use.
+- **SQL String Escaper** — `/tools/encoding-sql-string-escape` — Escape text into a safe SQL string literal for common database dialects.
+- **Tap Code (Knock Cipher)** — `/tools/encoding-tap-code` — Encode/decode text to the tap code used as a 5x5 grid of knocks.
 - **Text to Binary** — `/tools/binary-text` — Convert text to its binary (and back), with a configurable separator.
+- **Unicode Confusables / Homoglyph Detector** — `/tools/encoding-unicode-confusables-detector` — Detect and normalize visually deceptive lookalike characters in text.
 - **Unicode Escape / Unescape** — `/tools/encoding-unicode-escape` — Convert characters to \uXXXX escape sequences or unescape them back to readable Unicode text.
+- **Unicode Normalization (NFC/NFD/NFKC/NFKD)** — `/tools/encoding-unicode-normalization` — Apply and compare the four Unicode normalization forms to text.
+- **URI Template Expander (RFC 6570)** — `/tools/encoding-uri-template-expander` — Expand RFC 6570 URI templates with variables, applying correct percent-encoding per operator.
 - **URL Encode / Decode** — `/tools/url-encode` — Percent-encode and decode text or whole-component URL strings.
+- **URL Encode Variants (encodeURI vs encodeURIComponent)** — `/tools/encoding-url-component-variants` — Compare and apply the three JavaScript URL-encoding functions side by side on the same input.
 - **UTF-8 / UTF-16 Code Unit Converter** — `/tools/encoding-utf16-code-units` — Show the UTF-16 code units (and surrogate pairs) for text and convert hex code-unit lists back into characters.
+- **UTF-8 Byte Inspector** — `/tools/encoding-utf8-byte-inspector` — Break text into its UTF-8 byte sequence with per-character hex, binary, and code points.
+- **UUencode / UUdecode** — `/tools/encoding-uuencode` — Encode and decode data in the classic Unix uuencode format.
+- **Uuencode / Xxencode Converter** — `/tools/encoding-uuencode-xxencode` — Encodes and decodes data using classic Unix uuencode and xxencode formats.
+- **Vigenere Autokey Cipher** — `/tools/encoding-vigenere-autokey-cipher` — Encrypts and decrypts text with the autokey variant of the Vigenere cipher.
 - **XOR Cipher** — `/tools/encoding-xor-cipher` — Encrypt or decrypt text with a repeating-key XOR cipher, outputting or reading hex or Base64.
+- **XXencode / XXdecode** — `/tools/encoding-xxencode` — Encode and decode using the XXencode alphabet (a safer uuencode variant).
+- **Z85 Encode / Decode** — `/tools/encoding-z85-encode` — Encode/decode using ZeroMQ Z85, a printable Base85 variant safe for source code.
+- **Zero-Width Character Encoder** — `/tools/encoding-zero-width-steganography` — Hide a secret message inside cover text using invisible zero-width characters, and extract it.
 
-## Generators (29)
+## Generators (95)
 
+- **.editorconfig Generator** — `/tools/editorconfig-generator` — Generate an .editorconfig from options: indent style/size, charset, EOL, trailing whitespace, per-glob rules.
+- **.env.example Generator** — `/tools/env-example-generator` — Turn a list of env var names/values into a redacted .env.example with comments and grouping.
 - **.gitignore Generator** — `/tools/gitignore-generator` — Assemble a .gitignore from common language and tool templates.
+- **.htpasswd Generator** — `/tools/htpasswd-generator` — Generate Apache/Nginx htpasswd entries with bcrypt, SHA-1, or MD5(APR1) hashing, fully in-browser.
+- **API Key Generator** — `/tools/api-key-generator` — Generate prefixed, secret-style API keys in common SaaS formats.
 - **Barcode Generator** — `/tools/generate-barcode` — Generate Code 39 and EAN-13 barcodes from input text/digits, rendered to a downloadable SVG/PNG with adjustable bar width and height.
+- **BIC / SWIFT Code Test Generator** — `/tools/bic-swift-test-generator` — Generate structurally valid test BIC/SWIFT codes (8 or 11 chars) with bank, country, location, branch parts.
+- **CHANGELOG Generator (Keep a Changelog)** — `/tools/changelog-generator` — Scaffold a Keep-a-Changelog / SemVer CHANGELOG.md with version sections and Added/Changed/Fixed groups.
+- **CONTRIBUTING.md Generator** — `/tools/contributing-guide-generator` — Generate a CONTRIBUTING.md with setup, branch/commit conventions, PR checklist, and code-of-conduct link.
+- **Conventional Commit Message Builder** — `/tools/conventional-commit-generator` — Build a Conventional Commits message from type, scope, description, body, breaking change, and footers.
 - **Credit Card Number Generator** — `/tools/generate-credit-card` — Generate Luhn-valid fake test card numbers by brand (Visa, Mastercard, Amex, Discover) with optional expiry and CVV, for payment-form testing only.
 - **Cron Expression Builder** — `/tools/generate-cron-expression` — Build a cron expression from human-friendly schedule controls (minute, hour, day, month, weekday) and see a plain-English description of when it runs.
+- **Crontab Recipe Generator** — `/tools/crontab-recipe-generator` — Generate a full crontab file with multiple jobs, schedule presets, env lines, and human comments.
 - **CSS Gradient Generator** — `/tools/generate-css-gradient` — Build linear or radial CSS gradients with multiple color stops, angle, and type, producing copy-ready background CSS with a live preview.
+- **CUID2 Generator** — `/tools/cuid2-generator` — Generate collision-resistant, URL-safe CUID2 identifiers with adjustable length.
 - **Dice & Coin Roller** — `/tools/dice-roller` — Roll dice (d4–d100, multiple dice) and flip coins with fair randomness.
+- **docker-compose.yml Generator** — `/tools/docker-compose-generator` — Build a docker-compose.yml from selected services (web, postgres, redis, mysql, mongo) with ports and volumes.
+- **Dockerfile Generator** — `/tools/dockerfile-generator` — Generate a best-practice Dockerfile for Node/Python/Go/Static from a form (base image, ports, multi-stage).
+- **EAN/UPC Check Digit & Number Generator** — `/tools/ean-upc-barcode-data-generator` — Generate valid EAN-13, EAN-8, UPC-A, and ISBN-13 numbers with correct check digits, or fix a partial code.
+- **Email Alias Generator** — `/tools/email-alias-generator` — Generate plus-addressing and dot-trick Gmail aliases plus catch-all variants from one base email.
+- **ESLint Flat Config Generator** — `/tools/eslint-config-generator` — Scaffold an eslint.config.js flat config (or .eslintrc) from language, env, and rule-preset choices.
+- **Fake Address Generator** — `/tools/fake-address-generator` — Produce fake postal addresses (street, city, region, postal code, country) per country format from static lists.
+- **Fake Company Generator** — `/tools/fake-company-generator` — Generate fake company records: name, industry, catchphrase, domain, EIN-format tax id, from static word banks.
+- **Fake Data From JSON Schema** — `/tools/json-schema-faker` — Generate sample JSON instances that conform to a pasted JSON Schema (types, enums, formats, constraints).
+- **Fake User Profile Generator** — `/tools/fake-user-profile-generator` — Generate realistic fake user records (name, email, username, phone, avatar seed) from built-in static name lists.
+- **GitHub Actions Workflow Generator** — `/tools/github-actions-workflow-generator` — Scaffold a CI workflow YAML (Node/Python/Go) with triggers, matrix, cache, and steps from a form.
+- **GitLab CI Pipeline Generator** — `/tools/generators-gitlab-ci-yaml` — Builds a .gitlab-ci.yml from selected stages, jobs, images, and cache settings.
 - **Hex Color Generator** — `/tools/generate-hex-color` — Generate random colors as HEX, RGB, and HSL with options to control hue range, brightness, and saturation for design palettes and placeholders.
+- **htpasswd + .htaccess Generator** — `/tools/generators-htaccess-basic-auth` — Generate matching htpasswd credentials and .htaccess block for HTTP Basic Auth.
 - **IBAN Generator** — `/tools/generate-iban` — Generate valid-format test IBANs per country with correct length and ISO 7064 mod-97 check digits, useful for banking and form validation testing.
+- **IP / CIDR Test Range Generator** — `/tools/ip-cidr-list-generator` — Generate lists of random IPv4/IPv6 addresses or expand a CIDR block into host addresses for test data.
 - **JSON Mock Data Generator** — `/tools/generate-mock-json` — Generate arrays of realistic fake JSON records from a field schema (name, email, uuid, number, date, boolean) with a configurable row count for API mocking.
+- **KSUID Generator** — `/tools/ksuid-generator` — Generate K-Sortable Unique Identifiers as 27-character Base62 strings.
+- **License Key Generator** — `/tools/license-key-generator` — Generate grouped license/serial keys with a configurable checksum group.
+- **Lorem Ipsum by Byte Size** — `/tools/lorem-bytes-generator` — Generate filler Lorem Ipsum text trimmed to an exact target byte or character size.
+- **Lottery Number Generator** — `/tools/lottery-number-generator` — Generate lottery quick-pick numbers for common formats or a custom number pool.
 - **MAC Address Generator** — `/tools/generate-mac-address` — Generate random MAC addresses with selectable separator (colon, hyphen, dot), case, and locally-administered/unicast bit control for network testing.
+- **Magnet & Data URI Builder** — `/tools/magnet-uri-builder` — Assemble magnet: links from an info hash and metadata fields offline.
+- **Makefile Scaffold Generator** — `/tools/generators-makefile-scaffold` — Generates a Makefile with .PHONY targets, variables, and help target from a list of tasks.
 - **Markdown Table Generator** — `/tools/generate-markdown-table` — Generate clean GitHub-flavored Markdown tables from pasted CSV/TSV or row/column counts, with column alignment and auto-padded columns.
+- **MeCard / vCard QR Payload Builder** — `/tools/vcard-qr-payload-generator` — Build compact MECARD: and vCard contact payload strings sized for embedding in QR codes.
+- **Memorable Password Generator** — `/tools/memorable-password-generator` — Build easy-to-type memorable passwords from word groups with separators and number/symbol injection.
+- **Mnemonic PIN Generator** — `/tools/mnemonic-pin-generator` — Generate numeric PINs alongside a word mnemonic to help you remember each digit.
 - **Mock Data Generator** — `/tools/mock-data` — Generate an array of realistic fake records (names, emails, dates) as JSON.
 - **Nano ID Generator** — `/tools/nanoid-generator` — Generate compact, URL-safe Nano IDs with a configurable length.
+- **NanoID Custom Alphabet Generator** — `/tools/nanoid-custom-alphabet` — Generate NanoIDs from your own alphabet with an unbiased rejection-sampling algorithm.
 - **NanoID Generator** — `/tools/generate-nanoid` — Generate compact, URL-safe NanoIDs with configurable length and alphabet, a popular smaller alternative to UUIDs for keys and short links.
+- **Nil & Max UUID Generator** — `/tools/uuid-nil-max-generator` — Produce the special all-zero Nil UUID and all-one Max UUID sentinel values.
+- **Open Source License Generator** — `/tools/open-source-license-generator` — Produce full LICENSE text for MIT, Apache-2.0, GPL-3.0, BSD-2/3-Clause, ISC, MPL-2.0, Unlicense with your details.
+- **OTP Secret Generator** — `/tools/otp-secret-generator` — Generate Base32 TOTP/HOTP shared secrets and a matching otpauth:// URI.
+- **package.json Generator** — `/tools/package-json-generator` — Scaffold a valid package.json from form fields: name, version, type, scripts, deps placeholders, license.
 - **Passphrase Generator** — `/tools/passphrase-generator` — Generate memorable multi-word passphrases (diceware-style) locally.
+- **Pattern-Based Password Generator** — `/tools/pattern-password-generator` — Generate strings from a placeholder pattern where each token maps to a character class.
+- **Phone Number Format Generator** — `/tools/phone-number-format-generator` — Generate fake phone numbers formatted per country/style (E.164, national, dashed) from reserved test ranges.
 - **PIN Code Generator** — `/tools/generate-pin` — Generate random numeric PIN codes of a chosen length (e.g. 4/6/8 digits) in bulk, with an option to avoid trivial sequences and repeats.
 - **Placeholder Image Generator** — `/tools/generate-placeholder-image` — Generate downloadable placeholder images at a chosen size, background/text color, and label text, drawn on a canvas as a data URL for mockups.
+- **Playing Card Dealer** — `/tools/playing-card-dealer` — Shuffle a standard deck and deal random cards or hands.
+- **Prettier Config Generator** — `/tools/prettier-config-generator` — Build a .prettierrc from toggles (semicolons, quotes, tab width, trailing commas, print width) in JSON or JS.
+- **Pronounceable Password Generator** — `/tools/pronounceable-password-generator` — Generate pronounceable passwords by alternating consonant and vowel patterns.
+- **Random Boolean / Yes-No Generator** — `/tools/random-boolean-generator` — Flip a biased coin: generate true/false (or yes/no) values at a chosen probability.
+- **Random Choice Picker** — `/tools/random-choice-picker` — Pick one or several random options from a list of choices, with or without replacement.
+- **Random Color Palette Generator** — `/tools/random-hex-color-palette` — Generate harmonious random color palettes in HEX/RGB/HSL using HSL-based schemes.
+- **Random Coordinates Generator** — `/tools/random-coordinates-generator` — Generate random latitude/longitude points, optionally constrained to a bounding box.
 - **Random Date Generator** — `/tools/generate-random-date` — Generate random dates and times between a start and end bound, with chosen output format (ISO, locale, Unix timestamp) and quantity for seeding data.
+- **Random Datetime Generator** — `/tools/random-date-range-generator` — Generate random dates and timestamps within a range, in your chosen format.
+- **Random Emoji Picker** — `/tools/random-emoji-picker` — Pick random emoji from selectable categories for testing and content.
+- **Random Identicon (SVG)** — `/tools/generators-svg-qr-style-placeholder` — Generates a deterministic symmetric pixel identicon SVG from a seed string.
+- **Random IP Address Generator** — `/tools/fake-ipv4-ipv6-generator` — Generate random IPv4 and IPv6 addresses, optionally restricted to private or public ranges.
 - **Random Number Generator** — `/tools/generate-random-number` — Generate cryptographically random integers or decimals within a min/max range, with options for quantity, uniqueness, and number of decimal places.
 - **Random String Generator** — `/tools/generate-random-string` — Generate random strings/tokens with toggleable character sets (lowercase, uppercase, digits, symbols), custom length, and quantity for API keys, secrets, and test data.
 - **Random String Generator** — `/tools/random-string` — Generate random strings from a chosen alphabet (hex, alphanumeric, custom).
+- **Random Token Generator** — `/tools/bearer-token-generator` — Generate cryptographically random tokens encoded as hex, Base64, Base64URL, or Base62.
+- **README.md Scaffold Generator** — `/tools/readme-scaffold-generator` — Build a structured README.md from a form: title, badges, install, usage, features, license sections.
+- **REST Mock Routes Generator** — `/tools/generators-json-server-routes` — Generates a JSON config of CRUD REST routes from a list of resource names.
 - **robots.txt Generator** — `/tools/robots-txt` — Build a robots.txt with allow/disallow rules and a sitemap line.
 - **Secure Passphrase Generator** — `/tools/generate-passphrase` — Generate memorable Diceware-style passphrases from a built-in wordlist with configurable word count, separator, capitalization, and an appended number.
 - **Slug Generator** — `/tools/generate-slug` — Turn each line of text into clean URL slugs with options for separator, lowercasing, accent stripping, and max length, processing many titles at once.
+- **Snowflake ID Generator** — `/tools/snowflake-id-generator` — Generate Twitter-style 64-bit Snowflake IDs with configurable epoch, worker, and sequence bits.
+- **SSH Config Block Builder** — `/tools/generators-ssh-config-builder` — Build a well-formed ~/.ssh/config Host block from form fields.
+- **SSN-Format Test Number Generator** — `/tools/ssn-format-test-generator` — Generate format-valid but non-issuable US SSN test numbers (e.g. 900-xx-xxxx, 666 area) for QA.
 - **SVG Pattern Generator** — `/tools/generate-svg-pattern` — Generate tileable SVG background patterns (dots, grid, stripes, checkerboard) with adjustable colors, size, and spacing, output as ready-to-use SVG markup.
+- **systemd Service Unit Generator** — `/tools/generators-systemd-service-unit` — Generate a systemd .service unit file from descriptive form inputs.
+- **Team / Group Splitter** — `/tools/team-shuffler` — Randomly split a list of names into balanced teams or fixed-size groups.
+- **Test Card Number Set Generator** — `/tools/generators-fake-credit-card-luhn-set` — Generates batches of Luhn-valid fake card numbers per brand for testing (clearly non-real).
+- **tsconfig.json Generator** — `/tools/tsconfig-generator` — Generate a tsconfig.json from target/module/strictness presets with include/exclude and path aliases.
 - **ULID Generator** — `/tools/generate-ulid` — Generate ULIDs (Universally Unique Lexicographically Sortable Identifiers): 26-char Crockford base32 IDs with a millisecond timestamp prefix and random suffix, sortable by creation time.
 - **ULID Generator** — `/tools/ulid-generator` — Generate lexicographically-sortable ULIDs in bulk, locally.
+- **Username Generator** — `/tools/random-username-generator` — Generate handle-style usernames by combining adjectives, nouns, and optional numbers.
 - **UUID Generator** — `/tools/uuid-generator` — Generate RFC 4122 v4 (random) and v7 (time-ordered) UUIDs in bulk.
+- **UUID Namespace Builder** — `/tools/uuid-namespace-builder` — Build and manage RFC 4122 namespace UUIDs and derive v5/v3 names beneath a custom namespace, offline.
 - **UUID v5 / v3 Generator** — `/tools/generate-uuid-v5` — Generate deterministic namespace UUIDs (v5 SHA-1 and v3 MD5) from a namespace UUID plus a name, so the same input always yields the same UUID.
+- **UUID v7 Generator** — `/tools/uuid-v7-generator` — Generate time-ordered, sortable UUID v7 identifiers using the current timestamp.
+- **vCard (.vcf) Generator** — `/tools/vcard-generator` — Generate vCard 3.0/4.0 contact text from name, org, phones, emails, address, and URL fields.
+- **Weighted Random Picker** — `/tools/weighted-random-picker` — Pick random items from a weighted list using cumulative-weight sampling.
+- **WiFi QR Payload String Builder** — `/tools/wifi-qr-payload-generator` — Build the WIFI: payload string for WiFi QR codes from SSID, password, encryption, and hidden flag.
 
-## Web & Dev (41)
+## Web & Dev (140)
 
 - **.env to JSON** — `/tools/web-dotenv-to-json` — Parse a .env / dotenv file into a JSON object and convert JSON back into .env format, handling quotes, comments, and export prefixes.
+- **.gitattributes Generator** — `/tools/web-gitattributes-generator` — Generate a .gitattributes file selecting line-ending normalization, binary, LFS and linguist rules from presets.
+- **.htaccess Redirect Builder** — `/tools/web-htaccess-redirect-builder` — Build Apache .htaccess redirect rules (Redirect, RewriteRule) from source/target URL pairs with status codes.
+- **Accept-Language / Accept Parser** — `/tools/web-accept-language-parser` — Parse and sort Accept-Language or Accept headers by quality value (q-factor).
+- **Apache .htaccess Snippet Generator** — `/tools/web-htaccess-snippet` — Generate .htaccess rules for redirects, HTTPS, rewrites, headers, and caching.
+- **Asset Cache-Busting URL Builder** — `/tools/web-cache-busting-hash-appender` — Appends a deterministic version/hash query param to a list of asset URLs.
+- **Authenticated fetch() Builder** — `/tools/web-jwt-to-fetch` — Generate a fetch() snippet with method, headers, bearer token, and JSON body.
+- **Authorization Header Builder** — `/tools/web-bearer-auth-header-builder` — Construct Authorization header values for Bearer, Basic, API key, and custom schemes.
 - **Basic Auth Generator** — `/tools/basic-auth-generator` — Build an HTTP Basic Authorization header from a username and password.
+- **BEM Class Name Generator** — `/tools/web-bem-class-generator` — Generate Block__Element--Modifier CSS class names from block, element and modifier inputs with HTML/CSS preview.
+- **Cache-Control Builder** — `/tools/web-cache-control-builder` — Compose and explain a Cache-Control header from caching directive checkboxes and durations.
+- **Cache-Control Header Explainer** — `/tools/web-http-cache-header-explainer` — Break down a Cache-Control header and explain each directive and its effect.
 - **Chmod Calculator** — `/tools/chmod-calculator` — Toggle Unix permission bits and get the octal + symbolic chmod value.
+- **CIDR / IP Range Calculator** — `/tools/web-cidr-calculator` — Expand an IPv4/IPv6 CIDR block into network, broadcast, mask, and host range.
+- **Common Regex Patterns Library** — `/tools/web-regex-pattern-library` — Searchable reference of ready-to-copy regex patterns for emails, URLs, IPs, dates, and other common validations.
+- **Content-Disposition Builder** — `/tools/web-content-disposition-builder` — Build and parse Content-Disposition headers with RFC 5987 filename encoding.
+- **Content-Security-Policy Builder** — `/tools/web-csp-builder` — Build a CSP header from per-directive source lists with keyword and nonce/hash helpers.
+- **Content-Security-Policy Linter** — `/tools/web-content-security-policy-linter` — Parses a CSP header string and flags unsafe or redundant directives.
+- **Content-Type & Charset Reference** — `/tools/web-content-type-charset-reference` — Searchable reference of common Content-Type media types, charsets, and parameters.
 - **Cookie Parser** — `/tools/cookie-parser` — Parse a Cookie or Set-Cookie header into a readable table of attributes.
+- **CORS Headers Builder** — `/tools/web-cors-headers-builder` — Generate the Access-Control-* response headers for a desired cross-origin policy.
 - **Cron Expression Explainer** — `/tools/web-cron-explainer` — Translate a cron expression into plain English and list the next several run times, supporting ranges, steps, and lists across all five fields.
+- **CSP Header Analyzer** — `/tools/web-content-security-policy-analyzer` — Parse a Content-Security-Policy header and flag weak or unsafe directives.
+- **CSS aspect-ratio Generator** — `/tools/web-aspect-ratio-css` — Turn a width:height ratio into aspect-ratio CSS plus a padding-top fallback.
+- **CSS Border Radius Generator** — `/tools/web-border-radius-generator` — Visually build a border-radius value (including elliptical and per-corner) and copy the CSS.
 - **CSS Box Shadow Generator** — `/tools/web-box-shadow-generator` — Visually craft a CSS box-shadow with offset, blur, spread, color, opacity, and inset controls, with a live preview and copyable code.
+- **CSS Button Generator** — `/tools/web-css-button-generator` — Design a button (colors, padding, radius, shadow, hover) and copy the CSS.
+- **CSS clamp() Fluid Type Calculator** — `/tools/web-clamp-fluid-type` — Compute a responsive clamp() font-size from min/max sizes and viewport range.
+- **CSS clip-path Shape Generator** — `/tools/web-clip-path-generator` — Generate polygon, circle, ellipse and inset clip-path values with live preview.
+- **CSS Color Format Converter** — `/tools/web-css-color-format-converter` — Convert a color between hex, rgb(), hsl(), hwb(), oklch() and named for code.
 - **CSS Cubic Bezier Generator** — `/tools/web-cubic-bezier` — Design CSS cubic-bezier easing curves with draggable control points and a live animation preview, outputting the transition-timing-function value.
+- **CSS Custom Properties Extractor** — `/tools/web-css-variables-extractor` — Scan CSS and list all --custom-properties and var() usages with values.
+- **CSS Custom Property Extractor** — `/tools/web-css-variable-extractor` — Extract all CSS custom properties (--var declarations) from a stylesheet into a deduplicated, sortable list.
+- **CSS Custom Scrollbar Styler** — `/tools/web-scrollbar-styler` — Generate cross-browser custom scrollbar CSS (WebKit pseudo-elements + Firefox).
+- **CSS Filter Generator** — `/tools/web-filter-generator` — Combine blur, brightness, contrast and other filters with live image preview.
+- **CSS Flexbox Generator** — `/tools/web-flexbox-playground` — Set flex container and item properties from dropdowns and copy the generated CSS.
+- **CSS Gradient Text Generator** — `/tools/web-css-gradient-text` — Produce the background-clip text trick CSS for gradient-colored text.
+- **CSS Grid Template Generator** — `/tools/web-grid-template-generator` — Define grid columns, rows, gaps and named areas, then copy the grid-template CSS.
+- **CSS Keyframes & Animation Generator** — `/tools/web-keyframes-generator` — Create @keyframes with stops plus the animation shorthand, and copy the CSS.
+- **CSS Media Query Builder** — `/tools/web-media-query-builder` — Build responsive @media queries with min/max width breakpoints, orientation, and feature conditions visually.
+- **CSS Media Query Generator** — `/tools/web-media-query-generator` — Build responsive @media queries from breakpoints and feature conditions.
 - **CSS Minify / Beautify** — `/tools/css-minify` — Minify CSS to one line or beautify it with consistent indentation.
+- **CSS Multi-Column Layout Generator** — `/tools/web-multi-column-generator` — Generate CSS columns properties (count, width, gap, rule) with live text preview.
+- **CSS REM / EM / VW / PX Calculator** — `/tools/web-css-relative-unit-calculator` — Convert between px, rem, em, vw and vh with configurable root font size and viewport, in both directions.
+- **CSS Selector Specificity Sorter** — `/tools/web-css-specificity-sorter` — Score and rank multiple CSS selectors by specificity to spot override order.
 - **CSS Specificity Calculator** — `/tools/web-css-specificity` — Compute the specificity of any CSS selector as an (a,b,c) triple and rank multiple selectors to predict which rule wins.
+- **CSS Text Shadow Generator** — `/tools/web-text-shadow-generator` — Build single or stacked text-shadow values with live typographic preview.
 - **CSS to Tailwind** — `/tools/web-css-to-tailwind` — Translate common CSS declarations into equivalent Tailwind utility classes, mapping spacing, colors, flex, font, and border properties.
+- **CSS Transform Generator** — `/tools/web-transform-generator` — Compose translate, rotate, scale, skew and perspective into one transform value.
+- **CSS Transition Generator** — `/tools/web-transition-generator` — Build a transition shorthand from property, duration, timing function and delay.
+- **CSS Triangle Generator** — `/tools/web-css-triangle-generator` — Create pure-CSS triangles using the border trick for any direction and size.
+- **CSS Unit Converter (px / rem / em / pt / %)** — `/tools/web-css-unit-converter` — Convert between px, rem, em, pt, pc, vw/vh and percent using a root and base.
+- **cURL Command Builder** — `/tools/web-curl-command-builder` — Build a complete curl command from method, URL, headers, body, and auth fields.
 - **cURL to Code** — `/tools/web-curl-to-fetch` — Convert a curl command into a browser fetch() call, parsing method, URL, headers, and body into ready-to-paste JavaScript.
+- **Data URI Size Estimator** — `/tools/web-data-uri-size-estimator` — Estimate the byte size and overhead of a Base64 data URI for a given raw file size before embedding it.
 - **Data URI to Text** — `/tools/web-data-uri-decoder` — Decode a data: URI back into its underlying text, revealing the MIME type, encoding, and the original content from base64 or percent-encoding.
 - **Email Obfuscator** — `/tools/email-obfuscator` — Obfuscate an email address (entities / JS) to deter scrapers.
+- **ETag & Conditional Request Builder** — `/tools/web-etag-conditional-builder` — Generate ETag values and matching If-None-Match / If-Modified-Since request headers.
+- **Favicon Link Tags Generator** — `/tools/web-favicon-link-generator` — Generate the full set of favicon and app-icon link tags for all platforms.
+- **HSTS Header Builder** — `/tools/web-hsts-header-builder` — Build and decode the Strict-Transport-Security header with preload-eligibility checks.
+- **HTML Attribute Stripper / Tag Cleaner** — `/tools/web-html-attributes-stripper` — Remove selected attributes (style, class, on*, data-*) or whole tags from HTML.
 - **HTML Boilerplate Generator** — `/tools/web-html-boilerplate` — Generate a clean HTML5 starter document with configurable title, language, viewport, charset, and optional meta/Open Graph tags.
+- **HTML Class & ID Extractor** — `/tools/web-html-class-attr-extractor` — Extract every unique class name and id used in an HTML snippet and output them as a sorted list or CSS stub.
+- **HTML data-* to JS dataset Converter** — `/tools/web-data-attribute-to-dataset` — Convert data-* attributes to element.dataset access expressions and back.
+- **HTML Entity Picker** — `/tools/web-html-entity-picker` — Searchable reference of named HTML entities with their character, numeric, and hex codes ready to copy.
+- **HTML Escape / Unescape for Code** — `/tools/web-html-escape-unescape` — Escape text to HTML-safe entities or unescape entities back to characters.
+- **HTML Meta Tags Generator (SEO)** — `/tools/web-meta-tags-generator` — Generate the full SEO meta tag head block from title, description and options.
+- **HTML Minifier / Beautifier** — `/tools/web-html-minify` — Minify HTML by stripping comments and whitespace, or pretty-print it.
 - **HTML to JSX** — `/tools/web-html-to-jsx` — Convert raw HTML into React JSX, renaming class to className, fixing self-closing tags, camelCasing attributes, and converting inline styles to objects.
 - **HTML to Text** — `/tools/html-to-text` — Strip HTML tags and decode entities to get clean plain text.
 - **HTTP Headers Reference** — `/tools/web-http-headers-reference` — Look up any HTTP request or response header to see its purpose, direction, example values, and whether it is standard or deprecated.
+- **HTTP Method Reference** — `/tools/web-http-method-reference` — Cheatsheet of HTTP methods with safe/idempotent/cacheable/body semantics.
+- **HTTP Status Code Explainer** — `/tools/web-status-code-explainer` — Look up a status code or symbol to get its class, meaning, and typical use.
 - **HTTP Status Codes** — `/tools/http-status-codes` — Searchable reference of HTTP status codes and their meanings.
+- **IP Address Converter** — `/tools/web-ip-address-converter` — Convert an IPv4/IPv6 address between dotted, integer, hex, binary, and expanded forms.
+- **IP-in-CIDR Checker** — `/tools/web-ip-cidr-membership` — Check whether IP addresses fall within one or more CIDR ranges.
 - **IPv4 Subnet Calculator** — `/tools/ip-subnet-calculator` — Compute network, broadcast, mask, host range and count from CIDR.
+- **IPv6 Expand & Compress** — `/tools/web-ipv6-expander` — Expand IPv6 addresses to full form or compress to canonical RFC 5952 shorthand.
 - **JSON Flatten / Unflatten** — `/tools/web-json-flatten` — Flatten a deeply nested JSON object into single-level dot-notation keys, or rebuild nested structure from flattened keys.
 - **JSON Path Extractor** — `/tools/web-json-path-extractor` — Query a JSON document with a dot/bracket path expression (e.g. data.items[0].name) and extract matching values, with wildcard support for arrays.
+- **JSON to HTML Form Generator** — `/tools/web-json-to-html-form` — Turn a JSON object into a matching HTML form with labeled inputs inferred from each field's value type.
 - **JSON to Java Class** — `/tools/web-json-to-java` — Convert a JSON payload into POJO Java class definitions with typed fields and getters/setters, inferring nested classes and collection generics.
 - **JSON to JSON Schema** — `/tools/web-json-to-jsonschema` — Generate a draft JSON Schema from an example JSON document, inferring types, required keys, array item shapes, and nested object definitions.
 - **JSON to Pretty / Tree** — `/tools/web-json-tree-viewer` — Visualize JSON as a collapsible, indented tree with type annotations and node counts, making large nested payloads easy to navigate.
 - **JSON to Query Params** — `/tools/web-json-to-query-string` — Turn a flat or nested JSON object into a properly encoded URL query string, with bracket notation for nested keys and arrays.
 - **JSON to TOML** — `/tools/web-json-to-toml` — Convert JSON configuration into TOML format and back, handling tables, arrays of tables, nested keys, strings, and numeric/boolean scalars.
+- **JSON-LD Structured Data Generator** — `/tools/web-jsonld-schema-generator` — Generate schema.org JSON-LD for Article, Product, FAQ, Breadcrumb and more.
 - **JWT Decoder** — `/tools/jwt-decoder` — Decode and inspect JSON Web Token header & payload (no verification).
+- **JWT Expiry Inspector** — `/tools/web-jwt-expiry-inspector` — Decode a JWT and report human-readable issued/expiry times and remaining validity.
+- **Link Header Builder & Parser** — `/tools/web-link-header-builder` — Build and parse RFC 8288 Link headers (rel=next/prev, preload, canonical).
+- **Lorem Ipsum HTML Block Generator** — `/tools/web-lorem-html-block` — Generate placeholder content as ready-to-paste semantic HTML blocks (paragraphs, headings, lists, blockquotes).
+- **MAC Address Formatter** — `/tools/web-mac-address-formatter` — Reformat MAC addresses between colon, hyphen, dot (Cisco), and bare notations.
 - **Markdown Table Generator** — `/tools/web-markdown-table-generator` — Build a Markdown table from typed rows and columns or from pasted CSV/TSV, with column alignment controls and live preview.
 - **Markdown to HTML** — `/tools/markdown-to-html` — Render Markdown to HTML with a live preview and copyable output.
+- **MIME Type from Extension** — `/tools/web-mimetype-from-extension` — Map one or many file extensions or filenames to their canonical MIME types and back.
 - **MIME Type Lookup** — `/tools/mime-types` — Look up the MIME/content type for a file extension and vice versa.
+- **Nginx Config Snippet Generator** — `/tools/web-nginx-location-snippet` — Generate common Nginx server/location blocks from form options (no server needed).
+- **Open Graph / Twitter Card Preview** — `/tools/web-open-graph-preview-card` — Parses OG and Twitter meta tags from pasted HTML and shows the resolved share-card fields.
 - **Open Graph Meta Tag Generator** — `/tools/web-open-graph-generator` — Produce Open Graph and Twitter Card meta tags from title, description, URL, image, and type fields for rich social link previews.
+- **Permissions-Policy Builder** — `/tools/web-permissions-policy-builder` — Build a Permissions-Policy (Feature-Policy) header from per-feature allowlists.
 - **PX ↔ REM Converter** — `/tools/px-rem-converter` — Convert between px, rem and em given a configurable root font size.
 - **Query String ↔ JSON** — `/tools/query-params` — Convert a URL query string to JSON and back, handling repeated keys.
+- **Query String Editor** — `/tools/web-query-string-editor` — Edit, add, reorder, dedupe, and sort URL query parameters in an interactive key/value table.
 - **Query String Parser** — `/tools/web-query-string-parser` — Parse a raw query string into a readable key/value table or pretty JSON, expanding repeated keys and bracket notation into arrays.
+- **Raw HTTP Message Parser** — `/tools/web-http-message-parser` — Parse a raw HTTP request or response into method, path, status, headers, and body.
+- **Referrer-Policy Reference & Tester** — `/tools/web-referrer-policy-reference` — Explain Referrer-Policy values and simulate what Referer is sent between two URLs.
 - **Regex Cheatsheet & Builder** — `/tools/web-regex-cheatsheet` — Browse a searchable regex syntax reference and snippet library for common patterns like email, URL, IP, and date, with copyable expressions.
+- **Regex Escape / Unescape** — `/tools/web-regex-escape` — Escape arbitrary text into a literal regex pattern or unescape an escaped pattern back to plain text.
+- **Regex Match Against Lines** — `/tools/web-regex-match-lines` — Run a regex against each line of pasted text and list which lines match, which do not, and the captured groups.
+- **Regex Named Group Reference Converter** — `/tools/web-regex-named-group-converter` — Convert between numbered capture groups and named capture groups in regex patterns and their backreferences/replacements.
+- **Relative URL Resolver** — `/tools/web-relative-url-resolver` — Resolve a relative reference against a base URL to produce the absolute target.
+- **Resource Hint Link Generator** — `/tools/web-preload-link-generator` — Generate preload, prefetch, preconnect and dns-prefetch link tags.
+- **Responsive Image srcset Builder** — `/tools/web-srcset-sizes-builder` — Builds an <img> srcset and sizes attribute from a base filename and width list.
+- **Responsive Image srcset Generator** — `/tools/web-srcset-generator` — Generate <img> srcset/sizes (or <picture>) markup from a list of widths.
+- **Responsive Image Width Planner** — `/tools/web-srcset-density-calculator` — Compute srcset width descriptors and sizes from a layout and breakpoints.
+- **robots.txt Tester** — `/tools/web-robots-txt-tester` — Test whether a URL path is allowed for a user-agent against pasted robots.txt rules.
 - **Semantic Version Comparator** — `/tools/web-semver-compare` — Compare two semantic versions to see which is greater, parse a version into major/minor/patch/prerelease, and test it against a range.
+- **Semver Range Tester** — `/tools/web-semver-range-tester` — Test whether semantic versions satisfy npm-style version ranges (caret, tilde, comparators, hyphen ranges).
+- **Semver Version Bumper** — `/tools/web-semver-bump` — Compute the next semantic version by bumping major, minor, patch, or prerelease according to semver rules.
+- **Set-Cookie Header Builder** — `/tools/web-set-cookie-builder` — Build a syntactically correct Set-Cookie header from name, value, and attribute toggles.
+- **Set-Cookie String Builder** — `/tools/web-cookie-string-builder` — Build a Set-Cookie header from name, value and attributes with validation.
+- **Shell Argument Escaper** — `/tools/web-shell-arg-escaper` — Safely quote and escape strings for bash, sh, PowerShell, or cmd.exe.
+- **Slugify Variants Comparator** — `/tools/web-slugify-variants` — Generate multiple slug styles (kebab, snake, dot, path, GitHub-anchor) from one input at once for comparison.
+- **Text Data URI Builder** — `/tools/web-data-uri-builder-text` — Build a data: URI from pasted text with MIME type, charset, and base64 options.
+- **Twitter Card Meta Generator** — `/tools/web-twitter-card-generator` — Build Twitter/X card meta tags (summary, large image, app, player).
+- **URL Builder** — `/tools/web-url-builder` — Assemble a valid URL from individual scheme, host, port, path, query, and fragment fields.
 - **URL Inspector** — `/tools/web-url-inspector` — Break a URL into protocol, host, port, path segments, query parameters, and hash, displayed as a clear labeled component breakdown.
+- **URL Normalizer** — `/tools/web-url-normalizer` — Canonicalize a URL by lowercasing host, resolving dot segments, sorting params, and stripping defaults.
 - **URL Parser** — `/tools/url-parser` — Break a URL into protocol, host, path, query parameters and hash.
+- **URL Path Joiner & Normalizer** — `/tools/web-url-path-joiner` — Join a base URL with path segments and normalize slashes, dot-segments, and trailing slashes safely.
+- **URL Query Param Sorter** — `/tools/web-url-query-sorter` — Canonicalize a URL by sorting and optionally deduplicating query parameters.
+- **URL Query Params Diff** — `/tools/web-query-params-diff` — Compare the query strings of two URLs and show which params were added, removed, changed, or unchanged.
 - **User-Agent Parser** — `/tools/user-agent-parser` — Parse a User-Agent string into browser, engine, OS and device.
+- **User-Agent String Builder** — `/tools/web-user-agent-builder` — Compose a browser User-Agent string from platform, engine, and version selectors.
+- **Web App Manifest Generator** — `/tools/web-manifest-generator` — Build a valid manifest.json (PWA) from name, colors, display and icons.
+- **WWW-Authenticate Parser** — `/tools/web-www-authenticate-parser` — Parse WWW-Authenticate / Authorization challenge headers into scheme and parameters.
 - **XML Formatter** — `/tools/web-xml-formatter` — Pretty-print and indent minified XML, or minify verbose XML by stripping whitespace between tags, with self-closing tag handling.
+- **XML Sitemap Generator** — `/tools/web-sitemap-generator` — Turn a list of URLs into a valid sitemap.xml with lastmod, changefreq, priority.
 - **XML to JSON** — `/tools/web-xml-to-json` — Convert an XML document into a structured JSON object, mapping elements, attributes, and text content with a predictable convention.
+- **Z-Index Scale Generator** — `/tools/web-z-index-scale-generator` — Generate a documented z-index scale with named layers as CSS variables or a Sass/JS map to avoid stacking chaos.
 
-## Time & Date (18)
+## Time & Date (63)
 
+- **12 / 24 Hour Time Converter** — `/tools/time-12-24-converter` — Convert clock times between 12-hour AM/PM and 24-hour formats, single or in bulk.
+- **Add Business Days** — `/tools/add-business-days` — Add or subtract a number of business days to a date, skipping weekends and custom holidays.
 - **Add or Subtract Days** — `/tools/date-add-subtract` — Add or subtract days, weeks, months, or years from a date and get the resulting date in multiple formats.
 - **Age Calculator** — `/tools/age-calculator` — Calculate exact age from a birth date in years, months, days, plus total days, hours, and the next birthday countdown.
+- **Age on Other Planets** — `/tools/age-on-other-planets` — Convert an age or elapsed time on Earth to equivalent years on other planets.
+- **Batch Timestamp Converter** — `/tools/timestamp-batch-converter` — Convert a pasted list of Unix timestamps to human dates (or dates back to timestamps) in bulk.
+- **Birthday Milestone Finder** — `/tools/birthday-milestone-finder` — Find dates of life milestones: 10,000 days old, 1 billion seconds, next round-number birthday.
 - **Business Days Calculator** — `/tools/business-days-calculator` — Count working days between two dates, excluding weekends, or add a number of business days to a start date.
+- **Chinese Zodiac Animal** — `/tools/chinese-zodiac-sign` — Find the Chinese zodiac animal, element, and yin/yang for any year (approximate by year).
+- **Clock Time Difference** — `/tools/time-between-clocks` — Compute the duration between two times of day, optionally wrapping past midnight.
+- **Countdown Snapshot Builder** — `/tools/countdown-timer-builder` — Compute the exact remaining time from now to a target datetime, broken into units.
 - **Cron Expression Builder** — `/tools/cron-builder` — Build a standard cron expression from dropdowns for minute, hour, day, month, and weekday with a human-readable preview.
 - **Cron Expression Explainer** — `/tools/cron-parser` — Explain a cron expression in plain English and preview the next run times.
+- **Cron Field Expander** — `/tools/cron-field-expander` — Expand each field of a cron expression into the explicit set of matching values.
+- **Cron Next Runs Preview** — `/tools/cron-next-runs-preview` — List the next N execution datetimes for a 5-field cron expression from a chosen start time.
 - **Date Difference** — `/tools/date-difference` — Calculate the duration between two dates in years, days, hours and more.
 - **Date Format Converter** — `/tools/date-format-converter` — Parse any date string and reformat it into common patterns (ISO 8601, RFC 2822, US, EU, locale strings) all at once.
+- **Date Format Token Reference** — `/tools/date-format-token-reference` — Searchable cheatsheet of date-format tokens across moment, date-fns, strftime, Java, and Unicode LDML.
+- **Date Range Splitter** — `/tools/date-range-splitter` — Split a date range into equal chunks or fixed-length intervals (e.g. weekly buckets).
+- **Datetime Format Examples Reference** — `/tools/time-server-format-reference` — Cheatsheet of the same instant rendered in RFC 3339, RFC 2822, ISO 8601, HTTP-date, SQL, and more.
 - **Day of Year Calculator** — `/tools/day-of-year` — Find the ordinal day-of-year for any date, days remaining in the year, and convert an ordinal day back to a date.
+- **Day Percentage Elapsed** — `/tools/day-percentage-elapsed` — Show how much of a day, week, month, year, hour, or minute has elapsed for a given moment.
+- **Days Between in Many Units** — `/tools/days-between-units` — Measure the span between two datetimes simultaneously in years, months, weeks, days, hours, minutes, and seconds.
 - **Days Until Date** — `/tools/days-until` — Count the exact days, weeks, hours, and minutes between today and a target future or past date.
+- **Decimal (French) Time Converter** — `/tools/decimal-time-converter` — Convert standard clock time to French Revolutionary decimal time (10 hours/day) and back.
+- **Duration Humanizer** — `/tools/duration-humanizer` — Turn a raw number of seconds or milliseconds into a human phrase like '2 days, 3 hours, 5 minutes'.
+- **Duration String Parser** — `/tools/duration-parser` — Parse human duration text like '1h30m', '2 days 4 hours', or '90s' into total seconds and milliseconds.
+- **Epoch Precision Converter** — `/tools/epoch-precision-converter` — Convert a Unix timestamp between seconds, milliseconds, microseconds, and nanoseconds with auto-detection.
+- **Fixed UTC Offset Converter** — `/tools/fixed-offset-timezone-math` — Convert a datetime across fixed UTC offsets (e.g. +05:30 to -08:00) without DST guessing.
+- **Fixed-Offset Meeting Planner** — `/tools/time-zone-meeting-planner` — See one meeting time across multiple fixed UTC offsets to find an overlap.
 - **ISO 8601 Duration Parser** — `/tools/iso-duration-parser` — Parse ISO 8601 duration strings like P1Y2M10DT2H30M into total seconds and a human-readable breakdown.
 - **ISO 8601 Parser** — `/tools/iso-8601-parser` — Break down an ISO 8601 date-time string into its components (year, month, day, hour, offset, week) and validate it.
+- **ISO Week Date Converter** — `/tools/iso-week-date-converter` — Convert between a calendar date and its ISO-8601 week-date form (YYYY-Www-D).
 - **ISO Week Number** — `/tools/week-number` — Find the ISO 8601 week number for any date (and day-of-year).
+- **Julian Day Number Converter** — `/tools/julian-day-number` — Convert Gregorian dates to astronomical Julian Day Number / Julian Date and back.
+- **Leap Year Checker** — `/tools/leap-year-checker` — Check if any year is a leap year and list nearby leap years with the rule explained.
+- **Meeting Cost Calculator** — `/tools/time-meeting-cost-calculator` — Estimates the dollar cost of a meeting from attendee count, hourly rates, and duration.
+- **Moon Phase Calculator** — `/tools/moon-phase-calculator` — Estimate the moon phase, illumination percentage, and lunar age for any date algorithmically.
+- **Next Weekday Occurrence** — `/tools/next-weekday-occurrence` — Find the next (or Nth) date that falls on a chosen weekday from a starting date.
+- **Nth Weekday of Month** — `/tools/nth-weekday-of-month` — Find dates like 'the 3rd Thursday of November' or 'the last Monday of May'.
+- **Ordinal Date Converter** — `/tools/ordinal-date-converter` — Convert between calendar dates and ordinal dates (year + day-of-year, YYYY-DDD).
+- **Quarter & Fiscal Period Finder** — `/tools/quarter-of-date` — Determine the calendar or fiscal quarter, half, and period dates for any date.
+- **Recurring Event Date Generator** — `/tools/recurring-event-dates` — Generate the next N dates for a simple recurrence (daily, weekly, monthly, yearly with interval).
 - **Relative Time Formatter** — `/tools/relative-time-formatter` — Turn a timestamp or date into human-friendly relative phrasing like '3 hours ago' or 'in 2 days' across locales.
+- **SMPTE Timecode / Frames Converter** — `/tools/time-timecode-frames-converter` — Converts between SMPTE timecode (HH:MM:SS:FF) and total frame counts at a chosen frame rate.
+- **Star Trek Stardate Converter** — `/tools/stardate-converter` — Convert Gregorian dates to TNG-era stardates and back using the common fan formula.
+- **strftime Format Playground** — `/tools/strftime-playground` — Apply a C/Python strftime format string to a chosen datetime and see the rendered output live.
+- **Swatch Internet Time (.beats)** — `/tools/swatch-internet-time` — Convert any time to Swatch Internet Time beats (BMT, @000-@999) and back.
+- **Time Duration Arithmetic** — `/tools/time-time-duration-arithmetic` — Adds and subtracts a list of HH:MM:SS durations and shows the running and total result.
+- **Time Epoch Rollover Checker** — `/tools/unix-rollover-checker` — Show key time-storage overflow dates (Year 2038, 2-digit Y2K, 32-bit, 64-bit limits).
 - **Time Unit Converter** — `/tools/time-unit-converter` — Convert a value between nanoseconds, microseconds, milliseconds, seconds, minutes, hours, and days.
+- **Time-of-Day Classifier** — `/tools/time-of-day-bucketer` — Classify a time into parts of day (morning, afternoon, evening, night) and solar/clock segments.
 - **Timezone Converter** — `/tools/timezone-converter` — Convert a date/time across timezones using the browser’s IANA database.
+- **Unicode Date Pattern Playground** — `/tools/date-format-playground` — Render a datetime using an Intl.DateTimeFormat-style or LDML pattern and preview the result.
+- **Unix Nanoseconds Converter** — `/tools/unix-nanoseconds-converter` — Convert nanosecond-precision Unix timestamps to date-time and back without floating-point loss.
 - **Unix Timestamp Converter** — `/tools/timestamp-converter` — Convert between Unix timestamps and human-readable dates (local & UTC).
 - **Unix Timestamp Now** — `/tools/unix-time-now` — Live ticking display of the current Unix timestamp in seconds, milliseconds, and microseconds, with a one-click copy and pause toggle.
 - **Week Number to Date** — `/tools/week-to-date` — Convert an ISO week number and year into the start and end dates of that week, and vice versa.
+- **Week of Month Finder** — `/tools/week-of-month-finder` — Determine which week of the month a date falls in, using several common counting conventions.
+- **Weekday of Any Date** — `/tools/weekday-of-date` — Find which day of the week any date falls on, with a Doomsday-rule mental-math walkthrough.
+- **Weeks & Months Until Date** — `/tools/weeks-until-date` — Count full weeks, months, and weekends remaining until a future date.
+- **Western Zodiac Sign Finder** — `/tools/western-zodiac-sign` — Find the tropical (Western) zodiac sign and its date range for any birth date.
+- **Working Hours Calculator** — `/tools/working-hours-calculator` — Compute net working hours between two datetimes, excluding nights, weekends, and lunch.
 
-## Math & Units (27)
+## Math & Units (114)
 
 - **Angle Converter** — `/tools/angle-converter` — Convert angles between degrees, radians, gradians, turns, and arcminutes/arcseconds.
+- **Arbitrary Base Converter (2-36)** — `/tools/arbitrary-base-converter` — Convert an integer between any two radixes from base 2 to base 36 with full digit-set support.
+- **Arithmetic & Geometric Sequence Calculator** — `/tools/arithmetic-geometric-sequence` — Find the nth term and sum of arithmetic or geometric sequences.
 - **Aspect Ratio Calculator** — `/tools/aspect-ratio-calculator` — Find a missing width or height for a target aspect ratio and reduce any resolution to its simplest ratio.
+- **Base-N Arithmetic Calculator** — `/tools/base-n-arithmetic` — Add, subtract, multiply, and divide numbers in any base 2–36.
+- **Bill & Amount Split Calculator** — `/tools/currency-split-calculator` — Split an amount fairly among people, including unequal weighted shares.
+- **Binary ↔ Gray Code Converter** — `/tools/binary-to-gray-code` — Convert between standard binary and reflected Gray code at any bit width.
+- **Bit Rotate & Shift Visualizer** — `/tools/bit-rotate-shift` — Apply logical/arithmetic shifts and circular rotations to a fixed-width integer and watch each bit move.
 - **Bitwise Calculator** — `/tools/bitwise-calculator` — Perform AND, OR, XOR, NOT and shifts on two integers, shown in all bases.
 - **BMI Calculator** — `/tools/bmi-calculator` — Calculate Body Mass Index from height and weight in metric or imperial units with a category label.
+- **Break-Even Point Calculator** — `/tools/break-even-calculator` — Find the units and revenue needed to cover fixed and variable costs.
+- **CAGR Calculator** — `/tools/cagr-calculator` — Compute the compound annual growth rate between two values over time.
+- **Circle Calculator** — `/tools/circle-calculator` — Compute area, circumference, diameter, arc, and sector from any one input.
+- **Collatz Conjecture Stepper** — `/tools/collatz-calculator` — Generate the full Collatz (3n+1) sequence for any start value and report its statistics.
+- **Complex Number Calculator** — `/tools/complex-number-calculator` — Add, multiply, divide, and convert complex numbers between rectangular and polar form.
 - **Compound Interest Calculator** — `/tools/compound-interest-calculator` — Project savings growth with compound interest, optional regular contributions, and a yearly breakdown.
+- **Continued Fraction Converter** — `/tools/continued-fraction-converter` — Express a decimal or fraction as a continued fraction and reconstruct its best rational approximations.
 - **Cooking Measurement Converter** — `/tools/cooking-converter` — Convert kitchen measurements between cups, tablespoons, teaspoons, milliliters, ounces, and grams.
+- **Currency Amount to Words** — `/tools/currency-amount-to-words` — Spell a monetary amount in legal/cheque form like 'One Thousand Two Hundred Dollars and 50/100'.
 - **Data Transfer Rate Converter** — `/tools/data-rate-converter` — Convert data transfer rates between bps, Kbps, Mbps, Gbps, and bytes-per-second equivalents.
+- **Decimal ↔ Fraction ↔ Percent Converter** — `/tools/decimal-fraction-percent` — Convert freely between a decimal, an exact fraction, and a percentage in one panel.
+- **Dice Probability Calculator** — `/tools/dice-probability` — Compute exact probabilities of dice-roll sums and target outcomes.
+- **Digit Sum & Digital Root** — `/tools/digit-sum-root` — Compute the digit sum, iterated digital root, and casting-out-nines check of a number.
+- **Dimension Aspect-Ratio Solver** — `/tools/math-aspect-ratio-resizer` — Solve a missing width or height that preserves a given aspect ratio.
+- **Discount & Sale Price Calculator** — `/tools/discount-calculator` — Find sale price, savings, and effective discount including stacked discounts.
+- **Distance Calculator (2D/3D)** — `/tools/distance-2d-3d` — Compute Euclidean distance between two points in 2D or 3D space.
+- **Divisibility Rules Checker** — `/tools/divisibility-rules-checker` — Test divisibility of a number by 2-13 and show which mental-math rule applies.
+- **Divisor Lister & Counter** — `/tools/divisor-lister` — List every divisor of a number with totals, divisor count, and divisor pairs.
+- **DMS ↔ Decimal Degrees Converter** — `/tools/math-dms-decimal-degrees` — Convert geographic coordinates between degrees-minutes-seconds and decimal degrees.
+- **Ellipse Calculator** — `/tools/ellipse-calculator` — Compute area, perimeter, eccentricity, and foci of an ellipse.
+- **Engineering Notation Converter** — `/tools/engineering-notation-converter` — Convert numbers to engineering notation (powers of 1000) with SI metric prefixes.
+- **Exponent & Power Calculator** — `/tools/exponent-power-calculator` — Raise numbers to powers, find roots, and evaluate scientific exponent expressions.
+- **Factorial Calculator** — `/tools/factorial-calculator` — Compute exact n!, double factorial, and subfactorial for large integers.
+- **Factorial, Permutation & Combination** — `/tools/factorial-binomial-calculator` — Compute factorials, nPr permutations, and nCr combinations exactly for large n.
+- **Fibonacci & Lucas Number Generator** — `/tools/fibonacci-calculator` — Compute the nth Fibonacci/Lucas number and list the sequence exactly.
+- **Fixed-Point (Qm.n) Converter** — `/tools/fixed-point-converter` — Convert real numbers to and from signed/unsigned Qm.n fixed-point integer representations.
 - **Fraction & Decimal Converter** — `/tools/fraction-decimal-converter` — Convert fractions to decimals and decimals to simplified fractions, detecting repeating decimals.
+- **Fraction Arithmetic Calculator** — `/tools/fraction-arithmetic` — Add, subtract, multiply, and divide fractions and mixed numbers with exact simplified results.
+- **Fraction Simplifier** — `/tools/fraction-simplifier` — Reduce any fraction to lowest terms and show the mixed-number and decimal forms.
+- **Fractional Base Converter** — `/tools/math-base-converter-fractional` — Converts numbers with fractional parts between arbitrary bases 2 through 36.
 - **Fuel Economy Converter** — `/tools/fuel-economy-converter` — Convert fuel efficiency between MPG (US/UK), km/L, and liters per 100 km.
 - **GCD & LCM Calculator** — `/tools/gcd-lcm` — Find the greatest common divisor and least common multiple of numbers.
+- **GPA Calculator** — `/tools/math-gpa-calculator` — Compute weighted grade point average from courses, credits, and grades.
+- **Great-Circle Distance Calculator** — `/tools/math-great-circle-distance` — Computes the distance and initial bearing between two latitude/longitude points.
+- **IEEE-754 Float Inspector** — `/tools/ieee754-float-inspector` — Decompose a decimal number into IEEE-754 single and double precision sign, exponent, and mantissa bits.
+- **Integer Factorization Explorer** — `/tools/integer-factorization` — Fully factor an integer into primes and explore all derived multiplicative properties.
+- **Linear System Solver (Ax = b)** — `/tools/math-linear-system-solver` — Solves a system of linear equations using Gaussian elimination and reports the solution.
 - **Loan & EMI Calculator** — `/tools/loan-emi-calculator` — Calculate monthly loan payment, total interest, and total repayment from principal, rate, and term.
+- **Loan Amortization Schedule** — `/tools/math-loan-amortization-schedule` — Generate a full month-by-month amortization table for a fixed-rate loan.
+- **Logarithm & Antilog Calculator** — `/tools/logarithm-calculator` — Evaluate logs in any base plus natural/common logs and their antilogs.
+- **Markup & Margin Calculator** — `/tools/markup-margin-calculator` — Convert between cost, price, markup, and profit margin.
 - **Matrix Calculator** — `/tools/matrix-calculator` — Add, subtract, multiply, transpose, and find the determinant and inverse of small matrices.
+- **Matrix Determinant & Inverse** — `/tools/math-matrix-determinant-inverse` — Computes the determinant, inverse, and rank of a small square matrix.
+- **Mean, Median, Mode & Range** — `/tools/mean-median-mode` — Compute central-tendency measures from a list of numbers.
+- **Midpoint & Section Point Calculator** — `/tools/midpoint-calculator` — Find the midpoint or any ratio division point of a segment.
 - **Modular Arithmetic Calculator** — `/tools/modulo-calculator` — Compute true modulo, modular addition, multiplication, and exponentiation with non-negative results.
+- **Modular Exponentiation Calculator** — `/tools/modular-exponentiation` — Compute (base^exponent) mod m efficiently for very large numbers using fast square-and-multiply.
+- **Modular Multiplicative Inverse** — `/tools/modular-inverse` — Find x such that a*x ≡ 1 (mod m) using the extended Euclidean algorithm.
+- **Mortgage Extra Payment Calculator** — `/tools/mortgage-extra-payment` — See how extra monthly payments cut your loan term and interest.
+- **Multi-Number GCD & LCM** — `/tools/extended-gcd-multi` — Compute the GCD and LCM of an arbitrary list of integers with the Bezout combination.
+- **Next & Previous Prime Finder** — `/tools/next-prime-finder` — Find the nearest prime above and below any number, plus the gap to each.
 - **Number Base Converter** — `/tools/number-base-converter` — Convert numbers between binary, octal, decimal, hex and arbitrary bases.
+- **Number System Visualizer** — `/tools/math-numeral-system-clock` — Show one integer simultaneously in binary, octal, decimal, hex, and custom base.
+- **Number to Base64 Encoder** — `/tools/number-to-base64` — Encode an integer as compact Base64 bytes and decode Base64 back to a number.
+- **Ordinal Number Converter** — `/tools/ordinal-number-converter` — Turn cardinal numbers into ordinals: 21 → 21st and twenty-first.
 - **Pace & Speed Calculator** — `/tools/pace-calculator` — Convert between running pace, speed, distance, and time for runs, walks, and cycling.
+- **Percent Change Calculator** — `/tools/percent-change` — Compute the percentage difference between an old and new value.
+- **Percent Error Calculator** — `/tools/percent-error` — Measure experimental accuracy as percent error vs a true value.
+- **Percent Increase & Decrease** — `/tools/percent-increase-decrease` — Apply a percentage increase or decrease to a number and reverse it.
 - **Percentage Calculator** — `/tools/percentage-calculator` — Work out percentages, percentage change, and what-percent-of calculations.
+- **Perfect / Abundant / Deficient Classifier** — `/tools/perfect-number-classifier` — Classify a number as perfect, abundant, or deficient and explore related number types.
+- **Permutations & Combinations Calculator** — `/tools/permutation-combination` — Compute nPr, nCr, and related counting values for n and r.
+- **Polar ↔ Cartesian Converter** — `/tools/polar-cartesian-converter` — Convert 2D points between polar (r, θ) and Cartesian (x, y) coordinates.
+- **Polynomial Evaluator (Horner)** — `/tools/polynomial-evaluator` — Evaluate a polynomial at a value and get its derivative via Horner's method.
 - **Prime Checker & Factorizer** — `/tools/prime-checker` — Check whether a number is prime and view its prime factorization.
+- **Prime Sieve Generator** — `/tools/prime-sieve-generator` — Generate every prime up to N (or the first K primes) with the Sieve of Eratosthenes.
+- **Prism & Cylinder Volume Calculator** — `/tools/prism-cylinder-volume` — Compute volume and surface area of cylinders, cubes, and box prisms.
+- **Progressive Tax Bracket Calculator** — `/tools/math-tax-bracket-calculator` — Compute total tax across user-defined progressive income brackets.
+- **Proportion (Cross-Multiply) Solver** — `/tools/proportion-solver` — Solve a/b = c/d for the unknown using cross multiplication.
+- **Pythagorean Theorem Calculator** — `/tools/pythagorean-theorem` — Find the missing side of a right triangle from any two known sides.
 - **Quadratic Equation Solver** — `/tools/quadratic-equation-solver` — Solve quadratic equations for real or complex roots from coefficients a, b, and c.
+- **Quotient & Remainder Calculator** — `/tools/quotient-remainder-calculator` — Perform integer (Euclidean) division showing quotient and remainder.
+- **Random Distribution Generator** — `/tools/random-distribution-generator` — Generate random samples from uniform, normal, exponential, or Poisson distributions.
 - **Random Number Generator** — `/tools/random-number-generator` — Generate cryptographically secure random integers within a custom range, with optional uniqueness.
 - **Ratio & Proportion Solver** — `/tools/ratio-proportion-solver` — Simplify ratios and solve for the missing fourth term in a proportion via cross-multiplication.
+- **Rectangle & Square Calculator** — `/tools/rectangle-square-calculator` — Compute area, perimeter, and diagonal of rectangles and squares.
+- **Regular Polygon Calculator** — `/tools/regular-polygon-calculator` — Compute area, perimeter, and angles of any regular n-sided polygon.
+- **Repeating Decimal to Fraction** — `/tools/repeating-decimal-to-fraction` — Turn a repeating decimal like 0.1(6) into its exact fraction using the 9s-denominator method.
+- **Reverse Percentage Calculator** — `/tools/math-tip-free-percent-of-total` — Finds the original amount given a percentage and result, and related reverse-percent problems.
+- **ROI Calculator** — `/tools/roi-calculator` — Compute return on investment, net profit, and annualized ROI.
 - **Roman Numeral Converter** — `/tools/roman-numerals` — Convert between Roman numerals and integers (1–3999).
+- **Roman Numeral Variants Converter** — `/tools/roman-numeral-variants` — Convert to and from standard, additive (IIII), and vinculum (overline ×1000) Roman numerals.
+- **Rounding & Significant Figures** — `/tools/rounding-calculator` — Round numbers by decimals, significant figures, or a chosen rule.
+- **Savings Goal Calculator** — `/tools/savings-goal-calculator` — Find the monthly deposit needed to reach a savings target by a date.
 - **Scientific Calculator** — `/tools/expression-calculator` — Evaluate math expressions with functions, constants and operators.
+- **Scientific Notation Arithmetic** — `/tools/scientific-notation-arithmetic` — Add, multiply, and divide numbers written in scientific notation.
 - **Scientific Notation Converter** — `/tools/scientific-notation-converter` — Convert numbers between plain decimal, scientific E-notation, and engineering notation.
+- **Significant Figures Rounder** — `/tools/significant-figures-rounder` — Round a number to a chosen number of significant figures and count its sig figs.
+- **Simple Interest Calculator** — `/tools/simple-interest-calculator` — Compute simple interest, total, or solve for any missing variable.
+- **Slope & Line Equation Finder** — `/tools/slope-line-equation` — Find slope, intercepts, and the equation of a line through two points.
+- **Sphere, Cone & Pyramid Volume** — `/tools/sphere-cone-pyramid-volume` — Compute volume and surface area of spheres, cones, and pyramids.
+- **Standard Deviation & Variance** — `/tools/standard-deviation-variance` — Compute population and sample standard deviation and variance with steps.
 - **Statistics Calculator** — `/tools/statistics` — Compute mean, median, range, variance and standard deviation of a data set.
 - **Time Duration Converter** — `/tools/duration-converter` — Convert durations between milliseconds, seconds, minutes, hours, days, and weeks.
 - **Tip & Bill Splitter** — `/tools/tip-split-calculator` — Calculate tip amount, grand total, and per-person share when splitting a bill among people.
+- **Trapezoid & Parallelogram Calculator** — `/tools/trapezoid-parallelogram-calculator` — Compute area and perimeter of trapezoids and parallelograms.
+- **Triangle Solver** — `/tools/triangle-solver` — Solve any triangle from 3 known sides/angles using the laws of sines and cosines.
+- **Two's Complement Converter** — `/tools/twos-complement-converter` — Encode and decode signed integers in two's complement across 8/16/32/64-bit widths.
 - **Unit Converter** — `/tools/unit-converter` — Convert length, mass, temperature, area, volume, speed and data sizes.
+- **Unit Price Comparison** — `/tools/unit-price-calculator` — Compare products by price per unit to find the best value.
+- **VAT & Sales Tax Calculator** — `/tools/vat-sales-tax` — Add or remove VAT/sales tax and split gross into net plus tax.
+- **Vector Calculator (2D/3D)** — `/tools/vector-calculator-2d-3d` — Add, subtract, dot, cross, normalize, and measure angle between vectors.
+- **Weighted Average & Grade Calculator** — `/tools/weighted-average-calculator` — Compute a weighted mean from value-weight pairs, e.g. grades.
+- **Z-Score Calculator** — `/tools/z-score-calculator` — Convert a raw value to a z-score and back given mean and standard deviation.
 
-## Color (22)
+## Color (72)
 
+- **Accessible Contrast Fixer** — `/tools/color-contrast-suggester` — Adjust a foreground color's lightness until it meets a WCAG contrast target.
+- **Accessible Text Color Picker** — `/tools/accessible-text-color` — Decide whether black or white text is more readable on any background color.
+- **Alpha Blend Over Background** — `/tools/alpha-blend-over-background` — Compute the solid opaque color produced by a translucent color over a background.
+- **Analogous Color Scheme Generator** — `/tools/analogous-color-scheme` — Create harmonious neighboring-hue palettes around a base color.
+- **ANSI 256-Color to RGB** — `/tools/color-ansi-256-to-rgb` — Map xterm 256-color palette indices to RGB hex and back to the nearest index.
+- **Average & Dominant Color from List** — `/tools/color-image-free-dominant-from-hexlist` — Computes the arithmetic mean color and most frequent color from a list of hex colors.
+- **Color Blend Mode Calculator** — `/tools/color-blend-modes-calculator` — Compute the result of blending two colors with Photoshop-style blend modes.
 - **Color Blindness Simulator** — `/tools/color-blindness` — Preview how a color appears under common color-vision deficiencies.
 - **Color Converter** — `/tools/color-converter` — Convert colors between HEX, RGB, HSL, HSV, CMYK and OKLCH, with a live preview.
+- **Color Difference (Delta-E)** — `/tools/color-distance-deltae` — Measure how different two colors are using CIE76, CIE94, and CIEDE2000.
 - **Color Harmony / Palette Builder** — `/tools/color-harmony` — Build harmonious palettes from a base color using complementary, analogous, triadic, tetradic, split-complementary, and monochromatic schemes.
+- **Color Invert Calculator** — `/tools/color-invert-calculator` — Compute RGB-inverted and luminance-inverted versions of a color.
+- **Color List Sorter** — `/tools/color-sort-by-hue` — Sort a pasted list of colors by hue, lightness, saturation, or luminance.
 - **Color Mixer / Blender** — `/tools/color-mixer` — Blend two colors at any ratio to find the resulting mix, with adjustable percentage and live HEX/RGB output of the blended color.
 - **Color Name Finder** — `/tools/color-name-finder` — Find the closest human-readable color name (like 'cornflower blue') for any HEX or RGB value using the CSS named color set.
 - **Color Picker** — `/tools/color-picker` — Pick a color visually and read its HEX, RGB, HSL and OKLCH values.
 - **Color Scale Generator** — `/tools/color-scale-generator` — Generate an evenly stepped color scale between two colors, choosing the number of steps and interpolation space.
+- **Color Shade Namer** — `/tools/color-shade-namer` — Generate a human-readable descriptive name for any color from its HSL.
 - **Color Temperature (Kelvin) Converter** — `/tools/kelvin-to-rgb` — Convert a color temperature in Kelvin to its approximate RGB/HEX color, useful for lighting, white balance, and warm/cool tone work.
+- **Color Temperature Shift** — `/tools/color-temperature-shift` — Warm or cool a color by shifting it toward a target white point.
+- **Color Tints Generator** — `/tools/color-tints-generator` — Generate a row of lighter tints by mixing a base color toward white.
+- **Color Tones Generator** — `/tools/color-tones-generator` — Generate muted tones by mixing a base color toward a neutral gray.
+- **Complementary Color Finder** — `/tools/complementary-color-finder` — Find the exact complementary (opposite-hue) color for any input color.
 - **Contrast Checker** — `/tools/contrast-checker` — Check WCAG contrast ratio between two colors and AA/AAA pass/fail.
+- **Contrast Ratio Grid** — `/tools/contrast-ratio-grid` — Build an N x N WCAG contrast matrix for a set of palette colors.
 - **CSS Box Shadow Generator** — `/tools/box-shadow-generator` — Visually design CSS box-shadows by adjusting offset, blur, spread, color, and inset, then copy the ready-to-use box-shadow rule.
+- **CSS Color Function Builder** — `/tools/css-color-function-builder` — Interactively build modern CSS color() , rgb(), hsl(), lab(), lch(), oklch() strings.
+- **CSS color-mix() Builder** — `/tools/color-mix-css-builder` — Build and preview the CSS color-mix() function and compute its resolved color.
 - **CSS Gradient Generator** — `/tools/gradient-generator` — Build linear, radial and conic CSS gradients with a live preview.
+- **CSS Gradient Parser** — `/tools/color-css-gradient-extract-stops` — Parses a CSS linear/radial gradient string into structured angle, type, and color stops.
+- **CSS Gradient to SVG** — `/tools/color-gradient-css-to-svg` — Convert a CSS linear or radial gradient into an equivalent SVG gradient definition.
 - **CSS Named Colors** — `/tools/named-colors` — Browse and search all CSS named colors with their HEX/RGB values.
+- **Desaturate Color** — `/tools/desaturate-color` — Reduce a color's saturation by a percentage and preview the muted result.
+- **Dominant Color from Palette** — `/tools/dominant-color-math` — Compute the average and dominant color from a list of input colors.
+- **Duotone CSS Generator** — `/tools/duotone-css-generator` — Build a two-color duotone mapping and the CSS/SVG filter to apply it to images.
+- **Gradient Stops Generator** — `/tools/gradient-stops-generator` — Compute evenly or eased intermediate color stops between two or more colors.
 - **Grayscale Converter** — `/tools/grayscale-converter` — Convert any color to its grayscale equivalent using luminance, average, or desaturation methods, with side-by-side preview.
+- **HEX Shorthand Expander** — `/tools/hex-shorthand-converter` — Expand 3/4-digit shorthand HEX to 6/8-digit and minify back when possible.
 - **HEX to RGBA Converter** — `/tools/hex-to-rgba` — Convert HEX color codes (including 8-digit HEX with alpha) to rgba() and back, controlling opacity with a percentage value.
 - **HSL to HEX Converter** — `/tools/hsl-to-hex` — Convert HSL color values to HEX and RGB, accepting standard hsl() notation and outputting clean web-ready codes.
+- **Hue Rotate Calculator** — `/tools/hue-rotate-calculator` — Rotate a color's hue by a chosen angle and get the CSS hue-rotate equivalent.
 - **Image Color Extractor** — `/tools/image-color-extractor` — Upload an image and extract its dominant colors and an automatic palette, ready to copy as HEX swatches.
 - **Lighten / Darken Color** — `/tools/lighten-darken-color` — Lighten or darken any color by a chosen percentage and get the adjusted color in HEX and RGB, with a before/after preview.
 - **Material Design Color Palette** — `/tools/material-colors` — Browse and copy the full Material Design color palette with all hues and shades (50-900, plus accents) as HEX swatches.
+- **Monochromatic Scale Generator** — `/tools/monochrome-scale-generator` — Build a single-hue scale by varying lightness and saturation in even steps.
+- **Nearest CSS Named Color** — `/tools/nearest-named-color` — Find the closest CSS/X11 named color to any input color by perceptual distance.
+- **Nearest Pantone-Style Name (Approx)** — `/tools/nearest-pantone-name` — Approximate the closest named swatch from an offline curated color-name dictionary.
+- **Nearest Tailwind Color** — `/tools/nearest-tailwind-color` — Map any color to the closest Tailwind CSS palette token (e.g. blue-500).
+- **OKLCH Color Converter** — `/tools/oklch-converter` — Convert sRGB/HEX to OKLCH and OKLab and back, the modern perceptual model.
+- **Palette from Numbers** — `/tools/palette-from-numbers` — Turn any number, ID, or seed string into a deterministic reproducible color palette.
+- **Palette to SVG Swatches** — `/tools/color-palette-to-svg-swatches` — Renders a list of colors as a labeled SVG swatch strip with hex captions.
+- **Perceived Lightness & Contrast Pair** — `/tools/color-wcag-apca-lightness-contrast` — Computes relative luminance, perceived lightness (L*), and WCAG contrast for two colors.
 - **Random Color Generator** — `/tools/random-color` — Generate random colors with copyable HEX/RGB/HSL values.
+- **Random Palette by Mood** — `/tools/random-palette-by-mood` — Generate a random color palette tuned to a chosen mood like calm, vibrant, or pastel.
+- **Relative Luminance Calculator** — `/tools/color-luminance-calculator` — Compute WCAG relative luminance and perceived brightness for any color.
+- **RGB to CIE XYZ Converter** — `/tools/rgb-to-xyz-converter` — Convert sRGB to CIE 1931 XYZ tristimulus values (D65) and back.
+- **RGB to CIELAB Converter** — `/tools/rgb-to-lab-converter` — Convert sRGB to CIELAB (L*a*b*) under D65 and back.
+- **RGB to CMYK Converter** — `/tools/rgb-to-cmyk-converter` — Convert sRGB to naive print CMYK percentages and back.
 - **RGB to HEX Converter** — `/tools/rgb-to-hex` — Convert rgb()/rgba() color values to HEX (and 8-digit HEX when alpha is present), accepting comma or space separated channels.
+- **RGB to HSL Converter** — `/tools/rgb-to-hsl-converter` — Convert sRGB color values to HSL and back with live swatch preview.
+- **RGB to HSV Converter** — `/tools/rgb-to-hsv-converter` — Convert between sRGB and HSV/HSB color models with a preview swatch.
+- **RGB to HWB Converter** — `/tools/rgb-to-hwb-converter` — Convert sRGB to CSS HWB (hue, whiteness, blackness) and back.
+- **RGB to LCH Converter** — `/tools/rgb-to-lch-converter` — Convert sRGB to CIELCH (lightness, chroma, hue) and back.
+- **RGB to RGB565 Converter** — `/tools/color-rgb-to-rgb565` — Convert 24-bit RGB colors to and from 16-bit RGB565 for embedded displays.
+- **Sepia Tone Color Calculator** — `/tools/sepia-tone-css` — Apply the standard sepia matrix to a color and get the CSS filter equivalent.
+- **Split-Complementary Scheme Generator** — `/tools/split-complementary-scheme` — Generate a base plus the two colors adjacent to its complement.
 - **Tailwind Color Finder** — `/tools/tailwind-colors` — Find the closest Tailwind CSS color name and shade for any HEX/RGB color, and look up the exact HEX of any Tailwind color token.
+- **Tetradic Color Scheme Generator** — `/tools/tetradic-color-scheme` — Generate a four-color rectangle/square color scheme from a base color.
 - **Tints & Shades Generator** — `/tools/color-shades` — Generate a tint/shade ramp from a base color, with copyable values.
+- **Triadic Color Scheme Generator** — `/tools/triadic-color-scheme` — Build a balanced three-color triadic palette from one base hue.
+- **Universal Color Format Translator** — `/tools/color-format-allinone` — Paste any CSS color and instantly see HEX, RGB, HSL, HSV, HWB, CMYK, LAB, LCH, and OKLCH.
+- **WCAG Contrast Pair Finder** — `/tools/wcag-contrast-pair-finder` — Adjust a foreground color until it meets a target WCAG contrast on a fixed background.
 
 
 🦀 = uses Rust→WASM (runs in a Web Worker).

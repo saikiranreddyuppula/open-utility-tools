@@ -1,0 +1,15 @@
+import type { ToolMetaStatic } from '@/lib/registry/types';
+
+const meta: ToolMetaStatic = {
+  id: 'color-nearest-tailwind-color-v1',
+  name: 'Nearest Tailwind Color',
+  slug: 'nearest-tailwind-color',
+  description: 'Map any color to the closest Tailwind CSS palette token (e.g. blue-500).',
+  category: 'color',
+  tags: ['tailwind', 'palette', 'color', 'delta-e', 'css'],
+  keywords: ['tailwind', 'nearest token', 'blue-500', 'palette', 'lab', 'cie76', 'shade', 'class'],
+  icon: 'Wind',
+  relatedTools: [],
+};
+
+export default meta;

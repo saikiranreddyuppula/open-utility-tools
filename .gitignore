@@ -44,5 +44,10 @@ yarn-error.log*
 # harness local state
 .claude/
 
-# selftest artifacts
+# selftest artifacts + codex test harness
 scripts/_*
+
+# tool-generation / testing scaffolding (working artifacts, regenerable)
+docs/_*
+docs/NEW-TOOLS-PLAN.json
+docs/NEW-TOOLS-FINAL.json
