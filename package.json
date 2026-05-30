@@ -6,10 +6,11 @@
   "scripts": {
     "predev": "bun run registry:gen",
     "dev": "next dev",
-    "prebuild": "bun run registry:gen",
+    "prebuild": "bun run registry:gen && bun run og:gen",
     "build": "next build",
     "wasm:build": "bash scripts/build-wasm.sh && bun run registry:gen",
     "registry:gen": "bun run scripts/gen-registry.ts",
+    "og:gen": "bun run scripts/gen-og.ts",
     "tools:doc": "bun run scripts/gen-tools-doc.ts",
     "serve": "bunx serve out",
     "lint": "eslint .",
@@ -47,6 +48,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "latest",
+    "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/postcss": "latest",
     "@types/bun": "latest",
     "@types/node": "latest",
@@ -54,6 +56,8 @@
     "@types/react-dom": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "lucide-static": "^1.17.0",
+    "satori": "^0.26.0",
     "tailwindcss": "latest",
     "tw-animate-css": "latest",
     "typescript": "latest"

@@ -5,26 +5,58 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { AppShell } from '@/components/layout/app-shell';
 import { Toaster } from '@/components/ui/sonner';
 import { ServiceWorkerRegister } from '@/components/service-worker-register';
+import { TOTAL_TOOL_COUNT } from '@/lib/registry';
+import { SITE_URL, SITE_NAME, SITE_TAGLINE, HOME_OG_IMAGE, OG_WIDTH, OG_HEIGHT, X_HANDLE } from '@/lib/seo/site';
 import './globals.css';
 
+const HOME_DESCRIPTION = `A fast, privacy-first collection of ${TOTAL_TOOL_COUNT}+ developer & file utilities. Everything runs client-side — no data ever leaves your browser. Works fully offline.`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.openutilitytools.com'),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Open Utility Tools — 100% in your browser',
-    template: '%s — Open Utility Tools',
+    default: SITE_TAGLINE,
+    template: `%s — ${SITE_NAME}`,
   },
-  description:
-    'A fast, privacy-first collection of developer & file utilities. Everything runs client-side — no data ever leaves your browser. Works fully offline.',
-  applicationName: 'Open Utility Tools',
+  description: HOME_DESCRIPTION,
+  applicationName: SITE_NAME,
   manifest: '/manifest.webmanifest',
-  appleWebApp: { capable: true, statusBarStyle: 'default', title: 'Open Utility Tools' },
+  alternates: { canonical: '/' },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+  appleWebApp: { capable: true, statusBarStyle: 'default', title: SITE_NAME },
   openGraph: {
     type: 'website',
-    siteName: 'Open Utility Tools',
-    url: 'https://www.openutilitytools.com',
-    title: 'Open Utility Tools — 100% in your browser',
-    description:
-      'A fast, privacy-first collection of 990+ developer & file utilities that run entirely in your browser.',
+    siteName: SITE_NAME,
+    locale: 'en_US',
+    url: `${SITE_URL}/`,
+    title: SITE_TAGLINE,
+    description: HOME_DESCRIPTION,
+    images: [
+      {
+        url: HOME_OG_IMAGE,
+        width: OG_WIDTH,
+        height: OG_HEIGHT,
+        type: 'image/png',
+        alt: 'Open Utility Tools — privacy-first browser utilities',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: X_HANDLE,
+    creator: X_HANDLE,
+    title: SITE_TAGLINE,
+    description: HOME_DESCRIPTION,
+    images: [HOME_OG_IMAGE],
   },
   icons: {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],

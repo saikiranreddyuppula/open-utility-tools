@@ -5,7 +5,7 @@ const meta: ToolMetaStatic = {
   name: 'HTML Named ↔ Numeric Entity Converter',
   slug: 'encoding-html-named-numeric',
   description:
-    'Convert between HTML named entities (&amp;) and their numeric forms (&#38;/&#x26;) both ways.',
+    'Convert HTML named entities to and from their decimal and hexadecimal numeric character references, both ways.',
   category: 'encoding',
   tags: ['html', 'entities', 'named', 'numeric', 'convert'],
   keywords: [

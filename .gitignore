@@ -8,6 +8,9 @@
 /out/
 next-env.d.ts
 
+# generated OG images (rendered in prebuild / `bun run og:gen`, regenerable)
+/public/og/
+
 # production
 /build
 

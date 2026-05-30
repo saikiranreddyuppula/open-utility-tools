@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-export const metadata = { title: 'Offline' };
+export const metadata = { title: 'Offline', robots: { index: false, follow: false } };
 
 export default function OfflinePage() {
   return (
