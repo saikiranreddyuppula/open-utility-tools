@@ -49,7 +49,7 @@ export default function RootLayout({
       <body className="min-h-dvh antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

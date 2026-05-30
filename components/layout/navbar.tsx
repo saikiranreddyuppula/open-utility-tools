@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, Menu, Shield, Code2, ChevronDown, X } from 'lucide-react';
+import { Search, Menu, Shield, Code2, ChevronDown, X, Star, History } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Icon } from '@/components/icon';
@@ -18,7 +18,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { CATEGORIES, CATEGORY_META, getToolsByCategory } from '@/lib/registry';
 
-const GITHUB_URL = 'https://github.com';
+const GITHUB_URL = 'https://github.com/saikiranreddyuppula/open-utility-tools';
 
 export function Navbar() {
   const { setOpen } = useCommandPalette();
@@ -77,6 +77,21 @@ export function Navbar() {
               })}
             </DropdownMenuContent>
           </DropdownMenu>
+
+          <Link
+            href="/favorites/"
+            className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground"
+          >
+            <Star className="size-3.5" />
+            Favorites
+          </Link>
+          <Link
+            href="/recent/"
+            className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground"
+          >
+            <History className="size-3.5" />
+            Recent
+          </Link>
         </nav>
 
         {/* Right cluster */}
@@ -139,6 +154,22 @@ export function Navbar() {
               className="flex h-9 items-center rounded-md px-2 text-sm text-muted-foreground hover:bg-accent/60 hover:text-foreground"
             >
               All tools
+            </Link>
+            <Link
+              href="/favorites/"
+              onClick={() => setMobileOpen(false)}
+              className="flex h-9 items-center gap-2 rounded-md px-2 text-sm text-muted-foreground hover:bg-accent/60 hover:text-foreground"
+            >
+              <Star className="size-4" />
+              Favorites
+            </Link>
+            <Link
+              href="/recent/"
+              onClick={() => setMobileOpen(false)}
+              className="flex h-9 items-center gap-2 rounded-md px-2 text-sm text-muted-foreground hover:bg-accent/60 hover:text-foreground"
+            >
+              <History className="size-4" />
+              Recent
             </Link>
             <p className="px-2 pb-1 pt-3 text-2xs font-semibold uppercase tracking-wide text-muted-foreground">
               Categories
