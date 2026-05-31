@@ -38,13 +38,6 @@ export function Navbar() {
 
         {/* Desktop nav */}
         <nav className="ml-4 hidden items-center gap-1 md:flex">
-          <Link
-            href="/"
-            className="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground"
-          >
-            All tools
-          </Link>
-
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <button className="flex items-center gap-1 rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground">
@@ -148,13 +141,6 @@ export function Navbar() {
             </Button>
           </div>
           <nav className="overflow-y-auto p-2">
-            <Link
-              href="/"
-              onClick={() => setMobileOpen(false)}
-              className="flex h-9 items-center rounded-md px-2 text-sm text-muted-foreground hover:bg-accent/60 hover:text-foreground"
-            >
-              All tools
-            </Link>
             <Link
               href="/favorites/"
               onClick={() => setMobileOpen(false)}
