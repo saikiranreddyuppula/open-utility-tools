@@ -1,0 +1,13 @@
+{
+  // Config used by `bun run typecheck` and the parallel check in scripts/build.sh.
+  //
+  // It is identical to tsconfig.json EXCEPT it excludes Next's generated type
+  // dirs (.next/types, .next/dev/types). `next build` rewrites those while it
+  // runs, so a type check reading them concurrently would race and report
+  // spurious errors. All hand-written source (**/*.ts, **/*.tsx) is still fully
+  // checked under the same strict settings; only auto-generated route-type
+  // validation is skipped here (next build itself can surface those if needed).
+  "extends": "./tsconfig.json",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "out", "rust/target", "rust/crates", "scripts", ".next"]
+}

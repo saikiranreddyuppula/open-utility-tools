@@ -8,14 +8,15 @@
     "predev": "bun run registry:gen",
     "dev": "next dev",
     "prebuild": "bun run registry:gen && bun run og:gen",
-    "build": "next build",
+    "build": "bash scripts/build.sh",
+    "build:nocheck": "next build",
     "wasm:build": "bash scripts/build-wasm.sh && bun run registry:gen",
     "registry:gen": "bun run scripts/gen-registry.ts",
     "og:gen": "bun run scripts/gen-og.ts",
     "tools:doc": "bun run scripts/gen-tools-doc.ts",
     "serve": "bunx serve out",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit && tsc -p scripts/tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.typecheck.json --noEmit --incremental --tsBuildInfoFile node_modules/.cache/typecheck/app.tsbuildinfo && tsc -p scripts/tsconfig.json --noEmit --incremental --tsBuildInfoFile node_modules/.cache/typecheck/scripts.tsbuildinfo"
   },
   "dependencies": {
     "class-variance-authority": "latest",

@@ -11,8 +11,18 @@ const nextConfig = {
   // when self-hosted from a plain static file server (index.html resolution).
   trailingSlash: true,
 
-  // Surface real type errors during the build (TS strict everywhere).
-  typescript: { ignoreBuildErrors: false },
+  // Type checking is NOT run inside `next build` (it added ~12s, serially).
+  // Strictness is still enforced: `next build` here runs `tsc` in parallel with
+  // the compile (see the "build" script in package.json) and CI runs `typecheck`
+  // too, so real type errors still fail the pipeline.
+  typescript: { ignoreBuildErrors: true },
+
+  experimental: {
+    // Persist Turbopack's compilation cache to disk between production builds so
+    // unchanged modules are not recompiled. Cold build is unchanged; warm
+    // rebuilds (and CI runs that restore .next/cache) skip most of the ~12s compile.
+    turbopackFileSystemCacheForBuild: true,
+  },
 
   reactStrictMode: true,
 };
