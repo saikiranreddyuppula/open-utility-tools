@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Shield, Code2 } from 'lucide-react';
+import { Wrench, Code2 } from 'lucide-react';
 
 import { Icon } from '@/components/icon';
 import { CATEGORIES, CATEGORY_META, getToolsByCategory, TOTAL_TOOL_COUNT } from '@/lib/registry';
@@ -20,7 +20,7 @@ export function SiteFooter() {
           <div>
             <Link href="/" className="flex items-center gap-2">
               <span className="flex size-7 items-center justify-center rounded-md bg-primary text-primary-foreground">
-                <Shield className="size-4" />
+                <Wrench className="size-4" />
               </span>
               <span className="text-sm font-semibold tracking-tight">Open Utility Tools</span>
             </Link>

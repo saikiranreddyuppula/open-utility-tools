@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, Menu, Shield, Code2, ChevronDown, X, Star, History } from 'lucide-react';
+import { Search, Menu, Wrench, Code2, ChevronDown, X, Star, History } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Icon } from '@/components/icon';
@@ -31,7 +31,7 @@ export function Navbar() {
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2">
           <span className="flex size-7 items-center justify-center rounded-md bg-primary text-primary-foreground">
-            <Shield className="size-4" />
+            <Wrench className="size-4" />
           </span>
           <span className="text-sm font-semibold tracking-tight">Open Utility Tools</span>
         </Link>
