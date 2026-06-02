@@ -2,7 +2,18 @@
 
 Framework-agnostic core logic extracted from [Open Utility Tools](https://github.com/saikiranreddyuppula/open-utility-tools) — the pure, dependency-free building blocks behind the web app. No React, no DOM, **zero runtime dependencies**.
 
-> **Scope.** Every function here is **isomorphic** — it runs identically in the browser, Node ≥ 20, and Bun. Pure-TS tiers (text, math, color, data, time, web, generators, WebCrypto) are plain modules; raster image tools are **WASM-backed** by the bundled `imaging` crate and work the same in all three runtimes. This is being built out tool-by-tool from the app's ~1,000 tools; the pure tiers and the first image/time tools are landed, the rest are in progress.
+> **Scope.** Every function here is **isomorphic** — it runs identically in the browser, Node ≥ 20, and Bun. Pure-TS tiers (text, math, color, data, time, web, generators, WebCrypto) are plain modules; raster image tools are **WASM-backed** by the bundled `imaging` crate and work the same in all three runtimes. This is being built out tool-by-tool from the app's ~1,000 tools. **Landed:** the pure tiers, the WASM image tools, and the full **time** category (63 tools, each with a golden test suite). The rest are extracted category-by-category via the same pipeline.
+
+## Per-tool subpaths
+
+Every tool is importable on its own subpath — pull in exactly one:
+
+```ts
+import { calculateAge }     from '@open-utility-tools/core/time/age-calculator';
+import { addBusinessDays }  from '@open-utility-tools/core/time/add-business-days';
+import { parseCron }        from '@open-utility-tools/core/time/cron-parser';
+import { convert }          from '@open-utility-tools/core/image/convert';
+```
 
 ## Install
 
@@ -47,18 +58,7 @@ text.cases.kebab('Hello World'); // "hello-world"
 | `…/generators` | lorem ipsum, fake records, .gitignore templates, UUID/ULID/nanoid, passwords |
 | `…/crypto` | JWT signing, HOTP, base32 decode, base64url (WebCrypto) |
 | `…/image` | WASM-backed raster `convert` + `probe` (browser/Node/Bun) |
-
-### Per-tool deep subpaths
-
-Tools are also importable individually, so you pull in exactly one:
-
-```ts
-import { addBusinessDays } from '@open-utility-tools/core/time/add-business-days';
-import { convert } from '@open-utility-tools/core/image/convert';
-
-// WASM-backed, identical in browser / Node / Bun:
-const webp = await convert(pngBytes, { format: 'webp', quality: 80, maxWidth: 400 });
-```
+| `…/time/*` | 63 date/time tools, each on its own subpath (age, durations, cron, ISO-8601, timezones, …) |
 
 ## Notes
 

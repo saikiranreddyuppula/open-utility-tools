@@ -1,19 +1,9 @@
 {
   "$schema": "https://typedoc.org/schema.json",
   "tsconfig": "tsconfig.docs.json",
-  "entryPoints": [
-    "src/index.ts",
-    "src/text.ts",
-    "src/math.ts",
-    "src/color.ts",
-    "src/data.ts",
-    "src/time.ts",
-    "src/web.ts",
-    "src/generators.ts",
-    "src/crypto.ts",
-    "src/image/index.ts",
-    "src/time/add-business-days.ts"
-  ],
+  "entryPoints": ["src"],
+  "entryPointStrategy": "expand",
+  "exclude": ["**/_*.ts", "**/*.test.ts"],
   "out": "docs-api",
   "readme": "README.md",
   "name": "@open-utility-tools/core",

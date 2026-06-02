@@ -19,6 +19,8 @@ next-env.d.ts
 /packages/*/dist
 # generated API docs (TypeDoc, regenerable)
 /packages/*/docs-api
+# guard: lib/ is .ts source — never commit emitted declarations there
+/lib/**/*.d.ts
 
 # rust / wasm
 /rust/target
