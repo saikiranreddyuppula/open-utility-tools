@@ -9,5 +9,5 @@
   // validation is skipped here (next build itself can surface those if needed).
   "extends": "./tsconfig.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "out", "rust/target", "rust/crates", "scripts", ".next"]
+  "exclude": ["node_modules", "out", "rust/target", "rust/crates", "scripts", ".next", "packages"]
 }

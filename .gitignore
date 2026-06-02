@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+**/node_modules
 .pnp
 .pnp.*
 
@@ -13,6 +14,9 @@ next-env.d.ts
 
 # production
 /build
+
+# published package build output (CI rebuilds from source)
+/packages/*/dist
 
 # rust / wasm
 /rust/target

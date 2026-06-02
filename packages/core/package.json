@@ -1,0 +1,86 @@
+{
+  "name": "@open-utility-tools/core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic core logic from Open Utility Tools: text, math, color, data, time, web, generators, and WebCrypto helpers. Zero runtime dependencies.",
+  "license": "MIT",
+  "author": "Sai Kiran Reddy Uppula",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saikiranreddyuppula/open-utility-tools.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/saikiranreddyuppula/open-utility-tools/tree/main/packages/core#readme",
+  "bugs": "https://github.com/saikiranreddyuppula/open-utility-tools/issues",
+  "keywords": [
+    "utility",
+    "text",
+    "csv",
+    "yaml",
+    "color",
+    "cron",
+    "jwt",
+    "uuid",
+    "units",
+    "converter"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./text": {
+      "types": "./dist/text.d.ts",
+      "import": "./dist/text.js"
+    },
+    "./math": {
+      "types": "./dist/math.d.ts",
+      "import": "./dist/math.js"
+    },
+    "./color": {
+      "types": "./dist/color.d.ts",
+      "import": "./dist/color.js"
+    },
+    "./data": {
+      "types": "./dist/data.d.ts",
+      "import": "./dist/data.js"
+    },
+    "./time": {
+      "types": "./dist/time.d.ts",
+      "import": "./dist/time.js"
+    },
+    "./web": {
+      "types": "./dist/web.d.ts",
+      "import": "./dist/web.js"
+    },
+    "./generators": {
+      "types": "./dist/generators.d.ts",
+      "import": "./dist/generators.js"
+    },
+    "./crypto": {
+      "types": "./dist/crypto.d.ts",
+      "import": "./dist/crypto.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "tsup"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "typescript": "latest"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

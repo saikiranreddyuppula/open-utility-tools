@@ -1,0 +1,54 @@
+name: Publish @open-utility-tools/core
+
+# Publishes packages/core to the public npm registry.
+#
+# Trigger: cut a GitHub Release whose tag is `core-vX.Y.Z` (matching the version
+# in packages/core/package.json), or run manually via "Run workflow".
+#
+# One-time setup before the first run:
+#   1. Create the npm org `open-utility-tools` (free) — or rename the package to
+#      an unscoped name and drop `--access public`.
+#   2. Add an npm "Automation" access token as the repo secret NPM_TOKEN
+#      (Settings → Secrets and variables → Actions).
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # required for npm provenance (OIDC)
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/core
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+      - name: Install workspace deps
+        run: bun install --frozen-lockfile
+        working-directory: .
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      - name: Build
+        run: bun run build
+
+      - name: Inspect tarball (assert dist + types present)
+        run: |
+          npm pack --dry-run
+          test -f dist/index.js
+          test -f dist/index.d.ts
+
+      - name: Publish
+        run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

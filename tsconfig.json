@@ -50,6 +50,7 @@
     "out",
     "rust/target",
     "rust/crates",
-    "scripts"
+    "scripts",
+    "packages"
   ]
 }
