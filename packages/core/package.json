@@ -30,6 +30,7 @@
   ],
   "files": [
     "dist",
+    "wasm",
     "README.md",
     "LICENSE"
   ],
@@ -69,15 +70,38 @@
     "./crypto": {
       "types": "./dist/crypto.d.ts",
       "import": "./dist/crypto.js"
+    },
+    "./image": {
+      "types": "./dist/image/index.d.ts",
+      "import": "./dist/image/index.js"
+    },
+    "./image/convert": {
+      "types": "./dist/image/convert.d.ts",
+      "import": "./dist/image/convert.js"
+    },
+    "./image/probe": {
+      "types": "./dist/image/probe.d.ts",
+      "import": "./dist/image/probe.js"
+    },
+    "./time/add-business-days": {
+      "types": "./dist/time/add-business-days.d.ts",
+      "import": "./dist/time/add-business-days.js"
     }
   },
   "scripts": {
     "build": "tsup",
-    "prepublishOnly": "tsup"
+    "prepublishOnly": "tsup",
+    "test": "vitest run",
+    "test:cross": "node test/cross-runtime.mjs && bun test/cross-runtime.mjs",
+    "test:cross:node": "node test/cross-runtime.mjs",
+    "test:cross:bun": "bun test/cross-runtime.mjs",
+    "docs": "typedoc"
   },
   "devDependencies": {
     "tsup": "^8.3.0",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vitest": "^3.0.0",
+    "typedoc": "^0.28.0"
   },
   "publishConfig": {
     "access": "public",

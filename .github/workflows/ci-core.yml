@@ -1,0 +1,49 @@
+name: core CI
+
+# Build + test @open-utility-tools/core across runtimes on every PR/push that
+# touches the package. The isomorphic WASM image tools are exercised in both
+# Node and Bun against the built dist.
+
+on:
+  push:
+    branches: [main]
+    paths: ['packages/core/**', 'lib/**', '.github/workflows/ci-core.yml']
+  pull_request:
+    paths: ['packages/core/**', 'lib/**', '.github/workflows/ci-core.yml']
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/core
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+        working-directory: .
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+
+      - name: Build (ESM + types)
+        run: bun run build
+
+      - name: Unit/golden tests (Vitest, Node)
+        run: bun run test
+
+      - name: Cross-runtime E2E — Node
+        run: bun run test:cross:node
+
+      - name: Cross-runtime E2E — Bun
+        run: bun run test:cross:bun
+
+      - name: TypeDoc API docs
+        run: bun run docs
+
+      - name: Upload docs site
+        uses: actions/upload-artifact@v4
+        with:
+          name: core-api-docs
+          path: packages/core/docs-api

@@ -1,0 +1,10 @@
+{
+  // Used only by TypeDoc. The pure-tier barrels re-export from the app's lib/*
+  // (outside this package dir); widening rootDir to the repo root keeps tsc from
+  // raising TS6059 while documenting. Has no effect on the tsup build.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "../.."
+  },
+  "include": ["src/**/*.ts"]
+}

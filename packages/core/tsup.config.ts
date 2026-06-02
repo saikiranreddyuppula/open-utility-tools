@@ -14,6 +14,11 @@ export default defineConfig({
     web: 'src/web.ts',
     generators: 'src/generators.ts',
     crypto: 'src/crypto.ts',
+    // per-tool deep subpaths (the target architecture)
+    'image/index': 'src/image/index.ts',
+    'image/convert': 'src/image/convert.ts',
+    'image/probe': 'src/image/probe.ts',
+    'time/add-business-days': 'src/time/add-business-days.ts',
   },
   format: ['esm'],
   target: 'es2022',

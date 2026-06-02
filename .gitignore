@@ -17,6 +17,8 @@ next-env.d.ts
 
 # published package build output (CI rebuilds from source)
 /packages/*/dist
+# generated API docs (TypeDoc, regenerable)
+/packages/*/docs-api
 
 # rust / wasm
 /rust/target
