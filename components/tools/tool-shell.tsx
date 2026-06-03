@@ -1,12 +1,15 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import { ChevronRight, Star } from 'lucide-react';
+import { ChevronRight, Code2, Star } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Icon } from '@/components/icon';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { DeveloperUsagePanel } from '@/components/tools/developer-usage-panel';
 import { ToolCard } from '@/components/tools/tool-card';
 import {
   CATEGORY_META,
@@ -25,6 +28,7 @@ export function ToolShell({
   about?: React.ReactNode;
 }) {
   const cat = CATEGORY_META[tool.category];
+  const [usageOpen, setUsageOpen] = useState(false);
   const { isFavorite, toggle } = useFavorites();
   const fav = isFavorite(tool.slug);
   const related = getRelatedTools(tool.slug);
@@ -48,15 +52,32 @@ export function ToolShell({
           <ChevronRight className="size-3" />
           <span className="text-foreground">{tool.name}</span>
         </nav>
-        <Button
-          variant="ghost"
-          size="icon-sm"
-          onClick={() => toggle(tool.slug)}
-          aria-label={fav ? 'Remove favorite' : 'Add favorite'}
-          title={fav ? 'Remove favorite' : 'Add favorite'}
-        >
-          <Star className={cn('size-4', fav && 'fill-warning text-warning')} />
-        </Button>
+        <div className="flex items-center gap-1">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant={usageOpen ? 'secondary' : 'ghost'}
+                size="icon-sm"
+                onClick={() => setUsageOpen((open) => !open)}
+                aria-label={usageOpen ? 'Hide developer usage' : 'Show developer usage'}
+                aria-expanded={usageOpen}
+                aria-controls="developer-usage-panel"
+              >
+                <Code2 className="size-4" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>{usageOpen ? 'Hide usage' : 'Developer usage'}</TooltipContent>
+          </Tooltip>
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            onClick={() => toggle(tool.slug)}
+            aria-label={fav ? 'Remove favorite' : 'Add favorite'}
+            title={fav ? 'Remove favorite' : 'Add favorite'}
+          >
+            <Star className={cn('size-4', fav && 'fill-warning text-warning')} />
+          </Button>
+        </div>
       </div>
 
       {/* Header */}
@@ -85,6 +106,12 @@ export function ToolShell({
           </p>
         </div>
       </div>
+
+      {usageOpen && (
+        <div id="developer-usage-panel">
+          <DeveloperUsagePanel tool={tool} />
+        </div>
+      )}
 
       {/* Workspace */}
       <div>{children}</div>
