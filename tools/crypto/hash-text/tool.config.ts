@@ -10,7 +10,7 @@ const meta: ToolMetaStatic = {
   tags: ['md5', 'sha256', 'sha512', 'blake3', 'crc32', 'digest'],
   keywords: ['hash', 'checksum', 'digest', 'sha', 'md5', 'blake3', 'fingerprint'],
   icon: 'Hash',
-  relatedTools: ['hmac-generator', 'hash-file', 'base64-text'],
+  relatedTools: ['hmac-generator', 'file-hash', 'base64-text'],
   loadWasm: true,
 };
 

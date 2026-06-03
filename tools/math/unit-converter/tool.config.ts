@@ -9,7 +9,7 @@ const meta: ToolMetaStatic = {
   tags: ['units', 'convert', 'length', 'mass', 'temperature', 'data'],
   keywords: ['unit converter', 'length', 'weight', 'temperature', 'celsius fahrenheit', 'data size', 'metric imperial'],
   icon: 'Ruler',
-  relatedTools: ['percentage-calculator', 'number-base-converter', 'data-size'],
+  relatedTools: ['percentage-calculator', 'number-base-converter', 'data-size-converter'],
 };
 
 export default meta;

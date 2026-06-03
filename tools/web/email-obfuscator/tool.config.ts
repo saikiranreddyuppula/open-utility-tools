@@ -9,7 +9,7 @@ const meta: ToolMetaStatic = {
   tags: ['email', 'obfuscate', 'anti-spam', 'entities'],
   keywords: ['email obfuscator', 'hide email', 'anti spam', 'html entities email', 'protect email'],
   icon: 'AtSign',
-  relatedTools: ['html-entities', 'url-encode', 'meta-tags'],
+  relatedTools: ['html-entities', 'url-encode', 'web-html-escape-unescape'],
 };
 
 export default meta;

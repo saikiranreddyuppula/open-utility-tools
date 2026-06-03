@@ -1,6 +1,6 @@
 # Built Tools
 
-Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **995 tools** across 12 categories — 11 use Rust/WASM. All run 100% client-side.
+Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **912 tools** across 12 categories — 11 use Rust/WASM. All run 100% client-side.
 
 | Category | Count |
 |---|---|
@@ -8,15 +8,15 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 | PDF | 4 |
 | Data | 98 |
 | Converters | 107 |
-| Text | 128 |
+| Text | 108 |
 | Crypto & Hash | 59 |
-| Encoding | 72 |
-| Generators | 95 |
-| Web & Dev | 140 |
-| Time & Date | 63 |
+| Encoding | 53 |
+| Generators | 69 |
+| Web & Dev | 129 |
+| Time & Date | 56 |
 | Math & Units | 114 |
 | Color | 72 |
-| **Total** | **995** |
+| **Total** | **912** |
 
 
 ## Image (43)
@@ -283,9 +283,8 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **YAML to JSON** — `/tools/yaml-to-json` — Convert common YAML configuration into JSON.
 - **YAML to TOML** — `/tools/yaml-to-toml` — Convert YAML configuration directly into TOML, mapping nested maps and lists into tables and arrays of tables in one step.
 
-## Text (128)
+## Text (108)
 
-- **A1Z26 Number Cipher** — `/tools/a1z26-cipher` — Encode letters to their alphabet position numbers (A=1..Z=26) and decode numbers back to letters.
 - **Acronym Extractor** — `/tools/acronym-expander-finder` — Find acronyms in text and pair them with the expansions defined nearby.
 - **Acronym Maker** — `/tools/acronym-maker` — Build an acronym or initialism from a phrase using configurable rules.
 - **Add / Strip Diacritics** — `/tools/diacritics-toggle` — Strip accents to plain ASCII, or fold text to ASCII-safe forms, with a map for common transliterations.
@@ -296,8 +295,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **ASCII Box & Banner Drawer** — `/tools/text-box-drawing` — Wrap text in ASCII or Unicode box-drawing borders to create framed banners and callout boxes.
 - **ASCII Table** — `/tools/ascii-table` — A searchable reference of ASCII codes in decimal, hex, octal and binary.
 - **Automated Readability Index (ARI)** — `/tools/automated-readability-index` — Compute the ARI grade level from character, word, and sentence counts.
-- **Bacon / Binary Cipher Encoder** — `/tools/binary-ascii-art` — Encode text with Bacon's biliteral cipher or a custom two-symbol substitution alphabet.
-- **Bold & Italic Unicode Text** — `/tools/unicode-bold-italic` — Convert plain text into Unicode bold, italic, bold-italic, script, monospace, or double-struck styles that work in posts and bios.
 - **Bracket & Quote Balance Checker** — `/tools/text-text-bracket-matcher` — Verify that brackets, parentheses, braces, and quotes are balanced in text.
 - **Braille (Grade 1) Translator** — `/tools/braille-text` — Convert text to and from Unicode Braille dot patterns using the Grade 1 (uncontracted) mapping.
 - **Caesar Cipher** — `/tools/caesar-cipher` — Encode or decode text with a Caesar cipher of any shift amount, the classic reversible letter rotation, with optional brute-force of all 25 shifts.
@@ -316,24 +313,20 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Emoji Extractor** — `/tools/emoji-extractor` — Extract every emoji from text and list them with counts and code points.
 - **Emoji Remover** — `/tools/emoji-stripper` — Strip all emoji and pictographic symbols from text while keeping the words intact.
 - **Extract Emails, URLs & Numbers** — `/tools/extract-data` — Pull all email addresses, URLs, phone numbers, IPs, or numbers out of a blob of text into a clean deduplicated list.
-- **Fancy Text Generator** — `/tools/fancy-text` — Turn text into 𝐛𝐨𝐥𝐝, 𝑖𝑡𝑎𝑙𝑖𝑐, 𝚖𝚘𝚗𝚘 and other Unicode styles.
 - **Filter Lines by Rule** — `/tools/text-frequency-filter` — Keep or delete lines that match a substring, regex, length, or numeric/blank condition (grep-like).
 - **Find & Replace** — `/tools/find-replace` — Find and replace text with plain or regular-expression matching.
 - **Flesch Reading Ease Score** — `/tools/flesch-reading-ease` — Compute the Flesch Reading Ease score and grade level for any text.
 - **Fuzzy Duplicate Line Remover** — `/tools/fuzzy-dedupe-lines` — Remove near-duplicate lines that differ only by case, whitespace, or punctuation.
 - **Greek Transliteration** — `/tools/transliterate-greek` — Convert Greek script to Latin (and back) using ISO 843, ELOT 743, or classical romanization schemes.
 - **Gunning Fog Index** — `/tools/gunning-fog-index` — Estimate the years of formal education needed to understand text on first reading.
-- **Haiku Syllable Checker** — `/tools/haiku-checker` — Verify whether three lines follow the 5-7-5 haiku syllable pattern.
 - **Hashtag Generator** — `/tools/hashtag-generator` — Turn phrases into clean hashtags with chosen casing, removing punctuation and merging or splitting words.
 - **Identifier Humanizer** — `/tools/text-snake-to-title-humanizer` — Turns snake_case, kebab-case, or camelCase identifiers into human-readable Title Case labels.
 - **Indent & Dedent Text** — `/tools/indent-text` — Add or remove leading indentation on every line, converting tabs to spaces or spaces to tabs with a configurable width.
 - **Indented Outline ↔ Nested List** — `/tools/outline-to-list` — Convert tab/space-indented outlines to Markdown/HTML nested lists, or flatten nested lists to an outline.
 - **Interleave / Zip Lines** — `/tools/interleave-lines` — Merge two or more line-lists by alternating their lines, like a zipper, with a configurable separator.
 - **Join Lines** — `/tools/join-lines` — Concatenate multiple lines into one (or grouped) line using a chosen separator, with optional quoting.
-- **Keyboard Shift Cipher** — `/tools/keyboard-shift-cipher` — Shift each key one position left/right/up/down on a QWERTY keyboard, a popular obfuscation puzzle.
 - **Keyword Density Analyzer** — `/tools/keyword-density-analyzer` — Measure single-word and phrase keyword density with stop-word filtering for SEO.
 - **Leetspeak Converter** — `/tools/leetspeak` — Convert text to and from leetspeak (1337), swapping letters for numbers and symbols at adjustable intensity.
-- **Letter & Word Spacing Expander** — `/tools/wide-spaced-text` — Insert spaces or custom separators between letters and words to create s p a c e d  o u t text.
 - **Lexical Diversity Calculator** — `/tools/lexical-diversity-calculator` — Measure vocabulary richness with type-token ratio and related metrics.
 - **Line Length Checker** — `/tools/line-length-checker` — Flag lines that exceed a maximum character width for code or prose style guides.
 - **Line Numbering (Advanced)** — `/tools/add-line-numbers-advanced` — Prefix lines with numbers using custom start, step, zero-padding, format template, and blank-line handling.
@@ -345,7 +338,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Markdown List Renumberer** — `/tools/markdown-list-renumber` — Fix and renumber ordered Markdown lists, convert between bullet and numbered, and normalize markers.
 - **Mention, Hashtag & URL Extractor** — `/tools/at-mention-extractor` — Extract @mentions, #hashtags, $cashtags, and URLs from social text into clean deduplicated lists.
 - **Morse Code Translator** — `/tools/morse-code` — Translate text to International Morse code and back.
-- **Morse Code Visual Decoder** — `/tools/morse-to-text-visual` — Decode Morse with timing/visual rendering and encode text with adjustable dot, dash, and gap symbols.
 - **Multi-Key Column Sort** — `/tools/text-text-column-sort` — Sort delimited rows by one or more columns with per-key type and direction.
 - **N-Gram Frequency Counter** — `/tools/ngram-counter` — Extract and count the most frequent word n-grams (bigrams, trigrams, etc.) in text.
 - **NATO Phonetic Alphabet** — `/tools/nato-phonetic` — Spell text using the NATO phonetic alphabet (Alpha, Bravo, Charlie…).
@@ -355,7 +347,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Palindrome Checker** — `/tools/palindrome-checker` — Check if text is a palindrome and find palindromic words and substrings.
 - **Paragraph Reflow & Justify** — `/tools/word-wrap-justify` — Re-wrap paragraphs to a target width with left, right, center, or full-justify alignment and hyphenation control.
 - **Paragraph Splitter & Joiner** — `/tools/paragraph-splitter` — Split text into separated paragraphs or rejoin wrapped lines into paragraphs.
-- **Pig Latin Translator** — `/tools/pig-latin` — Translate English text to or from Pig Latin, moving leading consonants and appending the classic -ay ending.
 - **PII Placeholder Anonymizer** — `/tools/text-anonymizer` — Replace emails, phone numbers, and other PII patterns with placeholder tokens.
 - **Prefix & Suffix Lines** — `/tools/prefix-suffix-lines` — Add a prefix and/or suffix to every line at once, ideal for wrapping list items in quotes, commas, brackets, or markup.
 - **Profanity Censor (Offline)** — `/tools/profanity-placeholder` — Mask flagged words in text with symbols using a user-editable word list.
@@ -363,7 +354,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Random Name & Username Generator** — `/tools/random-name-generator` — Generate random human names, fantasy names, or username handles from embedded syllable and word lists.
 - **Reading & Speaking Time Estimator** — `/tools/reading-time-estimator` — Estimate how long text takes to read silently and to speak aloud.
 - **Regex Tester** — `/tools/regex-tester` — Test JavaScript regular expressions live with match highlighting and groups.
-- **Regional Indicator & Emoji Letters** — `/tools/text-to-emoji-letters` — Convert letters to emoji-style glyphs: regional-indicator squares, keycaps, blood-type boxes, or fonts.
 - **Remove Accents** — `/tools/remove-accents` — Strip diacritics and accents from text, converting characters like e-acute, n-tilde, and u-umlaut to plain ASCII equivalents.
 - **Remove Duplicate Lines** — `/tools/remove-duplicates` — Strip duplicate lines, keeping first occurrence, with optional case-insensitivity.
 - **Remove Line Breaks** — `/tools/remove-line-breaks` — Strip or normalize line breaks, joining wrapped lines into one with spaces, collapsing multiple blank lines, or converting paragraphs to single lines.
@@ -372,7 +362,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Reverse Text** — `/tools/reverse-text` — Reverse characters, words, or line order in text.
 - **ROT13 / Caesar Cipher** — `/tools/rot13` — Apply ROT13 or a Caesar shift cipher to text (reversible).
 - **ROT47 Cipher** — `/tools/rot47` — Encode or decode text with ROT47, rotating all visible ASCII characters by 47 positions for a reversible obfuscation.
-- **Runic Transliterator** — `/tools/runic-transliterator` — Convert Latin text to Elder Futhark or Younger Futhark runes (and back) using a fixed letter mapping.
 - **Sentence Case Converter** — `/tools/sentence-case-converter` — Lowercase text then capitalize the first letter of each sentence, preserving common acronyms and the pronoun I.
 - **Sentence Splitter** — `/tools/sentence-splitter` — Split a paragraph into one sentence per line using punctuation and abbreviation rules.
 - **Shuffle Lines** — `/tools/shuffle-lines` — Randomly shuffle the order of lines, with an option to pick a random subset or a single random line.
@@ -385,33 +374,24 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Sort Lines by Length** — `/tools/text-text-sort-by-length` — Reorder lines by character length, ascending or descending, with tie-breaking.
 - **Split Text Into Chunks** — `/tools/split-text-chunks` — Break text into fixed-size pieces by character count, word count, or line count, with optional numbered labels.
 - **Start Case Converter** — `/tools/start-case-converter` — Capitalize the first letter of every word while leaving the rest untouched, with optional separator normalization.
-- **Strikethrough & Underline Text** — `/tools/unicode-text-decorate` — Add Unicode combining strikethrough, underline, or slashed-zero style effects to plain text so it stays styled when pasted anywhere.
-- **Strikethrough, Underline & Overline Combiner** — `/tools/strikethrough-text-variants` — Add combining strikethrough, underline, overline, or slash overlays to text for plain-text styling.
 - **Superscript & Subscript Text** — `/tools/superscript-subscript` — Convert text to Unicode superscript or subscript characters for inline chemistry/math notation.
-- **Syllable Counter** — `/tools/syllable-counter` — Count syllables in words and whole text using an English heuristic algorithm.
-- **Tap Code Cipher** — `/tools/tap-code-cipher` — Encode text into Polybius-square tap code (rows.columns) and decode tap sequences back to letters.
 - **Template Placeholder Filler** — `/tools/text-template-placeholder-filler` — Fills {{name}}-style placeholders in a template using key=value pairs or a JSON object.
 - **Text Alignment & Padding** — `/tools/text-align-pad` — Pad or align each line to a fixed width, left, right, or centered, with a chosen fill character for tidy fixed-width columns.
 - **Text Case Statistics Report** — `/tools/text-case-statistics-report` — Counts uppercase, lowercase, digit, punctuation and whitespace characters and reports their percentages.
 - **Text Diff** — `/tools/text-diff` — Compare two texts line-by-line and highlight additions and removals.
-- **Text Repeater** — `/tools/text-repeater` — Repeat a piece of text a chosen number of times, separated by newlines, spaces, or a custom delimiter.
 - **Text Statistics & Frequency** — `/tools/text-statistics` — Analyze word frequency, character distribution and readability of text.
 - **Text Truncator** — `/tools/text-truncator` — Truncate text or each line to a maximum length by characters or words, appending an ellipsis or custom suffix.
 - **Text Wrapper** — `/tools/text-wrap` — Hard-wrap text to a fixed column width, breaking on word boundaries, with optional hanging indent and break-long-word handling.
-- **Themed Placeholder Text Generator** — `/tools/lorem-ipsum-variants` — Generate themed filler text (hipster, corporate, pirate, tech, bacon, cat) instead of classic Lorem Ipsum.
 - **Title Case Converter** — `/tools/title-case` — Apply proper headline title case following style rules that keep small words like a, an, and, the lowercase except as the first or last word.
 - **Trim & Strip Lines** — `/tools/trim-lines` — Remove leading/trailing whitespace, trailing whitespace only, or strip custom characters from each line.
 - **Unicode Inspector** — `/tools/unicode-inspector` — Break text into code points with hex, decimal, UTF-8 bytes and names.
-- **Upside-Down & Mirror Text** — `/tools/upside-down-text` — Flip text upside-down (180°) or mirror it left-right using Unicode look-alike characters.
 - **Username Handle Generator** — `/tools/text-text-to-handle-generator` — Turn a name or phrase into clean lowercase username/handle suggestions.
-- **Vaporwave Aesthetic Text** — `/tools/fullwidth-text` — Convert text to full-width vaporwave letters where each character is spaced out, perfect for aesthetic social media posts.
 - **Whitespace & Special Character Visualizer** — `/tools/whitespace-visualizer` — Reveal hidden spaces, tabs, and line endings by replacing them with visible glyphs.
 - **Whitespace Cleaner** — `/tools/whitespace-cleaner` — Trim lines, collapse spaces, strip blank lines, and normalize whitespace.
 - **Word & Character Count** — `/tools/word-count` — Live counts of words, characters, sentences, lines, and reading time.
 - **Word & Sentence Length Distribution** — `/tools/word-length-distribution` — Show how word lengths and sentence lengths are distributed across text.
 - **Word Frequency Counter** — `/tools/word-frequency` — Count how often each word appears and rank them by frequency, with options to ignore case and skip common stop words.
 - **Wrap Text Into Columns** — `/tools/text-to-columns` — Reflow a single stream of lines into multiple side-by-side newspaper-style columns.
-- **Zalgo Glitch Text** — `/tools/zalgo-text` — Add creepy combining diacritics to text to create the glitchy Zalgo effect with adjustable intensity, or clean the marks back out.
 - **Zero-Width & Invisible Character Stripper** — `/tools/zero-width-char-stripper` — Detect and remove invisible zero-width and formatting characters from pasted text.
 
 ## Crypto & Hash (59)
@@ -476,15 +456,11 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Vigenere Cipher** — `/tools/vigenere-cipher` — Encrypt or decrypt text with the classic Vigenere keyword cipher.
 - **XOR Cipher** — `/tools/xor-cipher` — Encrypt or decrypt text with a repeating-key XOR, output as hex or Base64 and back.
 
-## Encoding (72)
+## Encoding (53)
 
-- **A1Z26 Letter-Number Cipher** — `/tools/encoding-a1z26-cipher` — Convert letters to their alphabet position numbers (A=1…Z=26) and back.
-- **Affine Cipher** — `/tools/encoding-affine-cipher` — Encrypt/decrypt with the affine cipher E(x)=(a·x+b) mod 26, including key validity checks.
 - **ASCII / Code Point Converter** — `/tools/encoding-ascii-code-point` — Convert text to ASCII/Unicode code point numbers and convert numeric lists back to text.
 - **ASCII ↔ EBCDIC Converter** — `/tools/encoding-ebcdic-converter` — Convert text between ASCII/Latin-1 and IBM EBCDIC code pages, byte for byte.
 - **Ascii85 / Base85 Encode** — `/tools/ascii85` — Encode and decode text using Ascii85 (Adobe variant).
-- **Atbash Cipher** — `/tools/encoding-atbash-cipher` — Encode or decode text with the Atbash cipher, mirroring each letter to its opposite in the alphabet.
-- **Bacon's Cipher** — `/tools/encoding-bacon-cipher` — Encode text to Baconian 5-bit A/B groups and decode it back.
 - **Base16 Encode / Decode** — `/tools/encoding-base16-encode` — Encode text to uppercase Base16 (RFC 4648 hex) and decode it back, with strict validation.
 - **Base32 Encode / Decode** 🦀 — `/tools/base32-text` — Encode text to RFC 4648 Base32 and decode it back.
 - **Base32hex (Extended Hex) Encode / Decode** — `/tools/encoding-base32hex-encode` — Encode/decode using the RFC 4648 Base32hex extended-hex alphabet (0-9A-V).
@@ -500,40 +476,27 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Base64 URL-Safe Encode / Decode** — `/tools/encoding-base64url` — Encode or decode text using the URL-safe Base64 alphabet with optional padding for tokens and URLs.
 - **Base85 (RFC 1924 / ZeroMQ) Variants** — `/tools/encoding-base85-rfc1924` — Encodes and decodes data across Base85 alphabets: ASCII85, RFC 1924, and Z85 side by side.
 - **basE91 Encode / Decode** — `/tools/encoding-base91-encode` — Encode binary text to basE91, a denser ASCII encoding than Base64.
-- **Beaufort Cipher** — `/tools/encoding-beaufort-cipher` — Encrypt and decrypt with the reciprocal Beaufort polyalphabetic cipher.
 - **Braille (Unicode) Translator** — `/tools/encoding-braille-converter` — Convert printable text to and from Unicode Braille patterns (Grade 1).
 - **Caesar Cipher Shift** — `/tools/encoding-caesar-cipher` — Encode or decode text with a configurable Caesar shift, rotating letters by any amount while preserving case and symbols.
 - **Char Multi-Radix Encoder (Dec/Bin/Oct/Hex)** — `/tools/encoding-decimal-binary-octal-hex` — Show every character's value simultaneously in decimal, binary, octal, and hex.
 - **Code Point ↔ UTF-8/UTF-16 Bytes** — `/tools/encoding-codepoint-utf-converter` — Convert Unicode code points to their UTF-8 and UTF-16 byte encodings and back.
-- **Columnar Transposition Cipher** — `/tools/encoding-columnar-transposition` — Encrypt/decrypt with a keyword-based columnar transposition cipher.
 - **CSV Field Escaper / Unescaper** — `/tools/encoding-csv-field-escape` — Escape a single value for safe CSV embedding (RFC 4180 quoting) and unescape a CSV field.
-- **Flag Semaphore Encoder** — `/tools/encoding-semaphore-text` — Encode text into flag-semaphore positions and visualize the two-flag clock angles.
-- **Four-Square Cipher** — `/tools/encoding-four-square-cipher` — Encrypt and decrypt digraphs using the classical four-square cipher.
-- **Gronsfeld Cipher** — `/tools/encoding-gronsfeld-cipher` — A Vigenere variant that uses a numeric key instead of a keyword.
 - **Gzip Base64 Compress / Decompress** — `/tools/encoding-gzip-base64` — Compress text with gzip and output Base64, or decode Base64 gzip back to the original text.
 - **Hex Encode / Decode** 🦀 — `/tools/hex-text` — Convert text to hexadecimal and back, with optional uppercase.
 - **HTML Entity Encode / Decode** — `/tools/html-entities` — Escape text to HTML entities and unescape entities back to text.
-- **HTML Named ↔ Numeric Entity Converter** — `/tools/encoding-html-named-numeric` — Convert between HTML named entities (&amp;) and their numeric forms (&#38;/&#x26;) both ways.
+- **HTML Named ↔ Numeric Entity Converter** — `/tools/encoding-html-named-numeric` — Convert HTML named entities to and from their decimal and hexadecimal numeric character references, both ways.
 - **JavaScript String Escaper / Unescaper** — `/tools/encoding-js-string-escape` — Escape arbitrary text into a safe JS string literal and unescape it back.
 - **JSON Pointer Escaper (RFC 6901)** — `/tools/encoding-json-pointer-escape` — Encode and decode JSON Pointer reference tokens with the ~0/~1 escape rules.
 - **JWT Decoder & Inspector** — `/tools/encoding-jwt-inspector` — Decode a JSON Web Token into its readable header and payload claims, with human-friendly timestamps for exp/iat/nbf.
-- **Morse Code Prosigns & Abbreviations** — `/tools/encoding-morse-prosigns-reference` — Reference of Morse prosigns, Q-codes, and common abbreviations beyond plain letters.
-- **Morse Code Timing & Symbol Variants** — `/tools/encoding-morse-timing-variants` — Translate to Morse with selectable dot/dash glyphs and standard PARIS timing breakdown.
-- **Nihilist Cipher** — `/tools/encoding-nihilist-cipher` — Encrypt and decrypt using the Polybius-square plus additive-key Nihilist cipher.
 - **Numeric HTML Character References** — `/tools/encoding-numeric-char-references` — Convert text into numeric HTML character references (decimal or hex) and decode them back to plain text.
 - **Octal Encode / Decode** — `/tools/encoding-octal-text` — Encode UTF-8 text to space-separated octal byte values or decode octal numbers back into readable text.
 - **Percent-Encoding Reference Table** — `/tools/encoding-percent-encoding-table` — Searchable table of percent-encoded (%XX) values for ASCII and common reserved characters.
-- **Playfair Cipher** — `/tools/encoding-playfair-cipher` — Encrypt and decrypt with the classic 5x5 Playfair digraph substitution cipher.
-- **Polybius Square Cipher** — `/tools/encoding-polybius-square` — Encode/decode text using a 5x5 Polybius square coordinate cipher.
 - **Punycode Encode / Decode** — `/tools/encoding-punycode` — Convert internationalized domain names to ASCII Punycode (xn--) and back to their Unicode form.
 - **Quoted-Printable Encode / Decode** — `/tools/encoding-quoted-printable` — Encode text to MIME quoted-printable or decode quoted-printable email content back to text.
-- **Rail Fence Cipher** — `/tools/encoding-rail-fence-cipher` — Encrypt and decrypt text with the zigzag rail fence transposition cipher.
 - **Regex Special-Character Escaper** — `/tools/encoding-regex-literal-escape` — Escape text so it matches literally inside a regular expression, for several flavors.
 - **ROT-N Cipher (Custom Rotation)** — `/tools/encoding-rot-n-cipher` — Apply a Caesar-style rotation with any shift 0-25, with brute-force preview of all shifts.
 - **Shell Argument Escaper / Quoter** — `/tools/encoding-shell-arg-escape` — Safely quote text as a single shell argument for POSIX sh/bash or PowerShell.
-- **Spelling Alphabets Reference** — `/tools/encoding-spell-alphabet-reference` — Cheatsheet of phonetic/spelling alphabets across NATO, LAPD, and aviation use.
 - **SQL String Escaper** — `/tools/encoding-sql-string-escape` — Escape text into a safe SQL string literal for common database dialects.
-- **Tap Code (Knock Cipher)** — `/tools/encoding-tap-code` — Encode/decode text to the tap code used as a 5x5 grid of knocks.
 - **Text to Binary** — `/tools/binary-text` — Convert text to its binary (and back), with a configurable separator.
 - **Unicode Confusables / Homoglyph Detector** — `/tools/encoding-unicode-confusables-detector` — Detect and normalize visually deceptive lookalike characters in text.
 - **Unicode Escape / Unescape** — `/tools/encoding-unicode-escape` — Convert characters to \uXXXX escape sequences or unescape them back to readable Unicode text.
@@ -545,53 +508,38 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **UTF-8 Byte Inspector** — `/tools/encoding-utf8-byte-inspector` — Break text into its UTF-8 byte sequence with per-character hex, binary, and code points.
 - **UUencode / UUdecode** — `/tools/encoding-uuencode` — Encode and decode data in the classic Unix uuencode format.
 - **Uuencode / Xxencode Converter** — `/tools/encoding-uuencode-xxencode` — Encodes and decodes data using classic Unix uuencode and xxencode formats.
-- **Vigenere Autokey Cipher** — `/tools/encoding-vigenere-autokey-cipher` — Encrypts and decrypts text with the autokey variant of the Vigenere cipher.
 - **XOR Cipher** — `/tools/encoding-xor-cipher` — Encrypt or decrypt text with a repeating-key XOR cipher, outputting or reading hex or Base64.
 - **XXencode / XXdecode** — `/tools/encoding-xxencode` — Encode and decode using the XXencode alphabet (a safer uuencode variant).
 - **Z85 Encode / Decode** — `/tools/encoding-z85-encode` — Encode/decode using ZeroMQ Z85, a printable Base85 variant safe for source code.
-- **Zero-Width Character Encoder** — `/tools/encoding-zero-width-steganography` — Hide a secret message inside cover text using invisible zero-width characters, and extract it.
 
-## Generators (95)
+## Generators (69)
 
-- **.editorconfig Generator** — `/tools/editorconfig-generator` — Generate an .editorconfig from options: indent style/size, charset, EOL, trailing whitespace, per-glob rules.
 - **.env.example Generator** — `/tools/env-example-generator` — Turn a list of env var names/values into a redacted .env.example with comments and grouping.
 - **.gitignore Generator** — `/tools/gitignore-generator` — Assemble a .gitignore from common language and tool templates.
 - **.htpasswd Generator** — `/tools/htpasswd-generator` — Generate Apache/Nginx htpasswd entries with bcrypt, SHA-1, or MD5(APR1) hashing, fully in-browser.
 - **API Key Generator** — `/tools/api-key-generator` — Generate prefixed, secret-style API keys in common SaaS formats.
 - **Barcode Generator** — `/tools/generate-barcode` — Generate Code 39 and EAN-13 barcodes from input text/digits, rendered to a downloadable SVG/PNG with adjustable bar width and height.
 - **BIC / SWIFT Code Test Generator** — `/tools/bic-swift-test-generator` — Generate structurally valid test BIC/SWIFT codes (8 or 11 chars) with bank, country, location, branch parts.
-- **CHANGELOG Generator (Keep a Changelog)** — `/tools/changelog-generator` — Scaffold a Keep-a-Changelog / SemVer CHANGELOG.md with version sections and Added/Changed/Fixed groups.
-- **CONTRIBUTING.md Generator** — `/tools/contributing-guide-generator` — Generate a CONTRIBUTING.md with setup, branch/commit conventions, PR checklist, and code-of-conduct link.
-- **Conventional Commit Message Builder** — `/tools/conventional-commit-generator` — Build a Conventional Commits message from type, scope, description, body, breaking change, and footers.
 - **Credit Card Number Generator** — `/tools/generate-credit-card` — Generate Luhn-valid fake test card numbers by brand (Visa, Mastercard, Amex, Discover) with optional expiry and CVV, for payment-form testing only.
 - **Cron Expression Builder** — `/tools/generate-cron-expression` — Build a cron expression from human-friendly schedule controls (minute, hour, day, month, weekday) and see a plain-English description of when it runs.
 - **Crontab Recipe Generator** — `/tools/crontab-recipe-generator` — Generate a full crontab file with multiple jobs, schedule presets, env lines, and human comments.
 - **CSS Gradient Generator** — `/tools/generate-css-gradient` — Build linear or radial CSS gradients with multiple color stops, angle, and type, producing copy-ready background CSS with a live preview.
 - **CUID2 Generator** — `/tools/cuid2-generator` — Generate collision-resistant, URL-safe CUID2 identifiers with adjustable length.
-- **Dice & Coin Roller** — `/tools/dice-roller` — Roll dice (d4–d100, multiple dice) and flip coins with fair randomness.
-- **docker-compose.yml Generator** — `/tools/docker-compose-generator` — Build a docker-compose.yml from selected services (web, postgres, redis, mysql, mongo) with ports and volumes.
-- **Dockerfile Generator** — `/tools/dockerfile-generator` — Generate a best-practice Dockerfile for Node/Python/Go/Static from a form (base image, ports, multi-stage).
 - **EAN/UPC Check Digit & Number Generator** — `/tools/ean-upc-barcode-data-generator` — Generate valid EAN-13, EAN-8, UPC-A, and ISBN-13 numbers with correct check digits, or fix a partial code.
 - **Email Alias Generator** — `/tools/email-alias-generator` — Generate plus-addressing and dot-trick Gmail aliases plus catch-all variants from one base email.
-- **ESLint Flat Config Generator** — `/tools/eslint-config-generator` — Scaffold an eslint.config.js flat config (or .eslintrc) from language, env, and rule-preset choices.
 - **Fake Address Generator** — `/tools/fake-address-generator` — Produce fake postal addresses (street, city, region, postal code, country) per country format from static lists.
 - **Fake Company Generator** — `/tools/fake-company-generator` — Generate fake company records: name, industry, catchphrase, domain, EIN-format tax id, from static word banks.
 - **Fake Data From JSON Schema** — `/tools/json-schema-faker` — Generate sample JSON instances that conform to a pasted JSON Schema (types, enums, formats, constraints).
 - **Fake User Profile Generator** — `/tools/fake-user-profile-generator` — Generate realistic fake user records (name, email, username, phone, avatar seed) from built-in static name lists.
-- **GitHub Actions Workflow Generator** — `/tools/github-actions-workflow-generator` — Scaffold a CI workflow YAML (Node/Python/Go) with triggers, matrix, cache, and steps from a form.
-- **GitLab CI Pipeline Generator** — `/tools/generators-gitlab-ci-yaml` — Builds a .gitlab-ci.yml from selected stages, jobs, images, and cache settings.
 - **Hex Color Generator** — `/tools/generate-hex-color` — Generate random colors as HEX, RGB, and HSL with options to control hue range, brightness, and saturation for design palettes and placeholders.
-- **htpasswd + .htaccess Generator** — `/tools/generators-htaccess-basic-auth` — Generate matching htpasswd credentials and .htaccess block for HTTP Basic Auth.
 - **IBAN Generator** — `/tools/generate-iban` — Generate valid-format test IBANs per country with correct length and ISO 7064 mod-97 check digits, useful for banking and form validation testing.
 - **IP / CIDR Test Range Generator** — `/tools/ip-cidr-list-generator` — Generate lists of random IPv4/IPv6 addresses or expand a CIDR block into host addresses for test data.
 - **JSON Mock Data Generator** — `/tools/generate-mock-json` — Generate arrays of realistic fake JSON records from a field schema (name, email, uuid, number, date, boolean) with a configurable row count for API mocking.
 - **KSUID Generator** — `/tools/ksuid-generator` — Generate K-Sortable Unique Identifiers as 27-character Base62 strings.
 - **License Key Generator** — `/tools/license-key-generator` — Generate grouped license/serial keys with a configurable checksum group.
 - **Lorem Ipsum by Byte Size** — `/tools/lorem-bytes-generator` — Generate filler Lorem Ipsum text trimmed to an exact target byte or character size.
-- **Lottery Number Generator** — `/tools/lottery-number-generator` — Generate lottery quick-pick numbers for common formats or a custom number pool.
 - **MAC Address Generator** — `/tools/generate-mac-address` — Generate random MAC addresses with selectable separator (colon, hyphen, dot), case, and locally-administered/unicast bit control for network testing.
 - **Magnet & Data URI Builder** — `/tools/magnet-uri-builder` — Assemble magnet: links from an info hash and metadata fields offline.
-- **Makefile Scaffold Generator** — `/tools/generators-makefile-scaffold` — Generates a Makefile with .PHONY targets, variables, and help target from a list of tasks.
 - **Markdown Table Generator** — `/tools/generate-markdown-table` — Generate clean GitHub-flavored Markdown tables from pasted CSV/TSV or row/column counts, with column alignment and auto-padded columns.
 - **MeCard / vCard QR Payload Builder** — `/tools/vcard-qr-payload-generator` — Build compact MECARD: and vCard contact payload strings sized for embedding in QR codes.
 - **Memorable Password Generator** — `/tools/memorable-password-generator` — Build easy-to-type memorable passwords from word groups with separators and number/symbol injection.
@@ -601,43 +549,31 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **NanoID Custom Alphabet Generator** — `/tools/nanoid-custom-alphabet` — Generate NanoIDs from your own alphabet with an unbiased rejection-sampling algorithm.
 - **NanoID Generator** — `/tools/generate-nanoid` — Generate compact, URL-safe NanoIDs with configurable length and alphabet, a popular smaller alternative to UUIDs for keys and short links.
 - **Nil & Max UUID Generator** — `/tools/uuid-nil-max-generator` — Produce the special all-zero Nil UUID and all-one Max UUID sentinel values.
-- **Open Source License Generator** — `/tools/open-source-license-generator` — Produce full LICENSE text for MIT, Apache-2.0, GPL-3.0, BSD-2/3-Clause, ISC, MPL-2.0, Unlicense with your details.
 - **OTP Secret Generator** — `/tools/otp-secret-generator` — Generate Base32 TOTP/HOTP shared secrets and a matching otpauth:// URI.
-- **package.json Generator** — `/tools/package-json-generator` — Scaffold a valid package.json from form fields: name, version, type, scripts, deps placeholders, license.
 - **Passphrase Generator** — `/tools/passphrase-generator` — Generate memorable multi-word passphrases (diceware-style) locally.
 - **Pattern-Based Password Generator** — `/tools/pattern-password-generator` — Generate strings from a placeholder pattern where each token maps to a character class.
 - **Phone Number Format Generator** — `/tools/phone-number-format-generator` — Generate fake phone numbers formatted per country/style (E.164, national, dashed) from reserved test ranges.
 - **PIN Code Generator** — `/tools/generate-pin` — Generate random numeric PIN codes of a chosen length (e.g. 4/6/8 digits) in bulk, with an option to avoid trivial sequences and repeats.
 - **Placeholder Image Generator** — `/tools/generate-placeholder-image` — Generate downloadable placeholder images at a chosen size, background/text color, and label text, drawn on a canvas as a data URL for mockups.
-- **Playing Card Dealer** — `/tools/playing-card-dealer` — Shuffle a standard deck and deal random cards or hands.
-- **Prettier Config Generator** — `/tools/prettier-config-generator` — Build a .prettierrc from toggles (semicolons, quotes, tab width, trailing commas, print width) in JSON or JS.
 - **Pronounceable Password Generator** — `/tools/pronounceable-password-generator` — Generate pronounceable passwords by alternating consonant and vowel patterns.
-- **Random Boolean / Yes-No Generator** — `/tools/random-boolean-generator` — Flip a biased coin: generate true/false (or yes/no) values at a chosen probability.
-- **Random Choice Picker** — `/tools/random-choice-picker` — Pick one or several random options from a list of choices, with or without replacement.
 - **Random Color Palette Generator** — `/tools/random-hex-color-palette` — Generate harmonious random color palettes in HEX/RGB/HSL using HSL-based schemes.
 - **Random Coordinates Generator** — `/tools/random-coordinates-generator` — Generate random latitude/longitude points, optionally constrained to a bounding box.
 - **Random Date Generator** — `/tools/generate-random-date` — Generate random dates and times between a start and end bound, with chosen output format (ISO, locale, Unix timestamp) and quantity for seeding data.
 - **Random Datetime Generator** — `/tools/random-date-range-generator` — Generate random dates and timestamps within a range, in your chosen format.
-- **Random Emoji Picker** — `/tools/random-emoji-picker` — Pick random emoji from selectable categories for testing and content.
 - **Random Identicon (SVG)** — `/tools/generators-svg-qr-style-placeholder` — Generates a deterministic symmetric pixel identicon SVG from a seed string.
 - **Random IP Address Generator** — `/tools/fake-ipv4-ipv6-generator` — Generate random IPv4 and IPv6 addresses, optionally restricted to private or public ranges.
 - **Random Number Generator** — `/tools/generate-random-number` — Generate cryptographically random integers or decimals within a min/max range, with options for quantity, uniqueness, and number of decimal places.
 - **Random String Generator** — `/tools/generate-random-string` — Generate random strings/tokens with toggleable character sets (lowercase, uppercase, digits, symbols), custom length, and quantity for API keys, secrets, and test data.
 - **Random String Generator** — `/tools/random-string` — Generate random strings from a chosen alphabet (hex, alphanumeric, custom).
 - **Random Token Generator** — `/tools/bearer-token-generator` — Generate cryptographically random tokens encoded as hex, Base64, Base64URL, or Base62.
-- **README.md Scaffold Generator** — `/tools/readme-scaffold-generator` — Build a structured README.md from a form: title, badges, install, usage, features, license sections.
 - **REST Mock Routes Generator** — `/tools/generators-json-server-routes` — Generates a JSON config of CRUD REST routes from a list of resource names.
-- **robots.txt Generator** — `/tools/robots-txt` — Build a robots.txt with allow/disallow rules and a sitemap line.
 - **Secure Passphrase Generator** — `/tools/generate-passphrase` — Generate memorable Diceware-style passphrases from a built-in wordlist with configurable word count, separator, capitalization, and an appended number.
 - **Slug Generator** — `/tools/generate-slug` — Turn each line of text into clean URL slugs with options for separator, lowercasing, accent stripping, and max length, processing many titles at once.
 - **Snowflake ID Generator** — `/tools/snowflake-id-generator` — Generate Twitter-style 64-bit Snowflake IDs with configurable epoch, worker, and sequence bits.
 - **SSH Config Block Builder** — `/tools/generators-ssh-config-builder` — Build a well-formed ~/.ssh/config Host block from form fields.
 - **SSN-Format Test Number Generator** — `/tools/ssn-format-test-generator` — Generate format-valid but non-issuable US SSN test numbers (e.g. 900-xx-xxxx, 666 area) for QA.
 - **SVG Pattern Generator** — `/tools/generate-svg-pattern` — Generate tileable SVG background patterns (dots, grid, stripes, checkerboard) with adjustable colors, size, and spacing, output as ready-to-use SVG markup.
-- **systemd Service Unit Generator** — `/tools/generators-systemd-service-unit` — Generate a systemd .service unit file from descriptive form inputs.
-- **Team / Group Splitter** — `/tools/team-shuffler` — Randomly split a list of names into balanced teams or fixed-size groups.
 - **Test Card Number Set Generator** — `/tools/generators-fake-credit-card-luhn-set` — Generates batches of Luhn-valid fake card numbers per brand for testing (clearly non-real).
-- **tsconfig.json Generator** — `/tools/tsconfig-generator` — Generate a tsconfig.json from target/module/strictness presets with include/exclude and path aliases.
 - **ULID Generator** — `/tools/generate-ulid` — Generate ULIDs (Universally Unique Lexicographically Sortable Identifiers): 26-char Crockford base32 IDs with a millisecond timestamp prefix and random suffix, sortable by creation time.
 - **ULID Generator** — `/tools/ulid-generator` — Generate lexicographically-sortable ULIDs in bulk, locally.
 - **Username Generator** — `/tools/random-username-generator` — Generate handle-style usernames by combining adjectives, nouns, and optional numbers.
@@ -646,16 +582,12 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **UUID v5 / v3 Generator** — `/tools/generate-uuid-v5` — Generate deterministic namespace UUIDs (v5 SHA-1 and v3 MD5) from a namespace UUID plus a name, so the same input always yields the same UUID.
 - **UUID v7 Generator** — `/tools/uuid-v7-generator` — Generate time-ordered, sortable UUID v7 identifiers using the current timestamp.
 - **vCard (.vcf) Generator** — `/tools/vcard-generator` — Generate vCard 3.0/4.0 contact text from name, org, phones, emails, address, and URL fields.
-- **Weighted Random Picker** — `/tools/weighted-random-picker` — Pick random items from a weighted list using cumulative-weight sampling.
 - **WiFi QR Payload String Builder** — `/tools/wifi-qr-payload-generator` — Build the WIFI: payload string for WiFi QR codes from SSID, password, encryption, and hidden flag.
 
-## Web & Dev (140)
+## Web & Dev (129)
 
 - **.env to JSON** — `/tools/web-dotenv-to-json` — Parse a .env / dotenv file into a JSON object and convert JSON back into .env format, handling quotes, comments, and export prefixes.
-- **.gitattributes Generator** — `/tools/web-gitattributes-generator` — Generate a .gitattributes file selecting line-ending normalization, binary, LFS and linguist rules from presets.
-- **.htaccess Redirect Builder** — `/tools/web-htaccess-redirect-builder` — Build Apache .htaccess redirect rules (Redirect, RewriteRule) from source/target URL pairs with status codes.
 - **Accept-Language / Accept Parser** — `/tools/web-accept-language-parser` — Parse and sort Accept-Language or Accept headers by quality value (q-factor).
-- **Apache .htaccess Snippet Generator** — `/tools/web-htaccess-snippet` — Generate .htaccess rules for redirects, HTTPS, rewrites, headers, and caching.
 - **Asset Cache-Busting URL Builder** — `/tools/web-cache-busting-hash-appender` — Appends a deterministic version/hash query param to a list of asset URLs.
 - **Authenticated fetch() Builder** — `/tools/web-jwt-to-fetch` — Generate a fetch() snippet with method, headers, bearer token, and JSON body.
 - **Authorization Header Builder** — `/tools/web-bearer-auth-header-builder` — Construct Authorization header values for Bearer, Basic, API key, and custom schemes.
@@ -712,12 +644,10 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Favicon Link Tags Generator** — `/tools/web-favicon-link-generator` — Generate the full set of favicon and app-icon link tags for all platforms.
 - **HSTS Header Builder** — `/tools/web-hsts-header-builder` — Build and decode the Strict-Transport-Security header with preload-eligibility checks.
 - **HTML Attribute Stripper / Tag Cleaner** — `/tools/web-html-attributes-stripper` — Remove selected attributes (style, class, on*, data-*) or whole tags from HTML.
-- **HTML Boilerplate Generator** — `/tools/web-html-boilerplate` — Generate a clean HTML5 starter document with configurable title, language, viewport, charset, and optional meta/Open Graph tags.
 - **HTML Class & ID Extractor** — `/tools/web-html-class-attr-extractor` — Extract every unique class name and id used in an HTML snippet and output them as a sorted list or CSS stub.
 - **HTML data-* to JS dataset Converter** — `/tools/web-data-attribute-to-dataset` — Convert data-* attributes to element.dataset access expressions and back.
 - **HTML Entity Picker** — `/tools/web-html-entity-picker` — Searchable reference of named HTML entities with their character, numeric, and hex codes ready to copy.
 - **HTML Escape / Unescape for Code** — `/tools/web-html-escape-unescape` — Escape text to HTML-safe entities or unescape entities back to characters.
-- **HTML Meta Tags Generator (SEO)** — `/tools/web-meta-tags-generator` — Generate the full SEO meta tag head block from title, description and options.
 - **HTML Minifier / Beautifier** — `/tools/web-html-minify` — Minify HTML by stripping comments and whitespace, or pretty-print it.
 - **HTML to JSX** — `/tools/web-html-to-jsx` — Convert raw HTML into React JSX, renaming class to className, fixing self-closing tags, camelCasing attributes, and converting inline styles to objects.
 - **HTML to Text** — `/tools/html-to-text` — Strip HTML tags and decode entities to get clean plain text.
@@ -743,13 +673,10 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Link Header Builder & Parser** — `/tools/web-link-header-builder` — Build and parse RFC 8288 Link headers (rel=next/prev, preload, canonical).
 - **Lorem Ipsum HTML Block Generator** — `/tools/web-lorem-html-block` — Generate placeholder content as ready-to-paste semantic HTML blocks (paragraphs, headings, lists, blockquotes).
 - **MAC Address Formatter** — `/tools/web-mac-address-formatter` — Reformat MAC addresses between colon, hyphen, dot (Cisco), and bare notations.
-- **Markdown Table Generator** — `/tools/web-markdown-table-generator` — Build a Markdown table from typed rows and columns or from pasted CSV/TSV, with column alignment controls and live preview.
 - **Markdown to HTML** — `/tools/markdown-to-html` — Render Markdown to HTML with a live preview and copyable output.
 - **MIME Type from Extension** — `/tools/web-mimetype-from-extension` — Map one or many file extensions or filenames to their canonical MIME types and back.
 - **MIME Type Lookup** — `/tools/mime-types` — Look up the MIME/content type for a file extension and vice versa.
-- **Nginx Config Snippet Generator** — `/tools/web-nginx-location-snippet` — Generate common Nginx server/location blocks from form options (no server needed).
 - **Open Graph / Twitter Card Preview** — `/tools/web-open-graph-preview-card` — Parses OG and Twitter meta tags from pasted HTML and shows the resolved share-card fields.
-- **Open Graph Meta Tag Generator** — `/tools/web-open-graph-generator` — Produce Open Graph and Twitter Card meta tags from title, description, URL, image, and type fields for rich social link previews.
 - **Permissions-Policy Builder** — `/tools/web-permissions-policy-builder` — Build a Permissions-Policy (Feature-Policy) header from per-feature allowlists.
 - **PX ↔ REM Converter** — `/tools/px-rem-converter` — Convert between px, rem and em given a configurable root font size.
 - **Query String ↔ JSON** — `/tools/query-params` — Convert a URL query string to JSON and back, handling repeated keys.
@@ -775,7 +702,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Shell Argument Escaper** — `/tools/web-shell-arg-escaper` — Safely quote and escape strings for bash, sh, PowerShell, or cmd.exe.
 - **Slugify Variants Comparator** — `/tools/web-slugify-variants` — Generate multiple slug styles (kebab, snake, dot, path, GitHub-anchor) from one input at once for comparison.
 - **Text Data URI Builder** — `/tools/web-data-uri-builder-text` — Build a data: URI from pasted text with MIME type, charset, and base64 options.
-- **Twitter Card Meta Generator** — `/tools/web-twitter-card-generator` — Build Twitter/X card meta tags (summary, large image, app, player).
 - **URL Builder** — `/tools/web-url-builder` — Assemble a valid URL from individual scheme, host, port, path, query, and fragment fields.
 - **URL Inspector** — `/tools/web-url-inspector` — Break a URL into protocol, host, port, path segments, query parameters, and hash, displayed as a clear labeled component breakdown.
 - **URL Normalizer** — `/tools/web-url-normalizer` — Canonicalize a URL by lowercasing host, resolving dot segments, sorting params, and stripping defaults.
@@ -785,24 +711,19 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **URL Query Params Diff** — `/tools/web-query-params-diff` — Compare the query strings of two URLs and show which params were added, removed, changed, or unchanged.
 - **User-Agent Parser** — `/tools/user-agent-parser` — Parse a User-Agent string into browser, engine, OS and device.
 - **User-Agent String Builder** — `/tools/web-user-agent-builder` — Compose a browser User-Agent string from platform, engine, and version selectors.
-- **Web App Manifest Generator** — `/tools/web-manifest-generator` — Build a valid manifest.json (PWA) from name, colors, display and icons.
 - **WWW-Authenticate Parser** — `/tools/web-www-authenticate-parser` — Parse WWW-Authenticate / Authorization challenge headers into scheme and parameters.
 - **XML Formatter** — `/tools/web-xml-formatter` — Pretty-print and indent minified XML, or minify verbose XML by stripping whitespace between tags, with self-closing tag handling.
-- **XML Sitemap Generator** — `/tools/web-sitemap-generator` — Turn a list of URLs into a valid sitemap.xml with lastmod, changefreq, priority.
 - **XML to JSON** — `/tools/web-xml-to-json` — Convert an XML document into a structured JSON object, mapping elements, attributes, and text content with a predictable convention.
 - **Z-Index Scale Generator** — `/tools/web-z-index-scale-generator` — Generate a documented z-index scale with named layers as CSS variables or a Sass/JS map to avoid stacking chaos.
 
-## Time & Date (63)
+## Time & Date (56)
 
 - **12 / 24 Hour Time Converter** — `/tools/time-12-24-converter` — Convert clock times between 12-hour AM/PM and 24-hour formats, single or in bulk.
 - **Add Business Days** — `/tools/add-business-days` — Add or subtract a number of business days to a date, skipping weekends and custom holidays.
 - **Add or Subtract Days** — `/tools/date-add-subtract` — Add or subtract days, weeks, months, or years from a date and get the resulting date in multiple formats.
 - **Age Calculator** — `/tools/age-calculator` — Calculate exact age from a birth date in years, months, days, plus total days, hours, and the next birthday countdown.
-- **Age on Other Planets** — `/tools/age-on-other-planets` — Convert an age or elapsed time on Earth to equivalent years on other planets.
 - **Batch Timestamp Converter** — `/tools/timestamp-batch-converter` — Convert a pasted list of Unix timestamps to human dates (or dates back to timestamps) in bulk.
-- **Birthday Milestone Finder** — `/tools/birthday-milestone-finder` — Find dates of life milestones: 10,000 days old, 1 billion seconds, next round-number birthday.
 - **Business Days Calculator** — `/tools/business-days-calculator` — Count working days between two dates, excluding weekends, or add a number of business days to a start date.
-- **Chinese Zodiac Animal** — `/tools/chinese-zodiac-sign` — Find the Chinese zodiac animal, element, and yin/yang for any year (approximate by year).
 - **Clock Time Difference** — `/tools/time-between-clocks` — Compute the duration between two times of day, optionally wrapping past midnight.
 - **Countdown Snapshot Builder** — `/tools/countdown-timer-builder` — Compute the exact remaining time from now to a target datetime, broken into units.
 - **Cron Expression Builder** — `/tools/cron-builder` — Build a standard cron expression from dropdowns for minute, hour, day, month, and weekday with a human-readable preview.
@@ -818,7 +739,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Day Percentage Elapsed** — `/tools/day-percentage-elapsed` — Show how much of a day, week, month, year, hour, or minute has elapsed for a given moment.
 - **Days Between in Many Units** — `/tools/days-between-units` — Measure the span between two datetimes simultaneously in years, months, weeks, days, hours, minutes, and seconds.
 - **Days Until Date** — `/tools/days-until` — Count the exact days, weeks, hours, and minutes between today and a target future or past date.
-- **Decimal (French) Time Converter** — `/tools/decimal-time-converter` — Convert standard clock time to French Revolutionary decimal time (10 hours/day) and back.
 - **Duration Humanizer** — `/tools/duration-humanizer` — Turn a raw number of seconds or milliseconds into a human phrase like '2 days, 3 hours, 5 minutes'.
 - **Duration String Parser** — `/tools/duration-parser` — Parse human duration text like '1h30m', '2 days 4 hours', or '90s' into total seconds and milliseconds.
 - **Epoch Precision Converter** — `/tools/epoch-precision-converter` — Convert a Unix timestamp between seconds, milliseconds, microseconds, and nanoseconds with auto-detection.
@@ -839,9 +759,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Recurring Event Date Generator** — `/tools/recurring-event-dates` — Generate the next N dates for a simple recurrence (daily, weekly, monthly, yearly with interval).
 - **Relative Time Formatter** — `/tools/relative-time-formatter` — Turn a timestamp or date into human-friendly relative phrasing like '3 hours ago' or 'in 2 days' across locales.
 - **SMPTE Timecode / Frames Converter** — `/tools/time-timecode-frames-converter` — Converts between SMPTE timecode (HH:MM:SS:FF) and total frame counts at a chosen frame rate.
-- **Star Trek Stardate Converter** — `/tools/stardate-converter` — Convert Gregorian dates to TNG-era stardates and back using the common fan formula.
 - **strftime Format Playground** — `/tools/strftime-playground` — Apply a C/Python strftime format string to a chosen datetime and see the rendered output live.
-- **Swatch Internet Time (.beats)** — `/tools/swatch-internet-time` — Convert any time to Swatch Internet Time beats (BMT, @000-@999) and back.
 - **Time Duration Arithmetic** — `/tools/time-time-duration-arithmetic` — Adds and subtracts a list of HH:MM:SS durations and shows the running and total result.
 - **Time Epoch Rollover Checker** — `/tools/unix-rollover-checker` — Show key time-storage overflow dates (Year 2038, 2-digit Y2K, 32-bit, 64-bit limits).
 - **Time Unit Converter** — `/tools/time-unit-converter` — Convert a value between nanoseconds, microseconds, milliseconds, seconds, minutes, hours, and days.
@@ -855,7 +773,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **99
 - **Week of Month Finder** — `/tools/week-of-month-finder` — Determine which week of the month a date falls in, using several common counting conventions.
 - **Weekday of Any Date** — `/tools/weekday-of-date` — Find which day of the week any date falls on, with a Doomsday-rule mental-math walkthrough.
 - **Weeks & Months Until Date** — `/tools/weeks-until-date` — Count full weeks, months, and weekends remaining until a future date.
-- **Western Zodiac Sign Finder** — `/tools/western-zodiac-sign` — Find the tropical (Western) zodiac sign and its date range for any birth date.
 - **Working Hours Calculator** — `/tools/working-hours-calculator` — Compute net working hours between two datetimes, excluding nights, weekends, and lunch.
 
 ## Math & Units (114)

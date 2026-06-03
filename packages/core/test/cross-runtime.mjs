@@ -52,7 +52,7 @@ const { TOOL_CATALOG, getToolBySlug } = await import('../dist/tools/index.js');
 const { tool: jsonFormatterTool } = await import('../dist/tools/data/json-formatter.js');
 
 await check('tool catalog ships all browser tools', () => {
-  assert.equal(TOOL_CATALOG.length, 995);
+  assert.equal(TOOL_CATALOG.length, 912);
   assert.equal(
     getToolBySlug('json-formatter').packageImportPath,
     '@open-utility-tools/core/tools/data/json-formatter',

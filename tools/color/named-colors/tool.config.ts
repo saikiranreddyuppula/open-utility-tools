@@ -9,7 +9,7 @@ const meta: ToolMetaStatic = {
   tags: ['colors', 'css', 'named', 'reference', 'hex'],
   keywords: ['css named colors', 'color names', 'web colors', 'hex reference', 'x11'],
   icon: 'Palette',
-  relatedTools: ['color-converter', 'palette-generator', 'color-shades'],
+  relatedTools: ['color-converter', 'color-harmony', 'color-shades'],
 };
 
 export default meta;

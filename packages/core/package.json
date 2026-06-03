@@ -87,21 +87,9 @@
       "types": "./dist/time/age-calculator.d.ts",
       "import": "./dist/time/age-calculator.js"
     },
-    "./time/age-on-other-planets": {
-      "types": "./dist/time/age-on-other-planets.d.ts",
-      "import": "./dist/time/age-on-other-planets.js"
-    },
-    "./time/birthday-milestone-finder": {
-      "types": "./dist/time/birthday-milestone-finder.d.ts",
-      "import": "./dist/time/birthday-milestone-finder.js"
-    },
     "./time/business-days-calculator": {
       "types": "./dist/time/business-days-calculator.d.ts",
       "import": "./dist/time/business-days-calculator.js"
-    },
-    "./time/chinese-zodiac-sign": {
-      "types": "./dist/time/chinese-zodiac-sign.d.ts",
-      "import": "./dist/time/chinese-zodiac-sign.js"
     },
     "./time/countdown-timer-builder": {
       "types": "./dist/time/countdown-timer-builder.d.ts",
@@ -162,10 +150,6 @@
     "./time/days-until": {
       "types": "./dist/time/days-until.d.ts",
       "import": "./dist/time/days-until.js"
-    },
-    "./time/decimal-time-converter": {
-      "types": "./dist/time/decimal-time-converter.d.ts",
-      "import": "./dist/time/decimal-time-converter.js"
     },
     "./time/duration-humanizer": {
       "types": "./dist/time/duration-humanizer.d.ts",
@@ -231,17 +215,9 @@
       "types": "./dist/time/relative-time-formatter.d.ts",
       "import": "./dist/time/relative-time-formatter.js"
     },
-    "./time/stardate-converter": {
-      "types": "./dist/time/stardate-converter.d.ts",
-      "import": "./dist/time/stardate-converter.js"
-    },
     "./time/strftime-playground": {
       "types": "./dist/time/strftime-playground.d.ts",
       "import": "./dist/time/strftime-playground.js"
-    },
-    "./time/swatch-internet-time": {
-      "types": "./dist/time/swatch-internet-time.d.ts",
-      "import": "./dist/time/swatch-internet-time.js"
     },
     "./time/time-12-24-converter": {
       "types": "./dist/time/time-12-24-converter.d.ts",
@@ -322,10 +298,6 @@
     "./time/weeks-until-date": {
       "types": "./dist/time/weeks-until-date.d.ts",
       "import": "./dist/time/weeks-until-date.js"
-    },
-    "./time/western-zodiac-sign": {
-      "types": "./dist/time/western-zodiac-sign.d.ts",
-      "import": "./dist/time/western-zodiac-sign.js"
     },
     "./time/working-hours-calculator": {
       "types": "./dist/time/working-hours-calculator.d.ts",
@@ -1699,25 +1671,9 @@
       "types": "./dist/tools/encoding/binary-text.d.ts",
       "import": "./dist/tools/encoding/binary-text.js"
     },
-    "./tools/encoding/encoding-a1z26-cipher": {
-      "types": "./dist/tools/encoding/encoding-a1z26-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-a1z26-cipher.js"
-    },
-    "./tools/encoding/encoding-affine-cipher": {
-      "types": "./dist/tools/encoding/encoding-affine-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-affine-cipher.js"
-    },
     "./tools/encoding/encoding-ascii-code-point": {
       "types": "./dist/tools/encoding/encoding-ascii-code-point.d.ts",
       "import": "./dist/tools/encoding/encoding-ascii-code-point.js"
-    },
-    "./tools/encoding/encoding-atbash-cipher": {
-      "types": "./dist/tools/encoding/encoding-atbash-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-atbash-cipher.js"
-    },
-    "./tools/encoding/encoding-bacon-cipher": {
-      "types": "./dist/tools/encoding/encoding-bacon-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-bacon-cipher.js"
     },
     "./tools/encoding/encoding-base16-encode": {
       "types": "./dist/tools/encoding/encoding-base16-encode.d.ts",
@@ -1763,10 +1719,6 @@
       "types": "./dist/tools/encoding/encoding-base91-encode.d.ts",
       "import": "./dist/tools/encoding/encoding-base91-encode.js"
     },
-    "./tools/encoding/encoding-beaufort-cipher": {
-      "types": "./dist/tools/encoding/encoding-beaufort-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-beaufort-cipher.js"
-    },
     "./tools/encoding/encoding-braille-converter": {
       "types": "./dist/tools/encoding/encoding-braille-converter.d.ts",
       "import": "./dist/tools/encoding/encoding-braille-converter.js"
@@ -1778,10 +1730,6 @@
     "./tools/encoding/encoding-codepoint-utf-converter": {
       "types": "./dist/tools/encoding/encoding-codepoint-utf-converter.d.ts",
       "import": "./dist/tools/encoding/encoding-codepoint-utf-converter.js"
-    },
-    "./tools/encoding/encoding-columnar-transposition": {
-      "types": "./dist/tools/encoding/encoding-columnar-transposition.d.ts",
-      "import": "./dist/tools/encoding/encoding-columnar-transposition.js"
     },
     "./tools/encoding/encoding-csv-field-escape": {
       "types": "./dist/tools/encoding/encoding-csv-field-escape.d.ts",
@@ -1798,14 +1746,6 @@
     "./tools/encoding/encoding-ebcdic-converter": {
       "types": "./dist/tools/encoding/encoding-ebcdic-converter.d.ts",
       "import": "./dist/tools/encoding/encoding-ebcdic-converter.js"
-    },
-    "./tools/encoding/encoding-four-square-cipher": {
-      "types": "./dist/tools/encoding/encoding-four-square-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-four-square-cipher.js"
-    },
-    "./tools/encoding/encoding-gronsfeld-cipher": {
-      "types": "./dist/tools/encoding/encoding-gronsfeld-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-gronsfeld-cipher.js"
     },
     "./tools/encoding/encoding-gzip-base64": {
       "types": "./dist/tools/encoding/encoding-gzip-base64.d.ts",
@@ -1827,18 +1767,6 @@
       "types": "./dist/tools/encoding/encoding-jwt-inspector.d.ts",
       "import": "./dist/tools/encoding/encoding-jwt-inspector.js"
     },
-    "./tools/encoding/encoding-morse-prosigns-reference": {
-      "types": "./dist/tools/encoding/encoding-morse-prosigns-reference.d.ts",
-      "import": "./dist/tools/encoding/encoding-morse-prosigns-reference.js"
-    },
-    "./tools/encoding/encoding-morse-timing-variants": {
-      "types": "./dist/tools/encoding/encoding-morse-timing-variants.d.ts",
-      "import": "./dist/tools/encoding/encoding-morse-timing-variants.js"
-    },
-    "./tools/encoding/encoding-nihilist-cipher": {
-      "types": "./dist/tools/encoding/encoding-nihilist-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-nihilist-cipher.js"
-    },
     "./tools/encoding/encoding-numeric-char-references": {
       "types": "./dist/tools/encoding/encoding-numeric-char-references.d.ts",
       "import": "./dist/tools/encoding/encoding-numeric-char-references.js"
@@ -1851,14 +1779,6 @@
       "types": "./dist/tools/encoding/encoding-percent-encoding-table.d.ts",
       "import": "./dist/tools/encoding/encoding-percent-encoding-table.js"
     },
-    "./tools/encoding/encoding-playfair-cipher": {
-      "types": "./dist/tools/encoding/encoding-playfair-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-playfair-cipher.js"
-    },
-    "./tools/encoding/encoding-polybius-square": {
-      "types": "./dist/tools/encoding/encoding-polybius-square.d.ts",
-      "import": "./dist/tools/encoding/encoding-polybius-square.js"
-    },
     "./tools/encoding/encoding-punycode": {
       "types": "./dist/tools/encoding/encoding-punycode.d.ts",
       "import": "./dist/tools/encoding/encoding-punycode.js"
@@ -1866,10 +1786,6 @@
     "./tools/encoding/encoding-quoted-printable": {
       "types": "./dist/tools/encoding/encoding-quoted-printable.d.ts",
       "import": "./dist/tools/encoding/encoding-quoted-printable.js"
-    },
-    "./tools/encoding/encoding-rail-fence-cipher": {
-      "types": "./dist/tools/encoding/encoding-rail-fence-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-rail-fence-cipher.js"
     },
     "./tools/encoding/encoding-regex-literal-escape": {
       "types": "./dist/tools/encoding/encoding-regex-literal-escape.d.ts",
@@ -1879,25 +1795,13 @@
       "types": "./dist/tools/encoding/encoding-rot-n-cipher.d.ts",
       "import": "./dist/tools/encoding/encoding-rot-n-cipher.js"
     },
-    "./tools/encoding/encoding-semaphore-text": {
-      "types": "./dist/tools/encoding/encoding-semaphore-text.d.ts",
-      "import": "./dist/tools/encoding/encoding-semaphore-text.js"
-    },
     "./tools/encoding/encoding-shell-arg-escape": {
       "types": "./dist/tools/encoding/encoding-shell-arg-escape.d.ts",
       "import": "./dist/tools/encoding/encoding-shell-arg-escape.js"
     },
-    "./tools/encoding/encoding-spell-alphabet-reference": {
-      "types": "./dist/tools/encoding/encoding-spell-alphabet-reference.d.ts",
-      "import": "./dist/tools/encoding/encoding-spell-alphabet-reference.js"
-    },
     "./tools/encoding/encoding-sql-string-escape": {
       "types": "./dist/tools/encoding/encoding-sql-string-escape.d.ts",
       "import": "./dist/tools/encoding/encoding-sql-string-escape.js"
-    },
-    "./tools/encoding/encoding-tap-code": {
-      "types": "./dist/tools/encoding/encoding-tap-code.d.ts",
-      "import": "./dist/tools/encoding/encoding-tap-code.js"
     },
     "./tools/encoding/encoding-unicode-confusables-detector": {
       "types": "./dist/tools/encoding/encoding-unicode-confusables-detector.d.ts",
@@ -1935,10 +1839,6 @@
       "types": "./dist/tools/encoding/encoding-uuencode-xxencode.d.ts",
       "import": "./dist/tools/encoding/encoding-uuencode-xxencode.js"
     },
-    "./tools/encoding/encoding-vigenere-autokey-cipher": {
-      "types": "./dist/tools/encoding/encoding-vigenere-autokey-cipher.d.ts",
-      "import": "./dist/tools/encoding/encoding-vigenere-autokey-cipher.js"
-    },
     "./tools/encoding/encoding-xor-cipher": {
       "types": "./dist/tools/encoding/encoding-xor-cipher.d.ts",
       "import": "./dist/tools/encoding/encoding-xor-cipher.js"
@@ -1950,10 +1850,6 @@
     "./tools/encoding/encoding-z85-encode": {
       "types": "./dist/tools/encoding/encoding-z85-encode.d.ts",
       "import": "./dist/tools/encoding/encoding-z85-encode.js"
-    },
-    "./tools/encoding/encoding-zero-width-steganography": {
-      "types": "./dist/tools/encoding/encoding-zero-width-steganography.d.ts",
-      "import": "./dist/tools/encoding/encoding-zero-width-steganography.js"
     },
     "./tools/encoding/hex-text": {
       "types": "./dist/tools/encoding/hex-text.d.ts",
@@ -1979,18 +1875,6 @@
       "types": "./dist/tools/generators/bic-swift-test-generator.d.ts",
       "import": "./dist/tools/generators/bic-swift-test-generator.js"
     },
-    "./tools/generators/changelog-generator": {
-      "types": "./dist/tools/generators/changelog-generator.d.ts",
-      "import": "./dist/tools/generators/changelog-generator.js"
-    },
-    "./tools/generators/contributing-guide-generator": {
-      "types": "./dist/tools/generators/contributing-guide-generator.d.ts",
-      "import": "./dist/tools/generators/contributing-guide-generator.js"
-    },
-    "./tools/generators/conventional-commit-generator": {
-      "types": "./dist/tools/generators/conventional-commit-generator.d.ts",
-      "import": "./dist/tools/generators/conventional-commit-generator.js"
-    },
     "./tools/generators/crontab-recipe-generator": {
       "types": "./dist/tools/generators/crontab-recipe-generator.d.ts",
       "import": "./dist/tools/generators/crontab-recipe-generator.js"
@@ -1999,25 +1883,9 @@
       "types": "./dist/tools/generators/cuid2-generator.d.ts",
       "import": "./dist/tools/generators/cuid2-generator.js"
     },
-    "./tools/generators/dice-roller": {
-      "types": "./dist/tools/generators/dice-roller.d.ts",
-      "import": "./dist/tools/generators/dice-roller.js"
-    },
-    "./tools/generators/docker-compose-generator": {
-      "types": "./dist/tools/generators/docker-compose-generator.d.ts",
-      "import": "./dist/tools/generators/docker-compose-generator.js"
-    },
-    "./tools/generators/dockerfile-generator": {
-      "types": "./dist/tools/generators/dockerfile-generator.d.ts",
-      "import": "./dist/tools/generators/dockerfile-generator.js"
-    },
     "./tools/generators/ean-upc-barcode-data-generator": {
       "types": "./dist/tools/generators/ean-upc-barcode-data-generator.d.ts",
       "import": "./dist/tools/generators/ean-upc-barcode-data-generator.js"
-    },
-    "./tools/generators/editorconfig-generator": {
-      "types": "./dist/tools/generators/editorconfig-generator.d.ts",
-      "import": "./dist/tools/generators/editorconfig-generator.js"
     },
     "./tools/generators/email-alias-generator": {
       "types": "./dist/tools/generators/email-alias-generator.d.ts",
@@ -2026,10 +1894,6 @@
     "./tools/generators/env-example-generator": {
       "types": "./dist/tools/generators/env-example-generator.d.ts",
       "import": "./dist/tools/generators/env-example-generator.js"
-    },
-    "./tools/generators/eslint-config-generator": {
-      "types": "./dist/tools/generators/eslint-config-generator.d.ts",
-      "import": "./dist/tools/generators/eslint-config-generator.js"
     },
     "./tools/generators/fake-address-generator": {
       "types": "./dist/tools/generators/fake-address-generator.d.ts",
@@ -2131,21 +1995,9 @@
       "types": "./dist/tools/generators/generators-fake-credit-card-luhn-set.d.ts",
       "import": "./dist/tools/generators/generators-fake-credit-card-luhn-set.js"
     },
-    "./tools/generators/generators-gitlab-ci-yaml": {
-      "types": "./dist/tools/generators/generators-gitlab-ci-yaml.d.ts",
-      "import": "./dist/tools/generators/generators-gitlab-ci-yaml.js"
-    },
-    "./tools/generators/generators-htaccess-basic-auth": {
-      "types": "./dist/tools/generators/generators-htaccess-basic-auth.d.ts",
-      "import": "./dist/tools/generators/generators-htaccess-basic-auth.js"
-    },
     "./tools/generators/generators-json-server-routes": {
       "types": "./dist/tools/generators/generators-json-server-routes.d.ts",
       "import": "./dist/tools/generators/generators-json-server-routes.js"
-    },
-    "./tools/generators/generators-makefile-scaffold": {
-      "types": "./dist/tools/generators/generators-makefile-scaffold.d.ts",
-      "import": "./dist/tools/generators/generators-makefile-scaffold.js"
     },
     "./tools/generators/generators-ssh-config-builder": {
       "types": "./dist/tools/generators/generators-ssh-config-builder.d.ts",
@@ -2154,14 +2006,6 @@
     "./tools/generators/generators-svg-qr-style-placeholder": {
       "types": "./dist/tools/generators/generators-svg-qr-style-placeholder.d.ts",
       "import": "./dist/tools/generators/generators-svg-qr-style-placeholder.js"
-    },
-    "./tools/generators/generators-systemd-service-unit": {
-      "types": "./dist/tools/generators/generators-systemd-service-unit.d.ts",
-      "import": "./dist/tools/generators/generators-systemd-service-unit.js"
-    },
-    "./tools/generators/github-actions-workflow-generator": {
-      "types": "./dist/tools/generators/github-actions-workflow-generator.d.ts",
-      "import": "./dist/tools/generators/github-actions-workflow-generator.js"
     },
     "./tools/generators/gitignore-generator": {
       "types": "./dist/tools/generators/gitignore-generator.d.ts",
@@ -2191,10 +2035,6 @@
       "types": "./dist/tools/generators/lorem-bytes-generator.d.ts",
       "import": "./dist/tools/generators/lorem-bytes-generator.js"
     },
-    "./tools/generators/lottery-number-generator": {
-      "types": "./dist/tools/generators/lottery-number-generator.d.ts",
-      "import": "./dist/tools/generators/lottery-number-generator.js"
-    },
     "./tools/generators/magnet-uri-builder": {
       "types": "./dist/tools/generators/magnet-uri-builder.d.ts",
       "import": "./dist/tools/generators/magnet-uri-builder.js"
@@ -2219,17 +2059,9 @@
       "types": "./dist/tools/generators/nanoid-generator.d.ts",
       "import": "./dist/tools/generators/nanoid-generator.js"
     },
-    "./tools/generators/open-source-license-generator": {
-      "types": "./dist/tools/generators/open-source-license-generator.d.ts",
-      "import": "./dist/tools/generators/open-source-license-generator.js"
-    },
     "./tools/generators/otp-secret-generator": {
       "types": "./dist/tools/generators/otp-secret-generator.d.ts",
       "import": "./dist/tools/generators/otp-secret-generator.js"
-    },
-    "./tools/generators/package-json-generator": {
-      "types": "./dist/tools/generators/package-json-generator.d.ts",
-      "import": "./dist/tools/generators/package-json-generator.js"
     },
     "./tools/generators/passphrase-generator": {
       "types": "./dist/tools/generators/passphrase-generator.d.ts",
@@ -2243,25 +2075,9 @@
       "types": "./dist/tools/generators/phone-number-format-generator.d.ts",
       "import": "./dist/tools/generators/phone-number-format-generator.js"
     },
-    "./tools/generators/playing-card-dealer": {
-      "types": "./dist/tools/generators/playing-card-dealer.d.ts",
-      "import": "./dist/tools/generators/playing-card-dealer.js"
-    },
-    "./tools/generators/prettier-config-generator": {
-      "types": "./dist/tools/generators/prettier-config-generator.d.ts",
-      "import": "./dist/tools/generators/prettier-config-generator.js"
-    },
     "./tools/generators/pronounceable-password-generator": {
       "types": "./dist/tools/generators/pronounceable-password-generator.d.ts",
       "import": "./dist/tools/generators/pronounceable-password-generator.js"
-    },
-    "./tools/generators/random-boolean-generator": {
-      "types": "./dist/tools/generators/random-boolean-generator.d.ts",
-      "import": "./dist/tools/generators/random-boolean-generator.js"
-    },
-    "./tools/generators/random-choice-picker": {
-      "types": "./dist/tools/generators/random-choice-picker.d.ts",
-      "import": "./dist/tools/generators/random-choice-picker.js"
     },
     "./tools/generators/random-coordinates-generator": {
       "types": "./dist/tools/generators/random-coordinates-generator.d.ts",
@@ -2270,10 +2086,6 @@
     "./tools/generators/random-date-range-generator": {
       "types": "./dist/tools/generators/random-date-range-generator.d.ts",
       "import": "./dist/tools/generators/random-date-range-generator.js"
-    },
-    "./tools/generators/random-emoji-picker": {
-      "types": "./dist/tools/generators/random-emoji-picker.d.ts",
-      "import": "./dist/tools/generators/random-emoji-picker.js"
     },
     "./tools/generators/random-hex-color-palette": {
       "types": "./dist/tools/generators/random-hex-color-palette.d.ts",
@@ -2287,14 +2099,6 @@
       "types": "./dist/tools/generators/random-username-generator.d.ts",
       "import": "./dist/tools/generators/random-username-generator.js"
     },
-    "./tools/generators/readme-scaffold-generator": {
-      "types": "./dist/tools/generators/readme-scaffold-generator.d.ts",
-      "import": "./dist/tools/generators/readme-scaffold-generator.js"
-    },
-    "./tools/generators/robots-txt": {
-      "types": "./dist/tools/generators/robots-txt.d.ts",
-      "import": "./dist/tools/generators/robots-txt.js"
-    },
     "./tools/generators/snowflake-id-generator": {
       "types": "./dist/tools/generators/snowflake-id-generator.d.ts",
       "import": "./dist/tools/generators/snowflake-id-generator.js"
@@ -2302,14 +2106,6 @@
     "./tools/generators/ssn-format-test-generator": {
       "types": "./dist/tools/generators/ssn-format-test-generator.d.ts",
       "import": "./dist/tools/generators/ssn-format-test-generator.js"
-    },
-    "./tools/generators/team-shuffler": {
-      "types": "./dist/tools/generators/team-shuffler.d.ts",
-      "import": "./dist/tools/generators/team-shuffler.js"
-    },
-    "./tools/generators/tsconfig-generator": {
-      "types": "./dist/tools/generators/tsconfig-generator.d.ts",
-      "import": "./dist/tools/generators/tsconfig-generator.js"
     },
     "./tools/generators/ulid-generator": {
       "types": "./dist/tools/generators/ulid-generator.d.ts",
@@ -2338,10 +2134,6 @@
     "./tools/generators/vcard-qr-payload-generator": {
       "types": "./dist/tools/generators/vcard-qr-payload-generator.d.ts",
       "import": "./dist/tools/generators/vcard-qr-payload-generator.js"
-    },
-    "./tools/generators/weighted-random-picker": {
-      "types": "./dist/tools/generators/weighted-random-picker.d.ts",
-      "import": "./dist/tools/generators/weighted-random-picker.js"
     },
     "./tools/generators/wifi-qr-payload-generator": {
       "types": "./dist/tools/generators/wifi-qr-payload-generator.d.ts",
@@ -2995,10 +2787,6 @@
       "types": "./dist/tools/registry.d.ts",
       "import": "./dist/tools/registry.js"
     },
-    "./tools/text/a1z26-cipher": {
-      "types": "./dist/tools/text/a1z26-cipher.d.ts",
-      "import": "./dist/tools/text/a1z26-cipher.js"
-    },
     "./tools/text/acronym-expander-finder": {
       "types": "./dist/tools/text/acronym-expander-finder.d.ts",
       "import": "./dist/tools/text/acronym-expander-finder.js"
@@ -3034,10 +2822,6 @@
     "./tools/text/automated-readability-index": {
       "types": "./dist/tools/text/automated-readability-index.d.ts",
       "import": "./dist/tools/text/automated-readability-index.js"
-    },
-    "./tools/text/binary-ascii-art": {
-      "types": "./dist/tools/text/binary-ascii-art.d.ts",
-      "import": "./dist/tools/text/binary-ascii-art.js"
     },
     "./tools/text/braille-text": {
       "types": "./dist/tools/text/braille-text.d.ts",
@@ -3103,10 +2887,6 @@
       "types": "./dist/tools/text/extract-data.d.ts",
       "import": "./dist/tools/text/extract-data.js"
     },
-    "./tools/text/fancy-text": {
-      "types": "./dist/tools/text/fancy-text.d.ts",
-      "import": "./dist/tools/text/fancy-text.js"
-    },
     "./tools/text/figlet-banner": {
       "types": "./dist/tools/text/figlet-banner.d.ts",
       "import": "./dist/tools/text/figlet-banner.js"
@@ -3119,10 +2899,6 @@
       "types": "./dist/tools/text/flesch-reading-ease.d.ts",
       "import": "./dist/tools/text/flesch-reading-ease.js"
     },
-    "./tools/text/fullwidth-text": {
-      "types": "./dist/tools/text/fullwidth-text.d.ts",
-      "import": "./dist/tools/text/fullwidth-text.js"
-    },
     "./tools/text/fuzzy-dedupe-lines": {
       "types": "./dist/tools/text/fuzzy-dedupe-lines.d.ts",
       "import": "./dist/tools/text/fuzzy-dedupe-lines.js"
@@ -3130,10 +2906,6 @@
     "./tools/text/gunning-fog-index": {
       "types": "./dist/tools/text/gunning-fog-index.d.ts",
       "import": "./dist/tools/text/gunning-fog-index.js"
-    },
-    "./tools/text/haiku-checker": {
-      "types": "./dist/tools/text/haiku-checker.d.ts",
-      "import": "./dist/tools/text/haiku-checker.js"
     },
     "./tools/text/hashtag-generator": {
       "types": "./dist/tools/text/hashtag-generator.d.ts",
@@ -3150,10 +2922,6 @@
     "./tools/text/join-lines": {
       "types": "./dist/tools/text/join-lines.d.ts",
       "import": "./dist/tools/text/join-lines.js"
-    },
-    "./tools/text/keyboard-shift-cipher": {
-      "types": "./dist/tools/text/keyboard-shift-cipher.d.ts",
-      "import": "./dist/tools/text/keyboard-shift-cipher.js"
     },
     "./tools/text/keyword-density-analyzer": {
       "types": "./dist/tools/text/keyword-density-analyzer.d.ts",
@@ -3183,10 +2951,6 @@
       "types": "./dist/tools/text/lorem-ipsum.d.ts",
       "import": "./dist/tools/text/lorem-ipsum.js"
     },
-    "./tools/text/lorem-ipsum-variants": {
-      "types": "./dist/tools/text/lorem-ipsum-variants.d.ts",
-      "import": "./dist/tools/text/lorem-ipsum-variants.js"
-    },
     "./tools/text/markdown-list-renumber": {
       "types": "./dist/tools/text/markdown-list-renumber.d.ts",
       "import": "./dist/tools/text/markdown-list-renumber.js"
@@ -3194,10 +2958,6 @@
     "./tools/text/morse-code": {
       "types": "./dist/tools/text/morse-code.d.ts",
       "import": "./dist/tools/text/morse-code.js"
-    },
-    "./tools/text/morse-to-text-visual": {
-      "types": "./dist/tools/text/morse-to-text-visual.d.ts",
-      "import": "./dist/tools/text/morse-to-text-visual.js"
     },
     "./tools/text/nato-phonetic": {
       "types": "./dist/tools/text/nato-phonetic.d.ts",
@@ -3230,10 +2990,6 @@
     "./tools/text/paragraph-splitter": {
       "types": "./dist/tools/text/paragraph-splitter.d.ts",
       "import": "./dist/tools/text/paragraph-splitter.js"
-    },
-    "./tools/text/pig-latin": {
-      "types": "./dist/tools/text/pig-latin.d.ts",
-      "import": "./dist/tools/text/pig-latin.js"
     },
     "./tools/text/prefix-suffix-lines": {
       "types": "./dist/tools/text/prefix-suffix-lines.d.ts",
@@ -3287,10 +3043,6 @@
       "types": "./dist/tools/text/rot47.d.ts",
       "import": "./dist/tools/text/rot47.js"
     },
-    "./tools/text/runic-transliterator": {
-      "types": "./dist/tools/text/runic-transliterator.d.ts",
-      "import": "./dist/tools/text/runic-transliterator.js"
-    },
     "./tools/text/sentence-case-converter": {
       "types": "./dist/tools/text/sentence-case-converter.d.ts",
       "import": "./dist/tools/text/sentence-case-converter.js"
@@ -3327,21 +3079,9 @@
       "types": "./dist/tools/text/start-case-converter.d.ts",
       "import": "./dist/tools/text/start-case-converter.js"
     },
-    "./tools/text/strikethrough-text-variants": {
-      "types": "./dist/tools/text/strikethrough-text-variants.d.ts",
-      "import": "./dist/tools/text/strikethrough-text-variants.js"
-    },
     "./tools/text/superscript-subscript": {
       "types": "./dist/tools/text/superscript-subscript.d.ts",
       "import": "./dist/tools/text/superscript-subscript.js"
-    },
-    "./tools/text/syllable-counter": {
-      "types": "./dist/tools/text/syllable-counter.d.ts",
-      "import": "./dist/tools/text/syllable-counter.js"
-    },
-    "./tools/text/tap-code-cipher": {
-      "types": "./dist/tools/text/tap-code-cipher.d.ts",
-      "import": "./dist/tools/text/tap-code-cipher.js"
     },
     "./tools/text/text-align-pad": {
       "types": "./dist/tools/text/text-align-pad.d.ts",
@@ -3378,10 +3118,6 @@
     "./tools/text/text-redundancy-finder": {
       "types": "./dist/tools/text/text-redundancy-finder.d.ts",
       "import": "./dist/tools/text/text-redundancy-finder.js"
-    },
-    "./tools/text/text-repeater": {
-      "types": "./dist/tools/text/text-repeater.d.ts",
-      "import": "./dist/tools/text/text-repeater.js"
     },
     "./tools/text/text-roman-to-fancy-numbering": {
       "types": "./dist/tools/text/text-roman-to-fancy-numbering.d.ts",
@@ -3423,10 +3159,6 @@
       "types": "./dist/tools/text/text-to-columns.d.ts",
       "import": "./dist/tools/text/text-to-columns.js"
     },
-    "./tools/text/text-to-emoji-letters": {
-      "types": "./dist/tools/text/text-to-emoji-letters.d.ts",
-      "import": "./dist/tools/text/text-to-emoji-letters.js"
-    },
     "./tools/text/text-truncator": {
       "types": "./dist/tools/text/text-truncator.d.ts",
       "import": "./dist/tools/text/text-truncator.js"
@@ -3455,21 +3187,9 @@
       "types": "./dist/tools/text/trim-lines.d.ts",
       "import": "./dist/tools/text/trim-lines.js"
     },
-    "./tools/text/unicode-bold-italic": {
-      "types": "./dist/tools/text/unicode-bold-italic.d.ts",
-      "import": "./dist/tools/text/unicode-bold-italic.js"
-    },
     "./tools/text/unicode-inspector": {
       "types": "./dist/tools/text/unicode-inspector.d.ts",
       "import": "./dist/tools/text/unicode-inspector.js"
-    },
-    "./tools/text/unicode-text-decorate": {
-      "types": "./dist/tools/text/unicode-text-decorate.d.ts",
-      "import": "./dist/tools/text/unicode-text-decorate.js"
-    },
-    "./tools/text/upside-down-text": {
-      "types": "./dist/tools/text/upside-down-text.d.ts",
-      "import": "./dist/tools/text/upside-down-text.js"
     },
     "./tools/text/whitespace-cleaner": {
       "types": "./dist/tools/text/whitespace-cleaner.d.ts",
@@ -3478,10 +3198,6 @@
     "./tools/text/whitespace-visualizer": {
       "types": "./dist/tools/text/whitespace-visualizer.d.ts",
       "import": "./dist/tools/text/whitespace-visualizer.js"
-    },
-    "./tools/text/wide-spaced-text": {
-      "types": "./dist/tools/text/wide-spaced-text.d.ts",
-      "import": "./dist/tools/text/wide-spaced-text.js"
     },
     "./tools/text/word-count": {
       "types": "./dist/tools/text/word-count.d.ts",
@@ -3499,10 +3215,6 @@
       "types": "./dist/tools/text/word-wrap-justify.d.ts",
       "import": "./dist/tools/text/word-wrap-justify.js"
     },
-    "./tools/text/zalgo-text": {
-      "types": "./dist/tools/text/zalgo-text.d.ts",
-      "import": "./dist/tools/text/zalgo-text.js"
-    },
     "./tools/text/zero-width-char-stripper": {
       "types": "./dist/tools/text/zero-width-char-stripper.d.ts",
       "import": "./dist/tools/text/zero-width-char-stripper.js"
@@ -3515,21 +3227,9 @@
       "types": "./dist/tools/time/age-calculator.d.ts",
       "import": "./dist/tools/time/age-calculator.js"
     },
-    "./tools/time/age-on-other-planets": {
-      "types": "./dist/tools/time/age-on-other-planets.d.ts",
-      "import": "./dist/tools/time/age-on-other-planets.js"
-    },
-    "./tools/time/birthday-milestone-finder": {
-      "types": "./dist/tools/time/birthday-milestone-finder.d.ts",
-      "import": "./dist/tools/time/birthday-milestone-finder.js"
-    },
     "./tools/time/business-days-calculator": {
       "types": "./dist/tools/time/business-days-calculator.d.ts",
       "import": "./dist/tools/time/business-days-calculator.js"
-    },
-    "./tools/time/chinese-zodiac-sign": {
-      "types": "./dist/tools/time/chinese-zodiac-sign.d.ts",
-      "import": "./dist/tools/time/chinese-zodiac-sign.js"
     },
     "./tools/time/countdown-timer-builder": {
       "types": "./dist/tools/time/countdown-timer-builder.d.ts",
@@ -3590,10 +3290,6 @@
     "./tools/time/days-until": {
       "types": "./dist/tools/time/days-until.d.ts",
       "import": "./dist/tools/time/days-until.js"
-    },
-    "./tools/time/decimal-time-converter": {
-      "types": "./dist/tools/time/decimal-time-converter.d.ts",
-      "import": "./dist/tools/time/decimal-time-converter.js"
     },
     "./tools/time/duration-humanizer": {
       "types": "./dist/tools/time/duration-humanizer.d.ts",
@@ -3659,17 +3355,9 @@
       "types": "./dist/tools/time/relative-time-formatter.d.ts",
       "import": "./dist/tools/time/relative-time-formatter.js"
     },
-    "./tools/time/stardate-converter": {
-      "types": "./dist/tools/time/stardate-converter.d.ts",
-      "import": "./dist/tools/time/stardate-converter.js"
-    },
     "./tools/time/strftime-playground": {
       "types": "./dist/tools/time/strftime-playground.d.ts",
       "import": "./dist/tools/time/strftime-playground.js"
-    },
-    "./tools/time/swatch-internet-time": {
-      "types": "./dist/tools/time/swatch-internet-time.d.ts",
-      "import": "./dist/tools/time/swatch-internet-time.js"
     },
     "./tools/time/time-12-24-converter": {
       "types": "./dist/tools/time/time-12-24-converter.d.ts",
@@ -3750,10 +3438,6 @@
     "./tools/time/weeks-until-date": {
       "types": "./dist/tools/time/weeks-until-date.d.ts",
       "import": "./dist/tools/time/weeks-until-date.js"
-    },
-    "./tools/time/western-zodiac-sign": {
-      "types": "./dist/tools/time/western-zodiac-sign.d.ts",
-      "import": "./dist/tools/time/western-zodiac-sign.js"
     },
     "./tools/time/working-hours-calculator": {
       "types": "./dist/tools/time/working-hours-calculator.d.ts",
@@ -3991,10 +3675,6 @@
       "types": "./dist/tools/web/web-flexbox-playground.d.ts",
       "import": "./dist/tools/web/web-flexbox-playground.js"
     },
-    "./tools/web/web-gitattributes-generator": {
-      "types": "./dist/tools/web/web-gitattributes-generator.d.ts",
-      "import": "./dist/tools/web/web-gitattributes-generator.js"
-    },
     "./tools/web/web-grid-template-generator": {
       "types": "./dist/tools/web/web-grid-template-generator.d.ts",
       "import": "./dist/tools/web/web-grid-template-generator.js"
@@ -4003,21 +3683,9 @@
       "types": "./dist/tools/web/web-hsts-header-builder.d.ts",
       "import": "./dist/tools/web/web-hsts-header-builder.js"
     },
-    "./tools/web/web-htaccess-redirect-builder": {
-      "types": "./dist/tools/web/web-htaccess-redirect-builder.d.ts",
-      "import": "./dist/tools/web/web-htaccess-redirect-builder.js"
-    },
-    "./tools/web/web-htaccess-snippet": {
-      "types": "./dist/tools/web/web-htaccess-snippet.d.ts",
-      "import": "./dist/tools/web/web-htaccess-snippet.js"
-    },
     "./tools/web/web-html-attributes-stripper": {
       "types": "./dist/tools/web/web-html-attributes-stripper.d.ts",
       "import": "./dist/tools/web/web-html-attributes-stripper.js"
-    },
-    "./tools/web/web-html-boilerplate": {
-      "types": "./dist/tools/web/web-html-boilerplate.d.ts",
-      "import": "./dist/tools/web/web-html-boilerplate.js"
     },
     "./tools/web/web-html-class-attr-extractor": {
       "types": "./dist/tools/web/web-html-class-attr-extractor.d.ts",
@@ -4127,14 +3795,6 @@
       "types": "./dist/tools/web/web-mac-address-formatter.d.ts",
       "import": "./dist/tools/web/web-mac-address-formatter.js"
     },
-    "./tools/web/web-manifest-generator": {
-      "types": "./dist/tools/web/web-manifest-generator.d.ts",
-      "import": "./dist/tools/web/web-manifest-generator.js"
-    },
-    "./tools/web/web-markdown-table-generator": {
-      "types": "./dist/tools/web/web-markdown-table-generator.d.ts",
-      "import": "./dist/tools/web/web-markdown-table-generator.js"
-    },
     "./tools/web/web-media-query-builder": {
       "types": "./dist/tools/web/web-media-query-builder.d.ts",
       "import": "./dist/tools/web/web-media-query-builder.js"
@@ -4143,10 +3803,6 @@
       "types": "./dist/tools/web/web-media-query-generator.d.ts",
       "import": "./dist/tools/web/web-media-query-generator.js"
     },
-    "./tools/web/web-meta-tags-generator": {
-      "types": "./dist/tools/web/web-meta-tags-generator.d.ts",
-      "import": "./dist/tools/web/web-meta-tags-generator.js"
-    },
     "./tools/web/web-mimetype-from-extension": {
       "types": "./dist/tools/web/web-mimetype-from-extension.d.ts",
       "import": "./dist/tools/web/web-mimetype-from-extension.js"
@@ -4154,14 +3810,6 @@
     "./tools/web/web-multi-column-generator": {
       "types": "./dist/tools/web/web-multi-column-generator.d.ts",
       "import": "./dist/tools/web/web-multi-column-generator.js"
-    },
-    "./tools/web/web-nginx-location-snippet": {
-      "types": "./dist/tools/web/web-nginx-location-snippet.d.ts",
-      "import": "./dist/tools/web/web-nginx-location-snippet.js"
-    },
-    "./tools/web/web-open-graph-generator": {
-      "types": "./dist/tools/web/web-open-graph-generator.d.ts",
-      "import": "./dist/tools/web/web-open-graph-generator.js"
     },
     "./tools/web/web-open-graph-preview-card": {
       "types": "./dist/tools/web/web-open-graph-preview-card.d.ts",
@@ -4243,10 +3891,6 @@
       "types": "./dist/tools/web/web-shell-arg-escaper.d.ts",
       "import": "./dist/tools/web/web-shell-arg-escaper.js"
     },
-    "./tools/web/web-sitemap-generator": {
-      "types": "./dist/tools/web/web-sitemap-generator.d.ts",
-      "import": "./dist/tools/web/web-sitemap-generator.js"
-    },
     "./tools/web/web-slugify-variants": {
       "types": "./dist/tools/web/web-slugify-variants.d.ts",
       "import": "./dist/tools/web/web-slugify-variants.js"
@@ -4278,10 +3922,6 @@
     "./tools/web/web-transition-generator": {
       "types": "./dist/tools/web/web-transition-generator.d.ts",
       "import": "./dist/tools/web/web-transition-generator.js"
-    },
-    "./tools/web/web-twitter-card-generator": {
-      "types": "./dist/tools/web/web-twitter-card-generator.d.ts",
-      "import": "./dist/tools/web/web-twitter-card-generator.js"
     },
     "./tools/web/web-url-builder": {
       "types": "./dist/tools/web/web-url-builder.d.ts",

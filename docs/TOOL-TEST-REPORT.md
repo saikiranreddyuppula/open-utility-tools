@@ -1,12 +1,12 @@
 # Tool Runtime Smoke Report
 
-Generated: 2026-05-30T20:53:15.261Z
+Generated: 2026-06-03T20:40:11.547Z
 
-Total tools: 995
-Passed: 995
+Total tools: 912
+Passed: 912
 Failed: 0
 Pass rate: 100.00%
-Mode: retest (9 slugs exercised, merged with existing results)
+Mode: retest (8 slugs exercised, merged with existing results)
 
 ## Method
 
@@ -15,5 +15,5 @@ The harness launched one system Chrome instance in headless mode and drove tool 
 ## Failures
 
 No runtime failures remain.
-Passed tools: 995.
+Passed tools: 912.
 

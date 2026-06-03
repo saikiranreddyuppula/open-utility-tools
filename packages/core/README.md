@@ -2,7 +2,7 @@
 
 Framework-agnostic core logic and tool catalog extracted from [Open Utility Tools](https://github.com/saikiranreddyuppula/open-utility-tools) — the pure, dependency-free building blocks behind the web app. No React, no DOM, **zero runtime dependencies**.
 
-> **Scope.** Every function here is **isomorphic** — it runs identically in the browser, Node ≥ 20, and Bun. Pure-TS tiers (text, math, color, data, time, web, generators, WebCrypto) are plain modules; raster image tools are **WASM-backed** by the bundled `imaging` crate and work the same in all three runtimes. Every browser tool also has a typed package catalog entry under `@open-utility-tools/core/tools/*/*`. Direct compute APIs are being extracted category-by-category. **Landed:** the full tool catalog, the pure tiers, the WASM image tools, and the full **time** category (63 tools, each with a golden test suite).
+> **Scope.** Every function here is **isomorphic** — it runs identically in the browser, Node ≥ 20, and Bun. Pure-TS tiers (text, math, color, data, time, web, generators, WebCrypto) are plain modules; raster image tools are **WASM-backed** by the bundled `imaging` crate and work the same in all three runtimes. Every browser tool also has a typed package catalog entry under `@open-utility-tools/core/tools/*/*`. Direct compute APIs are being extracted category-by-category. **Landed:** the curated tool catalog, the pure tiers, the WASM image tools, and the curated **time** category (56 tools, each with a golden test suite).
 
 ## Per-tool subpaths
 
@@ -69,9 +69,9 @@ text.cases.kebab('Hello World'); // "hello-world"
 | `…/generators` | lorem ipsum, fake records, .gitignore templates, UUID/ULID/nanoid, passwords |
 | `…/crypto` | JWT signing, HOTP, base32 decode, base64url (WebCrypto) |
 | `…/image` | WASM-backed raster `convert` + `probe` (browser/Node/Bun) |
-| `…/time/*` | 63 date/time tools, each on its own subpath (age, durations, cron, ISO-8601, timezones, …) |
+| `…/time/*` | 56 date/time tools, each on its own subpath (age, durations, cron, ISO-8601, timezones, …) |
 | `…/tools` | catalog helpers and metadata for every browser tool |
-| `…/tools/<category>/<slug>` | per-tool typed catalog entries for all 995 browser tools |
+| `…/tools/<category>/<slug>` | per-tool typed catalog entries for all current browser tools |
 
 ## Notes
 

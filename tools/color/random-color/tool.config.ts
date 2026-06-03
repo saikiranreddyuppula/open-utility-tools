@@ -9,7 +9,7 @@ const meta: ToolMetaStatic = {
   tags: ['random', 'color', 'generator', 'swatch'],
   keywords: ['random color', 'color generator', 'random hex', 'swatch'],
   icon: 'Shuffle',
-  relatedTools: ['palette-generator', 'color-converter', 'color-shades'],
+  relatedTools: ['color-harmony', 'color-converter', 'color-shades'],
 };
 
 export default meta;

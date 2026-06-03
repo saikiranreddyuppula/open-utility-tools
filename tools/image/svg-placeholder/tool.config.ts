@@ -9,7 +9,7 @@ const meta: ToolMetaStatic = {
   tags: ['placeholder', 'svg', 'mockup', 'dummy', 'image'],
   keywords: ['placeholder image', 'dummy image', 'svg placeholder', 'mockup', 'placehold'],
   icon: 'ImagePlus',
-  relatedTools: ['image-to-base64', 'image-converter', 'favicon-generator'],
+  relatedTools: ['image-to-base64', 'image-converter', 'image-favicon-generator'],
 };
 
 export default meta;

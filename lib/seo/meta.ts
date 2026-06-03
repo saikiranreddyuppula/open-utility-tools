@@ -1,5 +1,5 @@
 /**
- * Programmatic title/description builders for the ~995 tool pages and 12
+ * Programmatic title/description builders for the tool pages and 12
  * category pages. Goals (grounded in Google Search Central guidance):
  *  - Front-load the distinctive name so it survives SERP truncation.
  *  - Append the high-intent "Free Online <Type>" modifier searchers use, but
@@ -41,7 +41,7 @@ export function toolTitle(name: string, category: ToolCategory): string {
     : `${name} - Free Online ${TITLE_TYPE[category]}`;
 }
 
-/** Varied per-category privacy tail so 995 descriptions don't read as boilerplate. */
+/** Varied per-category privacy tail so descriptions don't read as boilerplate. */
 const PRIVACY_TAIL: Record<ToolCategory, string> = {
   crypto: 'Runs 100% in your browser — free, private, nothing is uploaded.',
   encoding: 'Free, in-browser and offline-capable — your data never leaves the page.',

@@ -9,7 +9,7 @@ const meta: ToolMetaStatic = {
   tags: ['base64', 'data uri', 'image', 'inline', 'css'],
   keywords: ['image to base64', 'data uri', 'inline image', 'embed image', 'css background'],
   icon: 'FileImage',
-  relatedTools: ['image-converter', 'base64-text', 'favicon-generator'],
+  relatedTools: ['image-converter', 'base64-text', 'image-favicon-generator'],
 };
 
 export default meta;
