@@ -69,7 +69,7 @@ const TIME_PRIMARY_EXPORTS: Record<string, string> = {
 };
 
 export interface ToolUsageInfo {
-  status: 'exact' | 'planned';
+  status: 'exact' | 'catalog';
   installCommand: string;
   importPath?: string;
   importName?: string;
@@ -89,11 +89,14 @@ export function getToolUsageInfo(tool: ToolMetaStatic): ToolUsageInfo {
     };
   }
 
+  const importPath = `${PACKAGE_NAME}/tools/${tool.category}/${tool.slug}`;
   return {
-    status: 'planned',
+    status: 'catalog',
     installCommand,
-    snippet: `// Coming soon: ${tool.name}\n// This browser tool does not have a published per-tool npm API yet.\n// Use the web UI for now, or check the developer docs for package coverage.`,
-    note: 'Coming soon. This exact tool has not been published as a typed npm API yet.',
+    importPath,
+    importName: 'tool',
+    snippet: `import { tool } from '${importPath}';\n\nconsole.log(tool.name);\nconsole.log(tool.webPath);\nconsole.log(tool.packageImportPath);`,
+    note: 'This tool has a typed npm package entry. Direct compute APIs continue to ship as they are extracted category-by-category.',
   };
 }
 

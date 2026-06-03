@@ -1,18 +1,28 @@
 # @open-utility-tools/core
 
-Framework-agnostic core logic extracted from [Open Utility Tools](https://github.com/saikiranreddyuppula/open-utility-tools) — the pure, dependency-free building blocks behind the web app. No React, no DOM, **zero runtime dependencies**.
+Framework-agnostic core logic and tool catalog extracted from [Open Utility Tools](https://github.com/saikiranreddyuppula/open-utility-tools) — the pure, dependency-free building blocks behind the web app. No React, no DOM, **zero runtime dependencies**.
 
-> **Scope.** Every function here is **isomorphic** — it runs identically in the browser, Node ≥ 20, and Bun. Pure-TS tiers (text, math, color, data, time, web, generators, WebCrypto) are plain modules; raster image tools are **WASM-backed** by the bundled `imaging` crate and work the same in all three runtimes. This is being built out tool-by-tool from the app's ~1,000 tools. **Landed:** the pure tiers, the WASM image tools, and the full **time** category (63 tools, each with a golden test suite). The rest are extracted category-by-category via the same pipeline.
+> **Scope.** Every function here is **isomorphic** — it runs identically in the browser, Node ≥ 20, and Bun. Pure-TS tiers (text, math, color, data, time, web, generators, WebCrypto) are plain modules; raster image tools are **WASM-backed** by the bundled `imaging` crate and work the same in all three runtimes. Every browser tool also has a typed package catalog entry under `@open-utility-tools/core/tools/*/*`. Direct compute APIs are being extracted category-by-category. **Landed:** the full tool catalog, the pure tiers, the WASM image tools, and the full **time** category (63 tools, each with a golden test suite).
 
 ## Per-tool subpaths
 
-Every tool is importable on its own subpath — pull in exactly one:
+Extracted compute APIs are importable on their own subpaths — pull in exactly one:
 
 ```ts
 import { calculateAge }     from '@open-utility-tools/core/time/age-calculator';
 import { addBusinessDays }  from '@open-utility-tools/core/time/add-business-days';
 import { parseCron }        from '@open-utility-tools/core/time/cron-parser';
 import { convert }          from '@open-utility-tools/core/image/convert';
+```
+
+Every browser tool also has a typed catalog subpath:
+
+```ts
+import { tool as jsonFormatter } from '@open-utility-tools/core/tools/data/json-formatter';
+
+console.log(jsonFormatter.name);              // "JSON Formatter"
+console.log(jsonFormatter.webPath);           // "/tools/json-formatter/"
+console.log(jsonFormatter.packageImportPath); // "@open-utility-tools/core/tools/data/json-formatter"
 ```
 
 ## Install
@@ -36,6 +46,7 @@ import { parseCron, nextRuns } from '@open-utility-tools/core/time';
 import { HTTP_STATUSES, MIME_TYPES } from '@open-utility-tools/core/web';
 import { uuidV7, generatePassword } from '@open-utility-tools/core/generators';
 import { signJwt, hotp } from '@open-utility-tools/core/crypto';
+import { getToolBySlug } from '@open-utility-tools/core/tools';
 ```
 
 Or grab everything as namespaces from the root entry:
@@ -53,12 +64,14 @@ text.cases.kebab('Hello World'); // "hello-world"
 | `…/math` | safe expression eval, gcd/lcm/primes/stats, roman numerals, unit conversion |
 | `…/color` | hex/rgb/hsl/hsv/cmyk/oklch conversion, luminance, WCAG contrast |
 | `…/data` | CSV ↔ JSON, JSON → TypeScript, YAML ↔ JSON |
-| `…/time` | 5-field cron parse / explain / next-runs |
+| `…/time` | legacy cron helpers plus namespaced access to extracted time tools |
 | `…/web` | HTTP status code + MIME type reference tables |
 | `…/generators` | lorem ipsum, fake records, .gitignore templates, UUID/ULID/nanoid, passwords |
 | `…/crypto` | JWT signing, HOTP, base32 decode, base64url (WebCrypto) |
 | `…/image` | WASM-backed raster `convert` + `probe` (browser/Node/Bun) |
 | `…/time/*` | 63 date/time tools, each on its own subpath (age, durations, cron, ISO-8601, timezones, …) |
+| `…/tools` | catalog helpers and metadata for every browser tool |
+| `…/tools/<category>/<slug>` | per-tool typed catalog entries for all 995 browser tools |
 
 ## Notes
 

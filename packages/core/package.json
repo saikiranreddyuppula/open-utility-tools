@@ -1,7 +1,7 @@
 {
   "name": "@open-utility-tools/core",
   "version": "0.2.0",
-  "description": "Framework-agnostic core logic from Open Utility Tools: text, math, color, data, time, web, generators, and WebCrypto helpers. Zero runtime dependencies.",
+  "description": "Framework-agnostic core logic and a typed catalog for every Open Utility Tools browser tool. Zero runtime dependencies.",
   "license": "MIT",
   "author": "Sai Kiran Reddy Uppula",
   "type": "module",
@@ -331,16 +331,4009 @@
       "types": "./dist/time/working-hours-calculator.d.ts",
       "import": "./dist/time/working-hours-calculator.js"
     },
+    "./tools": {
+      "types": "./dist/tools/index.d.ts",
+      "import": "./dist/tools/index.js"
+    },
+    "./tools/color/accessible-text-color": {
+      "types": "./dist/tools/color/accessible-text-color.d.ts",
+      "import": "./dist/tools/color/accessible-text-color.js"
+    },
+    "./tools/color/alpha-blend-over-background": {
+      "types": "./dist/tools/color/alpha-blend-over-background.d.ts",
+      "import": "./dist/tools/color/alpha-blend-over-background.js"
+    },
+    "./tools/color/analogous-color-scheme": {
+      "types": "./dist/tools/color/analogous-color-scheme.d.ts",
+      "import": "./dist/tools/color/analogous-color-scheme.js"
+    },
+    "./tools/color/box-shadow-generator": {
+      "types": "./dist/tools/color/box-shadow-generator.d.ts",
+      "import": "./dist/tools/color/box-shadow-generator.js"
+    },
+    "./tools/color/color-ansi-256-to-rgb": {
+      "types": "./dist/tools/color/color-ansi-256-to-rgb.d.ts",
+      "import": "./dist/tools/color/color-ansi-256-to-rgb.js"
+    },
+    "./tools/color/color-blend-modes-calculator": {
+      "types": "./dist/tools/color/color-blend-modes-calculator.d.ts",
+      "import": "./dist/tools/color/color-blend-modes-calculator.js"
+    },
+    "./tools/color/color-blindness": {
+      "types": "./dist/tools/color/color-blindness.d.ts",
+      "import": "./dist/tools/color/color-blindness.js"
+    },
+    "./tools/color/color-contrast-suggester": {
+      "types": "./dist/tools/color/color-contrast-suggester.d.ts",
+      "import": "./dist/tools/color/color-contrast-suggester.js"
+    },
+    "./tools/color/color-converter": {
+      "types": "./dist/tools/color/color-converter.d.ts",
+      "import": "./dist/tools/color/color-converter.js"
+    },
+    "./tools/color/color-css-gradient-extract-stops": {
+      "types": "./dist/tools/color/color-css-gradient-extract-stops.d.ts",
+      "import": "./dist/tools/color/color-css-gradient-extract-stops.js"
+    },
+    "./tools/color/color-distance-deltae": {
+      "types": "./dist/tools/color/color-distance-deltae.d.ts",
+      "import": "./dist/tools/color/color-distance-deltae.js"
+    },
+    "./tools/color/color-format-allinone": {
+      "types": "./dist/tools/color/color-format-allinone.d.ts",
+      "import": "./dist/tools/color/color-format-allinone.js"
+    },
+    "./tools/color/color-gradient-css-to-svg": {
+      "types": "./dist/tools/color/color-gradient-css-to-svg.d.ts",
+      "import": "./dist/tools/color/color-gradient-css-to-svg.js"
+    },
+    "./tools/color/color-harmony": {
+      "types": "./dist/tools/color/color-harmony.d.ts",
+      "import": "./dist/tools/color/color-harmony.js"
+    },
+    "./tools/color/color-image-free-dominant-from-hexlist": {
+      "types": "./dist/tools/color/color-image-free-dominant-from-hexlist.d.ts",
+      "import": "./dist/tools/color/color-image-free-dominant-from-hexlist.js"
+    },
+    "./tools/color/color-invert-calculator": {
+      "types": "./dist/tools/color/color-invert-calculator.d.ts",
+      "import": "./dist/tools/color/color-invert-calculator.js"
+    },
+    "./tools/color/color-luminance-calculator": {
+      "types": "./dist/tools/color/color-luminance-calculator.d.ts",
+      "import": "./dist/tools/color/color-luminance-calculator.js"
+    },
+    "./tools/color/color-mix-css-builder": {
+      "types": "./dist/tools/color/color-mix-css-builder.d.ts",
+      "import": "./dist/tools/color/color-mix-css-builder.js"
+    },
+    "./tools/color/color-mixer": {
+      "types": "./dist/tools/color/color-mixer.d.ts",
+      "import": "./dist/tools/color/color-mixer.js"
+    },
+    "./tools/color/color-name-finder": {
+      "types": "./dist/tools/color/color-name-finder.d.ts",
+      "import": "./dist/tools/color/color-name-finder.js"
+    },
+    "./tools/color/color-palette-to-svg-swatches": {
+      "types": "./dist/tools/color/color-palette-to-svg-swatches.d.ts",
+      "import": "./dist/tools/color/color-palette-to-svg-swatches.js"
+    },
+    "./tools/color/color-picker": {
+      "types": "./dist/tools/color/color-picker.d.ts",
+      "import": "./dist/tools/color/color-picker.js"
+    },
+    "./tools/color/color-rgb-to-rgb565": {
+      "types": "./dist/tools/color/color-rgb-to-rgb565.d.ts",
+      "import": "./dist/tools/color/color-rgb-to-rgb565.js"
+    },
+    "./tools/color/color-scale-generator": {
+      "types": "./dist/tools/color/color-scale-generator.d.ts",
+      "import": "./dist/tools/color/color-scale-generator.js"
+    },
+    "./tools/color/color-shade-namer": {
+      "types": "./dist/tools/color/color-shade-namer.d.ts",
+      "import": "./dist/tools/color/color-shade-namer.js"
+    },
+    "./tools/color/color-shades": {
+      "types": "./dist/tools/color/color-shades.d.ts",
+      "import": "./dist/tools/color/color-shades.js"
+    },
+    "./tools/color/color-sort-by-hue": {
+      "types": "./dist/tools/color/color-sort-by-hue.d.ts",
+      "import": "./dist/tools/color/color-sort-by-hue.js"
+    },
+    "./tools/color/color-temperature-shift": {
+      "types": "./dist/tools/color/color-temperature-shift.d.ts",
+      "import": "./dist/tools/color/color-temperature-shift.js"
+    },
+    "./tools/color/color-tints-generator": {
+      "types": "./dist/tools/color/color-tints-generator.d.ts",
+      "import": "./dist/tools/color/color-tints-generator.js"
+    },
+    "./tools/color/color-tones-generator": {
+      "types": "./dist/tools/color/color-tones-generator.d.ts",
+      "import": "./dist/tools/color/color-tones-generator.js"
+    },
+    "./tools/color/color-wcag-apca-lightness-contrast": {
+      "types": "./dist/tools/color/color-wcag-apca-lightness-contrast.d.ts",
+      "import": "./dist/tools/color/color-wcag-apca-lightness-contrast.js"
+    },
+    "./tools/color/complementary-color-finder": {
+      "types": "./dist/tools/color/complementary-color-finder.d.ts",
+      "import": "./dist/tools/color/complementary-color-finder.js"
+    },
+    "./tools/color/contrast-checker": {
+      "types": "./dist/tools/color/contrast-checker.d.ts",
+      "import": "./dist/tools/color/contrast-checker.js"
+    },
+    "./tools/color/contrast-ratio-grid": {
+      "types": "./dist/tools/color/contrast-ratio-grid.d.ts",
+      "import": "./dist/tools/color/contrast-ratio-grid.js"
+    },
+    "./tools/color/css-color-function-builder": {
+      "types": "./dist/tools/color/css-color-function-builder.d.ts",
+      "import": "./dist/tools/color/css-color-function-builder.js"
+    },
+    "./tools/color/desaturate-color": {
+      "types": "./dist/tools/color/desaturate-color.d.ts",
+      "import": "./dist/tools/color/desaturate-color.js"
+    },
+    "./tools/color/dominant-color-math": {
+      "types": "./dist/tools/color/dominant-color-math.d.ts",
+      "import": "./dist/tools/color/dominant-color-math.js"
+    },
+    "./tools/color/duotone-css-generator": {
+      "types": "./dist/tools/color/duotone-css-generator.d.ts",
+      "import": "./dist/tools/color/duotone-css-generator.js"
+    },
+    "./tools/color/gradient-generator": {
+      "types": "./dist/tools/color/gradient-generator.d.ts",
+      "import": "./dist/tools/color/gradient-generator.js"
+    },
+    "./tools/color/gradient-stops-generator": {
+      "types": "./dist/tools/color/gradient-stops-generator.d.ts",
+      "import": "./dist/tools/color/gradient-stops-generator.js"
+    },
+    "./tools/color/grayscale-converter": {
+      "types": "./dist/tools/color/grayscale-converter.d.ts",
+      "import": "./dist/tools/color/grayscale-converter.js"
+    },
+    "./tools/color/hex-shorthand-converter": {
+      "types": "./dist/tools/color/hex-shorthand-converter.d.ts",
+      "import": "./dist/tools/color/hex-shorthand-converter.js"
+    },
+    "./tools/color/hex-to-rgba": {
+      "types": "./dist/tools/color/hex-to-rgba.d.ts",
+      "import": "./dist/tools/color/hex-to-rgba.js"
+    },
+    "./tools/color/hsl-to-hex": {
+      "types": "./dist/tools/color/hsl-to-hex.d.ts",
+      "import": "./dist/tools/color/hsl-to-hex.js"
+    },
+    "./tools/color/hue-rotate-calculator": {
+      "types": "./dist/tools/color/hue-rotate-calculator.d.ts",
+      "import": "./dist/tools/color/hue-rotate-calculator.js"
+    },
+    "./tools/color/image-color-extractor": {
+      "types": "./dist/tools/color/image-color-extractor.d.ts",
+      "import": "./dist/tools/color/image-color-extractor.js"
+    },
+    "./tools/color/kelvin-to-rgb": {
+      "types": "./dist/tools/color/kelvin-to-rgb.d.ts",
+      "import": "./dist/tools/color/kelvin-to-rgb.js"
+    },
+    "./tools/color/lighten-darken-color": {
+      "types": "./dist/tools/color/lighten-darken-color.d.ts",
+      "import": "./dist/tools/color/lighten-darken-color.js"
+    },
+    "./tools/color/material-colors": {
+      "types": "./dist/tools/color/material-colors.d.ts",
+      "import": "./dist/tools/color/material-colors.js"
+    },
+    "./tools/color/monochrome-scale-generator": {
+      "types": "./dist/tools/color/monochrome-scale-generator.d.ts",
+      "import": "./dist/tools/color/monochrome-scale-generator.js"
+    },
+    "./tools/color/named-colors": {
+      "types": "./dist/tools/color/named-colors.d.ts",
+      "import": "./dist/tools/color/named-colors.js"
+    },
+    "./tools/color/nearest-named-color": {
+      "types": "./dist/tools/color/nearest-named-color.d.ts",
+      "import": "./dist/tools/color/nearest-named-color.js"
+    },
+    "./tools/color/nearest-pantone-name": {
+      "types": "./dist/tools/color/nearest-pantone-name.d.ts",
+      "import": "./dist/tools/color/nearest-pantone-name.js"
+    },
+    "./tools/color/nearest-tailwind-color": {
+      "types": "./dist/tools/color/nearest-tailwind-color.d.ts",
+      "import": "./dist/tools/color/nearest-tailwind-color.js"
+    },
+    "./tools/color/oklch-converter": {
+      "types": "./dist/tools/color/oklch-converter.d.ts",
+      "import": "./dist/tools/color/oklch-converter.js"
+    },
+    "./tools/color/palette-from-numbers": {
+      "types": "./dist/tools/color/palette-from-numbers.d.ts",
+      "import": "./dist/tools/color/palette-from-numbers.js"
+    },
+    "./tools/color/random-color": {
+      "types": "./dist/tools/color/random-color.d.ts",
+      "import": "./dist/tools/color/random-color.js"
+    },
+    "./tools/color/random-palette-by-mood": {
+      "types": "./dist/tools/color/random-palette-by-mood.d.ts",
+      "import": "./dist/tools/color/random-palette-by-mood.js"
+    },
+    "./tools/color/rgb-to-cmyk-converter": {
+      "types": "./dist/tools/color/rgb-to-cmyk-converter.d.ts",
+      "import": "./dist/tools/color/rgb-to-cmyk-converter.js"
+    },
+    "./tools/color/rgb-to-hex": {
+      "types": "./dist/tools/color/rgb-to-hex.d.ts",
+      "import": "./dist/tools/color/rgb-to-hex.js"
+    },
+    "./tools/color/rgb-to-hsl-converter": {
+      "types": "./dist/tools/color/rgb-to-hsl-converter.d.ts",
+      "import": "./dist/tools/color/rgb-to-hsl-converter.js"
+    },
+    "./tools/color/rgb-to-hsv-converter": {
+      "types": "./dist/tools/color/rgb-to-hsv-converter.d.ts",
+      "import": "./dist/tools/color/rgb-to-hsv-converter.js"
+    },
+    "./tools/color/rgb-to-hwb-converter": {
+      "types": "./dist/tools/color/rgb-to-hwb-converter.d.ts",
+      "import": "./dist/tools/color/rgb-to-hwb-converter.js"
+    },
+    "./tools/color/rgb-to-lab-converter": {
+      "types": "./dist/tools/color/rgb-to-lab-converter.d.ts",
+      "import": "./dist/tools/color/rgb-to-lab-converter.js"
+    },
+    "./tools/color/rgb-to-lch-converter": {
+      "types": "./dist/tools/color/rgb-to-lch-converter.d.ts",
+      "import": "./dist/tools/color/rgb-to-lch-converter.js"
+    },
+    "./tools/color/rgb-to-xyz-converter": {
+      "types": "./dist/tools/color/rgb-to-xyz-converter.d.ts",
+      "import": "./dist/tools/color/rgb-to-xyz-converter.js"
+    },
+    "./tools/color/sepia-tone-css": {
+      "types": "./dist/tools/color/sepia-tone-css.d.ts",
+      "import": "./dist/tools/color/sepia-tone-css.js"
+    },
+    "./tools/color/split-complementary-scheme": {
+      "types": "./dist/tools/color/split-complementary-scheme.d.ts",
+      "import": "./dist/tools/color/split-complementary-scheme.js"
+    },
+    "./tools/color/tailwind-colors": {
+      "types": "./dist/tools/color/tailwind-colors.d.ts",
+      "import": "./dist/tools/color/tailwind-colors.js"
+    },
+    "./tools/color/tetradic-color-scheme": {
+      "types": "./dist/tools/color/tetradic-color-scheme.d.ts",
+      "import": "./dist/tools/color/tetradic-color-scheme.js"
+    },
+    "./tools/color/triadic-color-scheme": {
+      "types": "./dist/tools/color/triadic-color-scheme.d.ts",
+      "import": "./dist/tools/color/triadic-color-scheme.js"
+    },
+    "./tools/color/wcag-contrast-pair-finder": {
+      "types": "./dist/tools/color/wcag-contrast-pair-finder.d.ts",
+      "import": "./dist/tools/color/wcag-contrast-pair-finder.js"
+    },
+    "./tools/convert/acceleration-converter": {
+      "types": "./dist/tools/convert/acceleration-converter.d.ts",
+      "import": "./dist/tools/convert/acceleration-converter.js"
+    },
+    "./tools/convert/angle-subunits-converter": {
+      "types": "./dist/tools/convert/angle-subunits-converter.d.ts",
+      "import": "./dist/tools/convert/angle-subunits-converter.js"
+    },
+    "./tools/convert/area-converter": {
+      "types": "./dist/tools/convert/area-converter.d.ts",
+      "import": "./dist/tools/convert/area-converter.js"
+    },
+    "./tools/convert/ascii-table-to-json": {
+      "types": "./dist/tools/convert/ascii-table-to-json.d.ts",
+      "import": "./dist/tools/convert/ascii-table-to-json.js"
+    },
+    "./tools/convert/astronomical-distance-converter": {
+      "types": "./dist/tools/convert/astronomical-distance-converter.d.ts",
+      "import": "./dist/tools/convert/astronomical-distance-converter.js"
+    },
+    "./tools/convert/base64-to-file": {
+      "types": "./dist/tools/convert/base64-to-file.d.ts",
+      "import": "./dist/tools/convert/base64-to-file.js"
+    },
+    "./tools/convert/bytes-to-human-converter": {
+      "types": "./dist/tools/convert/bytes-to-human-converter.d.ts",
+      "import": "./dist/tools/convert/bytes-to-human-converter.js"
+    },
+    "./tools/convert/clothing-size-converter": {
+      "types": "./dist/tools/convert/clothing-size-converter.d.ts",
+      "import": "./dist/tools/convert/clothing-size-converter.js"
+    },
+    "./tools/convert/convert-color-list-to-tailwind-config": {
+      "types": "./dist/tools/convert/convert-color-list-to-tailwind-config.d.ts",
+      "import": "./dist/tools/convert/convert-color-list-to-tailwind-config.js"
+    },
+    "./tools/convert/convert-cron-to-human-and-quartz": {
+      "types": "./dist/tools/convert/convert-cron-to-human-and-quartz.d.ts",
+      "import": "./dist/tools/convert/convert-cron-to-human-and-quartz.js"
+    },
+    "./tools/convert/convert-cron-to-human-multi": {
+      "types": "./dist/tools/convert/convert-cron-to-human-multi.d.ts",
+      "import": "./dist/tools/convert/convert-cron-to-human-multi.js"
+    },
+    "./tools/convert/convert-csv-to-json-objects": {
+      "types": "./dist/tools/convert/convert-csv-to-json-objects.d.ts",
+      "import": "./dist/tools/convert/convert-csv-to-json-objects.js"
+    },
+    "./tools/convert/convert-csv-to-sql-insert-batch": {
+      "types": "./dist/tools/convert/convert-csv-to-sql-insert-batch.d.ts",
+      "import": "./dist/tools/convert/convert-csv-to-sql-insert-batch.js"
+    },
+    "./tools/convert/convert-graphql-query-to-curl": {
+      "types": "./dist/tools/convert/convert-graphql-query-to-curl.d.ts",
+      "import": "./dist/tools/convert/convert-graphql-query-to-curl.js"
+    },
+    "./tools/convert/convert-har-to-curl": {
+      "types": "./dist/tools/convert/convert-har-to-curl.d.ts",
+      "import": "./dist/tools/convert/convert-har-to-curl.js"
+    },
+    "./tools/convert/convert-jsonl-to-sql-insert": {
+      "types": "./dist/tools/convert/convert-jsonl-to-sql-insert.d.ts",
+      "import": "./dist/tools/convert/convert-jsonl-to-sql-insert.js"
+    },
+    "./tools/convert/convert-openapi-to-curl": {
+      "types": "./dist/tools/convert/convert-openapi-to-curl.d.ts",
+      "import": "./dist/tools/convert/convert-openapi-to-curl.js"
+    },
+    "./tools/convert/convert-svg-to-jsx": {
+      "types": "./dist/tools/convert/convert-svg-to-jsx.d.ts",
+      "import": "./dist/tools/convert/convert-svg-to-jsx.js"
+    },
+    "./tools/convert/cooking-pan-size-converter": {
+      "types": "./dist/tools/convert/cooking-pan-size-converter.d.ts",
+      "import": "./dist/tools/convert/cooking-pan-size-converter.js"
+    },
+    "./tools/convert/cooking-temperature-converter": {
+      "types": "./dist/tools/convert/cooking-temperature-converter.d.ts",
+      "import": "./dist/tools/convert/cooking-temperature-converter.js"
+    },
+    "./tools/convert/css-shorthand-expander": {
+      "types": "./dist/tools/convert/css-shorthand-expander.d.ts",
+      "import": "./dist/tools/convert/css-shorthand-expander.js"
+    },
+    "./tools/convert/csv-to-markdown": {
+      "types": "./dist/tools/convert/csv-to-markdown.d.ts",
+      "import": "./dist/tools/convert/csv-to-markdown.js"
+    },
+    "./tools/convert/csv-to-tsv": {
+      "types": "./dist/tools/convert/csv-to-tsv.d.ts",
+      "import": "./dist/tools/convert/csv-to-tsv.js"
+    },
+    "./tools/convert/csv-to-xml": {
+      "types": "./dist/tools/convert/csv-to-xml.d.ts",
+      "import": "./dist/tools/convert/csv-to-xml.js"
+    },
+    "./tools/convert/csv-to-yaml": {
+      "types": "./dist/tools/convert/csv-to-yaml.d.ts",
+      "import": "./dist/tools/convert/csv-to-yaml.js"
+    },
+    "./tools/convert/curl-to-httpie": {
+      "types": "./dist/tools/convert/curl-to-httpie.d.ts",
+      "import": "./dist/tools/convert/curl-to-httpie.js"
+    },
+    "./tools/convert/currency-unit-naming": {
+      "types": "./dist/tools/convert/currency-unit-naming.d.ts",
+      "import": "./dist/tools/convert/currency-unit-naming.js"
+    },
+    "./tools/convert/data-size-converter": {
+      "types": "./dist/tools/convert/data-size-converter.d.ts",
+      "import": "./dist/tools/convert/data-size-converter.js"
+    },
+    "./tools/convert/data-storage-units-converter": {
+      "types": "./dist/tools/convert/data-storage-units-converter.d.ts",
+      "import": "./dist/tools/convert/data-storage-units-converter.js"
+    },
+    "./tools/convert/data-transfer-time-calculator": {
+      "types": "./dist/tools/convert/data-transfer-time-calculator.d.ts",
+      "import": "./dist/tools/convert/data-transfer-time-calculator.js"
+    },
+    "./tools/convert/density-converter": {
+      "types": "./dist/tools/convert/density-converter.d.ts",
+      "import": "./dist/tools/convert/density-converter.js"
+    },
+    "./tools/convert/dpi-ppi-size-converter": {
+      "types": "./dist/tools/convert/dpi-ppi-size-converter.d.ts",
+      "import": "./dist/tools/convert/dpi-ppi-size-converter.js"
+    },
+    "./tools/convert/energy-converter": {
+      "types": "./dist/tools/convert/energy-converter.d.ts",
+      "import": "./dist/tools/convert/energy-converter.js"
+    },
+    "./tools/convert/env-to-shell-exports": {
+      "types": "./dist/tools/convert/env-to-shell-exports.d.ts",
+      "import": "./dist/tools/convert/env-to-shell-exports.js"
+    },
+    "./tools/convert/flow-rate-converter": {
+      "types": "./dist/tools/convert/flow-rate-converter.d.ts",
+      "import": "./dist/tools/convert/flow-rate-converter.js"
+    },
+    "./tools/convert/force-converter": {
+      "types": "./dist/tools/convert/force-converter.d.ts",
+      "import": "./dist/tools/convert/force-converter.js"
+    },
+    "./tools/convert/frequency-converter": {
+      "types": "./dist/tools/convert/frequency-converter.d.ts",
+      "import": "./dist/tools/convert/frequency-converter.js"
+    },
+    "./tools/convert/fuel-volume-converter": {
+      "types": "./dist/tools/convert/fuel-volume-converter.d.ts",
+      "import": "./dist/tools/convert/fuel-volume-converter.js"
+    },
+    "./tools/convert/hex-to-rgb-code": {
+      "types": "./dist/tools/convert/hex-to-rgb-code.d.ts",
+      "import": "./dist/tools/convert/hex-to-rgb-code.js"
+    },
+    "./tools/convert/html-table-to-markdown": {
+      "types": "./dist/tools/convert/html-table-to-markdown.d.ts",
+      "import": "./dist/tools/convert/html-table-to-markdown.js"
+    },
+    "./tools/convert/html-to-markdown": {
+      "types": "./dist/tools/convert/html-to-markdown.d.ts",
+      "import": "./dist/tools/convert/html-to-markdown.js"
+    },
+    "./tools/convert/html-to-pug": {
+      "types": "./dist/tools/convert/html-to-pug.d.ts",
+      "import": "./dist/tools/convert/html-to-pug.js"
+    },
+    "./tools/convert/httpie-to-curl": {
+      "types": "./dist/tools/convert/httpie-to-curl.d.ts",
+      "import": "./dist/tools/convert/httpie-to-curl.js"
+    },
+    "./tools/convert/illuminance-converter": {
+      "types": "./dist/tools/convert/illuminance-converter.d.ts",
+      "import": "./dist/tools/convert/illuminance-converter.js"
+    },
+    "./tools/convert/ingredient-weight-volume-converter": {
+      "types": "./dist/tools/convert/ingredient-weight-volume-converter.d.ts",
+      "import": "./dist/tools/convert/ingredient-weight-volume-converter.js"
+    },
+    "./tools/convert/ini-to-json": {
+      "types": "./dist/tools/convert/ini-to-json.d.ts",
+      "import": "./dist/tools/convert/ini-to-json.js"
+    },
+    "./tools/convert/js-object-to-json": {
+      "types": "./dist/tools/convert/js-object-to-json.d.ts",
+      "import": "./dist/tools/convert/js-object-to-json.js"
+    },
+    "./tools/convert/json-array-to-list": {
+      "types": "./dist/tools/convert/json-array-to-list.d.ts",
+      "import": "./dist/tools/convert/json-array-to-list.js"
+    },
+    "./tools/convert/json-to-go": {
+      "types": "./dist/tools/convert/json-to-go.d.ts",
+      "import": "./dist/tools/convert/json-to-go.js"
+    },
+    "./tools/convert/json-to-ini": {
+      "types": "./dist/tools/convert/json-to-ini.d.ts",
+      "import": "./dist/tools/convert/json-to-ini.js"
+    },
+    "./tools/convert/json-to-kv-pairs": {
+      "types": "./dist/tools/convert/json-to-kv-pairs.d.ts",
+      "import": "./dist/tools/convert/json-to-kv-pairs.js"
+    },
+    "./tools/convert/json-to-php-array": {
+      "types": "./dist/tools/convert/json-to-php-array.d.ts",
+      "import": "./dist/tools/convert/json-to-php-array.js"
+    },
+    "./tools/convert/json-to-plist": {
+      "types": "./dist/tools/convert/json-to-plist.d.ts",
+      "import": "./dist/tools/convert/json-to-plist.js"
+    },
+    "./tools/convert/json-to-properties": {
+      "types": "./dist/tools/convert/json-to-properties.d.ts",
+      "import": "./dist/tools/convert/json-to-properties.js"
+    },
+    "./tools/convert/json-to-ruby-hash": {
+      "types": "./dist/tools/convert/json-to-ruby-hash.d.ts",
+      "import": "./dist/tools/convert/json-to-ruby-hash.js"
+    },
+    "./tools/convert/json-to-xml": {
+      "types": "./dist/tools/convert/json-to-xml.d.ts",
+      "import": "./dist/tools/convert/json-to-xml.js"
+    },
+    "./tools/convert/json-to-xml-attributes": {
+      "types": "./dist/tools/convert/json-to-xml-attributes.d.ts",
+      "import": "./dist/tools/convert/json-to-xml-attributes.js"
+    },
+    "./tools/convert/json-to-yaml": {
+      "types": "./dist/tools/convert/json-to-yaml.d.ts",
+      "import": "./dist/tools/convert/json-to-yaml.js"
+    },
+    "./tools/convert/jsx-to-html": {
+      "types": "./dist/tools/convert/jsx-to-html.d.ts",
+      "import": "./dist/tools/convert/jsx-to-html.js"
+    },
+    "./tools/convert/key-value-to-json": {
+      "types": "./dist/tools/convert/key-value-to-json.d.ts",
+      "import": "./dist/tools/convert/key-value-to-json.js"
+    },
+    "./tools/convert/kv-pairs-to-json": {
+      "types": "./dist/tools/convert/kv-pairs-to-json.d.ts",
+      "import": "./dist/tools/convert/kv-pairs-to-json.js"
+    },
+    "./tools/convert/length-converter": {
+      "types": "./dist/tools/convert/length-converter.d.ts",
+      "import": "./dist/tools/convert/length-converter.js"
+    },
+    "./tools/convert/list-to-json-array": {
+      "types": "./dist/tools/convert/list-to-json-array.d.ts",
+      "import": "./dist/tools/convert/list-to-json-array.js"
+    },
+    "./tools/convert/luminance-converter": {
+      "types": "./dist/tools/convert/luminance-converter.d.ts",
+      "import": "./dist/tools/convert/luminance-converter.js"
+    },
+    "./tools/convert/magnetic-field-converter": {
+      "types": "./dist/tools/convert/magnetic-field-converter.d.ts",
+      "import": "./dist/tools/convert/magnetic-field-converter.js"
+    },
+    "./tools/convert/markdown-list-to-json": {
+      "types": "./dist/tools/convert/markdown-list-to-json.d.ts",
+      "import": "./dist/tools/convert/markdown-list-to-json.js"
+    },
+    "./tools/convert/markdown-table-to-csv": {
+      "types": "./dist/tools/convert/markdown-table-to-csv.d.ts",
+      "import": "./dist/tools/convert/markdown-table-to-csv.js"
+    },
+    "./tools/convert/markdown-table-to-html": {
+      "types": "./dist/tools/convert/markdown-table-to-html.d.ts",
+      "import": "./dist/tools/convert/markdown-table-to-html.js"
+    },
+    "./tools/convert/markdown-to-jsx": {
+      "types": "./dist/tools/convert/markdown-to-jsx.d.ts",
+      "import": "./dist/tools/convert/markdown-to-jsx.js"
+    },
+    "./tools/convert/mass-weight-converter": {
+      "types": "./dist/tools/convert/mass-weight-converter.d.ts",
+      "import": "./dist/tools/convert/mass-weight-converter.js"
+    },
+    "./tools/convert/number-base-words": {
+      "types": "./dist/tools/convert/number-base-words.d.ts",
+      "import": "./dist/tools/convert/number-base-words.js"
+    },
+    "./tools/convert/number-to-roman-words-variants": {
+      "types": "./dist/tools/convert/number-to-roman-words-variants.d.ts",
+      "import": "./dist/tools/convert/number-to-roman-words-variants.js"
+    },
+    "./tools/convert/number-to-words": {
+      "types": "./dist/tools/convert/number-to-words.d.ts",
+      "import": "./dist/tools/convert/number-to-words.js"
+    },
+    "./tools/convert/paper-size-converter": {
+      "types": "./dist/tools/convert/paper-size-converter.d.ts",
+      "import": "./dist/tools/convert/paper-size-converter.js"
+    },
+    "./tools/convert/php-array-to-json": {
+      "types": "./dist/tools/convert/php-array-to-json.d.ts",
+      "import": "./dist/tools/convert/php-array-to-json.js"
+    },
+    "./tools/convert/plist-to-json": {
+      "types": "./dist/tools/convert/plist-to-json.d.ts",
+      "import": "./dist/tools/convert/plist-to-json.js"
+    },
+    "./tools/convert/power-converter": {
+      "types": "./dist/tools/convert/power-converter.d.ts",
+      "import": "./dist/tools/convert/power-converter.js"
+    },
+    "./tools/convert/pressure-converter": {
+      "types": "./dist/tools/convert/pressure-converter.d.ts",
+      "import": "./dist/tools/convert/pressure-converter.js"
+    },
+    "./tools/convert/properties-to-json": {
+      "types": "./dist/tools/convert/properties-to-json.d.ts",
+      "import": "./dist/tools/convert/properties-to-json.js"
+    },
+    "./tools/convert/properties-to-yaml": {
+      "types": "./dist/tools/convert/properties-to-yaml.d.ts",
+      "import": "./dist/tools/convert/properties-to-yaml.js"
+    },
+    "./tools/convert/pug-to-html": {
+      "types": "./dist/tools/convert/pug-to-html.d.ts",
+      "import": "./dist/tools/convert/pug-to-html.js"
+    },
+    "./tools/convert/query-string-to-json": {
+      "types": "./dist/tools/convert/query-string-to-json.d.ts",
+      "import": "./dist/tools/convert/query-string-to-json.js"
+    },
+    "./tools/convert/querystring-to-curl": {
+      "types": "./dist/tools/convert/querystring-to-curl.d.ts",
+      "import": "./dist/tools/convert/querystring-to-curl.js"
+    },
+    "./tools/convert/radiation-dose-converter": {
+      "types": "./dist/tools/convert/radiation-dose-converter.d.ts",
+      "import": "./dist/tools/convert/radiation-dose-converter.js"
+    },
+    "./tools/convert/radioactivity-converter": {
+      "types": "./dist/tools/convert/radioactivity-converter.d.ts",
+      "import": "./dist/tools/convert/radioactivity-converter.js"
+    },
+    "./tools/convert/ring-size-converter": {
+      "types": "./dist/tools/convert/ring-size-converter.d.ts",
+      "import": "./dist/tools/convert/ring-size-converter.js"
+    },
+    "./tools/convert/ruby-hash-to-json": {
+      "types": "./dist/tools/convert/ruby-hash-to-json.d.ts",
+      "import": "./dist/tools/convert/ruby-hash-to-json.js"
+    },
+    "./tools/convert/shoe-size-converter": {
+      "types": "./dist/tools/convert/shoe-size-converter.d.ts",
+      "import": "./dist/tools/convert/shoe-size-converter.js"
+    },
+    "./tools/convert/speed-converter": {
+      "types": "./dist/tools/convert/speed-converter.d.ts",
+      "import": "./dist/tools/convert/speed-converter.js"
+    },
+    "./tools/convert/svg-path-rounder": {
+      "types": "./dist/tools/convert/svg-path-rounder.d.ts",
+      "import": "./dist/tools/convert/svg-path-rounder.js"
+    },
+    "./tools/convert/temperature-converter": {
+      "types": "./dist/tools/convert/temperature-converter.d.ts",
+      "import": "./dist/tools/convert/temperature-converter.js"
+    },
+    "./tools/convert/time-precise-converter": {
+      "types": "./dist/tools/convert/time-precise-converter.d.ts",
+      "import": "./dist/tools/convert/time-precise-converter.js"
+    },
+    "./tools/convert/toml-to-json": {
+      "types": "./dist/tools/convert/toml-to-json.d.ts",
+      "import": "./dist/tools/convert/toml-to-json.js"
+    },
+    "./tools/convert/toml-to-yaml": {
+      "types": "./dist/tools/convert/toml-to-yaml.d.ts",
+      "import": "./dist/tools/convert/toml-to-yaml.js"
+    },
+    "./tools/convert/torque-converter": {
+      "types": "./dist/tools/convert/torque-converter.d.ts",
+      "import": "./dist/tools/convert/torque-converter.js"
+    },
+    "./tools/convert/tsv-to-json": {
+      "types": "./dist/tools/convert/tsv-to-json.d.ts",
+      "import": "./dist/tools/convert/tsv-to-json.js"
+    },
+    "./tools/convert/typography-units-converter": {
+      "types": "./dist/tools/convert/typography-units-converter.d.ts",
+      "import": "./dist/tools/convert/typography-units-converter.js"
+    },
+    "./tools/convert/unicode-code-point-converter": {
+      "types": "./dist/tools/convert/unicode-code-point-converter.d.ts",
+      "import": "./dist/tools/convert/unicode-code-point-converter.js"
+    },
+    "./tools/convert/viscosity-converter": {
+      "types": "./dist/tools/convert/viscosity-converter.d.ts",
+      "import": "./dist/tools/convert/viscosity-converter.js"
+    },
+    "./tools/convert/volume-converter": {
+      "types": "./dist/tools/convert/volume-converter.d.ts",
+      "import": "./dist/tools/convert/volume-converter.js"
+    },
+    "./tools/convert/xml-attributes-to-elements": {
+      "types": "./dist/tools/convert/xml-attributes-to-elements.d.ts",
+      "import": "./dist/tools/convert/xml-attributes-to-elements.js"
+    },
+    "./tools/convert/xml-attributes-to-json": {
+      "types": "./dist/tools/convert/xml-attributes-to-json.d.ts",
+      "import": "./dist/tools/convert/xml-attributes-to-json.js"
+    },
+    "./tools/convert/xml-to-csv": {
+      "types": "./dist/tools/convert/xml-to-csv.d.ts",
+      "import": "./dist/tools/convert/xml-to-csv.js"
+    },
+    "./tools/convert/xml-to-json": {
+      "types": "./dist/tools/convert/xml-to-json.d.ts",
+      "import": "./dist/tools/convert/xml-to-json.js"
+    },
+    "./tools/convert/yaml-to-csv": {
+      "types": "./dist/tools/convert/yaml-to-csv.d.ts",
+      "import": "./dist/tools/convert/yaml-to-csv.js"
+    },
+    "./tools/convert/yaml-to-json": {
+      "types": "./dist/tools/convert/yaml-to-json.d.ts",
+      "import": "./dist/tools/convert/yaml-to-json.js"
+    },
+    "./tools/convert/yaml-to-toml": {
+      "types": "./dist/tools/convert/yaml-to-toml.d.ts",
+      "import": "./dist/tools/convert/yaml-to-toml.js"
+    },
+    "./tools/crypto/aba-routing-validator": {
+      "types": "./dist/tools/crypto/aba-routing-validator.d.ts",
+      "import": "./dist/tools/crypto/aba-routing-validator.js"
+    },
+    "./tools/crypto/adler32-checksum": {
+      "types": "./dist/tools/crypto/adler32-checksum.d.ts",
+      "import": "./dist/tools/crypto/adler32-checksum.js"
+    },
+    "./tools/crypto/aes-cbc-text": {
+      "types": "./dist/tools/crypto/aes-cbc-text.d.ts",
+      "import": "./dist/tools/crypto/aes-cbc-text.js"
+    },
+    "./tools/crypto/aes-encrypt-decrypt": {
+      "types": "./dist/tools/crypto/aes-encrypt-decrypt.d.ts",
+      "import": "./dist/tools/crypto/aes-encrypt-decrypt.js"
+    },
+    "./tools/crypto/aes-gcm-file": {
+      "types": "./dist/tools/crypto/aes-gcm-file.d.ts",
+      "import": "./dist/tools/crypto/aes-gcm-file.js"
+    },
+    "./tools/crypto/api-key-pair-generator": {
+      "types": "./dist/tools/crypto/api-key-pair-generator.d.ts",
+      "import": "./dist/tools/crypto/api-key-pair-generator.js"
+    },
+    "./tools/crypto/base64url-jwk-encoder": {
+      "types": "./dist/tools/crypto/base64url-jwk-encoder.d.ts",
+      "import": "./dist/tools/crypto/base64url-jwk-encoder.js"
+    },
+    "./tools/crypto/bcrypt": {
+      "types": "./dist/tools/crypto/bcrypt.d.ts",
+      "import": "./dist/tools/crypto/bcrypt.js"
+    },
+    "./tools/crypto/bip39-mnemonic-generator": {
+      "types": "./dist/tools/crypto/bip39-mnemonic-generator.d.ts",
+      "import": "./dist/tools/crypto/bip39-mnemonic-generator.js"
+    },
+    "./tools/crypto/bsb-validator": {
+      "types": "./dist/tools/crypto/bsb-validator.d.ts",
+      "import": "./dist/tools/crypto/bsb-validator.js"
+    },
+    "./tools/crypto/crc32-checksum": {
+      "types": "./dist/tools/crypto/crc32-checksum.d.ts",
+      "import": "./dist/tools/crypto/crc32-checksum.js"
+    },
+    "./tools/crypto/crypto-argon2-params-advisor": {
+      "types": "./dist/tools/crypto/crypto-argon2-params-advisor.d.ts",
+      "import": "./dist/tools/crypto/crypto-argon2-params-advisor.js"
+    },
+    "./tools/crypto/crypto-bcrypt-cost-benchmark": {
+      "types": "./dist/tools/crypto/crypto-bcrypt-cost-benchmark.d.ts",
+      "import": "./dist/tools/crypto/crypto-bcrypt-cost-benchmark.js"
+    },
+    "./tools/crypto/crypto-key-fingerprint": {
+      "types": "./dist/tools/crypto/crypto-key-fingerprint.d.ts",
+      "import": "./dist/tools/crypto/crypto-key-fingerprint.js"
+    },
+    "./tools/crypto/crypto-mod10-mod11-check-digit": {
+      "types": "./dist/tools/crypto/crypto-mod10-mod11-check-digit.d.ts",
+      "import": "./dist/tools/crypto/crypto-mod10-mod11-check-digit.js"
+    },
+    "./tools/crypto/crypto-passwd-shadow-parser": {
+      "types": "./dist/tools/crypto/crypto-passwd-shadow-parser.d.ts",
+      "import": "./dist/tools/crypto/crypto-passwd-shadow-parser.js"
+    },
+    "./tools/crypto/crypto-rsa-key-size-strength": {
+      "types": "./dist/tools/crypto/crypto-rsa-key-size-strength.d.ts",
+      "import": "./dist/tools/crypto/crypto-rsa-key-size-strength.js"
+    },
+    "./tools/crypto/crypto-sha3-keccak-hash": {
+      "types": "./dist/tools/crypto/crypto-sha3-keccak-hash.d.ts",
+      "import": "./dist/tools/crypto/crypto-sha3-keccak-hash.js"
+    },
+    "./tools/crypto/crypto-text-checksum-multi": {
+      "types": "./dist/tools/crypto/crypto-text-checksum-multi.d.ts",
+      "import": "./dist/tools/crypto/crypto-text-checksum-multi.js"
+    },
+    "./tools/crypto/diceware-passphrase": {
+      "types": "./dist/tools/crypto/diceware-passphrase.d.ts",
+      "import": "./dist/tools/crypto/diceware-passphrase.js"
+    },
+    "./tools/crypto/ean-upc-check-digit": {
+      "types": "./dist/tools/crypto/ean-upc-check-digit.d.ts",
+      "import": "./dist/tools/crypto/ean-upc-check-digit.js"
+    },
+    "./tools/crypto/ecdsa-keypair-generator": {
+      "types": "./dist/tools/crypto/ecdsa-keypair-generator.d.ts",
+      "import": "./dist/tools/crypto/ecdsa-keypair-generator.js"
+    },
+    "./tools/crypto/ecdsa-sign-verify": {
+      "types": "./dist/tools/crypto/ecdsa-sign-verify.d.ts",
+      "import": "./dist/tools/crypto/ecdsa-sign-verify.js"
+    },
+    "./tools/crypto/file-hash": {
+      "types": "./dist/tools/crypto/file-hash.d.ts",
+      "import": "./dist/tools/crypto/file-hash.js"
+    },
+    "./tools/crypto/fletcher-checksum": {
+      "types": "./dist/tools/crypto/fletcher-checksum.d.ts",
+      "import": "./dist/tools/crypto/fletcher-checksum.js"
+    },
+    "./tools/crypto/hash-compare-verify": {
+      "types": "./dist/tools/crypto/hash-compare-verify.d.ts",
+      "import": "./dist/tools/crypto/hash-compare-verify.js"
+    },
+    "./tools/crypto/hash-text": {
+      "types": "./dist/tools/crypto/hash-text.d.ts",
+      "import": "./dist/tools/crypto/hash-text.js"
+    },
+    "./tools/crypto/hkdf-key-derivation": {
+      "types": "./dist/tools/crypto/hkdf-key-derivation.d.ts",
+      "import": "./dist/tools/crypto/hkdf-key-derivation.js"
+    },
+    "./tools/crypto/hmac-generator": {
+      "types": "./dist/tools/crypto/hmac-generator.d.ts",
+      "import": "./dist/tools/crypto/hmac-generator.js"
+    },
+    "./tools/crypto/hmac-verify": {
+      "types": "./dist/tools/crypto/hmac-verify.d.ts",
+      "import": "./dist/tools/crypto/hmac-verify.js"
+    },
+    "./tools/crypto/iban-validator": {
+      "types": "./dist/tools/crypto/iban-validator.d.ts",
+      "import": "./dist/tools/crypto/iban-validator.js"
+    },
+    "./tools/crypto/isbn-validator": {
+      "types": "./dist/tools/crypto/isbn-validator.d.ts",
+      "import": "./dist/tools/crypto/isbn-validator.js"
+    },
+    "./tools/crypto/jwk-pem-viewer": {
+      "types": "./dist/tools/crypto/jwk-pem-viewer.d.ts",
+      "import": "./dist/tools/crypto/jwk-pem-viewer.js"
+    },
+    "./tools/crypto/jwk-thumbprint": {
+      "types": "./dist/tools/crypto/jwk-thumbprint.d.ts",
+      "import": "./dist/tools/crypto/jwk-thumbprint.js"
+    },
+    "./tools/crypto/jwt-builder-rsa-es": {
+      "types": "./dist/tools/crypto/jwt-builder-rsa-es.d.ts",
+      "import": "./dist/tools/crypto/jwt-builder-rsa-es.js"
+    },
+    "./tools/crypto/jwt-claims-validator": {
+      "types": "./dist/tools/crypto/jwt-claims-validator.d.ts",
+      "import": "./dist/tools/crypto/jwt-claims-validator.js"
+    },
+    "./tools/crypto/jwt-generator": {
+      "types": "./dist/tools/crypto/jwt-generator.d.ts",
+      "import": "./dist/tools/crypto/jwt-generator.js"
+    },
+    "./tools/crypto/jwt-verify-hmac": {
+      "types": "./dist/tools/crypto/jwt-verify-hmac.d.ts",
+      "import": "./dist/tools/crypto/jwt-verify-hmac.js"
+    },
+    "./tools/crypto/jwt-verify-rsa-es": {
+      "types": "./dist/tools/crypto/jwt-verify-rsa-es.d.ts",
+      "import": "./dist/tools/crypto/jwt-verify-rsa-es.js"
+    },
+    "./tools/crypto/luhn-validator": {
+      "types": "./dist/tools/crypto/luhn-validator.d.ts",
+      "import": "./dist/tools/crypto/luhn-validator.js"
+    },
+    "./tools/crypto/md5-hash": {
+      "types": "./dist/tools/crypto/md5-hash.d.ts",
+      "import": "./dist/tools/crypto/md5-hash.js"
+    },
+    "./tools/crypto/otp-uri-builder": {
+      "types": "./dist/tools/crypto/otp-uri-builder.d.ts",
+      "import": "./dist/tools/crypto/otp-uri-builder.js"
+    },
+    "./tools/crypto/passphrase-entropy-meter": {
+      "types": "./dist/tools/crypto/passphrase-entropy-meter.d.ts",
+      "import": "./dist/tools/crypto/passphrase-entropy-meter.js"
+    },
+    "./tools/crypto/password-generator": {
+      "types": "./dist/tools/crypto/password-generator.d.ts",
+      "import": "./dist/tools/crypto/password-generator.js"
+    },
+    "./tools/crypto/password-strength-checker": {
+      "types": "./dist/tools/crypto/password-strength-checker.d.ts",
+      "import": "./dist/tools/crypto/password-strength-checker.js"
+    },
+    "./tools/crypto/pbkdf2-key-derivation": {
+      "types": "./dist/tools/crypto/pbkdf2-key-derivation.d.ts",
+      "import": "./dist/tools/crypto/pbkdf2-key-derivation.js"
+    },
+    "./tools/crypto/random-bytes-generator": {
+      "types": "./dist/tools/crypto/random-bytes-generator.d.ts",
+      "import": "./dist/tools/crypto/random-bytes-generator.js"
+    },
+    "./tools/crypto/random-token-formats": {
+      "types": "./dist/tools/crypto/random-token-formats.d.ts",
+      "import": "./dist/tools/crypto/random-token-formats.js"
+    },
+    "./tools/crypto/rot47-encoder": {
+      "types": "./dist/tools/crypto/rot47-encoder.d.ts",
+      "import": "./dist/tools/crypto/rot47-encoder.js"
+    },
+    "./tools/crypto/rsa-keypair-generator": {
+      "types": "./dist/tools/crypto/rsa-keypair-generator.d.ts",
+      "import": "./dist/tools/crypto/rsa-keypair-generator.js"
+    },
+    "./tools/crypto/rsa-sign-verify": {
+      "types": "./dist/tools/crypto/rsa-sign-verify.d.ts",
+      "import": "./dist/tools/crypto/rsa-sign-verify.js"
+    },
+    "./tools/crypto/scrypt-style-kdf-params": {
+      "types": "./dist/tools/crypto/scrypt-style-kdf-params.d.ts",
+      "import": "./dist/tools/crypto/scrypt-style-kdf-params.js"
+    },
+    "./tools/crypto/sha-multi-hash-text": {
+      "types": "./dist/tools/crypto/sha-multi-hash-text.d.ts",
+      "import": "./dist/tools/crypto/sha-multi-hash-text.js"
+    },
+    "./tools/crypto/shamir-secret-sharing": {
+      "types": "./dist/tools/crypto/shamir-secret-sharing.d.ts",
+      "import": "./dist/tools/crypto/shamir-secret-sharing.js"
+    },
+    "./tools/crypto/totp-generator": {
+      "types": "./dist/tools/crypto/totp-generator.d.ts",
+      "import": "./dist/tools/crypto/totp-generator.js"
+    },
+    "./tools/crypto/uuid-inspector": {
+      "types": "./dist/tools/crypto/uuid-inspector.d.ts",
+      "import": "./dist/tools/crypto/uuid-inspector.js"
+    },
+    "./tools/crypto/verhoeff-damm-check": {
+      "types": "./dist/tools/crypto/verhoeff-damm-check.d.ts",
+      "import": "./dist/tools/crypto/verhoeff-damm-check.js"
+    },
+    "./tools/crypto/vigenere-cipher": {
+      "types": "./dist/tools/crypto/vigenere-cipher.d.ts",
+      "import": "./dist/tools/crypto/vigenere-cipher.js"
+    },
+    "./tools/crypto/xor-cipher": {
+      "types": "./dist/tools/crypto/xor-cipher.d.ts",
+      "import": "./dist/tools/crypto/xor-cipher.js"
+    },
+    "./tools/data/ascii-table-from-csv": {
+      "types": "./dist/tools/data/ascii-table-from-csv.d.ts",
+      "import": "./dist/tools/data/ascii-table-from-csv.js"
+    },
+    "./tools/data/csv-add-row-numbers": {
+      "types": "./dist/tools/data/csv-add-row-numbers.d.ts",
+      "import": "./dist/tools/data/csv-add-row-numbers.js"
+    },
+    "./tools/data/csv-column-math": {
+      "types": "./dist/tools/data/csv-column-math.d.ts",
+      "import": "./dist/tools/data/csv-column-math.js"
+    },
+    "./tools/data/csv-column-selector": {
+      "types": "./dist/tools/data/csv-column-selector.d.ts",
+      "import": "./dist/tools/data/csv-column-selector.js"
+    },
+    "./tools/data/csv-column-stats": {
+      "types": "./dist/tools/data/csv-column-stats.d.ts",
+      "import": "./dist/tools/data/csv-column-stats.js"
+    },
+    "./tools/data/csv-dedupe": {
+      "types": "./dist/tools/data/csv-dedupe.d.ts",
+      "import": "./dist/tools/data/csv-dedupe.js"
+    },
+    "./tools/data/csv-delimiter-converter": {
+      "types": "./dist/tools/data/csv-delimiter-converter.d.ts",
+      "import": "./dist/tools/data/csv-delimiter-converter.js"
+    },
+    "./tools/data/csv-fill-blanks": {
+      "types": "./dist/tools/data/csv-fill-blanks.d.ts",
+      "import": "./dist/tools/data/csv-fill-blanks.js"
+    },
+    "./tools/data/csv-filter-rows": {
+      "types": "./dist/tools/data/csv-filter-rows.d.ts",
+      "import": "./dist/tools/data/csv-filter-rows.js"
+    },
+    "./tools/data/csv-merge-columns": {
+      "types": "./dist/tools/data/csv-merge-columns.d.ts",
+      "import": "./dist/tools/data/csv-merge-columns.js"
+    },
+    "./tools/data/csv-pivot-table": {
+      "types": "./dist/tools/data/csv-pivot-table.d.ts",
+      "import": "./dist/tools/data/csv-pivot-table.js"
+    },
+    "./tools/data/csv-rename-headers": {
+      "types": "./dist/tools/data/csv-rename-headers.d.ts",
+      "import": "./dist/tools/data/csv-rename-headers.js"
+    },
+    "./tools/data/csv-sample-rows": {
+      "types": "./dist/tools/data/csv-sample-rows.d.ts",
+      "import": "./dist/tools/data/csv-sample-rows.js"
+    },
+    "./tools/data/csv-sort": {
+      "types": "./dist/tools/data/csv-sort.d.ts",
+      "import": "./dist/tools/data/csv-sort.js"
+    },
+    "./tools/data/csv-split-column": {
+      "types": "./dist/tools/data/csv-split-column.d.ts",
+      "import": "./dist/tools/data/csv-split-column.js"
+    },
+    "./tools/data/csv-to-fixed-width": {
+      "types": "./dist/tools/data/csv-to-fixed-width.d.ts",
+      "import": "./dist/tools/data/csv-to-fixed-width.js"
+    },
+    "./tools/data/csv-to-html": {
+      "types": "./dist/tools/data/csv-to-html.d.ts",
+      "import": "./dist/tools/data/csv-to-html.js"
+    },
+    "./tools/data/csv-to-json": {
+      "types": "./dist/tools/data/csv-to-json.d.ts",
+      "import": "./dist/tools/data/csv-to-json.js"
+    },
+    "./tools/data/csv-to-ndjson": {
+      "types": "./dist/tools/data/csv-to-ndjson.d.ts",
+      "import": "./dist/tools/data/csv-to-ndjson.js"
+    },
+    "./tools/data/csv-to-sql": {
+      "types": "./dist/tools/data/csv-to-sql.d.ts",
+      "import": "./dist/tools/data/csv-to-sql.js"
+    },
+    "./tools/data/csv-transpose": {
+      "types": "./dist/tools/data/csv-transpose.d.ts",
+      "import": "./dist/tools/data/csv-transpose.js"
+    },
+    "./tools/data/csv-viewer": {
+      "types": "./dist/tools/data/csv-viewer.d.ts",
+      "import": "./dist/tools/data/csv-viewer.js"
+    },
+    "./tools/data/data-csv-detect-types": {
+      "types": "./dist/tools/data/data-csv-detect-types.d.ts",
+      "import": "./dist/tools/data/data-csv-detect-types.js"
+    },
+    "./tools/data/data-csv-group-by-aggregate": {
+      "types": "./dist/tools/data/data-csv-group-by-aggregate.d.ts",
+      "import": "./dist/tools/data/data-csv-group-by-aggregate.js"
+    },
+    "./tools/data/data-json-array-chunk": {
+      "types": "./dist/tools/data/data-json-array-chunk.d.ts",
+      "import": "./dist/tools/data/data-json-array-chunk.js"
+    },
+    "./tools/data/data-json-array-flatten-nested": {
+      "types": "./dist/tools/data/data-json-array-flatten-nested.d.ts",
+      "import": "./dist/tools/data/data-json-array-flatten-nested.js"
+    },
+    "./tools/data/data-json-to-csv-explode-array": {
+      "types": "./dist/tools/data/data-json-to-csv-explode-array.d.ts",
+      "import": "./dist/tools/data/data-json-to-csv-explode-array.js"
+    },
+    "./tools/data/data-json-to-csv-flat-nested": {
+      "types": "./dist/tools/data/data-json-to-csv-flat-nested.d.ts",
+      "import": "./dist/tools/data/data-json-to-csv-flat-nested.js"
+    },
+    "./tools/data/data-jsonl-deduplicate": {
+      "types": "./dist/tools/data/data-jsonl-deduplicate.d.ts",
+      "import": "./dist/tools/data/data-jsonl-deduplicate.js"
+    },
+    "./tools/data/data-jsonl-validate-lint": {
+      "types": "./dist/tools/data/data-jsonl-validate-lint.d.ts",
+      "import": "./dist/tools/data/data-jsonl-validate-lint.js"
+    },
+    "./tools/data/data-tsv-column-reorder": {
+      "types": "./dist/tools/data/data-tsv-column-reorder.d.ts",
+      "import": "./dist/tools/data/data-tsv-column-reorder.js"
+    },
+    "./tools/data/data-tsv-to-markdown-table": {
+      "types": "./dist/tools/data/data-tsv-to-markdown-table.d.ts",
+      "import": "./dist/tools/data/data-tsv-to-markdown-table.js"
+    },
+    "./tools/data/data-yaml-anchor-expander": {
+      "types": "./dist/tools/data/data-yaml-anchor-expander.d.ts",
+      "import": "./dist/tools/data/data-yaml-anchor-expander.js"
+    },
+    "./tools/data/data-yaml-frontmatter-extractor": {
+      "types": "./dist/tools/data/data-yaml-frontmatter-extractor.d.ts",
+      "import": "./dist/tools/data/data-yaml-frontmatter-extractor.js"
+    },
+    "./tools/data/fixed-width-to-csv": {
+      "types": "./dist/tools/data/fixed-width-to-csv.d.ts",
+      "import": "./dist/tools/data/fixed-width-to-csv.js"
+    },
+    "./tools/data/html-table-to-csv": {
+      "types": "./dist/tools/data/html-table-to-csv.d.ts",
+      "import": "./dist/tools/data/html-table-to-csv.js"
+    },
+    "./tools/data/html-table-to-json": {
+      "types": "./dist/tools/data/html-table-to-json.d.ts",
+      "import": "./dist/tools/data/html-table-to-json.js"
+    },
+    "./tools/data/jmespath-lite-query": {
+      "types": "./dist/tools/data/jmespath-lite-query.d.ts",
+      "import": "./dist/tools/data/jmespath-lite-query.js"
+    },
+    "./tools/data/json-array-dedupe": {
+      "types": "./dist/tools/data/json-array-dedupe.d.ts",
+      "import": "./dist/tools/data/json-array-dedupe.js"
+    },
+    "./tools/data/json-array-to-key-value": {
+      "types": "./dist/tools/data/json-array-to-key-value.d.ts",
+      "import": "./dist/tools/data/json-array-to-key-value.js"
+    },
+    "./tools/data/json-array-to-object": {
+      "types": "./dist/tools/data/json-array-to-object.d.ts",
+      "import": "./dist/tools/data/json-array-to-object.js"
+    },
+    "./tools/data/json-column-extractor": {
+      "types": "./dist/tools/data/json-column-extractor.d.ts",
+      "import": "./dist/tools/data/json-column-extractor.js"
+    },
+    "./tools/data/json-deep-clean": {
+      "types": "./dist/tools/data/json-deep-clean.d.ts",
+      "import": "./dist/tools/data/json-deep-clean.js"
+    },
+    "./tools/data/json-diff": {
+      "types": "./dist/tools/data/json-diff.d.ts",
+      "import": "./dist/tools/data/json-diff.js"
+    },
+    "./tools/data/json-dot-path-get-set": {
+      "types": "./dist/tools/data/json-dot-path-get-set.d.ts",
+      "import": "./dist/tools/data/json-dot-path-get-set.js"
+    },
+    "./tools/data/json-escape": {
+      "types": "./dist/tools/data/json-escape.d.ts",
+      "import": "./dist/tools/data/json-escape.js"
+    },
+    "./tools/data/json-extract-keys": {
+      "types": "./dist/tools/data/json-extract-keys.d.ts",
+      "import": "./dist/tools/data/json-extract-keys.js"
+    },
+    "./tools/data/json-flatten": {
+      "types": "./dist/tools/data/json-flatten.d.ts",
+      "import": "./dist/tools/data/json-flatten.js"
+    },
+    "./tools/data/json-formatter": {
+      "types": "./dist/tools/data/json-formatter.d.ts",
+      "import": "./dist/tools/data/json-formatter.js"
+    },
+    "./tools/data/json-key-case-converter": {
+      "types": "./dist/tools/data/json-key-case-converter.d.ts",
+      "import": "./dist/tools/data/json-key-case-converter.js"
+    },
+    "./tools/data/json-merge": {
+      "types": "./dist/tools/data/json-merge.d.ts",
+      "import": "./dist/tools/data/json-merge.js"
+    },
+    "./tools/data/json-merge-patch": {
+      "types": "./dist/tools/data/json-merge-patch.d.ts",
+      "import": "./dist/tools/data/json-merge-patch.js"
+    },
+    "./tools/data/json-minify": {
+      "types": "./dist/tools/data/json-minify.d.ts",
+      "import": "./dist/tools/data/json-minify.js"
+    },
+    "./tools/data/json-patch-apply": {
+      "types": "./dist/tools/data/json-patch-apply.d.ts",
+      "import": "./dist/tools/data/json-patch-apply.js"
+    },
+    "./tools/data/json-patch-diff": {
+      "types": "./dist/tools/data/json-patch-diff.d.ts",
+      "import": "./dist/tools/data/json-patch-diff.js"
+    },
+    "./tools/data/json-path-extractor": {
+      "types": "./dist/tools/data/json-path-extractor.d.ts",
+      "import": "./dist/tools/data/json-path-extractor.js"
+    },
+    "./tools/data/json-pointer-resolver": {
+      "types": "./dist/tools/data/json-pointer-resolver.d.ts",
+      "import": "./dist/tools/data/json-pointer-resolver.js"
+    },
+    "./tools/data/json-repair": {
+      "types": "./dist/tools/data/json-repair.d.ts",
+      "import": "./dist/tools/data/json-repair.js"
+    },
+    "./tools/data/json-schema-sample-generator": {
+      "types": "./dist/tools/data/json-schema-sample-generator.d.ts",
+      "import": "./dist/tools/data/json-schema-sample-generator.js"
+    },
+    "./tools/data/json-sort-keys": {
+      "types": "./dist/tools/data/json-sort-keys.d.ts",
+      "import": "./dist/tools/data/json-sort-keys.js"
+    },
+    "./tools/data/json-stats-summary": {
+      "types": "./dist/tools/data/json-stats-summary.d.ts",
+      "import": "./dist/tools/data/json-stats-summary.js"
+    },
+    "./tools/data/json-stringify": {
+      "types": "./dist/tools/data/json-stringify.d.ts",
+      "import": "./dist/tools/data/json-stringify.js"
+    },
+    "./tools/data/json-to-csharp": {
+      "types": "./dist/tools/data/json-to-csharp.d.ts",
+      "import": "./dist/tools/data/json-to-csharp.js"
+    },
+    "./tools/data/json-to-csv": {
+      "types": "./dist/tools/data/json-to-csv.d.ts",
+      "import": "./dist/tools/data/json-to-csv.js"
+    },
+    "./tools/data/json-to-csv-headers": {
+      "types": "./dist/tools/data/json-to-csv-headers.d.ts",
+      "import": "./dist/tools/data/json-to-csv-headers.js"
+    },
+    "./tools/data/json-to-dart": {
+      "types": "./dist/tools/data/json-to-dart.d.ts",
+      "import": "./dist/tools/data/json-to-dart.js"
+    },
+    "./tools/data/json-to-env": {
+      "types": "./dist/tools/data/json-to-env.d.ts",
+      "import": "./dist/tools/data/json-to-env.js"
+    },
+    "./tools/data/json-to-graphql-sdl": {
+      "types": "./dist/tools/data/json-to-graphql-sdl.d.ts",
+      "import": "./dist/tools/data/json-to-graphql-sdl.js"
+    },
+    "./tools/data/json-to-hcl": {
+      "types": "./dist/tools/data/json-to-hcl.d.ts",
+      "import": "./dist/tools/data/json-to-hcl.js"
+    },
+    "./tools/data/json-to-jsdoc-typedef": {
+      "types": "./dist/tools/data/json-to-jsdoc-typedef.d.ts",
+      "import": "./dist/tools/data/json-to-jsdoc-typedef.js"
+    },
+    "./tools/data/json-to-json-schema": {
+      "types": "./dist/tools/data/json-to-json-schema.d.ts",
+      "import": "./dist/tools/data/json-to-json-schema.js"
+    },
+    "./tools/data/json-to-kotlin": {
+      "types": "./dist/tools/data/json-to-kotlin.d.ts",
+      "import": "./dist/tools/data/json-to-kotlin.js"
+    },
+    "./tools/data/json-to-markdown-table": {
+      "types": "./dist/tools/data/json-to-markdown-table.d.ts",
+      "import": "./dist/tools/data/json-to-markdown-table.js"
+    },
+    "./tools/data/json-to-mongoose-schema": {
+      "types": "./dist/tools/data/json-to-mongoose-schema.d.ts",
+      "import": "./dist/tools/data/json-to-mongoose-schema.js"
+    },
+    "./tools/data/json-to-ndjson": {
+      "types": "./dist/tools/data/json-to-ndjson.d.ts",
+      "import": "./dist/tools/data/json-to-ndjson.js"
+    },
+    "./tools/data/json-to-protobuf": {
+      "types": "./dist/tools/data/json-to-protobuf.d.ts",
+      "import": "./dist/tools/data/json-to-protobuf.js"
+    },
+    "./tools/data/json-to-pydantic": {
+      "types": "./dist/tools/data/json-to-pydantic.d.ts",
+      "import": "./dist/tools/data/json-to-pydantic.js"
+    },
+    "./tools/data/json-to-python-dataclass": {
+      "types": "./dist/tools/data/json-to-python-dataclass.d.ts",
+      "import": "./dist/tools/data/json-to-python-dataclass.js"
+    },
+    "./tools/data/json-to-query-string": {
+      "types": "./dist/tools/data/json-to-query-string.d.ts",
+      "import": "./dist/tools/data/json-to-query-string.js"
+    },
+    "./tools/data/json-to-rust-serde": {
+      "types": "./dist/tools/data/json-to-rust-serde.d.ts",
+      "import": "./dist/tools/data/json-to-rust-serde.js"
+    },
+    "./tools/data/json-to-swift-codable": {
+      "types": "./dist/tools/data/json-to-swift-codable.d.ts",
+      "import": "./dist/tools/data/json-to-swift-codable.js"
+    },
+    "./tools/data/json-to-toml": {
+      "types": "./dist/tools/data/json-to-toml.d.ts",
+      "import": "./dist/tools/data/json-to-toml.js"
+    },
+    "./tools/data/json-to-typescript": {
+      "types": "./dist/tools/data/json-to-typescript.d.ts",
+      "import": "./dist/tools/data/json-to-typescript.js"
+    },
+    "./tools/data/json-to-zod": {
+      "types": "./dist/tools/data/json-to-zod.d.ts",
+      "import": "./dist/tools/data/json-to-zod.js"
+    },
+    "./tools/data/json-tree-viewer": {
+      "types": "./dist/tools/data/json-tree-viewer.d.ts",
+      "import": "./dist/tools/data/json-tree-viewer.js"
+    },
+    "./tools/data/json-validator": {
+      "types": "./dist/tools/data/json-validator.d.ts",
+      "import": "./dist/tools/data/json-validator.js"
+    },
+    "./tools/data/jsonc-to-json": {
+      "types": "./dist/tools/data/jsonc-to-json.d.ts",
+      "import": "./dist/tools/data/jsonc-to-json.js"
+    },
+    "./tools/data/markdown-table-formatter": {
+      "types": "./dist/tools/data/markdown-table-formatter.d.ts",
+      "import": "./dist/tools/data/markdown-table-formatter.js"
+    },
+    "./tools/data/markdown-table-to-json": {
+      "types": "./dist/tools/data/markdown-table-to-json.d.ts",
+      "import": "./dist/tools/data/markdown-table-to-json.js"
+    },
+    "./tools/data/ndjson-field-filter": {
+      "types": "./dist/tools/data/ndjson-field-filter.d.ts",
+      "import": "./dist/tools/data/ndjson-field-filter.js"
+    },
+    "./tools/data/ndjson-to-csv": {
+      "types": "./dist/tools/data/ndjson-to-csv.d.ts",
+      "import": "./dist/tools/data/ndjson-to-csv.js"
+    },
+    "./tools/data/ndjson-to-json-array": {
+      "types": "./dist/tools/data/ndjson-to-json-array.d.ts",
+      "import": "./dist/tools/data/ndjson-to-json-array.js"
+    },
+    "./tools/data/sql-create-table-from-csv": {
+      "types": "./dist/tools/data/sql-create-table-from-csv.d.ts",
+      "import": "./dist/tools/data/sql-create-table-from-csv.js"
+    },
+    "./tools/data/sql-create-table-from-json": {
+      "types": "./dist/tools/data/sql-create-table-from-json.d.ts",
+      "import": "./dist/tools/data/sql-create-table-from-json.js"
+    },
+    "./tools/data/sql-formatter": {
+      "types": "./dist/tools/data/sql-formatter.d.ts",
+      "import": "./dist/tools/data/sql-formatter.js"
+    },
+    "./tools/data/sql-insert-from-json": {
+      "types": "./dist/tools/data/sql-insert-from-json.d.ts",
+      "import": "./dist/tools/data/sql-insert-from-json.js"
+    },
+    "./tools/data/sql-select-builder": {
+      "types": "./dist/tools/data/sql-select-builder.d.ts",
+      "import": "./dist/tools/data/sql-select-builder.js"
+    },
+    "./tools/data/sql-update-builder": {
+      "types": "./dist/tools/data/sql-update-builder.d.ts",
+      "import": "./dist/tools/data/sql-update-builder.js"
+    },
+    "./tools/encoding/ascii85": {
+      "types": "./dist/tools/encoding/ascii85.d.ts",
+      "import": "./dist/tools/encoding/ascii85.js"
+    },
+    "./tools/encoding/base32-text": {
+      "types": "./dist/tools/encoding/base32-text.d.ts",
+      "import": "./dist/tools/encoding/base32-text.js"
+    },
+    "./tools/encoding/base58": {
+      "types": "./dist/tools/encoding/base58.d.ts",
+      "import": "./dist/tools/encoding/base58.js"
+    },
+    "./tools/encoding/base64-text": {
+      "types": "./dist/tools/encoding/base64-text.d.ts",
+      "import": "./dist/tools/encoding/base64-text.js"
+    },
+    "./tools/encoding/binary-text": {
+      "types": "./dist/tools/encoding/binary-text.d.ts",
+      "import": "./dist/tools/encoding/binary-text.js"
+    },
+    "./tools/encoding/encoding-a1z26-cipher": {
+      "types": "./dist/tools/encoding/encoding-a1z26-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-a1z26-cipher.js"
+    },
+    "./tools/encoding/encoding-affine-cipher": {
+      "types": "./dist/tools/encoding/encoding-affine-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-affine-cipher.js"
+    },
+    "./tools/encoding/encoding-ascii-code-point": {
+      "types": "./dist/tools/encoding/encoding-ascii-code-point.d.ts",
+      "import": "./dist/tools/encoding/encoding-ascii-code-point.js"
+    },
+    "./tools/encoding/encoding-atbash-cipher": {
+      "types": "./dist/tools/encoding/encoding-atbash-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-atbash-cipher.js"
+    },
+    "./tools/encoding/encoding-bacon-cipher": {
+      "types": "./dist/tools/encoding/encoding-bacon-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-bacon-cipher.js"
+    },
+    "./tools/encoding/encoding-base16-encode": {
+      "types": "./dist/tools/encoding/encoding-base16-encode.d.ts",
+      "import": "./dist/tools/encoding/encoding-base16-encode.js"
+    },
+    "./tools/encoding/encoding-base32hex-encode": {
+      "types": "./dist/tools/encoding/encoding-base32hex-encode.d.ts",
+      "import": "./dist/tools/encoding/encoding-base32hex-encode.js"
+    },
+    "./tools/encoding/encoding-base36-encode": {
+      "types": "./dist/tools/encoding/encoding-base36-encode.d.ts",
+      "import": "./dist/tools/encoding/encoding-base36-encode.js"
+    },
+    "./tools/encoding/encoding-base45": {
+      "types": "./dist/tools/encoding/encoding-base45.d.ts",
+      "import": "./dist/tools/encoding/encoding-base45.js"
+    },
+    "./tools/encoding/encoding-base62-encode": {
+      "types": "./dist/tools/encoding/encoding-base62-encode.d.ts",
+      "import": "./dist/tools/encoding/encoding-base62-encode.js"
+    },
+    "./tools/encoding/encoding-base64-base32-cross": {
+      "types": "./dist/tools/encoding/encoding-base64-base32-cross.d.ts",
+      "import": "./dist/tools/encoding/encoding-base64-base32-cross.js"
+    },
+    "./tools/encoding/encoding-base64-image-inspector": {
+      "types": "./dist/tools/encoding/encoding-base64-image-inspector.d.ts",
+      "import": "./dist/tools/encoding/encoding-base64-image-inspector.js"
+    },
+    "./tools/encoding/encoding-base64-to-hex": {
+      "types": "./dist/tools/encoding/encoding-base64-to-hex.d.ts",
+      "import": "./dist/tools/encoding/encoding-base64-to-hex.js"
+    },
+    "./tools/encoding/encoding-base64url": {
+      "types": "./dist/tools/encoding/encoding-base64url.d.ts",
+      "import": "./dist/tools/encoding/encoding-base64url.js"
+    },
+    "./tools/encoding/encoding-base85-rfc1924": {
+      "types": "./dist/tools/encoding/encoding-base85-rfc1924.d.ts",
+      "import": "./dist/tools/encoding/encoding-base85-rfc1924.js"
+    },
+    "./tools/encoding/encoding-base91-encode": {
+      "types": "./dist/tools/encoding/encoding-base91-encode.d.ts",
+      "import": "./dist/tools/encoding/encoding-base91-encode.js"
+    },
+    "./tools/encoding/encoding-beaufort-cipher": {
+      "types": "./dist/tools/encoding/encoding-beaufort-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-beaufort-cipher.js"
+    },
+    "./tools/encoding/encoding-braille-converter": {
+      "types": "./dist/tools/encoding/encoding-braille-converter.d.ts",
+      "import": "./dist/tools/encoding/encoding-braille-converter.js"
+    },
+    "./tools/encoding/encoding-caesar-cipher": {
+      "types": "./dist/tools/encoding/encoding-caesar-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-caesar-cipher.js"
+    },
+    "./tools/encoding/encoding-codepoint-utf-converter": {
+      "types": "./dist/tools/encoding/encoding-codepoint-utf-converter.d.ts",
+      "import": "./dist/tools/encoding/encoding-codepoint-utf-converter.js"
+    },
+    "./tools/encoding/encoding-columnar-transposition": {
+      "types": "./dist/tools/encoding/encoding-columnar-transposition.d.ts",
+      "import": "./dist/tools/encoding/encoding-columnar-transposition.js"
+    },
+    "./tools/encoding/encoding-csv-field-escape": {
+      "types": "./dist/tools/encoding/encoding-csv-field-escape.d.ts",
+      "import": "./dist/tools/encoding/encoding-csv-field-escape.js"
+    },
+    "./tools/encoding/encoding-data-uri-builder": {
+      "types": "./dist/tools/encoding/encoding-data-uri-builder.d.ts",
+      "import": "./dist/tools/encoding/encoding-data-uri-builder.js"
+    },
+    "./tools/encoding/encoding-decimal-binary-octal-hex": {
+      "types": "./dist/tools/encoding/encoding-decimal-binary-octal-hex.d.ts",
+      "import": "./dist/tools/encoding/encoding-decimal-binary-octal-hex.js"
+    },
+    "./tools/encoding/encoding-ebcdic-converter": {
+      "types": "./dist/tools/encoding/encoding-ebcdic-converter.d.ts",
+      "import": "./dist/tools/encoding/encoding-ebcdic-converter.js"
+    },
+    "./tools/encoding/encoding-four-square-cipher": {
+      "types": "./dist/tools/encoding/encoding-four-square-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-four-square-cipher.js"
+    },
+    "./tools/encoding/encoding-gronsfeld-cipher": {
+      "types": "./dist/tools/encoding/encoding-gronsfeld-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-gronsfeld-cipher.js"
+    },
+    "./tools/encoding/encoding-gzip-base64": {
+      "types": "./dist/tools/encoding/encoding-gzip-base64.d.ts",
+      "import": "./dist/tools/encoding/encoding-gzip-base64.js"
+    },
+    "./tools/encoding/encoding-html-named-numeric": {
+      "types": "./dist/tools/encoding/encoding-html-named-numeric.d.ts",
+      "import": "./dist/tools/encoding/encoding-html-named-numeric.js"
+    },
+    "./tools/encoding/encoding-js-string-escape": {
+      "types": "./dist/tools/encoding/encoding-js-string-escape.d.ts",
+      "import": "./dist/tools/encoding/encoding-js-string-escape.js"
+    },
+    "./tools/encoding/encoding-json-pointer-escape": {
+      "types": "./dist/tools/encoding/encoding-json-pointer-escape.d.ts",
+      "import": "./dist/tools/encoding/encoding-json-pointer-escape.js"
+    },
+    "./tools/encoding/encoding-jwt-inspector": {
+      "types": "./dist/tools/encoding/encoding-jwt-inspector.d.ts",
+      "import": "./dist/tools/encoding/encoding-jwt-inspector.js"
+    },
+    "./tools/encoding/encoding-morse-prosigns-reference": {
+      "types": "./dist/tools/encoding/encoding-morse-prosigns-reference.d.ts",
+      "import": "./dist/tools/encoding/encoding-morse-prosigns-reference.js"
+    },
+    "./tools/encoding/encoding-morse-timing-variants": {
+      "types": "./dist/tools/encoding/encoding-morse-timing-variants.d.ts",
+      "import": "./dist/tools/encoding/encoding-morse-timing-variants.js"
+    },
+    "./tools/encoding/encoding-nihilist-cipher": {
+      "types": "./dist/tools/encoding/encoding-nihilist-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-nihilist-cipher.js"
+    },
+    "./tools/encoding/encoding-numeric-char-references": {
+      "types": "./dist/tools/encoding/encoding-numeric-char-references.d.ts",
+      "import": "./dist/tools/encoding/encoding-numeric-char-references.js"
+    },
+    "./tools/encoding/encoding-octal-text": {
+      "types": "./dist/tools/encoding/encoding-octal-text.d.ts",
+      "import": "./dist/tools/encoding/encoding-octal-text.js"
+    },
+    "./tools/encoding/encoding-percent-encoding-table": {
+      "types": "./dist/tools/encoding/encoding-percent-encoding-table.d.ts",
+      "import": "./dist/tools/encoding/encoding-percent-encoding-table.js"
+    },
+    "./tools/encoding/encoding-playfair-cipher": {
+      "types": "./dist/tools/encoding/encoding-playfair-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-playfair-cipher.js"
+    },
+    "./tools/encoding/encoding-polybius-square": {
+      "types": "./dist/tools/encoding/encoding-polybius-square.d.ts",
+      "import": "./dist/tools/encoding/encoding-polybius-square.js"
+    },
+    "./tools/encoding/encoding-punycode": {
+      "types": "./dist/tools/encoding/encoding-punycode.d.ts",
+      "import": "./dist/tools/encoding/encoding-punycode.js"
+    },
+    "./tools/encoding/encoding-quoted-printable": {
+      "types": "./dist/tools/encoding/encoding-quoted-printable.d.ts",
+      "import": "./dist/tools/encoding/encoding-quoted-printable.js"
+    },
+    "./tools/encoding/encoding-rail-fence-cipher": {
+      "types": "./dist/tools/encoding/encoding-rail-fence-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-rail-fence-cipher.js"
+    },
+    "./tools/encoding/encoding-regex-literal-escape": {
+      "types": "./dist/tools/encoding/encoding-regex-literal-escape.d.ts",
+      "import": "./dist/tools/encoding/encoding-regex-literal-escape.js"
+    },
+    "./tools/encoding/encoding-rot-n-cipher": {
+      "types": "./dist/tools/encoding/encoding-rot-n-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-rot-n-cipher.js"
+    },
+    "./tools/encoding/encoding-semaphore-text": {
+      "types": "./dist/tools/encoding/encoding-semaphore-text.d.ts",
+      "import": "./dist/tools/encoding/encoding-semaphore-text.js"
+    },
+    "./tools/encoding/encoding-shell-arg-escape": {
+      "types": "./dist/tools/encoding/encoding-shell-arg-escape.d.ts",
+      "import": "./dist/tools/encoding/encoding-shell-arg-escape.js"
+    },
+    "./tools/encoding/encoding-spell-alphabet-reference": {
+      "types": "./dist/tools/encoding/encoding-spell-alphabet-reference.d.ts",
+      "import": "./dist/tools/encoding/encoding-spell-alphabet-reference.js"
+    },
+    "./tools/encoding/encoding-sql-string-escape": {
+      "types": "./dist/tools/encoding/encoding-sql-string-escape.d.ts",
+      "import": "./dist/tools/encoding/encoding-sql-string-escape.js"
+    },
+    "./tools/encoding/encoding-tap-code": {
+      "types": "./dist/tools/encoding/encoding-tap-code.d.ts",
+      "import": "./dist/tools/encoding/encoding-tap-code.js"
+    },
+    "./tools/encoding/encoding-unicode-confusables-detector": {
+      "types": "./dist/tools/encoding/encoding-unicode-confusables-detector.d.ts",
+      "import": "./dist/tools/encoding/encoding-unicode-confusables-detector.js"
+    },
+    "./tools/encoding/encoding-unicode-escape": {
+      "types": "./dist/tools/encoding/encoding-unicode-escape.d.ts",
+      "import": "./dist/tools/encoding/encoding-unicode-escape.js"
+    },
+    "./tools/encoding/encoding-unicode-normalization": {
+      "types": "./dist/tools/encoding/encoding-unicode-normalization.d.ts",
+      "import": "./dist/tools/encoding/encoding-unicode-normalization.js"
+    },
+    "./tools/encoding/encoding-uri-template-expander": {
+      "types": "./dist/tools/encoding/encoding-uri-template-expander.d.ts",
+      "import": "./dist/tools/encoding/encoding-uri-template-expander.js"
+    },
+    "./tools/encoding/encoding-url-component-variants": {
+      "types": "./dist/tools/encoding/encoding-url-component-variants.d.ts",
+      "import": "./dist/tools/encoding/encoding-url-component-variants.js"
+    },
+    "./tools/encoding/encoding-utf16-code-units": {
+      "types": "./dist/tools/encoding/encoding-utf16-code-units.d.ts",
+      "import": "./dist/tools/encoding/encoding-utf16-code-units.js"
+    },
+    "./tools/encoding/encoding-utf8-byte-inspector": {
+      "types": "./dist/tools/encoding/encoding-utf8-byte-inspector.d.ts",
+      "import": "./dist/tools/encoding/encoding-utf8-byte-inspector.js"
+    },
+    "./tools/encoding/encoding-uuencode": {
+      "types": "./dist/tools/encoding/encoding-uuencode.d.ts",
+      "import": "./dist/tools/encoding/encoding-uuencode.js"
+    },
+    "./tools/encoding/encoding-uuencode-xxencode": {
+      "types": "./dist/tools/encoding/encoding-uuencode-xxencode.d.ts",
+      "import": "./dist/tools/encoding/encoding-uuencode-xxencode.js"
+    },
+    "./tools/encoding/encoding-vigenere-autokey-cipher": {
+      "types": "./dist/tools/encoding/encoding-vigenere-autokey-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-vigenere-autokey-cipher.js"
+    },
+    "./tools/encoding/encoding-xor-cipher": {
+      "types": "./dist/tools/encoding/encoding-xor-cipher.d.ts",
+      "import": "./dist/tools/encoding/encoding-xor-cipher.js"
+    },
+    "./tools/encoding/encoding-xxencode": {
+      "types": "./dist/tools/encoding/encoding-xxencode.d.ts",
+      "import": "./dist/tools/encoding/encoding-xxencode.js"
+    },
+    "./tools/encoding/encoding-z85-encode": {
+      "types": "./dist/tools/encoding/encoding-z85-encode.d.ts",
+      "import": "./dist/tools/encoding/encoding-z85-encode.js"
+    },
+    "./tools/encoding/encoding-zero-width-steganography": {
+      "types": "./dist/tools/encoding/encoding-zero-width-steganography.d.ts",
+      "import": "./dist/tools/encoding/encoding-zero-width-steganography.js"
+    },
+    "./tools/encoding/hex-text": {
+      "types": "./dist/tools/encoding/hex-text.d.ts",
+      "import": "./dist/tools/encoding/hex-text.js"
+    },
+    "./tools/encoding/html-entities": {
+      "types": "./dist/tools/encoding/html-entities.d.ts",
+      "import": "./dist/tools/encoding/html-entities.js"
+    },
+    "./tools/encoding/url-encode": {
+      "types": "./dist/tools/encoding/url-encode.d.ts",
+      "import": "./dist/tools/encoding/url-encode.js"
+    },
+    "./tools/generators/api-key-generator": {
+      "types": "./dist/tools/generators/api-key-generator.d.ts",
+      "import": "./dist/tools/generators/api-key-generator.js"
+    },
+    "./tools/generators/bearer-token-generator": {
+      "types": "./dist/tools/generators/bearer-token-generator.d.ts",
+      "import": "./dist/tools/generators/bearer-token-generator.js"
+    },
+    "./tools/generators/bic-swift-test-generator": {
+      "types": "./dist/tools/generators/bic-swift-test-generator.d.ts",
+      "import": "./dist/tools/generators/bic-swift-test-generator.js"
+    },
+    "./tools/generators/changelog-generator": {
+      "types": "./dist/tools/generators/changelog-generator.d.ts",
+      "import": "./dist/tools/generators/changelog-generator.js"
+    },
+    "./tools/generators/contributing-guide-generator": {
+      "types": "./dist/tools/generators/contributing-guide-generator.d.ts",
+      "import": "./dist/tools/generators/contributing-guide-generator.js"
+    },
+    "./tools/generators/conventional-commit-generator": {
+      "types": "./dist/tools/generators/conventional-commit-generator.d.ts",
+      "import": "./dist/tools/generators/conventional-commit-generator.js"
+    },
+    "./tools/generators/crontab-recipe-generator": {
+      "types": "./dist/tools/generators/crontab-recipe-generator.d.ts",
+      "import": "./dist/tools/generators/crontab-recipe-generator.js"
+    },
+    "./tools/generators/cuid2-generator": {
+      "types": "./dist/tools/generators/cuid2-generator.d.ts",
+      "import": "./dist/tools/generators/cuid2-generator.js"
+    },
+    "./tools/generators/dice-roller": {
+      "types": "./dist/tools/generators/dice-roller.d.ts",
+      "import": "./dist/tools/generators/dice-roller.js"
+    },
+    "./tools/generators/docker-compose-generator": {
+      "types": "./dist/tools/generators/docker-compose-generator.d.ts",
+      "import": "./dist/tools/generators/docker-compose-generator.js"
+    },
+    "./tools/generators/dockerfile-generator": {
+      "types": "./dist/tools/generators/dockerfile-generator.d.ts",
+      "import": "./dist/tools/generators/dockerfile-generator.js"
+    },
+    "./tools/generators/ean-upc-barcode-data-generator": {
+      "types": "./dist/tools/generators/ean-upc-barcode-data-generator.d.ts",
+      "import": "./dist/tools/generators/ean-upc-barcode-data-generator.js"
+    },
+    "./tools/generators/editorconfig-generator": {
+      "types": "./dist/tools/generators/editorconfig-generator.d.ts",
+      "import": "./dist/tools/generators/editorconfig-generator.js"
+    },
+    "./tools/generators/email-alias-generator": {
+      "types": "./dist/tools/generators/email-alias-generator.d.ts",
+      "import": "./dist/tools/generators/email-alias-generator.js"
+    },
+    "./tools/generators/env-example-generator": {
+      "types": "./dist/tools/generators/env-example-generator.d.ts",
+      "import": "./dist/tools/generators/env-example-generator.js"
+    },
+    "./tools/generators/eslint-config-generator": {
+      "types": "./dist/tools/generators/eslint-config-generator.d.ts",
+      "import": "./dist/tools/generators/eslint-config-generator.js"
+    },
+    "./tools/generators/fake-address-generator": {
+      "types": "./dist/tools/generators/fake-address-generator.d.ts",
+      "import": "./dist/tools/generators/fake-address-generator.js"
+    },
+    "./tools/generators/fake-company-generator": {
+      "types": "./dist/tools/generators/fake-company-generator.d.ts",
+      "import": "./dist/tools/generators/fake-company-generator.js"
+    },
+    "./tools/generators/fake-ipv4-ipv6-generator": {
+      "types": "./dist/tools/generators/fake-ipv4-ipv6-generator.d.ts",
+      "import": "./dist/tools/generators/fake-ipv4-ipv6-generator.js"
+    },
+    "./tools/generators/fake-user-profile-generator": {
+      "types": "./dist/tools/generators/fake-user-profile-generator.d.ts",
+      "import": "./dist/tools/generators/fake-user-profile-generator.js"
+    },
+    "./tools/generators/generate-barcode": {
+      "types": "./dist/tools/generators/generate-barcode.d.ts",
+      "import": "./dist/tools/generators/generate-barcode.js"
+    },
+    "./tools/generators/generate-credit-card": {
+      "types": "./dist/tools/generators/generate-credit-card.d.ts",
+      "import": "./dist/tools/generators/generate-credit-card.js"
+    },
+    "./tools/generators/generate-cron-expression": {
+      "types": "./dist/tools/generators/generate-cron-expression.d.ts",
+      "import": "./dist/tools/generators/generate-cron-expression.js"
+    },
+    "./tools/generators/generate-css-gradient": {
+      "types": "./dist/tools/generators/generate-css-gradient.d.ts",
+      "import": "./dist/tools/generators/generate-css-gradient.js"
+    },
+    "./tools/generators/generate-hex-color": {
+      "types": "./dist/tools/generators/generate-hex-color.d.ts",
+      "import": "./dist/tools/generators/generate-hex-color.js"
+    },
+    "./tools/generators/generate-iban": {
+      "types": "./dist/tools/generators/generate-iban.d.ts",
+      "import": "./dist/tools/generators/generate-iban.js"
+    },
+    "./tools/generators/generate-mac-address": {
+      "types": "./dist/tools/generators/generate-mac-address.d.ts",
+      "import": "./dist/tools/generators/generate-mac-address.js"
+    },
+    "./tools/generators/generate-markdown-table": {
+      "types": "./dist/tools/generators/generate-markdown-table.d.ts",
+      "import": "./dist/tools/generators/generate-markdown-table.js"
+    },
+    "./tools/generators/generate-mock-json": {
+      "types": "./dist/tools/generators/generate-mock-json.d.ts",
+      "import": "./dist/tools/generators/generate-mock-json.js"
+    },
+    "./tools/generators/generate-nanoid": {
+      "types": "./dist/tools/generators/generate-nanoid.d.ts",
+      "import": "./dist/tools/generators/generate-nanoid.js"
+    },
+    "./tools/generators/generate-passphrase": {
+      "types": "./dist/tools/generators/generate-passphrase.d.ts",
+      "import": "./dist/tools/generators/generate-passphrase.js"
+    },
+    "./tools/generators/generate-pin": {
+      "types": "./dist/tools/generators/generate-pin.d.ts",
+      "import": "./dist/tools/generators/generate-pin.js"
+    },
+    "./tools/generators/generate-placeholder-image": {
+      "types": "./dist/tools/generators/generate-placeholder-image.d.ts",
+      "import": "./dist/tools/generators/generate-placeholder-image.js"
+    },
+    "./tools/generators/generate-random-date": {
+      "types": "./dist/tools/generators/generate-random-date.d.ts",
+      "import": "./dist/tools/generators/generate-random-date.js"
+    },
+    "./tools/generators/generate-random-number": {
+      "types": "./dist/tools/generators/generate-random-number.d.ts",
+      "import": "./dist/tools/generators/generate-random-number.js"
+    },
+    "./tools/generators/generate-random-string": {
+      "types": "./dist/tools/generators/generate-random-string.d.ts",
+      "import": "./dist/tools/generators/generate-random-string.js"
+    },
+    "./tools/generators/generate-slug": {
+      "types": "./dist/tools/generators/generate-slug.d.ts",
+      "import": "./dist/tools/generators/generate-slug.js"
+    },
+    "./tools/generators/generate-svg-pattern": {
+      "types": "./dist/tools/generators/generate-svg-pattern.d.ts",
+      "import": "./dist/tools/generators/generate-svg-pattern.js"
+    },
+    "./tools/generators/generate-ulid": {
+      "types": "./dist/tools/generators/generate-ulid.d.ts",
+      "import": "./dist/tools/generators/generate-ulid.js"
+    },
+    "./tools/generators/generate-uuid-v5": {
+      "types": "./dist/tools/generators/generate-uuid-v5.d.ts",
+      "import": "./dist/tools/generators/generate-uuid-v5.js"
+    },
+    "./tools/generators/generators-fake-credit-card-luhn-set": {
+      "types": "./dist/tools/generators/generators-fake-credit-card-luhn-set.d.ts",
+      "import": "./dist/tools/generators/generators-fake-credit-card-luhn-set.js"
+    },
+    "./tools/generators/generators-gitlab-ci-yaml": {
+      "types": "./dist/tools/generators/generators-gitlab-ci-yaml.d.ts",
+      "import": "./dist/tools/generators/generators-gitlab-ci-yaml.js"
+    },
+    "./tools/generators/generators-htaccess-basic-auth": {
+      "types": "./dist/tools/generators/generators-htaccess-basic-auth.d.ts",
+      "import": "./dist/tools/generators/generators-htaccess-basic-auth.js"
+    },
+    "./tools/generators/generators-json-server-routes": {
+      "types": "./dist/tools/generators/generators-json-server-routes.d.ts",
+      "import": "./dist/tools/generators/generators-json-server-routes.js"
+    },
+    "./tools/generators/generators-makefile-scaffold": {
+      "types": "./dist/tools/generators/generators-makefile-scaffold.d.ts",
+      "import": "./dist/tools/generators/generators-makefile-scaffold.js"
+    },
+    "./tools/generators/generators-ssh-config-builder": {
+      "types": "./dist/tools/generators/generators-ssh-config-builder.d.ts",
+      "import": "./dist/tools/generators/generators-ssh-config-builder.js"
+    },
+    "./tools/generators/generators-svg-qr-style-placeholder": {
+      "types": "./dist/tools/generators/generators-svg-qr-style-placeholder.d.ts",
+      "import": "./dist/tools/generators/generators-svg-qr-style-placeholder.js"
+    },
+    "./tools/generators/generators-systemd-service-unit": {
+      "types": "./dist/tools/generators/generators-systemd-service-unit.d.ts",
+      "import": "./dist/tools/generators/generators-systemd-service-unit.js"
+    },
+    "./tools/generators/github-actions-workflow-generator": {
+      "types": "./dist/tools/generators/github-actions-workflow-generator.d.ts",
+      "import": "./dist/tools/generators/github-actions-workflow-generator.js"
+    },
+    "./tools/generators/gitignore-generator": {
+      "types": "./dist/tools/generators/gitignore-generator.d.ts",
+      "import": "./dist/tools/generators/gitignore-generator.js"
+    },
+    "./tools/generators/htpasswd-generator": {
+      "types": "./dist/tools/generators/htpasswd-generator.d.ts",
+      "import": "./dist/tools/generators/htpasswd-generator.js"
+    },
+    "./tools/generators/ip-cidr-list-generator": {
+      "types": "./dist/tools/generators/ip-cidr-list-generator.d.ts",
+      "import": "./dist/tools/generators/ip-cidr-list-generator.js"
+    },
+    "./tools/generators/json-schema-faker": {
+      "types": "./dist/tools/generators/json-schema-faker.d.ts",
+      "import": "./dist/tools/generators/json-schema-faker.js"
+    },
+    "./tools/generators/ksuid-generator": {
+      "types": "./dist/tools/generators/ksuid-generator.d.ts",
+      "import": "./dist/tools/generators/ksuid-generator.js"
+    },
+    "./tools/generators/license-key-generator": {
+      "types": "./dist/tools/generators/license-key-generator.d.ts",
+      "import": "./dist/tools/generators/license-key-generator.js"
+    },
+    "./tools/generators/lorem-bytes-generator": {
+      "types": "./dist/tools/generators/lorem-bytes-generator.d.ts",
+      "import": "./dist/tools/generators/lorem-bytes-generator.js"
+    },
+    "./tools/generators/lottery-number-generator": {
+      "types": "./dist/tools/generators/lottery-number-generator.d.ts",
+      "import": "./dist/tools/generators/lottery-number-generator.js"
+    },
+    "./tools/generators/magnet-uri-builder": {
+      "types": "./dist/tools/generators/magnet-uri-builder.d.ts",
+      "import": "./dist/tools/generators/magnet-uri-builder.js"
+    },
+    "./tools/generators/memorable-password-generator": {
+      "types": "./dist/tools/generators/memorable-password-generator.d.ts",
+      "import": "./dist/tools/generators/memorable-password-generator.js"
+    },
+    "./tools/generators/mnemonic-pin-generator": {
+      "types": "./dist/tools/generators/mnemonic-pin-generator.d.ts",
+      "import": "./dist/tools/generators/mnemonic-pin-generator.js"
+    },
+    "./tools/generators/mock-data": {
+      "types": "./dist/tools/generators/mock-data.d.ts",
+      "import": "./dist/tools/generators/mock-data.js"
+    },
+    "./tools/generators/nanoid-custom-alphabet": {
+      "types": "./dist/tools/generators/nanoid-custom-alphabet.d.ts",
+      "import": "./dist/tools/generators/nanoid-custom-alphabet.js"
+    },
+    "./tools/generators/nanoid-generator": {
+      "types": "./dist/tools/generators/nanoid-generator.d.ts",
+      "import": "./dist/tools/generators/nanoid-generator.js"
+    },
+    "./tools/generators/open-source-license-generator": {
+      "types": "./dist/tools/generators/open-source-license-generator.d.ts",
+      "import": "./dist/tools/generators/open-source-license-generator.js"
+    },
+    "./tools/generators/otp-secret-generator": {
+      "types": "./dist/tools/generators/otp-secret-generator.d.ts",
+      "import": "./dist/tools/generators/otp-secret-generator.js"
+    },
+    "./tools/generators/package-json-generator": {
+      "types": "./dist/tools/generators/package-json-generator.d.ts",
+      "import": "./dist/tools/generators/package-json-generator.js"
+    },
+    "./tools/generators/passphrase-generator": {
+      "types": "./dist/tools/generators/passphrase-generator.d.ts",
+      "import": "./dist/tools/generators/passphrase-generator.js"
+    },
+    "./tools/generators/pattern-password-generator": {
+      "types": "./dist/tools/generators/pattern-password-generator.d.ts",
+      "import": "./dist/tools/generators/pattern-password-generator.js"
+    },
+    "./tools/generators/phone-number-format-generator": {
+      "types": "./dist/tools/generators/phone-number-format-generator.d.ts",
+      "import": "./dist/tools/generators/phone-number-format-generator.js"
+    },
+    "./tools/generators/playing-card-dealer": {
+      "types": "./dist/tools/generators/playing-card-dealer.d.ts",
+      "import": "./dist/tools/generators/playing-card-dealer.js"
+    },
+    "./tools/generators/prettier-config-generator": {
+      "types": "./dist/tools/generators/prettier-config-generator.d.ts",
+      "import": "./dist/tools/generators/prettier-config-generator.js"
+    },
+    "./tools/generators/pronounceable-password-generator": {
+      "types": "./dist/tools/generators/pronounceable-password-generator.d.ts",
+      "import": "./dist/tools/generators/pronounceable-password-generator.js"
+    },
+    "./tools/generators/random-boolean-generator": {
+      "types": "./dist/tools/generators/random-boolean-generator.d.ts",
+      "import": "./dist/tools/generators/random-boolean-generator.js"
+    },
+    "./tools/generators/random-choice-picker": {
+      "types": "./dist/tools/generators/random-choice-picker.d.ts",
+      "import": "./dist/tools/generators/random-choice-picker.js"
+    },
+    "./tools/generators/random-coordinates-generator": {
+      "types": "./dist/tools/generators/random-coordinates-generator.d.ts",
+      "import": "./dist/tools/generators/random-coordinates-generator.js"
+    },
+    "./tools/generators/random-date-range-generator": {
+      "types": "./dist/tools/generators/random-date-range-generator.d.ts",
+      "import": "./dist/tools/generators/random-date-range-generator.js"
+    },
+    "./tools/generators/random-emoji-picker": {
+      "types": "./dist/tools/generators/random-emoji-picker.d.ts",
+      "import": "./dist/tools/generators/random-emoji-picker.js"
+    },
+    "./tools/generators/random-hex-color-palette": {
+      "types": "./dist/tools/generators/random-hex-color-palette.d.ts",
+      "import": "./dist/tools/generators/random-hex-color-palette.js"
+    },
+    "./tools/generators/random-string": {
+      "types": "./dist/tools/generators/random-string.d.ts",
+      "import": "./dist/tools/generators/random-string.js"
+    },
+    "./tools/generators/random-username-generator": {
+      "types": "./dist/tools/generators/random-username-generator.d.ts",
+      "import": "./dist/tools/generators/random-username-generator.js"
+    },
+    "./tools/generators/readme-scaffold-generator": {
+      "types": "./dist/tools/generators/readme-scaffold-generator.d.ts",
+      "import": "./dist/tools/generators/readme-scaffold-generator.js"
+    },
+    "./tools/generators/robots-txt": {
+      "types": "./dist/tools/generators/robots-txt.d.ts",
+      "import": "./dist/tools/generators/robots-txt.js"
+    },
+    "./tools/generators/snowflake-id-generator": {
+      "types": "./dist/tools/generators/snowflake-id-generator.d.ts",
+      "import": "./dist/tools/generators/snowflake-id-generator.js"
+    },
+    "./tools/generators/ssn-format-test-generator": {
+      "types": "./dist/tools/generators/ssn-format-test-generator.d.ts",
+      "import": "./dist/tools/generators/ssn-format-test-generator.js"
+    },
+    "./tools/generators/team-shuffler": {
+      "types": "./dist/tools/generators/team-shuffler.d.ts",
+      "import": "./dist/tools/generators/team-shuffler.js"
+    },
+    "./tools/generators/tsconfig-generator": {
+      "types": "./dist/tools/generators/tsconfig-generator.d.ts",
+      "import": "./dist/tools/generators/tsconfig-generator.js"
+    },
+    "./tools/generators/ulid-generator": {
+      "types": "./dist/tools/generators/ulid-generator.d.ts",
+      "import": "./dist/tools/generators/ulid-generator.js"
+    },
+    "./tools/generators/uuid-generator": {
+      "types": "./dist/tools/generators/uuid-generator.d.ts",
+      "import": "./dist/tools/generators/uuid-generator.js"
+    },
+    "./tools/generators/uuid-namespace-builder": {
+      "types": "./dist/tools/generators/uuid-namespace-builder.d.ts",
+      "import": "./dist/tools/generators/uuid-namespace-builder.js"
+    },
+    "./tools/generators/uuid-nil-max-generator": {
+      "types": "./dist/tools/generators/uuid-nil-max-generator.d.ts",
+      "import": "./dist/tools/generators/uuid-nil-max-generator.js"
+    },
+    "./tools/generators/uuid-v7-generator": {
+      "types": "./dist/tools/generators/uuid-v7-generator.d.ts",
+      "import": "./dist/tools/generators/uuid-v7-generator.js"
+    },
+    "./tools/generators/vcard-generator": {
+      "types": "./dist/tools/generators/vcard-generator.d.ts",
+      "import": "./dist/tools/generators/vcard-generator.js"
+    },
+    "./tools/generators/vcard-qr-payload-generator": {
+      "types": "./dist/tools/generators/vcard-qr-payload-generator.d.ts",
+      "import": "./dist/tools/generators/vcard-qr-payload-generator.js"
+    },
+    "./tools/generators/weighted-random-picker": {
+      "types": "./dist/tools/generators/weighted-random-picker.d.ts",
+      "import": "./dist/tools/generators/weighted-random-picker.js"
+    },
+    "./tools/generators/wifi-qr-payload-generator": {
+      "types": "./dist/tools/generators/wifi-qr-payload-generator.d.ts",
+      "import": "./dist/tools/generators/wifi-qr-payload-generator.js"
+    },
+    "./tools/image/image-add-border": {
+      "types": "./dist/tools/image/image-add-border.d.ts",
+      "import": "./dist/tools/image/image-add-border.js"
+    },
+    "./tools/image/image-aspect-fit-cover-calculator": {
+      "types": "./dist/tools/image/image-aspect-fit-cover-calculator.d.ts",
+      "import": "./dist/tools/image/image-aspect-fit-cover-calculator.js"
+    },
+    "./tools/image/image-canvas-grid-overlay": {
+      "types": "./dist/tools/image/image-canvas-grid-overlay.d.ts",
+      "import": "./dist/tools/image/image-canvas-grid-overlay.js"
+    },
+    "./tools/image/image-checkerboard-svg": {
+      "types": "./dist/tools/image/image-checkerboard-svg.d.ts",
+      "import": "./dist/tools/image/image-checkerboard-svg.js"
+    },
+    "./tools/image/image-color-overlay": {
+      "types": "./dist/tools/image/image-color-overlay.d.ts",
+      "import": "./dist/tools/image/image-color-overlay.js"
+    },
+    "./tools/image/image-compress-quality": {
+      "types": "./dist/tools/image/image-compress-quality.d.ts",
+      "import": "./dist/tools/image/image-compress-quality.js"
+    },
+    "./tools/image/image-contact-sheet-builder": {
+      "types": "./dist/tools/image/image-contact-sheet-builder.d.ts",
+      "import": "./dist/tools/image/image-contact-sheet-builder.js"
+    },
+    "./tools/image/image-converter": {
+      "types": "./dist/tools/image/image-converter.d.ts",
+      "import": "./dist/tools/image/image-converter.js"
+    },
+    "./tools/image/image-crop-aspect": {
+      "types": "./dist/tools/image/image-crop-aspect.d.ts",
+      "import": "./dist/tools/image/image-crop-aspect.js"
+    },
+    "./tools/image/image-dominant-color": {
+      "types": "./dist/tools/image/image-dominant-color.d.ts",
+      "import": "./dist/tools/image/image-dominant-color.js"
+    },
+    "./tools/image/image-duotone": {
+      "types": "./dist/tools/image/image-duotone.d.ts",
+      "import": "./dist/tools/image/image-duotone.js"
+    },
+    "./tools/image/image-exif-viewer": {
+      "types": "./dist/tools/image/image-exif-viewer.d.ts",
+      "import": "./dist/tools/image/image-exif-viewer.js"
+    },
+    "./tools/image/image-favicon-generator": {
+      "types": "./dist/tools/image/image-favicon-generator.d.ts",
+      "import": "./dist/tools/image/image-favicon-generator.js"
+    },
+    "./tools/image/image-filter-adjust": {
+      "types": "./dist/tools/image/image-filter-adjust.d.ts",
+      "import": "./dist/tools/image/image-filter-adjust.js"
+    },
+    "./tools/image/image-gaussian-blur": {
+      "types": "./dist/tools/image/image-gaussian-blur.d.ts",
+      "import": "./dist/tools/image/image-gaussian-blur.js"
+    },
+    "./tools/image/image-gradient-svg-generator": {
+      "types": "./dist/tools/image/image-gradient-svg-generator.d.ts",
+      "import": "./dist/tools/image/image-gradient-svg-generator.js"
+    },
+    "./tools/image/image-histogram": {
+      "types": "./dist/tools/image/image-histogram.d.ts",
+      "import": "./dist/tools/image/image-histogram.js"
+    },
+    "./tools/image/image-invert-colors": {
+      "types": "./dist/tools/image/image-invert-colors.d.ts",
+      "import": "./dist/tools/image/image-invert-colors.js"
+    },
+    "./tools/image/image-meme-text": {
+      "types": "./dist/tools/image/image-meme-text.d.ts",
+      "import": "./dist/tools/image/image-meme-text.js"
+    },
+    "./tools/image/image-mirror-collage": {
+      "types": "./dist/tools/image/image-mirror-collage.d.ts",
+      "import": "./dist/tools/image/image-mirror-collage.js"
+    },
+    "./tools/image/image-noise-texture-svg": {
+      "types": "./dist/tools/image/image-noise-texture-svg.d.ts",
+      "import": "./dist/tools/image/image-noise-texture-svg.js"
+    },
+    "./tools/image/image-palette-extractor": {
+      "types": "./dist/tools/image/image-palette-extractor.d.ts",
+      "import": "./dist/tools/image/image-palette-extractor.js"
+    },
+    "./tools/image/image-pixel-ruler": {
+      "types": "./dist/tools/image/image-pixel-ruler.d.ts",
+      "import": "./dist/tools/image/image-pixel-ruler.js"
+    },
+    "./tools/image/image-pixelate": {
+      "types": "./dist/tools/image/image-pixelate.d.ts",
+      "import": "./dist/tools/image/image-pixelate.js"
+    },
+    "./tools/image/image-resize-pixels": {
+      "types": "./dist/tools/image/image-resize-pixels.d.ts",
+      "import": "./dist/tools/image/image-resize-pixels.js"
+    },
+    "./tools/image/image-resize-to-filesize": {
+      "types": "./dist/tools/image/image-resize-to-filesize.d.ts",
+      "import": "./dist/tools/image/image-resize-to-filesize.js"
+    },
+    "./tools/image/image-rgb-channel-split": {
+      "types": "./dist/tools/image/image-rgb-channel-split.d.ts",
+      "import": "./dist/tools/image/image-rgb-channel-split.js"
+    },
+    "./tools/image/image-rotate-flip": {
+      "types": "./dist/tools/image/image-rotate-flip.d.ts",
+      "import": "./dist/tools/image/image-rotate-flip.js"
+    },
+    "./tools/image/image-round-corners": {
+      "types": "./dist/tools/image/image-round-corners.d.ts",
+      "import": "./dist/tools/image/image-round-corners.js"
+    },
+    "./tools/image/image-sepia-vintage": {
+      "types": "./dist/tools/image/image-sepia-vintage.d.ts",
+      "import": "./dist/tools/image/image-sepia-vintage.js"
+    },
+    "./tools/image/image-sprite-merger": {
+      "types": "./dist/tools/image/image-sprite-merger.d.ts",
+      "import": "./dist/tools/image/image-sprite-merger.js"
+    },
+    "./tools/image/image-sprite-splitter": {
+      "types": "./dist/tools/image/image-sprite-splitter.d.ts",
+      "import": "./dist/tools/image/image-sprite-splitter.js"
+    },
+    "./tools/image/image-svg-optimizer-cleaner": {
+      "types": "./dist/tools/image/image-svg-optimizer-cleaner.d.ts",
+      "import": "./dist/tools/image/image-svg-optimizer-cleaner.js"
+    },
+    "./tools/image/image-svg-to-png": {
+      "types": "./dist/tools/image/image-svg-to-png.d.ts",
+      "import": "./dist/tools/image/image-svg-to-png.js"
+    },
+    "./tools/image/image-threshold-bw": {
+      "types": "./dist/tools/image/image-threshold-bw.d.ts",
+      "import": "./dist/tools/image/image-threshold-bw.js"
+    },
+    "./tools/image/image-thumbnail-batch": {
+      "types": "./dist/tools/image/image-thumbnail-batch.d.ts",
+      "import": "./dist/tools/image/image-thumbnail-batch.js"
+    },
+    "./tools/image/image-to-ascii-art": {
+      "types": "./dist/tools/image/image-to-ascii-art.d.ts",
+      "import": "./dist/tools/image/image-to-ascii-art.js"
+    },
+    "./tools/image/image-to-base64": {
+      "types": "./dist/tools/image/image-to-base64.d.ts",
+      "import": "./dist/tools/image/image-to-base64.js"
+    },
+    "./tools/image/image-to-data-uri-variants": {
+      "types": "./dist/tools/image/image-to-data-uri-variants.d.ts",
+      "import": "./dist/tools/image/image-to-data-uri-variants.js"
+    },
+    "./tools/image/image-vignette": {
+      "types": "./dist/tools/image/image-vignette.d.ts",
+      "import": "./dist/tools/image/image-vignette.js"
+    },
+    "./tools/image/image-watermark-text": {
+      "types": "./dist/tools/image/image-watermark-text.d.ts",
+      "import": "./dist/tools/image/image-watermark-text.js"
+    },
+    "./tools/image/placeholder-image": {
+      "types": "./dist/tools/image/placeholder-image.d.ts",
+      "import": "./dist/tools/image/placeholder-image.js"
+    },
+    "./tools/image/svg-to-data-uri": {
+      "types": "./dist/tools/image/svg-to-data-uri.d.ts",
+      "import": "./dist/tools/image/svg-to-data-uri.js"
+    },
+    "./tools/math/angle-converter": {
+      "types": "./dist/tools/math/angle-converter.d.ts",
+      "import": "./dist/tools/math/angle-converter.js"
+    },
+    "./tools/math/arbitrary-base-converter": {
+      "types": "./dist/tools/math/arbitrary-base-converter.d.ts",
+      "import": "./dist/tools/math/arbitrary-base-converter.js"
+    },
+    "./tools/math/arithmetic-geometric-sequence": {
+      "types": "./dist/tools/math/arithmetic-geometric-sequence.d.ts",
+      "import": "./dist/tools/math/arithmetic-geometric-sequence.js"
+    },
+    "./tools/math/aspect-ratio-calculator": {
+      "types": "./dist/tools/math/aspect-ratio-calculator.d.ts",
+      "import": "./dist/tools/math/aspect-ratio-calculator.js"
+    },
+    "./tools/math/base-n-arithmetic": {
+      "types": "./dist/tools/math/base-n-arithmetic.d.ts",
+      "import": "./dist/tools/math/base-n-arithmetic.js"
+    },
+    "./tools/math/binary-to-gray-code": {
+      "types": "./dist/tools/math/binary-to-gray-code.d.ts",
+      "import": "./dist/tools/math/binary-to-gray-code.js"
+    },
+    "./tools/math/bit-rotate-shift": {
+      "types": "./dist/tools/math/bit-rotate-shift.d.ts",
+      "import": "./dist/tools/math/bit-rotate-shift.js"
+    },
+    "./tools/math/bitwise-calculator": {
+      "types": "./dist/tools/math/bitwise-calculator.d.ts",
+      "import": "./dist/tools/math/bitwise-calculator.js"
+    },
+    "./tools/math/bmi-calculator": {
+      "types": "./dist/tools/math/bmi-calculator.d.ts",
+      "import": "./dist/tools/math/bmi-calculator.js"
+    },
+    "./tools/math/break-even-calculator": {
+      "types": "./dist/tools/math/break-even-calculator.d.ts",
+      "import": "./dist/tools/math/break-even-calculator.js"
+    },
+    "./tools/math/cagr-calculator": {
+      "types": "./dist/tools/math/cagr-calculator.d.ts",
+      "import": "./dist/tools/math/cagr-calculator.js"
+    },
+    "./tools/math/circle-calculator": {
+      "types": "./dist/tools/math/circle-calculator.d.ts",
+      "import": "./dist/tools/math/circle-calculator.js"
+    },
+    "./tools/math/collatz-calculator": {
+      "types": "./dist/tools/math/collatz-calculator.d.ts",
+      "import": "./dist/tools/math/collatz-calculator.js"
+    },
+    "./tools/math/complex-number-calculator": {
+      "types": "./dist/tools/math/complex-number-calculator.d.ts",
+      "import": "./dist/tools/math/complex-number-calculator.js"
+    },
+    "./tools/math/compound-interest-calculator": {
+      "types": "./dist/tools/math/compound-interest-calculator.d.ts",
+      "import": "./dist/tools/math/compound-interest-calculator.js"
+    },
+    "./tools/math/continued-fraction-converter": {
+      "types": "./dist/tools/math/continued-fraction-converter.d.ts",
+      "import": "./dist/tools/math/continued-fraction-converter.js"
+    },
+    "./tools/math/cooking-converter": {
+      "types": "./dist/tools/math/cooking-converter.d.ts",
+      "import": "./dist/tools/math/cooking-converter.js"
+    },
+    "./tools/math/currency-amount-to-words": {
+      "types": "./dist/tools/math/currency-amount-to-words.d.ts",
+      "import": "./dist/tools/math/currency-amount-to-words.js"
+    },
+    "./tools/math/currency-split-calculator": {
+      "types": "./dist/tools/math/currency-split-calculator.d.ts",
+      "import": "./dist/tools/math/currency-split-calculator.js"
+    },
+    "./tools/math/data-rate-converter": {
+      "types": "./dist/tools/math/data-rate-converter.d.ts",
+      "import": "./dist/tools/math/data-rate-converter.js"
+    },
+    "./tools/math/decimal-fraction-percent": {
+      "types": "./dist/tools/math/decimal-fraction-percent.d.ts",
+      "import": "./dist/tools/math/decimal-fraction-percent.js"
+    },
+    "./tools/math/dice-probability": {
+      "types": "./dist/tools/math/dice-probability.d.ts",
+      "import": "./dist/tools/math/dice-probability.js"
+    },
+    "./tools/math/digit-sum-root": {
+      "types": "./dist/tools/math/digit-sum-root.d.ts",
+      "import": "./dist/tools/math/digit-sum-root.js"
+    },
+    "./tools/math/discount-calculator": {
+      "types": "./dist/tools/math/discount-calculator.d.ts",
+      "import": "./dist/tools/math/discount-calculator.js"
+    },
+    "./tools/math/distance-2d-3d": {
+      "types": "./dist/tools/math/distance-2d-3d.d.ts",
+      "import": "./dist/tools/math/distance-2d-3d.js"
+    },
+    "./tools/math/divisibility-rules-checker": {
+      "types": "./dist/tools/math/divisibility-rules-checker.d.ts",
+      "import": "./dist/tools/math/divisibility-rules-checker.js"
+    },
+    "./tools/math/divisor-lister": {
+      "types": "./dist/tools/math/divisor-lister.d.ts",
+      "import": "./dist/tools/math/divisor-lister.js"
+    },
+    "./tools/math/duration-converter": {
+      "types": "./dist/tools/math/duration-converter.d.ts",
+      "import": "./dist/tools/math/duration-converter.js"
+    },
+    "./tools/math/ellipse-calculator": {
+      "types": "./dist/tools/math/ellipse-calculator.d.ts",
+      "import": "./dist/tools/math/ellipse-calculator.js"
+    },
+    "./tools/math/engineering-notation-converter": {
+      "types": "./dist/tools/math/engineering-notation-converter.d.ts",
+      "import": "./dist/tools/math/engineering-notation-converter.js"
+    },
+    "./tools/math/exponent-power-calculator": {
+      "types": "./dist/tools/math/exponent-power-calculator.d.ts",
+      "import": "./dist/tools/math/exponent-power-calculator.js"
+    },
+    "./tools/math/expression-calculator": {
+      "types": "./dist/tools/math/expression-calculator.d.ts",
+      "import": "./dist/tools/math/expression-calculator.js"
+    },
+    "./tools/math/extended-gcd-multi": {
+      "types": "./dist/tools/math/extended-gcd-multi.d.ts",
+      "import": "./dist/tools/math/extended-gcd-multi.js"
+    },
+    "./tools/math/factorial-binomial-calculator": {
+      "types": "./dist/tools/math/factorial-binomial-calculator.d.ts",
+      "import": "./dist/tools/math/factorial-binomial-calculator.js"
+    },
+    "./tools/math/factorial-calculator": {
+      "types": "./dist/tools/math/factorial-calculator.d.ts",
+      "import": "./dist/tools/math/factorial-calculator.js"
+    },
+    "./tools/math/fibonacci-calculator": {
+      "types": "./dist/tools/math/fibonacci-calculator.d.ts",
+      "import": "./dist/tools/math/fibonacci-calculator.js"
+    },
+    "./tools/math/fixed-point-converter": {
+      "types": "./dist/tools/math/fixed-point-converter.d.ts",
+      "import": "./dist/tools/math/fixed-point-converter.js"
+    },
+    "./tools/math/fraction-arithmetic": {
+      "types": "./dist/tools/math/fraction-arithmetic.d.ts",
+      "import": "./dist/tools/math/fraction-arithmetic.js"
+    },
+    "./tools/math/fraction-decimal-converter": {
+      "types": "./dist/tools/math/fraction-decimal-converter.d.ts",
+      "import": "./dist/tools/math/fraction-decimal-converter.js"
+    },
+    "./tools/math/fraction-simplifier": {
+      "types": "./dist/tools/math/fraction-simplifier.d.ts",
+      "import": "./dist/tools/math/fraction-simplifier.js"
+    },
+    "./tools/math/fuel-economy-converter": {
+      "types": "./dist/tools/math/fuel-economy-converter.d.ts",
+      "import": "./dist/tools/math/fuel-economy-converter.js"
+    },
+    "./tools/math/gcd-lcm": {
+      "types": "./dist/tools/math/gcd-lcm.d.ts",
+      "import": "./dist/tools/math/gcd-lcm.js"
+    },
+    "./tools/math/ieee754-float-inspector": {
+      "types": "./dist/tools/math/ieee754-float-inspector.d.ts",
+      "import": "./dist/tools/math/ieee754-float-inspector.js"
+    },
+    "./tools/math/integer-factorization": {
+      "types": "./dist/tools/math/integer-factorization.d.ts",
+      "import": "./dist/tools/math/integer-factorization.js"
+    },
+    "./tools/math/loan-emi-calculator": {
+      "types": "./dist/tools/math/loan-emi-calculator.d.ts",
+      "import": "./dist/tools/math/loan-emi-calculator.js"
+    },
+    "./tools/math/logarithm-calculator": {
+      "types": "./dist/tools/math/logarithm-calculator.d.ts",
+      "import": "./dist/tools/math/logarithm-calculator.js"
+    },
+    "./tools/math/markup-margin-calculator": {
+      "types": "./dist/tools/math/markup-margin-calculator.d.ts",
+      "import": "./dist/tools/math/markup-margin-calculator.js"
+    },
+    "./tools/math/math-aspect-ratio-resizer": {
+      "types": "./dist/tools/math/math-aspect-ratio-resizer.d.ts",
+      "import": "./dist/tools/math/math-aspect-ratio-resizer.js"
+    },
+    "./tools/math/math-base-converter-fractional": {
+      "types": "./dist/tools/math/math-base-converter-fractional.d.ts",
+      "import": "./dist/tools/math/math-base-converter-fractional.js"
+    },
+    "./tools/math/math-dms-decimal-degrees": {
+      "types": "./dist/tools/math/math-dms-decimal-degrees.d.ts",
+      "import": "./dist/tools/math/math-dms-decimal-degrees.js"
+    },
+    "./tools/math/math-gpa-calculator": {
+      "types": "./dist/tools/math/math-gpa-calculator.d.ts",
+      "import": "./dist/tools/math/math-gpa-calculator.js"
+    },
+    "./tools/math/math-great-circle-distance": {
+      "types": "./dist/tools/math/math-great-circle-distance.d.ts",
+      "import": "./dist/tools/math/math-great-circle-distance.js"
+    },
+    "./tools/math/math-linear-system-solver": {
+      "types": "./dist/tools/math/math-linear-system-solver.d.ts",
+      "import": "./dist/tools/math/math-linear-system-solver.js"
+    },
+    "./tools/math/math-loan-amortization-schedule": {
+      "types": "./dist/tools/math/math-loan-amortization-schedule.d.ts",
+      "import": "./dist/tools/math/math-loan-amortization-schedule.js"
+    },
+    "./tools/math/math-matrix-determinant-inverse": {
+      "types": "./dist/tools/math/math-matrix-determinant-inverse.d.ts",
+      "import": "./dist/tools/math/math-matrix-determinant-inverse.js"
+    },
+    "./tools/math/math-numeral-system-clock": {
+      "types": "./dist/tools/math/math-numeral-system-clock.d.ts",
+      "import": "./dist/tools/math/math-numeral-system-clock.js"
+    },
+    "./tools/math/math-tax-bracket-calculator": {
+      "types": "./dist/tools/math/math-tax-bracket-calculator.d.ts",
+      "import": "./dist/tools/math/math-tax-bracket-calculator.js"
+    },
+    "./tools/math/math-tip-free-percent-of-total": {
+      "types": "./dist/tools/math/math-tip-free-percent-of-total.d.ts",
+      "import": "./dist/tools/math/math-tip-free-percent-of-total.js"
+    },
+    "./tools/math/matrix-calculator": {
+      "types": "./dist/tools/math/matrix-calculator.d.ts",
+      "import": "./dist/tools/math/matrix-calculator.js"
+    },
+    "./tools/math/mean-median-mode": {
+      "types": "./dist/tools/math/mean-median-mode.d.ts",
+      "import": "./dist/tools/math/mean-median-mode.js"
+    },
+    "./tools/math/midpoint-calculator": {
+      "types": "./dist/tools/math/midpoint-calculator.d.ts",
+      "import": "./dist/tools/math/midpoint-calculator.js"
+    },
+    "./tools/math/modular-exponentiation": {
+      "types": "./dist/tools/math/modular-exponentiation.d.ts",
+      "import": "./dist/tools/math/modular-exponentiation.js"
+    },
+    "./tools/math/modular-inverse": {
+      "types": "./dist/tools/math/modular-inverse.d.ts",
+      "import": "./dist/tools/math/modular-inverse.js"
+    },
+    "./tools/math/modulo-calculator": {
+      "types": "./dist/tools/math/modulo-calculator.d.ts",
+      "import": "./dist/tools/math/modulo-calculator.js"
+    },
+    "./tools/math/mortgage-extra-payment": {
+      "types": "./dist/tools/math/mortgage-extra-payment.d.ts",
+      "import": "./dist/tools/math/mortgage-extra-payment.js"
+    },
+    "./tools/math/next-prime-finder": {
+      "types": "./dist/tools/math/next-prime-finder.d.ts",
+      "import": "./dist/tools/math/next-prime-finder.js"
+    },
+    "./tools/math/number-base-converter": {
+      "types": "./dist/tools/math/number-base-converter.d.ts",
+      "import": "./dist/tools/math/number-base-converter.js"
+    },
+    "./tools/math/number-to-base64": {
+      "types": "./dist/tools/math/number-to-base64.d.ts",
+      "import": "./dist/tools/math/number-to-base64.js"
+    },
+    "./tools/math/ordinal-number-converter": {
+      "types": "./dist/tools/math/ordinal-number-converter.d.ts",
+      "import": "./dist/tools/math/ordinal-number-converter.js"
+    },
+    "./tools/math/pace-calculator": {
+      "types": "./dist/tools/math/pace-calculator.d.ts",
+      "import": "./dist/tools/math/pace-calculator.js"
+    },
+    "./tools/math/percent-change": {
+      "types": "./dist/tools/math/percent-change.d.ts",
+      "import": "./dist/tools/math/percent-change.js"
+    },
+    "./tools/math/percent-error": {
+      "types": "./dist/tools/math/percent-error.d.ts",
+      "import": "./dist/tools/math/percent-error.js"
+    },
+    "./tools/math/percent-increase-decrease": {
+      "types": "./dist/tools/math/percent-increase-decrease.d.ts",
+      "import": "./dist/tools/math/percent-increase-decrease.js"
+    },
+    "./tools/math/percentage-calculator": {
+      "types": "./dist/tools/math/percentage-calculator.d.ts",
+      "import": "./dist/tools/math/percentage-calculator.js"
+    },
+    "./tools/math/perfect-number-classifier": {
+      "types": "./dist/tools/math/perfect-number-classifier.d.ts",
+      "import": "./dist/tools/math/perfect-number-classifier.js"
+    },
+    "./tools/math/permutation-combination": {
+      "types": "./dist/tools/math/permutation-combination.d.ts",
+      "import": "./dist/tools/math/permutation-combination.js"
+    },
+    "./tools/math/polar-cartesian-converter": {
+      "types": "./dist/tools/math/polar-cartesian-converter.d.ts",
+      "import": "./dist/tools/math/polar-cartesian-converter.js"
+    },
+    "./tools/math/polynomial-evaluator": {
+      "types": "./dist/tools/math/polynomial-evaluator.d.ts",
+      "import": "./dist/tools/math/polynomial-evaluator.js"
+    },
+    "./tools/math/prime-checker": {
+      "types": "./dist/tools/math/prime-checker.d.ts",
+      "import": "./dist/tools/math/prime-checker.js"
+    },
+    "./tools/math/prime-sieve-generator": {
+      "types": "./dist/tools/math/prime-sieve-generator.d.ts",
+      "import": "./dist/tools/math/prime-sieve-generator.js"
+    },
+    "./tools/math/prism-cylinder-volume": {
+      "types": "./dist/tools/math/prism-cylinder-volume.d.ts",
+      "import": "./dist/tools/math/prism-cylinder-volume.js"
+    },
+    "./tools/math/proportion-solver": {
+      "types": "./dist/tools/math/proportion-solver.d.ts",
+      "import": "./dist/tools/math/proportion-solver.js"
+    },
+    "./tools/math/pythagorean-theorem": {
+      "types": "./dist/tools/math/pythagorean-theorem.d.ts",
+      "import": "./dist/tools/math/pythagorean-theorem.js"
+    },
+    "./tools/math/quadratic-equation-solver": {
+      "types": "./dist/tools/math/quadratic-equation-solver.d.ts",
+      "import": "./dist/tools/math/quadratic-equation-solver.js"
+    },
+    "./tools/math/quotient-remainder-calculator": {
+      "types": "./dist/tools/math/quotient-remainder-calculator.d.ts",
+      "import": "./dist/tools/math/quotient-remainder-calculator.js"
+    },
+    "./tools/math/random-distribution-generator": {
+      "types": "./dist/tools/math/random-distribution-generator.d.ts",
+      "import": "./dist/tools/math/random-distribution-generator.js"
+    },
+    "./tools/math/random-number-generator": {
+      "types": "./dist/tools/math/random-number-generator.d.ts",
+      "import": "./dist/tools/math/random-number-generator.js"
+    },
+    "./tools/math/ratio-proportion-solver": {
+      "types": "./dist/tools/math/ratio-proportion-solver.d.ts",
+      "import": "./dist/tools/math/ratio-proportion-solver.js"
+    },
+    "./tools/math/rectangle-square-calculator": {
+      "types": "./dist/tools/math/rectangle-square-calculator.d.ts",
+      "import": "./dist/tools/math/rectangle-square-calculator.js"
+    },
+    "./tools/math/regular-polygon-calculator": {
+      "types": "./dist/tools/math/regular-polygon-calculator.d.ts",
+      "import": "./dist/tools/math/regular-polygon-calculator.js"
+    },
+    "./tools/math/repeating-decimal-to-fraction": {
+      "types": "./dist/tools/math/repeating-decimal-to-fraction.d.ts",
+      "import": "./dist/tools/math/repeating-decimal-to-fraction.js"
+    },
+    "./tools/math/roi-calculator": {
+      "types": "./dist/tools/math/roi-calculator.d.ts",
+      "import": "./dist/tools/math/roi-calculator.js"
+    },
+    "./tools/math/roman-numeral-variants": {
+      "types": "./dist/tools/math/roman-numeral-variants.d.ts",
+      "import": "./dist/tools/math/roman-numeral-variants.js"
+    },
+    "./tools/math/roman-numerals": {
+      "types": "./dist/tools/math/roman-numerals.d.ts",
+      "import": "./dist/tools/math/roman-numerals.js"
+    },
+    "./tools/math/rounding-calculator": {
+      "types": "./dist/tools/math/rounding-calculator.d.ts",
+      "import": "./dist/tools/math/rounding-calculator.js"
+    },
+    "./tools/math/savings-goal-calculator": {
+      "types": "./dist/tools/math/savings-goal-calculator.d.ts",
+      "import": "./dist/tools/math/savings-goal-calculator.js"
+    },
+    "./tools/math/scientific-notation-arithmetic": {
+      "types": "./dist/tools/math/scientific-notation-arithmetic.d.ts",
+      "import": "./dist/tools/math/scientific-notation-arithmetic.js"
+    },
+    "./tools/math/scientific-notation-converter": {
+      "types": "./dist/tools/math/scientific-notation-converter.d.ts",
+      "import": "./dist/tools/math/scientific-notation-converter.js"
+    },
+    "./tools/math/significant-figures-rounder": {
+      "types": "./dist/tools/math/significant-figures-rounder.d.ts",
+      "import": "./dist/tools/math/significant-figures-rounder.js"
+    },
+    "./tools/math/simple-interest-calculator": {
+      "types": "./dist/tools/math/simple-interest-calculator.d.ts",
+      "import": "./dist/tools/math/simple-interest-calculator.js"
+    },
+    "./tools/math/slope-line-equation": {
+      "types": "./dist/tools/math/slope-line-equation.d.ts",
+      "import": "./dist/tools/math/slope-line-equation.js"
+    },
+    "./tools/math/sphere-cone-pyramid-volume": {
+      "types": "./dist/tools/math/sphere-cone-pyramid-volume.d.ts",
+      "import": "./dist/tools/math/sphere-cone-pyramid-volume.js"
+    },
+    "./tools/math/standard-deviation-variance": {
+      "types": "./dist/tools/math/standard-deviation-variance.d.ts",
+      "import": "./dist/tools/math/standard-deviation-variance.js"
+    },
+    "./tools/math/statistics": {
+      "types": "./dist/tools/math/statistics.d.ts",
+      "import": "./dist/tools/math/statistics.js"
+    },
+    "./tools/math/tip-split-calculator": {
+      "types": "./dist/tools/math/tip-split-calculator.d.ts",
+      "import": "./dist/tools/math/tip-split-calculator.js"
+    },
+    "./tools/math/trapezoid-parallelogram-calculator": {
+      "types": "./dist/tools/math/trapezoid-parallelogram-calculator.d.ts",
+      "import": "./dist/tools/math/trapezoid-parallelogram-calculator.js"
+    },
+    "./tools/math/triangle-solver": {
+      "types": "./dist/tools/math/triangle-solver.d.ts",
+      "import": "./dist/tools/math/triangle-solver.js"
+    },
+    "./tools/math/twos-complement-converter": {
+      "types": "./dist/tools/math/twos-complement-converter.d.ts",
+      "import": "./dist/tools/math/twos-complement-converter.js"
+    },
+    "./tools/math/unit-converter": {
+      "types": "./dist/tools/math/unit-converter.d.ts",
+      "import": "./dist/tools/math/unit-converter.js"
+    },
+    "./tools/math/unit-price-calculator": {
+      "types": "./dist/tools/math/unit-price-calculator.d.ts",
+      "import": "./dist/tools/math/unit-price-calculator.js"
+    },
+    "./tools/math/vat-sales-tax": {
+      "types": "./dist/tools/math/vat-sales-tax.d.ts",
+      "import": "./dist/tools/math/vat-sales-tax.js"
+    },
+    "./tools/math/vector-calculator-2d-3d": {
+      "types": "./dist/tools/math/vector-calculator-2d-3d.d.ts",
+      "import": "./dist/tools/math/vector-calculator-2d-3d.js"
+    },
+    "./tools/math/weighted-average-calculator": {
+      "types": "./dist/tools/math/weighted-average-calculator.d.ts",
+      "import": "./dist/tools/math/weighted-average-calculator.js"
+    },
+    "./tools/math/z-score-calculator": {
+      "types": "./dist/tools/math/z-score-calculator.d.ts",
+      "import": "./dist/tools/math/z-score-calculator.js"
+    },
+    "./tools/pdf/merge-pdf": {
+      "types": "./dist/tools/pdf/merge-pdf.d.ts",
+      "import": "./dist/tools/pdf/merge-pdf.js"
+    },
+    "./tools/pdf/pdf-metadata": {
+      "types": "./dist/tools/pdf/pdf-metadata.d.ts",
+      "import": "./dist/tools/pdf/pdf-metadata.js"
+    },
+    "./tools/pdf/rotate-pdf": {
+      "types": "./dist/tools/pdf/rotate-pdf.d.ts",
+      "import": "./dist/tools/pdf/rotate-pdf.js"
+    },
+    "./tools/pdf/split-pdf": {
+      "types": "./dist/tools/pdf/split-pdf.d.ts",
+      "import": "./dist/tools/pdf/split-pdf.js"
+    },
+    "./tools/registry": {
+      "types": "./dist/tools/registry.d.ts",
+      "import": "./dist/tools/registry.js"
+    },
+    "./tools/text/a1z26-cipher": {
+      "types": "./dist/tools/text/a1z26-cipher.d.ts",
+      "import": "./dist/tools/text/a1z26-cipher.js"
+    },
+    "./tools/text/acronym-expander-finder": {
+      "types": "./dist/tools/text/acronym-expander-finder.d.ts",
+      "import": "./dist/tools/text/acronym-expander-finder.js"
+    },
+    "./tools/text/acronym-maker": {
+      "types": "./dist/tools/text/acronym-maker.d.ts",
+      "import": "./dist/tools/text/acronym-maker.js"
+    },
+    "./tools/text/add-line-numbers-advanced": {
+      "types": "./dist/tools/text/add-line-numbers-advanced.d.ts",
+      "import": "./dist/tools/text/add-line-numbers-advanced.js"
+    },
+    "./tools/text/alternating-case-converter": {
+      "types": "./dist/tools/text/alternating-case-converter.d.ts",
+      "import": "./dist/tools/text/alternating-case-converter.js"
+    },
+    "./tools/text/anagram-checker": {
+      "types": "./dist/tools/text/anagram-checker.d.ts",
+      "import": "./dist/tools/text/anagram-checker.js"
+    },
+    "./tools/text/anagram-solver": {
+      "types": "./dist/tools/text/anagram-solver.d.ts",
+      "import": "./dist/tools/text/anagram-solver.js"
+    },
+    "./tools/text/ascii-table": {
+      "types": "./dist/tools/text/ascii-table.d.ts",
+      "import": "./dist/tools/text/ascii-table.js"
+    },
+    "./tools/text/at-mention-extractor": {
+      "types": "./dist/tools/text/at-mention-extractor.d.ts",
+      "import": "./dist/tools/text/at-mention-extractor.js"
+    },
+    "./tools/text/automated-readability-index": {
+      "types": "./dist/tools/text/automated-readability-index.d.ts",
+      "import": "./dist/tools/text/automated-readability-index.js"
+    },
+    "./tools/text/binary-ascii-art": {
+      "types": "./dist/tools/text/binary-ascii-art.d.ts",
+      "import": "./dist/tools/text/binary-ascii-art.js"
+    },
+    "./tools/text/braille-text": {
+      "types": "./dist/tools/text/braille-text.d.ts",
+      "import": "./dist/tools/text/braille-text.js"
+    },
+    "./tools/text/caesar-cipher": {
+      "types": "./dist/tools/text/caesar-cipher.d.ts",
+      "import": "./dist/tools/text/caesar-cipher.js"
+    },
+    "./tools/text/camel-snake-kebab-converter": {
+      "types": "./dist/tools/text/camel-snake-kebab-converter.d.ts",
+      "import": "./dist/tools/text/camel-snake-kebab-converter.js"
+    },
+    "./tools/text/case-converter": {
+      "types": "./dist/tools/text/case-converter.d.ts",
+      "import": "./dist/tools/text/case-converter.js"
+    },
+    "./tools/text/character-ngram-counter": {
+      "types": "./dist/tools/text/character-ngram-counter.d.ts",
+      "import": "./dist/tools/text/character-ngram-counter.js"
+    },
+    "./tools/text/coleman-liau-index": {
+      "types": "./dist/tools/text/coleman-liau-index.d.ts",
+      "import": "./dist/tools/text/coleman-liau-index.js"
+    },
+    "./tools/text/column-aligner": {
+      "types": "./dist/tools/text/column-aligner.d.ts",
+      "import": "./dist/tools/text/column-aligner.js"
+    },
+    "./tools/text/column-extractor": {
+      "types": "./dist/tools/text/column-extractor.d.ts",
+      "import": "./dist/tools/text/column-extractor.js"
+    },
+    "./tools/text/consecutive-duplicate-collapse": {
+      "types": "./dist/tools/text/consecutive-duplicate-collapse.d.ts",
+      "import": "./dist/tools/text/consecutive-duplicate-collapse.js"
+    },
+    "./tools/text/count-occurrences": {
+      "types": "./dist/tools/text/count-occurrences.d.ts",
+      "import": "./dist/tools/text/count-occurrences.js"
+    },
+    "./tools/text/deduplicate-words": {
+      "types": "./dist/tools/text/deduplicate-words.d.ts",
+      "import": "./dist/tools/text/deduplicate-words.js"
+    },
+    "./tools/text/delimiter-converter": {
+      "types": "./dist/tools/text/delimiter-converter.d.ts",
+      "import": "./dist/tools/text/delimiter-converter.js"
+    },
+    "./tools/text/diacritics-toggle": {
+      "types": "./dist/tools/text/diacritics-toggle.d.ts",
+      "import": "./dist/tools/text/diacritics-toggle.js"
+    },
+    "./tools/text/emoji-extractor": {
+      "types": "./dist/tools/text/emoji-extractor.d.ts",
+      "import": "./dist/tools/text/emoji-extractor.js"
+    },
+    "./tools/text/emoji-stripper": {
+      "types": "./dist/tools/text/emoji-stripper.d.ts",
+      "import": "./dist/tools/text/emoji-stripper.js"
+    },
+    "./tools/text/extract-data": {
+      "types": "./dist/tools/text/extract-data.d.ts",
+      "import": "./dist/tools/text/extract-data.js"
+    },
+    "./tools/text/fancy-text": {
+      "types": "./dist/tools/text/fancy-text.d.ts",
+      "import": "./dist/tools/text/fancy-text.js"
+    },
+    "./tools/text/figlet-banner": {
+      "types": "./dist/tools/text/figlet-banner.d.ts",
+      "import": "./dist/tools/text/figlet-banner.js"
+    },
+    "./tools/text/find-replace": {
+      "types": "./dist/tools/text/find-replace.d.ts",
+      "import": "./dist/tools/text/find-replace.js"
+    },
+    "./tools/text/flesch-reading-ease": {
+      "types": "./dist/tools/text/flesch-reading-ease.d.ts",
+      "import": "./dist/tools/text/flesch-reading-ease.js"
+    },
+    "./tools/text/fullwidth-text": {
+      "types": "./dist/tools/text/fullwidth-text.d.ts",
+      "import": "./dist/tools/text/fullwidth-text.js"
+    },
+    "./tools/text/fuzzy-dedupe-lines": {
+      "types": "./dist/tools/text/fuzzy-dedupe-lines.d.ts",
+      "import": "./dist/tools/text/fuzzy-dedupe-lines.js"
+    },
+    "./tools/text/gunning-fog-index": {
+      "types": "./dist/tools/text/gunning-fog-index.d.ts",
+      "import": "./dist/tools/text/gunning-fog-index.js"
+    },
+    "./tools/text/haiku-checker": {
+      "types": "./dist/tools/text/haiku-checker.d.ts",
+      "import": "./dist/tools/text/haiku-checker.js"
+    },
+    "./tools/text/hashtag-generator": {
+      "types": "./dist/tools/text/hashtag-generator.d.ts",
+      "import": "./dist/tools/text/hashtag-generator.js"
+    },
+    "./tools/text/indent-text": {
+      "types": "./dist/tools/text/indent-text.d.ts",
+      "import": "./dist/tools/text/indent-text.js"
+    },
+    "./tools/text/interleave-lines": {
+      "types": "./dist/tools/text/interleave-lines.d.ts",
+      "import": "./dist/tools/text/interleave-lines.js"
+    },
+    "./tools/text/join-lines": {
+      "types": "./dist/tools/text/join-lines.d.ts",
+      "import": "./dist/tools/text/join-lines.js"
+    },
+    "./tools/text/keyboard-shift-cipher": {
+      "types": "./dist/tools/text/keyboard-shift-cipher.d.ts",
+      "import": "./dist/tools/text/keyboard-shift-cipher.js"
+    },
+    "./tools/text/keyword-density-analyzer": {
+      "types": "./dist/tools/text/keyword-density-analyzer.d.ts",
+      "import": "./dist/tools/text/keyword-density-analyzer.js"
+    },
+    "./tools/text/leetspeak": {
+      "types": "./dist/tools/text/leetspeak.d.ts",
+      "import": "./dist/tools/text/leetspeak.js"
+    },
+    "./tools/text/lexical-diversity-calculator": {
+      "types": "./dist/tools/text/lexical-diversity-calculator.d.ts",
+      "import": "./dist/tools/text/lexical-diversity-calculator.js"
+    },
+    "./tools/text/line-length-checker": {
+      "types": "./dist/tools/text/line-length-checker.d.ts",
+      "import": "./dist/tools/text/line-length-checker.js"
+    },
+    "./tools/text/line-operations": {
+      "types": "./dist/tools/text/line-operations.d.ts",
+      "import": "./dist/tools/text/line-operations.js"
+    },
+    "./tools/text/list-formatter": {
+      "types": "./dist/tools/text/list-formatter.d.ts",
+      "import": "./dist/tools/text/list-formatter.js"
+    },
+    "./tools/text/lorem-ipsum": {
+      "types": "./dist/tools/text/lorem-ipsum.d.ts",
+      "import": "./dist/tools/text/lorem-ipsum.js"
+    },
+    "./tools/text/lorem-ipsum-variants": {
+      "types": "./dist/tools/text/lorem-ipsum-variants.d.ts",
+      "import": "./dist/tools/text/lorem-ipsum-variants.js"
+    },
+    "./tools/text/markdown-list-renumber": {
+      "types": "./dist/tools/text/markdown-list-renumber.d.ts",
+      "import": "./dist/tools/text/markdown-list-renumber.js"
+    },
+    "./tools/text/morse-code": {
+      "types": "./dist/tools/text/morse-code.d.ts",
+      "import": "./dist/tools/text/morse-code.js"
+    },
+    "./tools/text/morse-to-text-visual": {
+      "types": "./dist/tools/text/morse-to-text-visual.d.ts",
+      "import": "./dist/tools/text/morse-to-text-visual.js"
+    },
+    "./tools/text/nato-phonetic": {
+      "types": "./dist/tools/text/nato-phonetic.d.ts",
+      "import": "./dist/tools/text/nato-phonetic.js"
+    },
+    "./tools/text/natural-sort-lines": {
+      "types": "./dist/tools/text/natural-sort-lines.d.ts",
+      "import": "./dist/tools/text/natural-sort-lines.js"
+    },
+    "./tools/text/ngram-counter": {
+      "types": "./dist/tools/text/ngram-counter.d.ts",
+      "import": "./dist/tools/text/ngram-counter.js"
+    },
+    "./tools/text/number-lines": {
+      "types": "./dist/tools/text/number-lines.d.ts",
+      "import": "./dist/tools/text/number-lines.js"
+    },
+    "./tools/text/outline-to-list": {
+      "types": "./dist/tools/text/outline-to-list.d.ts",
+      "import": "./dist/tools/text/outline-to-list.js"
+    },
+    "./tools/text/pad-lines": {
+      "types": "./dist/tools/text/pad-lines.d.ts",
+      "import": "./dist/tools/text/pad-lines.js"
+    },
+    "./tools/text/palindrome-checker": {
+      "types": "./dist/tools/text/palindrome-checker.d.ts",
+      "import": "./dist/tools/text/palindrome-checker.js"
+    },
+    "./tools/text/paragraph-splitter": {
+      "types": "./dist/tools/text/paragraph-splitter.d.ts",
+      "import": "./dist/tools/text/paragraph-splitter.js"
+    },
+    "./tools/text/pig-latin": {
+      "types": "./dist/tools/text/pig-latin.d.ts",
+      "import": "./dist/tools/text/pig-latin.js"
+    },
+    "./tools/text/prefix-suffix-lines": {
+      "types": "./dist/tools/text/prefix-suffix-lines.d.ts",
+      "import": "./dist/tools/text/prefix-suffix-lines.js"
+    },
+    "./tools/text/profanity-placeholder": {
+      "types": "./dist/tools/text/profanity-placeholder.d.ts",
+      "import": "./dist/tools/text/profanity-placeholder.js"
+    },
+    "./tools/text/random-line-picker": {
+      "types": "./dist/tools/text/random-line-picker.d.ts",
+      "import": "./dist/tools/text/random-line-picker.js"
+    },
+    "./tools/text/random-name-generator": {
+      "types": "./dist/tools/text/random-name-generator.d.ts",
+      "import": "./dist/tools/text/random-name-generator.js"
+    },
+    "./tools/text/reading-time-estimator": {
+      "types": "./dist/tools/text/reading-time-estimator.d.ts",
+      "import": "./dist/tools/text/reading-time-estimator.js"
+    },
+    "./tools/text/regex-tester": {
+      "types": "./dist/tools/text/regex-tester.d.ts",
+      "import": "./dist/tools/text/regex-tester.js"
+    },
+    "./tools/text/remove-accents": {
+      "types": "./dist/tools/text/remove-accents.d.ts",
+      "import": "./dist/tools/text/remove-accents.js"
+    },
+    "./tools/text/remove-duplicates": {
+      "types": "./dist/tools/text/remove-duplicates.d.ts",
+      "import": "./dist/tools/text/remove-duplicates.js"
+    },
+    "./tools/text/remove-line-breaks": {
+      "types": "./dist/tools/text/remove-line-breaks.d.ts",
+      "import": "./dist/tools/text/remove-line-breaks.js"
+    },
+    "./tools/text/reverse-lines": {
+      "types": "./dist/tools/text/reverse-lines.d.ts",
+      "import": "./dist/tools/text/reverse-lines.js"
+    },
+    "./tools/text/reverse-text": {
+      "types": "./dist/tools/text/reverse-text.d.ts",
+      "import": "./dist/tools/text/reverse-text.js"
+    },
+    "./tools/text/rot13": {
+      "types": "./dist/tools/text/rot13.d.ts",
+      "import": "./dist/tools/text/rot13.js"
+    },
+    "./tools/text/rot47": {
+      "types": "./dist/tools/text/rot47.d.ts",
+      "import": "./dist/tools/text/rot47.js"
+    },
+    "./tools/text/runic-transliterator": {
+      "types": "./dist/tools/text/runic-transliterator.d.ts",
+      "import": "./dist/tools/text/runic-transliterator.js"
+    },
+    "./tools/text/sentence-case-converter": {
+      "types": "./dist/tools/text/sentence-case-converter.d.ts",
+      "import": "./dist/tools/text/sentence-case-converter.js"
+    },
+    "./tools/text/sentence-splitter": {
+      "types": "./dist/tools/text/sentence-splitter.d.ts",
+      "import": "./dist/tools/text/sentence-splitter.js"
+    },
+    "./tools/text/shuffle-lines": {
+      "types": "./dist/tools/text/shuffle-lines.d.ts",
+      "import": "./dist/tools/text/shuffle-lines.js"
+    },
+    "./tools/text/slugify": {
+      "types": "./dist/tools/text/slugify.d.ts",
+      "import": "./dist/tools/text/slugify.js"
+    },
+    "./tools/text/smart-quotes": {
+      "types": "./dist/tools/text/smart-quotes.d.ts",
+      "import": "./dist/tools/text/smart-quotes.js"
+    },
+    "./tools/text/smog-readability-grade": {
+      "types": "./dist/tools/text/smog-readability-grade.d.ts",
+      "import": "./dist/tools/text/smog-readability-grade.js"
+    },
+    "./tools/text/sort-lines": {
+      "types": "./dist/tools/text/sort-lines.d.ts",
+      "import": "./dist/tools/text/sort-lines.js"
+    },
+    "./tools/text/split-text-chunks": {
+      "types": "./dist/tools/text/split-text-chunks.d.ts",
+      "import": "./dist/tools/text/split-text-chunks.js"
+    },
+    "./tools/text/start-case-converter": {
+      "types": "./dist/tools/text/start-case-converter.d.ts",
+      "import": "./dist/tools/text/start-case-converter.js"
+    },
+    "./tools/text/strikethrough-text-variants": {
+      "types": "./dist/tools/text/strikethrough-text-variants.d.ts",
+      "import": "./dist/tools/text/strikethrough-text-variants.js"
+    },
+    "./tools/text/superscript-subscript": {
+      "types": "./dist/tools/text/superscript-subscript.d.ts",
+      "import": "./dist/tools/text/superscript-subscript.js"
+    },
+    "./tools/text/syllable-counter": {
+      "types": "./dist/tools/text/syllable-counter.d.ts",
+      "import": "./dist/tools/text/syllable-counter.js"
+    },
+    "./tools/text/tap-code-cipher": {
+      "types": "./dist/tools/text/tap-code-cipher.d.ts",
+      "import": "./dist/tools/text/tap-code-cipher.js"
+    },
+    "./tools/text/text-align-pad": {
+      "types": "./dist/tools/text/text-align-pad.d.ts",
+      "import": "./dist/tools/text/text-align-pad.js"
+    },
+    "./tools/text/text-anonymizer": {
+      "types": "./dist/tools/text/text-anonymizer.d.ts",
+      "import": "./dist/tools/text/text-anonymizer.js"
+    },
+    "./tools/text/text-box-drawing": {
+      "types": "./dist/tools/text/text-box-drawing.d.ts",
+      "import": "./dist/tools/text/text-box-drawing.js"
+    },
+    "./tools/text/text-case-statistics-report": {
+      "types": "./dist/tools/text/text-case-statistics-report.d.ts",
+      "import": "./dist/tools/text/text-case-statistics-report.js"
+    },
+    "./tools/text/text-diff": {
+      "types": "./dist/tools/text/text-diff.d.ts",
+      "import": "./dist/tools/text/text-diff.js"
+    },
+    "./tools/text/text-find-longest-shortest-line": {
+      "types": "./dist/tools/text/text-find-longest-shortest-line.d.ts",
+      "import": "./dist/tools/text/text-find-longest-shortest-line.js"
+    },
+    "./tools/text/text-frequency-filter": {
+      "types": "./dist/tools/text/text-frequency-filter.d.ts",
+      "import": "./dist/tools/text/text-frequency-filter.js"
+    },
+    "./tools/text/text-readability-summary": {
+      "types": "./dist/tools/text/text-readability-summary.d.ts",
+      "import": "./dist/tools/text/text-readability-summary.js"
+    },
+    "./tools/text/text-redundancy-finder": {
+      "types": "./dist/tools/text/text-redundancy-finder.d.ts",
+      "import": "./dist/tools/text/text-redundancy-finder.js"
+    },
+    "./tools/text/text-repeater": {
+      "types": "./dist/tools/text/text-repeater.d.ts",
+      "import": "./dist/tools/text/text-repeater.js"
+    },
+    "./tools/text/text-roman-to-fancy-numbering": {
+      "types": "./dist/tools/text/text-roman-to-fancy-numbering.d.ts",
+      "import": "./dist/tools/text/text-roman-to-fancy-numbering.js"
+    },
+    "./tools/text/text-snake-to-title-humanizer": {
+      "types": "./dist/tools/text/text-snake-to-title-humanizer.d.ts",
+      "import": "./dist/tools/text/text-snake-to-title-humanizer.js"
+    },
+    "./tools/text/text-statistics": {
+      "types": "./dist/tools/text/text-statistics.d.ts",
+      "import": "./dist/tools/text/text-statistics.js"
+    },
+    "./tools/text/text-template-placeholder-filler": {
+      "types": "./dist/tools/text/text-template-placeholder-filler.d.ts",
+      "import": "./dist/tools/text/text-template-placeholder-filler.js"
+    },
+    "./tools/text/text-text-bracket-matcher": {
+      "types": "./dist/tools/text/text-text-bracket-matcher.d.ts",
+      "import": "./dist/tools/text/text-text-bracket-matcher.js"
+    },
+    "./tools/text/text-text-column-sort": {
+      "types": "./dist/tools/text/text-text-column-sort.d.ts",
+      "import": "./dist/tools/text/text-text-column-sort.js"
+    },
+    "./tools/text/text-text-sort-by-length": {
+      "types": "./dist/tools/text/text-text-sort-by-length.d.ts",
+      "import": "./dist/tools/text/text-text-sort-by-length.js"
+    },
+    "./tools/text/text-text-to-handle-generator": {
+      "types": "./dist/tools/text/text-text-to-handle-generator.d.ts",
+      "import": "./dist/tools/text/text-text-to-handle-generator.js"
+    },
+    "./tools/text/text-text-to-slug-history": {
+      "types": "./dist/tools/text/text-text-to-slug-history.d.ts",
+      "import": "./dist/tools/text/text-text-to-slug-history.js"
+    },
+    "./tools/text/text-to-columns": {
+      "types": "./dist/tools/text/text-to-columns.d.ts",
+      "import": "./dist/tools/text/text-to-columns.js"
+    },
+    "./tools/text/text-to-emoji-letters": {
+      "types": "./dist/tools/text/text-to-emoji-letters.d.ts",
+      "import": "./dist/tools/text/text-to-emoji-letters.js"
+    },
+    "./tools/text/text-truncator": {
+      "types": "./dist/tools/text/text-truncator.d.ts",
+      "import": "./dist/tools/text/text-truncator.js"
+    },
+    "./tools/text/text-word-ladder-diff": {
+      "types": "./dist/tools/text/text-word-ladder-diff.d.ts",
+      "import": "./dist/tools/text/text-word-ladder-diff.js"
+    },
+    "./tools/text/text-wrap": {
+      "types": "./dist/tools/text/text-wrap.d.ts",
+      "import": "./dist/tools/text/text-wrap.js"
+    },
+    "./tools/text/title-case": {
+      "types": "./dist/tools/text/title-case.d.ts",
+      "import": "./dist/tools/text/title-case.js"
+    },
+    "./tools/text/transliterate-cyrillic": {
+      "types": "./dist/tools/text/transliterate-cyrillic.d.ts",
+      "import": "./dist/tools/text/transliterate-cyrillic.js"
+    },
+    "./tools/text/transliterate-greek": {
+      "types": "./dist/tools/text/transliterate-greek.d.ts",
+      "import": "./dist/tools/text/transliterate-greek.js"
+    },
+    "./tools/text/trim-lines": {
+      "types": "./dist/tools/text/trim-lines.d.ts",
+      "import": "./dist/tools/text/trim-lines.js"
+    },
+    "./tools/text/unicode-bold-italic": {
+      "types": "./dist/tools/text/unicode-bold-italic.d.ts",
+      "import": "./dist/tools/text/unicode-bold-italic.js"
+    },
+    "./tools/text/unicode-inspector": {
+      "types": "./dist/tools/text/unicode-inspector.d.ts",
+      "import": "./dist/tools/text/unicode-inspector.js"
+    },
+    "./tools/text/unicode-text-decorate": {
+      "types": "./dist/tools/text/unicode-text-decorate.d.ts",
+      "import": "./dist/tools/text/unicode-text-decorate.js"
+    },
+    "./tools/text/upside-down-text": {
+      "types": "./dist/tools/text/upside-down-text.d.ts",
+      "import": "./dist/tools/text/upside-down-text.js"
+    },
+    "./tools/text/whitespace-cleaner": {
+      "types": "./dist/tools/text/whitespace-cleaner.d.ts",
+      "import": "./dist/tools/text/whitespace-cleaner.js"
+    },
+    "./tools/text/whitespace-visualizer": {
+      "types": "./dist/tools/text/whitespace-visualizer.d.ts",
+      "import": "./dist/tools/text/whitespace-visualizer.js"
+    },
+    "./tools/text/wide-spaced-text": {
+      "types": "./dist/tools/text/wide-spaced-text.d.ts",
+      "import": "./dist/tools/text/wide-spaced-text.js"
+    },
+    "./tools/text/word-count": {
+      "types": "./dist/tools/text/word-count.d.ts",
+      "import": "./dist/tools/text/word-count.js"
+    },
+    "./tools/text/word-frequency": {
+      "types": "./dist/tools/text/word-frequency.d.ts",
+      "import": "./dist/tools/text/word-frequency.js"
+    },
+    "./tools/text/word-length-distribution": {
+      "types": "./dist/tools/text/word-length-distribution.d.ts",
+      "import": "./dist/tools/text/word-length-distribution.js"
+    },
+    "./tools/text/word-wrap-justify": {
+      "types": "./dist/tools/text/word-wrap-justify.d.ts",
+      "import": "./dist/tools/text/word-wrap-justify.js"
+    },
+    "./tools/text/zalgo-text": {
+      "types": "./dist/tools/text/zalgo-text.d.ts",
+      "import": "./dist/tools/text/zalgo-text.js"
+    },
+    "./tools/text/zero-width-char-stripper": {
+      "types": "./dist/tools/text/zero-width-char-stripper.d.ts",
+      "import": "./dist/tools/text/zero-width-char-stripper.js"
+    },
+    "./tools/time/add-business-days": {
+      "types": "./dist/tools/time/add-business-days.d.ts",
+      "import": "./dist/tools/time/add-business-days.js"
+    },
+    "./tools/time/age-calculator": {
+      "types": "./dist/tools/time/age-calculator.d.ts",
+      "import": "./dist/tools/time/age-calculator.js"
+    },
+    "./tools/time/age-on-other-planets": {
+      "types": "./dist/tools/time/age-on-other-planets.d.ts",
+      "import": "./dist/tools/time/age-on-other-planets.js"
+    },
+    "./tools/time/birthday-milestone-finder": {
+      "types": "./dist/tools/time/birthday-milestone-finder.d.ts",
+      "import": "./dist/tools/time/birthday-milestone-finder.js"
+    },
+    "./tools/time/business-days-calculator": {
+      "types": "./dist/tools/time/business-days-calculator.d.ts",
+      "import": "./dist/tools/time/business-days-calculator.js"
+    },
+    "./tools/time/chinese-zodiac-sign": {
+      "types": "./dist/tools/time/chinese-zodiac-sign.d.ts",
+      "import": "./dist/tools/time/chinese-zodiac-sign.js"
+    },
+    "./tools/time/countdown-timer-builder": {
+      "types": "./dist/tools/time/countdown-timer-builder.d.ts",
+      "import": "./dist/tools/time/countdown-timer-builder.js"
+    },
+    "./tools/time/cron-builder": {
+      "types": "./dist/tools/time/cron-builder.d.ts",
+      "import": "./dist/tools/time/cron-builder.js"
+    },
+    "./tools/time/cron-field-expander": {
+      "types": "./dist/tools/time/cron-field-expander.d.ts",
+      "import": "./dist/tools/time/cron-field-expander.js"
+    },
+    "./tools/time/cron-next-runs-preview": {
+      "types": "./dist/tools/time/cron-next-runs-preview.d.ts",
+      "import": "./dist/tools/time/cron-next-runs-preview.js"
+    },
+    "./tools/time/cron-parser": {
+      "types": "./dist/tools/time/cron-parser.d.ts",
+      "import": "./dist/tools/time/cron-parser.js"
+    },
+    "./tools/time/date-add-subtract": {
+      "types": "./dist/tools/time/date-add-subtract.d.ts",
+      "import": "./dist/tools/time/date-add-subtract.js"
+    },
+    "./tools/time/date-difference": {
+      "types": "./dist/tools/time/date-difference.d.ts",
+      "import": "./dist/tools/time/date-difference.js"
+    },
+    "./tools/time/date-format-converter": {
+      "types": "./dist/tools/time/date-format-converter.d.ts",
+      "import": "./dist/tools/time/date-format-converter.js"
+    },
+    "./tools/time/date-format-playground": {
+      "types": "./dist/tools/time/date-format-playground.d.ts",
+      "import": "./dist/tools/time/date-format-playground.js"
+    },
+    "./tools/time/date-format-token-reference": {
+      "types": "./dist/tools/time/date-format-token-reference.d.ts",
+      "import": "./dist/tools/time/date-format-token-reference.js"
+    },
+    "./tools/time/date-range-splitter": {
+      "types": "./dist/tools/time/date-range-splitter.d.ts",
+      "import": "./dist/tools/time/date-range-splitter.js"
+    },
+    "./tools/time/day-of-year": {
+      "types": "./dist/tools/time/day-of-year.d.ts",
+      "import": "./dist/tools/time/day-of-year.js"
+    },
+    "./tools/time/day-percentage-elapsed": {
+      "types": "./dist/tools/time/day-percentage-elapsed.d.ts",
+      "import": "./dist/tools/time/day-percentage-elapsed.js"
+    },
+    "./tools/time/days-between-units": {
+      "types": "./dist/tools/time/days-between-units.d.ts",
+      "import": "./dist/tools/time/days-between-units.js"
+    },
+    "./tools/time/days-until": {
+      "types": "./dist/tools/time/days-until.d.ts",
+      "import": "./dist/tools/time/days-until.js"
+    },
+    "./tools/time/decimal-time-converter": {
+      "types": "./dist/tools/time/decimal-time-converter.d.ts",
+      "import": "./dist/tools/time/decimal-time-converter.js"
+    },
+    "./tools/time/duration-humanizer": {
+      "types": "./dist/tools/time/duration-humanizer.d.ts",
+      "import": "./dist/tools/time/duration-humanizer.js"
+    },
+    "./tools/time/duration-parser": {
+      "types": "./dist/tools/time/duration-parser.d.ts",
+      "import": "./dist/tools/time/duration-parser.js"
+    },
+    "./tools/time/epoch-precision-converter": {
+      "types": "./dist/tools/time/epoch-precision-converter.d.ts",
+      "import": "./dist/tools/time/epoch-precision-converter.js"
+    },
+    "./tools/time/fixed-offset-timezone-math": {
+      "types": "./dist/tools/time/fixed-offset-timezone-math.d.ts",
+      "import": "./dist/tools/time/fixed-offset-timezone-math.js"
+    },
+    "./tools/time/iso-8601-parser": {
+      "types": "./dist/tools/time/iso-8601-parser.d.ts",
+      "import": "./dist/tools/time/iso-8601-parser.js"
+    },
+    "./tools/time/iso-duration-parser": {
+      "types": "./dist/tools/time/iso-duration-parser.d.ts",
+      "import": "./dist/tools/time/iso-duration-parser.js"
+    },
+    "./tools/time/iso-week-date-converter": {
+      "types": "./dist/tools/time/iso-week-date-converter.d.ts",
+      "import": "./dist/tools/time/iso-week-date-converter.js"
+    },
+    "./tools/time/julian-day-number": {
+      "types": "./dist/tools/time/julian-day-number.d.ts",
+      "import": "./dist/tools/time/julian-day-number.js"
+    },
+    "./tools/time/leap-year-checker": {
+      "types": "./dist/tools/time/leap-year-checker.d.ts",
+      "import": "./dist/tools/time/leap-year-checker.js"
+    },
+    "./tools/time/moon-phase-calculator": {
+      "types": "./dist/tools/time/moon-phase-calculator.d.ts",
+      "import": "./dist/tools/time/moon-phase-calculator.js"
+    },
+    "./tools/time/next-weekday-occurrence": {
+      "types": "./dist/tools/time/next-weekday-occurrence.d.ts",
+      "import": "./dist/tools/time/next-weekday-occurrence.js"
+    },
+    "./tools/time/nth-weekday-of-month": {
+      "types": "./dist/tools/time/nth-weekday-of-month.d.ts",
+      "import": "./dist/tools/time/nth-weekday-of-month.js"
+    },
+    "./tools/time/ordinal-date-converter": {
+      "types": "./dist/tools/time/ordinal-date-converter.d.ts",
+      "import": "./dist/tools/time/ordinal-date-converter.js"
+    },
+    "./tools/time/quarter-of-date": {
+      "types": "./dist/tools/time/quarter-of-date.d.ts",
+      "import": "./dist/tools/time/quarter-of-date.js"
+    },
+    "./tools/time/recurring-event-dates": {
+      "types": "./dist/tools/time/recurring-event-dates.d.ts",
+      "import": "./dist/tools/time/recurring-event-dates.js"
+    },
+    "./tools/time/relative-time-formatter": {
+      "types": "./dist/tools/time/relative-time-formatter.d.ts",
+      "import": "./dist/tools/time/relative-time-formatter.js"
+    },
+    "./tools/time/stardate-converter": {
+      "types": "./dist/tools/time/stardate-converter.d.ts",
+      "import": "./dist/tools/time/stardate-converter.js"
+    },
+    "./tools/time/strftime-playground": {
+      "types": "./dist/tools/time/strftime-playground.d.ts",
+      "import": "./dist/tools/time/strftime-playground.js"
+    },
+    "./tools/time/swatch-internet-time": {
+      "types": "./dist/tools/time/swatch-internet-time.d.ts",
+      "import": "./dist/tools/time/swatch-internet-time.js"
+    },
+    "./tools/time/time-12-24-converter": {
+      "types": "./dist/tools/time/time-12-24-converter.d.ts",
+      "import": "./dist/tools/time/time-12-24-converter.js"
+    },
+    "./tools/time/time-between-clocks": {
+      "types": "./dist/tools/time/time-between-clocks.d.ts",
+      "import": "./dist/tools/time/time-between-clocks.js"
+    },
+    "./tools/time/time-meeting-cost-calculator": {
+      "types": "./dist/tools/time/time-meeting-cost-calculator.d.ts",
+      "import": "./dist/tools/time/time-meeting-cost-calculator.js"
+    },
+    "./tools/time/time-of-day-bucketer": {
+      "types": "./dist/tools/time/time-of-day-bucketer.d.ts",
+      "import": "./dist/tools/time/time-of-day-bucketer.js"
+    },
+    "./tools/time/time-server-format-reference": {
+      "types": "./dist/tools/time/time-server-format-reference.d.ts",
+      "import": "./dist/tools/time/time-server-format-reference.js"
+    },
+    "./tools/time/time-time-duration-arithmetic": {
+      "types": "./dist/tools/time/time-time-duration-arithmetic.d.ts",
+      "import": "./dist/tools/time/time-time-duration-arithmetic.js"
+    },
+    "./tools/time/time-timecode-frames-converter": {
+      "types": "./dist/tools/time/time-timecode-frames-converter.d.ts",
+      "import": "./dist/tools/time/time-timecode-frames-converter.js"
+    },
+    "./tools/time/time-unit-converter": {
+      "types": "./dist/tools/time/time-unit-converter.d.ts",
+      "import": "./dist/tools/time/time-unit-converter.js"
+    },
+    "./tools/time/time-zone-meeting-planner": {
+      "types": "./dist/tools/time/time-zone-meeting-planner.d.ts",
+      "import": "./dist/tools/time/time-zone-meeting-planner.js"
+    },
+    "./tools/time/timestamp-batch-converter": {
+      "types": "./dist/tools/time/timestamp-batch-converter.d.ts",
+      "import": "./dist/tools/time/timestamp-batch-converter.js"
+    },
+    "./tools/time/timestamp-converter": {
+      "types": "./dist/tools/time/timestamp-converter.d.ts",
+      "import": "./dist/tools/time/timestamp-converter.js"
+    },
+    "./tools/time/timezone-converter": {
+      "types": "./dist/tools/time/timezone-converter.d.ts",
+      "import": "./dist/tools/time/timezone-converter.js"
+    },
+    "./tools/time/unix-nanoseconds-converter": {
+      "types": "./dist/tools/time/unix-nanoseconds-converter.d.ts",
+      "import": "./dist/tools/time/unix-nanoseconds-converter.js"
+    },
+    "./tools/time/unix-rollover-checker": {
+      "types": "./dist/tools/time/unix-rollover-checker.d.ts",
+      "import": "./dist/tools/time/unix-rollover-checker.js"
+    },
+    "./tools/time/unix-time-now": {
+      "types": "./dist/tools/time/unix-time-now.d.ts",
+      "import": "./dist/tools/time/unix-time-now.js"
+    },
+    "./tools/time/week-number": {
+      "types": "./dist/tools/time/week-number.d.ts",
+      "import": "./dist/tools/time/week-number.js"
+    },
+    "./tools/time/week-of-month-finder": {
+      "types": "./dist/tools/time/week-of-month-finder.d.ts",
+      "import": "./dist/tools/time/week-of-month-finder.js"
+    },
+    "./tools/time/week-to-date": {
+      "types": "./dist/tools/time/week-to-date.d.ts",
+      "import": "./dist/tools/time/week-to-date.js"
+    },
+    "./tools/time/weekday-of-date": {
+      "types": "./dist/tools/time/weekday-of-date.d.ts",
+      "import": "./dist/tools/time/weekday-of-date.js"
+    },
+    "./tools/time/weeks-until-date": {
+      "types": "./dist/tools/time/weeks-until-date.d.ts",
+      "import": "./dist/tools/time/weeks-until-date.js"
+    },
+    "./tools/time/western-zodiac-sign": {
+      "types": "./dist/tools/time/western-zodiac-sign.d.ts",
+      "import": "./dist/tools/time/western-zodiac-sign.js"
+    },
+    "./tools/time/working-hours-calculator": {
+      "types": "./dist/tools/time/working-hours-calculator.d.ts",
+      "import": "./dist/tools/time/working-hours-calculator.js"
+    },
+    "./tools/types": {
+      "types": "./dist/tools/types.d.ts",
+      "import": "./dist/tools/types.js"
+    },
+    "./tools/web/basic-auth-generator": {
+      "types": "./dist/tools/web/basic-auth-generator.d.ts",
+      "import": "./dist/tools/web/basic-auth-generator.js"
+    },
+    "./tools/web/chmod-calculator": {
+      "types": "./dist/tools/web/chmod-calculator.d.ts",
+      "import": "./dist/tools/web/chmod-calculator.js"
+    },
+    "./tools/web/cookie-parser": {
+      "types": "./dist/tools/web/cookie-parser.d.ts",
+      "import": "./dist/tools/web/cookie-parser.js"
+    },
+    "./tools/web/css-minify": {
+      "types": "./dist/tools/web/css-minify.d.ts",
+      "import": "./dist/tools/web/css-minify.js"
+    },
+    "./tools/web/email-obfuscator": {
+      "types": "./dist/tools/web/email-obfuscator.d.ts",
+      "import": "./dist/tools/web/email-obfuscator.js"
+    },
+    "./tools/web/html-to-text": {
+      "types": "./dist/tools/web/html-to-text.d.ts",
+      "import": "./dist/tools/web/html-to-text.js"
+    },
+    "./tools/web/http-status-codes": {
+      "types": "./dist/tools/web/http-status-codes.d.ts",
+      "import": "./dist/tools/web/http-status-codes.js"
+    },
+    "./tools/web/ip-subnet-calculator": {
+      "types": "./dist/tools/web/ip-subnet-calculator.d.ts",
+      "import": "./dist/tools/web/ip-subnet-calculator.js"
+    },
+    "./tools/web/jwt-decoder": {
+      "types": "./dist/tools/web/jwt-decoder.d.ts",
+      "import": "./dist/tools/web/jwt-decoder.js"
+    },
+    "./tools/web/markdown-to-html": {
+      "types": "./dist/tools/web/markdown-to-html.d.ts",
+      "import": "./dist/tools/web/markdown-to-html.js"
+    },
+    "./tools/web/mime-types": {
+      "types": "./dist/tools/web/mime-types.d.ts",
+      "import": "./dist/tools/web/mime-types.js"
+    },
+    "./tools/web/px-rem-converter": {
+      "types": "./dist/tools/web/px-rem-converter.d.ts",
+      "import": "./dist/tools/web/px-rem-converter.js"
+    },
+    "./tools/web/query-params": {
+      "types": "./dist/tools/web/query-params.d.ts",
+      "import": "./dist/tools/web/query-params.js"
+    },
+    "./tools/web/url-parser": {
+      "types": "./dist/tools/web/url-parser.d.ts",
+      "import": "./dist/tools/web/url-parser.js"
+    },
+    "./tools/web/user-agent-parser": {
+      "types": "./dist/tools/web/user-agent-parser.d.ts",
+      "import": "./dist/tools/web/user-agent-parser.js"
+    },
+    "./tools/web/web-accept-language-parser": {
+      "types": "./dist/tools/web/web-accept-language-parser.d.ts",
+      "import": "./dist/tools/web/web-accept-language-parser.js"
+    },
+    "./tools/web/web-aspect-ratio-css": {
+      "types": "./dist/tools/web/web-aspect-ratio-css.d.ts",
+      "import": "./dist/tools/web/web-aspect-ratio-css.js"
+    },
+    "./tools/web/web-bearer-auth-header-builder": {
+      "types": "./dist/tools/web/web-bearer-auth-header-builder.d.ts",
+      "import": "./dist/tools/web/web-bearer-auth-header-builder.js"
+    },
+    "./tools/web/web-bem-class-generator": {
+      "types": "./dist/tools/web/web-bem-class-generator.d.ts",
+      "import": "./dist/tools/web/web-bem-class-generator.js"
+    },
+    "./tools/web/web-border-radius-generator": {
+      "types": "./dist/tools/web/web-border-radius-generator.d.ts",
+      "import": "./dist/tools/web/web-border-radius-generator.js"
+    },
+    "./tools/web/web-box-shadow-generator": {
+      "types": "./dist/tools/web/web-box-shadow-generator.d.ts",
+      "import": "./dist/tools/web/web-box-shadow-generator.js"
+    },
+    "./tools/web/web-cache-busting-hash-appender": {
+      "types": "./dist/tools/web/web-cache-busting-hash-appender.d.ts",
+      "import": "./dist/tools/web/web-cache-busting-hash-appender.js"
+    },
+    "./tools/web/web-cache-control-builder": {
+      "types": "./dist/tools/web/web-cache-control-builder.d.ts",
+      "import": "./dist/tools/web/web-cache-control-builder.js"
+    },
+    "./tools/web/web-cidr-calculator": {
+      "types": "./dist/tools/web/web-cidr-calculator.d.ts",
+      "import": "./dist/tools/web/web-cidr-calculator.js"
+    },
+    "./tools/web/web-clamp-fluid-type": {
+      "types": "./dist/tools/web/web-clamp-fluid-type.d.ts",
+      "import": "./dist/tools/web/web-clamp-fluid-type.js"
+    },
+    "./tools/web/web-clip-path-generator": {
+      "types": "./dist/tools/web/web-clip-path-generator.d.ts",
+      "import": "./dist/tools/web/web-clip-path-generator.js"
+    },
+    "./tools/web/web-content-disposition-builder": {
+      "types": "./dist/tools/web/web-content-disposition-builder.d.ts",
+      "import": "./dist/tools/web/web-content-disposition-builder.js"
+    },
+    "./tools/web/web-content-security-policy-analyzer": {
+      "types": "./dist/tools/web/web-content-security-policy-analyzer.d.ts",
+      "import": "./dist/tools/web/web-content-security-policy-analyzer.js"
+    },
+    "./tools/web/web-content-security-policy-linter": {
+      "types": "./dist/tools/web/web-content-security-policy-linter.d.ts",
+      "import": "./dist/tools/web/web-content-security-policy-linter.js"
+    },
+    "./tools/web/web-content-type-charset-reference": {
+      "types": "./dist/tools/web/web-content-type-charset-reference.d.ts",
+      "import": "./dist/tools/web/web-content-type-charset-reference.js"
+    },
+    "./tools/web/web-cookie-string-builder": {
+      "types": "./dist/tools/web/web-cookie-string-builder.d.ts",
+      "import": "./dist/tools/web/web-cookie-string-builder.js"
+    },
+    "./tools/web/web-cors-headers-builder": {
+      "types": "./dist/tools/web/web-cors-headers-builder.d.ts",
+      "import": "./dist/tools/web/web-cors-headers-builder.js"
+    },
+    "./tools/web/web-cron-explainer": {
+      "types": "./dist/tools/web/web-cron-explainer.d.ts",
+      "import": "./dist/tools/web/web-cron-explainer.js"
+    },
+    "./tools/web/web-csp-builder": {
+      "types": "./dist/tools/web/web-csp-builder.d.ts",
+      "import": "./dist/tools/web/web-csp-builder.js"
+    },
+    "./tools/web/web-css-button-generator": {
+      "types": "./dist/tools/web/web-css-button-generator.d.ts",
+      "import": "./dist/tools/web/web-css-button-generator.js"
+    },
+    "./tools/web/web-css-color-format-converter": {
+      "types": "./dist/tools/web/web-css-color-format-converter.d.ts",
+      "import": "./dist/tools/web/web-css-color-format-converter.js"
+    },
+    "./tools/web/web-css-gradient-text": {
+      "types": "./dist/tools/web/web-css-gradient-text.d.ts",
+      "import": "./dist/tools/web/web-css-gradient-text.js"
+    },
+    "./tools/web/web-css-relative-unit-calculator": {
+      "types": "./dist/tools/web/web-css-relative-unit-calculator.d.ts",
+      "import": "./dist/tools/web/web-css-relative-unit-calculator.js"
+    },
+    "./tools/web/web-css-specificity": {
+      "types": "./dist/tools/web/web-css-specificity.d.ts",
+      "import": "./dist/tools/web/web-css-specificity.js"
+    },
+    "./tools/web/web-css-specificity-sorter": {
+      "types": "./dist/tools/web/web-css-specificity-sorter.d.ts",
+      "import": "./dist/tools/web/web-css-specificity-sorter.js"
+    },
+    "./tools/web/web-css-to-tailwind": {
+      "types": "./dist/tools/web/web-css-to-tailwind.d.ts",
+      "import": "./dist/tools/web/web-css-to-tailwind.js"
+    },
+    "./tools/web/web-css-triangle-generator": {
+      "types": "./dist/tools/web/web-css-triangle-generator.d.ts",
+      "import": "./dist/tools/web/web-css-triangle-generator.js"
+    },
+    "./tools/web/web-css-unit-converter": {
+      "types": "./dist/tools/web/web-css-unit-converter.d.ts",
+      "import": "./dist/tools/web/web-css-unit-converter.js"
+    },
+    "./tools/web/web-css-variable-extractor": {
+      "types": "./dist/tools/web/web-css-variable-extractor.d.ts",
+      "import": "./dist/tools/web/web-css-variable-extractor.js"
+    },
+    "./tools/web/web-css-variables-extractor": {
+      "types": "./dist/tools/web/web-css-variables-extractor.d.ts",
+      "import": "./dist/tools/web/web-css-variables-extractor.js"
+    },
+    "./tools/web/web-cubic-bezier": {
+      "types": "./dist/tools/web/web-cubic-bezier.d.ts",
+      "import": "./dist/tools/web/web-cubic-bezier.js"
+    },
+    "./tools/web/web-curl-command-builder": {
+      "types": "./dist/tools/web/web-curl-command-builder.d.ts",
+      "import": "./dist/tools/web/web-curl-command-builder.js"
+    },
+    "./tools/web/web-curl-to-fetch": {
+      "types": "./dist/tools/web/web-curl-to-fetch.d.ts",
+      "import": "./dist/tools/web/web-curl-to-fetch.js"
+    },
+    "./tools/web/web-data-attribute-to-dataset": {
+      "types": "./dist/tools/web/web-data-attribute-to-dataset.d.ts",
+      "import": "./dist/tools/web/web-data-attribute-to-dataset.js"
+    },
+    "./tools/web/web-data-uri-builder-text": {
+      "types": "./dist/tools/web/web-data-uri-builder-text.d.ts",
+      "import": "./dist/tools/web/web-data-uri-builder-text.js"
+    },
+    "./tools/web/web-data-uri-decoder": {
+      "types": "./dist/tools/web/web-data-uri-decoder.d.ts",
+      "import": "./dist/tools/web/web-data-uri-decoder.js"
+    },
+    "./tools/web/web-data-uri-size-estimator": {
+      "types": "./dist/tools/web/web-data-uri-size-estimator.d.ts",
+      "import": "./dist/tools/web/web-data-uri-size-estimator.js"
+    },
+    "./tools/web/web-dotenv-to-json": {
+      "types": "./dist/tools/web/web-dotenv-to-json.d.ts",
+      "import": "./dist/tools/web/web-dotenv-to-json.js"
+    },
+    "./tools/web/web-etag-conditional-builder": {
+      "types": "./dist/tools/web/web-etag-conditional-builder.d.ts",
+      "import": "./dist/tools/web/web-etag-conditional-builder.js"
+    },
+    "./tools/web/web-favicon-link-generator": {
+      "types": "./dist/tools/web/web-favicon-link-generator.d.ts",
+      "import": "./dist/tools/web/web-favicon-link-generator.js"
+    },
+    "./tools/web/web-filter-generator": {
+      "types": "./dist/tools/web/web-filter-generator.d.ts",
+      "import": "./dist/tools/web/web-filter-generator.js"
+    },
+    "./tools/web/web-flexbox-playground": {
+      "types": "./dist/tools/web/web-flexbox-playground.d.ts",
+      "import": "./dist/tools/web/web-flexbox-playground.js"
+    },
+    "./tools/web/web-gitattributes-generator": {
+      "types": "./dist/tools/web/web-gitattributes-generator.d.ts",
+      "import": "./dist/tools/web/web-gitattributes-generator.js"
+    },
+    "./tools/web/web-grid-template-generator": {
+      "types": "./dist/tools/web/web-grid-template-generator.d.ts",
+      "import": "./dist/tools/web/web-grid-template-generator.js"
+    },
+    "./tools/web/web-hsts-header-builder": {
+      "types": "./dist/tools/web/web-hsts-header-builder.d.ts",
+      "import": "./dist/tools/web/web-hsts-header-builder.js"
+    },
+    "./tools/web/web-htaccess-redirect-builder": {
+      "types": "./dist/tools/web/web-htaccess-redirect-builder.d.ts",
+      "import": "./dist/tools/web/web-htaccess-redirect-builder.js"
+    },
+    "./tools/web/web-htaccess-snippet": {
+      "types": "./dist/tools/web/web-htaccess-snippet.d.ts",
+      "import": "./dist/tools/web/web-htaccess-snippet.js"
+    },
+    "./tools/web/web-html-attributes-stripper": {
+      "types": "./dist/tools/web/web-html-attributes-stripper.d.ts",
+      "import": "./dist/tools/web/web-html-attributes-stripper.js"
+    },
+    "./tools/web/web-html-boilerplate": {
+      "types": "./dist/tools/web/web-html-boilerplate.d.ts",
+      "import": "./dist/tools/web/web-html-boilerplate.js"
+    },
+    "./tools/web/web-html-class-attr-extractor": {
+      "types": "./dist/tools/web/web-html-class-attr-extractor.d.ts",
+      "import": "./dist/tools/web/web-html-class-attr-extractor.js"
+    },
+    "./tools/web/web-html-entity-picker": {
+      "types": "./dist/tools/web/web-html-entity-picker.d.ts",
+      "import": "./dist/tools/web/web-html-entity-picker.js"
+    },
+    "./tools/web/web-html-escape-unescape": {
+      "types": "./dist/tools/web/web-html-escape-unescape.d.ts",
+      "import": "./dist/tools/web/web-html-escape-unescape.js"
+    },
+    "./tools/web/web-html-minify": {
+      "types": "./dist/tools/web/web-html-minify.d.ts",
+      "import": "./dist/tools/web/web-html-minify.js"
+    },
+    "./tools/web/web-html-to-jsx": {
+      "types": "./dist/tools/web/web-html-to-jsx.d.ts",
+      "import": "./dist/tools/web/web-html-to-jsx.js"
+    },
+    "./tools/web/web-http-cache-header-explainer": {
+      "types": "./dist/tools/web/web-http-cache-header-explainer.d.ts",
+      "import": "./dist/tools/web/web-http-cache-header-explainer.js"
+    },
+    "./tools/web/web-http-headers-reference": {
+      "types": "./dist/tools/web/web-http-headers-reference.d.ts",
+      "import": "./dist/tools/web/web-http-headers-reference.js"
+    },
+    "./tools/web/web-http-message-parser": {
+      "types": "./dist/tools/web/web-http-message-parser.d.ts",
+      "import": "./dist/tools/web/web-http-message-parser.js"
+    },
+    "./tools/web/web-http-method-reference": {
+      "types": "./dist/tools/web/web-http-method-reference.d.ts",
+      "import": "./dist/tools/web/web-http-method-reference.js"
+    },
+    "./tools/web/web-ip-address-converter": {
+      "types": "./dist/tools/web/web-ip-address-converter.d.ts",
+      "import": "./dist/tools/web/web-ip-address-converter.js"
+    },
+    "./tools/web/web-ip-cidr-membership": {
+      "types": "./dist/tools/web/web-ip-cidr-membership.d.ts",
+      "import": "./dist/tools/web/web-ip-cidr-membership.js"
+    },
+    "./tools/web/web-ipv6-expander": {
+      "types": "./dist/tools/web/web-ipv6-expander.d.ts",
+      "import": "./dist/tools/web/web-ipv6-expander.js"
+    },
+    "./tools/web/web-json-flatten": {
+      "types": "./dist/tools/web/web-json-flatten.d.ts",
+      "import": "./dist/tools/web/web-json-flatten.js"
+    },
+    "./tools/web/web-json-path-extractor": {
+      "types": "./dist/tools/web/web-json-path-extractor.d.ts",
+      "import": "./dist/tools/web/web-json-path-extractor.js"
+    },
+    "./tools/web/web-json-to-html-form": {
+      "types": "./dist/tools/web/web-json-to-html-form.d.ts",
+      "import": "./dist/tools/web/web-json-to-html-form.js"
+    },
+    "./tools/web/web-json-to-java": {
+      "types": "./dist/tools/web/web-json-to-java.d.ts",
+      "import": "./dist/tools/web/web-json-to-java.js"
+    },
+    "./tools/web/web-json-to-jsonschema": {
+      "types": "./dist/tools/web/web-json-to-jsonschema.d.ts",
+      "import": "./dist/tools/web/web-json-to-jsonschema.js"
+    },
+    "./tools/web/web-json-to-query-string": {
+      "types": "./dist/tools/web/web-json-to-query-string.d.ts",
+      "import": "./dist/tools/web/web-json-to-query-string.js"
+    },
+    "./tools/web/web-json-to-toml": {
+      "types": "./dist/tools/web/web-json-to-toml.d.ts",
+      "import": "./dist/tools/web/web-json-to-toml.js"
+    },
+    "./tools/web/web-json-tree-viewer": {
+      "types": "./dist/tools/web/web-json-tree-viewer.d.ts",
+      "import": "./dist/tools/web/web-json-tree-viewer.js"
+    },
+    "./tools/web/web-jsonld-schema-generator": {
+      "types": "./dist/tools/web/web-jsonld-schema-generator.d.ts",
+      "import": "./dist/tools/web/web-jsonld-schema-generator.js"
+    },
+    "./tools/web/web-jwt-expiry-inspector": {
+      "types": "./dist/tools/web/web-jwt-expiry-inspector.d.ts",
+      "import": "./dist/tools/web/web-jwt-expiry-inspector.js"
+    },
+    "./tools/web/web-jwt-to-fetch": {
+      "types": "./dist/tools/web/web-jwt-to-fetch.d.ts",
+      "import": "./dist/tools/web/web-jwt-to-fetch.js"
+    },
+    "./tools/web/web-keyframes-generator": {
+      "types": "./dist/tools/web/web-keyframes-generator.d.ts",
+      "import": "./dist/tools/web/web-keyframes-generator.js"
+    },
+    "./tools/web/web-link-header-builder": {
+      "types": "./dist/tools/web/web-link-header-builder.d.ts",
+      "import": "./dist/tools/web/web-link-header-builder.js"
+    },
+    "./tools/web/web-lorem-html-block": {
+      "types": "./dist/tools/web/web-lorem-html-block.d.ts",
+      "import": "./dist/tools/web/web-lorem-html-block.js"
+    },
+    "./tools/web/web-mac-address-formatter": {
+      "types": "./dist/tools/web/web-mac-address-formatter.d.ts",
+      "import": "./dist/tools/web/web-mac-address-formatter.js"
+    },
+    "./tools/web/web-manifest-generator": {
+      "types": "./dist/tools/web/web-manifest-generator.d.ts",
+      "import": "./dist/tools/web/web-manifest-generator.js"
+    },
+    "./tools/web/web-markdown-table-generator": {
+      "types": "./dist/tools/web/web-markdown-table-generator.d.ts",
+      "import": "./dist/tools/web/web-markdown-table-generator.js"
+    },
+    "./tools/web/web-media-query-builder": {
+      "types": "./dist/tools/web/web-media-query-builder.d.ts",
+      "import": "./dist/tools/web/web-media-query-builder.js"
+    },
+    "./tools/web/web-media-query-generator": {
+      "types": "./dist/tools/web/web-media-query-generator.d.ts",
+      "import": "./dist/tools/web/web-media-query-generator.js"
+    },
+    "./tools/web/web-meta-tags-generator": {
+      "types": "./dist/tools/web/web-meta-tags-generator.d.ts",
+      "import": "./dist/tools/web/web-meta-tags-generator.js"
+    },
+    "./tools/web/web-mimetype-from-extension": {
+      "types": "./dist/tools/web/web-mimetype-from-extension.d.ts",
+      "import": "./dist/tools/web/web-mimetype-from-extension.js"
+    },
+    "./tools/web/web-multi-column-generator": {
+      "types": "./dist/tools/web/web-multi-column-generator.d.ts",
+      "import": "./dist/tools/web/web-multi-column-generator.js"
+    },
+    "./tools/web/web-nginx-location-snippet": {
+      "types": "./dist/tools/web/web-nginx-location-snippet.d.ts",
+      "import": "./dist/tools/web/web-nginx-location-snippet.js"
+    },
+    "./tools/web/web-open-graph-generator": {
+      "types": "./dist/tools/web/web-open-graph-generator.d.ts",
+      "import": "./dist/tools/web/web-open-graph-generator.js"
+    },
+    "./tools/web/web-open-graph-preview-card": {
+      "types": "./dist/tools/web/web-open-graph-preview-card.d.ts",
+      "import": "./dist/tools/web/web-open-graph-preview-card.js"
+    },
+    "./tools/web/web-permissions-policy-builder": {
+      "types": "./dist/tools/web/web-permissions-policy-builder.d.ts",
+      "import": "./dist/tools/web/web-permissions-policy-builder.js"
+    },
+    "./tools/web/web-preload-link-generator": {
+      "types": "./dist/tools/web/web-preload-link-generator.d.ts",
+      "import": "./dist/tools/web/web-preload-link-generator.js"
+    },
+    "./tools/web/web-query-params-diff": {
+      "types": "./dist/tools/web/web-query-params-diff.d.ts",
+      "import": "./dist/tools/web/web-query-params-diff.js"
+    },
+    "./tools/web/web-query-string-editor": {
+      "types": "./dist/tools/web/web-query-string-editor.d.ts",
+      "import": "./dist/tools/web/web-query-string-editor.js"
+    },
+    "./tools/web/web-query-string-parser": {
+      "types": "./dist/tools/web/web-query-string-parser.d.ts",
+      "import": "./dist/tools/web/web-query-string-parser.js"
+    },
+    "./tools/web/web-referrer-policy-reference": {
+      "types": "./dist/tools/web/web-referrer-policy-reference.d.ts",
+      "import": "./dist/tools/web/web-referrer-policy-reference.js"
+    },
+    "./tools/web/web-regex-cheatsheet": {
+      "types": "./dist/tools/web/web-regex-cheatsheet.d.ts",
+      "import": "./dist/tools/web/web-regex-cheatsheet.js"
+    },
+    "./tools/web/web-regex-escape": {
+      "types": "./dist/tools/web/web-regex-escape.d.ts",
+      "import": "./dist/tools/web/web-regex-escape.js"
+    },
+    "./tools/web/web-regex-match-lines": {
+      "types": "./dist/tools/web/web-regex-match-lines.d.ts",
+      "import": "./dist/tools/web/web-regex-match-lines.js"
+    },
+    "./tools/web/web-regex-named-group-converter": {
+      "types": "./dist/tools/web/web-regex-named-group-converter.d.ts",
+      "import": "./dist/tools/web/web-regex-named-group-converter.js"
+    },
+    "./tools/web/web-regex-pattern-library": {
+      "types": "./dist/tools/web/web-regex-pattern-library.d.ts",
+      "import": "./dist/tools/web/web-regex-pattern-library.js"
+    },
+    "./tools/web/web-relative-url-resolver": {
+      "types": "./dist/tools/web/web-relative-url-resolver.d.ts",
+      "import": "./dist/tools/web/web-relative-url-resolver.js"
+    },
+    "./tools/web/web-robots-txt-tester": {
+      "types": "./dist/tools/web/web-robots-txt-tester.d.ts",
+      "import": "./dist/tools/web/web-robots-txt-tester.js"
+    },
+    "./tools/web/web-scrollbar-styler": {
+      "types": "./dist/tools/web/web-scrollbar-styler.d.ts",
+      "import": "./dist/tools/web/web-scrollbar-styler.js"
+    },
+    "./tools/web/web-semver-bump": {
+      "types": "./dist/tools/web/web-semver-bump.d.ts",
+      "import": "./dist/tools/web/web-semver-bump.js"
+    },
+    "./tools/web/web-semver-compare": {
+      "types": "./dist/tools/web/web-semver-compare.d.ts",
+      "import": "./dist/tools/web/web-semver-compare.js"
+    },
+    "./tools/web/web-semver-range-tester": {
+      "types": "./dist/tools/web/web-semver-range-tester.d.ts",
+      "import": "./dist/tools/web/web-semver-range-tester.js"
+    },
+    "./tools/web/web-set-cookie-builder": {
+      "types": "./dist/tools/web/web-set-cookie-builder.d.ts",
+      "import": "./dist/tools/web/web-set-cookie-builder.js"
+    },
+    "./tools/web/web-shell-arg-escaper": {
+      "types": "./dist/tools/web/web-shell-arg-escaper.d.ts",
+      "import": "./dist/tools/web/web-shell-arg-escaper.js"
+    },
+    "./tools/web/web-sitemap-generator": {
+      "types": "./dist/tools/web/web-sitemap-generator.d.ts",
+      "import": "./dist/tools/web/web-sitemap-generator.js"
+    },
+    "./tools/web/web-slugify-variants": {
+      "types": "./dist/tools/web/web-slugify-variants.d.ts",
+      "import": "./dist/tools/web/web-slugify-variants.js"
+    },
+    "./tools/web/web-srcset-density-calculator": {
+      "types": "./dist/tools/web/web-srcset-density-calculator.d.ts",
+      "import": "./dist/tools/web/web-srcset-density-calculator.js"
+    },
+    "./tools/web/web-srcset-generator": {
+      "types": "./dist/tools/web/web-srcset-generator.d.ts",
+      "import": "./dist/tools/web/web-srcset-generator.js"
+    },
+    "./tools/web/web-srcset-sizes-builder": {
+      "types": "./dist/tools/web/web-srcset-sizes-builder.d.ts",
+      "import": "./dist/tools/web/web-srcset-sizes-builder.js"
+    },
+    "./tools/web/web-status-code-explainer": {
+      "types": "./dist/tools/web/web-status-code-explainer.d.ts",
+      "import": "./dist/tools/web/web-status-code-explainer.js"
+    },
+    "./tools/web/web-text-shadow-generator": {
+      "types": "./dist/tools/web/web-text-shadow-generator.d.ts",
+      "import": "./dist/tools/web/web-text-shadow-generator.js"
+    },
+    "./tools/web/web-transform-generator": {
+      "types": "./dist/tools/web/web-transform-generator.d.ts",
+      "import": "./dist/tools/web/web-transform-generator.js"
+    },
+    "./tools/web/web-transition-generator": {
+      "types": "./dist/tools/web/web-transition-generator.d.ts",
+      "import": "./dist/tools/web/web-transition-generator.js"
+    },
+    "./tools/web/web-twitter-card-generator": {
+      "types": "./dist/tools/web/web-twitter-card-generator.d.ts",
+      "import": "./dist/tools/web/web-twitter-card-generator.js"
+    },
+    "./tools/web/web-url-builder": {
+      "types": "./dist/tools/web/web-url-builder.d.ts",
+      "import": "./dist/tools/web/web-url-builder.js"
+    },
+    "./tools/web/web-url-inspector": {
+      "types": "./dist/tools/web/web-url-inspector.d.ts",
+      "import": "./dist/tools/web/web-url-inspector.js"
+    },
+    "./tools/web/web-url-normalizer": {
+      "types": "./dist/tools/web/web-url-normalizer.d.ts",
+      "import": "./dist/tools/web/web-url-normalizer.js"
+    },
+    "./tools/web/web-url-path-joiner": {
+      "types": "./dist/tools/web/web-url-path-joiner.d.ts",
+      "import": "./dist/tools/web/web-url-path-joiner.js"
+    },
+    "./tools/web/web-url-query-sorter": {
+      "types": "./dist/tools/web/web-url-query-sorter.d.ts",
+      "import": "./dist/tools/web/web-url-query-sorter.js"
+    },
+    "./tools/web/web-user-agent-builder": {
+      "types": "./dist/tools/web/web-user-agent-builder.d.ts",
+      "import": "./dist/tools/web/web-user-agent-builder.js"
+    },
+    "./tools/web/web-www-authenticate-parser": {
+      "types": "./dist/tools/web/web-www-authenticate-parser.d.ts",
+      "import": "./dist/tools/web/web-www-authenticate-parser.js"
+    },
+    "./tools/web/web-xml-formatter": {
+      "types": "./dist/tools/web/web-xml-formatter.d.ts",
+      "import": "./dist/tools/web/web-xml-formatter.js"
+    },
+    "./tools/web/web-xml-to-json": {
+      "types": "./dist/tools/web/web-xml-to-json.d.ts",
+      "import": "./dist/tools/web/web-xml-to-json.js"
+    },
+    "./tools/web/web-z-index-scale-generator": {
+      "types": "./dist/tools/web/web-z-index-scale-generator.d.ts",
+      "import": "./dist/tools/web/web-z-index-scale-generator.js"
+    },
     "./web": {
       "types": "./dist/web.d.ts",
       "import": "./dist/web.js"
     }
   },
   "scripts": {
+    "gen:tools": "bun run scripts/gen-tools-catalog.ts",
     "gen:exports": "bun run scripts/gen-exports.ts",
-    "prebuild": "bun run scripts/gen-exports.ts",
+    "prebuild": "bun run scripts/gen-tools-catalog.ts && bun run scripts/gen-exports.ts",
     "build": "tsup",
-    "prepublishOnly": "bun run scripts/gen-exports.ts && tsup",
+    "prepublishOnly": "bun run scripts/gen-tools-catalog.ts && bun run scripts/gen-exports.ts && tsup",
     "test": "vitest run",
     "test:cross": "node test/cross-runtime.mjs && bun test/cross-runtime.mjs",
     "test:cross:node": "node test/cross-runtime.mjs",

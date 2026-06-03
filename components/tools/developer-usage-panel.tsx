@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowUpRight, CheckCircle2, Clock3, Package, Terminal } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, Package, Terminal } from 'lucide-react';
 
 import { CopyButton } from '@/components/tools/copy-button';
 import { Badge } from '@/components/ui/badge';
@@ -83,19 +83,19 @@ export function DeveloperUsagePanel({ tool }: { tool: ToolMetaStatic }) {
   );
 }
 
-function UsageBadge({ status }: { status: 'exact' | 'planned' }) {
+function UsageBadge({ status }: { status: 'exact' | 'catalog' }) {
   if (status === 'exact') {
     return (
       <Badge variant="success" className="gap-1">
         <CheckCircle2 className="size-3" />
-        npm API
+        Core API
       </Badge>
     );
   }
   return (
     <Badge variant="outline" className="gap-1">
-      <Clock3 className="size-3" />
-      Coming soon
+      <Package className="size-3" />
+      Package entry
     </Badge>
   );
 }

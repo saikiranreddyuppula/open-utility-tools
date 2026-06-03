@@ -9,3 +9,4 @@ export * as time from './time';
 export * as web from './web';
 export * as generators from './generators';
 export * as crypto from './crypto';
+export * as tools from './tools';

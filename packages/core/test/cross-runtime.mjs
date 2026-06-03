@@ -47,4 +47,21 @@ await check('convert resize preserves aspect ratio', async () => {
   assert.equal(info.height, 210); // 630 * 400/1200
 });
 
+// --- package tool catalog surface ---
+const { TOOL_CATALOG, getToolBySlug } = await import('../dist/tools/index.js');
+const { tool: jsonFormatterTool } = await import('../dist/tools/data/json-formatter.js');
+
+await check('tool catalog ships all browser tools', () => {
+  assert.equal(TOOL_CATALOG.length, 995);
+  assert.equal(
+    getToolBySlug('json-formatter').packageImportPath,
+    '@open-utility-tools/core/tools/data/json-formatter',
+  );
+});
+
+await check('per-tool catalog subpath exports metadata', () => {
+  assert.equal(jsonFormatterTool.name, 'JSON Formatter');
+  assert.equal(jsonFormatterTool.webPath, '/tools/json-formatter/');
+});
+
 console.log(`\n[${runtime}] ${passed} checks passed`);

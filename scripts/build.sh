@@ -28,8 +28,16 @@ mkdir -p "$CACHE"
 ) &
 TC_PID=$!
 
-# Next.js production build (Turbopack) in the background.
-"$BIN/next" build &
+# Next.js production build in the background. Try the configured default first
+# (Turbopack in Next 16), then fall back to webpack if Turbopack hits an
+# environment-specific internal panic.
+(
+  "$BIN/next" build || {
+    STATUS=$?
+    echo "next build failed with exit $STATUS; retrying with --webpack"
+    "$BIN/next" build --webpack
+  }
+) &
 NB_PID=$!
 
 # Wait for each and capture its exit status independently.

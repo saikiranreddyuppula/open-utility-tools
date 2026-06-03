@@ -26,6 +26,7 @@ const installCommand = `npm install ${PACKAGE_NAME}`;
 
 const importExample = `import { addBusinessDays } from '@open-utility-tools/core/time/add-business-days';
 import { convert } from '@open-utility-tools/core/image/convert';
+import { tool as jsonFormatterTool } from '@open-utility-tools/core/tools/data/json-formatter';
 import { parseColor } from '@open-utility-tools/core/color';
 
 const due = addBusinessDays('2026-06-01', 10).date;
@@ -33,7 +34,8 @@ const webp = await convert(sourceBytes, {
   format: 'webp',
   quality: 82,
   maxWidth: 1200,
-});`;
+});
+console.log(jsonFormatterTool.webPath);`;
 
 const namespaceExample = `import { text, math, color } from '@open-utility-tools/core';
 
@@ -57,7 +59,15 @@ const sections = [
 const exportGroups = [
   {
     importPath: PACKAGE_NAME,
-    contents: 'Namespace exports for the extracted utility groups.',
+    contents: 'Namespace exports for extracted utility groups plus the full tool catalog.',
+  },
+  {
+    importPath: `${PACKAGE_NAME}/tools`,
+    contents: 'Typed catalog entries for every browser tool, searchable by id, slug, or category/slug path.',
+  },
+  {
+    importPath: `${PACKAGE_NAME}/tools/*/*`,
+    contents: 'Per-tool catalog imports such as tools/data/json-formatter and tools/text/case-converter.',
   },
   {
     importPath: `${PACKAGE_NAME}/text`,
@@ -77,7 +87,7 @@ const exportGroups = [
   },
   {
     importPath: `${PACKAGE_NAME}/time`,
-    contents: 'The full time category plus cron, ISO, duration, timezone, and calendar tools.',
+    contents: 'Legacy cron helpers plus namespaced access to extracted time tools.',
   },
   {
     importPath: `${PACKAGE_NAME}/time/*`,
@@ -114,6 +124,7 @@ const runtimeFacts = [
   'Node 20 or newer',
   'Browser, Node, and Bun compatible',
   'Zero runtime npm dependencies',
+  'Typed catalog entries for every browser tool',
   'Pure utilities first, WASM-backed image tools where needed',
 ] as const;
 
@@ -299,7 +310,7 @@ export default function DevelopersPage() {
             <SectionHeader
               icon={<Boxes className="size-4" />}
               title="Subpath exports"
-              description="Every exported path includes matching .d.ts files. Time tools also expose individual per-tool subpaths."
+              description="Every exported path includes matching .d.ts files. All browser tools have catalog subpaths; extracted tools also expose direct compute APIs."
             />
             <div className="overflow-hidden rounded-lg border">
               <div className="grid grid-cols-[minmax(12rem,0.9fr)_minmax(16rem,1.2fr)] border-b bg-muted/40 px-4 py-2 text-xs font-semibold uppercase text-muted-foreground">
@@ -367,7 +378,7 @@ export default function DevelopersPage() {
               <div>
                 <h2 className="text-lg font-semibold">Looking for the tools UI?</h2>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  The browser app and npm package share the same extracted utility logic.
+                  The package ships extracted utility logic plus typed entries for every browser tool.
                 </p>
               </div>
               <Button variant="outline" asChild>
