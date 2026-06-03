@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, Menu, Wrench, Code2, ChevronDown, X, Star, History } from 'lucide-react';
+import { Search, Menu, Wrench, Code2, ChevronDown, X, Star, History, Package } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Icon } from '@/components/icon';
@@ -71,6 +71,13 @@ export function Navbar() {
             </DropdownMenuContent>
           </DropdownMenu>
 
+          <Link
+            href="/developers/"
+            className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground"
+          >
+            <Package className="size-3.5" />
+            Developers
+          </Link>
           <Link
             href="/favorites/"
             className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground"
@@ -141,6 +148,14 @@ export function Navbar() {
             </Button>
           </div>
           <nav className="overflow-y-auto p-2">
+            <Link
+              href="/developers/"
+              onClick={() => setMobileOpen(false)}
+              className="flex h-9 items-center gap-2 rounded-md px-2 text-sm text-muted-foreground hover:bg-accent/60 hover:text-foreground"
+            >
+              <Package className="size-4" />
+              Developers
+            </Link>
             <Link
               href="/favorites/"
               onClick={() => setMobileOpen(false)}

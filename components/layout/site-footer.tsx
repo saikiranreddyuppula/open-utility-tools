@@ -1,12 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { Wrench, Code2 } from 'lucide-react';
+import { Wrench, Code2, Package } from 'lucide-react';
 
 import { Icon } from '@/components/icon';
 import { CATEGORIES, CATEGORY_META, getToolsByCategory, TOTAL_TOOL_COUNT } from '@/lib/registry';
 
 const GITHUB_URL = 'https://github.com/saikiranreddyuppula/open-utility-tools';
+const NPM_URL = 'https://www.npmjs.com/package/@open-utility-tools/core';
 
 export function SiteFooter() {
   const cats = CATEGORIES.filter((c) => getToolsByCategory(c).length > 0);
@@ -54,14 +55,27 @@ export function SiteFooter() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t pt-6 text-2xs text-muted-foreground sm:flex-row">
           <span>© {year} Open Utility Tools · MIT licensed</span>
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-1.5 transition-colors hover:text-foreground"
-          >
-            <Code2 className="size-3.5" /> Source on GitHub
-          </a>
+          <span className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <Link href="/developers/" className="flex items-center gap-1.5 transition-colors hover:text-foreground">
+              <Package className="size-3.5" /> Developer docs
+            </Link>
+            <a
+              href={NPM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 transition-colors hover:text-foreground"
+            >
+              <Package className="size-3.5" /> npm package
+            </a>
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 transition-colors hover:text-foreground"
+            >
+              <Code2 className="size-3.5" /> Source on GitHub
+            </a>
+          </span>
         </div>
       </div>
     </footer>
