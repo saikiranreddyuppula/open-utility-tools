@@ -2,7 +2,7 @@
 
 Framework-agnostic core logic extracted from [Open Utility Tools](https://github.com/saikiranreddyuppula/open-utility-tools) — the pure, dependency-free building blocks behind the web app. No React, no DOM, **zero runtime dependencies**.
 
-> **Scope of v1.** This package ships the tool logic that already lives in framework-agnostic modules: text, math, color, data, time, web, generators, and WebCrypto helpers. The bulk of the app's tools compute *inline inside their React components*, and the Rust→WASM tier (hashing, image, PDF) is not included yet — both are tracked as follow-up phases (see the repo PR). This is not "every tool", and does not claim to be.
+> **Scope.** Every function here is **isomorphic** — it runs identically in the browser, Node ≥ 20, and Bun. Pure-TS tiers (text, math, color, data, time, web, generators, WebCrypto) are plain modules; raster image tools are **WASM-backed** by the bundled `imaging` crate and work the same in all three runtimes. This is being built out tool-by-tool from the app's ~1,000 tools; the pure tiers and the first image/time tools are landed, the rest are in progress.
 
 ## Install
 
@@ -46,6 +46,19 @@ text.cases.kebab('Hello World'); // "hello-world"
 | `…/web` | HTTP status code + MIME type reference tables |
 | `…/generators` | lorem ipsum, fake records, .gitignore templates, UUID/ULID/nanoid, passwords |
 | `…/crypto` | JWT signing, HOTP, base32 decode, base64url (WebCrypto) |
+| `…/image` | WASM-backed raster `convert` + `probe` (browser/Node/Bun) |
+
+### Per-tool deep subpaths
+
+Tools are also importable individually, so you pull in exactly one:
+
+```ts
+import { addBusinessDays } from '@open-utility-tools/core/time/add-business-days';
+import { convert } from '@open-utility-tools/core/image/convert';
+
+// WASM-backed, identical in browser / Node / Bun:
+const webp = await convert(pngBytes, { format: 'webp', quality: 80, maxWidth: 400 });
+```
 
 ## Notes
 

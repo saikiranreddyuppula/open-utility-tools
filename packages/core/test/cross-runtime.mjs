@@ -1,0 +1,50 @@
+// Cross-runtime E2E: exercises the BUILT dist (the real published artifact) and
+// runs identically under Node and Bun — `node test/cross-runtime.mjs` and
+// `bun test/cross-runtime.mjs`. Asserts pure-TS extraction AND the WASM-backed
+// isomorphic image path. Exits non-zero on any failure.
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const runtime = typeof Bun !== 'undefined' ? 'bun' : 'node';
+let passed = 0;
+async function check(name, fn) {
+  await fn();
+  passed++;
+  console.log(`  ✓ [${runtime}] ${name}`);
+}
+
+// --- pure extracted tool (no wasm) ---
+const { addBusinessDays } = await import('../dist/time/add-business-days.js');
+await check('addBusinessDays adds across weekends', () => {
+  assert.equal(addBusinessDays('2026-06-01', 10).date, '2026-06-15');
+});
+await check('addBusinessDays skips holidays', () => {
+  assert.equal(addBusinessDays('2026-06-01', 3, { holidays: ['2026-06-03'] }).date, '2026-06-05');
+});
+
+// --- WASM-backed isomorphic raster path ---
+const { convert, probe } = await import('../dist/image/index.js');
+const png = readFileSync(fileURLToPath(new URL('./fixtures/sample-1200x630.png', import.meta.url)));
+
+await check('probe reads PNG dimensions', async () => {
+  assert.deepEqual(await probe(png), { width: 1200, height: 630, format: 'PNG' });
+});
+
+await check('convert PNG → WebP produces a valid WEBP', async () => {
+  const out = await convert(png, { format: 'webp', quality: 80 });
+  assert.ok(out.length > 0, 'output is non-empty');
+  const sig = Buffer.from(out.subarray(0, 4)).toString('ascii') +
+    Buffer.from(out.subarray(8, 12)).toString('ascii');
+  assert.equal(sig, 'RIFFWEBP');
+  assert.equal((await probe(out)).format, 'WebP');
+});
+
+await check('convert resize preserves aspect ratio', async () => {
+  const out = await convert(png, { format: 'png', maxWidth: 400 });
+  const info = await probe(out);
+  assert.equal(info.width, 400);
+  assert.equal(info.height, 210); // 630 * 400/1200
+});
+
+console.log(`\n[${runtime}] ${passed} checks passed`);
