@@ -2,17 +2,6 @@ import type { ToolMetaStatic } from '@/lib/registry';
 
 const PACKAGE_NAME = '@open-utility-tools/core';
 
-const CATEGORY_EXPORTS = new Set([
-  'color',
-  'crypto',
-  'data',
-  'generators',
-  'math',
-  'text',
-  'time',
-  'web',
-]);
-
 const TIME_PRIMARY_EXPORTS: Record<string, string> = {
   'add-business-days': 'addBusinessDays',
   'age-calculator': 'calculateAge',
@@ -80,7 +69,7 @@ const TIME_PRIMARY_EXPORTS: Record<string, string> = {
 };
 
 export interface ToolUsageInfo {
-  status: 'exact' | 'category' | 'planned';
+  status: 'exact' | 'planned';
   installCommand: string;
   importPath?: string;
   importName?: string;
@@ -100,23 +89,11 @@ export function getToolUsageInfo(tool: ToolMetaStatic): ToolUsageInfo {
     };
   }
 
-  if (CATEGORY_EXPORTS.has(tool.category)) {
-    const importPath = `${PACKAGE_NAME}/${tool.category}`;
-    const namespace = `${toIdentifier(tool.category)}Tools`;
-    return {
-      status: 'category',
-      installCommand,
-      importPath,
-      snippet: `import * as ${namespace} from '${importPath}';\n\n// ${tool.name} is not exposed as its own per-tool API yet.\n// Use this category module for the helpers already extracted from ${tool.category} tools.\nconsole.log(Object.keys(${namespace}));`,
-      note: 'This category is available in the package, but this exact UI tool has not been extracted as a per-tool npm API yet.',
-    };
-  }
-
   return {
     status: 'planned',
     installCommand,
-    snippet: `// ${tool.name} is currently available in the browser app.\n// A package API for this tool has not been published yet.\n// Track package coverage in the developer docs.`,
-    note: 'Coming soon. This tool is browser-only today, and package extraction is planned category by category.',
+    snippet: `// Coming soon: ${tool.name}\n// This browser tool does not have a published per-tool npm API yet.\n// Use the web UI for now, or check the developer docs for package coverage.`,
+    note: 'Coming soon. This exact tool has not been published as a typed npm API yet.',
   };
 }
 
@@ -142,10 +119,4 @@ function exactUsage(tool: ToolMetaStatic): Omit<ToolUsageInfo, 'installCommand' 
   }
 
   return null;
-}
-
-function toIdentifier(value: string): string {
-  return value
-    .replace(/[^a-zA-Z0-9]+(.)/g, (_match, char: string) => char.toUpperCase())
-    .replace(/^[^a-zA-Z_$]+/, '');
 }

@@ -83,20 +83,12 @@ export function DeveloperUsagePanel({ tool }: { tool: ToolMetaStatic }) {
   );
 }
 
-function UsageBadge({ status }: { status: 'exact' | 'category' | 'planned' }) {
+function UsageBadge({ status }: { status: 'exact' | 'planned' }) {
   if (status === 'exact') {
     return (
       <Badge variant="success" className="gap-1">
         <CheckCircle2 className="size-3" />
         npm API
-      </Badge>
-    );
-  }
-  if (status === 'category') {
-    return (
-      <Badge variant="secondary" className="gap-1">
-        <Package className="size-3" />
-        category API
       </Badge>
     );
   }
