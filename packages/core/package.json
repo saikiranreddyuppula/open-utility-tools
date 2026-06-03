@@ -51,6 +51,10 @@
       "types": "./dist/data.d.ts",
       "import": "./dist/data.js"
     },
+    "./developer-tools": {
+      "types": "./dist/developer-tools.d.ts",
+      "import": "./dist/developer-tools.js"
+    },
     "./generators": {
       "types": "./dist/generators.d.ts",
       "import": "./dist/generators.js"
@@ -1063,6 +1067,14 @@
       "types": "./dist/tools/crypto/bsb-validator.d.ts",
       "import": "./dist/tools/crypto/bsb-validator.js"
     },
+    "./tools/crypto/certificate-chain-builder": {
+      "types": "./dist/tools/crypto/certificate-chain-builder.d.ts",
+      "import": "./dist/tools/crypto/certificate-chain-builder.js"
+    },
+    "./tools/crypto/certificate-decoder-x509": {
+      "types": "./dist/tools/crypto/certificate-decoder-x509.d.ts",
+      "import": "./dist/tools/crypto/certificate-decoder-x509.js"
+    },
     "./tools/crypto/crc32-checksum": {
       "types": "./dist/tools/crypto/crc32-checksum.d.ts",
       "import": "./dist/tools/crypto/crc32-checksum.js"
@@ -1098,6 +1110,10 @@
     "./tools/crypto/crypto-text-checksum-multi": {
       "types": "./dist/tools/crypto/crypto-text-checksum-multi.d.ts",
       "import": "./dist/tools/crypto/crypto-text-checksum-multi.js"
+    },
+    "./tools/crypto/csr-generator-validator": {
+      "types": "./dist/tools/crypto/csr-generator-validator.d.ts",
+      "import": "./dist/tools/crypto/csr-generator-validator.js"
     },
     "./tools/crypto/diceware-passphrase": {
       "types": "./dist/tools/crypto/diceware-passphrase.d.ts",
@@ -1155,9 +1171,17 @@
       "types": "./dist/tools/crypto/jwk-pem-viewer.d.ts",
       "import": "./dist/tools/crypto/jwk-pem-viewer.js"
     },
+    "./tools/crypto/jwk-rotation-diff": {
+      "types": "./dist/tools/crypto/jwk-rotation-diff.d.ts",
+      "import": "./dist/tools/crypto/jwk-rotation-diff.js"
+    },
     "./tools/crypto/jwk-thumbprint": {
       "types": "./dist/tools/crypto/jwk-thumbprint.d.ts",
       "import": "./dist/tools/crypto/jwk-thumbprint.js"
+    },
+    "./tools/crypto/jwks-inspector": {
+      "types": "./dist/tools/crypto/jwks-inspector.d.ts",
+      "import": "./dist/tools/crypto/jwks-inspector.js"
     },
     "./tools/crypto/jwt-builder-rsa-es": {
       "types": "./dist/tools/crypto/jwt-builder-rsa-es.d.ts",
@@ -1186,6 +1210,10 @@
     "./tools/crypto/md5-hash": {
       "types": "./dist/tools/crypto/md5-hash.d.ts",
       "import": "./dist/tools/crypto/md5-hash.js"
+    },
+    "./tools/crypto/ocsp-response-decoder": {
+      "types": "./dist/tools/crypto/ocsp-response-decoder.d.ts",
+      "import": "./dist/tools/crypto/ocsp-response-decoder.js"
     },
     "./tools/crypto/otp-uri-builder": {
       "types": "./dist/tools/crypto/otp-uri-builder.d.ts",
@@ -1239,6 +1267,14 @@
       "types": "./dist/tools/crypto/shamir-secret-sharing.d.ts",
       "import": "./dist/tools/crypto/shamir-secret-sharing.js"
     },
+    "./tools/crypto/subresource-integrity-generator": {
+      "types": "./dist/tools/crypto/subresource-integrity-generator.d.ts",
+      "import": "./dist/tools/crypto/subresource-integrity-generator.js"
+    },
+    "./tools/crypto/tls-cipher-suite-explainer": {
+      "types": "./dist/tools/crypto/tls-cipher-suite-explainer.d.ts",
+      "import": "./dist/tools/crypto/tls-cipher-suite-explainer.js"
+    },
     "./tools/crypto/totp-generator": {
       "types": "./dist/tools/crypto/totp-generator.d.ts",
       "import": "./dist/tools/crypto/totp-generator.js"
@@ -1254,6 +1290,10 @@
     "./tools/crypto/vigenere-cipher": {
       "types": "./dist/tools/crypto/vigenere-cipher.d.ts",
       "import": "./dist/tools/crypto/vigenere-cipher.js"
+    },
+    "./tools/crypto/webhook-signature-verifier": {
+      "types": "./dist/tools/crypto/webhook-signature-verifier.d.ts",
+      "import": "./dist/tools/crypto/webhook-signature-verifier.js"
     },
     "./tools/crypto/xor-cipher": {
       "types": "./dist/tools/crypto/xor-cipher.d.ts",
@@ -1859,6 +1899,10 @@
       "types": "./dist/tools/encoding/html-entities.d.ts",
       "import": "./dist/tools/encoding/html-entities.js"
     },
+    "./tools/encoding/protobuf-binary-decoder": {
+      "types": "./dist/tools/encoding/protobuf-binary-decoder.d.ts",
+      "import": "./dist/tools/encoding/protobuf-binary-decoder.js"
+    },
     "./tools/encoding/url-encode": {
       "types": "./dist/tools/encoding/url-encode.d.ts",
       "import": "./dist/tools/encoding/url-encode.js"
@@ -2058,6 +2102,10 @@
     "./tools/generators/nanoid-generator": {
       "types": "./dist/tools/generators/nanoid-generator.d.ts",
       "import": "./dist/tools/generators/nanoid-generator.js"
+    },
+    "./tools/generators/oauth-pkce-generator": {
+      "types": "./dist/tools/generators/oauth-pkce-generator.d.ts",
+      "import": "./dist/tools/generators/oauth-pkce-generator.js"
     },
     "./tools/generators/otp-secret-generator": {
       "types": "./dist/tools/generators/otp-secret-generator.d.ts",
@@ -3447,13 +3495,33 @@
       "types": "./dist/tools/types.d.ts",
       "import": "./dist/tools/types.js"
     },
+    "./tools/web/asyncapi-validator-preview": {
+      "types": "./dist/tools/web/asyncapi-validator-preview.d.ts",
+      "import": "./dist/tools/web/asyncapi-validator-preview.js"
+    },
+    "./tools/web/avro-schema-evolution-checker": {
+      "types": "./dist/tools/web/avro-schema-evolution-checker.d.ts",
+      "import": "./dist/tools/web/avro-schema-evolution-checker.js"
+    },
+    "./tools/web/avro-schema-validator": {
+      "types": "./dist/tools/web/avro-schema-validator.d.ts",
+      "import": "./dist/tools/web/avro-schema-validator.js"
+    },
     "./tools/web/basic-auth-generator": {
       "types": "./dist/tools/web/basic-auth-generator.d.ts",
       "import": "./dist/tools/web/basic-auth-generator.js"
     },
+    "./tools/web/bimi-record-checker": {
+      "types": "./dist/tools/web/bimi-record-checker.d.ts",
+      "import": "./dist/tools/web/bimi-record-checker.js"
+    },
     "./tools/web/chmod-calculator": {
       "types": "./dist/tools/web/chmod-calculator.d.ts",
       "import": "./dist/tools/web/chmod-calculator.js"
+    },
+    "./tools/web/cloudevents-validator": {
+      "types": "./dist/tools/web/cloudevents-validator.d.ts",
+      "import": "./dist/tools/web/cloudevents-validator.js"
     },
     "./tools/web/cookie-parser": {
       "types": "./dist/tools/web/cookie-parser.d.ts",
@@ -3463,13 +3531,73 @@
       "types": "./dist/tools/web/css-minify.d.ts",
       "import": "./dist/tools/web/css-minify.js"
     },
+    "./tools/web/dkim-record-decoder": {
+      "types": "./dist/tools/web/dkim-record-decoder.d.ts",
+      "import": "./dist/tools/web/dkim-record-decoder.js"
+    },
+    "./tools/web/dmarc-record-builder": {
+      "types": "./dist/tools/web/dmarc-record-builder.d.ts",
+      "import": "./dist/tools/web/dmarc-record-builder.js"
+    },
+    "./tools/web/dmarc-report-xml-parser": {
+      "types": "./dist/tools/web/dmarc-report-xml-parser.d.ts",
+      "import": "./dist/tools/web/dmarc-report-xml-parser.js"
+    },
+    "./tools/web/dns-propagation-comparison": {
+      "types": "./dist/tools/web/dns-propagation-comparison.d.ts",
+      "import": "./dist/tools/web/dns-propagation-comparison.js"
+    },
+    "./tools/web/dns-record-dig-ui": {
+      "types": "./dist/tools/web/dns-record-dig-ui.d.ts",
+      "import": "./dist/tools/web/dns-record-dig-ui.js"
+    },
+    "./tools/web/dns-zone-file-validator": {
+      "types": "./dist/tools/web/dns-zone-file-validator.d.ts",
+      "import": "./dist/tools/web/dns-zone-file-validator.js"
+    },
+    "./tools/web/dnssec-chain-visualizer": {
+      "types": "./dist/tools/web/dnssec-chain-visualizer.d.ts",
+      "import": "./dist/tools/web/dnssec-chain-visualizer.js"
+    },
     "./tools/web/email-obfuscator": {
       "types": "./dist/tools/web/email-obfuscator.d.ts",
       "import": "./dist/tools/web/email-obfuscator.js"
     },
+    "./tools/web/graphql-introspection-viewer": {
+      "types": "./dist/tools/web/graphql-introspection-viewer.d.ts",
+      "import": "./dist/tools/web/graphql-introspection-viewer.js"
+    },
+    "./tools/web/graphql-operation-complexity-estimator": {
+      "types": "./dist/tools/web/graphql-operation-complexity-estimator.d.ts",
+      "import": "./dist/tools/web/graphql-operation-complexity-estimator.js"
+    },
+    "./tools/web/graphql-variables-validator": {
+      "types": "./dist/tools/web/graphql-variables-validator.d.ts",
+      "import": "./dist/tools/web/graphql-variables-validator.js"
+    },
+    "./tools/web/grpc-proto-viewer": {
+      "types": "./dist/tools/web/grpc-proto-viewer.d.ts",
+      "import": "./dist/tools/web/grpc-proto-viewer.js"
+    },
+    "./tools/web/grpcurl-command-builder": {
+      "types": "./dist/tools/web/grpcurl-command-builder.d.ts",
+      "import": "./dist/tools/web/grpcurl-command-builder.js"
+    },
+    "./tools/web/hsts-preload-checker": {
+      "types": "./dist/tools/web/hsts-preload-checker.d.ts",
+      "import": "./dist/tools/web/hsts-preload-checker.js"
+    },
     "./tools/web/html-to-text": {
       "types": "./dist/tools/web/html-to-text.d.ts",
       "import": "./dist/tools/web/html-to-text.js"
+    },
+    "./tools/web/http-multipart-form-data-builder": {
+      "types": "./dist/tools/web/http-multipart-form-data-builder.d.ts",
+      "import": "./dist/tools/web/http-multipart-form-data-builder.js"
+    },
+    "./tools/web/http-request-replay-sanitizer": {
+      "types": "./dist/tools/web/http-request-replay-sanitizer.d.ts",
+      "import": "./dist/tools/web/http-request-replay-sanitizer.js"
     },
     "./tools/web/http-status-codes": {
       "types": "./dist/tools/web/http-status-codes.d.ts",
@@ -3479,9 +3607,17 @@
       "types": "./dist/tools/web/ip-subnet-calculator.d.ts",
       "import": "./dist/tools/web/ip-subnet-calculator.js"
     },
+    "./tools/web/json-schema-compatibility-diff": {
+      "types": "./dist/tools/web/json-schema-compatibility-diff.d.ts",
+      "import": "./dist/tools/web/json-schema-compatibility-diff.js"
+    },
     "./tools/web/jwt-decoder": {
       "types": "./dist/tools/web/jwt-decoder.d.ts",
       "import": "./dist/tools/web/jwt-decoder.js"
+    },
+    "./tools/web/kafka-message-header-viewer": {
+      "types": "./dist/tools/web/kafka-message-header-viewer.d.ts",
+      "import": "./dist/tools/web/kafka-message-header-viewer.js"
     },
     "./tools/web/markdown-to-html": {
       "types": "./dist/tools/web/markdown-to-html.d.ts",
@@ -3491,6 +3627,54 @@
       "types": "./dist/tools/web/mime-types.d.ts",
       "import": "./dist/tools/web/mime-types.js"
     },
+    "./tools/web/mqtt-topic-matcher": {
+      "types": "./dist/tools/web/mqtt-topic-matcher.d.ts",
+      "import": "./dist/tools/web/mqtt-topic-matcher.js"
+    },
+    "./tools/web/mta-sts-policy-checker": {
+      "types": "./dist/tools/web/mta-sts-policy-checker.d.ts",
+      "import": "./dist/tools/web/mta-sts-policy-checker.js"
+    },
+    "./tools/web/oauth-authorization-url-builder": {
+      "types": "./dist/tools/web/oauth-authorization-url-builder.d.ts",
+      "import": "./dist/tools/web/oauth-authorization-url-builder.js"
+    },
+    "./tools/web/oauth-token-response-inspector": {
+      "types": "./dist/tools/web/oauth-token-response-inspector.d.ts",
+      "import": "./dist/tools/web/oauth-token-response-inspector.js"
+    },
+    "./tools/web/oidc-discovery-inspector": {
+      "types": "./dist/tools/web/oidc-discovery-inspector.d.ts",
+      "import": "./dist/tools/web/oidc-discovery-inspector.js"
+    },
+    "./tools/web/oidc-id-token-validator": {
+      "types": "./dist/tools/web/oidc-id-token-validator.d.ts",
+      "import": "./dist/tools/web/oidc-id-token-validator.js"
+    },
+    "./tools/web/openapi-breaking-change-diff": {
+      "types": "./dist/tools/web/openapi-breaking-change-diff.d.ts",
+      "import": "./dist/tools/web/openapi-breaking-change-diff.js"
+    },
+    "./tools/web/openapi-schema-example-generator": {
+      "types": "./dist/tools/web/openapi-schema-example-generator.d.ts",
+      "import": "./dist/tools/web/openapi-schema-example-generator.js"
+    },
+    "./tools/web/openapi-security-scheme-inspector": {
+      "types": "./dist/tools/web/openapi-security-scheme-inspector.d.ts",
+      "import": "./dist/tools/web/openapi-security-scheme-inspector.js"
+    },
+    "./tools/web/openapi-validator-linter": {
+      "types": "./dist/tools/web/openapi-validator-linter.d.ts",
+      "import": "./dist/tools/web/openapi-validator-linter.js"
+    },
+    "./tools/web/postman-collection-viewer": {
+      "types": "./dist/tools/web/postman-collection-viewer.d.ts",
+      "import": "./dist/tools/web/postman-collection-viewer.js"
+    },
+    "./tools/web/protobuf-json-converter": {
+      "types": "./dist/tools/web/protobuf-json-converter.d.ts",
+      "import": "./dist/tools/web/protobuf-json-converter.js"
+    },
     "./tools/web/px-rem-converter": {
       "types": "./dist/tools/web/px-rem-converter.d.ts",
       "import": "./dist/tools/web/px-rem-converter.js"
@@ -3498,6 +3682,94 @@
     "./tools/web/query-params": {
       "types": "./dist/tools/web/query-params.d.ts",
       "import": "./dist/tools/web/query-params.js"
+    },
+    "./tools/web/saml-assertion-inspector": {
+      "types": "./dist/tools/web/saml-assertion-inspector.d.ts",
+      "import": "./dist/tools/web/saml-assertion-inspector.js"
+    },
+    "./tools/web/saml-attribute-mapper": {
+      "types": "./dist/tools/web/saml-attribute-mapper.d.ts",
+      "import": "./dist/tools/web/saml-attribute-mapper.js"
+    },
+    "./tools/web/saml-condition-time-validator": {
+      "types": "./dist/tools/web/saml-condition-time-validator.d.ts",
+      "import": "./dist/tools/web/saml-condition-time-validator.js"
+    },
+    "./tools/web/saml-metadata-builder-idp": {
+      "types": "./dist/tools/web/saml-metadata-builder-idp.d.ts",
+      "import": "./dist/tools/web/saml-metadata-builder-idp.js"
+    },
+    "./tools/web/saml-metadata-builder-sp": {
+      "types": "./dist/tools/web/saml-metadata-builder-sp.d.ts",
+      "import": "./dist/tools/web/saml-metadata-builder-sp.js"
+    },
+    "./tools/web/saml-metadata-parser": {
+      "types": "./dist/tools/web/saml-metadata-parser.d.ts",
+      "import": "./dist/tools/web/saml-metadata-parser.js"
+    },
+    "./tools/web/saml-post-form-generator": {
+      "types": "./dist/tools/web/saml-post-form-generator.d.ts",
+      "import": "./dist/tools/web/saml-post-form-generator.js"
+    },
+    "./tools/web/saml-redirect-binding-builder": {
+      "types": "./dist/tools/web/saml-redirect-binding-builder.d.ts",
+      "import": "./dist/tools/web/saml-redirect-binding-builder.js"
+    },
+    "./tools/web/saml-request-decoder": {
+      "types": "./dist/tools/web/saml-request-decoder.d.ts",
+      "import": "./dist/tools/web/saml-request-decoder.js"
+    },
+    "./tools/web/saml-response-decoder": {
+      "types": "./dist/tools/web/saml-response-decoder.d.ts",
+      "import": "./dist/tools/web/saml-response-decoder.js"
+    },
+    "./tools/web/saml-signature-reference-inspector": {
+      "types": "./dist/tools/web/saml-signature-reference-inspector.d.ts",
+      "import": "./dist/tools/web/saml-signature-reference-inspector.js"
+    },
+    "./tools/web/scim-filter-tester": {
+      "types": "./dist/tools/web/scim-filter-tester.d.ts",
+      "import": "./dist/tools/web/scim-filter-tester.js"
+    },
+    "./tools/web/scim-user-payload-builder": {
+      "types": "./dist/tools/web/scim-user-payload-builder.d.ts",
+      "import": "./dist/tools/web/scim-user-payload-builder.js"
+    },
+    "./tools/web/security-headers-auditor": {
+      "types": "./dist/tools/web/security-headers-auditor.d.ts",
+      "import": "./dist/tools/web/security-headers-auditor.js"
+    },
+    "./tools/web/server-sent-events-event-parser": {
+      "types": "./dist/tools/web/server-sent-events-event-parser.d.ts",
+      "import": "./dist/tools/web/server-sent-events-event-parser.js"
+    },
+    "./tools/web/soap-action-header-builder": {
+      "types": "./dist/tools/web/soap-action-header-builder.d.ts",
+      "import": "./dist/tools/web/soap-action-header-builder.js"
+    },
+    "./tools/web/soap-envelope-builder": {
+      "types": "./dist/tools/web/soap-envelope-builder.d.ts",
+      "import": "./dist/tools/web/soap-envelope-builder.js"
+    },
+    "./tools/web/soap-fault-parser": {
+      "types": "./dist/tools/web/soap-fault-parser.d.ts",
+      "import": "./dist/tools/web/soap-fault-parser.js"
+    },
+    "./tools/web/soap-request-debugger": {
+      "types": "./dist/tools/web/soap-request-debugger.d.ts",
+      "import": "./dist/tools/web/soap-request-debugger.js"
+    },
+    "./tools/web/spf-flattening-analyzer": {
+      "types": "./dist/tools/web/spf-flattening-analyzer.d.ts",
+      "import": "./dist/tools/web/spf-flattening-analyzer.js"
+    },
+    "./tools/web/spf-record-builder": {
+      "types": "./dist/tools/web/spf-record-builder.d.ts",
+      "import": "./dist/tools/web/spf-record-builder.js"
+    },
+    "./tools/web/tls-rpt-record-builder": {
+      "types": "./dist/tools/web/tls-rpt-record-builder.d.ts",
+      "import": "./dist/tools/web/tls-rpt-record-builder.js"
     },
     "./tools/web/url-parser": {
       "types": "./dist/tools/web/url-parser.d.ts",
@@ -3962,6 +4234,18 @@
     "./tools/web/web-z-index-scale-generator": {
       "types": "./dist/tools/web/web-z-index-scale-generator.d.ts",
       "import": "./dist/tools/web/web-z-index-scale-generator.js"
+    },
+    "./tools/web/webhook-retry-schedule-calculator": {
+      "types": "./dist/tools/web/webhook-retry-schedule-calculator.d.ts",
+      "import": "./dist/tools/web/webhook-retry-schedule-calculator.js"
+    },
+    "./tools/web/wsdl-operation-explorer": {
+      "types": "./dist/tools/web/wsdl-operation-explorer.d.ts",
+      "import": "./dist/tools/web/wsdl-operation-explorer.js"
+    },
+    "./tools/web/wsdl-to-sample-soap": {
+      "types": "./dist/tools/web/wsdl-to-sample-soap.d.ts",
+      "import": "./dist/tools/web/wsdl-to-sample-soap.js"
     },
     "./web": {
       "types": "./dist/web.d.ts",

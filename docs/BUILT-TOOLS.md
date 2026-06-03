@@ -1,6 +1,6 @@
 # Built Tools
 
-Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **912 tools** across 12 categories — 11 use Rust/WASM. All run 100% client-side.
+Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **982 tools** across 12 categories — 11 use Rust/WASM. All run 100% client-side.
 
 | Category | Count |
 |---|---|
@@ -9,14 +9,14 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 | Data | 98 |
 | Converters | 107 |
 | Text | 108 |
-| Crypto & Hash | 59 |
-| Encoding | 53 |
-| Generators | 69 |
-| Web & Dev | 129 |
+| Crypto & Hash | 68 |
+| Encoding | 54 |
+| Generators | 70 |
+| Web & Dev | 188 |
 | Time & Date | 56 |
 | Math & Units | 114 |
 | Color | 72 |
-| **Total** | **912** |
+| **Total** | **982** |
 
 
 ## Image (43)
@@ -394,7 +394,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **Wrap Text Into Columns** — `/tools/text-to-columns` — Reflow a single stream of lines into multiple side-by-side newspaper-style columns.
 - **Zero-Width & Invisible Character Stripper** — `/tools/zero-width-char-stripper` — Detect and remove invisible zero-width and formatting characters from pasted text.
 
-## Crypto & Hash (59)
+## Crypto & Hash (68)
 
 - **/etc/passwd & shadow Parser** — `/tools/crypto-passwd-shadow-parser` — Parse and explain Unix passwd and shadow file lines field by field.
 - **ABA Routing Number Validator** — `/tools/aba-routing-validator` — Validate a US bank ABA/routing transit number using its mod-10 checksum.
@@ -409,7 +409,9 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **Bcrypt Cost Estimator** — `/tools/crypto-bcrypt-cost-benchmark` — Estimate bcrypt hashing time for each cost factor and recommend a target work factor.
 - **Bcrypt Hash & Verify** 🦀 — `/tools/bcrypt` — Hash a password with bcrypt and verify a password against a hash, locally.
 - **BIP39 Mnemonic Generator** — `/tools/bip39-mnemonic-generator` — Generate BIP39 seed phrases of 12, 15, 18, 21, or 24 words with a valid checksum for crypto wallet backups.
+- **Certificate Chain Builder** — `/tools/certificate-chain-builder` — Inspect pasted PEM certificate chains and flag ordering, duplicate subjects, and missing intermediates.
 - **CRC32 Checksum** — `/tools/crc32-checksum` — Compute the CRC-32 checksum of any text, output as hex or unsigned decimal for quick integrity checks.
+- **CSR Generator & Validator** — `/tools/csr-generator-validator` — Generate an OpenSSL CSR command and inspect pasted CSR PEM blocks.
 - **Diceware Passphrase Generator** — `/tools/diceware-passphrase` — Generate memorable passphrases from a bundled Diceware-style 7776-word list using cryptographic randomness.
 - **EAN / UPC Check Digit** — `/tools/ean-upc-check-digit` — Validate or compute check digits for EAN-13, EAN-8, and UPC-A barcodes.
 - **ECDSA Key Pair Generator** — `/tools/ecdsa-keypair-generator` — Generate an elliptic-curve (P-256/P-384/P-521) key pair as PEM for ECDSA signing.
@@ -424,7 +426,9 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **IBAN Validator** — `/tools/iban-validator` — Validate an IBAN using the ISO 13616 mod-97 checksum and show its structure.
 - **ISBN-10 / ISBN-13 Validator** — `/tools/isbn-validator` — Validate ISBN-10 and ISBN-13 check digits and convert between the two formats.
 - **JWK / PEM Key Viewer** — `/tools/jwk-pem-viewer` — Inspect and convert between JWK and PEM key representations and display their parameters.
+- **JWK Rotation Diff** — `/tools/jwk-rotation-diff` — Compare old and new JWKS documents and identify added, removed, and changed keys.
 - **JWK Thumbprint (RFC 7638)** — `/tools/jwk-thumbprint` — Compute the canonical SHA-256 thumbprint of a JSON Web Key per RFC 7638.
+- **JWKS Inspector** — `/tools/jwks-inspector` — Inspect JSON Web Key Sets, key IDs, algorithms, use, key type, and rotation readiness.
 - **JWT Builder (RS/ES)** — `/tools/jwt-builder-rsa-es` — Build and sign JSON Web Tokens with RSA or ECDSA keys (RS256/384/512, ES256/384/512, PS256).
 - **JWT Claims Validator** — `/tools/jwt-claims-validator` — Decode a JWT and check its registered claims (exp, nbf, iat, aud, iss) without verifying the signature.
 - **JWT Generator** — `/tools/jwt-generator` — Create a signed HS256/384/512 JSON Web Token from a payload and secret.
@@ -436,6 +440,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **MD5 Hash Generator** — `/tools/md5-hash` — Generate the MD5 hash of any text, with lowercase or uppercase hex output (the algorithm Web Crypto omits).
 - **Mod-10 / Mod-11 Check Digit Calculator** — `/tools/crypto-mod10-mod11-check-digit` — Computes and verifies Mod-10 (Luhn) and Mod-11 check digits for arbitrary numeric strings.
 - **Multi-Algorithm Text Checksum** — `/tools/crypto-text-checksum-multi` — Computes CRC-8, CRC-16, CRC-32, Adler-32 and a simple XOR/sum checksum of text in one view.
+- **OCSP Response Decoder** — `/tools/ocsp-response-decoder` — Decode Base64 or PEM OCSP response bytes and summarize visible ASN.1/status hints.
 - **OTPAuth URI & QR Builder** — `/tools/otp-uri-builder` — Build otpauth:// provisioning URIs for TOTP/HOTP authenticator apps from a Base32 secret and render a scannable QR code.
 - **Passphrase Entropy Meter** — `/tools/passphrase-entropy-meter` — Estimate the bits of entropy in a passphrase based on its character set and length.
 - **Password Generator** — `/tools/password-generator` — Generate strong random passwords or diceware passphrases, locally.
@@ -450,13 +455,17 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **SHA Multi-Hash (Text)** — `/tools/sha-multi-hash-text` — Compute SHA-1, SHA-256, SHA-384, and SHA-512 digests of pasted text simultaneously.
 - **SHA-3 / Keccak Hash** — `/tools/crypto-sha3-keccak-hash` — Computes SHA3-224/256/384/512 and Keccak-256 hashes of text using a pure JS implementation.
 - **Shamir Secret Sharing** — `/tools/shamir-secret-sharing` — Split a secret into N shares requiring K to reconstruct, using finite-field polynomial interpolation.
+- **Subresource Integrity Generator** — `/tools/subresource-integrity-generator` — Generate SHA-256/384/512 SRI hashes for pasted asset text.
+- **TLS Cipher Suite Explainer** — `/tools/tls-cipher-suite-explainer` — Explain TLS cipher suite components, key exchange, authentication, encryption, and hash.
 - **TOTP / 2FA Code Generator** — `/tools/totp-generator` — Generate time-based one-time passwords (TOTP) from a Base32 secret.
 - **UUID Inspector** — `/tools/uuid-inspector` — Parse any UUID to reveal its version, variant, and embedded timestamp or node data.
 - **Verhoeff & Damm Check Digit** — `/tools/verhoeff-damm-check` — Compute and validate Verhoeff and Damm check digits for error-detecting numeric strings.
 - **Vigenere Cipher** — `/tools/vigenere-cipher` — Encrypt or decrypt text with the classic Vigenere keyword cipher.
+- **Webhook Signature Verifier** — `/tools/webhook-signature-verifier` — Verify HMAC webhook signatures used by GitHub, Slack, Stripe-style integrations.
+- **X.509 Certificate Decoder** — `/tools/certificate-decoder-x509` — Decode PEM certificate structure and extract subject, issuer, validity, SAN hints, and fingerprints when visible.
 - **XOR Cipher** — `/tools/xor-cipher` — Encrypt or decrypt text with a repeating-key XOR, output as hex or Base64 and back.
 
-## Encoding (53)
+## Encoding (54)
 
 - **ASCII / Code Point Converter** — `/tools/encoding-ascii-code-point` — Convert text to ASCII/Unicode code point numbers and convert numeric lists back to text.
 - **ASCII ↔ EBCDIC Converter** — `/tools/encoding-ebcdic-converter` — Convert text between ASCII/Latin-1 and IBM EBCDIC code pages, byte for byte.
@@ -491,6 +500,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **Numeric HTML Character References** — `/tools/encoding-numeric-char-references` — Convert text into numeric HTML character references (decimal or hex) and decode them back to plain text.
 - **Octal Encode / Decode** — `/tools/encoding-octal-text` — Encode UTF-8 text to space-separated octal byte values or decode octal numbers back into readable text.
 - **Percent-Encoding Reference Table** — `/tools/encoding-percent-encoding-table` — Searchable table of percent-encoded (%XX) values for ASCII and common reserved characters.
+- **Protobuf Binary Decoder** — `/tools/protobuf-binary-decoder` — Decode protobuf wire bytes into field numbers, wire types, and raw scalar values.
 - **Punycode Encode / Decode** — `/tools/encoding-punycode` — Convert internationalized domain names to ASCII Punycode (xn--) and back to their Unicode form.
 - **Quoted-Printable Encode / Decode** — `/tools/encoding-quoted-printable` — Encode text to MIME quoted-printable or decode quoted-printable email content back to text.
 - **Regex Special-Character Escaper** — `/tools/encoding-regex-literal-escape` — Escape text so it matches literally inside a regular expression, for several flavors.
@@ -512,7 +522,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **XXencode / XXdecode** — `/tools/encoding-xxencode` — Encode and decode using the XXencode alphabet (a safer uuencode variant).
 - **Z85 Encode / Decode** — `/tools/encoding-z85-encode` — Encode/decode using ZeroMQ Z85, a printable Base85 variant safe for source code.
 
-## Generators (69)
+## Generators (70)
 
 - **.env.example Generator** — `/tools/env-example-generator` — Turn a list of env var names/values into a redacted .env.example with comments and grouping.
 - **.gitignore Generator** — `/tools/gitignore-generator` — Assemble a .gitignore from common language and tool templates.
@@ -549,6 +559,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **NanoID Custom Alphabet Generator** — `/tools/nanoid-custom-alphabet` — Generate NanoIDs from your own alphabet with an unbiased rejection-sampling algorithm.
 - **NanoID Generator** — `/tools/generate-nanoid` — Generate compact, URL-safe NanoIDs with configurable length and alphabet, a popular smaller alternative to UUIDs for keys and short links.
 - **Nil & Max UUID Generator** — `/tools/uuid-nil-max-generator` — Produce the special all-zero Nil UUID and all-one Max UUID sentinel values.
+- **OAuth PKCE Generator** — `/tools/oauth-pkce-generator` — Generate a PKCE verifier and S256 code challenge for OAuth authorization code flows.
 - **OTP Secret Generator** — `/tools/otp-secret-generator` — Generate Base32 TOTP/HOTP shared secrets and a matching otpauth:// URI.
 - **Passphrase Generator** — `/tools/passphrase-generator` — Generate memorable multi-word passphrases (diceware-style) locally.
 - **Pattern-Based Password Generator** — `/tools/pattern-password-generator` — Generate strings from a placeholder pattern where each token maps to a character class.
@@ -584,19 +595,24 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **vCard (.vcf) Generator** — `/tools/vcard-generator` — Generate vCard 3.0/4.0 contact text from name, org, phones, emails, address, and URL fields.
 - **WiFi QR Payload String Builder** — `/tools/wifi-qr-payload-generator` — Build the WIFI: payload string for WiFi QR codes from SSID, password, encryption, and hidden flag.
 
-## Web & Dev (129)
+## Web & Dev (188)
 
 - **.env to JSON** — `/tools/web-dotenv-to-json` — Parse a .env / dotenv file into a JSON object and convert JSON back into .env format, handling quotes, comments, and export prefixes.
 - **Accept-Language / Accept Parser** — `/tools/web-accept-language-parser` — Parse and sort Accept-Language or Accept headers by quality value (q-factor).
 - **Asset Cache-Busting URL Builder** — `/tools/web-cache-busting-hash-appender` — Appends a deterministic version/hash query param to a list of asset URLs.
+- **AsyncAPI Validator Preview** — `/tools/asyncapi-validator-preview` — Validate common AsyncAPI structure and summarize channels, operations, messages, and servers.
 - **Authenticated fetch() Builder** — `/tools/web-jwt-to-fetch` — Generate a fetch() snippet with method, headers, bearer token, and JSON body.
 - **Authorization Header Builder** — `/tools/web-bearer-auth-header-builder` — Construct Authorization header values for Bearer, Basic, API key, and custom schemes.
+- **Avro Schema Evolution Checker** — `/tools/avro-schema-evolution-checker` — Compare Avro record schemas for added, removed, changed, and default-less fields.
+- **Avro Schema Validator** — `/tools/avro-schema-validator` — Validate common Avro schema structure and summarize records, fields, enums, and unions.
 - **Basic Auth Generator** — `/tools/basic-auth-generator` — Build an HTTP Basic Authorization header from a username and password.
 - **BEM Class Name Generator** — `/tools/web-bem-class-generator` — Generate Block__Element--Modifier CSS class names from block, element and modifier inputs with HTML/CSS preview.
+- **BIMI Record Checker** — `/tools/bimi-record-checker` — Inspect BIMI TXT records for version, logo URL, authority URL, and deployment checklist.
 - **Cache-Control Builder** — `/tools/web-cache-control-builder` — Compose and explain a Cache-Control header from caching directive checkboxes and durations.
 - **Cache-Control Header Explainer** — `/tools/web-http-cache-header-explainer` — Break down a Cache-Control header and explain each directive and its effect.
 - **Chmod Calculator** — `/tools/chmod-calculator` — Toggle Unix permission bits and get the octal + symbolic chmod value.
 - **CIDR / IP Range Calculator** — `/tools/web-cidr-calculator` — Expand an IPv4/IPv6 CIDR block into network, broadcast, mask, and host range.
+- **CloudEvents Validator** — `/tools/cloudevents-validator` — Validate a CloudEvents JSON event for required attributes and common content-type issues.
 - **Common Regex Patterns Library** — `/tools/web-regex-pattern-library` — Searchable reference of ready-to-copy regex patterns for emails, URLs, IPs, dates, and other common validations.
 - **Content-Disposition Builder** — `/tools/web-content-disposition-builder` — Build and parse Content-Disposition headers with RFC 5987 filename encoding.
 - **Content-Security-Policy Builder** — `/tools/web-csp-builder` — Build a CSP header from per-directive source lists with keyword and nonce/hash helpers.
@@ -639,10 +655,23 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **cURL to Code** — `/tools/web-curl-to-fetch` — Convert a curl command into a browser fetch() call, parsing method, URL, headers, and body into ready-to-paste JavaScript.
 - **Data URI Size Estimator** — `/tools/web-data-uri-size-estimator` — Estimate the byte size and overhead of a Base64 data URI for a given raw file size before embedding it.
 - **Data URI to Text** — `/tools/web-data-uri-decoder` — Decode a data: URI back into its underlying text, revealing the MIME type, encoding, and the original content from base64 or percent-encoding.
+- **DKIM Record Decoder** — `/tools/dkim-record-decoder` — Decode DKIM TXT records and extract version, key type, flags, hash list, service, and public key hints.
+- **DMARC Record Builder** — `/tools/dmarc-record-builder` — Build DMARC TXT policies with reporting URIs, alignment, percentage, and subdomain policy.
+- **DMARC Report XML Parser** — `/tools/dmarc-report-xml-parser` — Parse aggregate DMARC XML reports into source IPs, counts, dispositions, and auth results.
+- **DNS Propagation Comparison** — `/tools/dns-propagation-comparison` — Compare pasted DNS answers from multiple resolvers and flag mismatches.
+- **DNS Record dig UI** — `/tools/dns-record-dig-ui` — Build copyable dig commands and summarize pasted DNS records.
+- **DNS Zone File Validator** — `/tools/dns-zone-file-validator` — Check zone-file records for common SOA, NS, MX, CNAME, TTL, and syntax issues.
+- **DNSSEC Chain Visualizer** — `/tools/dnssec-chain-visualizer` — Inspect pasted DS, DNSKEY, RRSIG, and NSEC records and outline the trust chain.
 - **Email Obfuscator** — `/tools/email-obfuscator` — Obfuscate an email address (entities / JS) to deter scrapers.
 - **ETag & Conditional Request Builder** — `/tools/web-etag-conditional-builder` — Generate ETag values and matching If-None-Match / If-Modified-Since request headers.
 - **Favicon Link Tags Generator** — `/tools/web-favicon-link-generator` — Generate the full set of favicon and app-icon link tags for all platforms.
+- **GraphQL Introspection Viewer** — `/tools/graphql-introspection-viewer` — Summarize GraphQL introspection JSON types, queries, mutations, interfaces, and scalars.
+- **GraphQL Operation Complexity Estimator** — `/tools/graphql-operation-complexity-estimator` — Estimate GraphQL query depth, field count, aliases, fragments, and repeated selections.
+- **GraphQL Variables Validator** — `/tools/graphql-variables-validator` — Compare GraphQL variable definitions with a variables JSON payload.
+- **gRPC Proto Viewer** — `/tools/grpc-proto-viewer` — Parse .proto text and list packages, services, RPCs, messages, fields, and enums.
+- **grpcurl Command Builder** — `/tools/grpcurl-command-builder` — Build grpcurl commands with host, service method, headers, TLS, and JSON body.
 - **HSTS Header Builder** — `/tools/web-hsts-header-builder` — Build and decode the Strict-Transport-Security header with preload-eligibility checks.
+- **HSTS Preload Checker** — `/tools/hsts-preload-checker` — Check Strict-Transport-Security headers against common preload requirements.
 - **HTML Attribute Stripper / Tag Cleaner** — `/tools/web-html-attributes-stripper` — Remove selected attributes (style, class, on*, data-*) or whole tags from HTML.
 - **HTML Class & ID Extractor** — `/tools/web-html-class-attr-extractor` — Extract every unique class name and id used in an HTML snippet and output them as a sorted list or CSS stub.
 - **HTML data-* to JS dataset Converter** — `/tools/web-data-attribute-to-dataset` — Convert data-* attributes to element.dataset access expressions and back.
@@ -653,6 +682,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **HTML to Text** — `/tools/html-to-text` — Strip HTML tags and decode entities to get clean plain text.
 - **HTTP Headers Reference** — `/tools/web-http-headers-reference` — Look up any HTTP request or response header to see its purpose, direction, example values, and whether it is standard or deprecated.
 - **HTTP Method Reference** — `/tools/web-http-method-reference` — Cheatsheet of HTTP methods with safe/idempotent/cacheable/body semantics.
+- **HTTP Request Replay Sanitizer** — `/tools/http-request-replay-sanitizer` — Redact secrets from captured HTTP requests and emit a safer replay snippet.
 - **HTTP Status Code Explainer** — `/tools/web-status-code-explainer` — Look up a status code or symbol to get its class, meaning, and typical use.
 - **HTTP Status Codes** — `/tools/http-status-codes` — Searchable reference of HTTP status codes and their meanings.
 - **IP Address Converter** — `/tools/web-ip-address-converter` — Convert an IPv4/IPv6 address between dotted, integer, hex, binary, and expanded forms.
@@ -661,6 +691,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **IPv6 Expand & Compress** — `/tools/web-ipv6-expander` — Expand IPv6 addresses to full form or compress to canonical RFC 5952 shorthand.
 - **JSON Flatten / Unflatten** — `/tools/web-json-flatten` — Flatten a deeply nested JSON object into single-level dot-notation keys, or rebuild nested structure from flattened keys.
 - **JSON Path Extractor** — `/tools/web-json-path-extractor` — Query a JSON document with a dot/bracket path expression (e.g. data.items[0].name) and extract matching values, with wildcard support for arrays.
+- **JSON Schema Compatibility Diff** — `/tools/json-schema-compatibility-diff` — Compare JSON Schemas for required fields, property changes, and enum narrowing.
 - **JSON to HTML Form Generator** — `/tools/web-json-to-html-form` — Turn a JSON object into a matching HTML form with labeled inputs inferred from each field's value type.
 - **JSON to Java Class** — `/tools/web-json-to-java` — Convert a JSON payload into POJO Java class definitions with typed fields and getters/setters, inferring nested classes and collection generics.
 - **JSON to JSON Schema** — `/tools/web-json-to-jsonschema` — Generate a draft JSON Schema from an example JSON document, inferring types, required keys, array item shapes, and nested object definitions.
@@ -670,14 +701,28 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **JSON-LD Structured Data Generator** — `/tools/web-jsonld-schema-generator` — Generate schema.org JSON-LD for Article, Product, FAQ, Breadcrumb and more.
 - **JWT Decoder** — `/tools/jwt-decoder` — Decode and inspect JSON Web Token header & payload (no verification).
 - **JWT Expiry Inspector** — `/tools/web-jwt-expiry-inspector` — Decode a JWT and report human-readable issued/expiry times and remaining validity.
+- **Kafka Message Header Viewer** — `/tools/kafka-message-header-viewer` — Parse Kafka header key/value pairs and payload metadata for debugging consumers.
 - **Link Header Builder & Parser** — `/tools/web-link-header-builder` — Build and parse RFC 8288 Link headers (rel=next/prev, preload, canonical).
 - **Lorem Ipsum HTML Block Generator** — `/tools/web-lorem-html-block` — Generate placeholder content as ready-to-paste semantic HTML blocks (paragraphs, headings, lists, blockquotes).
 - **MAC Address Formatter** — `/tools/web-mac-address-formatter` — Reformat MAC addresses between colon, hyphen, dot (Cisco), and bare notations.
 - **Markdown to HTML** — `/tools/markdown-to-html` — Render Markdown to HTML with a live preview and copyable output.
 - **MIME Type from Extension** — `/tools/web-mimetype-from-extension` — Map one or many file extensions or filenames to their canonical MIME types and back.
 - **MIME Type Lookup** — `/tools/mime-types` — Look up the MIME/content type for a file extension and vice versa.
+- **MQTT Topic Matcher** — `/tools/mqtt-topic-matcher` — Test MQTT topic filters with + and # wildcards against sample topics.
+- **MTA-STS Policy Checker** — `/tools/mta-sts-policy-checker` — Validate MTA-STS TXT and policy file contents for secure inbound mail delivery.
+- **Multipart Form-Data Builder** — `/tools/http-multipart-form-data-builder` — Build multipart/form-data bodies and cURL snippets from field definitions.
+- **OAuth Authorization URL Builder** — `/tools/oauth-authorization-url-builder` — Build OAuth 2.0 or OIDC authorization URLs with scopes, PKCE, state, and nonce.
+- **OAuth Token Response Inspector** — `/tools/oauth-token-response-inspector` — Inspect an OAuth token response, token types, scopes, and expiry.
+- **OIDC Discovery Inspector** — `/tools/oidc-discovery-inspector` — Parse OpenID Connect discovery metadata and summarize endpoints, algorithms, and grants.
+- **OIDC ID Token Validator** — `/tools/oidc-id-token-validator` — Decode an ID token and check issuer, audience, nonce, expiry, and clock claims.
 - **Open Graph / Twitter Card Preview** — `/tools/web-open-graph-preview-card` — Parses OG and Twitter meta tags from pasted HTML and shows the resolved share-card fields.
+- **OpenAPI Breaking Change Diff** — `/tools/openapi-breaking-change-diff` — Compare two OpenAPI specs and identify removed paths, methods, parameters, and response codes.
+- **OpenAPI Schema Example Generator** — `/tools/openapi-schema-example-generator` — Generate JSON examples from OpenAPI component schemas.
+- **OpenAPI Security Scheme Inspector** — `/tools/openapi-security-scheme-inspector` — Summarize API keys, HTTP auth, OAuth flows, OpenID Connect URLs, and operation security.
+- **OpenAPI Validator & Linter** — `/tools/openapi-validator-linter` — Validate common OpenAPI structure and flag missing info, paths, responses, and schemas.
 - **Permissions-Policy Builder** — `/tools/web-permissions-policy-builder` — Build a Permissions-Policy (Feature-Policy) header from per-feature allowlists.
+- **Postman Collection Viewer** — `/tools/postman-collection-viewer` — Summarize a Postman collection without importing it into Postman.
+- **Protobuf JSON Converter** — `/tools/protobuf-json-converter` — Normalize protobuf JSON field names and scalar wrappers for debugging.
 - **PX ↔ REM Converter** — `/tools/px-rem-converter` — Convert between px, rem and em given a configurable root font size.
 - **Query String ↔ JSON** — `/tools/query-params` — Convert a URL query string to JSON and back, handling repeated keys.
 - **Query String Editor** — `/tools/web-query-string-editor` — Edit, add, reorder, dedupe, and sort URL query parameters in an interactive key/value table.
@@ -694,14 +739,36 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **Responsive Image srcset Generator** — `/tools/web-srcset-generator` — Generate <img> srcset/sizes (or <picture>) markup from a list of widths.
 - **Responsive Image Width Planner** — `/tools/web-srcset-density-calculator` — Compute srcset width descriptors and sizes from a layout and breakpoints.
 - **robots.txt Tester** — `/tools/web-robots-txt-tester` — Test whether a URL path is allowed for a user-agent against pasted robots.txt rules.
+- **SAML Assertion Inspector** — `/tools/saml-assertion-inspector` — Extract subject, issuer, audience, session, and attributes from a SAML assertion.
+- **SAML Attribute Mapper** — `/tools/saml-attribute-mapper` — Map SAML attributes to app claims using a simple mapping table.
+- **SAML Condition Time Validator** — `/tools/saml-condition-time-validator` — Validate NotBefore and NotOnOrAfter timestamps with configurable clock skew.
+- **SAML IdP Metadata Builder** — `/tools/saml-metadata-builder-idp` — Build identity provider metadata with SSO endpoints and signing certificate.
+- **SAML Metadata Parser** — `/tools/saml-metadata-parser` — Parse SAML entity metadata and list endpoints, certs, bindings, and entity IDs.
+- **SAML POST Form Generator** — `/tools/saml-post-form-generator` — Generate a local HTML form for SAML HTTP-POST binding.
+- **SAML Redirect Binding Builder** — `/tools/saml-redirect-binding-builder` — Build the URL parameters used by SAML HTTP-Redirect binding.
+- **SAML Request Decoder** — `/tools/saml-request-decoder` — Decode a SAMLRequest from URL, query string, or form input and inspect the XML.
+- **SAML Response Decoder** — `/tools/saml-response-decoder` — Decode a SAMLResponse payload and extract assertion, issuer, audience, and subject details.
+- **SAML Signature Reference Inspector** — `/tools/saml-signature-reference-inspector` — Inspect XML Signature methods, references, transforms, digests, and embedded certs.
+- **SAML SP Metadata Builder** — `/tools/saml-metadata-builder-sp` — Build service provider metadata for a SAML integration.
+- **SCIM Filter Tester** — `/tools/scim-filter-tester` — Test basic SCIM filter expressions against pasted sample users.
+- **SCIM User Payload Builder** — `/tools/scim-user-payload-builder` — Build a SCIM 2.0 user JSON payload for provisioning tests.
+- **Security Headers Auditor** — `/tools/security-headers-auditor` — Audit pasted HTTP response headers for CSP, HSTS, frame, MIME, referrer, and permissions policy.
 - **Semantic Version Comparator** — `/tools/web-semver-compare` — Compare two semantic versions to see which is greater, parse a version into major/minor/patch/prerelease, and test it against a range.
 - **Semver Range Tester** — `/tools/web-semver-range-tester` — Test whether semantic versions satisfy npm-style version ranges (caret, tilde, comparators, hyphen ranges).
 - **Semver Version Bumper** — `/tools/web-semver-bump` — Compute the next semantic version by bumping major, minor, patch, or prerelease according to semver rules.
+- **Server-Sent Events Parser** — `/tools/server-sent-events-event-parser` — Parse SSE streams into events, IDs, retry hints, comments, and data payloads.
 - **Set-Cookie Header Builder** — `/tools/web-set-cookie-builder` — Build a syntactically correct Set-Cookie header from name, value, and attribute toggles.
 - **Set-Cookie String Builder** — `/tools/web-cookie-string-builder` — Build a Set-Cookie header from name, value and attributes with validation.
 - **Shell Argument Escaper** — `/tools/web-shell-arg-escaper` — Safely quote and escape strings for bash, sh, PowerShell, or cmd.exe.
 - **Slugify Variants Comparator** — `/tools/web-slugify-variants` — Generate multiple slug styles (kebab, snake, dot, path, GitHub-anchor) from one input at once for comparison.
+- **SOAP Envelope Builder** — `/tools/soap-envelope-builder` — Build SOAP 1.1 or 1.2 envelopes from namespace, operation, and body XML.
+- **SOAP Fault Parser** — `/tools/soap-fault-parser` — Parse SOAP 1.1/1.2 faults into code, reason, actor/node, role, and detail.
+- **SOAP Request Debugger** — `/tools/soap-request-debugger` — Inspect SOAP HTTP headers, envelope version, operation, and body payload.
+- **SOAPAction Header Builder** — `/tools/soap-action-header-builder` — Build SOAPAction and Content-Type headers for SOAP 1.1 or 1.2 requests.
+- **SPF Flattening Analyzer** — `/tools/spf-flattening-analyzer` — Count SPF mechanisms and estimate DNS lookup pressure before flattening.
+- **SPF Record Builder** — `/tools/spf-record-builder` — Build SPF TXT records from mechanisms, includes, IPv4, IPv6, and all-policy.
 - **Text Data URI Builder** — `/tools/web-data-uri-builder-text` — Build a data: URI from pasted text with MIME type, charset, and base64 options.
+- **TLS-RPT Record Builder** — `/tools/tls-rpt-record-builder` — Build SMTP TLS reporting DNS records for mail delivery diagnostics.
 - **URL Builder** — `/tools/web-url-builder` — Assemble a valid URL from individual scheme, host, port, path, query, and fragment fields.
 - **URL Inspector** — `/tools/web-url-inspector` — Break a URL into protocol, host, port, path segments, query parameters, and hash, displayed as a clear labeled component breakdown.
 - **URL Normalizer** — `/tools/web-url-normalizer` — Canonicalize a URL by lowercasing host, resolving dot segments, sorting params, and stripping defaults.
@@ -711,6 +778,9 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **91
 - **URL Query Params Diff** — `/tools/web-query-params-diff` — Compare the query strings of two URLs and show which params were added, removed, changed, or unchanged.
 - **User-Agent Parser** — `/tools/user-agent-parser` — Parse a User-Agent string into browser, engine, OS and device.
 - **User-Agent String Builder** — `/tools/web-user-agent-builder` — Compose a browser User-Agent string from platform, engine, and version selectors.
+- **Webhook Retry Schedule Calculator** — `/tools/webhook-retry-schedule-calculator` — Model webhook retry attempts using delay, multiplier, jitter, and max delay.
+- **WSDL Operation Explorer** — `/tools/wsdl-operation-explorer` — Parse WSDL XML and list services, ports, bindings, operations, and messages.
+- **WSDL to Sample SOAP** — `/tools/wsdl-to-sample-soap` — Generate a starter SOAP envelope for a selected operation name.
 - **WWW-Authenticate Parser** — `/tools/web-www-authenticate-parser` — Parse WWW-Authenticate / Authorization challenge headers into scheme and parameters.
 - **XML Formatter** — `/tools/web-xml-formatter` — Pretty-print and indent minified XML, or minify verbose XML by stripping whitespace between tags, with self-closing tag handling.
 - **XML to JSON** — `/tools/web-xml-to-json` — Convert an XML document into a structured JSON object, mapping elements, attributes, and text content with a predictable convention.

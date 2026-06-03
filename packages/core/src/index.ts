@@ -10,3 +10,4 @@ export * as web from './web';
 export * as generators from './generators';
 export * as crypto from './crypto';
 export * as tools from './tools';
+export * as developerTools from './developer-tools';

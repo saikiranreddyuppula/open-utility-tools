@@ -50,18 +50,31 @@ await check('convert resize preserves aspect ratio', async () => {
 // --- package tool catalog surface ---
 const { TOOL_CATALOG, getToolBySlug } = await import('../dist/tools/index.js');
 const { tool: jsonFormatterTool } = await import('../dist/tools/data/json-formatter.js');
+const { runDeveloperTool, getDeveloperToolDefinition } = await import('../dist/developer-tools.js');
 
 await check('tool catalog ships all browser tools', () => {
-  assert.equal(TOOL_CATALOG.length, 912);
+  assert.equal(TOOL_CATALOG.length, 982);
   assert.equal(
     getToolBySlug('json-formatter').packageImportPath,
     '@open-utility-tools/core/tools/data/json-formatter',
+  );
+  assert.equal(
+    getToolBySlug('saml-request-decoder').packageImportPath,
+    '@open-utility-tools/core/tools/web/saml-request-decoder',
   );
 });
 
 await check('per-tool catalog subpath exports metadata', () => {
   assert.equal(jsonFormatterTool.name, 'JSON Formatter');
   assert.equal(jsonFormatterTool.webPath, '/tools/json-formatter/');
+});
+
+await check('developer-tools direct API runs SAML decoder', async () => {
+  assert.equal(getDeveloperToolDefinition('saml-request-decoder').name, 'SAML Request Decoder');
+  const out = await runDeveloperTool('saml-request-decoder', {
+    input: 'SAMLRequest=PHNhbWxwOkF1dGhuUmVxdWVzdCBJRD0iYWJjIiBWZXJzaW9uPSIyLjAiIC8+',
+  });
+  assert.match(out.output, /assertionId|issuer/);
 });
 
 console.log(`\n[${runtime}] ${passed} checks passed`);

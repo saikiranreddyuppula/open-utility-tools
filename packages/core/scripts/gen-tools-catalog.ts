@@ -13,6 +13,8 @@ import { existsSync } from 'node:fs';
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, join, relative } from 'node:path';
 
+import { DEVELOPER_TOOL_DEFINITIONS } from '../../../lib/developer-tools/core';
+
 const PACKAGE_NAME = '@open-utility-tools/core';
 
 const pkgDir = join(import.meta.dir, '..');
@@ -62,6 +64,7 @@ interface CatalogEntry extends RawToolConfig {
 const directCoreApiOverrides: Record<string, string> = {
   'image/image-converter': `${PACKAGE_NAME}/image/convert`,
 };
+const developerToolSlugs = new Set(DEVELOPER_TOOL_DEFINITIONS.map((tool) => tool.slug));
 
 async function main() {
   const files = await scanToolConfigs();
@@ -125,7 +128,9 @@ async function loadTools(files: string[]): Promise<CatalogEntry[]> {
       packageImportPath: `${PACKAGE_NAME}/tools/${category}/${cfg.slug}`,
       webPath: `/tools/${cfg.slug}/`,
       coreImportPath:
-        directCoreApiOverrides[expectedPathKey] ?? discoverDirectCoreApi(expectedPathKey),
+        directCoreApiOverrides[expectedPathKey] ??
+        discoverDirectCoreApi(expectedPathKey) ??
+        (developerToolSlugs.has(cfg.slug) ? `${PACKAGE_NAME}/developer-tools` : undefined),
     });
   }
 
