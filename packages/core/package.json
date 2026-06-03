@@ -39,37 +39,21 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./text": {
-      "types": "./dist/text.d.ts",
-      "import": "./dist/text.js"
-    },
-    "./math": {
-      "types": "./dist/math.d.ts",
-      "import": "./dist/math.js"
-    },
     "./color": {
       "types": "./dist/color.d.ts",
       "import": "./dist/color.js"
+    },
+    "./crypto": {
+      "types": "./dist/crypto.d.ts",
+      "import": "./dist/crypto.js"
     },
     "./data": {
       "types": "./dist/data.d.ts",
       "import": "./dist/data.js"
     },
-    "./time": {
-      "types": "./dist/time.d.ts",
-      "import": "./dist/time.js"
-    },
-    "./web": {
-      "types": "./dist/web.d.ts",
-      "import": "./dist/web.js"
-    },
     "./generators": {
       "types": "./dist/generators.d.ts",
       "import": "./dist/generators.js"
-    },
-    "./crypto": {
-      "types": "./dist/crypto.d.ts",
-      "import": "./dist/crypto.js"
     },
     "./image": {
       "types": "./dist/image/index.d.ts",
@@ -83,14 +67,280 @@
       "types": "./dist/image/probe.d.ts",
       "import": "./dist/image/probe.js"
     },
+    "./math": {
+      "types": "./dist/math.d.ts",
+      "import": "./dist/math.js"
+    },
+    "./text": {
+      "types": "./dist/text.d.ts",
+      "import": "./dist/text.js"
+    },
+    "./time": {
+      "types": "./dist/time.d.ts",
+      "import": "./dist/time.js"
+    },
     "./time/add-business-days": {
       "types": "./dist/time/add-business-days.d.ts",
       "import": "./dist/time/add-business-days.js"
+    },
+    "./time/age-calculator": {
+      "types": "./dist/time/age-calculator.d.ts",
+      "import": "./dist/time/age-calculator.js"
+    },
+    "./time/age-on-other-planets": {
+      "types": "./dist/time/age-on-other-planets.d.ts",
+      "import": "./dist/time/age-on-other-planets.js"
+    },
+    "./time/birthday-milestone-finder": {
+      "types": "./dist/time/birthday-milestone-finder.d.ts",
+      "import": "./dist/time/birthday-milestone-finder.js"
+    },
+    "./time/business-days-calculator": {
+      "types": "./dist/time/business-days-calculator.d.ts",
+      "import": "./dist/time/business-days-calculator.js"
+    },
+    "./time/chinese-zodiac-sign": {
+      "types": "./dist/time/chinese-zodiac-sign.d.ts",
+      "import": "./dist/time/chinese-zodiac-sign.js"
+    },
+    "./time/countdown-timer-builder": {
+      "types": "./dist/time/countdown-timer-builder.d.ts",
+      "import": "./dist/time/countdown-timer-builder.js"
+    },
+    "./time/cron-builder": {
+      "types": "./dist/time/cron-builder.d.ts",
+      "import": "./dist/time/cron-builder.js"
+    },
+    "./time/cron-field-expander": {
+      "types": "./dist/time/cron-field-expander.d.ts",
+      "import": "./dist/time/cron-field-expander.js"
+    },
+    "./time/cron-next-runs-preview": {
+      "types": "./dist/time/cron-next-runs-preview.d.ts",
+      "import": "./dist/time/cron-next-runs-preview.js"
+    },
+    "./time/cron-parser": {
+      "types": "./dist/time/cron-parser.d.ts",
+      "import": "./dist/time/cron-parser.js"
+    },
+    "./time/date-add-subtract": {
+      "types": "./dist/time/date-add-subtract.d.ts",
+      "import": "./dist/time/date-add-subtract.js"
+    },
+    "./time/date-difference": {
+      "types": "./dist/time/date-difference.d.ts",
+      "import": "./dist/time/date-difference.js"
+    },
+    "./time/date-format-converter": {
+      "types": "./dist/time/date-format-converter.d.ts",
+      "import": "./dist/time/date-format-converter.js"
+    },
+    "./time/date-format-playground": {
+      "types": "./dist/time/date-format-playground.d.ts",
+      "import": "./dist/time/date-format-playground.js"
+    },
+    "./time/date-format-token-reference": {
+      "types": "./dist/time/date-format-token-reference.d.ts",
+      "import": "./dist/time/date-format-token-reference.js"
+    },
+    "./time/date-range-splitter": {
+      "types": "./dist/time/date-range-splitter.d.ts",
+      "import": "./dist/time/date-range-splitter.js"
+    },
+    "./time/day-of-year": {
+      "types": "./dist/time/day-of-year.d.ts",
+      "import": "./dist/time/day-of-year.js"
+    },
+    "./time/day-percentage-elapsed": {
+      "types": "./dist/time/day-percentage-elapsed.d.ts",
+      "import": "./dist/time/day-percentage-elapsed.js"
+    },
+    "./time/days-between-units": {
+      "types": "./dist/time/days-between-units.d.ts",
+      "import": "./dist/time/days-between-units.js"
+    },
+    "./time/days-until": {
+      "types": "./dist/time/days-until.d.ts",
+      "import": "./dist/time/days-until.js"
+    },
+    "./time/decimal-time-converter": {
+      "types": "./dist/time/decimal-time-converter.d.ts",
+      "import": "./dist/time/decimal-time-converter.js"
+    },
+    "./time/duration-humanizer": {
+      "types": "./dist/time/duration-humanizer.d.ts",
+      "import": "./dist/time/duration-humanizer.js"
+    },
+    "./time/duration-parser": {
+      "types": "./dist/time/duration-parser.d.ts",
+      "import": "./dist/time/duration-parser.js"
+    },
+    "./time/epoch-precision-converter": {
+      "types": "./dist/time/epoch-precision-converter.d.ts",
+      "import": "./dist/time/epoch-precision-converter.js"
+    },
+    "./time/fixed-offset-timezone-math": {
+      "types": "./dist/time/fixed-offset-timezone-math.d.ts",
+      "import": "./dist/time/fixed-offset-timezone-math.js"
+    },
+    "./time/iso-8601-parser": {
+      "types": "./dist/time/iso-8601-parser.d.ts",
+      "import": "./dist/time/iso-8601-parser.js"
+    },
+    "./time/iso-duration-parser": {
+      "types": "./dist/time/iso-duration-parser.d.ts",
+      "import": "./dist/time/iso-duration-parser.js"
+    },
+    "./time/iso-week-date-converter": {
+      "types": "./dist/time/iso-week-date-converter.d.ts",
+      "import": "./dist/time/iso-week-date-converter.js"
+    },
+    "./time/julian-day-number": {
+      "types": "./dist/time/julian-day-number.d.ts",
+      "import": "./dist/time/julian-day-number.js"
+    },
+    "./time/leap-year-checker": {
+      "types": "./dist/time/leap-year-checker.d.ts",
+      "import": "./dist/time/leap-year-checker.js"
+    },
+    "./time/moon-phase-calculator": {
+      "types": "./dist/time/moon-phase-calculator.d.ts",
+      "import": "./dist/time/moon-phase-calculator.js"
+    },
+    "./time/next-weekday-occurrence": {
+      "types": "./dist/time/next-weekday-occurrence.d.ts",
+      "import": "./dist/time/next-weekday-occurrence.js"
+    },
+    "./time/nth-weekday-of-month": {
+      "types": "./dist/time/nth-weekday-of-month.d.ts",
+      "import": "./dist/time/nth-weekday-of-month.js"
+    },
+    "./time/ordinal-date-converter": {
+      "types": "./dist/time/ordinal-date-converter.d.ts",
+      "import": "./dist/time/ordinal-date-converter.js"
+    },
+    "./time/quarter-of-date": {
+      "types": "./dist/time/quarter-of-date.d.ts",
+      "import": "./dist/time/quarter-of-date.js"
+    },
+    "./time/recurring-event-dates": {
+      "types": "./dist/time/recurring-event-dates.d.ts",
+      "import": "./dist/time/recurring-event-dates.js"
+    },
+    "./time/relative-time-formatter": {
+      "types": "./dist/time/relative-time-formatter.d.ts",
+      "import": "./dist/time/relative-time-formatter.js"
+    },
+    "./time/stardate-converter": {
+      "types": "./dist/time/stardate-converter.d.ts",
+      "import": "./dist/time/stardate-converter.js"
+    },
+    "./time/strftime-playground": {
+      "types": "./dist/time/strftime-playground.d.ts",
+      "import": "./dist/time/strftime-playground.js"
+    },
+    "./time/swatch-internet-time": {
+      "types": "./dist/time/swatch-internet-time.d.ts",
+      "import": "./dist/time/swatch-internet-time.js"
+    },
+    "./time/time-12-24-converter": {
+      "types": "./dist/time/time-12-24-converter.d.ts",
+      "import": "./dist/time/time-12-24-converter.js"
+    },
+    "./time/time-between-clocks": {
+      "types": "./dist/time/time-between-clocks.d.ts",
+      "import": "./dist/time/time-between-clocks.js"
+    },
+    "./time/time-meeting-cost-calculator": {
+      "types": "./dist/time/time-meeting-cost-calculator.d.ts",
+      "import": "./dist/time/time-meeting-cost-calculator.js"
+    },
+    "./time/time-of-day-bucketer": {
+      "types": "./dist/time/time-of-day-bucketer.d.ts",
+      "import": "./dist/time/time-of-day-bucketer.js"
+    },
+    "./time/time-server-format-reference": {
+      "types": "./dist/time/time-server-format-reference.d.ts",
+      "import": "./dist/time/time-server-format-reference.js"
+    },
+    "./time/time-time-duration-arithmetic": {
+      "types": "./dist/time/time-time-duration-arithmetic.d.ts",
+      "import": "./dist/time/time-time-duration-arithmetic.js"
+    },
+    "./time/time-timecode-frames-converter": {
+      "types": "./dist/time/time-timecode-frames-converter.d.ts",
+      "import": "./dist/time/time-timecode-frames-converter.js"
+    },
+    "./time/time-unit-converter": {
+      "types": "./dist/time/time-unit-converter.d.ts",
+      "import": "./dist/time/time-unit-converter.js"
+    },
+    "./time/time-zone-meeting-planner": {
+      "types": "./dist/time/time-zone-meeting-planner.d.ts",
+      "import": "./dist/time/time-zone-meeting-planner.js"
+    },
+    "./time/timestamp-batch-converter": {
+      "types": "./dist/time/timestamp-batch-converter.d.ts",
+      "import": "./dist/time/timestamp-batch-converter.js"
+    },
+    "./time/timestamp-converter": {
+      "types": "./dist/time/timestamp-converter.d.ts",
+      "import": "./dist/time/timestamp-converter.js"
+    },
+    "./time/timezone-converter": {
+      "types": "./dist/time/timezone-converter.d.ts",
+      "import": "./dist/time/timezone-converter.js"
+    },
+    "./time/unix-nanoseconds-converter": {
+      "types": "./dist/time/unix-nanoseconds-converter.d.ts",
+      "import": "./dist/time/unix-nanoseconds-converter.js"
+    },
+    "./time/unix-rollover-checker": {
+      "types": "./dist/time/unix-rollover-checker.d.ts",
+      "import": "./dist/time/unix-rollover-checker.js"
+    },
+    "./time/unix-time-now": {
+      "types": "./dist/time/unix-time-now.d.ts",
+      "import": "./dist/time/unix-time-now.js"
+    },
+    "./time/week-number": {
+      "types": "./dist/time/week-number.d.ts",
+      "import": "./dist/time/week-number.js"
+    },
+    "./time/week-of-month-finder": {
+      "types": "./dist/time/week-of-month-finder.d.ts",
+      "import": "./dist/time/week-of-month-finder.js"
+    },
+    "./time/week-to-date": {
+      "types": "./dist/time/week-to-date.d.ts",
+      "import": "./dist/time/week-to-date.js"
+    },
+    "./time/weekday-of-date": {
+      "types": "./dist/time/weekday-of-date.d.ts",
+      "import": "./dist/time/weekday-of-date.js"
+    },
+    "./time/weeks-until-date": {
+      "types": "./dist/time/weeks-until-date.d.ts",
+      "import": "./dist/time/weeks-until-date.js"
+    },
+    "./time/western-zodiac-sign": {
+      "types": "./dist/time/western-zodiac-sign.d.ts",
+      "import": "./dist/time/western-zodiac-sign.js"
+    },
+    "./time/working-hours-calculator": {
+      "types": "./dist/time/working-hours-calculator.d.ts",
+      "import": "./dist/time/working-hours-calculator.js"
+    },
+    "./web": {
+      "types": "./dist/web.d.ts",
+      "import": "./dist/web.js"
     }
   },
   "scripts": {
+    "gen:exports": "bun run scripts/gen-exports.ts",
+    "prebuild": "bun run scripts/gen-exports.ts",
     "build": "tsup",
-    "prepublishOnly": "tsup",
+    "prepublishOnly": "bun run scripts/gen-exports.ts && tsup",
     "test": "vitest run",
     "test:cross": "node test/cross-runtime.mjs && bun test/cross-runtime.mjs",
     "test:cross:node": "node test/cross-runtime.mjs",
