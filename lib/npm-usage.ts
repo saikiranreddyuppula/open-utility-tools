@@ -116,7 +116,7 @@ export function getToolUsageInfo(tool: ToolMetaStatic): ToolUsageInfo {
     status: 'planned',
     installCommand,
     snippet: `// ${tool.name} is currently available in the browser app.\n// A package API for this tool has not been published yet.\n// Track package coverage in the developer docs.`,
-    note: 'This tool is browser-only today. Package extraction is planned category by category.',
+    note: 'Coming soon. This tool is browser-only today, and package extraction is planned category by category.',
   };
 }
 

@@ -103,7 +103,7 @@ function UsageBadge({ status }: { status: 'exact' | 'category' | 'planned' }) {
   return (
     <Badge variant="outline" className="gap-1">
       <Clock3 className="size-3" />
-      planned
+      Coming soon
     </Badge>
   );
 }
