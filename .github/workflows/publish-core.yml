@@ -5,11 +5,7 @@ name: Publish @open-utility-tools/core
 # Trigger: cut a GitHub Release whose tag is `core-vX.Y.Z` (matching the version
 # in packages/core/package.json), or run manually via "Run workflow".
 #
-# One-time setup before the first run:
-#   1. Create the npm org `open-utility-tools` (free) — or rename the package to
-#      an unscoped name and drop `--access public`.
-#   2. Add an npm "Automation" access token as the repo secret NPM_TOKEN
-#      (Settings → Secrets and variables → Actions).
+# Authentication uses npm Trusted Publishing for this repository/workflow.
 
 on:
   release:
@@ -39,6 +35,9 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org
 
+      - name: Use npm with trusted publishing support
+        run: npm install -g npm@latest
+
       - name: Build
         run: bun run build
 
@@ -50,5 +49,3 @@ jobs:
 
       - name: Publish
         run: npm publish --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
