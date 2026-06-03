@@ -1,6 +1,6 @@
 {
   "name": "@open-utility-tools/core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Framework-agnostic core logic from Open Utility Tools: text, math, color, data, time, web, generators, and WebCrypto helpers. Zero runtime dependencies.",
   "license": "MIT",
   "author": "Sai Kiran Reddy Uppula",
