@@ -1,9 +1,10 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowDown, ArrowUp, Loader2, X } from 'lucide-react';
+import { ArrowDown, ArrowUp, GripVertical, Loader2, X } from 'lucide-react';
 import { zlibSync } from 'fflate';
 
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Slider } from '@/components/ui/slider';
@@ -367,6 +368,22 @@ export default function ImageToPdfTool() {
     clearOutput();
   };
 
+  // Drag-to-reorder the page list.
+  const [dragIndex, setDragIndex] = useState<number | null>(null);
+  const [overIndex, setOverIndex] = useState<number | null>(null);
+
+  const reorder = (from: number, to: number) => {
+    if (from === to || from < 0 || to < 0) return;
+    setItems((prev) => {
+      if (from >= prev.length || to >= prev.length) return prev;
+      const next = [...prev];
+      const [moved] = next.splice(from, 1);
+      next.splice(to, 0, moved!);
+      return next;
+    });
+    clearOutput();
+  };
+
   const remove = (id: string) => {
     setItems((prev) => {
       const target = prev.find((it) => it.id === id);
@@ -518,15 +535,53 @@ export default function ImageToPdfTool() {
           </OptionsBar>
 
           <Panel>
-            <PanelHeader title={`${items.length} image${items.length === 1 ? '' : 's'}`} />
+            <PanelHeader title={`${items.length} image${items.length === 1 ? '' : 's'}`}>
+              {items.length > 1 && (
+                <span className="text-2xs text-muted-foreground">drag to reorder</span>
+              )}
+            </PanelHeader>
             <div className="divide-y">
               {items.map((it, i) => (
-                <div key={it.id} className="flex items-center gap-2 px-3 py-2">
-                  <span className="w-6 text-right font-mono text-2xs text-muted-foreground tabular">
+                <div
+                  key={it.id}
+                  draggable
+                  onDragStart={(e) => {
+                    setDragIndex(i);
+                    e.dataTransfer.effectAllowed = 'move';
+                  }}
+                  onDragOver={(e) => {
+                    e.preventDefault();
+                    e.dataTransfer.dropEffect = 'move';
+                    if (overIndex !== i) setOverIndex(i);
+                  }}
+                  onDragLeave={() => setOverIndex((o) => (o === i ? null : o))}
+                  onDrop={(e) => {
+                    e.preventDefault();
+                    if (dragIndex !== null) reorder(dragIndex, i);
+                    setDragIndex(null);
+                    setOverIndex(null);
+                  }}
+                  onDragEnd={() => {
+                    setDragIndex(null);
+                    setOverIndex(null);
+                  }}
+                  className={cn(
+                    'flex items-center gap-2 px-3 py-2 transition-colors',
+                    dragIndex === i && 'opacity-50',
+                    overIndex === i && dragIndex !== null && dragIndex !== i && 'bg-accent/60'
+                  )}
+                >
+                  <GripVertical className="size-3.5 shrink-0 cursor-grab text-muted-foreground active:cursor-grabbing" />
+                  <span className="w-5 text-right font-mono text-2xs text-muted-foreground tabular">
                     {i + 1}
                   </span>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={it.url} alt="" className="size-9 shrink-0 rounded border object-cover" />
+                  <img
+                    src={it.url}
+                    alt=""
+                    draggable={false}
+                    className="size-9 shrink-0 rounded border object-cover"
+                  />
                   <span className="min-w-0 flex-1 truncate text-xs">{it.file.name}</span>
                   <span className="font-mono text-2xs text-muted-foreground">
                     {formatBytes(it.file.size)}
