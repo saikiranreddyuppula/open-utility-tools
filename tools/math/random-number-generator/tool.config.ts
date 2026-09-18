@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'math-random-number-generator-v1',
-  name: 'Random Number Generator',
+  name: 'Random Number Generator (Secure)',
   slug: 'random-number-generator',
   description:
     'Generate cryptographically secure random integers within a custom range, with optional uniqueness.',

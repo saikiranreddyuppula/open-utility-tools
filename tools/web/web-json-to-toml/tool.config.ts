@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'web-web-json-to-toml-v1',
-  name: 'JSON to TOML',
+  name: 'JSON to TOML (Web)',
   slug: 'web-json-to-toml',
   description:
     'Convert JSON configuration into TOML format and back, handling tables, arrays of tables, nested keys, strings, and numeric/boolean scalars.',

@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'generators-uuid-namespace-v1',
-  name: 'Random String Generator',
+  name: 'Random String Generator (Alphabet)',
   slug: 'random-string',
   description: 'Generate random strings from a chosen alphabet (hex, alphanumeric, custom).',
   category: 'generators',

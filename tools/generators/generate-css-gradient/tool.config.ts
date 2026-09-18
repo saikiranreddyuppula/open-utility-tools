@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'generators-generate-css-gradient-v1',
-  name: 'CSS Gradient Generator',
+  name: 'CSS Gradient Builder',
   slug: 'generate-css-gradient',
   description:
     'Build linear or radial CSS gradients with multiple color stops, angle, and type, producing copy-ready background CSS with a live preview.',

@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'web-web-json-flatten-v1',
-  name: 'JSON Flatten / Unflatten',
+  name: 'JSON Flatten / Unflatten (Web)',
   slug: 'web-json-flatten',
   description:
     'Flatten a deeply nested JSON object into single-level dot-notation keys, or rebuild nested structure from flattened keys.',

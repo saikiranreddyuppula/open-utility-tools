@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'color-box-shadow-generator-v1',
-  name: 'CSS Box Shadow Generator',
+  name: 'Box Shadow Generator',
   slug: 'box-shadow-generator',
   description:
     'Visually design CSS box-shadows by adjusting offset, blur, spread, color, and inset, then copy the ready-to-use box-shadow rule.',

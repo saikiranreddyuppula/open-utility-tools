@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'web-web-xml-to-json-v1',
-  name: 'XML to JSON',
+  name: 'XML to JSON (DOM)',
   slug: 'web-xml-to-json',
   description:
     'Convert an XML document into a structured JSON object, mapping elements, attributes, and text content with a predictable convention.',

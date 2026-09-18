@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'generators-ulid-v1',
-  name: 'ULID Generator',
+  name: 'ULID Generator (Bulk)',
   slug: 'ulid-generator',
   description: 'Generate lexicographically-sortable ULIDs in bulk, locally.',
   category: 'generators',

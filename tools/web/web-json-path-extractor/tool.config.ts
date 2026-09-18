@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'web-web-json-path-extractor-v1',
-  name: 'JSON Path Extractor',
+  name: 'JSON Path Extractor (Advanced)',
   slug: 'web-json-path-extractor',
   description:
     'Query a JSON document with a dot/bracket path expression (e.g. data.items[0].name) and extract matching values, with wildcard support for arrays.',

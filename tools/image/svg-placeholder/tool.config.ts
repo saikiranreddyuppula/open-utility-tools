@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'image-svg-placeholder-v1',
-  name: 'Placeholder Image Generator',
+  name: 'SVG Placeholder Generator',
   slug: 'placeholder-image',
   description: 'Generate a sized SVG/data-URI placeholder with custom colors and label.',
   category: 'image',

@@ -2,7 +2,7 @@ import type { ToolMetaStatic } from '@/lib/registry/types';
 
 const meta: ToolMetaStatic = {
   id: 'encoding-encoding-xor-cipher-v1',
-  name: 'XOR Cipher',
+  name: 'XOR Cipher (Text)',
   slug: 'encoding-xor-cipher',
   description:
     'Encrypt or decrypt text with a repeating-key XOR cipher, outputting or reading hex or Base64.',
