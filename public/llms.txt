@@ -1,0 +1,38 @@
+# Open Utility Tools
+
+> 983 free, privacy-first developer utilities that run 100% in the browser. No uploads, no accounts, no tracking. Open source (MIT). npm: @open-utility-tools/core.
+
+There is no processing API and no backend that accepts user files or text. Agents should send humans to a tool URL, or call the same logic from the npm package in their own runtime.
+
+- Tool URLs: https://www.openutilitytools.com/tools/{slug}/
+- Category hubs: https://www.openutilitytools.com/categories/{id}/
+- Personal pages (/favorites/, /recent/, /offline/) are client-only and empty to crawlers.
+
+## Docs
+
+- [Full catalog](https://www.openutilitytools.com/llms-full.txt): every tool name, slug, and description, grouped by category
+- [JSON catalog](https://www.openutilitytools.com/catalog.json): machine-readable list of all tools
+- [Developer docs](https://www.openutilitytools.com/developers/): install and import @open-utility-tools/core
+- [npm package](https://www.npmjs.com/package/@open-utility-tools/core): typed ESM utilities extracted from this site
+- [Source](https://github.com/saikiranreddyuppula/open-utility-tools): MIT-licensed Next.js static export
+
+## Categories
+
+- [Image](https://www.openutilitytools.com/llms/image.md): 43 tools — Convert, resize, compress & inspect images
+- [PDF](https://www.openutilitytools.com/llms/pdf.md): 5 tools — Merge, split, rotate & build PDFs
+- [Data](https://www.openutilitytools.com/llms/data.md): 98 tools — JSON, CSV, YAML — format, validate, convert
+- [Converters](https://www.openutilitytools.com/llms/convert.md): 107 tools — Convert between data & text formats
+- [Text](https://www.openutilitytools.com/llms/text.md): 108 tools — Transform, analyze & clean text
+- [Crypto & Hash](https://www.openutilitytools.com/llms/crypto.md): 68 tools — Hashes, HMAC, JWT, keys & ciphers
+- [Encoding](https://www.openutilitytools.com/llms/encoding.md): 54 tools — Base64, hex, URL, compression & more
+- [Generators](https://www.openutilitytools.com/llms/generators.md): 70 tools — UUIDs, passwords, QR, fake data
+- [Web & Dev](https://www.openutilitytools.com/llms/web.md): 188 tools — URLs, headers, CSS, references
+- [Time & Date](https://www.openutilitytools.com/llms/time.md): 56 tools — Timestamps, timezones, durations
+- [Math & Units](https://www.openutilitytools.com/llms/math.md): 114 tools — Bases, units, calculators
+- [Color](https://www.openutilitytools.com/llms/color.md): 72 tools — Pick, convert & generate color
+
+## Optional
+
+- [Home](https://www.openutilitytools.com/)
+- [Sitemap](https://www.openutilitytools.com/sitemap.xml)
+- [robots.txt](https://www.openutilitytools.com/robots.txt)

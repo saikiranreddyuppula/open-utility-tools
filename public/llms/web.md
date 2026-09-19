@@ -1,0 +1,198 @@
+# Web & Dev
+
+> URLs, headers, CSS, references
+
+188 tools. Each runs entirely in the browser.
+
+Hub: https://www.openutilitytools.com/categories/web/
+
+## Tools
+
+- [.env to JSON](https://www.openutilitytools.com/tools/web-dotenv-to-json/): Parse a .env / dotenv file into a JSON object and convert JSON back into .env format, handling quotes, comments, and export prefixes.
+- [Accept-Language / Accept Parser](https://www.openutilitytools.com/tools/web-accept-language-parser/): Parse and sort Accept-Language or Accept headers by quality value (q-factor).
+- [Asset Cache-Busting URL Builder](https://www.openutilitytools.com/tools/web-cache-busting-hash-appender/): Appends a deterministic version/hash query param to a list of asset URLs.
+- [AsyncAPI Validator Preview](https://www.openutilitytools.com/tools/asyncapi-validator-preview/): Validate common AsyncAPI structure and summarize channels, operations, messages, and servers.
+- [Authenticated fetch() Builder](https://www.openutilitytools.com/tools/web-jwt-to-fetch/): Generate a fetch() snippet with method, headers, bearer token, and JSON body.
+- [Authorization Header Builder](https://www.openutilitytools.com/tools/web-bearer-auth-header-builder/): Construct Authorization header values for Bearer, Basic, API key, and custom schemes.
+- [Avro Schema Evolution Checker](https://www.openutilitytools.com/tools/avro-schema-evolution-checker/): Compare Avro record schemas for added, removed, changed, and default-less fields.
+- [Avro Schema Validator](https://www.openutilitytools.com/tools/avro-schema-validator/): Validate common Avro schema structure and summarize records, fields, enums, and unions.
+- [Basic Auth Generator](https://www.openutilitytools.com/tools/basic-auth-generator/): Build an HTTP Basic Authorization header from a username and password.
+- [BEM Class Name Generator](https://www.openutilitytools.com/tools/web-bem-class-generator/): Generate Block__Element--Modifier CSS class names from block, element and modifier inputs with HTML/CSS preview.
+- [BIMI Record Checker](https://www.openutilitytools.com/tools/bimi-record-checker/): Inspect BIMI TXT records for version, logo URL, authority URL, and deployment checklist.
+- [Cache-Control Builder](https://www.openutilitytools.com/tools/web-cache-control-builder/): Compose and explain a Cache-Control header from caching directive checkboxes and durations.
+- [Cache-Control Header Explainer](https://www.openutilitytools.com/tools/web-http-cache-header-explainer/): Break down a Cache-Control header and explain each directive and its effect.
+- [Chmod Calculator](https://www.openutilitytools.com/tools/chmod-calculator/): Toggle Unix permission bits and get the octal + symbolic chmod value.
+- [CIDR / IP Range Calculator](https://www.openutilitytools.com/tools/web-cidr-calculator/): Expand an IPv4/IPv6 CIDR block into network, broadcast, mask, and host range.
+- [CloudEvents Validator](https://www.openutilitytools.com/tools/cloudevents-validator/): Validate a CloudEvents JSON event for required attributes and common content-type issues.
+- [Common Regex Patterns Library](https://www.openutilitytools.com/tools/web-regex-pattern-library/): Searchable reference of ready-to-copy regex patterns for emails, URLs, IPs, dates, and other common validations.
+- [Content-Disposition Builder](https://www.openutilitytools.com/tools/web-content-disposition-builder/): Build and parse Content-Disposition headers with RFC 5987 filename encoding.
+- [Content-Security-Policy Builder](https://www.openutilitytools.com/tools/web-csp-builder/): Build a CSP header from per-directive source lists with keyword and nonce/hash helpers.
+- [Content-Security-Policy Linter](https://www.openutilitytools.com/tools/web-content-security-policy-linter/): Parses a CSP header string and flags unsafe or redundant directives.
+- [Content-Type & Charset Reference](https://www.openutilitytools.com/tools/web-content-type-charset-reference/): Searchable reference of common Content-Type media types, charsets, and parameters.
+- [Cookie Parser](https://www.openutilitytools.com/tools/cookie-parser/): Parse a Cookie or Set-Cookie header into a readable table of attributes.
+- [CORS Headers Builder](https://www.openutilitytools.com/tools/web-cors-headers-builder/): Generate the Access-Control-* response headers for a desired cross-origin policy.
+- [Cron Expression Explainer (Advanced)](https://www.openutilitytools.com/tools/web-cron-explainer/): Translate a cron expression into plain English and list the next several run times, supporting ranges, steps, and lists across all five fields.
+- [CSP Header Analyzer](https://www.openutilitytools.com/tools/web-content-security-policy-analyzer/): Parse a Content-Security-Policy header and flag weak or unsafe directives.
+- [CSS aspect-ratio Generator](https://www.openutilitytools.com/tools/web-aspect-ratio-css/): Turn a width:height ratio into aspect-ratio CSS plus a padding-top fallback.
+- [CSS Border Radius Generator](https://www.openutilitytools.com/tools/web-border-radius-generator/): Visually build a border-radius value (including elliptical and per-corner) and copy the CSS.
+- [CSS Box Shadow Generator](https://www.openutilitytools.com/tools/web-box-shadow-generator/): Visually craft a CSS box-shadow with offset, blur, spread, color, opacity, and inset controls, with a live preview and copyable code.
+- [CSS Button Generator](https://www.openutilitytools.com/tools/web-css-button-generator/): Design a button (colors, padding, radius, shadow, hover) and copy the CSS.
+- [CSS clamp() Fluid Type Calculator](https://www.openutilitytools.com/tools/web-clamp-fluid-type/): Compute a responsive clamp() font-size from min/max sizes and viewport range.
+- [CSS clip-path Shape Generator](https://www.openutilitytools.com/tools/web-clip-path-generator/): Generate polygon, circle, ellipse and inset clip-path values with live preview.
+- [CSS Color Format Converter](https://www.openutilitytools.com/tools/web-css-color-format-converter/): Convert a color between hex, rgb(), hsl(), hwb(), oklch() and named for code.
+- [CSS Cubic Bezier Generator](https://www.openutilitytools.com/tools/web-cubic-bezier/): Design CSS cubic-bezier easing curves with draggable control points and a live animation preview, outputting the transition-timing-function value.
+- [CSS Custom Properties Extractor](https://www.openutilitytools.com/tools/web-css-variables-extractor/): Scan CSS and list all --custom-properties and var() usages with values.
+- [CSS Custom Property Extractor](https://www.openutilitytools.com/tools/web-css-variable-extractor/): Extract all CSS custom properties (--var declarations) from a stylesheet into a deduplicated, sortable list.
+- [CSS Custom Scrollbar Styler](https://www.openutilitytools.com/tools/web-scrollbar-styler/): Generate cross-browser custom scrollbar CSS (WebKit pseudo-elements + Firefox).
+- [CSS Filter Generator](https://www.openutilitytools.com/tools/web-filter-generator/): Combine blur, brightness, contrast and other filters with live image preview.
+- [CSS Flexbox Generator](https://www.openutilitytools.com/tools/web-flexbox-playground/): Set flex container and item properties from dropdowns and copy the generated CSS.
+- [CSS Gradient Text Generator](https://www.openutilitytools.com/tools/web-css-gradient-text/): Produce the background-clip text trick CSS for gradient-colored text.
+- [CSS Grid Template Generator](https://www.openutilitytools.com/tools/web-grid-template-generator/): Define grid columns, rows, gaps and named areas, then copy the grid-template CSS.
+- [CSS Keyframes & Animation Generator](https://www.openutilitytools.com/tools/web-keyframes-generator/): Create @keyframes with stops plus the animation shorthand, and copy the CSS.
+- [CSS Media Query Builder](https://www.openutilitytools.com/tools/web-media-query-builder/): Build responsive @media queries with min/max width breakpoints, orientation, and feature conditions visually.
+- [CSS Media Query Generator](https://www.openutilitytools.com/tools/web-media-query-generator/): Build responsive @media queries from breakpoints and feature conditions.
+- [CSS Minify / Beautify](https://www.openutilitytools.com/tools/css-minify/): Minify CSS to one line or beautify it with consistent indentation.
+- [CSS Multi-Column Layout Generator](https://www.openutilitytools.com/tools/web-multi-column-generator/): Generate CSS columns properties (count, width, gap, rule) with live text preview.
+- [CSS REM / EM / VW / PX Calculator](https://www.openutilitytools.com/tools/web-css-relative-unit-calculator/): Convert between px, rem, em, vw and vh with configurable root font size and viewport, in both directions.
+- [CSS Selector Specificity Sorter](https://www.openutilitytools.com/tools/web-css-specificity-sorter/): Score and rank multiple CSS selectors by specificity to spot override order.
+- [CSS Specificity Calculator](https://www.openutilitytools.com/tools/web-css-specificity/): Compute the specificity of any CSS selector as an (a,b,c) triple and rank multiple selectors to predict which rule wins.
+- [CSS Text Shadow Generator](https://www.openutilitytools.com/tools/web-text-shadow-generator/): Build single or stacked text-shadow values with live typographic preview.
+- [CSS to Tailwind](https://www.openutilitytools.com/tools/web-css-to-tailwind/): Translate common CSS declarations into equivalent Tailwind utility classes, mapping spacing, colors, flex, font, and border properties.
+- [CSS Transform Generator](https://www.openutilitytools.com/tools/web-transform-generator/): Compose translate, rotate, scale, skew and perspective into one transform value.
+- [CSS Transition Generator](https://www.openutilitytools.com/tools/web-transition-generator/): Build a transition shorthand from property, duration, timing function and delay.
+- [CSS Triangle Generator](https://www.openutilitytools.com/tools/web-css-triangle-generator/): Create pure-CSS triangles using the border trick for any direction and size.
+- [CSS Unit Converter (px / rem / em / pt / %)](https://www.openutilitytools.com/tools/web-css-unit-converter/): Convert between px, rem, em, pt, pc, vw/vh and percent using a root and base.
+- [cURL Command Builder](https://www.openutilitytools.com/tools/web-curl-command-builder/): Build a complete curl command from method, URL, headers, body, and auth fields.
+- [cURL to Code](https://www.openutilitytools.com/tools/web-curl-to-fetch/): Convert a curl command into a browser fetch() call, parsing method, URL, headers, and body into ready-to-paste JavaScript.
+- [Data URI Size Estimator](https://www.openutilitytools.com/tools/web-data-uri-size-estimator/): Estimate the byte size and overhead of a Base64 data URI for a given raw file size before embedding it.
+- [Data URI to Text](https://www.openutilitytools.com/tools/web-data-uri-decoder/): Decode a data: URI back into its underlying text, revealing the MIME type, encoding, and the original content from base64 or percent-encoding.
+- [DKIM Record Decoder](https://www.openutilitytools.com/tools/dkim-record-decoder/): Decode DKIM TXT records and extract version, key type, flags, hash list, service, and public key hints.
+- [DMARC Record Builder](https://www.openutilitytools.com/tools/dmarc-record-builder/): Build DMARC TXT policies with reporting URIs, alignment, percentage, and subdomain policy.
+- [DMARC Report XML Parser](https://www.openutilitytools.com/tools/dmarc-report-xml-parser/): Parse aggregate DMARC XML reports into source IPs, counts, dispositions, and auth results.
+- [DNS Propagation Comparison](https://www.openutilitytools.com/tools/dns-propagation-comparison/): Compare pasted DNS answers from multiple resolvers and flag mismatches.
+- [DNS Record dig UI](https://www.openutilitytools.com/tools/dns-record-dig-ui/): Build copyable dig commands and summarize pasted DNS records.
+- [DNS Zone File Validator](https://www.openutilitytools.com/tools/dns-zone-file-validator/): Check zone-file records for common SOA, NS, MX, CNAME, TTL, and syntax issues.
+- [DNSSEC Chain Visualizer](https://www.openutilitytools.com/tools/dnssec-chain-visualizer/): Inspect pasted DS, DNSKEY, RRSIG, and NSEC records and outline the trust chain.
+- [Email Obfuscator](https://www.openutilitytools.com/tools/email-obfuscator/): Obfuscate an email address (entities / JS) to deter scrapers.
+- [ETag & Conditional Request Builder](https://www.openutilitytools.com/tools/web-etag-conditional-builder/): Generate ETag values and matching If-None-Match / If-Modified-Since request headers.
+- [Favicon Link Tags Generator](https://www.openutilitytools.com/tools/web-favicon-link-generator/): Generate the full set of favicon and app-icon link tags for all platforms.
+- [GraphQL Introspection Viewer](https://www.openutilitytools.com/tools/graphql-introspection-viewer/): Summarize GraphQL introspection JSON types, queries, mutations, interfaces, and scalars.
+- [GraphQL Operation Complexity Estimator](https://www.openutilitytools.com/tools/graphql-operation-complexity-estimator/): Estimate GraphQL query depth, field count, aliases, fragments, and repeated selections.
+- [GraphQL Variables Validator](https://www.openutilitytools.com/tools/graphql-variables-validator/): Compare GraphQL variable definitions with a variables JSON payload.
+- [gRPC Proto Viewer](https://www.openutilitytools.com/tools/grpc-proto-viewer/): Parse .proto text and list packages, services, RPCs, messages, fields, and enums.
+- [grpcurl Command Builder](https://www.openutilitytools.com/tools/grpcurl-command-builder/): Build grpcurl commands with host, service method, headers, TLS, and JSON body.
+- [HSTS Header Builder](https://www.openutilitytools.com/tools/web-hsts-header-builder/): Build and decode the Strict-Transport-Security header with preload-eligibility checks.
+- [HSTS Preload Checker](https://www.openutilitytools.com/tools/hsts-preload-checker/): Check Strict-Transport-Security headers against common preload requirements.
+- [HTML Attribute Stripper / Tag Cleaner](https://www.openutilitytools.com/tools/web-html-attributes-stripper/): Remove selected attributes (style, class, on*, data-*) or whole tags from HTML.
+- [HTML Class & ID Extractor](https://www.openutilitytools.com/tools/web-html-class-attr-extractor/): Extract every unique class name and id used in an HTML snippet and output them as a sorted list or CSS stub.
+- [HTML data-* to JS dataset Converter](https://www.openutilitytools.com/tools/web-data-attribute-to-dataset/): Convert data-* attributes to element.dataset access expressions and back.
+- [HTML Entity Picker](https://www.openutilitytools.com/tools/web-html-entity-picker/): Searchable reference of named HTML entities with their character, numeric, and hex codes ready to copy.
+- [HTML Escape / Unescape for Code](https://www.openutilitytools.com/tools/web-html-escape-unescape/): Escape text to HTML-safe entities or unescape entities back to characters.
+- [HTML Minifier / Beautifier](https://www.openutilitytools.com/tools/web-html-minify/): Minify HTML by stripping comments and whitespace, or pretty-print it.
+- [HTML to JSX](https://www.openutilitytools.com/tools/web-html-to-jsx/): Convert raw HTML into React JSX, renaming class to className, fixing self-closing tags, camelCasing attributes, and converting inline styles to objects.
+- [HTML to Text](https://www.openutilitytools.com/tools/html-to-text/): Strip HTML tags and decode entities to get clean plain text.
+- [HTTP Headers Reference](https://www.openutilitytools.com/tools/web-http-headers-reference/): Look up any HTTP request or response header to see its purpose, direction, example values, and whether it is standard or deprecated.
+- [HTTP Method Reference](https://www.openutilitytools.com/tools/web-http-method-reference/): Cheatsheet of HTTP methods with safe/idempotent/cacheable/body semantics.
+- [HTTP Request Replay Sanitizer](https://www.openutilitytools.com/tools/http-request-replay-sanitizer/): Redact secrets from captured HTTP requests and emit a safer replay snippet.
+- [HTTP Status Code Explainer](https://www.openutilitytools.com/tools/web-status-code-explainer/): Look up a status code or symbol to get its class, meaning, and typical use.
+- [HTTP Status Codes](https://www.openutilitytools.com/tools/http-status-codes/): Searchable reference of HTTP status codes and their meanings.
+- [IP Address Converter](https://www.openutilitytools.com/tools/web-ip-address-converter/): Convert an IPv4/IPv6 address between dotted, integer, hex, binary, and expanded forms.
+- [IP-in-CIDR Checker](https://www.openutilitytools.com/tools/web-ip-cidr-membership/): Check whether IP addresses fall within one or more CIDR ranges.
+- [IPv4 Subnet Calculator](https://www.openutilitytools.com/tools/ip-subnet-calculator/): Compute network, broadcast, mask, host range and count from CIDR.
+- [IPv6 Expand & Compress](https://www.openutilitytools.com/tools/web-ipv6-expander/): Expand IPv6 addresses to full form or compress to canonical RFC 5952 shorthand.
+- [JSON Flatten / Unflatten (Web)](https://www.openutilitytools.com/tools/web-json-flatten/): Flatten a deeply nested JSON object into single-level dot-notation keys, or rebuild nested structure from flattened keys.
+- [JSON Path Extractor (Advanced)](https://www.openutilitytools.com/tools/web-json-path-extractor/): Query a JSON document with a dot/bracket path expression (e.g. data.items[0].name) and extract matching values, with wildcard support for arrays.
+- [JSON Schema Compatibility Diff](https://www.openutilitytools.com/tools/json-schema-compatibility-diff/): Compare JSON Schemas for required fields, property changes, and enum narrowing.
+- [JSON to HTML Form Generator](https://www.openutilitytools.com/tools/web-json-to-html-form/): Turn a JSON object into a matching HTML form with labeled inputs inferred from each field's value type.
+- [JSON to Java Class](https://www.openutilitytools.com/tools/web-json-to-java/): Convert a JSON payload into POJO Java class definitions with typed fields and getters/setters, inferring nested classes and collection generics.
+- [JSON to JSON Schema](https://www.openutilitytools.com/tools/web-json-to-jsonschema/): Generate a draft JSON Schema from an example JSON document, inferring types, required keys, array item shapes, and nested object definitions.
+- [JSON to Pretty / Tree](https://www.openutilitytools.com/tools/web-json-tree-viewer/): Visualize JSON as a collapsible, indented tree with type annotations and node counts, making large nested payloads easy to navigate.
+- [JSON to Query Params](https://www.openutilitytools.com/tools/web-json-to-query-string/): Turn a flat or nested JSON object into a properly encoded URL query string, with bracket notation for nested keys and arrays.
+- [JSON to TOML (Web)](https://www.openutilitytools.com/tools/web-json-to-toml/): Convert JSON configuration into TOML format and back, handling tables, arrays of tables, nested keys, strings, and numeric/boolean scalars.
+- [JSON-LD Structured Data Generator](https://www.openutilitytools.com/tools/web-jsonld-schema-generator/): Generate schema.org JSON-LD for Article, Product, FAQ, Breadcrumb and more.
+- [JWT Decoder](https://www.openutilitytools.com/tools/jwt-decoder/): Decode and inspect JSON Web Token header & payload (no verification).
+- [JWT Expiry Inspector](https://www.openutilitytools.com/tools/web-jwt-expiry-inspector/): Decode a JWT and report human-readable issued/expiry times and remaining validity.
+- [Kafka Message Header Viewer](https://www.openutilitytools.com/tools/kafka-message-header-viewer/): Parse Kafka header key/value pairs and payload metadata for debugging consumers.
+- [Link Header Builder & Parser](https://www.openutilitytools.com/tools/web-link-header-builder/): Build and parse RFC 8288 Link headers (rel=next/prev, preload, canonical).
+- [Lorem Ipsum HTML Block Generator](https://www.openutilitytools.com/tools/web-lorem-html-block/): Generate placeholder content as ready-to-paste semantic HTML blocks (paragraphs, headings, lists, blockquotes).
+- [MAC Address Formatter](https://www.openutilitytools.com/tools/web-mac-address-formatter/): Reformat MAC addresses between colon, hyphen, dot (Cisco), and bare notations.
+- [Markdown to HTML](https://www.openutilitytools.com/tools/markdown-to-html/): Render Markdown to HTML with a live preview and copyable output.
+- [MIME Type from Extension](https://www.openutilitytools.com/tools/web-mimetype-from-extension/): Map one or many file extensions or filenames to their canonical MIME types and back.
+- [MIME Type Lookup](https://www.openutilitytools.com/tools/mime-types/): Look up the MIME/content type for a file extension and vice versa.
+- [MQTT Topic Matcher](https://www.openutilitytools.com/tools/mqtt-topic-matcher/): Test MQTT topic filters with + and # wildcards against sample topics.
+- [MTA-STS Policy Checker](https://www.openutilitytools.com/tools/mta-sts-policy-checker/): Validate MTA-STS TXT and policy file contents for secure inbound mail delivery.
+- [Multipart Form-Data Builder](https://www.openutilitytools.com/tools/http-multipart-form-data-builder/): Build multipart/form-data bodies and cURL snippets from field definitions.
+- [OAuth Authorization URL Builder](https://www.openutilitytools.com/tools/oauth-authorization-url-builder/): Build OAuth 2.0 or OIDC authorization URLs with scopes, PKCE, state, and nonce.
+- [OAuth Token Response Inspector](https://www.openutilitytools.com/tools/oauth-token-response-inspector/): Inspect an OAuth token response, token types, scopes, and expiry.
+- [OIDC Discovery Inspector](https://www.openutilitytools.com/tools/oidc-discovery-inspector/): Parse OpenID Connect discovery metadata and summarize endpoints, algorithms, and grants.
+- [OIDC ID Token Validator](https://www.openutilitytools.com/tools/oidc-id-token-validator/): Decode an ID token and check issuer, audience, nonce, expiry, and clock claims.
+- [Open Graph / Twitter Card Preview](https://www.openutilitytools.com/tools/web-open-graph-preview-card/): Parses OG and Twitter meta tags from pasted HTML and shows the resolved share-card fields.
+- [OpenAPI Breaking Change Diff](https://www.openutilitytools.com/tools/openapi-breaking-change-diff/): Compare two OpenAPI specs and identify removed paths, methods, parameters, and response codes.
+- [OpenAPI Schema Example Generator](https://www.openutilitytools.com/tools/openapi-schema-example-generator/): Generate JSON examples from OpenAPI component schemas.
+- [OpenAPI Security Scheme Inspector](https://www.openutilitytools.com/tools/openapi-security-scheme-inspector/): Summarize API keys, HTTP auth, OAuth flows, OpenID Connect URLs, and operation security.
+- [OpenAPI Validator & Linter](https://www.openutilitytools.com/tools/openapi-validator-linter/): Validate common OpenAPI structure and flag missing info, paths, responses, and schemas.
+- [Permissions-Policy Builder](https://www.openutilitytools.com/tools/web-permissions-policy-builder/): Build a Permissions-Policy (Feature-Policy) header from per-feature allowlists.
+- [Postman Collection Viewer](https://www.openutilitytools.com/tools/postman-collection-viewer/): Summarize a Postman collection without importing it into Postman.
+- [Protobuf JSON Converter](https://www.openutilitytools.com/tools/protobuf-json-converter/): Normalize protobuf JSON field names and scalar wrappers for debugging.
+- [PX ↔ REM Converter](https://www.openutilitytools.com/tools/px-rem-converter/): Convert between px, rem and em given a configurable root font size.
+- [Query String ↔ JSON](https://www.openutilitytools.com/tools/query-params/): Convert a URL query string to JSON and back, handling repeated keys.
+- [Query String Editor](https://www.openutilitytools.com/tools/web-query-string-editor/): Edit, add, reorder, dedupe, and sort URL query parameters in an interactive key/value table.
+- [Query String Parser](https://www.openutilitytools.com/tools/web-query-string-parser/): Parse a raw query string into a readable key/value table or pretty JSON, expanding repeated keys and bracket notation into arrays.
+- [Raw HTTP Message Parser](https://www.openutilitytools.com/tools/web-http-message-parser/): Parse a raw HTTP request or response into method, path, status, headers, and body.
+- [Referrer-Policy Reference & Tester](https://www.openutilitytools.com/tools/web-referrer-policy-reference/): Explain Referrer-Policy values and simulate what Referer is sent between two URLs.
+- [Regex Cheatsheet & Builder](https://www.openutilitytools.com/tools/web-regex-cheatsheet/): Browse a searchable regex syntax reference and snippet library for common patterns like email, URL, IP, and date, with copyable expressions.
+- [Regex Escape / Unescape](https://www.openutilitytools.com/tools/web-regex-escape/): Escape arbitrary text into a literal regex pattern or unescape an escaped pattern back to plain text.
+- [Regex Match Against Lines](https://www.openutilitytools.com/tools/web-regex-match-lines/): Run a regex against each line of pasted text and list which lines match, which do not, and the captured groups.
+- [Regex Named Group Reference Converter](https://www.openutilitytools.com/tools/web-regex-named-group-converter/): Convert between numbered capture groups and named capture groups in regex patterns and their backreferences/replacements.
+- [Relative URL Resolver](https://www.openutilitytools.com/tools/web-relative-url-resolver/): Resolve a relative reference against a base URL to produce the absolute target.
+- [Resource Hint Link Generator](https://www.openutilitytools.com/tools/web-preload-link-generator/): Generate preload, prefetch, preconnect and dns-prefetch link tags.
+- [Responsive Image srcset Builder](https://www.openutilitytools.com/tools/web-srcset-sizes-builder/): Builds an <img> srcset and sizes attribute from a base filename and width list.
+- [Responsive Image srcset Generator](https://www.openutilitytools.com/tools/web-srcset-generator/): Generate <img> srcset/sizes (or <picture>) markup from a list of widths.
+- [Responsive Image Width Planner](https://www.openutilitytools.com/tools/web-srcset-density-calculator/): Compute srcset width descriptors and sizes from a layout and breakpoints.
+- [robots.txt Tester](https://www.openutilitytools.com/tools/web-robots-txt-tester/): Test whether a URL path is allowed for a user-agent against pasted robots.txt rules.
+- [SAML Assertion Inspector](https://www.openutilitytools.com/tools/saml-assertion-inspector/): Extract subject, issuer, audience, session, and attributes from a SAML assertion.
+- [SAML Attribute Mapper](https://www.openutilitytools.com/tools/saml-attribute-mapper/): Map SAML attributes to app claims using a simple mapping table.
+- [SAML Condition Time Validator](https://www.openutilitytools.com/tools/saml-condition-time-validator/): Validate NotBefore and NotOnOrAfter timestamps with configurable clock skew.
+- [SAML IdP Metadata Builder](https://www.openutilitytools.com/tools/saml-metadata-builder-idp/): Build identity provider metadata with SSO endpoints and signing certificate.
+- [SAML Metadata Parser](https://www.openutilitytools.com/tools/saml-metadata-parser/): Parse SAML entity metadata and list endpoints, certs, bindings, and entity IDs.
+- [SAML POST Form Generator](https://www.openutilitytools.com/tools/saml-post-form-generator/): Generate a local HTML form for SAML HTTP-POST binding.
+- [SAML Redirect Binding Builder](https://www.openutilitytools.com/tools/saml-redirect-binding-builder/): Build the URL parameters used by SAML HTTP-Redirect binding.
+- [SAML Request Decoder](https://www.openutilitytools.com/tools/saml-request-decoder/): Decode a SAMLRequest from URL, query string, or form input and inspect the XML.
+- [SAML Response Decoder](https://www.openutilitytools.com/tools/saml-response-decoder/): Decode a SAMLResponse payload and extract assertion, issuer, audience, and subject details.
+- [SAML Signature Reference Inspector](https://www.openutilitytools.com/tools/saml-signature-reference-inspector/): Inspect XML Signature methods, references, transforms, digests, and embedded certs.
+- [SAML SP Metadata Builder](https://www.openutilitytools.com/tools/saml-metadata-builder-sp/): Build service provider metadata for a SAML integration.
+- [SCIM Filter Tester](https://www.openutilitytools.com/tools/scim-filter-tester/): Test basic SCIM filter expressions against pasted sample users.
+- [SCIM User Payload Builder](https://www.openutilitytools.com/tools/scim-user-payload-builder/): Build a SCIM 2.0 user JSON payload for provisioning tests.
+- [Security Headers Auditor](https://www.openutilitytools.com/tools/security-headers-auditor/): Audit pasted HTTP response headers for CSP, HSTS, frame, MIME, referrer, and permissions policy.
+- [Semantic Version Comparator](https://www.openutilitytools.com/tools/web-semver-compare/): Compare two semantic versions to see which is greater, parse a version into major/minor/patch/prerelease, and test it against a range.
+- [Semver Range Tester](https://www.openutilitytools.com/tools/web-semver-range-tester/): Test whether semantic versions satisfy npm-style version ranges (caret, tilde, comparators, hyphen ranges).
+- [Semver Version Bumper](https://www.openutilitytools.com/tools/web-semver-bump/): Compute the next semantic version by bumping major, minor, patch, or prerelease according to semver rules.
+- [Server-Sent Events Parser](https://www.openutilitytools.com/tools/server-sent-events-event-parser/): Parse SSE streams into events, IDs, retry hints, comments, and data payloads.
+- [Set-Cookie Header Builder](https://www.openutilitytools.com/tools/web-set-cookie-builder/): Build a syntactically correct Set-Cookie header from name, value, and attribute toggles.
+- [Set-Cookie String Builder](https://www.openutilitytools.com/tools/web-cookie-string-builder/): Build a Set-Cookie header from name, value and attributes with validation.
+- [Shell Argument Escaper](https://www.openutilitytools.com/tools/web-shell-arg-escaper/): Safely quote and escape strings for bash, sh, PowerShell, or cmd.exe.
+- [Slugify Variants Comparator](https://www.openutilitytools.com/tools/web-slugify-variants/): Generate multiple slug styles (kebab, snake, dot, path, GitHub-anchor) from one input at once for comparison.
+- [SOAP Envelope Builder](https://www.openutilitytools.com/tools/soap-envelope-builder/): Build SOAP 1.1 or 1.2 envelopes from namespace, operation, and body XML.
+- [SOAP Fault Parser](https://www.openutilitytools.com/tools/soap-fault-parser/): Parse SOAP 1.1/1.2 faults into code, reason, actor/node, role, and detail.
+- [SOAP Request Debugger](https://www.openutilitytools.com/tools/soap-request-debugger/): Inspect SOAP HTTP headers, envelope version, operation, and body payload.
+- [SOAPAction Header Builder](https://www.openutilitytools.com/tools/soap-action-header-builder/): Build SOAPAction and Content-Type headers for SOAP 1.1 or 1.2 requests.
+- [SPF Flattening Analyzer](https://www.openutilitytools.com/tools/spf-flattening-analyzer/): Count SPF mechanisms and estimate DNS lookup pressure before flattening.
+- [SPF Record Builder](https://www.openutilitytools.com/tools/spf-record-builder/): Build SPF TXT records from mechanisms, includes, IPv4, IPv6, and all-policy.
+- [Text Data URI Builder](https://www.openutilitytools.com/tools/web-data-uri-builder-text/): Build a data: URI from pasted text with MIME type, charset, and base64 options.
+- [TLS-RPT Record Builder](https://www.openutilitytools.com/tools/tls-rpt-record-builder/): Build SMTP TLS reporting DNS records for mail delivery diagnostics.
+- [URL Builder](https://www.openutilitytools.com/tools/web-url-builder/): Assemble a valid URL from individual scheme, host, port, path, query, and fragment fields.
+- [URL Inspector](https://www.openutilitytools.com/tools/web-url-inspector/): Break a URL into protocol, host, port, path segments, query parameters, and hash, displayed as a clear labeled component breakdown.
+- [URL Normalizer](https://www.openutilitytools.com/tools/web-url-normalizer/): Canonicalize a URL by lowercasing host, resolving dot segments, sorting params, and stripping defaults.
+- [URL Parser](https://www.openutilitytools.com/tools/url-parser/): Break a URL into protocol, host, path, query parameters and hash.
+- [URL Path Joiner & Normalizer](https://www.openutilitytools.com/tools/web-url-path-joiner/): Join a base URL with path segments and normalize slashes, dot-segments, and trailing slashes safely.
+- [URL Query Param Sorter](https://www.openutilitytools.com/tools/web-url-query-sorter/): Canonicalize a URL by sorting and optionally deduplicating query parameters.
+- [URL Query Params Diff](https://www.openutilitytools.com/tools/web-query-params-diff/): Compare the query strings of two URLs and show which params were added, removed, changed, or unchanged.
+- [User-Agent Parser](https://www.openutilitytools.com/tools/user-agent-parser/): Parse a User-Agent string into browser, engine, OS and device.
+- [User-Agent String Builder](https://www.openutilitytools.com/tools/web-user-agent-builder/): Compose a browser User-Agent string from platform, engine, and version selectors.
+- [Webhook Retry Schedule Calculator](https://www.openutilitytools.com/tools/webhook-retry-schedule-calculator/): Model webhook retry attempts using delay, multiplier, jitter, and max delay.
+- [WSDL Operation Explorer](https://www.openutilitytools.com/tools/wsdl-operation-explorer/): Parse WSDL XML and list services, ports, bindings, operations, and messages.
+- [WSDL to Sample SOAP](https://www.openutilitytools.com/tools/wsdl-to-sample-soap/): Generate a starter SOAP envelope for a selected operation name.
+- [WWW-Authenticate Parser](https://www.openutilitytools.com/tools/web-www-authenticate-parser/): Parse WWW-Authenticate / Authorization challenge headers into scheme and parameters.
+- [XML Formatter](https://www.openutilitytools.com/tools/web-xml-formatter/): Pretty-print and indent minified XML, or minify verbose XML by stripping whitespace between tags, with self-closing tag handling.
+- [XML to JSON (DOM)](https://www.openutilitytools.com/tools/web-xml-to-json/): Convert an XML document into a structured JSON object, mapping elements, attributes, and text content with a predictable convention.
+- [Z-Index Scale Generator](https://www.openutilitytools.com/tools/web-z-index-scale-generator/): Generate a documented z-index scale with named layers as CSS variables or a Sass/JS map to avoid stacking chaos.

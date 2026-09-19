@@ -1,0 +1,124 @@
+# Math & Units
+
+> Bases, units, calculators
+
+114 tools. Each runs entirely in the browser.
+
+Hub: https://www.openutilitytools.com/categories/math/
+
+## Tools
+
+- [Angle Converter](https://www.openutilitytools.com/tools/angle-converter/): Convert angles between degrees, radians, gradians, turns, and arcminutes/arcseconds.
+- [Arbitrary Base Converter (2-36)](https://www.openutilitytools.com/tools/arbitrary-base-converter/): Convert an integer between any two radixes from base 2 to base 36 with full digit-set support.
+- [Arithmetic & Geometric Sequence Calculator](https://www.openutilitytools.com/tools/arithmetic-geometric-sequence/): Find the nth term and sum of arithmetic or geometric sequences.
+- [Aspect Ratio Calculator](https://www.openutilitytools.com/tools/aspect-ratio-calculator/): Find a missing width or height for a target aspect ratio and reduce any resolution to its simplest ratio.
+- [Base-N Arithmetic Calculator](https://www.openutilitytools.com/tools/base-n-arithmetic/): Add, subtract, multiply, and divide numbers in any base 2–36.
+- [Bill & Amount Split Calculator](https://www.openutilitytools.com/tools/currency-split-calculator/): Split an amount fairly among people, including unequal weighted shares.
+- [Binary ↔ Gray Code Converter](https://www.openutilitytools.com/tools/binary-to-gray-code/): Convert between standard binary and reflected Gray code at any bit width.
+- [Bit Rotate & Shift Visualizer](https://www.openutilitytools.com/tools/bit-rotate-shift/): Apply logical/arithmetic shifts and circular rotations to a fixed-width integer and watch each bit move.
+- [Bitwise Calculator](https://www.openutilitytools.com/tools/bitwise-calculator/): Perform AND, OR, XOR, NOT and shifts on two integers, shown in all bases.
+- [BMI Calculator](https://www.openutilitytools.com/tools/bmi-calculator/): Calculate Body Mass Index from height and weight in metric or imperial units with a category label.
+- [Break-Even Point Calculator](https://www.openutilitytools.com/tools/break-even-calculator/): Find the units and revenue needed to cover fixed and variable costs.
+- [CAGR Calculator](https://www.openutilitytools.com/tools/cagr-calculator/): Compute the compound annual growth rate between two values over time.
+- [Circle Calculator](https://www.openutilitytools.com/tools/circle-calculator/): Compute area, circumference, diameter, arc, and sector from any one input.
+- [Collatz Conjecture Stepper](https://www.openutilitytools.com/tools/collatz-calculator/): Generate the full Collatz (3n+1) sequence for any start value and report its statistics.
+- [Complex Number Calculator](https://www.openutilitytools.com/tools/complex-number-calculator/): Add, multiply, divide, and convert complex numbers between rectangular and polar form.
+- [Compound Interest Calculator](https://www.openutilitytools.com/tools/compound-interest-calculator/): Project savings growth with compound interest, optional regular contributions, and a yearly breakdown.
+- [Continued Fraction Converter](https://www.openutilitytools.com/tools/continued-fraction-converter/): Express a decimal or fraction as a continued fraction and reconstruct its best rational approximations.
+- [Cooking Measurement Converter](https://www.openutilitytools.com/tools/cooking-converter/): Convert kitchen measurements between cups, tablespoons, teaspoons, milliliters, ounces, and grams.
+- [Currency Amount to Words](https://www.openutilitytools.com/tools/currency-amount-to-words/): Spell a monetary amount in legal/cheque form like 'One Thousand Two Hundred Dollars and 50/100'.
+- [Data Transfer Rate Converter](https://www.openutilitytools.com/tools/data-rate-converter/): Convert data transfer rates between bps, Kbps, Mbps, Gbps, and bytes-per-second equivalents.
+- [Decimal ↔ Fraction ↔ Percent Converter](https://www.openutilitytools.com/tools/decimal-fraction-percent/): Convert freely between a decimal, an exact fraction, and a percentage in one panel.
+- [Dice Probability Calculator](https://www.openutilitytools.com/tools/dice-probability/): Compute exact probabilities of dice-roll sums and target outcomes.
+- [Digit Sum & Digital Root](https://www.openutilitytools.com/tools/digit-sum-root/): Compute the digit sum, iterated digital root, and casting-out-nines check of a number.
+- [Dimension Aspect-Ratio Solver](https://www.openutilitytools.com/tools/math-aspect-ratio-resizer/): Solve a missing width or height that preserves a given aspect ratio.
+- [Discount & Sale Price Calculator](https://www.openutilitytools.com/tools/discount-calculator/): Find sale price, savings, and effective discount including stacked discounts.
+- [Distance Calculator (2D/3D)](https://www.openutilitytools.com/tools/distance-2d-3d/): Compute Euclidean distance between two points in 2D or 3D space.
+- [Divisibility Rules Checker](https://www.openutilitytools.com/tools/divisibility-rules-checker/): Test divisibility of a number by 2-13 and show which mental-math rule applies.
+- [Divisor Lister & Counter](https://www.openutilitytools.com/tools/divisor-lister/): List every divisor of a number with totals, divisor count, and divisor pairs.
+- [DMS ↔ Decimal Degrees Converter](https://www.openutilitytools.com/tools/math-dms-decimal-degrees/): Convert geographic coordinates between degrees-minutes-seconds and decimal degrees.
+- [Ellipse Calculator](https://www.openutilitytools.com/tools/ellipse-calculator/): Compute area, perimeter, eccentricity, and foci of an ellipse.
+- [Engineering Notation Converter](https://www.openutilitytools.com/tools/engineering-notation-converter/): Convert numbers to engineering notation (powers of 1000) with SI metric prefixes.
+- [Exponent & Power Calculator](https://www.openutilitytools.com/tools/exponent-power-calculator/): Raise numbers to powers, find roots, and evaluate scientific exponent expressions.
+- [Factorial Calculator](https://www.openutilitytools.com/tools/factorial-calculator/): Compute exact n!, double factorial, and subfactorial for large integers.
+- [Factorial, Permutation & Combination](https://www.openutilitytools.com/tools/factorial-binomial-calculator/): Compute factorials, nPr permutations, and nCr combinations exactly for large n.
+- [Fibonacci & Lucas Number Generator](https://www.openutilitytools.com/tools/fibonacci-calculator/): Compute the nth Fibonacci/Lucas number and list the sequence exactly.
+- [Fixed-Point (Qm.n) Converter](https://www.openutilitytools.com/tools/fixed-point-converter/): Convert real numbers to and from signed/unsigned Qm.n fixed-point integer representations.
+- [Fraction & Decimal Converter](https://www.openutilitytools.com/tools/fraction-decimal-converter/): Convert fractions to decimals and decimals to simplified fractions, detecting repeating decimals.
+- [Fraction Arithmetic Calculator](https://www.openutilitytools.com/tools/fraction-arithmetic/): Add, subtract, multiply, and divide fractions and mixed numbers with exact simplified results.
+- [Fraction Simplifier](https://www.openutilitytools.com/tools/fraction-simplifier/): Reduce any fraction to lowest terms and show the mixed-number and decimal forms.
+- [Fractional Base Converter](https://www.openutilitytools.com/tools/math-base-converter-fractional/): Converts numbers with fractional parts between arbitrary bases 2 through 36.
+- [Fuel Economy Converter](https://www.openutilitytools.com/tools/fuel-economy-converter/): Convert fuel efficiency between MPG (US/UK), km/L, and liters per 100 km.
+- [GCD & LCM Calculator](https://www.openutilitytools.com/tools/gcd-lcm/): Find the greatest common divisor and least common multiple of numbers.
+- [GPA Calculator](https://www.openutilitytools.com/tools/math-gpa-calculator/): Compute weighted grade point average from courses, credits, and grades.
+- [Great-Circle Distance Calculator](https://www.openutilitytools.com/tools/math-great-circle-distance/): Computes the distance and initial bearing between two latitude/longitude points.
+- [IEEE-754 Float Inspector](https://www.openutilitytools.com/tools/ieee754-float-inspector/): Decompose a decimal number into IEEE-754 single and double precision sign, exponent, and mantissa bits.
+- [Integer Factorization Explorer](https://www.openutilitytools.com/tools/integer-factorization/): Fully factor an integer into primes and explore all derived multiplicative properties.
+- [Linear System Solver (Ax = b)](https://www.openutilitytools.com/tools/math-linear-system-solver/): Solves a system of linear equations using Gaussian elimination and reports the solution.
+- [Loan & EMI Calculator](https://www.openutilitytools.com/tools/loan-emi-calculator/): Calculate monthly loan payment, total interest, and total repayment from principal, rate, and term.
+- [Loan Amortization Schedule](https://www.openutilitytools.com/tools/math-loan-amortization-schedule/): Generate a full month-by-month amortization table for a fixed-rate loan.
+- [Logarithm & Antilog Calculator](https://www.openutilitytools.com/tools/logarithm-calculator/): Evaluate logs in any base plus natural/common logs and their antilogs.
+- [Markup & Margin Calculator](https://www.openutilitytools.com/tools/markup-margin-calculator/): Convert between cost, price, markup, and profit margin.
+- [Matrix Calculator](https://www.openutilitytools.com/tools/matrix-calculator/): Add, subtract, multiply, transpose, and find the determinant and inverse of small matrices.
+- [Matrix Determinant & Inverse](https://www.openutilitytools.com/tools/math-matrix-determinant-inverse/): Computes the determinant, inverse, and rank of a small square matrix.
+- [Mean, Median, Mode & Range](https://www.openutilitytools.com/tools/mean-median-mode/): Compute central-tendency measures from a list of numbers.
+- [Midpoint & Section Point Calculator](https://www.openutilitytools.com/tools/midpoint-calculator/): Find the midpoint or any ratio division point of a segment.
+- [Modular Arithmetic Calculator](https://www.openutilitytools.com/tools/modulo-calculator/): Compute true modulo, modular addition, multiplication, and exponentiation with non-negative results.
+- [Modular Exponentiation Calculator](https://www.openutilitytools.com/tools/modular-exponentiation/): Compute (base^exponent) mod m efficiently for very large numbers using fast square-and-multiply.
+- [Modular Multiplicative Inverse](https://www.openutilitytools.com/tools/modular-inverse/): Find x such that a*x ≡ 1 (mod m) using the extended Euclidean algorithm.
+- [Mortgage Extra Payment Calculator](https://www.openutilitytools.com/tools/mortgage-extra-payment/): See how extra monthly payments cut your loan term and interest.
+- [Multi-Number GCD & LCM](https://www.openutilitytools.com/tools/extended-gcd-multi/): Compute the GCD and LCM of an arbitrary list of integers with the Bezout combination.
+- [Next & Previous Prime Finder](https://www.openutilitytools.com/tools/next-prime-finder/): Find the nearest prime above and below any number, plus the gap to each.
+- [Number Base Converter](https://www.openutilitytools.com/tools/number-base-converter/): Convert numbers between binary, octal, decimal, hex and arbitrary bases.
+- [Number System Visualizer](https://www.openutilitytools.com/tools/math-numeral-system-clock/): Show one integer simultaneously in binary, octal, decimal, hex, and custom base.
+- [Number to Base64 Encoder](https://www.openutilitytools.com/tools/number-to-base64/): Encode an integer as compact Base64 bytes and decode Base64 back to a number.
+- [Ordinal Number Converter](https://www.openutilitytools.com/tools/ordinal-number-converter/): Turn cardinal numbers into ordinals: 21 → 21st and twenty-first.
+- [Pace & Speed Calculator](https://www.openutilitytools.com/tools/pace-calculator/): Convert between running pace, speed, distance, and time for runs, walks, and cycling.
+- [Percent Change Calculator](https://www.openutilitytools.com/tools/percent-change/): Compute the percentage difference between an old and new value.
+- [Percent Error Calculator](https://www.openutilitytools.com/tools/percent-error/): Measure experimental accuracy as percent error vs a true value.
+- [Percent Increase & Decrease](https://www.openutilitytools.com/tools/percent-increase-decrease/): Apply a percentage increase or decrease to a number and reverse it.
+- [Percentage Calculator](https://www.openutilitytools.com/tools/percentage-calculator/): Work out percentages, percentage change, and what-percent-of calculations.
+- [Perfect / Abundant / Deficient Classifier](https://www.openutilitytools.com/tools/perfect-number-classifier/): Classify a number as perfect, abundant, or deficient and explore related number types.
+- [Permutations & Combinations Calculator](https://www.openutilitytools.com/tools/permutation-combination/): Compute nPr, nCr, and related counting values for n and r.
+- [Polar ↔ Cartesian Converter](https://www.openutilitytools.com/tools/polar-cartesian-converter/): Convert 2D points between polar (r, θ) and Cartesian (x, y) coordinates.
+- [Polynomial Evaluator (Horner)](https://www.openutilitytools.com/tools/polynomial-evaluator/): Evaluate a polynomial at a value and get its derivative via Horner's method.
+- [Prime Checker & Factorizer](https://www.openutilitytools.com/tools/prime-checker/): Check whether a number is prime and view its prime factorization.
+- [Prime Sieve Generator](https://www.openutilitytools.com/tools/prime-sieve-generator/): Generate every prime up to N (or the first K primes) with the Sieve of Eratosthenes.
+- [Prism & Cylinder Volume Calculator](https://www.openutilitytools.com/tools/prism-cylinder-volume/): Compute volume and surface area of cylinders, cubes, and box prisms.
+- [Progressive Tax Bracket Calculator](https://www.openutilitytools.com/tools/math-tax-bracket-calculator/): Compute total tax across user-defined progressive income brackets.
+- [Proportion (Cross-Multiply) Solver](https://www.openutilitytools.com/tools/proportion-solver/): Solve a/b = c/d for the unknown using cross multiplication.
+- [Pythagorean Theorem Calculator](https://www.openutilitytools.com/tools/pythagorean-theorem/): Find the missing side of a right triangle from any two known sides.
+- [Quadratic Equation Solver](https://www.openutilitytools.com/tools/quadratic-equation-solver/): Solve quadratic equations for real or complex roots from coefficients a, b, and c.
+- [Quotient & Remainder Calculator](https://www.openutilitytools.com/tools/quotient-remainder-calculator/): Perform integer (Euclidean) division showing quotient and remainder.
+- [Random Distribution Generator](https://www.openutilitytools.com/tools/random-distribution-generator/): Generate random samples from uniform, normal, exponential, or Poisson distributions.
+- [Random Number Generator (Secure)](https://www.openutilitytools.com/tools/random-number-generator/): Generate cryptographically secure random integers within a custom range, with optional uniqueness.
+- [Ratio & Proportion Solver](https://www.openutilitytools.com/tools/ratio-proportion-solver/): Simplify ratios and solve for the missing fourth term in a proportion via cross-multiplication.
+- [Rectangle & Square Calculator](https://www.openutilitytools.com/tools/rectangle-square-calculator/): Compute area, perimeter, and diagonal of rectangles and squares.
+- [Regular Polygon Calculator](https://www.openutilitytools.com/tools/regular-polygon-calculator/): Compute area, perimeter, and angles of any regular n-sided polygon.
+- [Repeating Decimal to Fraction](https://www.openutilitytools.com/tools/repeating-decimal-to-fraction/): Turn a repeating decimal like 0.1(6) into its exact fraction using the 9s-denominator method.
+- [Reverse Percentage Calculator](https://www.openutilitytools.com/tools/math-tip-free-percent-of-total/): Finds the original amount given a percentage and result, and related reverse-percent problems.
+- [ROI Calculator](https://www.openutilitytools.com/tools/roi-calculator/): Compute return on investment, net profit, and annualized ROI.
+- [Roman Numeral Converter](https://www.openutilitytools.com/tools/roman-numerals/): Convert between Roman numerals and integers (1–3999).
+- [Roman Numeral Variants Converter](https://www.openutilitytools.com/tools/roman-numeral-variants/): Convert to and from standard, additive (IIII), and vinculum (overline ×1000) Roman numerals.
+- [Rounding & Significant Figures](https://www.openutilitytools.com/tools/rounding-calculator/): Round numbers by decimals, significant figures, or a chosen rule.
+- [Savings Goal Calculator](https://www.openutilitytools.com/tools/savings-goal-calculator/): Find the monthly deposit needed to reach a savings target by a date.
+- [Scientific Calculator](https://www.openutilitytools.com/tools/expression-calculator/): Evaluate math expressions with functions, constants and operators.
+- [Scientific Notation Arithmetic](https://www.openutilitytools.com/tools/scientific-notation-arithmetic/): Add, multiply, and divide numbers written in scientific notation.
+- [Scientific Notation Converter](https://www.openutilitytools.com/tools/scientific-notation-converter/): Convert numbers between plain decimal, scientific E-notation, and engineering notation.
+- [Significant Figures Rounder](https://www.openutilitytools.com/tools/significant-figures-rounder/): Round a number to a chosen number of significant figures and count its sig figs.
+- [Simple Interest Calculator](https://www.openutilitytools.com/tools/simple-interest-calculator/): Compute simple interest, total, or solve for any missing variable.
+- [Slope & Line Equation Finder](https://www.openutilitytools.com/tools/slope-line-equation/): Find slope, intercepts, and the equation of a line through two points.
+- [Sphere, Cone & Pyramid Volume](https://www.openutilitytools.com/tools/sphere-cone-pyramid-volume/): Compute volume and surface area of spheres, cones, and pyramids.
+- [Standard Deviation & Variance](https://www.openutilitytools.com/tools/standard-deviation-variance/): Compute population and sample standard deviation and variance with steps.
+- [Statistics Calculator](https://www.openutilitytools.com/tools/statistics/): Compute mean, median, range, variance and standard deviation of a data set.
+- [Time Duration Converter](https://www.openutilitytools.com/tools/duration-converter/): Convert durations between milliseconds, seconds, minutes, hours, days, and weeks.
+- [Tip & Bill Splitter](https://www.openutilitytools.com/tools/tip-split-calculator/): Calculate tip amount, grand total, and per-person share when splitting a bill among people.
+- [Trapezoid & Parallelogram Calculator](https://www.openutilitytools.com/tools/trapezoid-parallelogram-calculator/): Compute area and perimeter of trapezoids and parallelograms.
+- [Triangle Solver](https://www.openutilitytools.com/tools/triangle-solver/): Solve any triangle from 3 known sides/angles using the laws of sines and cosines.
+- [Two's Complement Converter](https://www.openutilitytools.com/tools/twos-complement-converter/): Encode and decode signed integers in two's complement across 8/16/32/64-bit widths.
+- [Unit Converter](https://www.openutilitytools.com/tools/unit-converter/): Convert length, mass, temperature, area, volume, speed and data sizes.
+- [Unit Price Comparison](https://www.openutilitytools.com/tools/unit-price-calculator/): Compare products by price per unit to find the best value.
+- [VAT & Sales Tax Calculator](https://www.openutilitytools.com/tools/vat-sales-tax/): Add or remove VAT/sales tax and split gross into net plus tax.
+- [Vector Calculator (2D/3D)](https://www.openutilitytools.com/tools/vector-calculator-2d-3d/): Add, subtract, dot, cross, normalize, and measure angle between vectors.
+- [Weighted Average & Grade Calculator](https://www.openutilitytools.com/tools/weighted-average-calculator/): Compute a weighted mean from value-weight pairs, e.g. grades.
+- [Z-Score Calculator](https://www.openutilitytools.com/tools/z-score-calculator/): Convert a raw value to a z-score and back given mean and standard deviation.

@@ -20,7 +20,12 @@ export const metadata: Metadata = {
   description: HOME_DESCRIPTION,
   applicationName: SITE_NAME,
   manifest: '/manifest.webmanifest',
-  alternates: { canonical: '/' },
+  alternates: {
+    canonical: '/',
+    types: {
+      'text/markdown': '/llms.txt',
+    },
+  },
   robots: {
     index: true,
     follow: true,

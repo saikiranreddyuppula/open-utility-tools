@@ -1,0 +1,117 @@
+# Converters
+
+> Convert between data & text formats
+
+107 tools. Each runs entirely in the browser.
+
+Hub: https://www.openutilitytools.com/categories/convert/
+
+## Tools
+
+- [.env to Shell Exports](https://www.openutilitytools.com/tools/env-to-shell-exports/): Turn a .env file into copy-paste shell export statements for bash/zsh, fish, or PowerShell.
+- [Acceleration Converter](https://www.openutilitytools.com/tools/acceleration-converter/): Convert acceleration between m/s2, g-force, ft/s2, and gal.
+- [Apple plist to JSON](https://www.openutilitytools.com/tools/plist-to-json/): Convert an Apple XML property list into JSON.
+- [Area Converter](https://www.openutilitytools.com/tools/area-converter/): Convert areas between square meters, acres, hectares, square feet, and more.
+- [ASCII / Box Table to JSON](https://www.openutilitytools.com/tools/ascii-table-to-json/): Parse a fixed-width or box-drawn ASCII table (like psql, MySQL, or markdown-less console output) into JSON rows.
+- [Astronomical Distance Converter](https://www.openutilitytools.com/tools/astronomical-distance-converter/): Convert cosmic distances between AU, light-years, parsecs, and kilometers.
+- [Baking Pan Size Converter](https://www.openutilitytools.com/tools/cooking-pan-size-converter/): Convert baking pan dimensions and scale recipe volumes between pan shapes.
+- [Base64 / Data URI to File](https://www.openutilitytools.com/tools/base64-to-file/): Decode base64 or a data URI and save it as a named file.
+- [Bytes to Human-Readable Converter](https://www.openutilitytools.com/tools/bytes-to-human-converter/): Format raw byte counts into human-readable sizes, both decimal and binary.
+- [Clothing Size Converter](https://www.openutilitytools.com/tools/clothing-size-converter/): Convert clothing sizes (XS-XXL, US, UK, EU) for men's and women's apparel.
+- [Color List to Tailwind Config](https://www.openutilitytools.com/tools/convert-color-list-to-tailwind-config/): Turns a list of name=hex color pairs into a Tailwind theme.extend.colors config object.
+- [Cron Dialect Translator](https://www.openutilitytools.com/tools/convert-cron-to-human-and-quartz/): Converts between standard 5-field cron and 6/7-field Quartz/Spring cron expressions.
+- [Crontab File Explainer](https://www.openutilitytools.com/tools/convert-cron-to-human-multi/): Explain every line of a crontab file in plain English including special strings.
+- [CSS Shorthand Expander](https://www.openutilitytools.com/tools/css-shorthand-expander/): Expand CSS shorthand properties (margin, padding, border, font, background, etc.) into their longhand declarations, or collapse longhands back.
+- [CSV to Batched SQL INSERT](https://www.openutilitytools.com/tools/convert-csv-to-sql-insert-batch/): Generate multi-row batched SQL INSERT statements from CSV with a configurable batch size.
+- [CSV to JSON Objects](https://www.openutilitytools.com/tools/convert-csv-to-json-objects/): Converts CSV with a header row into a JSON array of objects with typed values.
+- [CSV to Markdown Table](https://www.openutilitytools.com/tools/csv-to-markdown/): Convert CSV into a GitHub-flavored Markdown table.
+- [CSV to TSV](https://www.openutilitytools.com/tools/csv-to-tsv/): Convert between comma-separated and tab-separated values with proper quote handling, in either direction, ready to paste into a spreadsheet.
+- [CSV to XML](https://www.openutilitytools.com/tools/csv-to-xml/): Convert CSV rows into an XML document.
+- [CSV to YAML](https://www.openutilitytools.com/tools/csv-to-yaml/): Convert CSV rows into a YAML list of objects.
+- [cURL to HTTPie](https://www.openutilitytools.com/tools/curl-to-httpie/): Convert a curl command into an equivalent HTTPie command.
+- [Currency Subunit & Naming Reference](https://www.openutilitytools.com/tools/currency-unit-naming/): Look up world currencies, their subunits, symbols, and ISO 4217 codes.
+- [Data Size Converter](https://www.openutilitytools.com/tools/data-size-converter/): Convert digital storage between bits, bytes, KB/MB/GB/TB and KiB/MiB/GiB, clearly separating decimal SI and binary IEC units.
+- [Data Storage Units Converter](https://www.openutilitytools.com/tools/data-storage-units-converter/): Convert digital storage between bits, bytes, and decimal/binary multiples like MB vs MiB.
+- [Degrees-Minutes-Seconds Converter](https://www.openutilitytools.com/tools/angle-subunits-converter/): Convert angles between decimal degrees and degrees-minutes-seconds (DMS) notation.
+- [Density Converter](https://www.openutilitytools.com/tools/density-converter/): Convert density between kg/m3, g/cm3, lb/ft3, and lb/gallon.
+- [Download / Transfer Time Calculator](https://www.openutilitytools.com/tools/data-transfer-time-calculator/): Estimate how long a file takes to transfer at a given connection speed.
+- [DPI / PPI Pixel-Size Converter](https://www.openutilitytools.com/tools/dpi-ppi-size-converter/): Convert between physical print size, pixel dimensions, and DPI — or compute a screen’s PPI from its resolution and diagonal.
+- [Energy Converter](https://www.openutilitytools.com/tools/energy-converter/): Convert energy between joules, calories, kWh, BTU, and electronvolts.
+- [Flow Rate Converter](https://www.openutilitytools.com/tools/flow-rate-converter/): Convert volumetric flow between L/s, m3/h, GPM, and CFM.
+- [Force Converter](https://www.openutilitytools.com/tools/force-converter/): Convert force between newtons, kilogram-force, pound-force, and dyne.
+- [Frequency Converter](https://www.openutilitytools.com/tools/frequency-converter/): Convert frequency between Hz, kHz, MHz, GHz, RPM, and angular rad/s.
+- [Fuel & Petroleum Volume Converter](https://www.openutilitytools.com/tools/fuel-volume-converter/): Convert fuel volumes between liters, US/imperial gallons, and oil barrels.
+- [GraphQL Query to cURL](https://www.openutilitytools.com/tools/convert-graphql-query-to-curl/): Wrap a GraphQL query and variables into a POST cURL command.
+- [HAR Entry to cURL](https://www.openutilitytools.com/tools/convert-har-to-curl/): Extracts requests from a HAR file or single HAR entry and emits equivalent cURL commands.
+- [Hex to RGB Code Snippet](https://www.openutilitytools.com/tools/hex-to-rgb-code/): Turn a hex color into ready-to-paste code in many languages.
+- [HTML Table to Markdown](https://www.openutilitytools.com/tools/html-table-to-markdown/): Extract <table> elements from HTML and render them as GitHub-flavored Markdown pipe tables.
+- [HTML to Markdown](https://www.openutilitytools.com/tools/html-to-markdown/): Convert HTML into clean Markdown, mapping headings, links, images, lists, blockquotes, code, and emphasis back to plain Markdown syntax.
+- [HTML to Pug](https://www.openutilitytools.com/tools/html-to-pug/): Convert HTML markup into Pug (Jade) template syntax.
+- [HTTPie to cURL](https://www.openutilitytools.com/tools/httpie-to-curl/): Convert an HTTPie command into an equivalent curl command.
+- [Illuminance Converter](https://www.openutilitytools.com/tools/illuminance-converter/): Convert illuminance between lux, foot-candles, and phot.
+- [Ingredient Weight to Volume Converter](https://www.openutilitytools.com/tools/ingredient-weight-volume-converter/): Convert cooking ingredients between grams, ounces, cups, tablespoons, teaspoons, and milliliters using per-ingredient density.
+- [INI to JSON](https://www.openutilitytools.com/tools/ini-to-json/): Parse INI / config files into structured JSON.
+- [Java .properties to JSON](https://www.openutilitytools.com/tools/properties-to-json/): Convert Java/Spring .properties files into nested JSON.
+- [Java Properties to YAML](https://www.openutilitytools.com/tools/properties-to-yaml/): Convert a Java .properties file into nested YAML by expanding dotted keys into a tree.
+- [JS Object to JSON](https://www.openutilitytools.com/tools/js-object-to-json/): Convert a relaxed JavaScript object literal (unquoted keys, single quotes, trailing commas, comments) into strict, valid JSON.
+- [JSON Array to List](https://www.openutilitytools.com/tools/json-array-to-list/): Convert a JSON array into a delimited or line-separated list.
+- [JSON Lines to SQL INSERT](https://www.openutilitytools.com/tools/convert-jsonl-to-sql-insert/): Generates SQL INSERT statements from NDJSON records using each object's keys as columns.
+- [JSON to Apple plist](https://www.openutilitytools.com/tools/json-to-plist/): Convert JSON into an Apple XML property list.
+- [JSON to Go Struct](https://www.openutilitytools.com/tools/json-to-go/): Infer Go structs (with json tags) from a JSON sample.
+- [JSON to INI](https://www.openutilitytools.com/tools/json-to-ini/): Convert a JSON object into INI / config file syntax.
+- [JSON to Java .properties](https://www.openutilitytools.com/tools/json-to-properties/): Convert nested JSON into Java/Spring .properties lines.
+- [JSON to Key-Value Pairs](https://www.openutilitytools.com/tools/json-to-kv-pairs/): Convert a JSON object into flat key:value text lines.
+- [JSON to PHP Array](https://www.openutilitytools.com/tools/json-to-php-array/): Convert JSON into a PHP array literal.
+- [JSON to Ruby Hash](https://www.openutilitytools.com/tools/json-to-ruby-hash/): Convert JSON into a Ruby hash literal.
+- [JSON to XML](https://www.openutilitytools.com/tools/json-to-xml/): Convert JSON into XML markup with proper escaping.
+- [JSON to XML (Attribute Mode)](https://www.openutilitytools.com/tools/json-to-xml-attributes/): Convert JSON to XML choosing attributes vs child elements.
+- [JSON to YAML](https://www.openutilitytools.com/tools/json-to-yaml/): Convert JSON into readable YAML.
+- [JSX to HTML](https://www.openutilitytools.com/tools/jsx-to-html/): Convert JSX/React element markup back into plain HTML.
+- [Key-Value Pairs to JSON](https://www.openutilitytools.com/tools/kv-pairs-to-json/): Convert key:value or key=value lines into a JSON object.
+- [key=value Lines to JSON](https://www.openutilitytools.com/tools/key-value-to-json/): Convert plain key=value or key: value config lines into a JSON object, with type coercion and nesting on dotted keys.
+- [Length and Distance Converter](https://www.openutilitytools.com/tools/length-converter/): Convert between metric and imperial lengths such as mm, cm, m, km, inch, foot, yard, mile, and nautical mile with live multi-unit output.
+- [List to JSON Array](https://www.openutilitytools.com/tools/list-to-json-array/): Convert a line/comma list into a JSON array.
+- [Luminance Converter](https://www.openutilitytools.com/tools/luminance-converter/): Convert luminance between candela/m2 (nit), foot-lambert, and stilb.
+- [Magnetic Field Converter](https://www.openutilitytools.com/tools/magnetic-field-converter/): Convert magnetic flux density between tesla, gauss, and milligauss.
+- [Markdown List ↔ JSON Tree](https://www.openutilitytools.com/tools/markdown-list-to-json/): Convert an indented Markdown bullet/numbered list into a nested JSON array (and back).
+- [Markdown Table to CSV](https://www.openutilitytools.com/tools/markdown-table-to-csv/): Extract a GitHub-style Markdown table and convert its rows into CSV, handling pipe escaping, alignment separators, and trimmed cells.
+- [Markdown Table to HTML](https://www.openutilitytools.com/tools/markdown-table-to-html/): Convert a GitHub-flavored Markdown pipe table into a clean semantic HTML table with alignment.
+- [Markdown to JSX](https://www.openutilitytools.com/tools/markdown-to-jsx/): Convert Markdown into a JSX/React component snippet.
+- [Mass & Weight Converter](https://www.openutilitytools.com/tools/mass-weight-converter/): Convert between metric and imperial mass units like kilograms, pounds, ounces, and stones.
+- [Number Spelling Variants](https://www.openutilitytools.com/tools/number-to-roman-words-variants/): Spell a number as English words, ordinals, currency words, and a tally count.
+- [Number to Spoken Base Words](https://www.openutilitytools.com/tools/number-base-words/): Spell out a number in any base (2-36) as place-value words, e.g. binary 1011 as one-zero-one-one or grouped nibbles.
+- [Number to Words](https://www.openutilitytools.com/tools/number-to-words/): Spell out numbers as English words including negatives, decimals, and large magnitudes, with an optional currency cents mode.
+- [OpenAPI Paths to cURL](https://www.openutilitytools.com/tools/convert-openapi-to-curl/): Turn OpenAPI path operations into example cURL commands with placeholder values.
+- [Oven Temperature Converter](https://www.openutilitytools.com/tools/cooking-temperature-converter/): Convert oven temperatures between Celsius, Fahrenheit, and UK gas marks.
+- [Paper Size Reference & Converter](https://www.openutilitytools.com/tools/paper-size-converter/): Look up ISO A/B/C, US Letter, and other paper sizes in mm, inches, and pixels.
+- [PHP Array to JSON](https://www.openutilitytools.com/tools/php-array-to-json/): Convert a PHP array literal into JSON.
+- [Power Converter](https://www.openutilitytools.com/tools/power-converter/): Convert power between watts, kilowatts, horsepower, and BTU/hour.
+- [Precise Time Unit Converter](https://www.openutilitytools.com/tools/time-precise-converter/): Convert tiny and astronomical time spans from nanoseconds to centuries.
+- [Pressure Converter](https://www.openutilitytools.com/tools/pressure-converter/): Convert pressure between pascals, bar, psi, atm, mmHg, and torr.
+- [Pug to HTML](https://www.openutilitytools.com/tools/pug-to-html/): Convert basic Pug (Jade) templates into HTML.
+- [Query String to cURL](https://www.openutilitytools.com/tools/querystring-to-curl/): Build a curl command from a base URL and query string.
+- [Query String to JSON](https://www.openutilitytools.com/tools/query-string-to-json/): Parse a URL query string into structured JSON, decoding values, grouping repeated keys into arrays, and rebuilding bracketed nesting.
+- [Radiation Dose Converter](https://www.openutilitytools.com/tools/radiation-dose-converter/): Convert radiation dose between sieverts, rems, grays, and rads.
+- [Radioactivity Converter](https://www.openutilitytools.com/tools/radioactivity-converter/): Convert radioactivity between becquerels and curies.
+- [Ring Size Converter](https://www.openutilitytools.com/tools/ring-size-converter/): Convert ring sizes across US, UK, EU, and inner-diameter/circumference.
+- [Ruby Hash to JSON](https://www.openutilitytools.com/tools/ruby-hash-to-json/): Convert a Ruby hash/array literal into JSON.
+- [Shoe Size Converter](https://www.openutilitytools.com/tools/shoe-size-converter/): Convert shoe sizes across US, UK, EU, and centimeter foot-length systems.
+- [Speed Converter](https://www.openutilitytools.com/tools/speed-converter/): Convert speeds between km/h, mph, m/s, knots, and Mach.
+- [SVG Path Coordinate Rounder](https://www.openutilitytools.com/tools/svg-path-rounder/): Round and tidy the numeric coordinates in an SVG path 'd' string to reduce precision and file size.
+- [SVG to JSX/React Component](https://www.openutilitytools.com/tools/convert-svg-to-jsx/): Converts a raw SVG markup into a React JSX component with camelCased attributes.
+- [Temperature Converter](https://www.openutilitytools.com/tools/temperature-converter/): Convert temperatures across Celsius, Fahrenheit, Kelvin, and Rankine with live results and adjustable rounding precision.
+- [TOML to JSON](https://www.openutilitytools.com/tools/toml-to-json/): Turn TOML config files into JSON. Supports tables, arrays of tables, inline tables, datetimes, and typed values, parsed locally without uploads.
+- [TOML to YAML](https://www.openutilitytools.com/tools/toml-to-yaml/): Convert TOML configuration into equivalent YAML.
+- [Torque Converter](https://www.openutilitytools.com/tools/torque-converter/): Convert torque between newton-meters, pound-feet, and kilogram-force meters.
+- [TSV to JSON](https://www.openutilitytools.com/tools/tsv-to-json/): Paste tab-separated data copied from a spreadsheet and convert it to JSON, with header-row detection and numeric or boolean coercion options.
+- [Typographic Units Converter](https://www.openutilitytools.com/tools/typography-units-converter/): Convert typography units between points, picas, pixels, em, and millimeters.
+- [Unicode Code Point Converter](https://www.openutilitytools.com/tools/unicode-code-point-converter/): Convert text to and from Unicode code points, showing U+ notation, decimal, and hex escapes with surrogate-pair-safe handling.
+- [Viscosity Converter](https://www.openutilitytools.com/tools/viscosity-converter/): Convert dynamic and kinematic viscosity between poise, pascal-seconds, and stokes.
+- [Volume Converter](https://www.openutilitytools.com/tools/volume-converter/): Convert liquid and dry volumes between liters, gallons, cups, pints, and more.
+- [XML Attributes ↔ Child Elements](https://www.openutilitytools.com/tools/xml-attributes-to-elements/): Rewrite an XML document by promoting attributes into child elements, or demoting simple child elements into attributes.
+- [XML to CSV](https://www.openutilitytools.com/tools/xml-to-csv/): Flatten repeating XML elements into CSV rows.
+- [XML to JSON](https://www.openutilitytools.com/tools/xml-to-json/): Parse XML into a clean JSON tree with options for attribute prefixes, text-node naming, and array coercion for repeated elements.
+- [XML to JSON (Attribute Mode)](https://www.openutilitytools.com/tools/xml-attributes-to-json/): Convert XML to JSON preserving attributes via a convention.
+- [YAML to CSV](https://www.openutilitytools.com/tools/yaml-to-csv/): Flatten a YAML list of objects into CSV.
+- [YAML to JSON](https://www.openutilitytools.com/tools/yaml-to-json/): Convert common YAML configuration into JSON.
+- [YAML to TOML](https://www.openutilitytools.com/tools/yaml-to-toml/): Convert YAML configuration directly into TOML, mapping nested maps and lists into tables and arrays of tables in one step.

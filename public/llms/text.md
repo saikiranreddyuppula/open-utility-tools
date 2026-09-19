@@ -1,0 +1,118 @@
+# Text
+
+> Transform, analyze & clean text
+
+108 tools. Each runs entirely in the browser.
+
+Hub: https://www.openutilitytools.com/categories/text/
+
+## Tools
+
+- [Acronym Extractor](https://www.openutilitytools.com/tools/acronym-expander-finder/): Find acronyms in text and pair them with the expansions defined nearby.
+- [Acronym Maker](https://www.openutilitytools.com/tools/acronym-maker/): Build an acronym or initialism from a phrase using configurable rules.
+- [Add / Strip Diacritics](https://www.openutilitytools.com/tools/diacritics-toggle/): Strip accents to plain ASCII, or fold text to ASCII-safe forms, with a map for common transliterations.
+- [Alternating & Inverse Case](https://www.openutilitytools.com/tools/alternating-case-converter/): Apply mocking sPoNgEbOb alternating case, inverse case, or random case to text.
+- [Anagram & Letter Rearranger](https://www.openutilitytools.com/tools/anagram-solver/): Generate rearrangements of letters and find sub-words from a set of letters offline.
+- [Anagram Checker](https://www.openutilitytools.com/tools/anagram-checker/): Determine whether two words or phrases are anagrams of each other.
+- [ASCII Banner Text (Figlet-style)](https://www.openutilitytools.com/tools/figlet-banner/): Render short text as large ASCII-art letters using built-in block fonts, fully offline.
+- [ASCII Box & Banner Drawer](https://www.openutilitytools.com/tools/text-box-drawing/): Wrap text in ASCII or Unicode box-drawing borders to create framed banners and callout boxes.
+- [ASCII Table](https://www.openutilitytools.com/tools/ascii-table/): A searchable reference of ASCII codes in decimal, hex, octal and binary.
+- [Automated Readability Index (ARI)](https://www.openutilitytools.com/tools/automated-readability-index/): Compute the ARI grade level from character, word, and sentence counts.
+- [Bracket & Quote Balance Checker](https://www.openutilitytools.com/tools/text-text-bracket-matcher/): Verify that brackets, parentheses, braces, and quotes are balanced in text.
+- [Braille (Grade 1) Translator](https://www.openutilitytools.com/tools/braille-text/): Convert text to and from Unicode Braille dot patterns using the Grade 1 (uncontracted) mapping.
+- [Caesar Cipher](https://www.openutilitytools.com/tools/caesar-cipher/): Encode or decode text with a Caesar cipher of any shift amount, the classic reversible letter rotation, with optional brute-force of all 25 shifts.
+- [Case Converter](https://www.openutilitytools.com/tools/case-converter/): Convert text between camelCase, snake_case, kebab-case, Title Case and more.
+- [Character N-Gram Counter](https://www.openutilitytools.com/tools/character-ngram-counter/): Count character-level n-grams for linguistics, cryptanalysis, and fingerprinting.
+- [Code Identifier Case Converter](https://www.openutilitytools.com/tools/camel-snake-kebab-converter/): Convert programming identifiers between camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, dot.case, and Train-Case.
+- [Coleman-Liau Index](https://www.openutilitytools.com/tools/coleman-liau-index/): Compute the character-based Coleman-Liau readability grade with no syllable counting.
+- [Collapse Consecutive Duplicate Lines](https://www.openutilitytools.com/tools/consecutive-duplicate-collapse/): Collapse runs of identical adjacent lines into one, like the uniq command.
+- [Column / Field Extractor (cut)](https://www.openutilitytools.com/tools/column-extractor/): Extract or reorder fields from delimited lines like the Unix cut command, by index or character range.
+- [Column Aligner (Elastic Tabstops)](https://www.openutilitytools.com/tools/column-aligner/): Align delimited columns into a neat fixed-width table by padding each column to its widest cell.
+- [Combined Readability Report](https://www.openutilitytools.com/tools/text-readability-summary/): Run all major readability formulas at once and show a consensus grade level.
+- [Count Occurrences](https://www.openutilitytools.com/tools/count-occurrences/): Count how many times a substring or regex pattern appears in text.
+- [Cyrillic Transliteration](https://www.openutilitytools.com/tools/transliterate-cyrillic/): Transliterate between Cyrillic and Latin using selectable schemes (GOST, BGN/PCGN, scientific, ISO 9).
+- [Deduplicate Words](https://www.openutilitytools.com/tools/deduplicate-words/): Remove repeated words from text while preserving order, optionally case-insensitively or only consecutive duplicates.
+- [Delimited Text Converter](https://www.openutilitytools.com/tools/delimiter-converter/): Convert delimited text between comma, tab, pipe, semicolon, newline, and custom delimiters, ideal for reshaping CSV-style lists.
+- [Emoji Extractor](https://www.openutilitytools.com/tools/emoji-extractor/): Extract every emoji from text and list them with counts and code points.
+- [Emoji Remover](https://www.openutilitytools.com/tools/emoji-stripper/): Strip all emoji and pictographic symbols from text while keeping the words intact.
+- [Extract Emails, URLs & Numbers](https://www.openutilitytools.com/tools/extract-data/): Pull all email addresses, URLs, phone numbers, IPs, or numbers out of a blob of text into a clean deduplicated list.
+- [Filter Lines by Rule](https://www.openutilitytools.com/tools/text-frequency-filter/): Keep or delete lines that match a substring, regex, length, or numeric/blank condition (grep-like).
+- [Find & Replace](https://www.openutilitytools.com/tools/find-replace/): Find and replace text with plain or regular-expression matching.
+- [Flesch Reading Ease Score](https://www.openutilitytools.com/tools/flesch-reading-ease/): Compute the Flesch Reading Ease score and grade level for any text.
+- [Fuzzy Duplicate Line Remover](https://www.openutilitytools.com/tools/fuzzy-dedupe-lines/): Remove near-duplicate lines that differ only by case, whitespace, or punctuation.
+- [Greek Transliteration](https://www.openutilitytools.com/tools/transliterate-greek/): Convert Greek script to Latin (and back) using ISO 843, ELOT 743, or classical romanization schemes.
+- [Gunning Fog Index](https://www.openutilitytools.com/tools/gunning-fog-index/): Estimate the years of formal education needed to understand text on first reading.
+- [Hashtag Generator](https://www.openutilitytools.com/tools/hashtag-generator/): Turn phrases into clean hashtags with chosen casing, removing punctuation and merging or splitting words.
+- [Identifier Humanizer](https://www.openutilitytools.com/tools/text-snake-to-title-humanizer/): Turns snake_case, kebab-case, or camelCase identifiers into human-readable Title Case labels.
+- [Indent & Dedent Text](https://www.openutilitytools.com/tools/indent-text/): Add or remove leading indentation on every line, converting tabs to spaces or spaces to tabs with a configurable width.
+- [Indented Outline ↔ Nested List](https://www.openutilitytools.com/tools/outline-to-list/): Convert tab/space-indented outlines to Markdown/HTML nested lists, or flatten nested lists to an outline.
+- [Interleave / Zip Lines](https://www.openutilitytools.com/tools/interleave-lines/): Merge two or more line-lists by alternating their lines, like a zipper, with a configurable separator.
+- [Join Lines](https://www.openutilitytools.com/tools/join-lines/): Concatenate multiple lines into one (or grouped) line using a chosen separator, with optional quoting.
+- [Keyword Density Analyzer](https://www.openutilitytools.com/tools/keyword-density-analyzer/): Measure single-word and phrase keyword density with stop-word filtering for SEO.
+- [Leetspeak Converter](https://www.openutilitytools.com/tools/leetspeak/): Convert text to and from leetspeak (1337), swapping letters for numbers and symbols at adjustable intensity.
+- [Lexical Diversity Calculator](https://www.openutilitytools.com/tools/lexical-diversity-calculator/): Measure vocabulary richness with type-token ratio and related metrics.
+- [Line Length Checker](https://www.openutilitytools.com/tools/line-length-checker/): Flag lines that exceed a maximum character width for code or prose style guides.
+- [Line Numbering (Advanced)](https://www.openutilitytools.com/tools/add-line-numbers-advanced/): Prefix lines with numbers using custom start, step, zero-padding, format template, and blank-line handling.
+- [Line Operations](https://www.openutilitytools.com/tools/line-operations/): Number, prefix, suffix, or wrap each line of text.
+- [List Formatter](https://www.openutilitytools.com/tools/list-formatter/): Convert a plain list into bulleted, numbered, lettered, or roman-numeral lists with custom markers and indentation.
+- [List Number Style Converter](https://www.openutilitytools.com/tools/text-roman-to-fancy-numbering/): Renumbers a list using decimal, roman numerals, or letter sequences (a, b, c / A, B, C).
+- [Longest and Shortest Line Finder](https://www.openutilitytools.com/tools/text-find-longest-shortest-line/): Finds the longest and shortest lines in a block of text with their lengths and line numbers.
+- [Lorem Ipsum Generator](https://www.openutilitytools.com/tools/lorem-ipsum/): Generate placeholder lorem ipsum text by paragraphs, sentences, or words.
+- [Markdown List Renumberer](https://www.openutilitytools.com/tools/markdown-list-renumber/): Fix and renumber ordered Markdown lists, convert between bullet and numbered, and normalize markers.
+- [Mention, Hashtag & URL Extractor](https://www.openutilitytools.com/tools/at-mention-extractor/): Extract @mentions, #hashtags, $cashtags, and URLs from social text into clean deduplicated lists.
+- [Morse Code Translator](https://www.openutilitytools.com/tools/morse-code/): Translate text to International Morse code and back.
+- [Multi-Key Column Sort](https://www.openutilitytools.com/tools/text-text-column-sort/): Sort delimited rows by one or more columns with per-key type and direction.
+- [N-Gram Frequency Counter](https://www.openutilitytools.com/tools/ngram-counter/): Extract and count the most frequent word n-grams (bigrams, trigrams, etc.) in text.
+- [NATO Phonetic Alphabet](https://www.openutilitytools.com/tools/nato-phonetic/): Spell text using the NATO phonetic alphabet (Alpha, Bravo, Charlie…).
+- [Natural / Numeric Sort Lines](https://www.openutilitytools.com/tools/natural-sort-lines/): Sort lines using human-friendly natural ordering so file2 comes before file10, with locale and key options.
+- [Number Each Line](https://www.openutilitytools.com/tools/number-lines/): Generate a sequence and prefix lines with auto-incrementing numbers using a start value, step, and zero-padding.
+- [Pad & Align Lines](https://www.openutilitytools.com/tools/pad-lines/): Left/right/center-pad every line to a target width with a fill character, or zero-pad numbers.
+- [Palindrome Checker](https://www.openutilitytools.com/tools/palindrome-checker/): Check if text is a palindrome and find palindromic words and substrings.
+- [Paragraph Reflow & Justify](https://www.openutilitytools.com/tools/word-wrap-justify/): Re-wrap paragraphs to a target width with left, right, center, or full-justify alignment and hyphenation control.
+- [Paragraph Splitter & Joiner](https://www.openutilitytools.com/tools/paragraph-splitter/): Split text into separated paragraphs or rejoin wrapped lines into paragraphs.
+- [PII Placeholder Anonymizer](https://www.openutilitytools.com/tools/text-anonymizer/): Replace emails, phone numbers, and other PII patterns with placeholder tokens.
+- [Prefix & Suffix Lines](https://www.openutilitytools.com/tools/prefix-suffix-lines/): Add a prefix and/or suffix to every line at once, ideal for wrapping list items in quotes, commas, brackets, or markup.
+- [Profanity Censor (Offline)](https://www.openutilitytools.com/tools/profanity-placeholder/): Mask flagged words in text with symbols using a user-editable word list.
+- [Random Line Picker](https://www.openutilitytools.com/tools/random-line-picker/): Pick one or more random lines from a list, great for raffles, choosing a winner, or sampling, with optional no-repeat draws.
+- [Random Name & Username Generator](https://www.openutilitytools.com/tools/random-name-generator/): Generate random human names, fantasy names, or username handles from embedded syllable and word lists.
+- [Reading & Speaking Time Estimator](https://www.openutilitytools.com/tools/reading-time-estimator/): Estimate how long text takes to read silently and to speak aloud.
+- [Regex Tester](https://www.openutilitytools.com/tools/regex-tester/): Test JavaScript regular expressions live with match highlighting and groups.
+- [Remove Accents](https://www.openutilitytools.com/tools/remove-accents/): Strip diacritics and accents from text, converting characters like e-acute, n-tilde, and u-umlaut to plain ASCII equivalents.
+- [Remove Duplicate Lines](https://www.openutilitytools.com/tools/remove-duplicates/): Strip duplicate lines, keeping first occurrence, with optional case-insensitivity.
+- [Remove Line Breaks](https://www.openutilitytools.com/tools/remove-line-breaks/): Strip or normalize line breaks, joining wrapped lines into one with spaces, collapsing multiple blank lines, or converting paragraphs to single lines.
+- [Repeated Phrase Finder](https://www.openutilitytools.com/tools/text-redundancy-finder/): Find phrases repeated multiple times in text to catch wordiness and filler.
+- [Reverse & Flip Lines](https://www.openutilitytools.com/tools/reverse-lines/): Reverse the order of lines, reverse characters within each line, or rotate lines by an offset.
+- [Reverse Text](https://www.openutilitytools.com/tools/reverse-text/): Reverse characters, words, or line order in text.
+- [ROT13 / Caesar Cipher](https://www.openutilitytools.com/tools/rot13/): Apply ROT13 or a Caesar shift cipher to text (reversible).
+- [ROT47 Cipher](https://www.openutilitytools.com/tools/rot47/): Encode or decode text with ROT47, rotating all visible ASCII characters by 47 positions for a reversible obfuscation.
+- [Sentence Case Converter](https://www.openutilitytools.com/tools/sentence-case-converter/): Lowercase text then capitalize the first letter of each sentence, preserving common acronyms and the pronoun I.
+- [Sentence Splitter](https://www.openutilitytools.com/tools/sentence-splitter/): Split a paragraph into one sentence per line using punctuation and abbreviation rules.
+- [Shuffle Lines](https://www.openutilitytools.com/tools/shuffle-lines/): Randomly shuffle the order of lines, with an option to pick a random subset or a single random line.
+- [Side-by-Side Word Diff](https://www.openutilitytools.com/tools/text-word-ladder-diff/): Compare two texts and highlight word-level insertions and deletions inline.
+- [Slug Collision Disambiguator](https://www.openutilitytools.com/tools/text-text-to-slug-history/): Generate sequential unique slugs from a list, appending numeric suffixes on collision.
+- [Slugify](https://www.openutilitytools.com/tools/slugify/): Turn any text into a clean, URL-safe slug.
+- [Smart Quotes Converter](https://www.openutilitytools.com/tools/smart-quotes/): Convert straight quotes and apostrophes into typographic curly quotes, or convert curly quotes back to plain ASCII straight quotes.
+- [SMOG Readability Grade](https://www.openutilitytools.com/tools/smog-readability-grade/): Calculate the SMOG grade, the standard readability measure for healthcare and consumer text.
+- [Sort & Dedupe Lines](https://www.openutilitytools.com/tools/sort-lines/): Sort lines alphabetically, numerically, by length, reverse or shuffle — and dedupe.
+- [Sort Lines by Length](https://www.openutilitytools.com/tools/text-text-sort-by-length/): Reorder lines by character length, ascending or descending, with tie-breaking.
+- [Split Text Into Chunks](https://www.openutilitytools.com/tools/split-text-chunks/): Break text into fixed-size pieces by character count, word count, or line count, with optional numbered labels.
+- [Start Case Converter](https://www.openutilitytools.com/tools/start-case-converter/): Capitalize the first letter of every word while leaving the rest untouched, with optional separator normalization.
+- [Superscript & Subscript Text](https://www.openutilitytools.com/tools/superscript-subscript/): Convert text to Unicode superscript or subscript characters for inline chemistry/math notation.
+- [Template Placeholder Filler](https://www.openutilitytools.com/tools/text-template-placeholder-filler/): Fills {{name}}-style placeholders in a template using key=value pairs or a JSON object.
+- [Text Alignment & Padding](https://www.openutilitytools.com/tools/text-align-pad/): Pad or align each line to a fixed width, left, right, or centered, with a chosen fill character for tidy fixed-width columns.
+- [Text Case Statistics Report](https://www.openutilitytools.com/tools/text-case-statistics-report/): Counts uppercase, lowercase, digit, punctuation and whitespace characters and reports their percentages.
+- [Text Diff](https://www.openutilitytools.com/tools/text-diff/): Compare two texts line-by-line and highlight additions and removals.
+- [Text Statistics & Frequency](https://www.openutilitytools.com/tools/text-statistics/): Analyze word frequency, character distribution and readability of text.
+- [Text Truncator](https://www.openutilitytools.com/tools/text-truncator/): Truncate text or each line to a maximum length by characters or words, appending an ellipsis or custom suffix.
+- [Text Wrapper](https://www.openutilitytools.com/tools/text-wrap/): Hard-wrap text to a fixed column width, breaking on word boundaries, with optional hanging indent and break-long-word handling.
+- [Title Case Converter](https://www.openutilitytools.com/tools/title-case/): Apply proper headline title case following style rules that keep small words like a, an, and, the lowercase except as the first or last word.
+- [Trim & Strip Lines](https://www.openutilitytools.com/tools/trim-lines/): Remove leading/trailing whitespace, trailing whitespace only, or strip custom characters from each line.
+- [Unicode Inspector](https://www.openutilitytools.com/tools/unicode-inspector/): Break text into code points with hex, decimal, UTF-8 bytes and names.
+- [Username Handle Generator](https://www.openutilitytools.com/tools/text-text-to-handle-generator/): Turn a name or phrase into clean lowercase username/handle suggestions.
+- [Whitespace & Special Character Visualizer](https://www.openutilitytools.com/tools/whitespace-visualizer/): Reveal hidden spaces, tabs, and line endings by replacing them with visible glyphs.
+- [Whitespace Cleaner](https://www.openutilitytools.com/tools/whitespace-cleaner/): Trim lines, collapse spaces, strip blank lines, and normalize whitespace.
+- [Word & Character Count](https://www.openutilitytools.com/tools/word-count/): Live counts of words, characters, sentences, lines, and reading time.
+- [Word & Sentence Length Distribution](https://www.openutilitytools.com/tools/word-length-distribution/): Show how word lengths and sentence lengths are distributed across text.
+- [Word Frequency Counter](https://www.openutilitytools.com/tools/word-frequency/): Count how often each word appears and rank them by frequency, with options to ignore case and skip common stop words.
+- [Wrap Text Into Columns](https://www.openutilitytools.com/tools/text-to-columns/): Reflow a single stream of lines into multiple side-by-side newspaper-style columns.
+- [Zero-Width & Invisible Character Stripper](https://www.openutilitytools.com/tools/zero-width-char-stripper/): Detect and remove invisible zero-width and formatting characters from pasted text.

@@ -1,0 +1,108 @@
+# Data
+
+> JSON, CSV, YAML — format, validate, convert
+
+98 tools. Each runs entirely in the browser.
+
+Hub: https://www.openutilitytools.com/categories/data/
+
+## Tools
+
+- [ASCII Box Table from CSV](https://www.openutilitytools.com/tools/ascii-table-from-csv/): Render CSV as a bordered ASCII or Unicode box-drawing table for READMEs, code comments, and terminals.
+- [CSV Add Row Numbers](https://www.openutilitytools.com/tools/csv-add-row-numbers/): Prepend or append a sequential ID / row-number column to a CSV with a configurable start, step, padding, and prefix/suffix.
+- [CSV Column Math](https://www.openutilitytools.com/tools/csv-column-math/): Add a computed column to a CSV using an arithmetic expression over existing numeric columns, evaluated safely without eval.
+- [CSV Column Selector](https://www.openutilitytools.com/tools/csv-column-selector/): Keep, drop, or reorder CSV columns by header name or index.
+- [CSV Column Statistics](https://www.openutilitytools.com/tools/csv-column-stats/): Compute per-column statistics (type, count, nulls, distinct, min/max, mean, median, std-dev) for every column in a CSV.
+- [CSV Column Type Detector](https://www.openutilitytools.com/tools/data-csv-detect-types/): Infers each CSV column's data type (integer, float, boolean, date, string) from its values.
+- [CSV Deduplicate Rows](https://www.openutilitytools.com/tools/csv-dedupe/): Remove duplicate rows from CSV, either fully identical or matching on selected key columns.
+- [CSV Delimiter Converter](https://www.openutilitytools.com/tools/csv-delimiter-converter/): Re-delimit tabular data between comma, tab, semicolon, or pipe while preserving quoting.
+- [CSV Fill Blank Cells](https://www.openutilitytools.com/tools/csv-fill-blanks/): Fill empty cells in a CSV by forward-fill, back-fill, a constant value, or per-column mean/median.
+- [CSV Group-By Aggregator](https://www.openutilitytools.com/tools/data-csv-group-by-aggregate/): Group CSV rows by a column and compute count, sum, avg, min, and max on another.
+- [CSV Header Renamer](https://www.openutilitytools.com/tools/csv-rename-headers/): Rename, reorder, and apply naming-convention transforms to CSV column headers.
+- [CSV Merge Columns](https://www.openutilitytools.com/tools/csv-merge-columns/): Concatenate two or more CSV columns into a single column using a chosen separator and template.
+- [CSV Pivot Table Builder](https://www.openutilitytools.com/tools/csv-pivot-table/): Build a spreadsheet-style pivot table from CSV by choosing row, column, and value fields with an aggregation.
+- [CSV Row Filter](https://www.openutilitytools.com/tools/csv-filter-rows/): Keep or drop CSV rows that match conditions on chosen columns (equals, contains, regex, numeric ranges).
+- [CSV Row Sampler](https://www.openutilitytools.com/tools/csv-sample-rows/): Extract the first N, last N, every Nth, or a random sample of rows from a CSV.
+- [CSV Sorter](https://www.openutilitytools.com/tools/csv-sort/): Sort CSV rows by a chosen column with numeric/text mode and ascending or descending order.
+- [CSV Split Column](https://www.openutilitytools.com/tools/csv-split-column/): Split one CSV column into multiple columns on a delimiter, regex, or fixed character position.
+- [CSV to Fixed-Width](https://www.openutilitytools.com/tools/csv-to-fixed-width/): Convert CSV into fixed-width / column-aligned text with per-column widths and alignment.
+- [CSV to HTML Table](https://www.openutilitytools.com/tools/csv-to-html/): Convert CSV into a clean HTML table element with a header row, ready to paste into a page.
+- [CSV to JSON](https://www.openutilitytools.com/tools/csv-to-json/): Convert CSV (with header row) into a JSON array of objects.
+- [CSV to NDJSON](https://www.openutilitytools.com/tools/csv-to-ndjson/): Convert CSV with a header row into newline-delimited JSON (one JSON object per line).
+- [CSV to SQL INSERT](https://www.openutilitytools.com/tools/csv-to-sql/): Generate SQL INSERT statements from CSV with a configurable table name and quoting.
+- [CSV Transpose](https://www.openutilitytools.com/tools/csv-transpose/): Swap rows and columns of a CSV so the first column becomes the header row and vice versa.
+- [CSV Viewer](https://www.openutilitytools.com/tools/csv-viewer/): Paste CSV and view it as a sortable, searchable table.
+- [Delimited Column Reorder](https://www.openutilitytools.com/tools/data-tsv-column-reorder/): Reorders, drops, or duplicates columns in CSV/TSV data by index or header name.
+- [Fixed-Width to CSV](https://www.openutilitytools.com/tools/fixed-width-to-csv/): Parse fixed-width / column-aligned text into CSV by defining field widths or cut positions.
+- [HTML Table to CSV](https://www.openutilitytools.com/tools/html-table-to-csv/): Extract one or all <table> elements from pasted HTML into CSV.
+- [HTML Table to JSON](https://www.openutilitytools.com/tools/html-table-to-json/): Convert an HTML <table> into a JSON array of objects keyed by the header row.
+- [JSON Array Chunker](https://www.openutilitytools.com/tools/data-json-array-chunk/): Split a large JSON array into fixed-size chunks of smaller arrays.
+- [JSON Array Column Pluck](https://www.openutilitytools.com/tools/json-column-extractor/): Pluck one or more fields from each object in a JSON array.
+- [JSON Array Deduplicate](https://www.openutilitytools.com/tools/json-array-dedupe/): Remove duplicate elements from a JSON array, optionally by key.
+- [JSON Array of Objects to CSV (Explode)](https://www.openutilitytools.com/tools/data-json-to-csv-explode-array/): Converts a JSON array of objects to CSV, exploding nested objects into dotted columns.
+- [JSON Array to Lookup Map](https://www.openutilitytools.com/tools/json-array-to-key-value/): Convert a JSON array of objects into a keyed lookup object using one field as the key.
+- [JSON Array to Object](https://www.openutilitytools.com/tools/json-array-to-object/): Index a JSON array of objects into a keyed object/map.
+- [JSON Deep Clean](https://www.openutilitytools.com/tools/json-deep-clean/): Recursively strip null, empty, or falsy values from JSON.
+- [JSON Diff](https://www.openutilitytools.com/tools/json-diff/): Compare two JSON documents (normalized & sorted) and see the changes.
+- [JSON Dot-Path Get / Set](https://www.openutilitytools.com/tools/json-dot-path-get-set/): Get, set, or delete a value at a dot/bracket path in JSON.
+- [JSON Flatten / Unflatten](https://www.openutilitytools.com/tools/json-flatten/): Flatten nested JSON into dot-notation keys or rebuild nested objects from flattened keys.
+- [JSON Formatter](https://www.openutilitytools.com/tools/json-formatter/): Pretty-print, minify, and validate JSON with configurable indentation.
+- [JSON Key Case Converter](https://www.openutilitytools.com/tools/json-key-case-converter/): Recursively convert all JSON object keys to a chosen case.
+- [JSON Key Extractor](https://www.openutilitytools.com/tools/json-extract-keys/): List every unique key path in a JSON document, optionally with the inferred type of each.
+- [JSON Keys to CSV Header](https://www.openutilitytools.com/tools/json-to-csv-headers/): Derive a unified CSV/flat header row from JSON array of objects.
+- [JSON Lines Validator](https://www.openutilitytools.com/tools/data-jsonl-validate-lint/): Validates each line of an NDJSON/JSONL file as standalone JSON and reports line-level errors.
+- [JSON Merge](https://www.openutilitytools.com/tools/json-merge/): Deep-merge two JSON objects, with options for how arrays and conflicting keys are combined.
+- [JSON Merge Patch](https://www.openutilitytools.com/tools/json-merge-patch/): Apply an RFC 7386 JSON Merge Patch to a document.
+- [JSON Minify](https://www.openutilitytools.com/tools/json-minify/): Strip whitespace from JSON to produce the smallest valid output.
+- [JSON Nested Array Flattener](https://www.openutilitytools.com/tools/data-json-array-flatten-nested/): Flattens deeply nested JSON arrays into a single flat array to a chosen depth.
+- [JSON Patch Apply](https://www.openutilitytools.com/tools/json-patch-apply/): Apply an RFC 6902 JSON Patch to a JSON document.
+- [JSON Patch Generator](https://www.openutilitytools.com/tools/json-patch-diff/): Generate an RFC 6902 JSON Patch between two JSON documents.
+- [JSON Path Extractor](https://www.openutilitytools.com/tools/json-path-extractor/): Pull values out of JSON with a dot/bracket path like data.items[0].name.
+- [JSON Pointer Resolver](https://www.openutilitytools.com/tools/json-pointer-resolver/): Resolve an RFC 6901 JSON Pointer against a JSON document.
+- [JSON Query (JMESPath-lite)](https://www.openutilitytools.com/tools/jmespath-lite-query/): Query JSON with a JMESPath-style path and filter expression.
+- [JSON Repair](https://www.openutilitytools.com/tools/json-repair/): Fix broken JSON with single quotes, trailing commas, unquoted keys, and comments, then output valid JSON.
+- [JSON Schema Generator](https://www.openutilitytools.com/tools/json-to-json-schema/): Infer a JSON Schema (draft-07) from a sample JSON document with types and required fields.
+- [JSON Schema Sample Generator](https://www.openutilitytools.com/tools/json-schema-sample-generator/): Generate a sample JSON instance that satisfies a JSON Schema.
+- [JSON Sort Keys](https://www.openutilitytools.com/tools/json-sort-keys/): Recursively sort all object keys in a JSON document alphabetically.
+- [JSON String Escape / Unescape](https://www.openutilitytools.com/tools/json-escape/): Escape text into a JSON string literal, or unescape one back to raw text.
+- [JSON Stringify / Parse](https://www.openutilitytools.com/tools/json-stringify/): Turn raw text into an escaped JSON string literal, or parse a JSON string back to its raw value.
+- [JSON Structure Stats](https://www.openutilitytools.com/tools/json-stats-summary/): Summarize a JSON document's structure, depth, and type counts.
+- [JSON to .env](https://www.openutilitytools.com/tools/json-to-env/): Flatten a JSON object into dotenv KEY=VALUE lines.
+- [JSON to C# Class](https://www.openutilitytools.com/tools/json-to-csharp/): Generate C# classes with System.Text.Json attributes from JSON.
+- [JSON to CSV](https://www.openutilitytools.com/tools/json-to-csv/): Convert a JSON array of objects into CSV, with a chosen delimiter.
+- [JSON to Dart Class](https://www.openutilitytools.com/tools/json-to-dart/): Generate Dart classes with fromJson/toJson from a JSON sample.
+- [JSON to GraphQL Type](https://www.openutilitytools.com/tools/json-to-graphql-sdl/): Generate GraphQL SDL type definitions from a JSON sample.
+- [JSON to HCL / Terraform](https://www.openutilitytools.com/tools/json-to-hcl/): Convert a JSON object to HCL2 (Terraform-style) syntax.
+- [JSON to JSDoc Typedef](https://www.openutilitytools.com/tools/json-to-jsdoc-typedef/): Generate JSDoc @typedef comments from a JSON sample.
+- [JSON to Kotlin Data Class](https://www.openutilitytools.com/tools/json-to-kotlin/): Generate Kotlin data classes with kotlinx.serialization from JSON.
+- [JSON to Markdown Table](https://www.openutilitytools.com/tools/json-to-markdown-table/): Render an array of JSON objects as a GitHub-flavored Markdown table.
+- [JSON to Mongoose Schema](https://www.openutilitytools.com/tools/json-to-mongoose-schema/): Generate a Mongoose schema definition from a JSON sample.
+- [JSON to NDJSON / JSON Lines](https://www.openutilitytools.com/tools/json-to-ndjson/): Convert between a JSON array and newline-delimited JSON (NDJSON / JSON Lines).
+- [JSON to Protobuf](https://www.openutilitytools.com/tools/json-to-protobuf/): Generate a proto3 .proto message definition from a JSON sample.
+- [JSON to Pydantic Model](https://www.openutilitytools.com/tools/json-to-pydantic/): Generate Pydantic v2 BaseModel classes from a JSON sample.
+- [JSON to Python Dataclass](https://www.openutilitytools.com/tools/json-to-python-dataclass/): Generate Python @dataclass definitions from a JSON sample.
+- [JSON to Query String](https://www.openutilitytools.com/tools/json-to-query-string/): Convert a flat JSON object into a URL query string, with array and encoding options.
+- [JSON to Rust Structs](https://www.openutilitytools.com/tools/json-to-rust-serde/): Generate Rust structs with serde derives from a JSON sample.
+- [JSON to Swift Codable](https://www.openutilitytools.com/tools/json-to-swift-codable/): Generate Swift structs conforming to Codable from a JSON sample.
+- [JSON to TOML](https://www.openutilitytools.com/tools/json-to-toml/): Convert JSON into TOML config format with tables, arrays, and typed scalars.
+- [JSON to TypeScript](https://www.openutilitytools.com/tools/json-to-typescript/): Infer TypeScript interfaces from a JSON sample.
+- [JSON to Zod Schema](https://www.openutilitytools.com/tools/json-to-zod/): Generate a Zod validation schema from a JSON sample.
+- [JSON Tree Viewer](https://www.openutilitytools.com/tools/json-tree-viewer/): Explore JSON as a collapsible tree with type badges and value counts for large documents.
+- [JSON Validator](https://www.openutilitytools.com/tools/json-validator/): Validate JSON and pinpoint the exact line, column, and reason for any syntax error.
+- [JSONC / JSON5 to JSON](https://www.openutilitytools.com/tools/jsonc-to-json/): Strip comments and trailing commas from JSONC or JSON5 to produce strict, valid JSON.
+- [JSONL Record Deduplicator](https://www.openutilitytools.com/tools/data-jsonl-deduplicate/): Remove duplicate JSON objects from JSON Lines input, optionally keyed by selected fields.
+- [Markdown Front Matter Extractor](https://www.openutilitytools.com/tools/data-yaml-frontmatter-extractor/): Splits Markdown into its YAML/TOML front matter and body, and parses the front matter to JSON.
+- [Markdown Table Formatter](https://www.openutilitytools.com/tools/markdown-table-formatter/): Reformat a messy Markdown table into clean column-aligned pipes with chosen alignment.
+- [Markdown Table to JSON](https://www.openutilitytools.com/tools/markdown-table-to-json/): Convert a Markdown table into a JSON array of objects keyed by the header row.
+- [NDJSON Field Filter](https://www.openutilitytools.com/tools/ndjson-field-filter/): Select, drop, or rename fields across NDJSON records.
+- [NDJSON to CSV](https://www.openutilitytools.com/tools/ndjson-to-csv/): Convert newline-delimited JSON objects into a CSV table with a unified header.
+- [NDJSON to JSON Array](https://www.openutilitytools.com/tools/ndjson-to-json-array/): Convert NDJSON / JSON Lines to a single JSON array and back.
+- [Nested JSON to Flat CSV](https://www.openutilitytools.com/tools/data-json-to-csv-flat-nested/): Flatten an array of nested JSON objects into CSV using dot-path column headers.
+- [SQL CREATE TABLE from CSV](https://www.openutilitytools.com/tools/sql-create-table-from-csv/): Generate a CREATE TABLE statement (with inferred column types) from a CSV header and sample rows.
+- [SQL CREATE TABLE from JSON](https://www.openutilitytools.com/tools/sql-create-table-from-json/): Generate a CREATE TABLE statement by inferring columns and types from a JSON array of objects.
+- [SQL Formatter](https://www.openutilitytools.com/tools/sql-formatter/): Format and indent SQL queries with keyword casing.
+- [SQL INSERT from JSON](https://www.openutilitytools.com/tools/sql-insert-from-json/): Generate INSERT statements from a JSON array of objects with type-aware value quoting.
+- [SQL SELECT Builder](https://www.openutilitytools.com/tools/sql-select-builder/): Visually build a SELECT query with columns, WHERE conditions, ORDER BY, and LIMIT, then copy the SQL.
+- [SQL UPDATE Builder](https://www.openutilitytools.com/tools/sql-update-builder/): Build a safe parameterized UPDATE statement from column=value pairs and WHERE conditions.
+- [TSV to Markdown Table](https://www.openutilitytools.com/tools/data-tsv-to-markdown-table/): Convert tab-separated values into a GitHub-flavored Markdown table.
+- [YAML Anchor & Alias Expander](https://www.openutilitytools.com/tools/data-yaml-anchor-expander/): Resolve YAML anchors and aliases by inlining their referenced values.
