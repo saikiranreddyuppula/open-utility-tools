@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Switch } from '@/components/ui/switch';
+import { Label } from '@/components/ui/label';
 import {
   Select,
   SelectContent,
@@ -17,11 +19,14 @@ import { ErrorBanner } from '@/components/tools/error-banner';
 import { hmacHex, type HmacAlgo } from '@/lib/wasm/core';
 
 const ALGOS: HmacAlgo[] = ['sha1', 'sha256', 'sha384', 'sha512'];
+type PayloadType = 'text' | 'json';
 
 export default function HmacGeneratorTool() {
   const [algo, setAlgo] = useState<HmacAlgo>('sha256');
   const [key, setKey] = useState('');
   const [message, setMessage] = useState('');
+  const [payloadType, setPayloadType] = useState<PayloadType>('text');
+  const [stringify, setStringify] = useState(true);
   const [out, setOut] = useState('');
   const [error, setError] = useState<string | null>(null);
 
@@ -32,7 +37,20 @@ export default function HmacGeneratorTool() {
       setError(null);
       return;
     }
-    hmacHex(algo, key, message)
+
+    let payload = message;
+    if (payloadType === 'json' && message.trim()) {
+      try {
+        const parsed = JSON.parse(message);
+        if (stringify) payload = JSON.stringify(parsed);
+      } catch (e) {
+        setOut('');
+        setError(`Invalid JSON: ${e instanceof Error ? e.message : String(e)}`);
+        return;
+      }
+    }
+
+    hmacHex(algo, key, payload)
       .then((r) => {
         if (!cancelled) {
           setOut(r);
@@ -45,7 +63,7 @@ export default function HmacGeneratorTool() {
     return () => {
       cancelled = true;
     };
-  }, [algo, key, message]);
+  }, [algo, key, message, payloadType, stringify]);
 
   return (
     <div className="flex flex-col gap-3">
@@ -72,14 +90,35 @@ export default function HmacGeneratorTool() {
             className="font-mono"
           />
         </Field>
+        <Field label="Payload">
+          <Select value={payloadType} onValueChange={(v) => setPayloadType(v as PayloadType)}>
+            <SelectTrigger className="w-24">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="text">Text</SelectItem>
+              <SelectItem value="json">JSON</SelectItem>
+            </SelectContent>
+          </Select>
+        </Field>
+        {payloadType === 'json' && (
+          <Field label="Stringify">
+            <div className="flex h-8 items-center gap-2">
+              <Switch id="stringify" checked={stringify} onCheckedChange={setStringify} />
+              <Label htmlFor="stringify" className="text-xs text-muted-foreground">
+                JSON.stringify
+              </Label>
+            </div>
+          </Field>
+        )}
       </OptionsBar>
 
       <Panel>
-        <PanelHeader title="Message" />
+        <PanelHeader title={payloadType === 'json' ? 'JSON Payload' : 'Message'} />
         <Textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Message to authenticate…"
+          placeholder={payloadType === 'json' ? '{"key": "value"}' : 'Message to authenticate…'}
           spellCheck={false}
           className="min-h-28 resize-y rounded-none border-0 bg-transparent font-mono shadow-none focus-visible:ring-0 dark:bg-transparent"
         />
