@@ -2,7 +2,7 @@
 
 > Timestamps, timezones, durations
 
-56 tools. Each runs entirely in the browser.
+58 tools. Each runs entirely in the browser.
 
 Hub: https://www.openutilitytools.com/categories/time/
 
@@ -15,6 +15,7 @@ Hub: https://www.openutilitytools.com/categories/time/
 - [Batch Timestamp Converter](https://www.openutilitytools.com/tools/timestamp-batch-converter/): Convert a pasted list of Unix timestamps to human dates (or dates back to timestamps) in bulk.
 - [Business Days Calculator](https://www.openutilitytools.com/tools/business-days-calculator/): Count working days between two dates, excluding weekends, or add a number of business days to a start date.
 - [Clock Time Difference](https://www.openutilitytools.com/tools/time-between-clocks/): Compute the duration between two times of day, optionally wrapping past midnight.
+- [Countdown & Pomodoro Timer](https://www.openutilitytools.com/tools/pomodoro-countdown-timer/): A countdown timer, Pomodoro timer and interval (Tabata) timer with progress ring, sound, desktop notifications and keep-awake, all in your browser.
 - [Countdown Snapshot Builder](https://www.openutilitytools.com/tools/countdown-timer-builder/): Compute the exact remaining time from now to a target datetime, broken into units.
 - [Cron Expression Builder](https://www.openutilitytools.com/tools/cron-builder/): Build a standard cron expression from dropdowns for minute, hour, day, month, and weekday with a human-readable preview.
 - [Cron Expression Explainer](https://www.openutilitytools.com/tools/cron-parser/): Explain a cron expression in plain English and preview the next run times.
@@ -49,6 +50,7 @@ Hub: https://www.openutilitytools.com/categories/time/
 - [Recurring Event Date Generator](https://www.openutilitytools.com/tools/recurring-event-dates/): Generate the next N dates for a simple recurrence (daily, weekly, monthly, yearly with interval).
 - [Relative Time Formatter](https://www.openutilitytools.com/tools/relative-time-formatter/): Turn a timestamp or date into human-friendly relative phrasing like '3 hours ago' or 'in 2 days' across locales.
 - [SMPTE Timecode / Frames Converter](https://www.openutilitytools.com/tools/time-timecode-frames-converter/): Converts between SMPTE timecode (HH:MM:SS:FF) and total frame counts at a chosen frame rate.
+- [Stopwatch & Lap Timer](https://www.openutilitytools.com/tools/stopwatch-lap-timer/): A precise online stopwatch with lap and split times, best and worst lap highlighting, fullscreen mode, keyboard shortcuts and CSV export.
 - [strftime Format Playground](https://www.openutilitytools.com/tools/strftime-playground/): Apply a C/Python strftime format string to a chosen datetime and see the rendered output live.
 - [Time Duration Arithmetic](https://www.openutilitytools.com/tools/time-time-duration-arithmetic/): Adds and subtracts a list of HH:MM:SS durations and shows the running and total result.
 - [Time Epoch Rollover Checker](https://www.openutilitytools.com/tools/unix-rollover-checker/): Show key time-storage overflow dates (Year 2038, 2-digit Y2K, 32-bit, 64-bit limits).

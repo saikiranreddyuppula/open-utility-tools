@@ -2,7 +2,7 @@
 
 > Hashes, HMAC, JWT, keys & ciphers
 
-68 tools. Each runs entirely in the browser.
+72 tools. Each runs entirely in the browser.
 
 Hub: https://www.openutilitytools.com/categories/crypto/
 
@@ -16,6 +16,7 @@ Hub: https://www.openutilitytools.com/categories/crypto/
 - [AES-GCM File Encrypt/Decrypt](https://www.openutilitytools.com/tools/aes-gcm-file/): Encrypt or decrypt a chosen file in-browser with AES-GCM using a passphrase.
 - [API Key + Secret Generator](https://www.openutilitytools.com/tools/api-key-pair-generator/): Generate matched public key ID and secret pairs with prefixes and a derived checksum.
 - [Argon2 Parameter Advisor](https://www.openutilitytools.com/tools/crypto-argon2-params-advisor/): Recommend Argon2id memory, iteration, and parallelism parameters for a target environment.
+- [ASN.1 Decoder & Certificate Parser](https://www.openutilitytools.com/tools/asn1-der-decoder/): Decode any ASN.1 DER/BER data (PEM, Base64, hex or file) into an interactive tree with a synced hex dump, plus smart summaries for X.509 certificates, CSRs, keys and PKCS#7 bundles.
 - [Australian BSB Lookup](https://www.openutilitytools.com/tools/bsb-validator/): Validate and parse an Australian Bank State Branch (BSB) number into bank, state, and branch.
 - [Base64url JWK Field Encoder](https://www.openutilitytools.com/tools/base64url-jwk-encoder/): Convert between Base64url and big-integer/byte values for hand-editing JWK fields.
 - [Bcrypt Cost Estimator](https://www.openutilitytools.com/tools/crypto-bcrypt-cost-benchmark/): Estimate bcrypt hashing time for each cost factor and recommend a target work factor.
@@ -58,12 +59,15 @@ Hub: https://www.openutilitytools.com/categories/crypto/
 - [Password Generator](https://www.openutilitytools.com/tools/password-generator/): Generate strong random passwords or diceware passphrases, locally.
 - [Password Strength Checker](https://www.openutilitytools.com/tools/password-strength-checker/): Score a password using composition rules and common-pattern detection with actionable feedback.
 - [PBKDF2 Key Derivation](https://www.openutilitytools.com/tools/pbkdf2-key-derivation/): Derive a key from a passphrase and salt using PBKDF2 with configurable iterations and hash.
+- [PEM Key Converter & Key Matcher](https://www.openutilitytools.com/tools/pem-key-format-converter/): Convert RSA, EC and Ed25519 keys between PKCS#1, PKCS#8, SEC1, SPKI, OpenSSH, DER, Base64 and JWK, decrypt password-protected keys, repair mangled PEM and check that a certificate, key and CSR match.
 - [Random Bytes Generator](https://www.openutilitytools.com/tools/random-bytes-generator/): Generate cryptographically secure random bytes as hex, Base64, Base64URL, or a C-style byte array of a chosen length.
 - [Random Token Generator (Formats)](https://www.openutilitytools.com/tools/random-token-formats/): Generate cryptographically random tokens in many developer formats (hex, base64url, Base32, API-key style) with prefixes and grouping.
 - [ROT47 Encoder](https://www.openutilitytools.com/tools/rot47-encoder/): Encode or decode text with ROT47, the printable-ASCII rotation cipher (its own inverse).
 - [RSA / ECC Key Strength Comparator](https://www.openutilitytools.com/tools/crypto-rsa-key-size-strength/): Compare RSA, ECC, and symmetric key sizes by equivalent bits of security.
 - [RSA Key Pair Generator](https://www.openutilitytools.com/tools/rsa-keypair-generator/): Generate an RSA public/private key pair in PEM format with selectable key size (2048/3072/4096) and hash.
 - [RSA Sign & Verify](https://www.openutilitytools.com/tools/rsa-sign-verify/): Sign messages with an RSA private key and verify signatures with a public key (RSASSA-PKCS1 / PSS).
+- [Secret Scanner & Redactor](https://www.openutilitytools.com/tools/secret-scanner-redactor/): Scan pasted code, logs, configs, diffs or .env files for leaked API keys, tokens, passwords and private keys, then copy a redacted version that is safe to share.
+- [Self-Signed Certificate & CSR Generator](https://www.openutilitytools.com/tools/self-signed-certificate-generator/): Generate a self-signed X.509 certificate, a PKCS#10 CSR, or a local CA with a signed leaf certificate (mkcert-style) with SANs, key usage and ECDSA, RSA or Ed25519 keys - entirely in your browser.
 - [SHA Multi-Hash (Text)](https://www.openutilitytools.com/tools/sha-multi-hash-text/): Compute SHA-1, SHA-256, SHA-384, and SHA-512 digests of pasted text simultaneously.
 - [SHA-3 / Keccak Hash](https://www.openutilitytools.com/tools/crypto-sha3-keccak-hash/): Computes SHA3-224/256/384/512 and Keccak-256 hashes of text using a pure JS implementation.
 - [Shamir Secret Sharing](https://www.openutilitytools.com/tools/shamir-secret-sharing/): Split a secret into N shares requiring K to reconstruct, using finite-field polynomial interpolation.

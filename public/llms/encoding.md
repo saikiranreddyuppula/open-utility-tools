@@ -2,7 +2,7 @@
 
 > Base64, hex, URL, compression & more
 
-54 tools. Each runs entirely in the browser.
+56 tools. Each runs entirely in the browser.
 
 Hub: https://www.openutilitytools.com/categories/encoding/
 
@@ -33,11 +33,13 @@ Hub: https://www.openutilitytools.com/categories/encoding/
 - [CSV Field Escaper / Unescaper](https://www.openutilitytools.com/tools/encoding-csv-field-escape/): Escape a single value for safe CSV embedding (RFC 4180 quoting) and unescape a CSV field.
 - [Gzip Base64 Compress / Decompress](https://www.openutilitytools.com/tools/encoding-gzip-base64/): Compress text with gzip and output Base64, or decode Base64 gzip back to the original text.
 - [Hex Encode / Decode](https://www.openutilitytools.com/tools/hex-text/): Convert text to hexadecimal and back, with optional uppercase.
+- [Hex Viewer & File Type Detector](https://www.openutilitytools.com/tools/hex-viewer-file-type-detector/): Open any file (up to multiple GB) in a fast hex editor-style viewer, identify its real type from magic bytes, inspect values as ints and floats, search bytes or text, and see where the data looks compressed or encrypted.
 - [HTML Entity Encode / Decode](https://www.openutilitytools.com/tools/html-entities/): Escape text to HTML entities and unescape entities back to text.
 - [HTML Named ↔ Numeric Entity Converter](https://www.openutilitytools.com/tools/encoding-html-named-numeric/): Convert HTML named entities to and from their decimal and hexadecimal numeric character references, both ways.
 - [JavaScript String Escaper / Unescaper](https://www.openutilitytools.com/tools/encoding-js-string-escape/): Escape arbitrary text into a safe JS string literal and unescape it back.
 - [JSON Pointer Escaper (RFC 6901)](https://www.openutilitytools.com/tools/encoding-json-pointer-escape/): Encode and decode JSON Pointer reference tokens with the ~0/~1 escape rules.
 - [JWT Decoder & Inspector](https://www.openutilitytools.com/tools/encoding-jwt-inspector/): Decode a JSON Web Token into its readable header and payload claims, with human-friendly timestamps for exp/iat/nbf.
+- [Magic Decoder (Auto-Detect Encoding)](https://www.openutilitytools.com/tools/magic-decoder/): Paste an unknown blob and automatically find the chain of decodings (Base64, hex, gzip, URL, ROT13, UTF-16 and more) that turns it into readable text or a recognisable file.
 - [Numeric HTML Character References](https://www.openutilitytools.com/tools/encoding-numeric-char-references/): Convert text into numeric HTML character references (decimal or hex) and decode them back to plain text.
 - [Octal Encode / Decode](https://www.openutilitytools.com/tools/encoding-octal-text/): Encode UTF-8 text to space-separated octal byte values or decode octal numbers back into readable text.
 - [Percent-Encoding Reference Table](https://www.openutilitytools.com/tools/encoding-percent-encoding-table/): Searchable table of percent-encoded (%XX) values for ASCII and common reserved characters.

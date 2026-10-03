@@ -2,7 +2,7 @@
 
 > JSON, CSV, YAML — format, validate, convert
 
-98 tools. Each runs entirely in the browser.
+103 tools. Each runs entirely in the browser.
 
 Hub: https://www.openutilitytools.com/categories/data/
 
@@ -16,6 +16,7 @@ Hub: https://www.openutilitytools.com/categories/data/
 - [CSV Column Type Detector](https://www.openutilitytools.com/tools/data-csv-detect-types/): Infers each CSV column's data type (integer, float, boolean, date, string) from its values.
 - [CSV Deduplicate Rows](https://www.openutilitytools.com/tools/csv-dedupe/): Remove duplicate rows from CSV, either fully identical or matching on selected key columns.
 - [CSV Delimiter Converter](https://www.openutilitytools.com/tools/csv-delimiter-converter/): Re-delimit tabular data between comma, tab, semicolon, or pipe while preserving quoting.
+- [CSV Diff (Compare Two CSVs)](https://www.openutilitytools.com/tools/csv-diff-compare/): Compare two CSV files by key columns or row position and see added, removed and changed rows and cells, with options for case, whitespace, numbers and column order.
 - [CSV Fill Blank Cells](https://www.openutilitytools.com/tools/csv-fill-blanks/): Fill empty cells in a CSV by forward-fill, back-fill, a constant value, or per-column mean/median.
 - [CSV Group-By Aggregator](https://www.openutilitytools.com/tools/data-csv-group-by-aggregate/): Group CSV rows by a column and compute count, sum, avg, min, and max on another.
 - [CSV Header Renamer](https://www.openutilitytools.com/tools/csv-rename-headers/): Rename, reorder, and apply naming-convention transforms to CSV column headers.
@@ -33,6 +34,7 @@ Hub: https://www.openutilitytools.com/categories/data/
 - [CSV Transpose](https://www.openutilitytools.com/tools/csv-transpose/): Swap rows and columns of a CSV so the first column becomes the header row and vice versa.
 - [CSV Viewer](https://www.openutilitytools.com/tools/csv-viewer/): Paste CSV and view it as a sortable, searchable table.
 - [Delimited Column Reorder](https://www.openutilitytools.com/tools/data-tsv-column-reorder/): Reorders, drops, or duplicates columns in CSV/TSV data by index or header name.
+- [File Metadata Viewer](https://www.openutilitytools.com/tools/file-metadata-viewer/): Inspect the hidden metadata of any file — photos, PDFs, Office docs, audio, video, fonts, archives and more — privately in your browser.
 - [Fixed-Width to CSV](https://www.openutilitytools.com/tools/fixed-width-to-csv/): Parse fixed-width / column-aligned text into CSV by defining field widths or cut positions.
 - [HTML Table to CSV](https://www.openutilitytools.com/tools/html-table-to-csv/): Extract one or all <table> elements from pasted HTML into CSV.
 - [HTML Table to JSON](https://www.openutilitytools.com/tools/html-table-to-json/): Convert an HTML <table> into a JSON array of objects keyed by the header row.
@@ -63,6 +65,7 @@ Hub: https://www.openutilitytools.com/categories/data/
 - [JSON Repair](https://www.openutilitytools.com/tools/json-repair/): Fix broken JSON with single quotes, trailing commas, unquoted keys, and comments, then output valid JSON.
 - [JSON Schema Generator](https://www.openutilitytools.com/tools/json-to-json-schema/): Infer a JSON Schema (draft-07) from a sample JSON document with types and required fields.
 - [JSON Schema Sample Generator](https://www.openutilitytools.com/tools/json-schema-sample-generator/): Generate a sample JSON instance that satisfies a JSON Schema.
+- [JSON Schema Validator](https://www.openutilitytools.com/tools/json-schema-validator/): Validate a JSON document against a JSON Schema (Draft-07, 2019-09 or 2020-12) and see every error with its instance path, schema path and a readable message.
 - [JSON Sort Keys](https://www.openutilitytools.com/tools/json-sort-keys/): Recursively sort all object keys in a JSON document alphabetically.
 - [JSON String Escape / Unescape](https://www.openutilitytools.com/tools/json-escape/): Escape text into a JSON string literal, or unescape one back to raw text.
 - [JSON Stringify / Parse](https://www.openutilitytools.com/tools/json-stringify/): Turn raw text into an escaped JSON string literal, or parse a JSON string back to its raw value.
@@ -105,4 +108,6 @@ Hub: https://www.openutilitytools.com/categories/data/
 - [SQL SELECT Builder](https://www.openutilitytools.com/tools/sql-select-builder/): Visually build a SELECT query with columns, WHERE conditions, ORDER BY, and LIMIT, then copy the SQL.
 - [SQL UPDATE Builder](https://www.openutilitytools.com/tools/sql-update-builder/): Build a safe parameterized UPDATE statement from column=value pairs and WHERE conditions.
 - [TSV to Markdown Table](https://www.openutilitytools.com/tools/data-tsv-to-markdown-table/): Convert tab-separated values into a GitHub-flavored Markdown table.
+- [Web Server Log Analyzer](https://www.openutilitytools.com/tools/web-server-log-analyzer/): Analyze nginx, Apache, JSON, logfmt and AWS ALB access logs in your browser: traffic over time, top IPs and paths, errors, bots, latency percentiles and suspicious requests, with filters and CSV/JSON export.
 - [YAML Anchor & Alias Expander](https://www.openutilitytools.com/tools/data-yaml-anchor-expander/): Resolve YAML anchors and aliases by inlining their referenced values.
+- [YAML Validator & Formatter](https://www.openutilitytools.com/tools/yaml-validator-formatter/): Validate YAML 1.2 with line and column errors, lint for gotchas like the Norway problem, then reformat with your indentation, quoting and wrapping and view the parsed JSON.

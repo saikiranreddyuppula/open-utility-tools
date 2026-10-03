@@ -2,7 +2,7 @@
 
 > Convert, resize, compress & inspect images
 
-43 tools. Each runs entirely in the browser.
+48 tools. Each runs entirely in the browser.
 
 Hub: https://www.openutilitytools.com/categories/image/
 
@@ -19,6 +19,7 @@ Hub: https://www.openutilitytools.com/categories/image/
 - [Duotone Effect](https://www.openutilitytools.com/tools/image-duotone/): Map an image's shadows and highlights to two custom colors (duotone).
 - [EXIF Metadata Viewer](https://www.openutilitytools.com/tools/image-exif-viewer/): View EXIF/JFIF metadata embedded in a JPEG (camera, exposure, GPS) without uploading.
 - [Favicon Set Generator](https://www.openutilitytools.com/tools/image-favicon-generator/): Generate favicon PNGs at standard sizes (16-512px) from one image plus the HTML link tags.
+- [GIF Maker](https://www.openutilitytools.com/tools/gif-maker/): Create animated GIFs from images or a short video clip, with frame delays, looping, ping-pong, dithering and size optimisation.
 - [Gradient SVG / PNG Generator](https://www.openutilitytools.com/tools/image-gradient-svg-generator/): Create linear/radial multi-stop gradients and export as SVG, PNG, or CSS.
 - [Image Blur](https://www.openutilitytools.com/tools/image-gaussian-blur/): Apply an adjustable blur to an image using the canvas blur filter.
 - [Image Contact Sheet Builder](https://www.openutilitytools.com/tools/image-contact-sheet-builder/): Arranges multiple uploaded images into a single grid contact sheet PNG.
@@ -26,19 +27,23 @@ Hub: https://www.openutilitytools.com/categories/image/
 - [Image Fit/Cover Box Calculator](https://www.openutilitytools.com/tools/image-aspect-fit-cover-calculator/): Computes the rendered size and offsets for an image placed in a box with contain or cover fit.
 - [Image Grid & Guide Overlay](https://www.openutilitytools.com/tools/image-canvas-grid-overlay/): Overlays a rule-of-thirds, pixel grid, or custom guides onto an uploaded image.
 - [Image Histogram](https://www.openutilitytools.com/tools/image-histogram/): Plot RGB and luminance histograms of an image on a canvas.
+- [Image Metadata Remover](https://www.openutilitytools.com/tools/image-metadata-remover/): Strip EXIF, GPS, XMP, IPTC and text metadata from JPEG, PNG and WebP photos without re-encoding — see exactly what was hidden in the file, then download clean copies.
 - [Image Palette Extractor](https://www.openutilitytools.com/tools/image-palette-extractor/): Extract a balanced N-color palette from an image via median-cut quantization.
 - [Image Resizer (Pixels & Percent)](https://www.openutilitytools.com/tools/image-resize-pixels/): Resize an image to exact pixel dimensions or by percentage, with optional aspect-lock.
 - [Image Sprite Sheet Merger](https://www.openutilitytools.com/tools/image-sprite-merger/): Combine several images into one sprite sheet with a CSS/JSON coordinate map.
 - [Image to ASCII Art](https://www.openutilitytools.com/tools/image-to-ascii-art/): Convert an image into monospace ASCII (or block) art with adjustable width.
 - [Image to Base64](https://www.openutilitytools.com/tools/image-to-base64/): Encode an image to a Base64 data-URI for inline use in CSS/HTML/JSON.
 - [Image to Data URI (CSS/HTML/JSX)](https://www.openutilitytools.com/tools/image-to-data-uri-variants/): Encode an image as a base64 data URI and wrap it for CSS, HTML img, Markdown, or JSX.
+- [Image to SVG (Vectorizer)](https://www.openutilitytools.com/tools/image-to-svg-tracer/): Trace logos, icons, signatures and line art into clean SVG paths, in black and white or in up to 16 colours, with curve fitting and speckle removal.
 - [Invert Colors (Negative)](https://www.openutilitytools.com/tools/image-invert-colors/): Create a photographic negative by inverting every pixel's RGB values.
 - [JPEG/WebP Compressor](https://www.openutilitytools.com/tools/image-compress-quality/): Reduce image file size with a quality slider and live before/after byte comparison.
+- [Make Background Transparent](https://www.openutilitytools.com/tools/image-make-transparent/): Remove a solid background colour (white product shots, logos, signatures) with a magic-wand style picker, tolerance, soft edges and defringe — then export a transparent PNG or WebP.
 - [Meme Caption Maker](https://www.openutilitytools.com/tools/image-meme-text/): Add classic top/bottom Impact-style caption text to an image.
 - [Mirror & Reflection Collage](https://www.openutilitytools.com/tools/image-mirror-collage/): Create symmetric mirror collages (2-up, 4-up kaleidoscope) from one image.
 - [Noise & Grain SVG Generator](https://www.openutilitytools.com/tools/image-noise-texture-svg/): Generate a tileable fractal-noise/grain texture as an inline SVG or PNG.
 - [Pixel Ruler & Color Probe](https://www.openutilitytools.com/tools/image-pixel-ruler/): Measure pixel distances and read pixel colors by clicking on a loaded image.
 - [Pixelate / Mosaic](https://www.openutilitytools.com/tools/image-pixelate/): Pixelate an image (or simulate censoring) with an adjustable block size.
+- [PNG Compressor](https://www.openutilitytools.com/tools/image-png-compressor/): Shrink PNG files up to 80% with TinyPNG-style palette quantization or lossless re-encoding — batch, side-by-side preview and ZIP download, all in your browser.
 - [Resize to Target File Size](https://www.openutilitytools.com/tools/image-resize-to-filesize/): Iteratively re-encode an image to land under a target KB limit (e.g. for upload limits).
 - [RGB Channel Splitter](https://www.openutilitytools.com/tools/image-rgb-channel-split/): Split an image into separate red, green, blue, and alpha channel images.
 - [Rotate & Flip Image](https://www.openutilitytools.com/tools/image-rotate-flip/): Rotate an image 90/180/270 degrees or by a free angle and flip horizontally/vertically.

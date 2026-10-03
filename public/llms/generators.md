@@ -2,7 +2,7 @@
 
 > UUIDs, passwords, QR, fake data
 
-70 tools. Each runs entirely in the browser.
+72 tools. Each runs entirely in the browser.
 
 Hub: https://www.openutilitytools.com/categories/generators/
 
@@ -14,6 +14,7 @@ Hub: https://www.openutilitytools.com/categories/generators/
 - [API Key Generator](https://www.openutilitytools.com/tools/api-key-generator/): Generate prefixed, secret-style API keys in common SaaS formats.
 - [Barcode Generator](https://www.openutilitytools.com/tools/generate-barcode/): Generate Code 39 and EAN-13 barcodes from input text/digits, rendered to a downloadable SVG/PNG with adjustable bar width and height.
 - [BIC / SWIFT Code Test Generator](https://www.openutilitytools.com/tools/bic-swift-test-generator/): Generate structurally valid test BIC/SWIFT codes (8 or 11 chars) with bank, country, location, branch parts.
+- [Calendar Event (.ics) Generator](https://www.openutilitytools.com/tools/ics-event-generator/): Build RFC 5545 iCalendar (.ics) files with time zones, recurrence, reminders and attendees, and get Google, Outlook and Yahoo add-to-calendar links.
 - [Credit Card Number Generator](https://www.openutilitytools.com/tools/generate-credit-card/): Generate Luhn-valid fake test card numbers by brand (Visa, Mastercard, Amex, Discover) with optional expiry and CVV, for payment-form testing only.
 - [Cron Schedule Builder](https://www.openutilitytools.com/tools/generate-cron-expression/): Build a cron expression from human-friendly schedule controls (minute, hour, day, month, weekday) and see a plain-English description of when it runs.
 - [Crontab Recipe Generator](https://www.openutilitytools.com/tools/crontab-recipe-generator/): Generate a full crontab file with multiple jobs, schedule presets, env lines, and human comments.
@@ -51,6 +52,7 @@ Hub: https://www.openutilitytools.com/categories/generators/
 - [PIN Code Generator](https://www.openutilitytools.com/tools/generate-pin/): Generate random numeric PIN codes of a chosen length (e.g. 4/6/8 digits) in bulk, with an option to avoid trivial sequences and repeats.
 - [Placeholder Image Generator](https://www.openutilitytools.com/tools/generate-placeholder-image/): Generate downloadable placeholder images at a chosen size, background/text color, and label text, drawn on a canvas as a data URL for mockups.
 - [Pronounceable Password Generator](https://www.openutilitytools.com/tools/pronounceable-password-generator/): Generate pronounceable passwords by alternating consonant and vowel patterns.
+- [QR Code Generator](https://www.openutilitytools.com/tools/qr-code-generator/): Create QR codes for URLs, text, Wi-Fi, email, phone, SMS, contacts and locations with styling, a centre logo, and PNG or SVG download.
 - [Random Color Palette Generator](https://www.openutilitytools.com/tools/random-hex-color-palette/): Generate harmonious random color palettes in HEX/RGB/HSL using HSL-based schemes.
 - [Random Coordinates Generator](https://www.openutilitytools.com/tools/random-coordinates-generator/): Generate random latitude/longitude points, optionally constrained to a bounding box.
 - [Random Date Generator](https://www.openutilitytools.com/tools/generate-random-date/): Generate random dates and times between a start and end bound, with chosen output format (ISO, locale, Unix timestamp) and quantity for seeding data.
