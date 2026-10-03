@@ -1,6 +1,35 @@
 /* @ts-self-types="./pdf.d.ts" */
 
 /**
+ * Remove encryption using the user or owner password.
+ * @param {Uint8Array} bytes
+ * @param {string} password
+ * @returns {Uint8Array}
+ */
+export function decrypt_pdf(bytes, password) {
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        const ptr1 = passStringToWasm0(password, wasm.__wbindgen_export3, wasm.__wbindgen_export4);
+        const len1 = WASM_VECTOR_LEN;
+        wasm.decrypt_pdf(retptr, ptr0, len0, ptr1, len1);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        if (r3) {
+            throw takeObject(r2);
+        }
+        var v3 = getArrayU8FromWasm0(r0, r1).slice();
+        wasm.__wbindgen_export(r0, r1 * 1, 1);
+        return v3;
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
  * Delete the pages selected by `spec`; return new PDF.
  * @param {Uint8Array} bytes
  * @param {string} spec
@@ -24,6 +53,40 @@ export function delete_pages(bytes, spec) {
         var v3 = getArrayU8FromWasm0(r0, r1).slice();
         wasm.__wbindgen_export(r0, r1 * 1, 1);
         return v3;
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
+ * Encrypt with the standard security handler (AES-128 R4, or AES-256 R6).
+ * @param {Uint8Array} bytes
+ * @param {string} user_pw
+ * @param {string} owner_pw
+ * @param {number} permissions
+ * @param {boolean} aes256
+ * @returns {Uint8Array}
+ */
+export function encrypt_pdf(bytes, user_pw, owner_pw, permissions, aes256) {
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        const ptr1 = passStringToWasm0(user_pw, wasm.__wbindgen_export3, wasm.__wbindgen_export4);
+        const len1 = WASM_VECTOR_LEN;
+        const ptr2 = passStringToWasm0(owner_pw, wasm.__wbindgen_export3, wasm.__wbindgen_export4);
+        const len2 = WASM_VECTOR_LEN;
+        wasm.encrypt_pdf(retptr, ptr0, len0, ptr1, len1, ptr2, len2, permissions, aes256);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        if (r3) {
+            throw takeObject(r2);
+        }
+        var v4 = getArrayU8FromWasm0(r0, r1).slice();
+        wasm.__wbindgen_export(r0, r1 * 1, 1);
+        return v4;
     } finally {
         wasm.__wbindgen_add_to_stack_pointer(16);
     }
@@ -59,6 +122,123 @@ export function extract_pages(bytes, spec) {
 }
 
 /**
+ * JSON `[{page, text}]` for the selected pages (empty spec = all).
+ * @param {Uint8Array} bytes
+ * @param {string} spec
+ * @returns {string}
+ */
+export function extract_text(bytes, spec) {
+    let deferred4_0;
+    let deferred4_1;
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        const ptr1 = passStringToWasm0(spec, wasm.__wbindgen_export3, wasm.__wbindgen_export4);
+        const len1 = WASM_VECTOR_LEN;
+        wasm.extract_text(retptr, ptr0, len0, ptr1, len1);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        var ptr3 = r0;
+        var len3 = r1;
+        if (r3) {
+            ptr3 = 0; len3 = 0;
+            throw takeObject(r2);
+        }
+        deferred4_0 = ptr3;
+        deferred4_1 = len3;
+        return getStringFromWasm0(ptr3, len3);
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+        wasm.__wbindgen_export(deferred4_0, deferred4_1, 1);
+    }
+}
+
+/**
+ * Raw (still encoded) stream bytes of object `(id, 0)`.
+ * @param {Uint8Array} bytes
+ * @param {number} id
+ * @returns {Uint8Array}
+ */
+export function get_image_stream(bytes, id) {
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        wasm.get_image_stream(retptr, ptr0, len0, id);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        if (r3) {
+            throw takeObject(r2);
+        }
+        var v2 = getArrayU8FromWasm0(r0, r1).slice();
+        wasm.__wbindgen_export(r0, r1 * 1, 1);
+        return v2;
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
+ * True when the file has an /Encrypt dictionary (even if it opens without a password).
+ * @param {Uint8Array} bytes
+ * @returns {boolean}
+ */
+export function is_encrypted(bytes) {
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        wasm.is_encrypted(retptr, ptr0, len0);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        if (r2) {
+            throw takeObject(r1);
+        }
+        return r0 !== 0;
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
+ * JSON array describing every image XObject.
+ * @param {Uint8Array} bytes
+ * @returns {string}
+ */
+export function list_images(bytes) {
+    let deferred3_0;
+    let deferred3_1;
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        wasm.list_images(retptr, ptr0, len0);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        var ptr2 = r0;
+        var len2 = r1;
+        if (r3) {
+            ptr2 = 0; len2 = 0;
+            throw takeObject(r2);
+        }
+        deferred3_0 = ptr2;
+        deferred3_1 = len2;
+        return getStringFromWasm0(ptr2, len2);
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+        wasm.__wbindgen_export(deferred3_0, deferred3_1, 1);
+    }
+}
+
+/**
  * Merge an array of PDFs (each a Uint8Array) into one, preserving page order.
  * Uses the canonical lopdf recipe: renumber every doc into one object space,
  * collect all Page objects, then build a fresh Pages tree + Catalog. Correct for
@@ -86,6 +266,33 @@ export function merge_all(docs) {
 }
 
 /**
+ * Lossless clean-up; optionally strip metadata, thumbnails and the Info dictionary.
+ * @param {Uint8Array} bytes
+ * @param {boolean} strip_metadata
+ * @returns {Uint8Array}
+ */
+export function optimize_pdf(bytes, strip_metadata) {
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        wasm.optimize_pdf(retptr, ptr0, len0, strip_metadata);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        if (r3) {
+            throw takeObject(r2);
+        }
+        var v2 = getArrayU8FromWasm0(r0, r1).slice();
+        wasm.__wbindgen_export(r0, r1 * 1, 1);
+        return v2;
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
  * Number of pages in a PDF.
  * @param {Uint8Array} bytes
  * @returns {number}
@@ -105,6 +312,38 @@ export function page_count(bytes) {
         return r0 >>> 0;
     } finally {
         wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
+ * JSON `[{page, width, height, rotate}]` — visible size with `/Rotate` applied.
+ * @param {Uint8Array} bytes
+ * @returns {string}
+ */
+export function page_info(bytes) {
+    let deferred3_0;
+    let deferred3_1;
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        wasm.page_info(retptr, ptr0, len0);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        var ptr2 = r0;
+        var len2 = r1;
+        if (r3) {
+            ptr2 = 0; len2 = 0;
+            throw takeObject(r2);
+        }
+        deferred3_0 = ptr2;
+        deferred3_1 = len2;
+        return getStringFromWasm0(ptr2, len2);
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+        wasm.__wbindgen_export(deferred3_0, deferred3_1, 1);
     }
 }
 
@@ -141,6 +380,66 @@ export function read_metadata(bytes) {
 }
 
 /**
+ * Rebuild the page list in `order` ("3,1,2,2": 1-based, duplicates allowed).
+ * @param {Uint8Array} bytes
+ * @param {string} order
+ * @returns {Uint8Array}
+ */
+export function reorder_pages(bytes, order) {
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        const ptr1 = passStringToWasm0(order, wasm.__wbindgen_export3, wasm.__wbindgen_export4);
+        const len1 = WASM_VECTOR_LEN;
+        wasm.reorder_pages(retptr, ptr0, len0, ptr1, len1);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        if (r3) {
+            throw takeObject(r2);
+        }
+        var v3 = getArrayU8FromWasm0(r0, r1).slice();
+        wasm.__wbindgen_export(r0, r1 * 1, 1);
+        return v3;
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
+ * Replace image streams with JPEGs. `meta_json` = `[{id,width,height,gray}]`,
+ * `jpegs` = one Uint8Array per entry, same order.
+ * @param {Uint8Array} bytes
+ * @param {string} meta_json
+ * @param {Array<any>} jpegs
+ * @returns {Uint8Array}
+ */
+export function replace_images(bytes, meta_json, jpegs) {
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        const ptr1 = passStringToWasm0(meta_json, wasm.__wbindgen_export3, wasm.__wbindgen_export4);
+        const len1 = WASM_VECTOR_LEN;
+        wasm.replace_images(retptr, ptr0, len0, ptr1, len1, addHeapObject(jpegs));
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        if (r3) {
+            throw takeObject(r2);
+        }
+        var v3 = getArrayU8FromWasm0(r0, r1).slice();
+        wasm.__wbindgen_export(r0, r1 * 1, 1);
+        return v3;
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
  * Rotate selected pages by `degrees` (90/180/270, multiples of 90). spec "" = all.
  * @param {Uint8Array} bytes
  * @param {string} spec
@@ -155,6 +454,35 @@ export function rotate_pages(bytes, spec, degrees) {
         const ptr1 = passStringToWasm0(spec, wasm.__wbindgen_export3, wasm.__wbindgen_export4);
         const len1 = WASM_VECTOR_LEN;
         wasm.rotate_pages(retptr, ptr0, len0, ptr1, len1, degrees);
+        var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+        var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+        var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+        var r3 = getDataViewMemory0().getInt32(retptr + 4 * 3, true);
+        if (r3) {
+            throw takeObject(r2);
+        }
+        var v3 = getArrayU8FromWasm0(r0, r1).slice();
+        wasm.__wbindgen_export(r0, r1 * 1, 1);
+        return v3;
+    } finally {
+        wasm.__wbindgen_add_to_stack_pointer(16);
+    }
+}
+
+/**
+ * Draw text stamps; `spec_json` is `{"items":[PdfTextStamp…]}`.
+ * @param {Uint8Array} bytes
+ * @param {string} spec_json
+ * @returns {Uint8Array}
+ */
+export function stamp_text(bytes, spec_json) {
+    try {
+        const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+        const ptr0 = passArray8ToWasm0(bytes, wasm.__wbindgen_export3);
+        const len0 = WASM_VECTOR_LEN;
+        const ptr1 = passStringToWasm0(spec_json, wasm.__wbindgen_export3, wasm.__wbindgen_export4);
+        const len1 = WASM_VECTOR_LEN;
+        wasm.stamp_text(retptr, ptr0, len0, ptr1, len1);
         var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
         var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
         var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);

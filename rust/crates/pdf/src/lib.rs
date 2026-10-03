@@ -1,9 +1,32 @@
-//! PDF wasm crate: merge, split, rotate, delete pages, and read/edit metadata,
-//! built on the pure-Rust `lopdf` (no system deps, compiles to wasm).
+//! PDF wasm crate: merge, split, rotate, delete pages, read/edit metadata, page
+//! geometry, text stamping, page re-ordering, text extraction, encryption,
+//! image inventory/replacement and optimisation, built on the pure-Rust `lopdf`
+//! (no system deps, compiles to wasm).
 //!
 //! Inputs/outputs cross the boundary as `Uint8Array` (PDF bytes). Page selections
 //! are 1-based and passed as comma/range strings (e.g. "1,3,5-8").
+//!
+//! Every new export is a thin `#[wasm_bindgen]` wrapper over a pure inner
+//! function returning `Result<_, String>` (see the modules below), which keeps
+//! the logic natively testable.
 
+mod afm_data;
+mod common;
+mod content;
+mod crypt;
+mod enc_data;
+mod images;
+mod json;
+mod optimize;
+mod pages;
+mod stamp;
+mod stdfonts;
+mod text;
+
+#[cfg(test)]
+mod tests;
+
+use common::parse_pages;
 use lopdf::{Document, Object, ObjectId};
 use std::collections::BTreeMap;
 use wasm_bindgen::prelude::*;
@@ -31,33 +54,6 @@ fn load(bytes: &[u8]) -> Result<Document, JsValue> {
 pub fn page_count(bytes: &[u8]) -> Result<u32, JsValue> {
     let doc = load(bytes)?;
     Ok(doc.get_pages().len() as u32)
-}
-
-/// Parse a 1-based page-selection string like "1,3,5-8" into indices, clamped to
-/// `max`. Returns the ordered, de-duplicated list.
-fn parse_pages(spec: &str, max: usize) -> Vec<usize> {
-    let mut out: Vec<usize> = Vec::new();
-    for part in spec.split(',') {
-        let part = part.trim();
-        if part.is_empty() {
-            continue;
-        }
-        if let Some((a, b)) = part.split_once('-') {
-            if let (Ok(a), Ok(b)) = (a.trim().parse::<usize>(), b.trim().parse::<usize>()) {
-                let (lo, hi) = if a <= b { (a, b) } else { (b, a) };
-                for p in lo..=hi {
-                    if p >= 1 && p <= max {
-                        out.push(p);
-                    }
-                }
-            }
-        } else if let Ok(p) = part.parse::<usize>() {
-            if p >= 1 && p <= max {
-                out.push(p);
-            }
-        }
-    }
-    out
 }
 
 /// Merge an array of PDFs (each a Uint8Array) into one, preserving page order.
@@ -101,7 +97,10 @@ pub fn merge_all(docs: js_sys::Array) -> Result<Vec<u8>, JsValue> {
         match object.type_name().unwrap_or(b"") {
             b"Catalog" => {
                 catalog_object = Some((
-                    catalog_object.as_ref().map(|(id, _)| *id).unwrap_or(*object_id),
+                    catalog_object
+                        .as_ref()
+                        .map(|(id, _)| *id)
+                        .unwrap_or(*object_id),
                     object.clone(),
                 ));
             }
@@ -156,7 +155,10 @@ pub fn merge_all(docs: js_sys::Array) -> Result<Vec<u8>, JsValue> {
     if let Some(Object::Dictionary(dict)) = document.objects.get_mut(&pages_id) {
         dict.set(
             "Kids",
-            page_ids.iter().map(|id| Object::Reference(*id)).collect::<Vec<_>>(),
+            page_ids
+                .iter()
+                .map(|id| Object::Reference(*id))
+                .collect::<Vec<_>>(),
         );
         dict.set("Count", page_ids.len() as i64);
         dict.set("Type", "Pages");
@@ -229,10 +231,7 @@ pub fn rotate_pages(bytes: &[u8], spec: &str, degrees: i32) -> Result<Vec<u8>, J
         if let Some(&pid) = pages.get(&(p as u32)) {
             if let Ok(obj) = doc.get_object_mut(pid) {
                 if let Ok(dict) = obj.as_dict_mut() {
-                    let current = dict
-                        .get(b"Rotate")
-                        .and_then(|r| r.as_i64())
-                        .unwrap_or(0);
+                    let current = dict.get(b"Rotate").and_then(|r| r.as_i64()).unwrap_or(0);
                     let next = (((current + norm as i64) % 360) + 360) % 360;
                     dict.set("Rotate", next);
                 }
@@ -267,4 +266,93 @@ pub fn read_metadata(bytes: &[u8]) -> Result<String, JsValue> {
         }
     }
     Ok(lines.join("\n"))
+}
+
+// ---------------------------------------------------------------------------
+// Page geometry, stamping, reordering, text, encryption & image optimisation.
+// ---------------------------------------------------------------------------
+
+fn js_err(e: String) -> JsValue {
+    JsValue::from_str(&e)
+}
+
+/// JSON `[{page, width, height, rotate}]` — visible size with `/Rotate` applied.
+#[wasm_bindgen]
+pub fn page_info(bytes: &[u8]) -> Result<String, JsValue> {
+    pages::page_info(bytes).map_err(js_err)
+}
+
+/// Draw text stamps; `spec_json` is `{"items":[PdfTextStamp…]}`.
+#[wasm_bindgen]
+pub fn stamp_text(bytes: &[u8], spec_json: &str) -> Result<Vec<u8>, JsValue> {
+    stamp::stamp_text(bytes, spec_json).map_err(js_err)
+}
+
+/// Rebuild the page list in `order` ("3,1,2,2": 1-based, duplicates allowed).
+#[wasm_bindgen]
+pub fn reorder_pages(bytes: &[u8], order: &str) -> Result<Vec<u8>, JsValue> {
+    pages::reorder_pages(bytes, order).map_err(js_err)
+}
+
+/// JSON `[{page, text}]` for the selected pages (empty spec = all).
+#[wasm_bindgen]
+pub fn extract_text(bytes: &[u8], spec: &str) -> Result<String, JsValue> {
+    text::extract_text(bytes, spec).map_err(js_err)
+}
+
+/// True when the file has an /Encrypt dictionary (even if it opens without a password).
+#[wasm_bindgen]
+pub fn is_encrypted(bytes: &[u8]) -> Result<bool, JsValue> {
+    Ok(crypt::is_encrypted(bytes))
+}
+
+/// Encrypt with the standard security handler (AES-128 R4, or AES-256 R6).
+#[wasm_bindgen]
+pub fn encrypt_pdf(
+    bytes: &[u8],
+    user_pw: &str,
+    owner_pw: &str,
+    permissions: u32,
+    aes256: bool,
+) -> Result<Vec<u8>, JsValue> {
+    crypt::encrypt_pdf(bytes, user_pw, owner_pw, permissions, aes256).map_err(js_err)
+}
+
+/// Remove encryption using the user or owner password.
+#[wasm_bindgen]
+pub fn decrypt_pdf(bytes: &[u8], password: &str) -> Result<Vec<u8>, JsValue> {
+    crypt::decrypt_pdf(bytes, password).map_err(js_err)
+}
+
+/// JSON array describing every image XObject.
+#[wasm_bindgen]
+pub fn list_images(bytes: &[u8]) -> Result<String, JsValue> {
+    images::list_images(bytes).map_err(js_err)
+}
+
+/// Raw (still encoded) stream bytes of object `(id, 0)`.
+#[wasm_bindgen]
+pub fn get_image_stream(bytes: &[u8], id: u32) -> Result<Vec<u8>, JsValue> {
+    images::get_image_stream(bytes, id).map_err(js_err)
+}
+
+/// Replace image streams with JPEGs. `meta_json` = `[{id,width,height,gray}]`,
+/// `jpegs` = one Uint8Array per entry, same order.
+#[wasm_bindgen]
+pub fn replace_images(
+    bytes: &[u8],
+    meta_json: &str,
+    jpegs: js_sys::Array,
+) -> Result<Vec<u8>, JsValue> {
+    let list: Vec<Vec<u8>> = jpegs
+        .iter()
+        .map(|v| js_sys::Uint8Array::new(&v).to_vec())
+        .collect();
+    images::replace_images(bytes, meta_json, list).map_err(js_err)
+}
+
+/// Lossless clean-up; optionally strip metadata, thumbnails and the Info dictionary.
+#[wasm_bindgen]
+pub fn optimize_pdf(bytes: &[u8], strip_metadata: bool) -> Result<Vec<u8>, JsValue> {
+    optimize::optimize_pdf(bytes, strip_metadata).map_err(js_err)
 }
