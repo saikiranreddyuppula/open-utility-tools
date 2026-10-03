@@ -53,7 +53,7 @@ const { tool: jsonFormatterTool } = await import('../dist/tools/data/json-format
 const { runDeveloperTool, getDeveloperToolDefinition } = await import('../dist/developer-tools.js');
 
 await check('tool catalog ships all browser tools', () => {
-  assert.equal(TOOL_CATALOG.length, 982);
+  assert.equal(TOOL_CATALOG.length, 1034);
   assert.equal(
     getToolBySlug('json-formatter').packageImportPath,
     '@open-utility-tools/core/tools/data/json-formatter',
