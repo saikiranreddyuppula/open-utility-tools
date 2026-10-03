@@ -2,7 +2,7 @@
 
 > Convert between data & text formats
 
-107 tools. Each runs entirely in the browser.
+113 tools. Each runs entirely in the browser.
 
 Hub: https://www.openutilitytools.com/categories/convert/
 
@@ -14,6 +14,7 @@ Hub: https://www.openutilitytools.com/categories/convert/
 - [Area Converter](https://www.openutilitytools.com/tools/area-converter/): Convert areas between square meters, acres, hectares, square feet, and more.
 - [ASCII / Box Table to JSON](https://www.openutilitytools.com/tools/ascii-table-to-json/): Parse a fixed-width or box-drawn ASCII table (like psql, MySQL, or markdown-less console output) into JSON rows.
 - [Astronomical Distance Converter](https://www.openutilitytools.com/tools/astronomical-distance-converter/): Convert cosmic distances between AU, light-years, parsecs, and kilometers.
+- [Audio Trimmer & WAV Converter](https://www.openutilitytools.com/tools/audio-trimmer-converter/): Trim, fade, normalize and resample audio from MP3, OGG, M4A, FLAC, WebM or video files and export lossless WAV, all in your browser.
 - [Baking Pan Size Converter](https://www.openutilitytools.com/tools/cooking-pan-size-converter/): Convert baking pan dimensions and scale recipe volumes between pan shapes.
 - [Base64 / Data URI to File](https://www.openutilitytools.com/tools/base64-to-file/): Decode base64 or a data URI and save it as a named file.
 - [Bytes to Human-Readable Converter](https://www.openutilitytools.com/tools/bytes-to-human-converter/): Format raw byte counts into human-readable sizes, both decimal and binary.
@@ -34,13 +35,16 @@ Hub: https://www.openutilitytools.com/categories/convert/
 - [Data Storage Units Converter](https://www.openutilitytools.com/tools/data-storage-units-converter/): Convert digital storage between bits, bytes, and decimal/binary multiples like MB vs MiB.
 - [Degrees-Minutes-Seconds Converter](https://www.openutilitytools.com/tools/angle-subunits-converter/): Convert angles between decimal degrees and degrees-minutes-seconds (DMS) notation.
 - [Density Converter](https://www.openutilitytools.com/tools/density-converter/): Convert density between kg/m3, g/cm3, lb/ft3, and lb/gallon.
+- [Docker Run ↔ Compose Converter](https://www.openutilitytools.com/tools/docker-run-compose-converter/): Convert docker run commands into a compose.yaml, or a compose file back into docker run commands, mapping ports, volumes, env, networks, healthchecks, GPUs and resource limits.
 - [Download / Transfer Time Calculator](https://www.openutilitytools.com/tools/data-transfer-time-calculator/): Estimate how long a file takes to transfer at a given connection speed.
 - [DPI / PPI Pixel-Size Converter](https://www.openutilitytools.com/tools/dpi-ppi-size-converter/): Convert between physical print size, pixel dimensions, and DPI — or compute a screen’s PPI from its resolution and diagonal.
 - [Energy Converter](https://www.openutilitytools.com/tools/energy-converter/): Convert energy between joules, calories, kWh, BTU, and electronvolts.
+- [Excel (XLSX) ↔ CSV / JSON Converter](https://www.openutilitytools.com/tools/excel-converter/): Open .xlsx, .xlsm or .ods workbooks and export any sheet to CSV, TSV, JSON or Markdown - or turn CSV and JSON into a real .xlsx with dates, headers and column widths. Runs entirely in your browser.
 - [Flow Rate Converter](https://www.openutilitytools.com/tools/flow-rate-converter/): Convert volumetric flow between L/s, m3/h, GPM, and CFM.
 - [Force Converter](https://www.openutilitytools.com/tools/force-converter/): Convert force between newtons, kilogram-force, pound-force, and dyne.
 - [Frequency Converter](https://www.openutilitytools.com/tools/frequency-converter/): Convert frequency between Hz, kHz, MHz, GHz, RPM, and angular rad/s.
 - [Fuel & Petroleum Volume Converter](https://www.openutilitytools.com/tools/fuel-volume-converter/): Convert fuel volumes between liters, US/imperial gallons, and oil barrels.
+- [GPX / KML / GeoJSON Converter](https://www.openutilitytools.com/tools/geo-data-converter/): Convert GPS tracks and map data between GPX, KML/KMZ, GeoJSON, CSV, WKT and encoded polylines privately in your browser, with simplify, stats and a map preview.
 - [GraphQL Query to cURL](https://www.openutilitytools.com/tools/convert-graphql-query-to-curl/): Wrap a GraphQL query and variables into a POST cURL command.
 - [HAR Entry to cURL](https://www.openutilitytools.com/tools/convert-har-to-curl/): Extracts requests from a HAR file or single HAR entry and emits equivalent cURL commands.
 - [Hex to RGB Code Snippet](https://www.openutilitytools.com/tools/hex-to-rgb-code/): Turn a hex color into ready-to-paste code in many languages.
@@ -97,6 +101,7 @@ Hub: https://www.openutilitytools.com/categories/convert/
 - [Ruby Hash to JSON](https://www.openutilitytools.com/tools/ruby-hash-to-json/): Convert a Ruby hash/array literal into JSON.
 - [Shoe Size Converter](https://www.openutilitytools.com/tools/shoe-size-converter/): Convert shoe sizes across US, UK, EU, and centimeter foot-length systems.
 - [Speed Converter](https://www.openutilitytools.com/tools/speed-converter/): Convert speeds between km/h, mph, m/s, knots, and Mach.
+- [Subtitle Converter & Time Shifter](https://www.openutilitytools.com/tools/subtitle-converter/): Convert subtitles between SRT, WebVTT, SBV, ASS, LRC and TTML, shift or re-sync timings, change frame rate and clean up cues.
 - [SVG Path Coordinate Rounder](https://www.openutilitytools.com/tools/svg-path-rounder/): Round and tidy the numeric coordinates in an SVG path 'd' string to reduce precision and file size.
 - [SVG to JSX/React Component](https://www.openutilitytools.com/tools/convert-svg-to-jsx/): Converts a raw SVG markup into a React JSX component with camelCased attributes.
 - [Temperature Converter](https://www.openutilitytools.com/tools/temperature-converter/): Convert temperatures across Celsius, Fahrenheit, Kelvin, and Rankine with live results and adjustable rounding precision.
@@ -115,3 +120,4 @@ Hub: https://www.openutilitytools.com/categories/convert/
 - [YAML to CSV](https://www.openutilitytools.com/tools/yaml-to-csv/): Flatten a YAML list of objects into CSV.
 - [YAML to JSON](https://www.openutilitytools.com/tools/yaml-to-json/): Convert common YAML configuration into JSON.
 - [YAML to TOML](https://www.openutilitytools.com/tools/yaml-to-toml/): Convert YAML configuration directly into TOML, mapping nested maps and lists into tables and arrays of tables in one step.
+- [ZIP Archive Tool (Create & Extract)](https://www.openutilitytools.com/tools/zip-archive-tool/): Open ZIP, JAR, APK, DOCX, EPUB, TAR, TAR.GZ and GZ archives to browse, preview and download entries - or build a new ZIP from files and folders, entirely in your browser.

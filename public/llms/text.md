@@ -2,7 +2,7 @@
 
 > Transform, analyze & clean text
 
-108 tools. Each runs entirely in the browser.
+110 tools. Each runs entirely in the browser.
 
 Hub: https://www.openutilitytools.com/categories/text/
 
@@ -22,6 +22,7 @@ Hub: https://www.openutilitytools.com/categories/text/
 - [Braille (Grade 1) Translator](https://www.openutilitytools.com/tools/braille-text/): Convert text to and from Unicode Braille dot patterns using the Grade 1 (uncontracted) mapping.
 - [Caesar Cipher](https://www.openutilitytools.com/tools/caesar-cipher/): Encode or decode text with a Caesar cipher of any shift amount, the classic reversible letter rotation, with optional brute-force of all 25 shifts.
 - [Case Converter](https://www.openutilitytools.com/tools/case-converter/): Convert text between camelCase, snake_case, kebab-case, Title Case and more.
+- [Character Limit & SMS Segment Counter](https://www.openutilitytools.com/tools/character-limit-checker/): Count characters, graphemes, bytes and SMS segments (GSM-7 vs UCS-2), and check text against X, Bluesky, LinkedIn, Instagram, SEO and ad-copy limits.
 - [Character N-Gram Counter](https://www.openutilitytools.com/tools/character-ngram-counter/): Count character-level n-grams for linguistics, cryptanalysis, and fingerprinting.
 - [Code Identifier Case Converter](https://www.openutilitytools.com/tools/camel-snake-kebab-converter/): Convert programming identifiers between camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, dot.case, and Train-Case.
 - [Coleman-Liau Index](https://www.openutilitytools.com/tools/coleman-liau-index/): Compute the character-based Coleman-Liau readability grade with no syllable counting.
@@ -54,6 +55,7 @@ Hub: https://www.openutilitytools.com/categories/text/
 - [Line Length Checker](https://www.openutilitytools.com/tools/line-length-checker/): Flag lines that exceed a maximum character width for code or prose style guides.
 - [Line Numbering (Advanced)](https://www.openutilitytools.com/tools/add-line-numbers-advanced/): Prefix lines with numbers using custom start, step, zero-padding, format template, and blank-line handling.
 - [Line Operations](https://www.openutilitytools.com/tools/line-operations/): Number, prefix, suffix, or wrap each line of text.
+- [List Compare (Diff Two Lists)](https://www.openutilitytools.com/tools/list-compare/): Compare two lists to find items only in A, only in B, in both, the union, the symmetric difference and duplicates, with case, accent and CSV column options.
 - [List Formatter](https://www.openutilitytools.com/tools/list-formatter/): Convert a plain list into bulleted, numbered, lettered, or roman-numeral lists with custom markers and indentation.
 - [List Number Style Converter](https://www.openutilitytools.com/tools/text-roman-to-fancy-numbering/): Renumbers a list using decimal, roman numerals, or letter sequences (a, b, c / A, B, C).
 - [Longest and Shortest Line Finder](https://www.openutilitytools.com/tools/text-find-longest-shortest-line/): Finds the longest and shortest lines in a block of text with their lengths and line numbers.

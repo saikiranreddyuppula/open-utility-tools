@@ -1,12 +1,12 @@
 # Open Utility Tools — full catalog
 
-> 983 browser tools. Each URL runs locally; nothing is uploaded.
+> 1034 browser tools. Each URL runs locally; nothing is uploaded.
 
 Index: https://www.openutilitytools.com/llms.txt
 
 ## Image
 
-Convert, resize, compress & inspect images (43). Markdown index: https://www.openutilitytools.com/llms/image.md
+Convert, resize, compress & inspect images (48). Markdown index: https://www.openutilitytools.com/llms/image.md
 
 - [Add Border & Padding](https://www.openutilitytools.com/tools/image-add-border/): Add a solid-color border or padding frame around an image.
 - [Batch Thumbnail Maker](https://www.openutilitytools.com/tools/image-thumbnail-batch/): Generate fixed-size cover/contain thumbnails from multiple images at once.
@@ -19,6 +19,7 @@ Convert, resize, compress & inspect images (43). Markdown index: https://www.ope
 - [Duotone Effect](https://www.openutilitytools.com/tools/image-duotone/): Map an image's shadows and highlights to two custom colors (duotone).
 - [EXIF Metadata Viewer](https://www.openutilitytools.com/tools/image-exif-viewer/): View EXIF/JFIF metadata embedded in a JPEG (camera, exposure, GPS) without uploading.
 - [Favicon Set Generator](https://www.openutilitytools.com/tools/image-favicon-generator/): Generate favicon PNGs at standard sizes (16-512px) from one image plus the HTML link tags.
+- [GIF Maker](https://www.openutilitytools.com/tools/gif-maker/): Create animated GIFs from images or a short video clip, with frame delays, looping, ping-pong, dithering and size optimisation.
 - [Gradient SVG / PNG Generator](https://www.openutilitytools.com/tools/image-gradient-svg-generator/): Create linear/radial multi-stop gradients and export as SVG, PNG, or CSS.
 - [Image Blur](https://www.openutilitytools.com/tools/image-gaussian-blur/): Apply an adjustable blur to an image using the canvas blur filter.
 - [Image Contact Sheet Builder](https://www.openutilitytools.com/tools/image-contact-sheet-builder/): Arranges multiple uploaded images into a single grid contact sheet PNG.
@@ -26,19 +27,23 @@ Convert, resize, compress & inspect images (43). Markdown index: https://www.ope
 - [Image Fit/Cover Box Calculator](https://www.openutilitytools.com/tools/image-aspect-fit-cover-calculator/): Computes the rendered size and offsets for an image placed in a box with contain or cover fit.
 - [Image Grid & Guide Overlay](https://www.openutilitytools.com/tools/image-canvas-grid-overlay/): Overlays a rule-of-thirds, pixel grid, or custom guides onto an uploaded image.
 - [Image Histogram](https://www.openutilitytools.com/tools/image-histogram/): Plot RGB and luminance histograms of an image on a canvas.
+- [Image Metadata Remover](https://www.openutilitytools.com/tools/image-metadata-remover/): Strip EXIF, GPS, XMP, IPTC and text metadata from JPEG, PNG and WebP photos without re-encoding — see exactly what was hidden in the file, then download clean copies.
 - [Image Palette Extractor](https://www.openutilitytools.com/tools/image-palette-extractor/): Extract a balanced N-color palette from an image via median-cut quantization.
 - [Image Resizer (Pixels & Percent)](https://www.openutilitytools.com/tools/image-resize-pixels/): Resize an image to exact pixel dimensions or by percentage, with optional aspect-lock.
 - [Image Sprite Sheet Merger](https://www.openutilitytools.com/tools/image-sprite-merger/): Combine several images into one sprite sheet with a CSS/JSON coordinate map.
 - [Image to ASCII Art](https://www.openutilitytools.com/tools/image-to-ascii-art/): Convert an image into monospace ASCII (or block) art with adjustable width.
 - [Image to Base64](https://www.openutilitytools.com/tools/image-to-base64/): Encode an image to a Base64 data-URI for inline use in CSS/HTML/JSON.
 - [Image to Data URI (CSS/HTML/JSX)](https://www.openutilitytools.com/tools/image-to-data-uri-variants/): Encode an image as a base64 data URI and wrap it for CSS, HTML img, Markdown, or JSX.
+- [Image to SVG (Vectorizer)](https://www.openutilitytools.com/tools/image-to-svg-tracer/): Trace logos, icons, signatures and line art into clean SVG paths, in black and white or in up to 16 colours, with curve fitting and speckle removal.
 - [Invert Colors (Negative)](https://www.openutilitytools.com/tools/image-invert-colors/): Create a photographic negative by inverting every pixel's RGB values.
 - [JPEG/WebP Compressor](https://www.openutilitytools.com/tools/image-compress-quality/): Reduce image file size with a quality slider and live before/after byte comparison.
+- [Make Background Transparent](https://www.openutilitytools.com/tools/image-make-transparent/): Remove a solid background colour (white product shots, logos, signatures) with a magic-wand style picker, tolerance, soft edges and defringe — then export a transparent PNG or WebP.
 - [Meme Caption Maker](https://www.openutilitytools.com/tools/image-meme-text/): Add classic top/bottom Impact-style caption text to an image.
 - [Mirror & Reflection Collage](https://www.openutilitytools.com/tools/image-mirror-collage/): Create symmetric mirror collages (2-up, 4-up kaleidoscope) from one image.
 - [Noise & Grain SVG Generator](https://www.openutilitytools.com/tools/image-noise-texture-svg/): Generate a tileable fractal-noise/grain texture as an inline SVG or PNG.
 - [Pixel Ruler & Color Probe](https://www.openutilitytools.com/tools/image-pixel-ruler/): Measure pixel distances and read pixel colors by clicking on a loaded image.
 - [Pixelate / Mosaic](https://www.openutilitytools.com/tools/image-pixelate/): Pixelate an image (or simulate censoring) with an adjustable block size.
+- [PNG Compressor](https://www.openutilitytools.com/tools/image-png-compressor/): Shrink PNG files up to 80% with TinyPNG-style palette quantization or lossless re-encoding — batch, side-by-side preview and ZIP download, all in your browser.
 - [Resize to Target File Size](https://www.openutilitytools.com/tools/image-resize-to-filesize/): Iteratively re-encode an image to land under a target KB limit (e.g. for upload limits).
 - [RGB Channel Splitter](https://www.openutilitytools.com/tools/image-rgb-channel-split/): Split an image into separate red, green, blue, and alpha channel images.
 - [Rotate & Flip Image](https://www.openutilitytools.com/tools/image-rotate-flip/): Rotate an image 90/180/270 degrees or by a free angle and flip horizontally/vertically.
@@ -54,17 +59,23 @@ Convert, resize, compress & inspect images (43). Markdown index: https://www.ope
 
 ## PDF
 
-Merge, split, rotate & build PDFs (5). Markdown index: https://www.openutilitytools.com/llms/pdf.md
+Merge, split, rotate & build PDFs (11). Markdown index: https://www.openutilitytools.com/llms/pdf.md
 
+- [Add Page Numbers to PDF](https://www.openutilitytools.com/tools/pdf-page-numbers/): Stamp page numbers onto a PDF with custom formats, Bates numbering, position, page range and fonts, all in your browser.
+- [Compress PDF](https://www.openutilitytools.com/tools/pdf-compress/): Shrink a PDF by recompressing and downscaling its images and cleaning up the file structure, entirely in your browser.
 - [Image to PDF](https://www.openutilitytools.com/tools/image-to-pdf/): Combine JPG, PNG & other images into a single PDF — one image per page, entirely in your browser.
 - [Merge PDF](https://www.openutilitytools.com/tools/merge-pdf/): Combine multiple PDFs into one, reorder by drag — entirely in your browser.
+- [Organize PDF Pages](https://www.openutilitytools.com/tools/pdf-organize-pages/): Reorder, duplicate, delete and reverse PDF pages with drag and drop, or interleave front and back scans into one document.
 - [PDF Info & Metadata](https://www.openutilitytools.com/tools/pdf-metadata/): Inspect a PDF’s page count, version, and document metadata.
+- [PDF to Text](https://www.openutilitytools.com/tools/pdf-to-text/): Extract the text layer of a PDF with page ranges, paragraph reflow and search — password-protected files supported.
+- [Protect & Unlock PDF](https://www.openutilitytools.com/tools/pdf-protect-unlock/): Encrypt a PDF with an open password and permission limits (AES-256 or AES-128), or remove a password you already know.
 - [Rotate PDF](https://www.openutilitytools.com/tools/rotate-pdf/): Rotate all or selected pages of a PDF by 90, 180 or 270 degrees.
 - [Split / Extract PDF Pages](https://www.openutilitytools.com/tools/split-pdf/): Extract or delete a selection of pages from a PDF (e.g. 1,3,5-8).
+- [Watermark PDF](https://www.openutilitytools.com/tools/pdf-watermark/): Add a text watermark (CONFIDENTIAL, DRAFT, custom) to PDF pages: diagonal or tiled, with opacity, colour, font and over/under layering.
 
 ## Data
 
-JSON, CSV, YAML — format, validate, convert (98). Markdown index: https://www.openutilitytools.com/llms/data.md
+JSON, CSV, YAML — format, validate, convert (103). Markdown index: https://www.openutilitytools.com/llms/data.md
 
 - [ASCII Box Table from CSV](https://www.openutilitytools.com/tools/ascii-table-from-csv/): Render CSV as a bordered ASCII or Unicode box-drawing table for READMEs, code comments, and terminals.
 - [CSV Add Row Numbers](https://www.openutilitytools.com/tools/csv-add-row-numbers/): Prepend or append a sequential ID / row-number column to a CSV with a configurable start, step, padding, and prefix/suffix.
@@ -74,6 +85,7 @@ JSON, CSV, YAML — format, validate, convert (98). Markdown index: https://www.
 - [CSV Column Type Detector](https://www.openutilitytools.com/tools/data-csv-detect-types/): Infers each CSV column's data type (integer, float, boolean, date, string) from its values.
 - [CSV Deduplicate Rows](https://www.openutilitytools.com/tools/csv-dedupe/): Remove duplicate rows from CSV, either fully identical or matching on selected key columns.
 - [CSV Delimiter Converter](https://www.openutilitytools.com/tools/csv-delimiter-converter/): Re-delimit tabular data between comma, tab, semicolon, or pipe while preserving quoting.
+- [CSV Diff (Compare Two CSVs)](https://www.openutilitytools.com/tools/csv-diff-compare/): Compare two CSV files by key columns or row position and see added, removed and changed rows and cells, with options for case, whitespace, numbers and column order.
 - [CSV Fill Blank Cells](https://www.openutilitytools.com/tools/csv-fill-blanks/): Fill empty cells in a CSV by forward-fill, back-fill, a constant value, or per-column mean/median.
 - [CSV Group-By Aggregator](https://www.openutilitytools.com/tools/data-csv-group-by-aggregate/): Group CSV rows by a column and compute count, sum, avg, min, and max on another.
 - [CSV Header Renamer](https://www.openutilitytools.com/tools/csv-rename-headers/): Rename, reorder, and apply naming-convention transforms to CSV column headers.
@@ -91,6 +103,7 @@ JSON, CSV, YAML — format, validate, convert (98). Markdown index: https://www.
 - [CSV Transpose](https://www.openutilitytools.com/tools/csv-transpose/): Swap rows and columns of a CSV so the first column becomes the header row and vice versa.
 - [CSV Viewer](https://www.openutilitytools.com/tools/csv-viewer/): Paste CSV and view it as a sortable, searchable table.
 - [Delimited Column Reorder](https://www.openutilitytools.com/tools/data-tsv-column-reorder/): Reorders, drops, or duplicates columns in CSV/TSV data by index or header name.
+- [File Metadata Viewer](https://www.openutilitytools.com/tools/file-metadata-viewer/): Inspect the hidden metadata of any file — photos, PDFs, Office docs, audio, video, fonts, archives and more — privately in your browser.
 - [Fixed-Width to CSV](https://www.openutilitytools.com/tools/fixed-width-to-csv/): Parse fixed-width / column-aligned text into CSV by defining field widths or cut positions.
 - [HTML Table to CSV](https://www.openutilitytools.com/tools/html-table-to-csv/): Extract one or all <table> elements from pasted HTML into CSV.
 - [HTML Table to JSON](https://www.openutilitytools.com/tools/html-table-to-json/): Convert an HTML <table> into a JSON array of objects keyed by the header row.
@@ -121,6 +134,7 @@ JSON, CSV, YAML — format, validate, convert (98). Markdown index: https://www.
 - [JSON Repair](https://www.openutilitytools.com/tools/json-repair/): Fix broken JSON with single quotes, trailing commas, unquoted keys, and comments, then output valid JSON.
 - [JSON Schema Generator](https://www.openutilitytools.com/tools/json-to-json-schema/): Infer a JSON Schema (draft-07) from a sample JSON document with types and required fields.
 - [JSON Schema Sample Generator](https://www.openutilitytools.com/tools/json-schema-sample-generator/): Generate a sample JSON instance that satisfies a JSON Schema.
+- [JSON Schema Validator](https://www.openutilitytools.com/tools/json-schema-validator/): Validate a JSON document against a JSON Schema (Draft-07, 2019-09 or 2020-12) and see every error with its instance path, schema path and a readable message.
 - [JSON Sort Keys](https://www.openutilitytools.com/tools/json-sort-keys/): Recursively sort all object keys in a JSON document alphabetically.
 - [JSON String Escape / Unescape](https://www.openutilitytools.com/tools/json-escape/): Escape text into a JSON string literal, or unescape one back to raw text.
 - [JSON Stringify / Parse](https://www.openutilitytools.com/tools/json-stringify/): Turn raw text into an escaped JSON string literal, or parse a JSON string back to its raw value.
@@ -163,11 +177,13 @@ JSON, CSV, YAML — format, validate, convert (98). Markdown index: https://www.
 - [SQL SELECT Builder](https://www.openutilitytools.com/tools/sql-select-builder/): Visually build a SELECT query with columns, WHERE conditions, ORDER BY, and LIMIT, then copy the SQL.
 - [SQL UPDATE Builder](https://www.openutilitytools.com/tools/sql-update-builder/): Build a safe parameterized UPDATE statement from column=value pairs and WHERE conditions.
 - [TSV to Markdown Table](https://www.openutilitytools.com/tools/data-tsv-to-markdown-table/): Convert tab-separated values into a GitHub-flavored Markdown table.
+- [Web Server Log Analyzer](https://www.openutilitytools.com/tools/web-server-log-analyzer/): Analyze nginx, Apache, JSON, logfmt and AWS ALB access logs in your browser: traffic over time, top IPs and paths, errors, bots, latency percentiles and suspicious requests, with filters and CSV/JSON export.
 - [YAML Anchor & Alias Expander](https://www.openutilitytools.com/tools/data-yaml-anchor-expander/): Resolve YAML anchors and aliases by inlining their referenced values.
+- [YAML Validator & Formatter](https://www.openutilitytools.com/tools/yaml-validator-formatter/): Validate YAML 1.2 with line and column errors, lint for gotchas like the Norway problem, then reformat with your indentation, quoting and wrapping and view the parsed JSON.
 
 ## Converters
 
-Convert between data & text formats (107). Markdown index: https://www.openutilitytools.com/llms/convert.md
+Convert between data & text formats (113). Markdown index: https://www.openutilitytools.com/llms/convert.md
 
 - [.env to Shell Exports](https://www.openutilitytools.com/tools/env-to-shell-exports/): Turn a .env file into copy-paste shell export statements for bash/zsh, fish, or PowerShell.
 - [Acceleration Converter](https://www.openutilitytools.com/tools/acceleration-converter/): Convert acceleration between m/s2, g-force, ft/s2, and gal.
@@ -175,6 +191,7 @@ Convert between data & text formats (107). Markdown index: https://www.openutili
 - [Area Converter](https://www.openutilitytools.com/tools/area-converter/): Convert areas between square meters, acres, hectares, square feet, and more.
 - [ASCII / Box Table to JSON](https://www.openutilitytools.com/tools/ascii-table-to-json/): Parse a fixed-width or box-drawn ASCII table (like psql, MySQL, or markdown-less console output) into JSON rows.
 - [Astronomical Distance Converter](https://www.openutilitytools.com/tools/astronomical-distance-converter/): Convert cosmic distances between AU, light-years, parsecs, and kilometers.
+- [Audio Trimmer & WAV Converter](https://www.openutilitytools.com/tools/audio-trimmer-converter/): Trim, fade, normalize and resample audio from MP3, OGG, M4A, FLAC, WebM or video files and export lossless WAV, all in your browser.
 - [Baking Pan Size Converter](https://www.openutilitytools.com/tools/cooking-pan-size-converter/): Convert baking pan dimensions and scale recipe volumes between pan shapes.
 - [Base64 / Data URI to File](https://www.openutilitytools.com/tools/base64-to-file/): Decode base64 or a data URI and save it as a named file.
 - [Bytes to Human-Readable Converter](https://www.openutilitytools.com/tools/bytes-to-human-converter/): Format raw byte counts into human-readable sizes, both decimal and binary.
@@ -195,13 +212,16 @@ Convert between data & text formats (107). Markdown index: https://www.openutili
 - [Data Storage Units Converter](https://www.openutilitytools.com/tools/data-storage-units-converter/): Convert digital storage between bits, bytes, and decimal/binary multiples like MB vs MiB.
 - [Degrees-Minutes-Seconds Converter](https://www.openutilitytools.com/tools/angle-subunits-converter/): Convert angles between decimal degrees and degrees-minutes-seconds (DMS) notation.
 - [Density Converter](https://www.openutilitytools.com/tools/density-converter/): Convert density between kg/m3, g/cm3, lb/ft3, and lb/gallon.
+- [Docker Run ↔ Compose Converter](https://www.openutilitytools.com/tools/docker-run-compose-converter/): Convert docker run commands into a compose.yaml, or a compose file back into docker run commands, mapping ports, volumes, env, networks, healthchecks, GPUs and resource limits.
 - [Download / Transfer Time Calculator](https://www.openutilitytools.com/tools/data-transfer-time-calculator/): Estimate how long a file takes to transfer at a given connection speed.
 - [DPI / PPI Pixel-Size Converter](https://www.openutilitytools.com/tools/dpi-ppi-size-converter/): Convert between physical print size, pixel dimensions, and DPI — or compute a screen’s PPI from its resolution and diagonal.
 - [Energy Converter](https://www.openutilitytools.com/tools/energy-converter/): Convert energy between joules, calories, kWh, BTU, and electronvolts.
+- [Excel (XLSX) ↔ CSV / JSON Converter](https://www.openutilitytools.com/tools/excel-converter/): Open .xlsx, .xlsm or .ods workbooks and export any sheet to CSV, TSV, JSON or Markdown - or turn CSV and JSON into a real .xlsx with dates, headers and column widths. Runs entirely in your browser.
 - [Flow Rate Converter](https://www.openutilitytools.com/tools/flow-rate-converter/): Convert volumetric flow between L/s, m3/h, GPM, and CFM.
 - [Force Converter](https://www.openutilitytools.com/tools/force-converter/): Convert force between newtons, kilogram-force, pound-force, and dyne.
 - [Frequency Converter](https://www.openutilitytools.com/tools/frequency-converter/): Convert frequency between Hz, kHz, MHz, GHz, RPM, and angular rad/s.
 - [Fuel & Petroleum Volume Converter](https://www.openutilitytools.com/tools/fuel-volume-converter/): Convert fuel volumes between liters, US/imperial gallons, and oil barrels.
+- [GPX / KML / GeoJSON Converter](https://www.openutilitytools.com/tools/geo-data-converter/): Convert GPS tracks and map data between GPX, KML/KMZ, GeoJSON, CSV, WKT and encoded polylines privately in your browser, with simplify, stats and a map preview.
 - [GraphQL Query to cURL](https://www.openutilitytools.com/tools/convert-graphql-query-to-curl/): Wrap a GraphQL query and variables into a POST cURL command.
 - [HAR Entry to cURL](https://www.openutilitytools.com/tools/convert-har-to-curl/): Extracts requests from a HAR file or single HAR entry and emits equivalent cURL commands.
 - [Hex to RGB Code Snippet](https://www.openutilitytools.com/tools/hex-to-rgb-code/): Turn a hex color into ready-to-paste code in many languages.
@@ -258,6 +278,7 @@ Convert between data & text formats (107). Markdown index: https://www.openutili
 - [Ruby Hash to JSON](https://www.openutilitytools.com/tools/ruby-hash-to-json/): Convert a Ruby hash/array literal into JSON.
 - [Shoe Size Converter](https://www.openutilitytools.com/tools/shoe-size-converter/): Convert shoe sizes across US, UK, EU, and centimeter foot-length systems.
 - [Speed Converter](https://www.openutilitytools.com/tools/speed-converter/): Convert speeds between km/h, mph, m/s, knots, and Mach.
+- [Subtitle Converter & Time Shifter](https://www.openutilitytools.com/tools/subtitle-converter/): Convert subtitles between SRT, WebVTT, SBV, ASS, LRC and TTML, shift or re-sync timings, change frame rate and clean up cues.
 - [SVG Path Coordinate Rounder](https://www.openutilitytools.com/tools/svg-path-rounder/): Round and tidy the numeric coordinates in an SVG path 'd' string to reduce precision and file size.
 - [SVG to JSX/React Component](https://www.openutilitytools.com/tools/convert-svg-to-jsx/): Converts a raw SVG markup into a React JSX component with camelCased attributes.
 - [Temperature Converter](https://www.openutilitytools.com/tools/temperature-converter/): Convert temperatures across Celsius, Fahrenheit, Kelvin, and Rankine with live results and adjustable rounding precision.
@@ -276,10 +297,11 @@ Convert between data & text formats (107). Markdown index: https://www.openutili
 - [YAML to CSV](https://www.openutilitytools.com/tools/yaml-to-csv/): Flatten a YAML list of objects into CSV.
 - [YAML to JSON](https://www.openutilitytools.com/tools/yaml-to-json/): Convert common YAML configuration into JSON.
 - [YAML to TOML](https://www.openutilitytools.com/tools/yaml-to-toml/): Convert YAML configuration directly into TOML, mapping nested maps and lists into tables and arrays of tables in one step.
+- [ZIP Archive Tool (Create & Extract)](https://www.openutilitytools.com/tools/zip-archive-tool/): Open ZIP, JAR, APK, DOCX, EPUB, TAR, TAR.GZ and GZ archives to browse, preview and download entries - or build a new ZIP from files and folders, entirely in your browser.
 
 ## Text
 
-Transform, analyze & clean text (108). Markdown index: https://www.openutilitytools.com/llms/text.md
+Transform, analyze & clean text (110). Markdown index: https://www.openutilitytools.com/llms/text.md
 
 - [Acronym Extractor](https://www.openutilitytools.com/tools/acronym-expander-finder/): Find acronyms in text and pair them with the expansions defined nearby.
 - [Acronym Maker](https://www.openutilitytools.com/tools/acronym-maker/): Build an acronym or initialism from a phrase using configurable rules.
@@ -295,6 +317,7 @@ Transform, analyze & clean text (108). Markdown index: https://www.openutilityto
 - [Braille (Grade 1) Translator](https://www.openutilitytools.com/tools/braille-text/): Convert text to and from Unicode Braille dot patterns using the Grade 1 (uncontracted) mapping.
 - [Caesar Cipher](https://www.openutilitytools.com/tools/caesar-cipher/): Encode or decode text with a Caesar cipher of any shift amount, the classic reversible letter rotation, with optional brute-force of all 25 shifts.
 - [Case Converter](https://www.openutilitytools.com/tools/case-converter/): Convert text between camelCase, snake_case, kebab-case, Title Case and more.
+- [Character Limit & SMS Segment Counter](https://www.openutilitytools.com/tools/character-limit-checker/): Count characters, graphemes, bytes and SMS segments (GSM-7 vs UCS-2), and check text against X, Bluesky, LinkedIn, Instagram, SEO and ad-copy limits.
 - [Character N-Gram Counter](https://www.openutilitytools.com/tools/character-ngram-counter/): Count character-level n-grams for linguistics, cryptanalysis, and fingerprinting.
 - [Code Identifier Case Converter](https://www.openutilitytools.com/tools/camel-snake-kebab-converter/): Convert programming identifiers between camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, dot.case, and Train-Case.
 - [Coleman-Liau Index](https://www.openutilitytools.com/tools/coleman-liau-index/): Compute the character-based Coleman-Liau readability grade with no syllable counting.
@@ -327,6 +350,7 @@ Transform, analyze & clean text (108). Markdown index: https://www.openutilityto
 - [Line Length Checker](https://www.openutilitytools.com/tools/line-length-checker/): Flag lines that exceed a maximum character width for code or prose style guides.
 - [Line Numbering (Advanced)](https://www.openutilitytools.com/tools/add-line-numbers-advanced/): Prefix lines with numbers using custom start, step, zero-padding, format template, and blank-line handling.
 - [Line Operations](https://www.openutilitytools.com/tools/line-operations/): Number, prefix, suffix, or wrap each line of text.
+- [List Compare (Diff Two Lists)](https://www.openutilitytools.com/tools/list-compare/): Compare two lists to find items only in A, only in B, in both, the union, the symmetric difference and duplicates, with case, accent and CSV column options.
 - [List Formatter](https://www.openutilitytools.com/tools/list-formatter/): Convert a plain list into bulleted, numbered, lettered, or roman-numeral lists with custom markers and indentation.
 - [List Number Style Converter](https://www.openutilitytools.com/tools/text-roman-to-fancy-numbering/): Renumbers a list using decimal, roman numerals, or letter sequences (a, b, c / A, B, C).
 - [Longest and Shortest Line Finder](https://www.openutilitytools.com/tools/text-find-longest-shortest-line/): Finds the longest and shortest lines in a block of text with their lengths and line numbers.
@@ -392,7 +416,7 @@ Transform, analyze & clean text (108). Markdown index: https://www.openutilityto
 
 ## Crypto & Hash
 
-Hashes, HMAC, JWT, keys & ciphers (68). Markdown index: https://www.openutilitytools.com/llms/crypto.md
+Hashes, HMAC, JWT, keys & ciphers (72). Markdown index: https://www.openutilitytools.com/llms/crypto.md
 
 - [/etc/passwd & shadow Parser](https://www.openutilitytools.com/tools/crypto-passwd-shadow-parser/): Parse and explain Unix passwd and shadow file lines field by field.
 - [ABA Routing Number Validator](https://www.openutilitytools.com/tools/aba-routing-validator/): Validate a US bank ABA/routing transit number using its mod-10 checksum.
@@ -402,6 +426,7 @@ Hashes, HMAC, JWT, keys & ciphers (68). Markdown index: https://www.openutilityt
 - [AES-GCM File Encrypt/Decrypt](https://www.openutilitytools.com/tools/aes-gcm-file/): Encrypt or decrypt a chosen file in-browser with AES-GCM using a passphrase.
 - [API Key + Secret Generator](https://www.openutilitytools.com/tools/api-key-pair-generator/): Generate matched public key ID and secret pairs with prefixes and a derived checksum.
 - [Argon2 Parameter Advisor](https://www.openutilitytools.com/tools/crypto-argon2-params-advisor/): Recommend Argon2id memory, iteration, and parallelism parameters for a target environment.
+- [ASN.1 Decoder & Certificate Parser](https://www.openutilitytools.com/tools/asn1-der-decoder/): Decode any ASN.1 DER/BER data (PEM, Base64, hex or file) into an interactive tree with a synced hex dump, plus smart summaries for X.509 certificates, CSRs, keys and PKCS#7 bundles.
 - [Australian BSB Lookup](https://www.openutilitytools.com/tools/bsb-validator/): Validate and parse an Australian Bank State Branch (BSB) number into bank, state, and branch.
 - [Base64url JWK Field Encoder](https://www.openutilitytools.com/tools/base64url-jwk-encoder/): Convert between Base64url and big-integer/byte values for hand-editing JWK fields.
 - [Bcrypt Cost Estimator](https://www.openutilitytools.com/tools/crypto-bcrypt-cost-benchmark/): Estimate bcrypt hashing time for each cost factor and recommend a target work factor.
@@ -444,12 +469,15 @@ Hashes, HMAC, JWT, keys & ciphers (68). Markdown index: https://www.openutilityt
 - [Password Generator](https://www.openutilitytools.com/tools/password-generator/): Generate strong random passwords or diceware passphrases, locally.
 - [Password Strength Checker](https://www.openutilitytools.com/tools/password-strength-checker/): Score a password using composition rules and common-pattern detection with actionable feedback.
 - [PBKDF2 Key Derivation](https://www.openutilitytools.com/tools/pbkdf2-key-derivation/): Derive a key from a passphrase and salt using PBKDF2 with configurable iterations and hash.
+- [PEM Key Converter & Key Matcher](https://www.openutilitytools.com/tools/pem-key-format-converter/): Convert RSA, EC and Ed25519 keys between PKCS#1, PKCS#8, SEC1, SPKI, OpenSSH, DER, Base64 and JWK, decrypt password-protected keys, repair mangled PEM and check that a certificate, key and CSR match.
 - [Random Bytes Generator](https://www.openutilitytools.com/tools/random-bytes-generator/): Generate cryptographically secure random bytes as hex, Base64, Base64URL, or a C-style byte array of a chosen length.
 - [Random Token Generator (Formats)](https://www.openutilitytools.com/tools/random-token-formats/): Generate cryptographically random tokens in many developer formats (hex, base64url, Base32, API-key style) with prefixes and grouping.
 - [ROT47 Encoder](https://www.openutilitytools.com/tools/rot47-encoder/): Encode or decode text with ROT47, the printable-ASCII rotation cipher (its own inverse).
 - [RSA / ECC Key Strength Comparator](https://www.openutilitytools.com/tools/crypto-rsa-key-size-strength/): Compare RSA, ECC, and symmetric key sizes by equivalent bits of security.
 - [RSA Key Pair Generator](https://www.openutilitytools.com/tools/rsa-keypair-generator/): Generate an RSA public/private key pair in PEM format with selectable key size (2048/3072/4096) and hash.
 - [RSA Sign & Verify](https://www.openutilitytools.com/tools/rsa-sign-verify/): Sign messages with an RSA private key and verify signatures with a public key (RSASSA-PKCS1 / PSS).
+- [Secret Scanner & Redactor](https://www.openutilitytools.com/tools/secret-scanner-redactor/): Scan pasted code, logs, configs, diffs or .env files for leaked API keys, tokens, passwords and private keys, then copy a redacted version that is safe to share.
+- [Self-Signed Certificate & CSR Generator](https://www.openutilitytools.com/tools/self-signed-certificate-generator/): Generate a self-signed X.509 certificate, a PKCS#10 CSR, or a local CA with a signed leaf certificate (mkcert-style) with SANs, key usage and ECDSA, RSA or Ed25519 keys - entirely in your browser.
 - [SHA Multi-Hash (Text)](https://www.openutilitytools.com/tools/sha-multi-hash-text/): Compute SHA-1, SHA-256, SHA-384, and SHA-512 digests of pasted text simultaneously.
 - [SHA-3 / Keccak Hash](https://www.openutilitytools.com/tools/crypto-sha3-keccak-hash/): Computes SHA3-224/256/384/512 and Keccak-256 hashes of text using a pure JS implementation.
 - [Shamir Secret Sharing](https://www.openutilitytools.com/tools/shamir-secret-sharing/): Split a secret into N shares requiring K to reconstruct, using finite-field polynomial interpolation.
@@ -465,7 +493,7 @@ Hashes, HMAC, JWT, keys & ciphers (68). Markdown index: https://www.openutilityt
 
 ## Encoding
 
-Base64, hex, URL, compression & more (54). Markdown index: https://www.openutilitytools.com/llms/encoding.md
+Base64, hex, URL, compression & more (56). Markdown index: https://www.openutilitytools.com/llms/encoding.md
 
 - [ASCII / Code Point Converter](https://www.openutilitytools.com/tools/encoding-ascii-code-point/): Convert text to ASCII/Unicode code point numbers and convert numeric lists back to text.
 - [ASCII ↔ EBCDIC Converter](https://www.openutilitytools.com/tools/encoding-ebcdic-converter/): Convert text between ASCII/Latin-1 and IBM EBCDIC code pages, byte for byte.
@@ -492,11 +520,13 @@ Base64, hex, URL, compression & more (54). Markdown index: https://www.openutili
 - [CSV Field Escaper / Unescaper](https://www.openutilitytools.com/tools/encoding-csv-field-escape/): Escape a single value for safe CSV embedding (RFC 4180 quoting) and unescape a CSV field.
 - [Gzip Base64 Compress / Decompress](https://www.openutilitytools.com/tools/encoding-gzip-base64/): Compress text with gzip and output Base64, or decode Base64 gzip back to the original text.
 - [Hex Encode / Decode](https://www.openutilitytools.com/tools/hex-text/): Convert text to hexadecimal and back, with optional uppercase.
+- [Hex Viewer & File Type Detector](https://www.openutilitytools.com/tools/hex-viewer-file-type-detector/): Open any file (up to multiple GB) in a fast hex editor-style viewer, identify its real type from magic bytes, inspect values as ints and floats, search bytes or text, and see where the data looks compressed or encrypted.
 - [HTML Entity Encode / Decode](https://www.openutilitytools.com/tools/html-entities/): Escape text to HTML entities and unescape entities back to text.
 - [HTML Named ↔ Numeric Entity Converter](https://www.openutilitytools.com/tools/encoding-html-named-numeric/): Convert HTML named entities to and from their decimal and hexadecimal numeric character references, both ways.
 - [JavaScript String Escaper / Unescaper](https://www.openutilitytools.com/tools/encoding-js-string-escape/): Escape arbitrary text into a safe JS string literal and unescape it back.
 - [JSON Pointer Escaper (RFC 6901)](https://www.openutilitytools.com/tools/encoding-json-pointer-escape/): Encode and decode JSON Pointer reference tokens with the ~0/~1 escape rules.
 - [JWT Decoder & Inspector](https://www.openutilitytools.com/tools/encoding-jwt-inspector/): Decode a JSON Web Token into its readable header and payload claims, with human-friendly timestamps for exp/iat/nbf.
+- [Magic Decoder (Auto-Detect Encoding)](https://www.openutilitytools.com/tools/magic-decoder/): Paste an unknown blob and automatically find the chain of decodings (Base64, hex, gzip, URL, ROT13, UTF-16 and more) that turns it into readable text or a recognisable file.
 - [Numeric HTML Character References](https://www.openutilitytools.com/tools/encoding-numeric-char-references/): Convert text into numeric HTML character references (decimal or hex) and decode them back to plain text.
 - [Octal Encode / Decode](https://www.openutilitytools.com/tools/encoding-octal-text/): Encode UTF-8 text to space-separated octal byte values or decode octal numbers back into readable text.
 - [Percent-Encoding Reference Table](https://www.openutilitytools.com/tools/encoding-percent-encoding-table/): Searchable table of percent-encoded (%XX) values for ASCII and common reserved characters.
@@ -524,7 +554,7 @@ Base64, hex, URL, compression & more (54). Markdown index: https://www.openutili
 
 ## Generators
 
-UUIDs, passwords, QR, fake data (70). Markdown index: https://www.openutilitytools.com/llms/generators.md
+UUIDs, passwords, QR, fake data (72). Markdown index: https://www.openutilitytools.com/llms/generators.md
 
 - [.env.example Generator](https://www.openutilitytools.com/tools/env-example-generator/): Turn a list of env var names/values into a redacted .env.example with comments and grouping.
 - [.gitignore Generator](https://www.openutilitytools.com/tools/gitignore-generator/): Assemble a .gitignore from common language and tool templates.
@@ -532,6 +562,7 @@ UUIDs, passwords, QR, fake data (70). Markdown index: https://www.openutilitytoo
 - [API Key Generator](https://www.openutilitytools.com/tools/api-key-generator/): Generate prefixed, secret-style API keys in common SaaS formats.
 - [Barcode Generator](https://www.openutilitytools.com/tools/generate-barcode/): Generate Code 39 and EAN-13 barcodes from input text/digits, rendered to a downloadable SVG/PNG with adjustable bar width and height.
 - [BIC / SWIFT Code Test Generator](https://www.openutilitytools.com/tools/bic-swift-test-generator/): Generate structurally valid test BIC/SWIFT codes (8 or 11 chars) with bank, country, location, branch parts.
+- [Calendar Event (.ics) Generator](https://www.openutilitytools.com/tools/ics-event-generator/): Build RFC 5545 iCalendar (.ics) files with time zones, recurrence, reminders and attendees, and get Google, Outlook and Yahoo add-to-calendar links.
 - [Credit Card Number Generator](https://www.openutilitytools.com/tools/generate-credit-card/): Generate Luhn-valid fake test card numbers by brand (Visa, Mastercard, Amex, Discover) with optional expiry and CVV, for payment-form testing only.
 - [Cron Schedule Builder](https://www.openutilitytools.com/tools/generate-cron-expression/): Build a cron expression from human-friendly schedule controls (minute, hour, day, month, weekday) and see a plain-English description of when it runs.
 - [Crontab Recipe Generator](https://www.openutilitytools.com/tools/crontab-recipe-generator/): Generate a full crontab file with multiple jobs, schedule presets, env lines, and human comments.
@@ -569,6 +600,7 @@ UUIDs, passwords, QR, fake data (70). Markdown index: https://www.openutilitytoo
 - [PIN Code Generator](https://www.openutilitytools.com/tools/generate-pin/): Generate random numeric PIN codes of a chosen length (e.g. 4/6/8 digits) in bulk, with an option to avoid trivial sequences and repeats.
 - [Placeholder Image Generator](https://www.openutilitytools.com/tools/generate-placeholder-image/): Generate downloadable placeholder images at a chosen size, background/text color, and label text, drawn on a canvas as a data URL for mockups.
 - [Pronounceable Password Generator](https://www.openutilitytools.com/tools/pronounceable-password-generator/): Generate pronounceable passwords by alternating consonant and vowel patterns.
+- [QR Code Generator](https://www.openutilitytools.com/tools/qr-code-generator/): Create QR codes for URLs, text, Wi-Fi, email, phone, SMS, contacts and locations with styling, a centre logo, and PNG or SVG download.
 - [Random Color Palette Generator](https://www.openutilitytools.com/tools/random-hex-color-palette/): Generate harmonious random color palettes in HEX/RGB/HSL using HSL-based schemes.
 - [Random Coordinates Generator](https://www.openutilitytools.com/tools/random-coordinates-generator/): Generate random latitude/longitude points, optionally constrained to a bounding box.
 - [Random Date Generator](https://www.openutilitytools.com/tools/generate-random-date/): Generate random dates and times between a start and end bound, with chosen output format (ISO, locale, Unix timestamp) and quantity for seeding data.
@@ -599,7 +631,7 @@ UUIDs, passwords, QR, fake data (70). Markdown index: https://www.openutilitytoo
 
 ## Web & Dev
 
-URLs, headers, CSS, references (188). Markdown index: https://www.openutilitytools.com/llms/web.md
+URLs, headers, CSS, references (197). Markdown index: https://www.openutilitytools.com/llms/web.md
 
 - [.env to JSON](https://www.openutilitytools.com/tools/web-dotenv-to-json/): Parse a .env / dotenv file into a JSON object and convert JSON back into .env format, handling quotes, comments, and export prefixes.
 - [Accept-Language / Accept Parser](https://www.openutilitytools.com/tools/web-accept-language-parser/): Parse and sort Accept-Language or Accept headers by quality value (q-factor).
@@ -612,10 +644,12 @@ URLs, headers, CSS, references (188). Markdown index: https://www.openutilitytoo
 - [Basic Auth Generator](https://www.openutilitytools.com/tools/basic-auth-generator/): Build an HTTP Basic Authorization header from a username and password.
 - [BEM Class Name Generator](https://www.openutilitytools.com/tools/web-bem-class-generator/): Generate Block__Element--Modifier CSS class names from block, element and modifier inputs with HTML/CSS preview.
 - [BIMI Record Checker](https://www.openutilitytools.com/tools/bimi-record-checker/): Inspect BIMI TXT records for version, logo URL, authority URL, and deployment checklist.
+- [Browser & Device Info](https://www.openutilitytools.com/tools/browser-device-info/): See what any website can read about your browser and device: screen, preferences, user agent, client hints, hardware and a feature support matrix, live and copyable.
 - [Cache-Control Builder](https://www.openutilitytools.com/tools/web-cache-control-builder/): Compose and explain a Cache-Control header from caching directive checkboxes and durations.
 - [Cache-Control Header Explainer](https://www.openutilitytools.com/tools/web-http-cache-header-explainer/): Break down a Cache-Control header and explain each directive and its effect.
 - [Chmod Calculator](https://www.openutilitytools.com/tools/chmod-calculator/): Toggle Unix permission bits and get the octal + symbolic chmod value.
 - [CIDR / IP Range Calculator](https://www.openutilitytools.com/tools/web-cidr-calculator/): Expand an IPv4/IPv6 CIDR block into network, broadcast, mask, and host range.
+- [CIDR Aggregator & IP Range Converter](https://www.openutilitytools.com/tools/cidr-aggregator-range-converter/): Merge, subtract, intersect, split and convert IPv4/IPv6 CIDR lists and IP ranges, then export as nginx, Apache, iptables, nftables, ipset or AWS rules.
 - [CloudEvents Validator](https://www.openutilitytools.com/tools/cloudevents-validator/): Validate a CloudEvents JSON event for required attributes and common content-type issues.
 - [Common Regex Patterns Library](https://www.openutilitytools.com/tools/web-regex-pattern-library/): Searchable reference of ready-to-copy regex patterns for emails, URLs, IPs, dates, and other common validations.
 - [Content-Disposition Builder](https://www.openutilitytools.com/tools/web-content-disposition-builder/): Build and parse Content-Disposition headers with RFC 5987 filename encoding.
@@ -666,6 +700,8 @@ URLs, headers, CSS, references (188). Markdown index: https://www.openutilitytoo
 - [DNS Record dig UI](https://www.openutilitytools.com/tools/dns-record-dig-ui/): Build copyable dig commands and summarize pasted DNS records.
 - [DNS Zone File Validator](https://www.openutilitytools.com/tools/dns-zone-file-validator/): Check zone-file records for common SOA, NS, MX, CNAME, TTL, and syntax issues.
 - [DNSSEC Chain Visualizer](https://www.openutilitytools.com/tools/dnssec-chain-visualizer/): Inspect pasted DS, DNSKEY, RRSIG, and NSEC records and outline the trust chain.
+- [Dockerfile Linter](https://www.openutilitytools.com/tools/dockerfile-linter/): Lint a Dockerfile against hadolint-style best practices (pinned images, apt/pip/npm hygiene, root user, secrets, layers) with line-by-line findings and fix hints.
+- [Email Header Analyzer](https://www.openutilitytools.com/tools/email-header-analyzer/): Paste raw email headers or drop a .eml to see the delivery path with delays, SPF/DKIM/DMARC/ARC results, red flags, MIME structure and attachments.
 - [Email Obfuscator](https://www.openutilitytools.com/tools/email-obfuscator/): Obfuscate an email address (entities / JS) to deter scrapers.
 - [ETag & Conditional Request Builder](https://www.openutilitytools.com/tools/web-etag-conditional-builder/): Generate ETag values and matching If-None-Match / If-Modified-Since request headers.
 - [Favicon Link Tags Generator](https://www.openutilitytools.com/tools/web-favicon-link-generator/): Generate the full set of favicon and app-icon link tags for all platforms.
@@ -674,6 +710,7 @@ URLs, headers, CSS, references (188). Markdown index: https://www.openutilitytoo
 - [GraphQL Variables Validator](https://www.openutilitytools.com/tools/graphql-variables-validator/): Compare GraphQL variable definitions with a variables JSON payload.
 - [gRPC Proto Viewer](https://www.openutilitytools.com/tools/grpc-proto-viewer/): Parse .proto text and list packages, services, RPCs, messages, fields, and enums.
 - [grpcurl Command Builder](https://www.openutilitytools.com/tools/grpcurl-command-builder/): Build grpcurl commands with host, service method, headers, TLS, and JSON body.
+- [HAR Viewer & Sanitizer](https://www.openutilitytools.com/tools/har-viewer-sanitizer/): Open a HAR file to browse requests with a waterfall, spot slow, large or failing calls, then redact cookies, tokens, keys and PII before you share it.
 - [HSTS Header Builder](https://www.openutilitytools.com/tools/web-hsts-header-builder/): Build and decode the Strict-Transport-Security header with preload-eligibility checks.
 - [HSTS Preload Checker](https://www.openutilitytools.com/tools/hsts-preload-checker/): Check Strict-Transport-Security headers against common preload requirements.
 - [HTML Attribute Stripper / Tag Cleaner](https://www.openutilitytools.com/tools/web-html-attributes-stripper/): Remove selected attributes (style, class, on*, data-*) or whole tags from HTML.
@@ -693,6 +730,7 @@ URLs, headers, CSS, references (188). Markdown index: https://www.openutilitytoo
 - [IP-in-CIDR Checker](https://www.openutilitytools.com/tools/web-ip-cidr-membership/): Check whether IP addresses fall within one or more CIDR ranges.
 - [IPv4 Subnet Calculator](https://www.openutilitytools.com/tools/ip-subnet-calculator/): Compute network, broadcast, mask, host range and count from CIDR.
 - [IPv6 Expand & Compress](https://www.openutilitytools.com/tools/web-ipv6-expander/): Expand IPv6 addresses to full form or compress to canonical RFC 5952 shorthand.
+- [JavaScript Beautifier & Minifier](https://www.openutilitytools.com/tools/javascript-beautifier-minifier/): Beautify messy JavaScript with consistent indentation or minify it by stripping comments and whitespace, with ASI-safe output and no renaming, entirely in your browser.
 - [JSON Flatten / Unflatten (Web)](https://www.openutilitytools.com/tools/web-json-flatten/): Flatten a deeply nested JSON object into single-level dot-notation keys, or rebuild nested structure from flattened keys.
 - [JSON Path Extractor (Advanced)](https://www.openutilitytools.com/tools/web-json-path-extractor/): Query a JSON document with a dot/bracket path expression (e.g. data.items[0].name) and extract matching values, with wildcard support for arrays.
 - [JSON Schema Compatibility Diff](https://www.openutilitytools.com/tools/json-schema-compatibility-diff/): Compare JSON Schemas for required fields, property changes, and enum narrowing.
@@ -706,6 +744,7 @@ URLs, headers, CSS, references (188). Markdown index: https://www.openutilitytoo
 - [JWT Decoder](https://www.openutilitytools.com/tools/jwt-decoder/): Decode and inspect JSON Web Token header & payload (no verification).
 - [JWT Expiry Inspector](https://www.openutilitytools.com/tools/web-jwt-expiry-inspector/): Decode a JWT and report human-readable issued/expiry times and remaining validity.
 - [Kafka Message Header Viewer](https://www.openutilitytools.com/tools/kafka-message-header-viewer/): Parse Kafka header key/value pairs and payload metadata for debugging consumers.
+- [Keyboard Event Inspector (Keycode Info)](https://www.openutilitytools.com/tools/keyboard-event-inspector/): Press any key to see event.key, event.code, keyCode, location and modifiers, then copy a ready-made shortcut condition, hotkey string and event log.
 - [Link Header Builder & Parser](https://www.openutilitytools.com/tools/web-link-header-builder/): Build and parse RFC 8288 Link headers (rel=next/prev, preload, canonical).
 - [Lorem Ipsum HTML Block Generator](https://www.openutilitytools.com/tools/web-lorem-html-block/): Generate placeholder content as ready-to-paste semantic HTML blocks (paragraphs, headings, lists, blockquotes).
 - [MAC Address Formatter](https://www.openutilitytools.com/tools/web-mac-address-formatter/): Reformat MAC addresses between colon, hyphen, dot (Cisco), and bare notations.
@@ -735,6 +774,7 @@ URLs, headers, CSS, references (188). Markdown index: https://www.openutilitytoo
 - [Referrer-Policy Reference & Tester](https://www.openutilitytools.com/tools/web-referrer-policy-reference/): Explain Referrer-Policy values and simulate what Referer is sent between two URLs.
 - [Regex Cheatsheet & Builder](https://www.openutilitytools.com/tools/web-regex-cheatsheet/): Browse a searchable regex syntax reference and snippet library for common patterns like email, URL, IP, and date, with copyable expressions.
 - [Regex Escape / Unescape](https://www.openutilitytools.com/tools/web-regex-escape/): Escape arbitrary text into a literal regex pattern or unescape an escaped pattern back to plain text.
+- [Regex Explainer](https://www.openutilitytools.com/tools/regex-explainer/): Break a JavaScript regular expression down into a plain-English explanation tree with colour-coded highlighting, capture groups, backtracking warnings and a live tester.
 - [Regex Match Against Lines](https://www.openutilitytools.com/tools/web-regex-match-lines/): Run a regex against each line of pasted text and list which lines match, which do not, and the captured groups.
 - [Regex Named Group Reference Converter](https://www.openutilitytools.com/tools/web-regex-named-group-converter/): Convert between numbered capture groups and named capture groups in regex patterns and their backreferences/replacements.
 - [Relative URL Resolver](https://www.openutilitytools.com/tools/web-relative-url-resolver/): Resolve a relative reference against a base URL to produce the absolute target.
@@ -788,11 +828,12 @@ URLs, headers, CSS, references (188). Markdown index: https://www.openutilitytoo
 - [WWW-Authenticate Parser](https://www.openutilitytools.com/tools/web-www-authenticate-parser/): Parse WWW-Authenticate / Authorization challenge headers into scheme and parameters.
 - [XML Formatter](https://www.openutilitytools.com/tools/web-xml-formatter/): Pretty-print and indent minified XML, or minify verbose XML by stripping whitespace between tags, with self-closing tag handling.
 - [XML to JSON (DOM)](https://www.openutilitytools.com/tools/web-xml-to-json/): Convert an XML document into a structured JSON object, mapping elements, attributes, and text content with a predictable convention.
+- [XPath & CSS Selector Tester](https://www.openutilitytools.com/tools/xpath-css-selector-tester/): Test XPath 1.0 expressions and CSS selectors against XML or HTML, with namespace support, generated XPath/CSS paths, highlighted matches and JSON/CSV export.
 - [Z-Index Scale Generator](https://www.openutilitytools.com/tools/web-z-index-scale-generator/): Generate a documented z-index scale with named layers as CSS variables or a Sass/JS map to avoid stacking chaos.
 
 ## Time & Date
 
-Timestamps, timezones, durations (56). Markdown index: https://www.openutilitytools.com/llms/time.md
+Timestamps, timezones, durations (58). Markdown index: https://www.openutilitytools.com/llms/time.md
 
 - [12 / 24 Hour Time Converter](https://www.openutilitytools.com/tools/time-12-24-converter/): Convert clock times between 12-hour AM/PM and 24-hour formats, single or in bulk.
 - [Add Business Days](https://www.openutilitytools.com/tools/add-business-days/): Add or subtract a number of business days to a date, skipping weekends and custom holidays.
@@ -801,6 +842,7 @@ Timestamps, timezones, durations (56). Markdown index: https://www.openutilityto
 - [Batch Timestamp Converter](https://www.openutilitytools.com/tools/timestamp-batch-converter/): Convert a pasted list of Unix timestamps to human dates (or dates back to timestamps) in bulk.
 - [Business Days Calculator](https://www.openutilitytools.com/tools/business-days-calculator/): Count working days between two dates, excluding weekends, or add a number of business days to a start date.
 - [Clock Time Difference](https://www.openutilitytools.com/tools/time-between-clocks/): Compute the duration between two times of day, optionally wrapping past midnight.
+- [Countdown & Pomodoro Timer](https://www.openutilitytools.com/tools/pomodoro-countdown-timer/): A countdown timer, Pomodoro timer and interval (Tabata) timer with progress ring, sound, desktop notifications and keep-awake, all in your browser.
 - [Countdown Snapshot Builder](https://www.openutilitytools.com/tools/countdown-timer-builder/): Compute the exact remaining time from now to a target datetime, broken into units.
 - [Cron Expression Builder](https://www.openutilitytools.com/tools/cron-builder/): Build a standard cron expression from dropdowns for minute, hour, day, month, and weekday with a human-readable preview.
 - [Cron Expression Explainer](https://www.openutilitytools.com/tools/cron-parser/): Explain a cron expression in plain English and preview the next run times.
@@ -835,6 +877,7 @@ Timestamps, timezones, durations (56). Markdown index: https://www.openutilityto
 - [Recurring Event Date Generator](https://www.openutilitytools.com/tools/recurring-event-dates/): Generate the next N dates for a simple recurrence (daily, weekly, monthly, yearly with interval).
 - [Relative Time Formatter](https://www.openutilitytools.com/tools/relative-time-formatter/): Turn a timestamp or date into human-friendly relative phrasing like '3 hours ago' or 'in 2 days' across locales.
 - [SMPTE Timecode / Frames Converter](https://www.openutilitytools.com/tools/time-timecode-frames-converter/): Converts between SMPTE timecode (HH:MM:SS:FF) and total frame counts at a chosen frame rate.
+- [Stopwatch & Lap Timer](https://www.openutilitytools.com/tools/stopwatch-lap-timer/): A precise online stopwatch with lap and split times, best and worst lap highlighting, fullscreen mode, keyboard shortcuts and CSV export.
 - [strftime Format Playground](https://www.openutilitytools.com/tools/strftime-playground/): Apply a C/Python strftime format string to a chosen datetime and see the rendered output live.
 - [Time Duration Arithmetic](https://www.openutilitytools.com/tools/time-time-duration-arithmetic/): Adds and subtracts a list of HH:MM:SS durations and shows the running and total result.
 - [Time Epoch Rollover Checker](https://www.openutilitytools.com/tools/unix-rollover-checker/): Show key time-storage overflow dates (Year 2038, 2-digit Y2K, 32-bit, 64-bit limits).
@@ -853,8 +896,9 @@ Timestamps, timezones, durations (56). Markdown index: https://www.openutilityto
 
 ## Math & Units
 
-Bases, units, calculators (114). Markdown index: https://www.openutilitytools.com/llms/math.md
+Bases, units, calculators (122). Markdown index: https://www.openutilitytools.com/llms/math.md
 
+- [A/B Test Significance & Sample Size Calculator](https://www.openutilitytools.com/tools/ab-test-calculator/): Check whether an A/B test result is statistically significant (z-test, Fisher exact, Bayesian) and plan the sample size and duration of a test.
 - [Angle Converter](https://www.openutilitytools.com/tools/angle-converter/): Convert angles between degrees, radians, gradians, turns, and arcminutes/arcseconds.
 - [Arbitrary Base Converter (2-36)](https://www.openutilitytools.com/tools/arbitrary-base-converter/): Convert an integer between any two radixes from base 2 to base 36 with full digit-set support.
 - [Arithmetic & Geometric Sequence Calculator](https://www.openutilitytools.com/tools/arithmetic-geometric-sequence/): Find the nth term and sum of arithmetic or geometric sequences.
@@ -884,6 +928,7 @@ Bases, units, calculators (114). Markdown index: https://www.openutilitytools.co
 - [Divisibility Rules Checker](https://www.openutilitytools.com/tools/divisibility-rules-checker/): Test divisibility of a number by 2-13 and show which mental-math rule applies.
 - [Divisor Lister & Counter](https://www.openutilitytools.com/tools/divisor-lister/): List every divisor of a number with totals, divisor count, and divisor pairs.
 - [DMS ↔ Decimal Degrees Converter](https://www.openutilitytools.com/tools/math-dms-decimal-degrees/): Convert geographic coordinates between degrees-minutes-seconds and decimal degrees.
+- [Electrical Calculator (Ohm's Law, Resistors & Power)](https://www.openutilitytools.com/tools/electrical-calculator/): Ohm's law and power wheel, resistor colour codes with E-series and SMD decoder, series/parallel, voltage divider, LED resistor, AC power and wire voltage drop in one tabbed toolkit.
 - [Ellipse Calculator](https://www.openutilitytools.com/tools/ellipse-calculator/): Compute area, perimeter, eccentricity, and foci of an ellipse.
 - [Engineering Notation Converter](https://www.openutilitytools.com/tools/engineering-notation-converter/): Convert numbers to engineering notation (powers of 1000) with SI metric prefixes.
 - [Exponent & Power Calculator](https://www.openutilitytools.com/tools/exponent-power-calculator/): Raise numbers to powers, find roots, and evaluate scientific exponent expressions.
@@ -896,11 +941,13 @@ Bases, units, calculators (114). Markdown index: https://www.openutilitytools.co
 - [Fraction Simplifier](https://www.openutilitytools.com/tools/fraction-simplifier/): Reduce any fraction to lowest terms and show the mixed-number and decimal forms.
 - [Fractional Base Converter](https://www.openutilitytools.com/tools/math-base-converter-fractional/): Converts numbers with fractional parts between arbitrary bases 2 through 36.
 - [Fuel Economy Converter](https://www.openutilitytools.com/tools/fuel-economy-converter/): Convert fuel efficiency between MPG (US/UK), km/L, and liters per 100 km.
+- [Function Grapher](https://www.openutilitytools.com/tools/function-grapher/): Plot up to 8 functions (y = f(x), polar, parametric, vertical lines) with sliders, roots, extrema, intersections, integrals and shareable links.
 - [GCD & LCM Calculator](https://www.openutilitytools.com/tools/gcd-lcm/): Find the greatest common divisor and least common multiple of numbers.
 - [GPA Calculator](https://www.openutilitytools.com/tools/math-gpa-calculator/): Compute weighted grade point average from courses, credits, and grades.
 - [Great-Circle Distance Calculator](https://www.openutilitytools.com/tools/math-great-circle-distance/): Computes the distance and initial bearing between two latitude/longitude points.
 - [IEEE-754 Float Inspector](https://www.openutilitytools.com/tools/ieee754-float-inspector/): Decompose a decimal number into IEEE-754 single and double precision sign, exponent, and mantissa bits.
 - [Integer Factorization Explorer](https://www.openutilitytools.com/tools/integer-factorization/): Fully factor an integer into primes and explore all derived multiplicative properties.
+- [Linear Regression & Correlation Calculator](https://www.openutilitytools.com/tools/linear-regression-calculator/): Fit linear, polynomial, exponential, logarithmic and power models to your data with full statistics, correlation coefficients, predictions and a chart.
 - [Linear System Solver (Ax = b)](https://www.openutilitytools.com/tools/math-linear-system-solver/): Solves a system of linear equations using Gaussian elimination and reports the solution.
 - [Loan & EMI Calculator](https://www.openutilitytools.com/tools/loan-emi-calculator/): Calculate monthly loan payment, total interest, and total repayment from principal, rate, and term.
 - [Loan Amortization Schedule](https://www.openutilitytools.com/tools/math-loan-amortization-schedule/): Generate a full month-by-month amortization table for a fixed-rate loan.
@@ -932,6 +979,7 @@ Bases, units, calculators (114). Markdown index: https://www.openutilitytools.co
 - [Prime Checker & Factorizer](https://www.openutilitytools.com/tools/prime-checker/): Check whether a number is prime and view its prime factorization.
 - [Prime Sieve Generator](https://www.openutilitytools.com/tools/prime-sieve-generator/): Generate every prime up to N (or the first K primes) with the Sieve of Eratosthenes.
 - [Prism & Cylinder Volume Calculator](https://www.openutilitytools.com/tools/prism-cylinder-volume/): Compute volume and surface area of cylinders, cubes, and box prisms.
+- [Probability Distribution Calculator](https://www.openutilitytools.com/tools/probability-distribution-calculator/): Compute CDF, tail and interval probabilities, densities, quantiles, critical values and p-values for 14 common distributions with a shaded chart.
 - [Progressive Tax Bracket Calculator](https://www.openutilitytools.com/tools/math-tax-bracket-calculator/): Compute total tax across user-defined progressive income brackets.
 - [Proportion (Cross-Multiply) Solver](https://www.openutilitytools.com/tools/proportion-solver/): Solve a/b = c/d for the unknown using cross multiplication.
 - [Pythagorean Theorem Calculator](https://www.openutilitytools.com/tools/pythagorean-theorem/): Find the missing side of a right triangle from any two known sides.
@@ -948,6 +996,7 @@ Bases, units, calculators (114). Markdown index: https://www.openutilitytools.co
 - [Roman Numeral Converter](https://www.openutilitytools.com/tools/roman-numerals/): Convert between Roman numerals and integers (1–3999).
 - [Roman Numeral Variants Converter](https://www.openutilitytools.com/tools/roman-numeral-variants/): Convert to and from standard, additive (IIII), and vinculum (overline ×1000) Roman numerals.
 - [Rounding & Significant Figures](https://www.openutilitytools.com/tools/rounding-calculator/): Round numbers by decimals, significant figures, or a chosen rule.
+- [Salary ↔ Hourly Pay Converter](https://www.openutilitytools.com/tools/salary-hourly-converter/): Convert gross pay between hourly, daily, weekly, bi-weekly, semi-monthly, monthly, quarterly and annual, with overtime, time off, raise, offer comparison and freelance rate calculators.
 - [Savings Goal Calculator](https://www.openutilitytools.com/tools/savings-goal-calculator/): Find the monthly deposit needed to reach a savings target by a date.
 - [Scientific Calculator](https://www.openutilitytools.com/tools/expression-calculator/): Evaluate math expressions with functions, constants and operators.
 - [Scientific Notation Arithmetic](https://www.openutilitytools.com/tools/scientific-notation-arithmetic/): Add, multiply, and divide numbers written in scientific notation.
@@ -962,6 +1011,8 @@ Bases, units, calculators (114). Markdown index: https://www.openutilitytools.co
 - [Tip & Bill Splitter](https://www.openutilitytools.com/tools/tip-split-calculator/): Calculate tip amount, grand total, and per-person share when splitting a bill among people.
 - [Trapezoid & Parallelogram Calculator](https://www.openutilitytools.com/tools/trapezoid-parallelogram-calculator/): Compute area and perimeter of trapezoids and parallelograms.
 - [Triangle Solver](https://www.openutilitytools.com/tools/triangle-solver/): Solve any triangle from 3 known sides/angles using the laws of sines and cosines.
+- [Truth Table & Boolean Simplifier](https://www.openutilitytools.com/tools/truth-table-generator/): Generate truth tables from Boolean expressions in many notations, then find minterms, canonical and minimal SOP/POS forms, a Karnaugh map and check expression equivalence.
+- [TVM, NPV & IRR Calculator](https://www.openutilitytools.com/tools/time-value-of-money-calculator/): Solve for N, rate, PV, PMT or FV with an amortization schedule, then analyse cash flows with NPV, IRR, MIRR, XIRR, payback and inflation-adjusted value.
 - [Two's Complement Converter](https://www.openutilitytools.com/tools/twos-complement-converter/): Encode and decode signed integers in two's complement across 8/16/32/64-bit widths.
 - [Unit Converter](https://www.openutilitytools.com/tools/unit-converter/): Convert length, mass, temperature, area, volume, speed and data sizes.
 - [Unit Price Comparison](https://www.openutilitytools.com/tools/unit-price-calculator/): Compare products by price per unit to find the best value.

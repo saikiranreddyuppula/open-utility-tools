@@ -4,7 +4,7 @@ version = "0.1.0"
 edition.workspace = true
 license.workspace = true
 publish.workspace = true
-description = "PDF merge/split/rotate/metadata (wasm) via lopdf, plus table/image PDF building."
+description = "PDF merge/split/rotate/metadata, page geometry, stamping, reordering, text extraction, encryption and image tooling (wasm) via lopdf."
 
 [lib]
 crate-type = ["cdylib", "rlib"]
@@ -36,3 +36,14 @@ lopdf = "0.36"
 # requires the `wasm_js` backend feature + the matching cfg (set in
 # rust/.cargo/config.toml). This pulls entropy from crypto.getRandomValues.
 getrandom = { version = "0.3", features = ["wasm_js"] }
+
+# Direct use of crates lopdf already compiles in (no extra code in the wasm):
+#   flate2 - Flate re-deflate in the optimiser
+#   md-5   - owner-password recovery for revision <= 4 encryption
+#   aes    - the real AES-256 /Perms block (lopdf 0.36 leaves it unencrypted)
+flate2 = "1"
+md-5 = "0.10"
+aes = "0.8"
+
+[dev-dependencies]
+serde_json = "1"

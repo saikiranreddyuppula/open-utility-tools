@@ -619,6 +619,10 @@
       "types": "./dist/tools/convert/astronomical-distance-converter.d.ts",
       "import": "./dist/tools/convert/astronomical-distance-converter.js"
     },
+    "./tools/convert/audio-trimmer-converter": {
+      "types": "./dist/tools/convert/audio-trimmer-converter.d.ts",
+      "import": "./dist/tools/convert/audio-trimmer-converter.js"
+    },
     "./tools/convert/base64-to-file": {
       "types": "./dist/tools/convert/base64-to-file.d.ts",
       "import": "./dist/tools/convert/base64-to-file.js"
@@ -723,6 +727,10 @@
       "types": "./dist/tools/convert/density-converter.d.ts",
       "import": "./dist/tools/convert/density-converter.js"
     },
+    "./tools/convert/docker-run-compose-converter": {
+      "types": "./dist/tools/convert/docker-run-compose-converter.d.ts",
+      "import": "./dist/tools/convert/docker-run-compose-converter.js"
+    },
     "./tools/convert/dpi-ppi-size-converter": {
       "types": "./dist/tools/convert/dpi-ppi-size-converter.d.ts",
       "import": "./dist/tools/convert/dpi-ppi-size-converter.js"
@@ -734,6 +742,10 @@
     "./tools/convert/env-to-shell-exports": {
       "types": "./dist/tools/convert/env-to-shell-exports.d.ts",
       "import": "./dist/tools/convert/env-to-shell-exports.js"
+    },
+    "./tools/convert/excel-converter": {
+      "types": "./dist/tools/convert/excel-converter.d.ts",
+      "import": "./dist/tools/convert/excel-converter.js"
     },
     "./tools/convert/flow-rate-converter": {
       "types": "./dist/tools/convert/flow-rate-converter.d.ts",
@@ -750,6 +762,10 @@
     "./tools/convert/fuel-volume-converter": {
       "types": "./dist/tools/convert/fuel-volume-converter.d.ts",
       "import": "./dist/tools/convert/fuel-volume-converter.js"
+    },
+    "./tools/convert/geo-data-converter": {
+      "types": "./dist/tools/convert/geo-data-converter.d.ts",
+      "import": "./dist/tools/convert/geo-data-converter.js"
     },
     "./tools/convert/hex-to-rgb-code": {
       "types": "./dist/tools/convert/hex-to-rgb-code.d.ts",
@@ -955,6 +971,10 @@
       "types": "./dist/tools/convert/speed-converter.d.ts",
       "import": "./dist/tools/convert/speed-converter.js"
     },
+    "./tools/convert/subtitle-converter": {
+      "types": "./dist/tools/convert/subtitle-converter.d.ts",
+      "import": "./dist/tools/convert/subtitle-converter.js"
+    },
     "./tools/convert/svg-path-rounder": {
       "types": "./dist/tools/convert/svg-path-rounder.d.ts",
       "import": "./dist/tools/convert/svg-path-rounder.js"
@@ -1027,6 +1047,10 @@
       "types": "./dist/tools/convert/yaml-to-toml.d.ts",
       "import": "./dist/tools/convert/yaml-to-toml.js"
     },
+    "./tools/convert/zip-archive-tool": {
+      "types": "./dist/tools/convert/zip-archive-tool.d.ts",
+      "import": "./dist/tools/convert/zip-archive-tool.js"
+    },
     "./tools/crypto/aba-routing-validator": {
       "types": "./dist/tools/crypto/aba-routing-validator.d.ts",
       "import": "./dist/tools/crypto/aba-routing-validator.js"
@@ -1050,6 +1074,10 @@
     "./tools/crypto/api-key-pair-generator": {
       "types": "./dist/tools/crypto/api-key-pair-generator.d.ts",
       "import": "./dist/tools/crypto/api-key-pair-generator.js"
+    },
+    "./tools/crypto/asn1-der-decoder": {
+      "types": "./dist/tools/crypto/asn1-der-decoder.d.ts",
+      "import": "./dist/tools/crypto/asn1-der-decoder.js"
     },
     "./tools/crypto/base64url-jwk-encoder": {
       "types": "./dist/tools/crypto/base64url-jwk-encoder.d.ts",
@@ -1235,6 +1263,10 @@
       "types": "./dist/tools/crypto/pbkdf2-key-derivation.d.ts",
       "import": "./dist/tools/crypto/pbkdf2-key-derivation.js"
     },
+    "./tools/crypto/pem-key-format-converter": {
+      "types": "./dist/tools/crypto/pem-key-format-converter.d.ts",
+      "import": "./dist/tools/crypto/pem-key-format-converter.js"
+    },
     "./tools/crypto/random-bytes-generator": {
       "types": "./dist/tools/crypto/random-bytes-generator.d.ts",
       "import": "./dist/tools/crypto/random-bytes-generator.js"
@@ -1258,6 +1290,14 @@
     "./tools/crypto/scrypt-style-kdf-params": {
       "types": "./dist/tools/crypto/scrypt-style-kdf-params.d.ts",
       "import": "./dist/tools/crypto/scrypt-style-kdf-params.js"
+    },
+    "./tools/crypto/secret-scanner-redactor": {
+      "types": "./dist/tools/crypto/secret-scanner-redactor.d.ts",
+      "import": "./dist/tools/crypto/secret-scanner-redactor.js"
+    },
+    "./tools/crypto/self-signed-certificate-generator": {
+      "types": "./dist/tools/crypto/self-signed-certificate-generator.d.ts",
+      "import": "./dist/tools/crypto/self-signed-certificate-generator.js"
     },
     "./tools/crypto/sha-multi-hash-text": {
       "types": "./dist/tools/crypto/sha-multi-hash-text.d.ts",
@@ -1326,6 +1366,10 @@
     "./tools/data/csv-delimiter-converter": {
       "types": "./dist/tools/data/csv-delimiter-converter.d.ts",
       "import": "./dist/tools/data/csv-delimiter-converter.js"
+    },
+    "./tools/data/csv-diff-compare": {
+      "types": "./dist/tools/data/csv-diff-compare.d.ts",
+      "import": "./dist/tools/data/csv-diff-compare.js"
     },
     "./tools/data/csv-fill-blanks": {
       "types": "./dist/tools/data/csv-fill-blanks.d.ts",
@@ -1435,6 +1479,10 @@
       "types": "./dist/tools/data/data-yaml-frontmatter-extractor.d.ts",
       "import": "./dist/tools/data/data-yaml-frontmatter-extractor.js"
     },
+    "./tools/data/file-metadata-viewer": {
+      "types": "./dist/tools/data/file-metadata-viewer.d.ts",
+      "import": "./dist/tools/data/file-metadata-viewer.js"
+    },
     "./tools/data/fixed-width-to-csv": {
       "types": "./dist/tools/data/fixed-width-to-csv.d.ts",
       "import": "./dist/tools/data/fixed-width-to-csv.js"
@@ -1534,6 +1582,10 @@
     "./tools/data/json-schema-sample-generator": {
       "types": "./dist/tools/data/json-schema-sample-generator.d.ts",
       "import": "./dist/tools/data/json-schema-sample-generator.js"
+    },
+    "./tools/data/json-schema-validator": {
+      "types": "./dist/tools/data/json-schema-validator.d.ts",
+      "import": "./dist/tools/data/json-schema-validator.js"
     },
     "./tools/data/json-sort-keys": {
       "types": "./dist/tools/data/json-sort-keys.d.ts",
@@ -1690,6 +1742,14 @@
     "./tools/data/sql-update-builder": {
       "types": "./dist/tools/data/sql-update-builder.d.ts",
       "import": "./dist/tools/data/sql-update-builder.js"
+    },
+    "./tools/data/web-server-log-analyzer": {
+      "types": "./dist/tools/data/web-server-log-analyzer.d.ts",
+      "import": "./dist/tools/data/web-server-log-analyzer.js"
+    },
+    "./tools/data/yaml-validator-formatter": {
+      "types": "./dist/tools/data/yaml-validator-formatter.d.ts",
+      "import": "./dist/tools/data/yaml-validator-formatter.js"
     },
     "./tools/encoding/ascii85": {
       "types": "./dist/tools/encoding/ascii85.d.ts",
@@ -1895,9 +1955,17 @@
       "types": "./dist/tools/encoding/hex-text.d.ts",
       "import": "./dist/tools/encoding/hex-text.js"
     },
+    "./tools/encoding/hex-viewer-file-type-detector": {
+      "types": "./dist/tools/encoding/hex-viewer-file-type-detector.d.ts",
+      "import": "./dist/tools/encoding/hex-viewer-file-type-detector.js"
+    },
     "./tools/encoding/html-entities": {
       "types": "./dist/tools/encoding/html-entities.d.ts",
       "import": "./dist/tools/encoding/html-entities.js"
+    },
+    "./tools/encoding/magic-decoder": {
+      "types": "./dist/tools/encoding/magic-decoder.d.ts",
+      "import": "./dist/tools/encoding/magic-decoder.js"
     },
     "./tools/encoding/protobuf-binary-decoder": {
       "types": "./dist/tools/encoding/protobuf-binary-decoder.d.ts",
@@ -2059,6 +2127,10 @@
       "types": "./dist/tools/generators/htpasswd-generator.d.ts",
       "import": "./dist/tools/generators/htpasswd-generator.js"
     },
+    "./tools/generators/ics-event-generator": {
+      "types": "./dist/tools/generators/ics-event-generator.d.ts",
+      "import": "./dist/tools/generators/ics-event-generator.js"
+    },
     "./tools/generators/ip-cidr-list-generator": {
       "types": "./dist/tools/generators/ip-cidr-list-generator.d.ts",
       "import": "./dist/tools/generators/ip-cidr-list-generator.js"
@@ -2127,6 +2199,10 @@
       "types": "./dist/tools/generators/pronounceable-password-generator.d.ts",
       "import": "./dist/tools/generators/pronounceable-password-generator.js"
     },
+    "./tools/generators/qr-code-generator": {
+      "types": "./dist/tools/generators/qr-code-generator.d.ts",
+      "import": "./dist/tools/generators/qr-code-generator.js"
+    },
     "./tools/generators/random-coordinates-generator": {
       "types": "./dist/tools/generators/random-coordinates-generator.d.ts",
       "import": "./dist/tools/generators/random-coordinates-generator.js"
@@ -2186,6 +2262,10 @@
     "./tools/generators/wifi-qr-payload-generator": {
       "types": "./dist/tools/generators/wifi-qr-payload-generator.d.ts",
       "import": "./dist/tools/generators/wifi-qr-payload-generator.js"
+    },
+    "./tools/image/gif-maker": {
+      "types": "./dist/tools/image/gif-maker.d.ts",
+      "import": "./dist/tools/image/gif-maker.js"
     },
     "./tools/image/image-add-border": {
       "types": "./dist/tools/image/image-add-border.d.ts",
@@ -2259,9 +2339,17 @@
       "types": "./dist/tools/image/image-invert-colors.d.ts",
       "import": "./dist/tools/image/image-invert-colors.js"
     },
+    "./tools/image/image-make-transparent": {
+      "types": "./dist/tools/image/image-make-transparent.d.ts",
+      "import": "./dist/tools/image/image-make-transparent.js"
+    },
     "./tools/image/image-meme-text": {
       "types": "./dist/tools/image/image-meme-text.d.ts",
       "import": "./dist/tools/image/image-meme-text.js"
+    },
+    "./tools/image/image-metadata-remover": {
+      "types": "./dist/tools/image/image-metadata-remover.d.ts",
+      "import": "./dist/tools/image/image-metadata-remover.js"
     },
     "./tools/image/image-mirror-collage": {
       "types": "./dist/tools/image/image-mirror-collage.d.ts",
@@ -2282,6 +2370,10 @@
     "./tools/image/image-pixelate": {
       "types": "./dist/tools/image/image-pixelate.d.ts",
       "import": "./dist/tools/image/image-pixelate.js"
+    },
+    "./tools/image/image-png-compressor": {
+      "types": "./dist/tools/image/image-png-compressor.d.ts",
+      "import": "./dist/tools/image/image-png-compressor.js"
     },
     "./tools/image/image-resize-pixels": {
       "types": "./dist/tools/image/image-resize-pixels.d.ts",
@@ -2343,6 +2435,10 @@
       "types": "./dist/tools/image/image-to-data-uri-variants.d.ts",
       "import": "./dist/tools/image/image-to-data-uri-variants.js"
     },
+    "./tools/image/image-to-svg-tracer": {
+      "types": "./dist/tools/image/image-to-svg-tracer.d.ts",
+      "import": "./dist/tools/image/image-to-svg-tracer.js"
+    },
     "./tools/image/image-vignette": {
       "types": "./dist/tools/image/image-vignette.d.ts",
       "import": "./dist/tools/image/image-vignette.js"
@@ -2358,6 +2454,10 @@
     "./tools/image/svg-to-data-uri": {
       "types": "./dist/tools/image/svg-to-data-uri.d.ts",
       "import": "./dist/tools/image/svg-to-data-uri.js"
+    },
+    "./tools/math/ab-test-calculator": {
+      "types": "./dist/tools/math/ab-test-calculator.d.ts",
+      "import": "./dist/tools/math/ab-test-calculator.js"
     },
     "./tools/math/angle-converter": {
       "types": "./dist/tools/math/angle-converter.d.ts",
@@ -2471,6 +2571,10 @@
       "types": "./dist/tools/math/duration-converter.d.ts",
       "import": "./dist/tools/math/duration-converter.js"
     },
+    "./tools/math/electrical-calculator": {
+      "types": "./dist/tools/math/electrical-calculator.d.ts",
+      "import": "./dist/tools/math/electrical-calculator.js"
+    },
     "./tools/math/ellipse-calculator": {
       "types": "./dist/tools/math/ellipse-calculator.d.ts",
       "import": "./dist/tools/math/ellipse-calculator.js"
@@ -2523,6 +2627,10 @@
       "types": "./dist/tools/math/fuel-economy-converter.d.ts",
       "import": "./dist/tools/math/fuel-economy-converter.js"
     },
+    "./tools/math/function-grapher": {
+      "types": "./dist/tools/math/function-grapher.d.ts",
+      "import": "./dist/tools/math/function-grapher.js"
+    },
     "./tools/math/gcd-lcm": {
       "types": "./dist/tools/math/gcd-lcm.d.ts",
       "import": "./dist/tools/math/gcd-lcm.js"
@@ -2534,6 +2642,10 @@
     "./tools/math/integer-factorization": {
       "types": "./dist/tools/math/integer-factorization.d.ts",
       "import": "./dist/tools/math/integer-factorization.js"
+    },
+    "./tools/math/linear-regression-calculator": {
+      "types": "./dist/tools/math/linear-regression-calculator.d.ts",
+      "import": "./dist/tools/math/linear-regression-calculator.js"
     },
     "./tools/math/loan-emi-calculator": {
       "types": "./dist/tools/math/loan-emi-calculator.d.ts",
@@ -2683,6 +2795,10 @@
       "types": "./dist/tools/math/prism-cylinder-volume.d.ts",
       "import": "./dist/tools/math/prism-cylinder-volume.js"
     },
+    "./tools/math/probability-distribution-calculator": {
+      "types": "./dist/tools/math/probability-distribution-calculator.d.ts",
+      "import": "./dist/tools/math/probability-distribution-calculator.js"
+    },
     "./tools/math/proportion-solver": {
       "types": "./dist/tools/math/proportion-solver.d.ts",
       "import": "./dist/tools/math/proportion-solver.js"
@@ -2739,6 +2855,10 @@
       "types": "./dist/tools/math/rounding-calculator.d.ts",
       "import": "./dist/tools/math/rounding-calculator.js"
     },
+    "./tools/math/salary-hourly-converter": {
+      "types": "./dist/tools/math/salary-hourly-converter.d.ts",
+      "import": "./dist/tools/math/salary-hourly-converter.js"
+    },
     "./tools/math/savings-goal-calculator": {
       "types": "./dist/tools/math/savings-goal-calculator.d.ts",
       "import": "./dist/tools/math/savings-goal-calculator.js"
@@ -2775,6 +2895,10 @@
       "types": "./dist/tools/math/statistics.d.ts",
       "import": "./dist/tools/math/statistics.js"
     },
+    "./tools/math/time-value-of-money-calculator": {
+      "types": "./dist/tools/math/time-value-of-money-calculator.d.ts",
+      "import": "./dist/tools/math/time-value-of-money-calculator.js"
+    },
     "./tools/math/tip-split-calculator": {
       "types": "./dist/tools/math/tip-split-calculator.d.ts",
       "import": "./dist/tools/math/tip-split-calculator.js"
@@ -2786,6 +2910,10 @@
     "./tools/math/triangle-solver": {
       "types": "./dist/tools/math/triangle-solver.d.ts",
       "import": "./dist/tools/math/triangle-solver.js"
+    },
+    "./tools/math/truth-table-generator": {
+      "types": "./dist/tools/math/truth-table-generator.d.ts",
+      "import": "./dist/tools/math/truth-table-generator.js"
     },
     "./tools/math/twos-complement-converter": {
       "types": "./dist/tools/math/twos-complement-converter.d.ts",
@@ -2815,13 +2943,41 @@
       "types": "./dist/tools/math/z-score-calculator.d.ts",
       "import": "./dist/tools/math/z-score-calculator.js"
     },
+    "./tools/pdf/image-to-pdf": {
+      "types": "./dist/tools/pdf/image-to-pdf.d.ts",
+      "import": "./dist/tools/pdf/image-to-pdf.js"
+    },
     "./tools/pdf/merge-pdf": {
       "types": "./dist/tools/pdf/merge-pdf.d.ts",
       "import": "./dist/tools/pdf/merge-pdf.js"
     },
+    "./tools/pdf/pdf-compress": {
+      "types": "./dist/tools/pdf/pdf-compress.d.ts",
+      "import": "./dist/tools/pdf/pdf-compress.js"
+    },
     "./tools/pdf/pdf-metadata": {
       "types": "./dist/tools/pdf/pdf-metadata.d.ts",
       "import": "./dist/tools/pdf/pdf-metadata.js"
+    },
+    "./tools/pdf/pdf-organize-pages": {
+      "types": "./dist/tools/pdf/pdf-organize-pages.d.ts",
+      "import": "./dist/tools/pdf/pdf-organize-pages.js"
+    },
+    "./tools/pdf/pdf-page-numbers": {
+      "types": "./dist/tools/pdf/pdf-page-numbers.d.ts",
+      "import": "./dist/tools/pdf/pdf-page-numbers.js"
+    },
+    "./tools/pdf/pdf-protect-unlock": {
+      "types": "./dist/tools/pdf/pdf-protect-unlock.d.ts",
+      "import": "./dist/tools/pdf/pdf-protect-unlock.js"
+    },
+    "./tools/pdf/pdf-to-text": {
+      "types": "./dist/tools/pdf/pdf-to-text.d.ts",
+      "import": "./dist/tools/pdf/pdf-to-text.js"
+    },
+    "./tools/pdf/pdf-watermark": {
+      "types": "./dist/tools/pdf/pdf-watermark.d.ts",
+      "import": "./dist/tools/pdf/pdf-watermark.js"
     },
     "./tools/pdf/rotate-pdf": {
       "types": "./dist/tools/pdf/rotate-pdf.d.ts",
@@ -2886,6 +3042,10 @@
     "./tools/text/case-converter": {
       "types": "./dist/tools/text/case-converter.d.ts",
       "import": "./dist/tools/text/case-converter.js"
+    },
+    "./tools/text/character-limit-checker": {
+      "types": "./dist/tools/text/character-limit-checker.d.ts",
+      "import": "./dist/tools/text/character-limit-checker.js"
     },
     "./tools/text/character-ngram-counter": {
       "types": "./dist/tools/text/character-ngram-counter.d.ts",
@@ -2990,6 +3150,10 @@
     "./tools/text/line-operations": {
       "types": "./dist/tools/text/line-operations.d.ts",
       "import": "./dist/tools/text/line-operations.js"
+    },
+    "./tools/text/list-compare": {
+      "types": "./dist/tools/text/list-compare.d.ts",
+      "import": "./dist/tools/text/list-compare.js"
     },
     "./tools/text/list-formatter": {
       "types": "./dist/tools/text/list-formatter.d.ts",
@@ -3391,6 +3555,10 @@
       "types": "./dist/tools/time/ordinal-date-converter.d.ts",
       "import": "./dist/tools/time/ordinal-date-converter.js"
     },
+    "./tools/time/pomodoro-countdown-timer": {
+      "types": "./dist/tools/time/pomodoro-countdown-timer.d.ts",
+      "import": "./dist/tools/time/pomodoro-countdown-timer.js"
+    },
     "./tools/time/quarter-of-date": {
       "types": "./dist/tools/time/quarter-of-date.d.ts",
       "import": "./dist/tools/time/quarter-of-date.js"
@@ -3402,6 +3570,10 @@
     "./tools/time/relative-time-formatter": {
       "types": "./dist/tools/time/relative-time-formatter.d.ts",
       "import": "./dist/tools/time/relative-time-formatter.js"
+    },
+    "./tools/time/stopwatch-lap-timer": {
+      "types": "./dist/tools/time/stopwatch-lap-timer.d.ts",
+      "import": "./dist/tools/time/stopwatch-lap-timer.js"
     },
     "./tools/time/strftime-playground": {
       "types": "./dist/tools/time/strftime-playground.d.ts",
@@ -3515,9 +3687,17 @@
       "types": "./dist/tools/web/bimi-record-checker.d.ts",
       "import": "./dist/tools/web/bimi-record-checker.js"
     },
+    "./tools/web/browser-device-info": {
+      "types": "./dist/tools/web/browser-device-info.d.ts",
+      "import": "./dist/tools/web/browser-device-info.js"
+    },
     "./tools/web/chmod-calculator": {
       "types": "./dist/tools/web/chmod-calculator.d.ts",
       "import": "./dist/tools/web/chmod-calculator.js"
+    },
+    "./tools/web/cidr-aggregator-range-converter": {
+      "types": "./dist/tools/web/cidr-aggregator-range-converter.d.ts",
+      "import": "./dist/tools/web/cidr-aggregator-range-converter.js"
     },
     "./tools/web/cloudevents-validator": {
       "types": "./dist/tools/web/cloudevents-validator.d.ts",
@@ -3559,6 +3739,14 @@
       "types": "./dist/tools/web/dnssec-chain-visualizer.d.ts",
       "import": "./dist/tools/web/dnssec-chain-visualizer.js"
     },
+    "./tools/web/dockerfile-linter": {
+      "types": "./dist/tools/web/dockerfile-linter.d.ts",
+      "import": "./dist/tools/web/dockerfile-linter.js"
+    },
+    "./tools/web/email-header-analyzer": {
+      "types": "./dist/tools/web/email-header-analyzer.d.ts",
+      "import": "./dist/tools/web/email-header-analyzer.js"
+    },
     "./tools/web/email-obfuscator": {
       "types": "./dist/tools/web/email-obfuscator.d.ts",
       "import": "./dist/tools/web/email-obfuscator.js"
@@ -3582,6 +3770,10 @@
     "./tools/web/grpcurl-command-builder": {
       "types": "./dist/tools/web/grpcurl-command-builder.d.ts",
       "import": "./dist/tools/web/grpcurl-command-builder.js"
+    },
+    "./tools/web/har-viewer-sanitizer": {
+      "types": "./dist/tools/web/har-viewer-sanitizer.d.ts",
+      "import": "./dist/tools/web/har-viewer-sanitizer.js"
     },
     "./tools/web/hsts-preload-checker": {
       "types": "./dist/tools/web/hsts-preload-checker.d.ts",
@@ -3607,6 +3799,10 @@
       "types": "./dist/tools/web/ip-subnet-calculator.d.ts",
       "import": "./dist/tools/web/ip-subnet-calculator.js"
     },
+    "./tools/web/javascript-beautifier-minifier": {
+      "types": "./dist/tools/web/javascript-beautifier-minifier.d.ts",
+      "import": "./dist/tools/web/javascript-beautifier-minifier.js"
+    },
     "./tools/web/json-schema-compatibility-diff": {
       "types": "./dist/tools/web/json-schema-compatibility-diff.d.ts",
       "import": "./dist/tools/web/json-schema-compatibility-diff.js"
@@ -3618,6 +3814,10 @@
     "./tools/web/kafka-message-header-viewer": {
       "types": "./dist/tools/web/kafka-message-header-viewer.d.ts",
       "import": "./dist/tools/web/kafka-message-header-viewer.js"
+    },
+    "./tools/web/keyboard-event-inspector": {
+      "types": "./dist/tools/web/keyboard-event-inspector.d.ts",
+      "import": "./dist/tools/web/keyboard-event-inspector.js"
     },
     "./tools/web/markdown-to-html": {
       "types": "./dist/tools/web/markdown-to-html.d.ts",
@@ -3682,6 +3882,10 @@
     "./tools/web/query-params": {
       "types": "./dist/tools/web/query-params.d.ts",
       "import": "./dist/tools/web/query-params.js"
+    },
+    "./tools/web/regex-explainer": {
+      "types": "./dist/tools/web/regex-explainer.d.ts",
+      "import": "./dist/tools/web/regex-explainer.js"
     },
     "./tools/web/saml-assertion-inspector": {
       "types": "./dist/tools/web/saml-assertion-inspector.d.ts",
@@ -4246,6 +4450,10 @@
     "./tools/web/wsdl-to-sample-soap": {
       "types": "./dist/tools/web/wsdl-to-sample-soap.d.ts",
       "import": "./dist/tools/web/wsdl-to-sample-soap.js"
+    },
+    "./tools/web/xpath-css-selector-tester": {
+      "types": "./dist/tools/web/xpath-css-selector-tester.d.ts",
+      "import": "./dist/tools/web/xpath-css-selector-tester.js"
     },
     "./web": {
       "types": "./dist/web.d.ts",

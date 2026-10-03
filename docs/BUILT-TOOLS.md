@@ -1,25 +1,25 @@
 # Built Tools
 
-Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **982 tools** across 12 categories — 11 use Rust/WASM. All run 100% client-side.
+Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **1034 tools** across 12 categories — 18 use Rust/WASM. All run 100% client-side.
 
 | Category | Count |
 |---|---|
-| Image | 43 |
-| PDF | 4 |
-| Data | 98 |
-| Converters | 107 |
-| Text | 108 |
-| Crypto & Hash | 68 |
-| Encoding | 54 |
-| Generators | 70 |
-| Web & Dev | 188 |
-| Time & Date | 56 |
-| Math & Units | 114 |
+| Image | 48 |
+| PDF | 11 |
+| Data | 103 |
+| Converters | 113 |
+| Text | 110 |
+| Crypto & Hash | 72 |
+| Encoding | 56 |
+| Generators | 72 |
+| Web & Dev | 197 |
+| Time & Date | 58 |
+| Math & Units | 122 |
 | Color | 72 |
-| **Total** | **982** |
+| **Total** | **1034** |
 
 
-## Image (43)
+## Image (48)
 
 - **Add Border & Padding** — `/tools/image-add-border` — Add a solid-color border or padding frame around an image.
 - **Batch Thumbnail Maker** — `/tools/image-thumbnail-batch` — Generate fixed-size cover/contain thumbnails from multiple images at once.
@@ -32,6 +32,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Duotone Effect** — `/tools/image-duotone` — Map an image's shadows and highlights to two custom colors (duotone).
 - **EXIF Metadata Viewer** — `/tools/image-exif-viewer` — View EXIF/JFIF metadata embedded in a JPEG (camera, exposure, GPS) without uploading.
 - **Favicon Set Generator** — `/tools/image-favicon-generator` — Generate favicon PNGs at standard sizes (16-512px) from one image plus the HTML link tags.
+- **GIF Maker** — `/tools/gif-maker` — Create animated GIFs from images or a short video clip, with frame delays, looping, ping-pong, dithering and size optimisation.
 - **Gradient SVG / PNG Generator** — `/tools/image-gradient-svg-generator` — Create linear/radial multi-stop gradients and export as SVG, PNG, or CSS.
 - **Image Blur** — `/tools/image-gaussian-blur` — Apply an adjustable blur to an image using the canvas blur filter.
 - **Image Contact Sheet Builder** — `/tools/image-contact-sheet-builder` — Arranges multiple uploaded images into a single grid contact sheet PNG.
@@ -39,20 +40,23 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Image Fit/Cover Box Calculator** — `/tools/image-aspect-fit-cover-calculator` — Computes the rendered size and offsets for an image placed in a box with contain or cover fit.
 - **Image Grid & Guide Overlay** — `/tools/image-canvas-grid-overlay` — Overlays a rule-of-thirds, pixel grid, or custom guides onto an uploaded image.
 - **Image Histogram** — `/tools/image-histogram` — Plot RGB and luminance histograms of an image on a canvas.
+- **Image Metadata Remover** — `/tools/image-metadata-remover` — Strip EXIF, GPS, XMP, IPTC and text metadata from JPEG, PNG and WebP photos without re-encoding — see exactly what was hidden in the file, then download clean copies.
 - **Image Palette Extractor** — `/tools/image-palette-extractor` — Extract a balanced N-color palette from an image via median-cut quantization.
 - **Image Resizer (Pixels & Percent)** — `/tools/image-resize-pixels` — Resize an image to exact pixel dimensions or by percentage, with optional aspect-lock.
 - **Image Sprite Sheet Merger** — `/tools/image-sprite-merger` — Combine several images into one sprite sheet with a CSS/JSON coordinate map.
 - **Image to ASCII Art** — `/tools/image-to-ascii-art` — Convert an image into monospace ASCII (or block) art with adjustable width.
 - **Image to Base64** — `/tools/image-to-base64` — Encode an image to a Base64 data-URI for inline use in CSS/HTML/JSON.
 - **Image to Data URI (CSS/HTML/JSX)** — `/tools/image-to-data-uri-variants` — Encode an image as a base64 data URI and wrap it for CSS, HTML img, Markdown, or JSX.
+- **Image to SVG (Vectorizer)** — `/tools/image-to-svg-tracer` — Trace logos, icons, signatures and line art into clean SVG paths, in black and white or in up to 16 colours, with curve fitting and speckle removal.
 - **Invert Colors (Negative)** — `/tools/image-invert-colors` — Create a photographic negative by inverting every pixel's RGB values.
 - **JPEG/WebP Compressor** — `/tools/image-compress-quality` — Reduce image file size with a quality slider and live before/after byte comparison.
+- **Make Background Transparent** — `/tools/image-make-transparent` — Remove a solid background colour (white product shots, logos, signatures) with a magic-wand style picker, tolerance, soft edges and defringe — then export a transparent PNG or WebP.
 - **Meme Caption Maker** — `/tools/image-meme-text` — Add classic top/bottom Impact-style caption text to an image.
 - **Mirror & Reflection Collage** — `/tools/image-mirror-collage` — Create symmetric mirror collages (2-up, 4-up kaleidoscope) from one image.
 - **Noise & Grain SVG Generator** — `/tools/image-noise-texture-svg` — Generate a tileable fractal-noise/grain texture as an inline SVG or PNG.
 - **Pixel Ruler & Color Probe** — `/tools/image-pixel-ruler` — Measure pixel distances and read pixel colors by clicking on a loaded image.
 - **Pixelate / Mosaic** — `/tools/image-pixelate` — Pixelate an image (or simulate censoring) with an adjustable block size.
-- **Placeholder Image Generator** — `/tools/placeholder-image` — Generate a sized SVG/data-URI placeholder with custom colors and label.
+- **PNG Compressor** — `/tools/image-png-compressor` — Shrink PNG files up to 80% with TinyPNG-style palette quantization or lossless re-encoding — batch, side-by-side preview and ZIP download, all in your browser.
 - **Resize to Target File Size** — `/tools/image-resize-to-filesize` — Iteratively re-encode an image to land under a target KB limit (e.g. for upload limits).
 - **RGB Channel Splitter** — `/tools/image-rgb-channel-split` — Split an image into separate red, green, blue, and alpha channel images.
 - **Rotate & Flip Image** — `/tools/image-rotate-flip` — Rotate an image 90/180/270 degrees or by a free angle and flip horizontally/vertically.
@@ -60,19 +64,27 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Sepia & Vintage Filter** — `/tools/image-sepia-vintage` — Apply sepia, vintage, warm, and cool color tints to a photo.
 - **Sprite Sheet Splitter** — `/tools/image-sprite-splitter` — Slice a sprite sheet into a grid of individual images by rows/cols or cell size.
 - **SVG Cleaner / Optimizer** — `/tools/image-svg-optimizer-cleaner` — Strips comments, metadata, and editor cruft from SVG markup and minifies whitespace.
+- **SVG Placeholder Generator** — `/tools/placeholder-image` — Generate a sized SVG/data-URI placeholder with custom colors and label.
 - **SVG to Data URI** — `/tools/svg-to-data-uri` — Convert raw SVG markup into an optimized data-URI for CSS/HTML.
 - **SVG to PNG / JPEG** — `/tools/image-svg-to-png` — Rasterize an SVG (pasted or uploaded) to PNG/JPEG at a chosen scale via canvas.
 - **Text Watermark** — `/tools/image-watermark-text` — Overlay a repeating or single text watermark with opacity, angle, and tiling.
 - **Vignette Effect** — `/tools/image-vignette` — Add an adjustable dark or light vignette around the edges of a photo.
 
-## PDF (4)
+## PDF (11)
 
+- **Add Page Numbers to PDF** 🦀 — `/tools/pdf-page-numbers` — Stamp page numbers onto a PDF with custom formats, Bates numbering, position, page range and fonts, all in your browser.
+- **Compress PDF** 🦀 — `/tools/pdf-compress` — Shrink a PDF by recompressing and downscaling its images and cleaning up the file structure, entirely in your browser.
+- **Image to PDF** — `/tools/image-to-pdf` — Combine JPG, PNG & other images into a single PDF — one image per page, entirely in your browser.
 - **Merge PDF** 🦀 — `/tools/merge-pdf` — Combine multiple PDFs into one, reorder by drag — entirely in your browser.
+- **Organize PDF Pages** 🦀 — `/tools/pdf-organize-pages` — Reorder, duplicate, delete and reverse PDF pages with drag and drop, or interleave front and back scans into one document.
 - **PDF Info & Metadata** 🦀 — `/tools/pdf-metadata` — Inspect a PDF’s page count, version, and document metadata.
+- **PDF to Text** 🦀 — `/tools/pdf-to-text` — Extract the text layer of a PDF with page ranges, paragraph reflow and search — password-protected files supported.
+- **Protect & Unlock PDF** 🦀 — `/tools/pdf-protect-unlock` — Encrypt a PDF with an open password and permission limits (AES-256 or AES-128), or remove a password you already know.
 - **Rotate PDF** 🦀 — `/tools/rotate-pdf` — Rotate all or selected pages of a PDF by 90, 180 or 270 degrees.
 - **Split / Extract PDF Pages** 🦀 — `/tools/split-pdf` — Extract or delete a selection of pages from a PDF (e.g. 1,3,5-8).
+- **Watermark PDF** 🦀 — `/tools/pdf-watermark` — Add a text watermark (CONFIDENTIAL, DRAFT, custom) to PDF pages: diagonal or tiled, with opacity, colour, font and over/under layering.
 
-## Data (98)
+## Data (103)
 
 - **ASCII Box Table from CSV** — `/tools/ascii-table-from-csv` — Render CSV as a bordered ASCII or Unicode box-drawing table for READMEs, code comments, and terminals.
 - **CSV Add Row Numbers** — `/tools/csv-add-row-numbers` — Prepend or append a sequential ID / row-number column to a CSV with a configurable start, step, padding, and prefix/suffix.
@@ -82,6 +94,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **CSV Column Type Detector** — `/tools/data-csv-detect-types` — Infers each CSV column's data type (integer, float, boolean, date, string) from its values.
 - **CSV Deduplicate Rows** — `/tools/csv-dedupe` — Remove duplicate rows from CSV, either fully identical or matching on selected key columns.
 - **CSV Delimiter Converter** — `/tools/csv-delimiter-converter` — Re-delimit tabular data between comma, tab, semicolon, or pipe while preserving quoting.
+- **CSV Diff (Compare Two CSVs)** — `/tools/csv-diff-compare` — Compare two CSV files by key columns or row position and see added, removed and changed rows and cells, with options for case, whitespace, numbers and column order.
 - **CSV Fill Blank Cells** — `/tools/csv-fill-blanks` — Fill empty cells in a CSV by forward-fill, back-fill, a constant value, or per-column mean/median.
 - **CSV Group-By Aggregator** — `/tools/data-csv-group-by-aggregate` — Group CSV rows by a column and compute count, sum, avg, min, and max on another.
 - **CSV Header Renamer** — `/tools/csv-rename-headers` — Rename, reorder, and apply naming-convention transforms to CSV column headers.
@@ -99,6 +112,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **CSV Transpose** — `/tools/csv-transpose` — Swap rows and columns of a CSV so the first column becomes the header row and vice versa.
 - **CSV Viewer** — `/tools/csv-viewer` — Paste CSV and view it as a sortable, searchable table.
 - **Delimited Column Reorder** — `/tools/data-tsv-column-reorder` — Reorders, drops, or duplicates columns in CSV/TSV data by index or header name.
+- **File Metadata Viewer** 🦀 — `/tools/file-metadata-viewer` — Inspect the hidden metadata of any file — photos, PDFs, Office docs, audio, video, fonts, archives and more — privately in your browser.
 - **Fixed-Width to CSV** — `/tools/fixed-width-to-csv` — Parse fixed-width / column-aligned text into CSV by defining field widths or cut positions.
 - **HTML Table to CSV** — `/tools/html-table-to-csv` — Extract one or all <table> elements from pasted HTML into CSV.
 - **HTML Table to JSON** — `/tools/html-table-to-json` — Convert an HTML <table> into a JSON array of objects keyed by the header row.
@@ -129,6 +143,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **JSON Repair** — `/tools/json-repair` — Fix broken JSON with single quotes, trailing commas, unquoted keys, and comments, then output valid JSON.
 - **JSON Schema Generator** — `/tools/json-to-json-schema` — Infer a JSON Schema (draft-07) from a sample JSON document with types and required fields.
 - **JSON Schema Sample Generator** — `/tools/json-schema-sample-generator` — Generate a sample JSON instance that satisfies a JSON Schema.
+- **JSON Schema Validator** — `/tools/json-schema-validator` — Validate a JSON document against a JSON Schema (Draft-07, 2019-09 or 2020-12) and see every error with its instance path, schema path and a readable message.
 - **JSON Sort Keys** — `/tools/json-sort-keys` — Recursively sort all object keys in a JSON document alphabetically.
 - **JSON String Escape / Unescape** — `/tools/json-escape` — Escape text into a JSON string literal, or unescape one back to raw text.
 - **JSON Stringify / Parse** — `/tools/json-stringify` — Turn raw text into an escaped JSON string literal, or parse a JSON string back to its raw value.
@@ -171,9 +186,11 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **SQL SELECT Builder** — `/tools/sql-select-builder` — Visually build a SELECT query with columns, WHERE conditions, ORDER BY, and LIMIT, then copy the SQL.
 - **SQL UPDATE Builder** — `/tools/sql-update-builder` — Build a safe parameterized UPDATE statement from column=value pairs and WHERE conditions.
 - **TSV to Markdown Table** — `/tools/data-tsv-to-markdown-table` — Convert tab-separated values into a GitHub-flavored Markdown table.
+- **Web Server Log Analyzer** — `/tools/web-server-log-analyzer` — Analyze nginx, Apache, JSON, logfmt and AWS ALB access logs in your browser: traffic over time, top IPs and paths, errors, bots, latency percentiles and suspicious requests, with filters and CSV/JSON export.
 - **YAML Anchor & Alias Expander** — `/tools/data-yaml-anchor-expander` — Resolve YAML anchors and aliases by inlining their referenced values.
+- **YAML Validator & Formatter** — `/tools/yaml-validator-formatter` — Validate YAML 1.2 with line and column errors, lint for gotchas like the Norway problem, then reformat with your indentation, quoting and wrapping and view the parsed JSON.
 
-## Converters (107)
+## Converters (113)
 
 - **.env to Shell Exports** — `/tools/env-to-shell-exports` — Turn a .env file into copy-paste shell export statements for bash/zsh, fish, or PowerShell.
 - **Acceleration Converter** — `/tools/acceleration-converter` — Convert acceleration between m/s2, g-force, ft/s2, and gal.
@@ -181,6 +198,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Area Converter** — `/tools/area-converter` — Convert areas between square meters, acres, hectares, square feet, and more.
 - **ASCII / Box Table to JSON** — `/tools/ascii-table-to-json` — Parse a fixed-width or box-drawn ASCII table (like psql, MySQL, or markdown-less console output) into JSON rows.
 - **Astronomical Distance Converter** — `/tools/astronomical-distance-converter` — Convert cosmic distances between AU, light-years, parsecs, and kilometers.
+- **Audio Trimmer & WAV Converter** — `/tools/audio-trimmer-converter` — Trim, fade, normalize and resample audio from MP3, OGG, M4A, FLAC, WebM or video files and export lossless WAV, all in your browser.
 - **Baking Pan Size Converter** — `/tools/cooking-pan-size-converter` — Convert baking pan dimensions and scale recipe volumes between pan shapes.
 - **Base64 / Data URI to File** — `/tools/base64-to-file` — Decode base64 or a data URI and save it as a named file.
 - **Bytes to Human-Readable Converter** — `/tools/bytes-to-human-converter` — Format raw byte counts into human-readable sizes, both decimal and binary.
@@ -201,13 +219,16 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Data Storage Units Converter** — `/tools/data-storage-units-converter` — Convert digital storage between bits, bytes, and decimal/binary multiples like MB vs MiB.
 - **Degrees-Minutes-Seconds Converter** — `/tools/angle-subunits-converter` — Convert angles between decimal degrees and degrees-minutes-seconds (DMS) notation.
 - **Density Converter** — `/tools/density-converter` — Convert density between kg/m3, g/cm3, lb/ft3, and lb/gallon.
+- **Docker Run ↔ Compose Converter** — `/tools/docker-run-compose-converter` — Convert docker run commands into a compose.yaml, or a compose file back into docker run commands, mapping ports, volumes, env, networks, healthchecks, GPUs and resource limits.
 - **Download / Transfer Time Calculator** — `/tools/data-transfer-time-calculator` — Estimate how long a file takes to transfer at a given connection speed.
 - **DPI / PPI Pixel-Size Converter** — `/tools/dpi-ppi-size-converter` — Convert between physical print size, pixel dimensions, and DPI — or compute a screen’s PPI from its resolution and diagonal.
 - **Energy Converter** — `/tools/energy-converter` — Convert energy between joules, calories, kWh, BTU, and electronvolts.
+- **Excel (XLSX) ↔ CSV / JSON Converter** — `/tools/excel-converter` — Open .xlsx, .xlsm or .ods workbooks and export any sheet to CSV, TSV, JSON or Markdown - or turn CSV and JSON into a real .xlsx with dates, headers and column widths. Runs entirely in your browser.
 - **Flow Rate Converter** — `/tools/flow-rate-converter` — Convert volumetric flow between L/s, m3/h, GPM, and CFM.
 - **Force Converter** — `/tools/force-converter` — Convert force between newtons, kilogram-force, pound-force, and dyne.
 - **Frequency Converter** — `/tools/frequency-converter` — Convert frequency between Hz, kHz, MHz, GHz, RPM, and angular rad/s.
 - **Fuel & Petroleum Volume Converter** — `/tools/fuel-volume-converter` — Convert fuel volumes between liters, US/imperial gallons, and oil barrels.
+- **GPX / KML / GeoJSON Converter** — `/tools/geo-data-converter` — Convert GPS tracks and map data between GPX, KML/KMZ, GeoJSON, CSV, WKT and encoded polylines privately in your browser, with simplify, stats and a map preview.
 - **GraphQL Query to cURL** — `/tools/convert-graphql-query-to-curl` — Wrap a GraphQL query and variables into a POST cURL command.
 - **HAR Entry to cURL** — `/tools/convert-har-to-curl` — Extracts requests from a HAR file or single HAR entry and emits equivalent cURL commands.
 - **Hex to RGB Code Snippet** — `/tools/hex-to-rgb-code` — Turn a hex color into ready-to-paste code in many languages.
@@ -264,6 +285,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Ruby Hash to JSON** — `/tools/ruby-hash-to-json` — Convert a Ruby hash/array literal into JSON.
 - **Shoe Size Converter** — `/tools/shoe-size-converter` — Convert shoe sizes across US, UK, EU, and centimeter foot-length systems.
 - **Speed Converter** — `/tools/speed-converter` — Convert speeds between km/h, mph, m/s, knots, and Mach.
+- **Subtitle Converter & Time Shifter** — `/tools/subtitle-converter` — Convert subtitles between SRT, WebVTT, SBV, ASS, LRC and TTML, shift or re-sync timings, change frame rate and clean up cues.
 - **SVG Path Coordinate Rounder** — `/tools/svg-path-rounder` — Round and tidy the numeric coordinates in an SVG path 'd' string to reduce precision and file size.
 - **SVG to JSX/React Component** — `/tools/convert-svg-to-jsx` — Converts a raw SVG markup into a React JSX component with camelCased attributes.
 - **Temperature Converter** — `/tools/temperature-converter` — Convert temperatures across Celsius, Fahrenheit, Kelvin, and Rankine with live results and adjustable rounding precision.
@@ -282,8 +304,9 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **YAML to CSV** — `/tools/yaml-to-csv` — Flatten a YAML list of objects into CSV.
 - **YAML to JSON** — `/tools/yaml-to-json` — Convert common YAML configuration into JSON.
 - **YAML to TOML** — `/tools/yaml-to-toml` — Convert YAML configuration directly into TOML, mapping nested maps and lists into tables and arrays of tables in one step.
+- **ZIP Archive Tool (Create & Extract)** — `/tools/zip-archive-tool` — Open ZIP, JAR, APK, DOCX, EPUB, TAR, TAR.GZ and GZ archives to browse, preview and download entries - or build a new ZIP from files and folders, entirely in your browser.
 
-## Text (108)
+## Text (110)
 
 - **Acronym Extractor** — `/tools/acronym-expander-finder` — Find acronyms in text and pair them with the expansions defined nearby.
 - **Acronym Maker** — `/tools/acronym-maker` — Build an acronym or initialism from a phrase using configurable rules.
@@ -299,6 +322,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Braille (Grade 1) Translator** — `/tools/braille-text` — Convert text to and from Unicode Braille dot patterns using the Grade 1 (uncontracted) mapping.
 - **Caesar Cipher** — `/tools/caesar-cipher` — Encode or decode text with a Caesar cipher of any shift amount, the classic reversible letter rotation, with optional brute-force of all 25 shifts.
 - **Case Converter** — `/tools/case-converter` — Convert text between camelCase, snake_case, kebab-case, Title Case and more.
+- **Character Limit & SMS Segment Counter** — `/tools/character-limit-checker` — Count characters, graphemes, bytes and SMS segments (GSM-7 vs UCS-2), and check text against X, Bluesky, LinkedIn, Instagram, SEO and ad-copy limits.
 - **Character N-Gram Counter** — `/tools/character-ngram-counter` — Count character-level n-grams for linguistics, cryptanalysis, and fingerprinting.
 - **Code Identifier Case Converter** — `/tools/camel-snake-kebab-converter` — Convert programming identifiers between camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, dot.case, and Train-Case.
 - **Coleman-Liau Index** — `/tools/coleman-liau-index` — Compute the character-based Coleman-Liau readability grade with no syllable counting.
@@ -331,6 +355,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Line Length Checker** — `/tools/line-length-checker` — Flag lines that exceed a maximum character width for code or prose style guides.
 - **Line Numbering (Advanced)** — `/tools/add-line-numbers-advanced` — Prefix lines with numbers using custom start, step, zero-padding, format template, and blank-line handling.
 - **Line Operations** — `/tools/line-operations` — Number, prefix, suffix, or wrap each line of text.
+- **List Compare (Diff Two Lists)** — `/tools/list-compare` — Compare two lists to find items only in A, only in B, in both, the union, the symmetric difference and duplicates, with case, accent and CSV column options.
 - **List Formatter** — `/tools/list-formatter` — Convert a plain list into bulleted, numbered, lettered, or roman-numeral lists with custom markers and indentation.
 - **List Number Style Converter** — `/tools/text-roman-to-fancy-numbering` — Renumbers a list using decimal, roman numerals, or letter sequences (a, b, c / A, B, C).
 - **Longest and Shortest Line Finder** — `/tools/text-find-longest-shortest-line` — Finds the longest and shortest lines in a block of text with their lengths and line numbers.
@@ -394,7 +419,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Wrap Text Into Columns** — `/tools/text-to-columns` — Reflow a single stream of lines into multiple side-by-side newspaper-style columns.
 - **Zero-Width & Invisible Character Stripper** — `/tools/zero-width-char-stripper` — Detect and remove invisible zero-width and formatting characters from pasted text.
 
-## Crypto & Hash (68)
+## Crypto & Hash (72)
 
 - **/etc/passwd & shadow Parser** — `/tools/crypto-passwd-shadow-parser` — Parse and explain Unix passwd and shadow file lines field by field.
 - **ABA Routing Number Validator** — `/tools/aba-routing-validator` — Validate a US bank ABA/routing transit number using its mod-10 checksum.
@@ -404,6 +429,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **AES-GCM File Encrypt/Decrypt** — `/tools/aes-gcm-file` — Encrypt or decrypt a chosen file in-browser with AES-GCM using a passphrase.
 - **API Key + Secret Generator** — `/tools/api-key-pair-generator` — Generate matched public key ID and secret pairs with prefixes and a derived checksum.
 - **Argon2 Parameter Advisor** — `/tools/crypto-argon2-params-advisor` — Recommend Argon2id memory, iteration, and parallelism parameters for a target environment.
+- **ASN.1 Decoder & Certificate Parser** — `/tools/asn1-der-decoder` — Decode any ASN.1 DER/BER data (PEM, Base64, hex or file) into an interactive tree with a synced hex dump, plus smart summaries for X.509 certificates, CSRs, keys and PKCS#7 bundles.
 - **Australian BSB Lookup** — `/tools/bsb-validator` — Validate and parse an Australian Bank State Branch (BSB) number into bank, state, and branch.
 - **Base64url JWK Field Encoder** — `/tools/base64url-jwk-encoder` — Convert between Base64url and big-integer/byte values for hand-editing JWK fields.
 - **Bcrypt Cost Estimator** — `/tools/crypto-bcrypt-cost-benchmark` — Estimate bcrypt hashing time for each cost factor and recommend a target work factor.
@@ -446,12 +472,15 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Password Generator** — `/tools/password-generator` — Generate strong random passwords or diceware passphrases, locally.
 - **Password Strength Checker** — `/tools/password-strength-checker` — Score a password using composition rules and common-pattern detection with actionable feedback.
 - **PBKDF2 Key Derivation** — `/tools/pbkdf2-key-derivation` — Derive a key from a passphrase and salt using PBKDF2 with configurable iterations and hash.
+- **PEM Key Converter & Key Matcher** — `/tools/pem-key-format-converter` — Convert RSA, EC and Ed25519 keys between PKCS#1, PKCS#8, SEC1, SPKI, OpenSSH, DER, Base64 and JWK, decrypt password-protected keys, repair mangled PEM and check that a certificate, key and CSR match.
 - **Random Bytes Generator** — `/tools/random-bytes-generator` — Generate cryptographically secure random bytes as hex, Base64, Base64URL, or a C-style byte array of a chosen length.
 - **Random Token Generator (Formats)** — `/tools/random-token-formats` — Generate cryptographically random tokens in many developer formats (hex, base64url, Base32, API-key style) with prefixes and grouping.
 - **ROT47 Encoder** — `/tools/rot47-encoder` — Encode or decode text with ROT47, the printable-ASCII rotation cipher (its own inverse).
 - **RSA / ECC Key Strength Comparator** — `/tools/crypto-rsa-key-size-strength` — Compare RSA, ECC, and symmetric key sizes by equivalent bits of security.
 - **RSA Key Pair Generator** — `/tools/rsa-keypair-generator` — Generate an RSA public/private key pair in PEM format with selectable key size (2048/3072/4096) and hash.
 - **RSA Sign & Verify** — `/tools/rsa-sign-verify` — Sign messages with an RSA private key and verify signatures with a public key (RSASSA-PKCS1 / PSS).
+- **Secret Scanner & Redactor** — `/tools/secret-scanner-redactor` — Scan pasted code, logs, configs, diffs or .env files for leaked API keys, tokens, passwords and private keys, then copy a redacted version that is safe to share.
+- **Self-Signed Certificate & CSR Generator** — `/tools/self-signed-certificate-generator` — Generate a self-signed X.509 certificate, a PKCS#10 CSR, or a local CA with a signed leaf certificate (mkcert-style) with SANs, key usage and ECDSA, RSA or Ed25519 keys - entirely in your browser.
 - **SHA Multi-Hash (Text)** — `/tools/sha-multi-hash-text` — Compute SHA-1, SHA-256, SHA-384, and SHA-512 digests of pasted text simultaneously.
 - **SHA-3 / Keccak Hash** — `/tools/crypto-sha3-keccak-hash` — Computes SHA3-224/256/384/512 and Keccak-256 hashes of text using a pure JS implementation.
 - **Shamir Secret Sharing** — `/tools/shamir-secret-sharing` — Split a secret into N shares requiring K to reconstruct, using finite-field polynomial interpolation.
@@ -465,7 +494,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **X.509 Certificate Decoder** — `/tools/certificate-decoder-x509` — Decode PEM certificate structure and extract subject, issuer, validity, SAN hints, and fingerprints when visible.
 - **XOR Cipher** — `/tools/xor-cipher` — Encrypt or decrypt text with a repeating-key XOR, output as hex or Base64 and back.
 
-## Encoding (54)
+## Encoding (56)
 
 - **ASCII / Code Point Converter** — `/tools/encoding-ascii-code-point` — Convert text to ASCII/Unicode code point numbers and convert numeric lists back to text.
 - **ASCII ↔ EBCDIC Converter** — `/tools/encoding-ebcdic-converter` — Convert text between ASCII/Latin-1 and IBM EBCDIC code pages, byte for byte.
@@ -492,11 +521,13 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **CSV Field Escaper / Unescaper** — `/tools/encoding-csv-field-escape` — Escape a single value for safe CSV embedding (RFC 4180 quoting) and unescape a CSV field.
 - **Gzip Base64 Compress / Decompress** — `/tools/encoding-gzip-base64` — Compress text with gzip and output Base64, or decode Base64 gzip back to the original text.
 - **Hex Encode / Decode** 🦀 — `/tools/hex-text` — Convert text to hexadecimal and back, with optional uppercase.
+- **Hex Viewer & File Type Detector** — `/tools/hex-viewer-file-type-detector` — Open any file (up to multiple GB) in a fast hex editor-style viewer, identify its real type from magic bytes, inspect values as ints and floats, search bytes or text, and see where the data looks compressed or encrypted.
 - **HTML Entity Encode / Decode** — `/tools/html-entities` — Escape text to HTML entities and unescape entities back to text.
 - **HTML Named ↔ Numeric Entity Converter** — `/tools/encoding-html-named-numeric` — Convert HTML named entities to and from their decimal and hexadecimal numeric character references, both ways.
 - **JavaScript String Escaper / Unescaper** — `/tools/encoding-js-string-escape` — Escape arbitrary text into a safe JS string literal and unescape it back.
 - **JSON Pointer Escaper (RFC 6901)** — `/tools/encoding-json-pointer-escape` — Encode and decode JSON Pointer reference tokens with the ~0/~1 escape rules.
 - **JWT Decoder & Inspector** — `/tools/encoding-jwt-inspector` — Decode a JSON Web Token into its readable header and payload claims, with human-friendly timestamps for exp/iat/nbf.
+- **Magic Decoder (Auto-Detect Encoding)** — `/tools/magic-decoder` — Paste an unknown blob and automatically find the chain of decodings (Base64, hex, gzip, URL, ROT13, UTF-16 and more) that turns it into readable text or a recognisable file.
 - **Numeric HTML Character References** — `/tools/encoding-numeric-char-references` — Convert text into numeric HTML character references (decimal or hex) and decode them back to plain text.
 - **Octal Encode / Decode** — `/tools/encoding-octal-text` — Encode UTF-8 text to space-separated octal byte values or decode octal numbers back into readable text.
 - **Percent-Encoding Reference Table** — `/tools/encoding-percent-encoding-table` — Searchable table of percent-encoded (%XX) values for ASCII and common reserved characters.
@@ -518,11 +549,11 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **UTF-8 Byte Inspector** — `/tools/encoding-utf8-byte-inspector` — Break text into its UTF-8 byte sequence with per-character hex, binary, and code points.
 - **UUencode / UUdecode** — `/tools/encoding-uuencode` — Encode and decode data in the classic Unix uuencode format.
 - **Uuencode / Xxencode Converter** — `/tools/encoding-uuencode-xxencode` — Encodes and decodes data using classic Unix uuencode and xxencode formats.
-- **XOR Cipher** — `/tools/encoding-xor-cipher` — Encrypt or decrypt text with a repeating-key XOR cipher, outputting or reading hex or Base64.
+- **XOR Cipher (Text)** — `/tools/encoding-xor-cipher` — Encrypt or decrypt text with a repeating-key XOR cipher, outputting or reading hex or Base64.
 - **XXencode / XXdecode** — `/tools/encoding-xxencode` — Encode and decode using the XXencode alphabet (a safer uuencode variant).
 - **Z85 Encode / Decode** — `/tools/encoding-z85-encode` — Encode/decode using ZeroMQ Z85, a printable Base85 variant safe for source code.
 
-## Generators (70)
+## Generators (72)
 
 - **.env.example Generator** — `/tools/env-example-generator` — Turn a list of env var names/values into a redacted .env.example with comments and grouping.
 - **.gitignore Generator** — `/tools/gitignore-generator` — Assemble a .gitignore from common language and tool templates.
@@ -530,10 +561,11 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **API Key Generator** — `/tools/api-key-generator` — Generate prefixed, secret-style API keys in common SaaS formats.
 - **Barcode Generator** — `/tools/generate-barcode` — Generate Code 39 and EAN-13 barcodes from input text/digits, rendered to a downloadable SVG/PNG with adjustable bar width and height.
 - **BIC / SWIFT Code Test Generator** — `/tools/bic-swift-test-generator` — Generate structurally valid test BIC/SWIFT codes (8 or 11 chars) with bank, country, location, branch parts.
+- **Calendar Event (.ics) Generator** — `/tools/ics-event-generator` — Build RFC 5545 iCalendar (.ics) files with time zones, recurrence, reminders and attendees, and get Google, Outlook and Yahoo add-to-calendar links.
 - **Credit Card Number Generator** — `/tools/generate-credit-card` — Generate Luhn-valid fake test card numbers by brand (Visa, Mastercard, Amex, Discover) with optional expiry and CVV, for payment-form testing only.
-- **Cron Expression Builder** — `/tools/generate-cron-expression` — Build a cron expression from human-friendly schedule controls (minute, hour, day, month, weekday) and see a plain-English description of when it runs.
+- **Cron Schedule Builder** — `/tools/generate-cron-expression` — Build a cron expression from human-friendly schedule controls (minute, hour, day, month, weekday) and see a plain-English description of when it runs.
 - **Crontab Recipe Generator** — `/tools/crontab-recipe-generator` — Generate a full crontab file with multiple jobs, schedule presets, env lines, and human comments.
-- **CSS Gradient Generator** — `/tools/generate-css-gradient` — Build linear or radial CSS gradients with multiple color stops, angle, and type, producing copy-ready background CSS with a live preview.
+- **CSS Gradient Builder** — `/tools/generate-css-gradient` — Build linear or radial CSS gradients with multiple color stops, angle, and type, producing copy-ready background CSS with a live preview.
 - **CUID2 Generator** — `/tools/cuid2-generator` — Generate collision-resistant, URL-safe CUID2 identifiers with adjustable length.
 - **EAN/UPC Check Digit & Number Generator** — `/tools/ean-upc-barcode-data-generator` — Generate valid EAN-13, EAN-8, UPC-A, and ISBN-13 numbers with correct check digits, or fix a partial code.
 - **Email Alias Generator** — `/tools/email-alias-generator` — Generate plus-addressing and dot-trick Gmail aliases plus catch-all variants from one base email.
@@ -567,6 +599,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **PIN Code Generator** — `/tools/generate-pin` — Generate random numeric PIN codes of a chosen length (e.g. 4/6/8 digits) in bulk, with an option to avoid trivial sequences and repeats.
 - **Placeholder Image Generator** — `/tools/generate-placeholder-image` — Generate downloadable placeholder images at a chosen size, background/text color, and label text, drawn on a canvas as a data URL for mockups.
 - **Pronounceable Password Generator** — `/tools/pronounceable-password-generator` — Generate pronounceable passwords by alternating consonant and vowel patterns.
+- **QR Code Generator** — `/tools/qr-code-generator` — Create QR codes for URLs, text, Wi-Fi, email, phone, SMS, contacts and locations with styling, a centre logo, and PNG or SVG download.
 - **Random Color Palette Generator** — `/tools/random-hex-color-palette` — Generate harmonious random color palettes in HEX/RGB/HSL using HSL-based schemes.
 - **Random Coordinates Generator** — `/tools/random-coordinates-generator` — Generate random latitude/longitude points, optionally constrained to a bounding box.
 - **Random Date Generator** — `/tools/generate-random-date` — Generate random dates and times between a start and end bound, with chosen output format (ISO, locale, Unix timestamp) and quantity for seeding data.
@@ -575,7 +608,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Random IP Address Generator** — `/tools/fake-ipv4-ipv6-generator` — Generate random IPv4 and IPv6 addresses, optionally restricted to private or public ranges.
 - **Random Number Generator** — `/tools/generate-random-number` — Generate cryptographically random integers or decimals within a min/max range, with options for quantity, uniqueness, and number of decimal places.
 - **Random String Generator** — `/tools/generate-random-string` — Generate random strings/tokens with toggleable character sets (lowercase, uppercase, digits, symbols), custom length, and quantity for API keys, secrets, and test data.
-- **Random String Generator** — `/tools/random-string` — Generate random strings from a chosen alphabet (hex, alphanumeric, custom).
+- **Random String Generator (Alphabet)** — `/tools/random-string` — Generate random strings from a chosen alphabet (hex, alphanumeric, custom).
 - **Random Token Generator** — `/tools/bearer-token-generator` — Generate cryptographically random tokens encoded as hex, Base64, Base64URL, or Base62.
 - **REST Mock Routes Generator** — `/tools/generators-json-server-routes` — Generates a JSON config of CRUD REST routes from a list of resource names.
 - **Secure Passphrase Generator** — `/tools/generate-passphrase` — Generate memorable Diceware-style passphrases from a built-in wordlist with configurable word count, separator, capitalization, and an appended number.
@@ -586,7 +619,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **SVG Pattern Generator** — `/tools/generate-svg-pattern` — Generate tileable SVG background patterns (dots, grid, stripes, checkerboard) with adjustable colors, size, and spacing, output as ready-to-use SVG markup.
 - **Test Card Number Set Generator** — `/tools/generators-fake-credit-card-luhn-set` — Generates batches of Luhn-valid fake card numbers per brand for testing (clearly non-real).
 - **ULID Generator** — `/tools/generate-ulid` — Generate ULIDs (Universally Unique Lexicographically Sortable Identifiers): 26-char Crockford base32 IDs with a millisecond timestamp prefix and random suffix, sortable by creation time.
-- **ULID Generator** — `/tools/ulid-generator` — Generate lexicographically-sortable ULIDs in bulk, locally.
+- **ULID Generator (Bulk)** — `/tools/ulid-generator` — Generate lexicographically-sortable ULIDs in bulk, locally.
 - **Username Generator** — `/tools/random-username-generator` — Generate handle-style usernames by combining adjectives, nouns, and optional numbers.
 - **UUID Generator** — `/tools/uuid-generator` — Generate RFC 4122 v4 (random) and v7 (time-ordered) UUIDs in bulk.
 - **UUID Namespace Builder** — `/tools/uuid-namespace-builder` — Build and manage RFC 4122 namespace UUIDs and derive v5/v3 names beneath a custom namespace, offline.
@@ -595,7 +628,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **vCard (.vcf) Generator** — `/tools/vcard-generator` — Generate vCard 3.0/4.0 contact text from name, org, phones, emails, address, and URL fields.
 - **WiFi QR Payload String Builder** — `/tools/wifi-qr-payload-generator` — Build the WIFI: payload string for WiFi QR codes from SSID, password, encryption, and hidden flag.
 
-## Web & Dev (188)
+## Web & Dev (197)
 
 - **.env to JSON** — `/tools/web-dotenv-to-json` — Parse a .env / dotenv file into a JSON object and convert JSON back into .env format, handling quotes, comments, and export prefixes.
 - **Accept-Language / Accept Parser** — `/tools/web-accept-language-parser` — Parse and sort Accept-Language or Accept headers by quality value (q-factor).
@@ -608,10 +641,12 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Basic Auth Generator** — `/tools/basic-auth-generator` — Build an HTTP Basic Authorization header from a username and password.
 - **BEM Class Name Generator** — `/tools/web-bem-class-generator` — Generate Block__Element--Modifier CSS class names from block, element and modifier inputs with HTML/CSS preview.
 - **BIMI Record Checker** — `/tools/bimi-record-checker` — Inspect BIMI TXT records for version, logo URL, authority URL, and deployment checklist.
+- **Browser & Device Info** — `/tools/browser-device-info` — See what any website can read about your browser and device: screen, preferences, user agent, client hints, hardware and a feature support matrix, live and copyable.
 - **Cache-Control Builder** — `/tools/web-cache-control-builder` — Compose and explain a Cache-Control header from caching directive checkboxes and durations.
 - **Cache-Control Header Explainer** — `/tools/web-http-cache-header-explainer` — Break down a Cache-Control header and explain each directive and its effect.
 - **Chmod Calculator** — `/tools/chmod-calculator` — Toggle Unix permission bits and get the octal + symbolic chmod value.
 - **CIDR / IP Range Calculator** — `/tools/web-cidr-calculator` — Expand an IPv4/IPv6 CIDR block into network, broadcast, mask, and host range.
+- **CIDR Aggregator & IP Range Converter** — `/tools/cidr-aggregator-range-converter` — Merge, subtract, intersect, split and convert IPv4/IPv6 CIDR lists and IP ranges, then export as nginx, Apache, iptables, nftables, ipset or AWS rules.
 - **CloudEvents Validator** — `/tools/cloudevents-validator` — Validate a CloudEvents JSON event for required attributes and common content-type issues.
 - **Common Regex Patterns Library** — `/tools/web-regex-pattern-library` — Searchable reference of ready-to-copy regex patterns for emails, URLs, IPs, dates, and other common validations.
 - **Content-Disposition Builder** — `/tools/web-content-disposition-builder` — Build and parse Content-Disposition headers with RFC 5987 filename encoding.
@@ -620,7 +655,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Content-Type & Charset Reference** — `/tools/web-content-type-charset-reference` — Searchable reference of common Content-Type media types, charsets, and parameters.
 - **Cookie Parser** — `/tools/cookie-parser` — Parse a Cookie or Set-Cookie header into a readable table of attributes.
 - **CORS Headers Builder** — `/tools/web-cors-headers-builder` — Generate the Access-Control-* response headers for a desired cross-origin policy.
-- **Cron Expression Explainer** — `/tools/web-cron-explainer` — Translate a cron expression into plain English and list the next several run times, supporting ranges, steps, and lists across all five fields.
+- **Cron Expression Explainer (Advanced)** — `/tools/web-cron-explainer` — Translate a cron expression into plain English and list the next several run times, supporting ranges, steps, and lists across all five fields.
 - **CSP Header Analyzer** — `/tools/web-content-security-policy-analyzer` — Parse a Content-Security-Policy header and flag weak or unsafe directives.
 - **CSS aspect-ratio Generator** — `/tools/web-aspect-ratio-css` — Turn a width:height ratio into aspect-ratio CSS plus a padding-top fallback.
 - **CSS Border Radius Generator** — `/tools/web-border-radius-generator` — Visually build a border-radius value (including elliptical and per-corner) and copy the CSS.
@@ -662,6 +697,8 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **DNS Record dig UI** — `/tools/dns-record-dig-ui` — Build copyable dig commands and summarize pasted DNS records.
 - **DNS Zone File Validator** — `/tools/dns-zone-file-validator` — Check zone-file records for common SOA, NS, MX, CNAME, TTL, and syntax issues.
 - **DNSSEC Chain Visualizer** — `/tools/dnssec-chain-visualizer` — Inspect pasted DS, DNSKEY, RRSIG, and NSEC records and outline the trust chain.
+- **Dockerfile Linter** — `/tools/dockerfile-linter` — Lint a Dockerfile against hadolint-style best practices (pinned images, apt/pip/npm hygiene, root user, secrets, layers) with line-by-line findings and fix hints.
+- **Email Header Analyzer** — `/tools/email-header-analyzer` — Paste raw email headers or drop a .eml to see the delivery path with delays, SPF/DKIM/DMARC/ARC results, red flags, MIME structure and attachments.
 - **Email Obfuscator** — `/tools/email-obfuscator` — Obfuscate an email address (entities / JS) to deter scrapers.
 - **ETag & Conditional Request Builder** — `/tools/web-etag-conditional-builder` — Generate ETag values and matching If-None-Match / If-Modified-Since request headers.
 - **Favicon Link Tags Generator** — `/tools/web-favicon-link-generator` — Generate the full set of favicon and app-icon link tags for all platforms.
@@ -670,6 +707,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **GraphQL Variables Validator** — `/tools/graphql-variables-validator` — Compare GraphQL variable definitions with a variables JSON payload.
 - **gRPC Proto Viewer** — `/tools/grpc-proto-viewer` — Parse .proto text and list packages, services, RPCs, messages, fields, and enums.
 - **grpcurl Command Builder** — `/tools/grpcurl-command-builder` — Build grpcurl commands with host, service method, headers, TLS, and JSON body.
+- **HAR Viewer & Sanitizer** — `/tools/har-viewer-sanitizer` — Open a HAR file to browse requests with a waterfall, spot slow, large or failing calls, then redact cookies, tokens, keys and PII before you share it.
 - **HSTS Header Builder** — `/tools/web-hsts-header-builder` — Build and decode the Strict-Transport-Security header with preload-eligibility checks.
 - **HSTS Preload Checker** — `/tools/hsts-preload-checker` — Check Strict-Transport-Security headers against common preload requirements.
 - **HTML Attribute Stripper / Tag Cleaner** — `/tools/web-html-attributes-stripper` — Remove selected attributes (style, class, on*, data-*) or whole tags from HTML.
@@ -689,19 +727,21 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **IP-in-CIDR Checker** — `/tools/web-ip-cidr-membership` — Check whether IP addresses fall within one or more CIDR ranges.
 - **IPv4 Subnet Calculator** — `/tools/ip-subnet-calculator` — Compute network, broadcast, mask, host range and count from CIDR.
 - **IPv6 Expand & Compress** — `/tools/web-ipv6-expander` — Expand IPv6 addresses to full form or compress to canonical RFC 5952 shorthand.
-- **JSON Flatten / Unflatten** — `/tools/web-json-flatten` — Flatten a deeply nested JSON object into single-level dot-notation keys, or rebuild nested structure from flattened keys.
-- **JSON Path Extractor** — `/tools/web-json-path-extractor` — Query a JSON document with a dot/bracket path expression (e.g. data.items[0].name) and extract matching values, with wildcard support for arrays.
+- **JavaScript Beautifier & Minifier** — `/tools/javascript-beautifier-minifier` — Beautify messy JavaScript with consistent indentation or minify it by stripping comments and whitespace, with ASI-safe output and no renaming, entirely in your browser.
+- **JSON Flatten / Unflatten (Web)** — `/tools/web-json-flatten` — Flatten a deeply nested JSON object into single-level dot-notation keys, or rebuild nested structure from flattened keys.
+- **JSON Path Extractor (Advanced)** — `/tools/web-json-path-extractor` — Query a JSON document with a dot/bracket path expression (e.g. data.items[0].name) and extract matching values, with wildcard support for arrays.
 - **JSON Schema Compatibility Diff** — `/tools/json-schema-compatibility-diff` — Compare JSON Schemas for required fields, property changes, and enum narrowing.
 - **JSON to HTML Form Generator** — `/tools/web-json-to-html-form` — Turn a JSON object into a matching HTML form with labeled inputs inferred from each field's value type.
 - **JSON to Java Class** — `/tools/web-json-to-java` — Convert a JSON payload into POJO Java class definitions with typed fields and getters/setters, inferring nested classes and collection generics.
 - **JSON to JSON Schema** — `/tools/web-json-to-jsonschema` — Generate a draft JSON Schema from an example JSON document, inferring types, required keys, array item shapes, and nested object definitions.
 - **JSON to Pretty / Tree** — `/tools/web-json-tree-viewer` — Visualize JSON as a collapsible, indented tree with type annotations and node counts, making large nested payloads easy to navigate.
 - **JSON to Query Params** — `/tools/web-json-to-query-string` — Turn a flat or nested JSON object into a properly encoded URL query string, with bracket notation for nested keys and arrays.
-- **JSON to TOML** — `/tools/web-json-to-toml` — Convert JSON configuration into TOML format and back, handling tables, arrays of tables, nested keys, strings, and numeric/boolean scalars.
+- **JSON to TOML (Web)** — `/tools/web-json-to-toml` — Convert JSON configuration into TOML format and back, handling tables, arrays of tables, nested keys, strings, and numeric/boolean scalars.
 - **JSON-LD Structured Data Generator** — `/tools/web-jsonld-schema-generator` — Generate schema.org JSON-LD for Article, Product, FAQ, Breadcrumb and more.
 - **JWT Decoder** — `/tools/jwt-decoder` — Decode and inspect JSON Web Token header & payload (no verification).
 - **JWT Expiry Inspector** — `/tools/web-jwt-expiry-inspector` — Decode a JWT and report human-readable issued/expiry times and remaining validity.
 - **Kafka Message Header Viewer** — `/tools/kafka-message-header-viewer` — Parse Kafka header key/value pairs and payload metadata for debugging consumers.
+- **Keyboard Event Inspector (Keycode Info)** — `/tools/keyboard-event-inspector` — Press any key to see event.key, event.code, keyCode, location and modifiers, then copy a ready-made shortcut condition, hotkey string and event log.
 - **Link Header Builder & Parser** — `/tools/web-link-header-builder` — Build and parse RFC 8288 Link headers (rel=next/prev, preload, canonical).
 - **Lorem Ipsum HTML Block Generator** — `/tools/web-lorem-html-block` — Generate placeholder content as ready-to-paste semantic HTML blocks (paragraphs, headings, lists, blockquotes).
 - **MAC Address Formatter** — `/tools/web-mac-address-formatter` — Reformat MAC addresses between colon, hyphen, dot (Cisco), and bare notations.
@@ -731,6 +771,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Referrer-Policy Reference & Tester** — `/tools/web-referrer-policy-reference` — Explain Referrer-Policy values and simulate what Referer is sent between two URLs.
 - **Regex Cheatsheet & Builder** — `/tools/web-regex-cheatsheet` — Browse a searchable regex syntax reference and snippet library for common patterns like email, URL, IP, and date, with copyable expressions.
 - **Regex Escape / Unescape** — `/tools/web-regex-escape` — Escape arbitrary text into a literal regex pattern or unescape an escaped pattern back to plain text.
+- **Regex Explainer** — `/tools/regex-explainer` — Break a JavaScript regular expression down into a plain-English explanation tree with colour-coded highlighting, capture groups, backtracking warnings and a live tester.
 - **Regex Match Against Lines** — `/tools/web-regex-match-lines` — Run a regex against each line of pasted text and list which lines match, which do not, and the captured groups.
 - **Regex Named Group Reference Converter** — `/tools/web-regex-named-group-converter` — Convert between numbered capture groups and named capture groups in regex patterns and their backreferences/replacements.
 - **Relative URL Resolver** — `/tools/web-relative-url-resolver` — Resolve a relative reference against a base URL to produce the absolute target.
@@ -783,10 +824,11 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **WSDL to Sample SOAP** — `/tools/wsdl-to-sample-soap` — Generate a starter SOAP envelope for a selected operation name.
 - **WWW-Authenticate Parser** — `/tools/web-www-authenticate-parser` — Parse WWW-Authenticate / Authorization challenge headers into scheme and parameters.
 - **XML Formatter** — `/tools/web-xml-formatter` — Pretty-print and indent minified XML, or minify verbose XML by stripping whitespace between tags, with self-closing tag handling.
-- **XML to JSON** — `/tools/web-xml-to-json` — Convert an XML document into a structured JSON object, mapping elements, attributes, and text content with a predictable convention.
+- **XML to JSON (DOM)** — `/tools/web-xml-to-json` — Convert an XML document into a structured JSON object, mapping elements, attributes, and text content with a predictable convention.
+- **XPath & CSS Selector Tester** — `/tools/xpath-css-selector-tester` — Test XPath 1.0 expressions and CSS selectors against XML or HTML, with namespace support, generated XPath/CSS paths, highlighted matches and JSON/CSV export.
 - **Z-Index Scale Generator** — `/tools/web-z-index-scale-generator` — Generate a documented z-index scale with named layers as CSS variables or a Sass/JS map to avoid stacking chaos.
 
-## Time & Date (56)
+## Time & Date (58)
 
 - **12 / 24 Hour Time Converter** — `/tools/time-12-24-converter` — Convert clock times between 12-hour AM/PM and 24-hour formats, single or in bulk.
 - **Add Business Days** — `/tools/add-business-days` — Add or subtract a number of business days to a date, skipping weekends and custom holidays.
@@ -795,6 +837,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Batch Timestamp Converter** — `/tools/timestamp-batch-converter` — Convert a pasted list of Unix timestamps to human dates (or dates back to timestamps) in bulk.
 - **Business Days Calculator** — `/tools/business-days-calculator` — Count working days between two dates, excluding weekends, or add a number of business days to a start date.
 - **Clock Time Difference** — `/tools/time-between-clocks` — Compute the duration between two times of day, optionally wrapping past midnight.
+- **Countdown & Pomodoro Timer** — `/tools/pomodoro-countdown-timer` — A countdown timer, Pomodoro timer and interval (Tabata) timer with progress ring, sound, desktop notifications and keep-awake, all in your browser.
 - **Countdown Snapshot Builder** — `/tools/countdown-timer-builder` — Compute the exact remaining time from now to a target datetime, broken into units.
 - **Cron Expression Builder** — `/tools/cron-builder` — Build a standard cron expression from dropdowns for minute, hour, day, month, and weekday with a human-readable preview.
 - **Cron Expression Explainer** — `/tools/cron-parser` — Explain a cron expression in plain English and preview the next run times.
@@ -829,6 +872,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Recurring Event Date Generator** — `/tools/recurring-event-dates` — Generate the next N dates for a simple recurrence (daily, weekly, monthly, yearly with interval).
 - **Relative Time Formatter** — `/tools/relative-time-formatter` — Turn a timestamp or date into human-friendly relative phrasing like '3 hours ago' or 'in 2 days' across locales.
 - **SMPTE Timecode / Frames Converter** — `/tools/time-timecode-frames-converter` — Converts between SMPTE timecode (HH:MM:SS:FF) and total frame counts at a chosen frame rate.
+- **Stopwatch & Lap Timer** — `/tools/stopwatch-lap-timer` — A precise online stopwatch with lap and split times, best and worst lap highlighting, fullscreen mode, keyboard shortcuts and CSV export.
 - **strftime Format Playground** — `/tools/strftime-playground` — Apply a C/Python strftime format string to a chosen datetime and see the rendered output live.
 - **Time Duration Arithmetic** — `/tools/time-time-duration-arithmetic` — Adds and subtracts a list of HH:MM:SS durations and shows the running and total result.
 - **Time Epoch Rollover Checker** — `/tools/unix-rollover-checker` — Show key time-storage overflow dates (Year 2038, 2-digit Y2K, 32-bit, 64-bit limits).
@@ -845,8 +889,9 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Weeks & Months Until Date** — `/tools/weeks-until-date` — Count full weeks, months, and weekends remaining until a future date.
 - **Working Hours Calculator** — `/tools/working-hours-calculator` — Compute net working hours between two datetimes, excluding nights, weekends, and lunch.
 
-## Math & Units (114)
+## Math & Units (122)
 
+- **A/B Test Significance & Sample Size Calculator** — `/tools/ab-test-calculator` — Check whether an A/B test result is statistically significant (z-test, Fisher exact, Bayesian) and plan the sample size and duration of a test.
 - **Angle Converter** — `/tools/angle-converter` — Convert angles between degrees, radians, gradians, turns, and arcminutes/arcseconds.
 - **Arbitrary Base Converter (2-36)** — `/tools/arbitrary-base-converter` — Convert an integer between any two radixes from base 2 to base 36 with full digit-set support.
 - **Arithmetic & Geometric Sequence Calculator** — `/tools/arithmetic-geometric-sequence` — Find the nth term and sum of arithmetic or geometric sequences.
@@ -876,6 +921,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Divisibility Rules Checker** — `/tools/divisibility-rules-checker` — Test divisibility of a number by 2-13 and show which mental-math rule applies.
 - **Divisor Lister & Counter** — `/tools/divisor-lister` — List every divisor of a number with totals, divisor count, and divisor pairs.
 - **DMS ↔ Decimal Degrees Converter** — `/tools/math-dms-decimal-degrees` — Convert geographic coordinates between degrees-minutes-seconds and decimal degrees.
+- **Electrical Calculator (Ohm's Law, Resistors & Power)** — `/tools/electrical-calculator` — Ohm's law and power wheel, resistor colour codes with E-series and SMD decoder, series/parallel, voltage divider, LED resistor, AC power and wire voltage drop in one tabbed toolkit.
 - **Ellipse Calculator** — `/tools/ellipse-calculator` — Compute area, perimeter, eccentricity, and foci of an ellipse.
 - **Engineering Notation Converter** — `/tools/engineering-notation-converter` — Convert numbers to engineering notation (powers of 1000) with SI metric prefixes.
 - **Exponent & Power Calculator** — `/tools/exponent-power-calculator` — Raise numbers to powers, find roots, and evaluate scientific exponent expressions.
@@ -888,11 +934,13 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Fraction Simplifier** — `/tools/fraction-simplifier` — Reduce any fraction to lowest terms and show the mixed-number and decimal forms.
 - **Fractional Base Converter** — `/tools/math-base-converter-fractional` — Converts numbers with fractional parts between arbitrary bases 2 through 36.
 - **Fuel Economy Converter** — `/tools/fuel-economy-converter` — Convert fuel efficiency between MPG (US/UK), km/L, and liters per 100 km.
+- **Function Grapher** — `/tools/function-grapher` — Plot up to 8 functions (y = f(x), polar, parametric, vertical lines) with sliders, roots, extrema, intersections, integrals and shareable links.
 - **GCD & LCM Calculator** — `/tools/gcd-lcm` — Find the greatest common divisor and least common multiple of numbers.
 - **GPA Calculator** — `/tools/math-gpa-calculator` — Compute weighted grade point average from courses, credits, and grades.
 - **Great-Circle Distance Calculator** — `/tools/math-great-circle-distance` — Computes the distance and initial bearing between two latitude/longitude points.
 - **IEEE-754 Float Inspector** — `/tools/ieee754-float-inspector` — Decompose a decimal number into IEEE-754 single and double precision sign, exponent, and mantissa bits.
 - **Integer Factorization Explorer** — `/tools/integer-factorization` — Fully factor an integer into primes and explore all derived multiplicative properties.
+- **Linear Regression & Correlation Calculator** — `/tools/linear-regression-calculator` — Fit linear, polynomial, exponential, logarithmic and power models to your data with full statistics, correlation coefficients, predictions and a chart.
 - **Linear System Solver (Ax = b)** — `/tools/math-linear-system-solver` — Solves a system of linear equations using Gaussian elimination and reports the solution.
 - **Loan & EMI Calculator** — `/tools/loan-emi-calculator` — Calculate monthly loan payment, total interest, and total repayment from principal, rate, and term.
 - **Loan Amortization Schedule** — `/tools/math-loan-amortization-schedule` — Generate a full month-by-month amortization table for a fixed-rate loan.
@@ -924,13 +972,14 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Prime Checker & Factorizer** — `/tools/prime-checker` — Check whether a number is prime and view its prime factorization.
 - **Prime Sieve Generator** — `/tools/prime-sieve-generator` — Generate every prime up to N (or the first K primes) with the Sieve of Eratosthenes.
 - **Prism & Cylinder Volume Calculator** — `/tools/prism-cylinder-volume` — Compute volume and surface area of cylinders, cubes, and box prisms.
+- **Probability Distribution Calculator** — `/tools/probability-distribution-calculator` — Compute CDF, tail and interval probabilities, densities, quantiles, critical values and p-values for 14 common distributions with a shaded chart.
 - **Progressive Tax Bracket Calculator** — `/tools/math-tax-bracket-calculator` — Compute total tax across user-defined progressive income brackets.
 - **Proportion (Cross-Multiply) Solver** — `/tools/proportion-solver` — Solve a/b = c/d for the unknown using cross multiplication.
 - **Pythagorean Theorem Calculator** — `/tools/pythagorean-theorem` — Find the missing side of a right triangle from any two known sides.
 - **Quadratic Equation Solver** — `/tools/quadratic-equation-solver` — Solve quadratic equations for real or complex roots from coefficients a, b, and c.
 - **Quotient & Remainder Calculator** — `/tools/quotient-remainder-calculator` — Perform integer (Euclidean) division showing quotient and remainder.
 - **Random Distribution Generator** — `/tools/random-distribution-generator` — Generate random samples from uniform, normal, exponential, or Poisson distributions.
-- **Random Number Generator** — `/tools/random-number-generator` — Generate cryptographically secure random integers within a custom range, with optional uniqueness.
+- **Random Number Generator (Secure)** — `/tools/random-number-generator` — Generate cryptographically secure random integers within a custom range, with optional uniqueness.
 - **Ratio & Proportion Solver** — `/tools/ratio-proportion-solver` — Simplify ratios and solve for the missing fourth term in a proportion via cross-multiplication.
 - **Rectangle & Square Calculator** — `/tools/rectangle-square-calculator` — Compute area, perimeter, and diagonal of rectangles and squares.
 - **Regular Polygon Calculator** — `/tools/regular-polygon-calculator` — Compute area, perimeter, and angles of any regular n-sided polygon.
@@ -940,6 +989,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Roman Numeral Converter** — `/tools/roman-numerals` — Convert between Roman numerals and integers (1–3999).
 - **Roman Numeral Variants Converter** — `/tools/roman-numeral-variants` — Convert to and from standard, additive (IIII), and vinculum (overline ×1000) Roman numerals.
 - **Rounding & Significant Figures** — `/tools/rounding-calculator` — Round numbers by decimals, significant figures, or a chosen rule.
+- **Salary ↔ Hourly Pay Converter** — `/tools/salary-hourly-converter` — Convert gross pay between hourly, daily, weekly, bi-weekly, semi-monthly, monthly, quarterly and annual, with overtime, time off, raise, offer comparison and freelance rate calculators.
 - **Savings Goal Calculator** — `/tools/savings-goal-calculator` — Find the monthly deposit needed to reach a savings target by a date.
 - **Scientific Calculator** — `/tools/expression-calculator` — Evaluate math expressions with functions, constants and operators.
 - **Scientific Notation Arithmetic** — `/tools/scientific-notation-arithmetic` — Add, multiply, and divide numbers written in scientific notation.
@@ -954,6 +1004,8 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Tip & Bill Splitter** — `/tools/tip-split-calculator` — Calculate tip amount, grand total, and per-person share when splitting a bill among people.
 - **Trapezoid & Parallelogram Calculator** — `/tools/trapezoid-parallelogram-calculator` — Compute area and perimeter of trapezoids and parallelograms.
 - **Triangle Solver** — `/tools/triangle-solver` — Solve any triangle from 3 known sides/angles using the laws of sines and cosines.
+- **Truth Table & Boolean Simplifier** — `/tools/truth-table-generator` — Generate truth tables from Boolean expressions in many notations, then find minterms, canonical and minimal SOP/POS forms, a Karnaugh map and check expression equivalence.
+- **TVM, NPV & IRR Calculator** — `/tools/time-value-of-money-calculator` — Solve for N, rate, PV, PMT or FV with an amortization schedule, then analyse cash flows with NPV, IRR, MIRR, XIRR, payback and inflation-adjusted value.
 - **Two's Complement Converter** — `/tools/twos-complement-converter` — Encode and decode signed integers in two's complement across 8/16/32/64-bit widths.
 - **Unit Converter** — `/tools/unit-converter` — Convert length, mass, temperature, area, volume, speed and data sizes.
 - **Unit Price Comparison** — `/tools/unit-price-calculator` — Compare products by price per unit to find the best value.
@@ -970,6 +1022,7 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Analogous Color Scheme Generator** — `/tools/analogous-color-scheme` — Create harmonious neighboring-hue palettes around a base color.
 - **ANSI 256-Color to RGB** — `/tools/color-ansi-256-to-rgb` — Map xterm 256-color palette indices to RGB hex and back to the nearest index.
 - **Average & Dominant Color from List** — `/tools/color-image-free-dominant-from-hexlist` — Computes the arithmetic mean color and most frequent color from a list of hex colors.
+- **Box Shadow Generator** — `/tools/box-shadow-generator` — Visually design CSS box-shadows by adjusting offset, blur, spread, color, and inset, then copy the ready-to-use box-shadow rule.
 - **Color Blend Mode Calculator** — `/tools/color-blend-modes-calculator` — Compute the result of blending two colors with Photoshop-style blend modes.
 - **Color Blindness Simulator** — `/tools/color-blindness` — Preview how a color appears under common color-vision deficiencies.
 - **Color Converter** — `/tools/color-converter` — Convert colors between HEX, RGB, HSL, HSV, CMYK and OKLCH, with a live preview.
@@ -989,7 +1042,6 @@ Auto-generated from the live registry (`bun run scripts/gen-tools-doc.ts`). **98
 - **Complementary Color Finder** — `/tools/complementary-color-finder` — Find the exact complementary (opposite-hue) color for any input color.
 - **Contrast Checker** — `/tools/contrast-checker` — Check WCAG contrast ratio between two colors and AA/AAA pass/fail.
 - **Contrast Ratio Grid** — `/tools/contrast-ratio-grid` — Build an N x N WCAG contrast matrix for a set of palette colors.
-- **CSS Box Shadow Generator** — `/tools/box-shadow-generator` — Visually design CSS box-shadows by adjusting offset, blur, spread, color, and inset, then copy the ready-to-use box-shadow rule.
 - **CSS Color Function Builder** — `/tools/css-color-function-builder` — Interactively build modern CSS color() , rgb(), hsl(), lab(), lch(), oklch() strings.
 - **CSS color-mix() Builder** — `/tools/color-mix-css-builder` — Build and preview the CSS color-mix() function and compute its resolved color.
 - **CSS Gradient Generator** — `/tools/gradient-generator` — Build linear, radial and conic CSS gradients with a live preview.
